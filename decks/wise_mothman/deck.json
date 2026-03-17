@@ -1,0 +1,2344 @@
+{
+  "commander": {
+    "name": "The Wise Mothman",
+    "count": 1,
+    "mana_cost": "{1}{B}{G}{U}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature \u2014 Insect Mutant",
+    "types": [
+      "Creature"
+    ],
+    "oracle_text": "Flying\nWhenever The Wise Mothman enters or attacks, each player gets a rad counter.\nWhenever one or more nonland cards are milled, put a +1/+1 counter on each of up to X target creatures, where X is the number of nonland cards milled this way.",
+    "color_identity": [
+      "B",
+      "G",
+      "U"
+    ],
+    "keywords": [
+      "Flying"
+    ],
+    "produced_mana": [],
+    "otags": [
+      "mill",
+      "evasion"
+    ],
+    "price_eur": null,
+    "set": "pip",
+    "number": "4",
+    "foil": true,
+    "buy": false
+  },
+  "deck": [
+    {
+      "name": "Agent Frank Horrigan",
+      "count": 1,
+      "mana_cost": "{5}{B}{G}",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Mutant Warrior",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Trample\nAgent Frank Horrigan has indestructible as long as it attacked this turn.\nWhenever Agent Frank Horrigan enters or attacks, proliferate twice. (To proliferate, choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [
+        "Trample",
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "6.99",
+      "set": "pip",
+      "number": "89",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Alpha Deathclaw",
+      "count": 1,
+      "mana_cost": "{4}{B}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Lizard Mutant",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Menace, trample\nWhen this creature enters or becomes monstrous, destroy target permanent.\n{5}{B}{G}: Monstrosity 4. (If this creature isn't monstrous, put four +1/+1 counters on it and it becomes monstrous.)",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [
+        "Trample",
+        "Menace",
+        "Monstrosity"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "0.85",
+      "set": "pip",
+      "number": "91",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Arcane Signet",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.22",
+      "set": "pip",
+      "number": "224",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Assassin's Trophy",
+      "count": 1,
+      "mana_cost": "{B}{G}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Destroy target permanent an opponent controls. Its controller may search their library for a basic land card, put it onto the battlefield, then shuffle.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.12",
+      "set": "acr",
+      "number": "95",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Atomize",
+      "count": 1,
+      "mana_cost": "{2}{B}{G}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Destroy target nonland permanent. Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "13.40",
+      "set": "pip",
+      "number": "94",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Birds of Paradise",
+      "count": 1,
+      "mana_cost": "{G}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Bird",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\n{T}: Add one mana of any color.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "mana-dork",
+        "evasion"
+      ],
+      "price_eur": "10.63",
+      "set": "rvr",
+      "number": "133",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Binding the Old Gods",
+      "count": 1,
+      "mana_cost": "{2}{B}{G}",
+      "cmc": 4.0,
+      "type_line": "Enchantment \u2014 Saga",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI \u2014 Destroy target nonland permanent an opponent controls.\nII \u2014 Search your library for a Forest card, put it onto the battlefield tapped, then shuffle.\nIII \u2014 Creatures you control gain deathtouch until end of turn.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "removal",
+        "tutor"
+      ],
+      "price_eur": "0.20",
+      "set": "khm",
+      "number": "206",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Blooming Marsh",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control two or fewer other lands.\n{T}: Add {B} or {G}.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "2.40",
+      "set": "otj",
+      "number": "266",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Branching Evolution",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "If one or more +1/+1 counters would be put on a creature you control, twice that many +1/+1 counters are put on that creature instead.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "3.28",
+      "set": "pip",
+      "number": "195",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cankerbloom",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Phyrexian Fungus",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{1}, Sacrifice this creature: Choose one \u2014\n\u2022 Destroy target artifact.\n\u2022 Destroy target enchantment.\n\u2022 Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.24",
+      "set": "one",
+      "number": "161",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Tezzeret's Gambit",
+      "count": 1,
+      "mana_cost": "{3}{U/P}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "({U/P} can be paid with either {U} or 2 life.)\nDraw two cards, then proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.19",
+      "set": "nph",
+      "number": "26",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Command Tower",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.19",
+      "set": "pip",
+      "number": "259",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Simic Ascendancy",
+      "count": 1,
+      "mana_cost": "{G}{U}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "{1}{G}{U}: Put a +1/+1 counter on target creature you control.\nWhenever one or more +1/+1 counters are put on a creature you control, put that many growth counters on this enchantment.\nAt the beginning of your upkeep, if this enchantment has twenty or more growth counters on it, you win the game.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.51",
+      "set": "rna",
+      "number": "207",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Corpsejack Menace",
+      "count": 1,
+      "mana_cost": "{2}{B}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Fungus",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "If one or more +1/+1 counters would be put on a creature you control, twice that many +1/+1 counters are put on it instead.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.65",
+      "set": "pip",
+      "number": "214",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Repulsive Mutation",
+      "count": 1,
+      "mana_cost": "{X}{G}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Put X +1/+1 counters on target creature you control. Then counter up to one target spell unless its controller pays mana equal to the greatest power among creatures you control.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "counterspell"
+      ],
+      "price_eur": "0.29",
+      "set": "dmu",
+      "number": "180",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Darkwater Catacombs",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{1}, {T}: Add {U}{B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "pip",
+      "number": "260",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Devoted Druid",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Elf Druid",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{T}: Add {G}.\nPut a -1/-1 counter on this creature: Untap this creature.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [
+        "ramp",
+        "mana-dork"
+      ],
+      "price_eur": "0.36",
+      "set": "2x2",
+      "number": "143",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Drowned Catacomb",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control an Island or a Swamp.\n{T}: Add {U} or {B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "1.73",
+      "set": "pip",
+      "number": "262",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Evolution Sage",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elf Druid",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Landfall \u2014 Whenever a land you control enters, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Proliferate",
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "2.08",
+      "set": "lcc",
+      "number": "240",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Evolving Wilds",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.10",
+      "set": "pip",
+      "number": "263",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.14",
+      "set": "pip",
+      "number": "264",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Farseek",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a Plains, Island, Swamp, or Mountain card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.90",
+      "set": "pip",
+      "number": "197",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Fathom Mage",
+      "count": 1,
+      "mana_cost": "{2}{G}{U}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Human Wizard",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Evolve (Whenever a creature you control enters, if that creature has greater power or toughness than this creature, put a +1/+1 counter on this creature.)\nWhenever a +1/+1 counter is put on this creature, you may draw a card.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Evolve"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.35",
+      "set": "fic",
+      "number": "325",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Find // Finality",
+      "count": 1,
+      "mana_cost": "{B/G}{B/G} // {4}{B}{G}",
+      "cmc": 8.0,
+      "type_line": "Sorcery // Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Return up to two target creature cards from your graveyard to your hand.\n---\nYou may put two +1/+1 counters on a creature you control. Then all creatures get -4/-4 until end of turn.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe",
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "0.16",
+      "set": "pip",
+      "number": "216",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 7,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "pip",
+      "number": "325",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Flotsam // Jetsam",
+      "count": 1,
+      "mana_cost": "{1}{G/U} // {4}{U/B}{U/B}",
+      "cmc": 8.0,
+      "type_line": "Instant // Sorcery",
+      "types": [
+        "Instant",
+        "Sorcery"
+      ],
+      "oracle_text": "Mill three cards. Investigate. (Create a Clue token. It's an artifact with \"{2}, Sacrifice this token: Draw a card.\")\n---\nEach opponent mills three cards, then you may cast a spell from each opponent's graveyard without paying its mana cost. If a spell cast this way would be put into a graveyard, exile it instead.",
+      "color_identity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Investigate",
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "mill",
+        "recursion",
+        "card-advantage",
+        "graveyard-hate"
+      ],
+      "price_eur": "0.15",
+      "set": "dsk",
+      "number": "225",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Guardian Project",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever a nontoken creature you control enters, if it doesn't have the same name as another creature you control or a creature card in your graveyard, draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "11.85",
+      "set": "pip",
+      "number": "199",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hardened Scales",
+      "count": 1,
+      "mana_cost": "{G}",
+      "cmc": 1.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "If one or more +1/+1 counters would be put on a creature you control, that many plus one +1/+1 counters are put on it instead.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.98",
+      "set": "pip",
+      "number": "200",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Herald of Secret Streams",
+      "count": 1,
+      "mana_cost": "{3}{U}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Merfolk Warrior",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Creatures you control with +1/+1 counters on them can't be blocked.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "5.16",
+      "set": "lcc",
+      "number": "158",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Herd Baloth",
+      "count": 1,
+      "mana_cost": "{3}{G}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Beast",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever one or more +1/+1 counters are put on this creature, you may create a 4/4 green Beast creature token.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "mh2",
+      "number": "165",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Hinterland Harbor",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control a Forest or an Island.\n{T}: Add {G} or {U}.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.14",
+      "set": "pip",
+      "number": "267",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Incubation Druid",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Elf Druid",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{T}: Add one mana of any type that a land you control could produce. If this creature has a +1/+1 counter on it, add three mana of that type instead.\n{3}{G}{G}: Adapt 3. (If this creature has no +1/+1 counters on it, put three +1/+1 counters on it.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Adapt"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "mana-dork"
+      ],
+      "price_eur": "1.45",
+      "set": "moc",
+      "number": "302",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Inexorable Tide",
+      "count": 1,
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever you cast a spell, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "2.04",
+      "set": "pip",
+      "number": "177",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Scheming Aspirant",
+      "count": 1,
+      "mana_cost": "{1}{B}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Phyrexian Advisor",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever you proliferate, each opponent loses 2 life and you gain 2 life.",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "lifegain"
+      ],
+      "price_eur": "0.12",
+      "set": "one",
+      "number": "83",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Inspiring Call",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Draw a card for each creature you control with a +1/+1 counter on it. Those creatures gain indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy them.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.23",
+      "set": "pip",
+      "number": "203",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Island",
+      "count": 2,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Island",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {U}.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "pip",
+      "number": "319",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Jenova, Ancient Calamity",
+      "count": 1,
+      "mana_cost": "{2}{B}{G}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Alien",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "At the beginning of combat on your turn, put a number of +1/+1 counters equal to Jenova's power on up to one other target creature. That creature becomes a Mutant in addition to its other types.\nWhenever a Mutant you control dies during your turn, you draw cards equal to its power.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.77",
+      "set": "fin",
+      "number": "228",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Karn's Bastion",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{4}, {T}: Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [],
+      "price_eur": "1.68",
+      "set": "lcc",
+      "number": "339",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Marcus, Mutant Mayor",
+      "count": 1,
+      "mana_cost": "{3}{G}{U}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Mutant Advisor",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Vigilance, trample\nWhenever a creature you control deals combat damage to a player, draw a card if that creature has a +1/+1 counter on it. If it doesn't, put a +1/+1 counter on it.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Vigilance",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.33",
+      "set": "pip",
+      "number": "109",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mariposa Military Base",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "You may have this land enter tapped. If you do, you get two rad counters.\n{T}: Add {C}.\n{5}, {T}: Draw a card. This ability costs {1} less to activate for each rad counter you have.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "draw",
+        "mill",
+        "card-advantage"
+      ],
+      "price_eur": "0.24",
+      "set": "pip",
+      "number": "151",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Master Biomancer",
+      "count": 1,
+      "mana_cost": "{2}{G}{U}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Elf Wizard",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Each other creature you control enters with a number of additional +1/+1 counters on it equal to this creature's power and as a Mutant in addition to its other types.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.76",
+      "set": "clu",
+      "number": "200",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mirelurk Queen",
+      "count": 1,
+      "mana_cost": "{4}{U}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Crab Mutant",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Vigilance\nWhen this creature enters, target player gets two rad counters.\nWhenever one or more nonland cards are milled, draw a card, then put a +1/+1 counter on this creature. This ability triggers only once each turn.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Vigilance"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "mill",
+        "card-advantage"
+      ],
+      "price_eur": "0.23",
+      "set": "pip",
+      "number": "33",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Morphic Pool",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {U} or {B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "21.19",
+      "set": "clb",
+      "number": "357",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Swamp",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Swamp",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {B}.)",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "pip",
+      "number": "321",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mutational Advantage",
+      "count": 1,
+      "mana_cost": "{1}{G}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Permanents you control with counters on them gain hexproof and indestructible until end of turn. Prevent all damage that would be dealt to those permanents this turn. Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "9.95",
+      "set": "pip",
+      "number": "111",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Nature's Lore",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a Forest card, put that card onto the battlefield, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "2.80",
+      "set": "eoc",
+      "number": "101",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Flux Channeler",
+      "count": 1,
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Human Wizard",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever you cast a noncreature spell, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.90",
+      "set": "war",
+      "number": "46",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Singularity Rupture",
+      "count": 1,
+      "mana_cost": "{3}{U}{B}{B}",
+      "cmc": 6.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Destroy all creatures, then any number of target players each mill half their library, rounded down.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe",
+        "mill"
+      ],
+      "price_eur": "0.41",
+      "set": "dft",
+      "number": "111",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Nuclear Fallout",
+      "count": 1,
+      "mana_cost": "{X}{B}{B}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Each creature gets twice -X/-X until end of turn. Each player gets X rad counters.",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe",
+        "mill"
+      ],
+      "price_eur": "1.64",
+      "set": "pip",
+      "number": "47",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Opulent Palace",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {B}, {G}, or {U}.",
+      "color_identity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "pip",
+      "number": "278",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Overflowing Basin",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{1}, {T}: Add {G}{U}.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "pip",
+      "number": "152",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Path of Ancestry",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1. (Look at the top card of your library. You may put that card on the bottom.)",
+      "color_identity": [],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.09",
+      "set": "pip",
+      "number": "279",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Psychic Corrosion",
+      "count": 1,
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever you draw a card, each opponent mills two cards.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill"
+      ],
+      "price_eur": "3.37",
+      "set": "plst",
+      "number": "M19-68",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Massacre Girl",
+      "count": 1,
+      "mana_cost": "{3}{B}{B}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Human Assassin",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Menace\nWhen Massacre Girl enters, each other creature gets -1/-1 until end of turn. Whenever a creature dies this turn, each creature other than Massacre Girl gets -1/-1 until end of turn.",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Menace"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe",
+        "evasion"
+      ],
+      "price_eur": "0.23",
+      "set": "war",
+      "number": "99",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Radstorm",
+      "count": 1,
+      "mana_cost": "{3}{U}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Storm (When you cast this spell, copy it for each spell cast before it this turn.)\nProliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Storm",
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "3.10",
+      "set": "pip",
+      "number": "37",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rampant Growth",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.51",
+      "set": "pip",
+      "number": "204",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Conduit of Worlds",
+      "count": 1,
+      "mana_cost": "{2}{G}{G}",
+      "cmc": 4.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "You may play lands from your graveyard.\n{T}: Choose target nonland permanent card in your graveyard. If you haven't cast a spell this turn, you may cast that card. If you do, you can't cast additional spells this turn. Activate only as a sorcery.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "3.78",
+      "set": "one",
+      "number": "233",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Ray Fillet, Wave Warrior",
+      "count": 1,
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Fish Mutant",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nEvolve (Whenever a creature you control enters, if that creature has greater power or toughness than this creature, put a +1/+1 counter on this creature.)\nWhenever a creature you control with a counter on it deals combat damage to a player, draw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Evolve"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage",
+        "evasion"
+      ],
+      "price_eur": "0.02",
+      "set": "tmc",
+      "number": "14",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Reanimate",
+      "count": 1,
+      "mana_cost": "{B}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Put target creature card from a graveyard onto the battlefield under your control. You lose life equal to that card's mana value.",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "7.75",
+      "set": "tmp",
+      "number": "151",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Ripples of Potential",
+      "count": 1,
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Proliferate, then choose any number of permanents you control that had a counter put on them this way. Those permanents phase out. (To proliferate, choose any number of permanents and/or players, then give each another counter of each kind already there. Treat phased-out permanents and anything attached to them as though they don't exist until their controller's next turn.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "3.00",
+      "set": "lcc",
+      "number": "77",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Sakura-Tribe Elder",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Snake Shaman",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Sacrifice this creature: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.43",
+      "set": "tdc",
+      "number": "266",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Wave Goodbye",
+      "count": 1,
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Return each creature without a +1/+1 counter on it to its owner's hand.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.45",
+      "set": "otc",
+      "number": "24",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Sodden Verdure",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Forest Island",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G} or {U}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.47",
+      "set": "tmc",
+      "number": "74",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Sol Ring",
+      "count": 1,
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.85",
+      "set": "pip",
+      "number": "239",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Awaken the Honored Dead",
+      "count": 1,
+      "mana_cost": "{B}{G}{U}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Saga",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI \u2014 Destroy target nonland permanent.\nII \u2014 Mill three cards.\nIII \u2014 You may discard a card. When you do, return target creature or land card from your graveyard to your hand.",
+      "color_identity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "mill",
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "0.46",
+      "set": "fdn",
+      "number": "72",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Sunken Hollow",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Island Swamp",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {U} or {B}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "pip",
+      "number": "296",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Swamp",
+      "count": 4,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Swamp",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {B}.)",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "pip",
+      "number": "321",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Swiftfoot Boots",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Equipped creature has hexproof and haste. (It can't be the target of spells or abilities your opponents control. It can attack and {T} no matter when it came under your control.)\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "2.05",
+      "set": "fdn",
+      "number": "258",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Tainted Isle",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. Activate only if you control a Swamp.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.44",
+      "set": "pip",
+      "number": "299",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Tainted Wood",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {G}. Activate only if you control a Swamp.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.30",
+      "set": "pip",
+      "number": "301",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Tato Farmer",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Zombie Mutant Peasant",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Landfall \u2014 Whenever a land you control enters, you may get two rad counters.\n{T}: Put target land card in a graveyard that was milled this turn onto the battlefield under your control tapped.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "mill",
+        "recursion"
+      ],
+      "price_eur": "0.41",
+      "set": "pip",
+      "number": "86",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Temple of Deceit",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {U} or {B}.",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.18",
+      "set": "pip",
+      "number": "303",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Temple of Malady",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {B} or {G}.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.18",
+      "set": "pip",
+      "number": "306",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Temple of Mystery",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {G} or {U}.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "pip",
+      "number": "308",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Terramorphic Expanse",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.21",
+      "set": "pip",
+      "number": "313",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "The Master, Transcendent",
+      "count": 1,
+      "mana_cost": "{1}{B}{G}{U}",
+      "cmc": 4.0,
+      "type_line": "Legendary Artifact Creature \u2014 Mutant",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "oracle_text": "When The Master enters, target player gets two rad counters.\n{T}: Put target creature card in a graveyard that was milled this turn onto the battlefield under your control. It's a green Mutant with base power and toughness 3/3. (It loses its other colors and creature types.)",
+      "color_identity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "recursion"
+      ],
+      "price_eur": null,
+      "set": "pip",
+      "number": "6",
+      "foil": true,
+      "buy": false
+    },
+    {
+      "name": "Thrummingbird",
+      "count": 1,
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Phyrexian Bird Horror",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever this creature deals combat damage to a player, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.13",
+      "set": "cmm",
+      "number": "858",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Triskelion",
+      "count": 1,
+      "mana_cost": "{6}",
+      "cmc": 6.0,
+      "type_line": "Artifact Creature \u2014 Construct",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "oracle_text": "This creature enters with three +1/+1 counters on it.\nRemove a +1/+1 counter from this creature: It deals 1 damage to any target.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.27",
+      "set": "moc",
+      "number": "387",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Stubborn Denial",
+      "count": 1,
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Counter target noncreature spell unless its controller pays {1}.\nFerocious \u2014 If you control a creature with power 4 or greater, counter that spell instead.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Ferocious"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "counterspell"
+      ],
+      "price_eur": "3.15",
+      "set": "ktk",
+      "number": "56",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Unnatural Restoration",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Return target permanent card from your graveyard to your hand. Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "0.43",
+      "set": "one",
+      "number": "191",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Tromell, Seymour's Butler",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Elf Advisor",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Each other nontoken creature you control enters with an additional +1/+1 counter on it.\n{1}, {T}: Proliferate X times, where X is the number of nontoken creatures you control that entered this turn. (To proliferate, choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.68",
+      "set": "fin",
+      "number": "192",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Armorcraft Judge",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Elf Artificer",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, draw a card for each creature you control with a +1/+1 counter on it.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.11",
+      "set": "kld",
+      "number": "146",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Vernal Fen",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Swamp Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {B} or {G}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.33",
+      "set": "tmc",
+      "number": "81",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Vexing Radgull",
+      "count": 1,
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Bird Mutant",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever this creature deals combat damage to a player, that player gets two rad counters if they don't have any rad counters. Otherwise, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Proliferate"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "evasion"
+      ],
+      "price_eur": "0.24",
+      "set": "pip",
+      "number": "41",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Vigor",
+      "count": 1,
+      "mana_cost": "{3}{G}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Trample\nIf damage would be dealt to another creature you control, prevent that damage. Put a +1/+1 counter on that creature for each 1 damage prevented this way.\nWhen Vigor is put into a graveyard from anywhere, shuffle it into its owner's library.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "10.97",
+      "set": "tmc",
+      "number": "53",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Viridescent Bog",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{1}, {T}: Add {B}{G}.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "pip",
+      "number": "154",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Watchful Radstag",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elk Mutant",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Evolve (Whenever a creature you control enters, if that creature has greater power or toughness than this creature, put a +1/+1 counter on this creature.)\nWhenever this creature evolves, create a token that's a copy of it.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Evolve"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.81",
+      "set": "pip",
+      "number": "87",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Winding Constrictor",
+      "count": 1,
+      "mana_cost": "{B}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Snake",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "If one or more counters would be put on an artifact or creature you control, that many plus one of each of those kinds of counters are put on that permanent instead.\nIf you would get one or more counters, you get that many plus one of each of those kinds of counters instead.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.25",
+      "set": "pip",
+      "number": "223",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Woodland Cemetery",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control a Swamp or a Forest.\n{T}: Add {B} or {G}.",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.66",
+      "set": "pip",
+      "number": "316",
+      "foil": false,
+      "buy": false
+    }
+  ],
+  "metadata": {
+    "source_file": "decks/wise_mothman/decklist.txt",
+    "total_cards": 100
+  }
+}

@@ -1,0 +1,22 @@
+# Cards cut from The Wise Mothman deck
+# These are cards we own that could be swapped back in or used in other decks
+
+# Round 1 cuts (replaced with proliferate/interaction synergy)
+1x Casualties of War (pip) 213 [Removal] -> Tezzeret's Gambit (draw + proliferate)
+1x Negate (mom) 68 [Removal] -> Flux Channeler (noncreature spells proliferate)
+1x Infesting Radroach (pip) 46 [Mill,Creature] -> Scheming Aspirant (drain on proliferate)
+1x Vault 12: The Necropolis (pip) 51 [Mill] -> Tromell, Seymour's Butler (ETB counters + multi-proliferate)
+1x Mortuary Mire (pip) 272 [Land] -> Swamp (fix tainted lands)
+1x Nesting Grounds (pip) 276 [Land] -> Singularity Rupture (board wipe + mill)
+1x Counterspell (dsc) 114 [Removal] -> Repulsive Mutation (counter + counters)
+1x Raul, Trouble Shooter (pip) 115 [Recursion,Creature] -> Conduit of Worlds (passive recursion)
+
+# Round 2 cuts (wipes, interaction, wincons)
+1x Screeching Scorchbeast (pip) 49 [Mill,Creature] -> Wave Goodbye (one-sided bounce wipe)
+1x Glowing One (pip) 76 [Mill,Creature] -> Flotsam // Jetsam (mill + theft)
+1x Vault 87: Forced Evolution (pip) 122 [Draw] -> Armorcraft Judge (burst draw creature)
+1x Bloatfly Swarm (pip) 42 [Mill,Creature] -> Binding the Old Gods (removal + ramp saga)
+1x Struggle for Project Purity (pip) 39 [Draw] -> Awaken the Honored Dead (removal + mill + recursion saga)
+1x Contaminated Drink (pip) 99 [Draw] -> Simic Ascendancy (alt wincon)
+1x Putrefy (pip) 219 [Removal] -> Massacre Girl (creature-based wipe)
+1x Undead Alchemist (mic) 105 [Mill] -> Stubborn Denial (1-mana hard counter with ferocious)
