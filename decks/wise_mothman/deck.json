@@ -785,24 +785,29 @@
       "buy": false
     },
     {
-      "name": "Herd Baloth",
+      "name": "Evolution Witness",
       "count": 1,
-      "mana_cost": "{3}{G}{G}",
-      "cmc": 5.0,
-      "type_line": "Creature \u2014 Beast",
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elf Shaman Mutant",
       "types": [
         "Creature"
       ],
-      "oracle_text": "Whenever one or more +1/+1 counters are put on this creature, you may create a 4/4 green Beast creature token.",
+      "oracle_text": "{1}{G}: Adapt 2. (If this creature has no +1/+1 counters on it, put two +1/+1 counters on it.)\nWhenever one or more +1/+1 counters are put on this creature, return target permanent card from your graveyard to your hand.",
       "color_identity": [
         "G"
       ],
-      "keywords": [],
+      "keywords": [
+        "Adapt"
+      ],
       "produced_mana": [],
-      "otags": [],
-      "price_eur": "0.21",
-      "set": "mh2",
-      "number": "165",
+      "otags": [
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "0.19",
+      "set": "mh3",
+      "number": "151",
       "foil": false,
       "buy": true
     },
@@ -866,28 +871,28 @@
       "buy": true
     },
     {
-      "name": "Inexorable Tide",
+      "name": "Defiler of Vigor",
       "count": 1,
-      "mana_cost": "{3}{U}{U}",
+      "mana_cost": "{3}{G}{G}",
       "cmc": 5.0,
-      "type_line": "Enchantment",
+      "type_line": "Creature \u2014 Phyrexian Wurm",
       "types": [
-        "Enchantment"
+        "Creature"
       ],
-      "oracle_text": "Whenever you cast a spell, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "oracle_text": "Trample\nAs an additional cost to cast green permanent spells, you may pay 2 life. Those spells cost {G} less to cast if you paid life this way. This effect reduces only the amount of green mana you pay.\nWhenever you cast a green permanent spell, put a +1/+1 counter on each creature you control.",
       "color_identity": [
-        "U"
+        "G"
       ],
       "keywords": [
-        "Proliferate"
+        "Trample"
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "2.04",
-      "set": "pip",
-      "number": "177",
+      "price_eur": "2.29",
+      "set": "dmu",
+      "number": "167",
       "foil": false,
-      "buy": false
+      "buy": true
     },
     {
       "name": "Scheming Aspirant",
@@ -1687,35 +1692,29 @@
       "buy": false
     },
     {
-      "name": "Awaken the Honored Dead",
+      "name": "Putrefy",
       "count": 1,
-      "mana_cost": "{B}{G}{U}",
+      "mana_cost": "{1}{B}{G}",
       "cmc": 3.0,
-      "type_line": "Enchantment \u2014 Saga",
+      "type_line": "Instant",
       "types": [
-        "Enchantment"
+        "Instant"
       ],
-      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI \u2014 Destroy target nonland permanent.\nII \u2014 Mill three cards.\nIII \u2014 You may discard a card. When you do, return target creature or land card from your graveyard to your hand.",
+      "oracle_text": "Destroy target artifact or creature. It can't be regenerated.",
       "color_identity": [
         "B",
-        "G",
-        "U"
+        "G"
       ],
-      "keywords": [
-        "Mill"
-      ],
+      "keywords": [],
       "produced_mana": [],
       "otags": [
-        "removal",
-        "mill",
-        "recursion",
-        "card-advantage"
+        "removal"
       ],
-      "price_eur": "0.46",
-      "set": "fdn",
-      "number": "72",
+      "price_eur": "0.20",
+      "set": "pip",
+      "number": "219",
       "foil": false,
-      "buy": true
+      "buy": false
     },
     {
       "name": "Sunken Hollow",

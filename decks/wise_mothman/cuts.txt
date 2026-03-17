@@ -20,3 +20,8 @@
 1x Contaminated Drink (pip) 99 [Draw] -> Simic Ascendancy (alt wincon)
 1x Putrefy (pip) 219 [Removal] -> Massacre Girl (creature-based wipe)
 1x Undead Alchemist (mic) 105 [Mill] -> Stubborn Denial (1-mana hard counter with ferocious)
+
+# Round 3 cuts (Awaken reverted, counter sources, recursion)
+1x Awaken the Honored Dead -> Putrefy (reverted - Awaken returns to hand not battlefield, needs discard)
+1x Herd Baloth (mh2) 165 [Creature] -> Evolution Witness (repeatable recursion on counter triggers)
+1x Inexorable Tide (pip) 177 [Proliferate] -> Defiler of Vigor (independent counter source for whole board)
