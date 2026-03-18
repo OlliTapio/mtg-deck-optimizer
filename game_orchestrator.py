@@ -493,21 +493,30 @@ class GameEngine:
             if ('Instant' in tl or 'Flash' in kw) and can_cast(player, c):
                 return True
 
-        # Activated abilities on untapped permanents
+        # Activated abilities on untapped permanents (skip pure mana sources)
         for perm in player.battlefield:
             if perm.tapped:
                 continue
-            oracle = perm.card.get('oracle_text', '')
-            # Tap abilities: "{T}:" or "{cost}, {T}:"
-            if '{T}' in oracle and not perm.is_land():
-                # Has a tap ability that isn't just mana
-                if any(kw in oracle.lower() for kw in ['destroy', 'exile', 'damage',
-                       'counter', 'return', 'sacrifice', 'tap target', 'prevent']):
+            if perm.is_land():
+                continue
+            oracle = perm.card.get('oracle_text', '').lower()
+            produced = perm.card.get('produced_mana', [])
+
+            # Skip pure mana rocks/dorks (cards whose only ability is producing mana)
+            if produced and not any(kw in oracle for kw in ['destroy', 'exile', 'damage',
+                    'counter', 'return', 'tap target', 'prevent', 'each opponent',
+                    'sacrifice .* destroy', 'sacrifice .* prevent', 'sacrifice .* return']):
+                continue
+
+            # Tap abilities with interaction effects
+            if '{t}' in oracle:
+                if any(kw in oracle for kw in ['destroy', 'exile', 'damage to',
+                       'tap target', 'prevent all combat']):
                     return True
-            # Sacrifice abilities: "Sacrifice ~:" or "Sacrifice this"
-            if 'sacrifice' in oracle.lower() and ':' in oracle:
-                if any(kw in oracle.lower() for kw in ['destroy', 'prevent', 'return',
-                       'damage', 'each opponent', 'target']):
+            # Sacrifice abilities with effects (Seal of Doom, Spore Frog, etc.)
+            if 'sacrifice' in oracle and ':' in oracle:
+                if any(kw in oracle for kw in ['destroy target', 'prevent all combat',
+                       'each opponent loses', 'deals damage']):
                     return True
 
         return False
@@ -665,18 +674,22 @@ def main():
                                                      'return target', 'shuffle target']):
                         return f"cast {c['name']}"
 
-            # Check activated abilities on untapped permanents
+            # Check activated abilities on untapped non-land, non-mana-only permanents
             for perm in responder.battlefield:
-                if perm.tapped:
+                if perm.tapped or perm.is_land():
                     continue
                 oracle = perm.card.get('oracle_text', '').lower()
+                produced = perm.card.get('produced_mana', [])
+                # Skip pure mana sources
+                if produced and 'destroy' not in oracle and 'prevent' not in oracle and 'damage' not in oracle:
+                    continue
                 # Sacrifice-based removal (Seal of Doom, Spore Frog, etc.)
                 if 'sacrifice' in oracle and any(kw in oracle for kw in
                         ['destroy target', 'prevent all combat', 'each opponent loses']):
                     return f"activate {perm.name}"
-                # Tap abilities (Goldmeadow Harrier, Brion fling, etc.)
+                # Tap abilities with real effects (Goldmeadow Harrier, Brion fling, etc.)
                 if '{t}' in oracle and any(kw in oracle for kw in
-                        ['tap target', 'damage', 'destroy']):
+                        ['tap target', 'deals damage', 'destroy target']):
                     return f"activate {perm.name}"
 
             return "pass"
