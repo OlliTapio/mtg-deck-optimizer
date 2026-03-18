@@ -82,7 +82,7 @@ Goal: cast Brion turn 3-4, start stealing and throwing by turn 4-5. Brion costs 
 
 ## Game Simulation Findings (2026-03-18)
 
-### Performance: 4 LLM games, 1 win (Round 2 Pod B seed 10132)
+### Performance: 6 LLM games, 2 wins
 - Steal-and-fling is the most interactive mechanic in the portfolio — great table politics
 - The Akroan War was the best play across all games (steal Miirym, Chapter II destroyed Brigid's whole board)
 - Captivating Crew as repeatable steal for {2}{R} is the deck's best engine piece
@@ -109,6 +109,13 @@ Goal: cast Brion turn 3-4, start stealing and throwing by turn 4-5. Brion costs 
 - Mimic Vat imprinting Mothman gave repeatable hasty flying tokens — great tech
 - Akroan War Chapter II destroyed Brigid's board AGAIN (8 creatures → 2)
 - Fling spell is redundant when Brion is on board with Greaves — consider cutting
+
+### Round 3 Findings (seed 25180, won at 4 life!)
+- Won by Boros Charm to Mothman's face (4 damage at 2 life) before 39 power of attackers connected
+- Zealous Conscripts stole Consuming Aberration (28/28) and one-shot Muldrotha — best play of the tournament
+- Sacced stolen Aberration to Altar of Dementia, milling Mothman 28 cards
+- 0-land mulligan to 5 nearly ended the game before it started — MUST add more lands
+- Boros Charm proved its worth as both finisher and board protection — keep forever
 
 ## Origin
 Custom build — Boros threaten-and-throw theme

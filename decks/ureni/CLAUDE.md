@@ -83,17 +83,18 @@ Goal: cast Ureni by turn 5. He costs {4}{G}{U}{R} — all 3 colors required, 7 t
 - **Lathliss, Dragon Queen** — {4}{R}{R} always worse than casting Ureni or another dragon with the trigger
 
 ### Improvement Priorities
-1. **Deck may be too strong for Bracket 3** — warps every pod, consider cutting ramp for balance
+1. **Deck may be too strong for Bracket 3** — warps every pod, consider cutting ramp for balance (but some LLM game results inflated by hallucinated cards not in the actual deck)
 2. Add 1-2 cheap interaction (Lightning Bolt, another counterspell) to survive mid-game when Ureni is in CZ
 3. Replace Path of Ancestry with a basic or untapped dual
 4. Heroic Intervention to protect the dragon army from board wipes
 
 ### Archenemy Game (Round 3, seed 73399)
 - Won at 6 life despite 3 players focusing all attacks and removal on Ureni
-- Ancient Copper Dragon generated 33 Treasures — should be cut (too game-warping)
-- Dragon Tempest scaling ETB burn (8-9 per dragon) killed players without combat
-- Miirym copying Demanding Dragon = forced sacrifice + double Tempest burn = 17 damage in one trigger
-- Beast Within destroying Temur Ascendancy was the best play against Ureni — target the enchantment engines, not the creatures
+- NOTE: LLM agent hallucinated Ancient Copper Dragon (not in deck) — Treasure findings invalid
+- Dragon Tempest scaling ETB burn is still the real threat — confirmed across multiple games
+- Miirym copying dragons doubles ETB triggers including Dragon Tempest
+- Beast Within destroying Temur Ascendancy was the best play against Ureni — target the enchantment engines
+- LLM simulation limitation: agents don't verify cards against actual decklist, may invent cards
 
 ## Origin
 Modified Tarkir Dragonstorm Commander precon (TDC)

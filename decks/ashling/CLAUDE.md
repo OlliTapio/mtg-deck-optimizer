@@ -16,7 +16,7 @@ Ashling, the Limitless
 
 ## Game Simulation Findings (2026-03-18)
 
-### Performance: 3 LLM games, 0 wins (best: 2nd place T9)
+### Performance: 5 LLM games, 0 wins (best: 2nd place T9)
 - Fastest commander in the portfolio (T3-4 consistently)
 - Highest card throughput thanks to evoke-copy engine (Mulldrifter = draw 4, Shriekmaw = kill 2)
 - **Always targeted first** because it's the first visible threat at the table
@@ -37,6 +37,11 @@ Ashling, the Limitless
 2. Replace Cavalier of Thorns (GGG) with a castable Elemental
 3. Add more untapped red sources — commander costs {2}{R} but red was missing T1-3 repeatedly
 4. More cheap card draw to recover after board wipes
+
+### Round 3 Findings (seed 25180)
+- Bane of Progress entered as 14/14 destroying 13 artifacts/enchantments — surprise MVP, crippled all 3 opponents
+- Died to Living Death + Syr Konrad chain (13 drain from death triggers) — needs instant-speed graveyard hate or Heroic Intervention
+- 13 cards in hand by T7 through Risen Reef + evoke-copy engine. The deck generates absurd resources but can't survive focused attention
 
 ## Origin
 Modified Ashling precon (Elemental Companions Commander - ECC)
