@@ -555,12 +555,15 @@ class GameEngine:
 def main():
     ap = argparse.ArgumentParser(description='Game orchestrator for LLM multiplayer Commander')
     ap.add_argument('decklists', nargs='+', help='Paths to decklist files')
-    ap.add_argument('--seed', type=int, default=42)
+    ap.add_argument('--seed', type=int, default=None, help='Random seed (default: random)')
     ap.add_argument('--max-turns', type=int, default=12)
     ap.add_argument('--auto', action='store_true', help='Run with auto-pilot (no LLM)')
     ap.add_argument('--verbose', '-v', action='store_true', help='Show triggers and detailed output')
     args = ap.parse_args()
 
+    if args.seed is None:
+        args.seed = random.randint(1, 99999)
+    print(f"Seed: {args.seed}", file=sys.stderr)
     print("Loading decks...", file=sys.stderr)
     engine = GameEngine(args.decklists, seed=args.seed)
 
