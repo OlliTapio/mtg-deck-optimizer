@@ -4,7 +4,8 @@
 - **Bracket 2 (Core)** — see Bracket Rules below
 - Naya (RGW) lands/landfall/graveyard deck
 - Needs lands in graveyard fast to reduce Yuma's casting cost (8 CMC base, -1 per land in GY)
-- Desert subtheme: Deserts hitting graveyard create 4/2 Plant Warrior tokens with reach
+- Desert subtheme is central, not a "sub" theme: Deserts hitting graveyard create 4/2 Plant Warrior tokens with reach
+- Dune Chanter is an essential enabler — turns ALL lands into Deserts, so every land sacrifice/mill triggers Yuma's token creation. Do not cut.
 - Win condition: haste Plant tokens swinging for lethal
 - No board wipes needed — we ARE the threat that needs answering
 - Keep instant-speed interaction high to protect the plan
@@ -50,3 +51,28 @@ Goal: cast Yuma by turn 4-5. He costs {5}{R}{G}{W} minus 1 per land in graveyard
 - T2: Land, Satyr Wayfinder (mill 2 lands to GY → Yuma costs 6)
 - T3: Land, Harrow (sac land to GY → Yuma costs 5, you have 4 lands)
 - T4: Land, cast Yuma for 5 mana
+
+## Game Simulation Findings (2026-03-18)
+
+### Performance: 3 LLM games, 1 win (won pod without Ureni)
+- Dune Chanter is THE make-or-break card — turns every land sac into a 4/2 Plant token
+- Zuran Orb + Splendid Reclamation + Dune Chanter = mass token generation + mass landfall
+- Overwhelming Stampede (+5/+5 trample to all) was the game-winning finisher
+- **Green drought T1-3 is recurring** — deserts don't produce green, Lotus Cobra needs green to cast
+- Commander was flung by Brion twice in one game — needs protection
+
+### MVP Cards
+- **Dune Chanter** — makes all lands Deserts, every sacrifice triggers Yuma's token creation
+- **Zuran Orb** — free sacrifice outlet, 2 life per land + Desert tokens with Dune Chanter
+- **Lotus Cobra** — landfall mana enables explosive turns with Harrow/Springbloom
+
+### Underperformers
+- **Brass's Tunnel-Grinder** — 3 mana for minimal value, Discover side never flipped
+- **Embrace the Unknown** — impulse draw never found a window (always had better 3-mana plays)
+- **Stroke of Midnight** — sat in hand, never had the spare 3 mana at instant speed
+
+### Improvement Priorities
+1. More untapped green sources early — replace a tapped Desert with a basic Forest
+2. Add commander protection (Swiftfoot Boots, Lightning Greaves) — Brion stole and flung Yuma TWICE
+3. Consider Bountiful Landscape or similar for smoother early green access
+4. The land-sacrifice engine is the win condition — protect Dune Chanter too (only 1 copy)

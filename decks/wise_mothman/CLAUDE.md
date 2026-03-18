@@ -57,3 +57,27 @@ Goal: cast Mothman turn 3-4. He costs {1}{B}{G}{U} — all 3 colors required.
 - Farseek and Nature's Lore can find Sunken Hollow, Hinterland Harbor, etc. — use them to fix the missing color
 - Tainted lands need a Swamp — keep Swamp-producing lands in opening hand when possible
 - Many tapped lands (Temples, Opulent Palace) — plan your first 3 turns carefully around tap timing
+
+## Game Simulation Findings (2026-03-18)
+
+### Performance: 3 LLM games, 0 wins (best: 2nd place T12)
+- Commander online T4 consistently, rad counters pressure the whole table
+- Winding Constrictor doubles rad counters — terrifying when combined with Thrummingbird proliferate
+- Fathom Mage + counter doublers drew 6 cards in one shot (best single draw in any game)
+- **Board wipes are devastating** — all +1/+1 counter investment lost instantly
+
+### MVP Cards
+- **Winding Constrictor** — doubled rad counters on all opponents, doubled +1/+1 growth
+- **Fathom Mage** — evolved with counter doublers for 6 cards in one trigger
+- **Thrummingbird** — proliferate on combat damage compounded every counter type
+
+### Underperformers
+- **Singularity Rupture** — board wipe that also milled Muldrotha's graveyard, actively helping the opponent
+- **Vigor** — drawn late, too expensive to cast after board wipes
+- **Reanimate** — nothing worth reanimating in first 5 turns
+
+### Improvement Priorities
+1. Add standalone threats that don't depend on counters (Herald of Secret Streams for unblockable)
+2. Add board protection (Inspiring Call — draw + indestructible for creatures with counters)
+3. Replace Karn's Bastion (colorless) with a colored dual — 3-color deck can't afford colorless lands
+4. More cheap interaction to survive against Ureni's dragon army

@@ -63,5 +63,30 @@ Goal: cast Ureni by turn 5. He costs {4}{G}{U}{R} — all 3 colors required, 7 t
 - T4: Land, Frontier Siege (Khans mode = +2 mana)
 - T5: Ureni with mana to spare
 
+## Game Simulation Findings (2026-03-18)
+
+### Performance: 4 LLM games, 3 wins (dominant)
+- Won every game it was in except when table focused it early
+- Dragon Tempest + Temur Ascendancy = every dragon has haste + draws a card + burns on ETB
+- Hellkite Courser bypasses commander tax entirely (puts Ureni from CZ to battlefield)
+- Scourge of the Throne grants extra combats, Utvara Hellkite creates token army per attack
+- Typically untouched at 40 life while others fight, then alpha strikes T8-10
+
+### MVP Cards
+- **Dragon Tempest** — haste + scaling ETB burn killed Yuma from 40 life in one turn
+- **Temur Ascendancy** — haste + draw on every 4+ power creature = the engine
+- **Hellkite Courser** — cheats Ureni past 11-mana commander tax for free
+
+### Underperformers
+- **Path of Ancestry** — enters tapped, scry irrelevant when drawing 3-4 cards/turn
+- **Hammerhead Tyrant** — {4}{U}{U} double blue never found a window vs better plays
+- **Lathliss, Dragon Queen** — {4}{R}{R} always worse than casting Ureni or another dragon with the trigger
+
+### Improvement Priorities
+1. **Deck may be too strong for Bracket 3** — warps every pod, consider cutting ramp for balance
+2. Add 1-2 cheap interaction (Lightning Bolt, another counterspell) to survive mid-game when Ureni is in CZ
+3. Replace Path of Ancestry with a basic or untapped dual
+4. Heroic Intervention to protect the dragon army from board wipes
+
 ## Origin
 Modified Tarkir Dragonstorm Commander precon (TDC)
