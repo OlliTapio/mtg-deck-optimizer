@@ -3,7 +3,8 @@
 ## Win Conditions (in order)
 1. **Commander damage** — Mothman grows via +1/+1 counters each attack (doubled by Hardened Scales, Branching Evolution, Corpsejack Menace). A flying beater with few blockers reaches 21 commander damage in 3-4 swings.
 2. **Combat beatdown** — the whole board grows from counter doublers + proliferate. Swing wide with big creatures.
-3. **Combo: Vigor + Walking Ballista + Fathom Mage + Psychic Corrosion** — Vigor turns damage into +1/+1 counters, Ballista pings trigger Fathom Mage draws, Psychic Corrosion mills on each draw. Mills everyone out.
+3. **Combo A: Walking Ballista + Vigor + counter doubler** — Ballista pings itself, Vigor replaces damage with +1/+1 counters, counter doubler (Hardened Scales/Branching Evolution/Corpsejack) makes it grow each loop. Infinite damage to any target.
+4. **Combo B: Fathom Mage + Mothman + Psychic Corrosion** — Mothman's +1/+1 counters trigger Fathom Mage draws, Psychic Corrosion mills opponents on each draw. Infinite mill.
 
 Rad counters are **incidental** — chip damage and mill disruption, NOT the primary plan.
 
