@@ -23,6 +23,9 @@ python3 deck_analyzer.py decks/<deck>/decklist.txt --search "rad counter"
 # Simulate opening hands
 python3 hand_simulator.py decks/<deck>/decklist.txt [n_hands]
 
+# Simulate a game (interactive or subagent-driven)
+python3 game_simulator.py decks/<deck>/decklist.txt [--opponents aggro,midrange,control] [--seed 42] [--max-turns 15]
+
 # Check prices for entire deck or specific cards
 python3 price_check.py --deck decks/<deck>/decklist.txt
 python3 price_check.py --cards "Card Name" "Card Name"
@@ -77,6 +80,7 @@ Each deck specifies its bracket in its CLAUDE.md. Never suggest cards that viola
 - **Colorless/Land:** Ancient Tomb, Chrome Mox, The One Ring, The Tabernacle at Pendrell Vale, Grim Monolith, Lion's Eye Diamond, Mox Diamond, Mana Vault, Glacial Chasm, Mishra's Workshop, Field of the Dead, Panoptic Mirror, Farewell, Biorhythm, Gifts Ungiven
 
 ## Key Rules
+- **Always run the tools** — never manually count card types, lands, or categories from decklist.txt. Use `deck_analyzer.py` for type breakdowns and `otag_fetcher.py` for functional categories. The decklist file is an Archidekt export; only the tools parse it correctly against Scryfall data.
 - Always use Scryfall data and otags for card categorization — never trust manual tags in decklist files
 - Parser tags are only reliable for deck membership status (Buy, noDeck, Maybeboard)
 - Caches: `cache/cards.json` (Scryfall card data), `cache/otags.json` (Scryfall otags)
@@ -84,6 +88,16 @@ Each deck specifies its bracket in its CLAUDE.md. Never suggest cards that viola
 - Budget: no single card over €10
 - No goodstuff — suggestions must synergize with the specific deck's theme
 - Use Command Zone template (2025 New Era) as guideline for category counts
+
+## Template & Curve Enforcement
+- **Defend the template** — resist changes that move category counts away from the Command Zone template targets unless there's a specific, articulated reason (e.g. commander ability compensates for a category, or the deck's strategy genuinely requires deviation). Push back on swaps that weaken underrepresented categories.
+- **Mana curve must match commander and abilities** — after any swap, check that the mana curve supports the deck's game plan. A deck with a 5CMC commander needs enough early ramp to cast it on curve. Evoke/cost-reduction commanders can tolerate higher average CMC. Flag swaps that raise average CMC without adding proportional value.
+- **Run deck_analyzer.py after every decklist change** — verify the template check, mana curve, and category counts still look healthy. If a swap pushes a category below template minimums, flag it.
+
+## Bracket Synergy Checks
+- **Every card suggestion must fit the deck's bracket** — check the deck's CLAUDE.md for its bracket, then verify the suggested card doesn't violate bracket restrictions (Game Changers list, combo density, power level).
+- **Synergy over power** — cards should synergize with the specific commander's abilities and the deck's stated theme, not just be generically strong. A card that's powerful but off-theme is worse than a slightly weaker card that enables the deck's core game plan.
+- **Flag bracket drift** — if accumulated swaps are pushing a deck toward a higher bracket (more tutors, more efficient combos, stronger individual cards), warn about bracket creep even if no single card violates the rules.
 
 ## Deck folder structure
 Each deck lives in `decks/<name>/` with:
