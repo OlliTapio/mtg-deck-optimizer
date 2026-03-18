@@ -23,8 +23,17 @@ python3 deck_analyzer.py decks/<deck>/decklist.txt --search "rad counter"
 # Simulate opening hands
 python3 hand_simulator.py decks/<deck>/decklist.txt [n_hands]
 
-# Simulate a game (interactive or subagent-driven)
+# Simulate a game vs simulated opponents (auto-pilot heuristic)
 python3 game_simulator.py decks/<deck>/decklist.txt [--opponents aggro,midrange,control] [--seed 42] [--max-turns 15]
+
+# Auto-pilot game (heuristic AI plays the deck, no interaction needed)
+python3 auto_pilot.py decks/<deck>/decklist.txt [--seed 42] [--max-turns 15]
+
+# Multiplayer game: 2-4 real decks play against each other
+# Auto mode (heuristic AI for all players):
+python3 game_orchestrator.py decks/<a>/decklist.txt decks/<b>/decklist.txt decks/<c>/decklist.txt decks/<d>/decklist.txt --auto --seed 42 --max-turns 12
+# Multiplayer with N real decks (auto-pilot):
+python3 multiplayer_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt --ai auto --seed 42 --max-turns 12
 
 # Check prices for entire deck or specific cards
 python3 price_check.py --deck decks/<deck>/decklist.txt
@@ -44,6 +53,28 @@ python3 scryfall_search.py --lookup "Card Name" --verbose
 # Search Scryfall with raw query
 python3 scryfall_search.py --search "id<=bug f:commander o:proliferate" --verbose
 ```
+
+## Game Simulator Architecture
+
+Three layers of game simulation, from simple to full LLM:
+
+### 1. Auto-pilot (`auto_pilot.py`)
+Heuristic AI plays a single deck vs 3 simulated opponents. Good for testing mana bases and curves. No card abilities or triggers.
+
+### 2. Multiplayer engine (`multiplayer_game.py`, `game_orchestrator.py`)
+2-4 real decks play against each other with proper turn order, combat, and priority. Auto mode uses heuristics. The orchestrator provides per-player state snapshots with full oracle text and trigger detection.
+
+### 3. LLM multiplayer (subagent-driven)
+Claude subagents pilot each deck. The flow:
+1. Launch one persistent Agent per player — give it the deck's CLAUDE.md and opening hand
+2. The main conversation acts as engine + judge
+3. Each turn: run `game_orchestrator.py` to produce state snapshots, SendMessage each agent with their snapshot
+4. Agent responds with an action (e.g. `cast Cultivate`, `attack all -> Muldrotha`)
+5. Engine resolves the action, detects triggers, updates state
+6. If an agent says `JUDGE: <question>`, the game pauses for the judge to rule on complex interactions
+7. Agents can set auto-skip if they have no instant-speed interaction (hidden from other players)
+
+Key design: **Players propose, Judge validates, Engine executes.** The engine handles zones/mana/combat math. Players see oracle text and propose creative plays. The judge validates against oracle text before the engine commits.
 
 ## Commander Bracket Rules (as of February 2026)
 
