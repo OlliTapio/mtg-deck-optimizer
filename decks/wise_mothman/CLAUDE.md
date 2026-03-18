@@ -81,3 +81,9 @@ Goal: cast Mothman turn 3-4. He costs {1}{B}{G}{U} — all 3 colors required.
 2. Add board protection (Inspiring Call — draw + indestructible for creatures with counters)
 3. Replace Karn's Bastion (colorless) with a colored dual — 3-color deck can't afford colorless lands
 4. More cheap interaction to survive against Ureni's dragon army
+
+### Round 2 Findings (confirmed)
+- Mothman grew to 15/15 in 3 attacks with Winding Constrictor + Hardened Scales + Branching Evolution — the engine WORKS
+- Winding Constrictor dying to ground combat collapsed everything — Inspiring Call would have saved it
+- Brion stole 15/15 Mothman and flung it for lethal — need hexproof (Swiftfoot Boots) or instant-speed protection
+- Conduit of Worlds confirmed too slow — 4 mana do-nothing when behind

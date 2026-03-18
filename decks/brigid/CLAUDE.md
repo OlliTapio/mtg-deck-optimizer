@@ -91,5 +91,11 @@ Goal: cast Brigid turn 3, start generating tokens and mana immediately.
 3. Add reach/flying answers (Sandsteppe Outcast? Or equipment with reach)
 4. Replace Mirrormind Crown with Swiftfoot Boots for commander protection
 
+### Round 2 Findings (confirmed)
+- Mulliganed to 5 AGAIN (1 land on 7-card hand). 35 lands is not enough — confirmed across 4 games
+- Akroan War Chapter II destroyed the board AGAIN (8 creatures → 2). Board protection is mandatory
+- Cloudgoat Ranger stranded in hand at 5 CMC — never hit 5 mana. Curve too high for 35 lands
+- Dundoolin Weaver confirmed underperformer — ETB fizzled, vanilla body
+
 ## Origin
 Custom build — all Lorwyn/Shadowmoor/Eclipsed Lorwyn Kithkin tribal

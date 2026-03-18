@@ -82,7 +82,7 @@ Goal: cast Brion turn 3-4, start stealing and throwing by turn 4-5. Brion costs 
 
 ## Game Simulation Findings (2026-03-18)
 
-### Performance: 3 LLM games, 0 wins (best: 2nd place T8)
+### Performance: 4 LLM games, 1 win (Round 2 Pod B seed 10132)
 - Steal-and-fling is the most interactive mechanic in the portfolio — great table politics
 - The Akroan War was the best play across all games (steal Miirym, Chapter II destroyed Brigid's whole board)
 - Captivating Crew as repeatable steal for {2}{R} is the deck's best engine piece
@@ -103,6 +103,12 @@ Goal: cast Brion turn 3-4, start stealing and throwing by turn 4-5. Brion costs 
 2. Replace Thornbite Staff with something useful (Sunforger for instant tutoring?)
 3. Add 1-2 more 2-CMC mana rocks — 1.6 average mulligans indicates mana issues
 4. Consider Soul Warden / Authority of the Consuls for incremental lifegain
+
+### Round 2 Findings (confirmed)
+- Brion won by stealing+flinging Mothman (15/15) and Yuma's commander — validates the steal-and-throw gameplan
+- Mimic Vat imprinting Mothman gave repeatable hasty flying tokens — great tech
+- Akroan War Chapter II destroyed Brigid's board AGAIN (8 creatures → 2)
+- Fling spell is redundant when Brion is on board with Greaves — consider cutting
 
 ## Origin
 Custom build — Boros threaten-and-throw theme

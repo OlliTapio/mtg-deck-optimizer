@@ -54,7 +54,7 @@ Goal: cast Yuma by turn 4-5. He costs {5}{R}{G}{W} minus 1 per land in graveyard
 
 ## Game Simulation Findings (2026-03-18)
 
-### Performance: 3 LLM games, 1 win (won pod without Ureni)
+### Performance: 4 LLM games, 1 win (won pod without Ureni)
 - Dune Chanter is THE make-or-break card — turns every land sac into a 4/2 Plant token
 - Zuran Orb + Splendid Reclamation + Dune Chanter = mass token generation + mass landfall
 - Overwhelming Stampede (+5/+5 trample to all) was the game-winning finisher
@@ -76,3 +76,8 @@ Goal: cast Yuma by turn 4-5. He costs {5}{R}{G}{W} minus 1 per land in graveyard
 2. Add commander protection (Swiftfoot Boots, Lightning Greaves) — Brion stole and flung Yuma TWICE
 3. Consider Bountiful Landscape or similar for smoother early green access
 4. The land-sacrifice engine is the win condition — protect Dune Chanter too (only 1 copy)
+
+### Round 2 Findings (confirmed)
+- Green drought T1-5 happened AGAIN (4th game in a row). Harrow fetched Mountain+Plains instead of Forest+Mountain. URGENT: add more green sources
+- Commander flung by Brion AGAIN (stolen with Kari Zev's Expertise + flung for 6). Swiftfoot Boots is critical
+- Dune Chanter came online T9 but too late — needs to come out T4-5 to matter
