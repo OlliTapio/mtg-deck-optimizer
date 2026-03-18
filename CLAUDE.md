@@ -42,6 +42,40 @@ python3 scryfall_search.py --lookup "Card Name" --verbose
 python3 scryfall_search.py --search "id<=bug f:commander o:proliferate" --verbose
 ```
 
+## Commander Bracket Rules (as of February 2026)
+
+Each deck specifies its bracket in its CLAUDE.md. Never suggest cards that violate the deck's bracket restrictions.
+
+### Bracket 1 (Exhibition)
+- Ultra-casual, theme-focused play
+- No Game Changers, no intentional two-card infinite combos, no mass land denial, no extra-turn cards
+- Games last 9+ turns
+
+### Bracket 2 (Core)
+- Approximately precon-level power
+- No Game Changers, no intentional two-card infinite combos, no mass land denial
+- Extra-turn cards in low quantities only, not chained
+- Games last 8+ turns
+
+### Bracket 3 (Upgraded)
+- Stronger than precons, souped-up decks
+- Up to three Game Changers allowed
+- No early-game two-card infinite combos (first ~6 turns), no mass land denial
+- Games last 6+ turns
+
+### Bracket 4 (Optimized)
+- High-powered Commander, no restrictions beyond banned list
+- Games may end turn 4+
+
+### Game Changers List (banned in Brackets 1–2, max 3 in Bracket 3)
+- **White:** Drannith Magistrate, Enlightened Tutor, Serra's Sanctum, Smothering Tithe, Teferi's Protection, Humility
+- **Blue:** Cyclonic Rift, Force of Will, Fierce Guardianship, Rhystic Study, Thassa's Oracle, Mystical Tutor, Narset Parter of Veils, Intuition, Consecrated Sphinx
+- **Black:** Bolas's Citadel, Demonic Tutor, Imperial Seal, Opposition Agent, Tergrid God of Fright, Vampiric Tutor, Ad Nauseam, Necropotence, Orcish Bowmasters, Notion Thief, Braids Cabal Minion
+- **Red:** Jeska's Will, Underworld Breach, Gamble
+- **Green:** Survival of the Fittest, Gaea's Cradle, Worldly Tutor, Crop Rotation, Seedborn Muse, Natural Order
+- **Multicolor:** Grand Arbiter Augustin IV, Aura Shards, Coalition Victory
+- **Colorless/Land:** Ancient Tomb, Chrome Mox, The One Ring, The Tabernacle at Pendrell Vale, Grim Monolith, Lion's Eye Diamond, Mox Diamond, Mana Vault, Glacial Chasm, Mishra's Workshop, Field of the Dead, Panoptic Mirror, Farewell, Biorhythm, Gifts Ungiven
+
 ## Key Rules
 - Always use Scryfall data and otags for card categorization — never trust manual tags in decklist files
 - Parser tags are only reliable for deck membership status (Buy, noDeck, Maybeboard)
