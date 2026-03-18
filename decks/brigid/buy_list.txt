@@ -1,0 +1,71 @@
+1 Ajani, Outland Chaperone
+1 Armored Ascension
+1 Ballynock Trapper
+1 Ballyrush Banneret
+1 Bristlebane Battler
+1 Brigid, Clachan's Heart // Brigid, Doun's Mind
+1 Brigid, Hero of Kinsbaile
+1 Brigid's Command
+1 Cenn's Enlistment
+1 Cenn's Heir
+1 Cenn's Tactician
+1 Chameleon Colossus
+1 Champion of the Clachan
+1 Chomping Changeling
+1 Clachan Festival
+1 Cloudgoat Ranger
+1 Crib Swap
+1 Dawn-Blessed Pennant
+1 Deglamer
+1 Dundoolin Weaver
+1 Eclipsed Kithkin
+1 Figure of Fable
+1 Galepowder Mage
+1 Gallant Fowlknight
+1 Goldmeadow Harrier
+1 Guardian Gladewalker
+1 Impostor of the Sixth Pride
+1 Irregular Cohort
+1 Keep Out
+1 Kinbinding
+1 Kinsbaile Aspirant
+1 Kinsbaile Borderguard
+1 Kinsbaile Cavalier
+1 Kinscaer Sentry
+1 Kithkeeper
+1 Kithkin Billyrider
+1 Kithkin Harbinger
+1 Kithkin Mourncaller
+1 Kithkin Rabble
+1 Knight of Meadowgrain
+1 Light from Within
+1 Masked Vandal
+1 Militia's Pride
+1 Mirror Entity
+1 Mirrormind Crown
+1 Mistmeadow Skulk
+1 Morningtide's Light
+1 Mosswort Bridge
+1 Mutavault
+1 Obsidian Battle-Axe
+1 Order of Whiteclay
+1 Patrol Signaler
+1 Personify
+1 Preeminent Captain
+1 Realmwalker
+1 Resplendent Mentor
+1 Runed Stalactite
+1 Rustic Clachan
+1 Selfless Safewright
+1 Shields of Velis Vel
+1 Springleaf Parade
+1 Stalactite Dagger
+1 Surge of Thoughtweft
+1 Temple Garden
+1 Thoughtweft Lieutenant
+1 Thoughtweft Trio
+1 Universal Automaton
+1 Veteran's Armaments
+1 Wary Farmer
+1 Windbrisk Heights
+1 Wizened Cenn
