@@ -1,5 +1,12 @@
 # The Wise Mothman
 
+## Win Conditions (in order)
+1. **Commander damage** — Mothman grows via +1/+1 counters each attack (doubled by Hardened Scales, Branching Evolution, Corpsejack Menace). A flying beater with few blockers reaches 21 commander damage in 3-4 swings.
+2. **Combat beatdown** — the whole board grows from counter doublers + proliferate. Swing wide with big creatures.
+3. **Combo: Vigor + Walking Ballista + Fathom Mage + Psychic Corrosion** — Vigor turns damage into +1/+1 counters, Ballista pings trigger Fathom Mage draws, Psychic Corrosion mills on each draw. Mills everyone out.
+
+Rad counters are **incidental** — chip damage and mill disruption, NOT the primary plan.
+
 ## Design Principles
 - No generic goodstuff — every card should synergize with this deck's specific theme
 - Win with style through synergistic loops, not raw power
