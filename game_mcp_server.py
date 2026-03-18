@@ -259,15 +259,30 @@ def main():
                     print(json.dumps({"ok": False, "error": f"Unknown tool: {tool}"}), flush=True)
             except Exception as e:
                 print(json.dumps({"ok": False, "error": str(e)}), flush=True)
-    else:
-        # Single command mode: python3 game_mcp_server.py '{"tool":"new_game","args":{"decklists":[...]}}'
-        if len(sys.argv) < 2:
-            print("Usage:")
-            print("  Server: python3 game_mcp_server.py --serve")
-            print("  Single: python3 game_mcp_server.py '{\"tool\":\"new_game\",\"args\":{...}}'")
-            print(f"\nTools: {', '.join(TOOLS.keys())}")
-            sys.exit(1)
+    elif len(sys.argv) >= 2 and sys.argv[1] == 'new_game':
+        # Quick CLI: python3 game_mcp_server.py new_game deck1 deck2 deck3 deck4 [--seed N]
+        decklists = []
+        seed = None
+        i = 2
+        while i < len(sys.argv):
+            if sys.argv[i] == '--seed' and i + 1 < len(sys.argv):
+                seed = int(sys.argv[i + 1])
+                i += 2
+            else:
+                decklists.append(sys.argv[i])
+                i += 1
+        result = new_game(decklists, seed=seed)
+        print(json.dumps(result, indent=2))
+        # Also print hands
+        for p in result['players']:
+            hand = get_hand(p['name'])
+            print(f"\n{p['name']}:")
+            for c in hand['hand']:
+                star = ' ★' if c['castable'] else ''
+                print(f"  {c['name']}  {c['mana_cost']}  [{c['type_line']}]{star}")
 
+    elif len(sys.argv) >= 2 and sys.argv[1].startswith('{'):
+        # JSON command mode: python3 game_mcp_server.py '{"tool":"...","args":{...}}'
         cmd = json.loads(sys.argv[1])
         tool = cmd.get('tool', '')
         args = cmd.get('args', {})
@@ -276,6 +291,14 @@ def main():
             print(json.dumps(result, indent=2))
         else:
             print(json.dumps({"error": f"Unknown tool: {tool}"}))
+
+    else:
+        print("Usage:")
+        print("  Quick:  python3 game_mcp_server.py new_game deck1.txt deck2.txt deck3.txt deck4.txt [--seed N]")
+        print("  Server: python3 game_mcp_server.py --serve")
+        print("  JSON:   python3 game_mcp_server.py '{\"tool\":\"...\",\"args\":{...}}'")
+        print(f"\nTools: {', '.join(TOOLS.keys())}")
+        sys.exit(1)
 
 
 TOOLS = {
