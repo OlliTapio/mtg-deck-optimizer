@@ -558,6 +558,7 @@ def main():
     ap.add_argument('--seed', type=int, default=42)
     ap.add_argument('--max-turns', type=int, default=12)
     ap.add_argument('--auto', action='store_true', help='Run with auto-pilot (no LLM)')
+    ap.add_argument('--verbose', '-v', action='store_true', help='Show triggers and detailed output')
     args = ap.parse_args()
 
     print("Loading decks...", file=sys.stderr)
@@ -570,7 +571,7 @@ def main():
 
     if args.auto:
         from auto_pilot import pick_land_to_play, pick_spells_to_cast
-        # Auto-pilot loop
+
         while engine.turn <= args.max_turns and not engine.game_over:
             drew = engine.begin_turn()
             player = engine.active_player
@@ -578,11 +579,15 @@ def main():
                 engine.advance_turn()
                 continue
 
+            actions = []
+
             # Main 1: play land + cast spells
             engine.phase = "main1"
             land = pick_land_to_play(player)
             if land:
-                engine.resolve_action(player, f"play {land['name']}")
+                ok, msg, _ = engine.resolve_action(player, f"play {land['name']}")
+                if ok:
+                    actions.append(msg)
 
             for _ in range(5):
                 spells = pick_spells_to_cast(player, player.commander_tax)
@@ -595,24 +600,41 @@ def main():
                     ok, msg, _ = engine.resolve_action(player, f"cast {card['name']}")
                 if not ok:
                     break
-                print(f"  {player.name}: {msg}")
+                # Strip trigger noise unless verbose
+                msg_clean = msg.split('\n')[0] if not args.verbose else msg
+                actions.append(msg_clean)
 
             # Combat: attack weakest
             engine.phase = "combat"
-            creatures = [p for p in player.battlefield if p.is_creature() and not p.tapped and not p.summoning_sick]
+            creatures = [perm for perm in player.battlefield if perm.is_creature() and not perm.tapped and not perm.summoning_sick]
             if creatures:
-                opponents = [p for p in engine.players if p is not player and p.life > 0]
+                opponents = [op for op in engine.players if op is not player and op.life > 0]
                 if opponents:
                     target = min(opponents, key=lambda o: o.life)
                     ok, msg, _ = engine.resolve_action(player, f"attack all -> {target.name}")
                     if ok:
-                        print(f"  {player.name}: {msg}")
+                        actions.append(msg)
 
             # Discard
             while len(player.hand) > 7:
                 worst = max(player.hand, key=lambda c: c.get('cmc', 0))
                 player.hand.remove(worst)
                 player.graveyard.append(worst)
+
+            # Compact output: one line per player turn
+            if actions:
+                statuses = ' | '.join(f'{op.name[:10]}:{op.life}' for op in engine.players)
+                action_str = ' → '.join(actions)
+                print(f"T{engine.turn} {player.name[:15]:15s} {action_str}  [{statuses}]")
+
+            for op in engine.players:
+                if op.life <= 0 and op.life > -999:
+                    print(f"  *** {op.name} ELIMINATED! ***")
+                    op.life = -999
+
+            alive = [op for op in engine.players if op.life > 0]
+            if len(alive) <= 1:
+                engine.game_over = True
 
             engine.advance_turn()
 
