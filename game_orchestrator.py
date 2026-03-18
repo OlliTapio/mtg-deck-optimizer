@@ -397,6 +397,29 @@ class GameEngine:
                 return True, f"casts {card['name']}", False
             return False, f"cannot cast {card['name']} (not enough mana)", False
 
+        # Activate ability
+        if action_lower.startswith("activate "):
+            perm_name = action[9:].strip()
+            perm = self._find_permanent(player, perm_name)
+            if not perm:
+                return False, f"'{perm_name}' not on your battlefield", False
+            oracle = perm.card.get('oracle_text', '').lower()
+
+            # Sacrifice abilities (Seal of Doom, Spore Frog, etc.)
+            if 'sacrifice' in oracle:
+                player.battlefield.remove(perm)
+                player.graveyard.append(perm.card)
+                self.events.append(f"{player.name} activates {perm.name} (sacrifice)")
+                return True, f"activates {perm.name} (sacrificed)", False
+
+            # Tap abilities
+            if '{t}' in oracle and not perm.tapped:
+                perm.tapped = True
+                self.events.append(f"{player.name} activates {perm.name} (tap)")
+                return True, f"activates {perm.name} (tapped)", False
+
+            return False, f"can't activate {perm.name}", False
+
         # Attack
         if action_lower.startswith("attack "):
             return self._resolve_attack(player, action)
@@ -456,6 +479,61 @@ class GameEngine:
                 self.events.append(f"{name} eliminated by {attacker.name}!")
 
         return True, msg, False
+
+    def has_instant_speed(self, player):
+        """Check if player has any instant-speed options available.
+
+        Checks: instants/flash in hand, activated abilities on untapped permanents,
+        sacrifice abilities on permanents (Seal of Doom, Spore Frog, etc.)
+        """
+        # Instants and flash creatures in hand
+        for c in player.hand:
+            tl = c.get('type_line', '')
+            kw = c.get('keywords', [])
+            if ('Instant' in tl or 'Flash' in kw) and can_cast(player, c):
+                return True
+
+        # Activated abilities on untapped permanents
+        for perm in player.battlefield:
+            if perm.tapped:
+                continue
+            oracle = perm.card.get('oracle_text', '')
+            # Tap abilities: "{T}:" or "{cost}, {T}:"
+            if '{T}' in oracle and not perm.is_land():
+                # Has a tap ability that isn't just mana
+                if any(kw in oracle.lower() for kw in ['destroy', 'exile', 'damage',
+                       'counter', 'return', 'sacrifice', 'tap target', 'prevent']):
+                    return True
+            # Sacrifice abilities: "Sacrifice ~:" or "Sacrifice this"
+            if 'sacrifice' in oracle.lower() and ':' in oracle:
+                if any(kw in oracle.lower() for kw in ['destroy', 'prevent', 'return',
+                       'damage', 'each opponent', 'target']):
+                    return True
+
+        return False
+
+    def get_priority_responses(self, casting_player, spell_description, respond_fn):
+        """Give each opponent a chance to respond to a spell/action.
+
+        respond_fn(player, event_description) -> action string or 'pass'
+        Returns list of (player, action, result) for any responses.
+        """
+        responses = []
+        idx = self.players.index(casting_player)
+        for i in range(1, len(self.players)):
+            opp_idx = (idx + i) % len(self.players)
+            opp = self.players[opp_idx]
+            if opp.life <= 0 or opp is casting_player:
+                continue
+            if not self.has_instant_speed(opp):
+                continue
+            action = respond_fn(opp, spell_description)
+            if action and action.strip().lower() != 'pass':
+                ok, msg, judge = self.resolve_action(opp, action)
+                if ok:
+                    self.events.append(f"  ↪ {opp.name} responds: {msg}")
+                    responses.append((opp, action, msg))
+        return responses
 
     def _find_in_hand(self, player, name):
         name_lower = name.lower()
@@ -575,6 +653,34 @@ def main():
     if args.auto:
         from auto_pilot import pick_land_to_play, pick_spells_to_cast
 
+        def auto_respond(responder, event_description):
+            """Auto-pilot instant-speed response: cast instants or use activated abilities."""
+            # Check instants in hand first
+            for c in responder.hand:
+                tl = c.get('type_line', '')
+                kw = c.get('keywords', [])
+                if ('Instant' in tl or 'Flash' in kw) and can_cast(responder, c):
+                    oracle = c.get('oracle_text', '').lower()
+                    if any(kw in oracle for kw in ['destroy', 'exile', 'counter', 'damage',
+                                                     'return target', 'shuffle target']):
+                        return f"cast {c['name']}"
+
+            # Check activated abilities on untapped permanents
+            for perm in responder.battlefield:
+                if perm.tapped:
+                    continue
+                oracle = perm.card.get('oracle_text', '').lower()
+                # Sacrifice-based removal (Seal of Doom, Spore Frog, etc.)
+                if 'sacrifice' in oracle and any(kw in oracle for kw in
+                        ['destroy target', 'prevent all combat', 'each opponent loses']):
+                    return f"activate {perm.name}"
+                # Tap abilities (Goldmeadow Harrier, Brion fling, etc.)
+                if '{t}' in oracle and any(kw in oracle for kw in
+                        ['tap target', 'damage', 'destroy']):
+                    return f"activate {perm.name}"
+
+            return "pass"
+
         while engine.turn <= args.max_turns and not engine.game_over:
             drew = engine.begin_turn()
             player = engine.active_player
@@ -607,6 +713,13 @@ def main():
                 msg_clean = msg.split('\n')[0] if not args.verbose else msg
                 actions.append(msg_clean)
 
+                # Priority: opponents can respond to spells
+                responses = engine.get_priority_responses(
+                    player, f"{player.name} {msg_clean}", auto_respond)
+                for opp, act, resp_msg in responses:
+                    resp_clean = resp_msg.split('\n')[0] if not args.verbose else resp_msg
+                    actions.append(f"↪{opp.name[:8]} responds: {resp_clean}")
+
             # Combat: attack weakest
             engine.phase = "combat"
             creatures = [perm for perm in player.battlefield if perm.is_creature() and not perm.tapped and not perm.summoning_sick]
@@ -617,6 +730,14 @@ def main():
                     ok, msg, _ = engine.resolve_action(player, f"attack all -> {target.name}")
                     if ok:
                         actions.append(msg)
+
+                    # Priority after attackers declared: opponents can respond
+                    if ok:
+                        responses = engine.get_priority_responses(
+                            player, f"{player.name} attacks", auto_respond)
+                        for opp, act, resp_msg in responses:
+                            resp_clean = resp_msg.split('\n')[0] if not args.verbose else resp_msg
+                            actions.append(f"↪{opp.name[:8]} responds: {resp_clean}")
 
             # Discard
             while len(player.hand) > 7:
