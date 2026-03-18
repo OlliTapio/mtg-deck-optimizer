@@ -4,6 +4,8 @@ import argparse
 import random
 import sys
 
+import os
+
 from card_cache import get_deck_cards
 from game_simulator import (
     GameState, Player, Opponent, Permanent,
@@ -11,7 +13,7 @@ from game_simulator import (
     get_available_mana, can_cast, tap_mana_for,
     play_land, cast_spell, create_token, resolve_combat,
     opponent_turn, check_game_over, format_state,
-    _post_game_summary,
+    _post_game_summary, parse_mulligan_guide,
 )
 
 
@@ -224,7 +226,12 @@ def run_auto_game(decklist_path, seed=None, max_turns=15, opponent_archetypes=No
     if opponent_archetypes is None:
         opponent_archetypes = ['aggro', 'midrange', 'control']
 
-    gs = init_game_from_cards(cards, seed=seed, opponent_archetypes=opponent_archetypes)
+    # Parse deck-specific mulligan guide from CLAUDE.md
+    deck_dir = os.path.dirname(os.path.abspath(decklist_path))
+    mulligan_guide = parse_mulligan_guide(deck_dir)
+
+    gs = init_game_from_cards(cards, seed=seed, opponent_archetypes=opponent_archetypes,
+                               mulligan_guide=mulligan_guide)
     rng = random.Random(seed)
 
     lines = []
@@ -233,8 +240,10 @@ def run_auto_game(decklist_path, seed=None, max_turns=15, opponent_archetypes=No
 
     cmdr_name = gs.player.command_zone[0]['name'] if gs.player.command_zone else "Unknown"
     log(f"=== Game Start: {cmdr_name} ===")
+    log(f"Mulligan guide: need colors {mulligan_guide.required_colors}, "
+        f"green={mulligan_guide.needs_green}, ramp={mulligan_guide.needs_ramp}")
     log(f"Opponents: {', '.join(o.name + ' (' + o.archetype + ')' for o in gs.opponents)}")
-    log(f"Opening hand: {', '.join(c['name'] for c in gs.player.hand)}")
+    log(f"Opening hand ({len(gs.player.hand)} cards): {', '.join(c['name'] for c in gs.player.hand)}")
 
     while gs.turn_number <= max_turns and not gs.game_over:
         auto_play_turn(gs, rng, log)

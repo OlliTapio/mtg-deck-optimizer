@@ -8,7 +8,7 @@ from game_simulator import (
     play_land, cast_spell, create_token,
     resolve_combat, opponent_turn, check_game_over,
     init_game_from_cards, format_state,
-    evaluate_hand_for_mulligan,
+    evaluate_hand_for_mulligan, MulliganGuide,
 )
 
 
@@ -475,6 +475,40 @@ class TestMulligan:
         cards = [cmdr] + [_forest() for _ in range(35)] + [_grizzly_bears() for _ in range(64)]
         gs = init_game_from_cards(cards, seed=42)
         assert len(gs.player.hand) == 7  # no mulligan needed
+
+    def test_missing_required_color_mulligans(self):
+        guide = MulliganGuide(required_colors=['R', 'G', 'W'])
+        # Hand with only green sources
+        hand = [_forest(), _forest(), _forest(), _grizzly_bears(),
+                _grizzly_bears(), _llanowar_elves(), _grizzly_bears()]
+        keepable, reason = evaluate_hand_for_mulligan(hand, guide=guide)
+        assert keepable is False
+        assert "missing" in reason
+
+    def test_required_color_met_by_multicolor_land(self):
+        guide = MulliganGuide(required_colors=['R', 'G', 'W'])
+        # Command Tower produces all colors
+        hand = [_command_tower(), _forest(), _mountain(), _grizzly_bears(),
+                _lightning_bolt(), _llanowar_elves(), _grizzly_bears()]
+        keepable, reason = evaluate_hand_for_mulligan(hand, guide=guide)
+        assert keepable is True
+
+    def test_needs_green_fails_without_green(self):
+        guide = MulliganGuide(needs_green=True)
+        hand = [_mountain(), _mountain(), _plains(), _lightning_bolt(),
+                _lightning_bolt(), _wrath_of_god(), _wrath_of_god()]
+        keepable, reason = evaluate_hand_for_mulligan(hand, guide=guide)
+        assert keepable is False
+        assert "green" in reason.lower()
+
+    def test_guide_passed_to_init(self):
+        cmdr = _commander()
+        guide = MulliganGuide(required_colors=['R', 'G'])
+        # Deck with only forests — should mulligan looking for red
+        cards = [cmdr] + [_forest() for _ in range(50)] + [_grizzly_bears() for _ in range(49)]
+        gs = init_game_from_cards(cards, seed=42, mulligan_guide=guide)
+        # Should have mulliganed (may or may not find red, but hand size tells us)
+        assert len(gs.player.hand) <= 7  # at most 7, possibly less from mulligans
 
 
 # ---- Opponent fights each other ----

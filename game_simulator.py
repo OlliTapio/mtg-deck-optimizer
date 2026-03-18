@@ -171,27 +171,154 @@ class Player:
         return self  # caller shuffles and draws
 
 
-def evaluate_hand_for_mulligan(hand):
-    """Evaluate whether a 7-card hand is keepable.
+@dataclass
+class MulliganGuide:
+    """Deck-specific mulligan rules parsed from CLAUDE.md."""
+    required_colors: list = field(default_factory=list)  # e.g. ['R', 'G', 'W']
+    min_lands: int = 2
+    max_lands: int = 5
+    early_play_cmc: int = 3  # max CMC to count as "early play"
+    needs_ramp: bool = False  # deck with high-CMC commander needs ramp
+    needs_green: bool = False  # green is primary ramp color
+
+
+# Map color words to symbols
+_COLOR_WORD_MAP = {
+    'white': 'W', 'plains': 'W',
+    'blue': 'U', 'island': 'U',
+    'black': 'B', 'swamp': 'B',
+    'red': 'R', 'mountain': 'R',
+    'green': 'G', 'forest': 'G',
+}
+
+
+def parse_mulligan_guide(deck_dir):
+    """Parse mulligan rules from a deck's CLAUDE.md.
+
+    Extracts required colors, land thresholds, and ramp needs from the
+    mulligan strategy section.
+    """
+    import os
+    claude_path = os.path.join(deck_dir, 'CLAUDE.md')
+    if not os.path.exists(claude_path):
+        return MulliganGuide()
+
+    with open(claude_path) as f:
+        content = f.read()
+
+    guide = MulliganGuide()
+
+    # Extract commander cost to determine required colors
+    # Look for patterns like "costs {2}{R}{W}" or "{1}{B}{G}{U}"
+    cost_match = re.search(r'costs?\s+(\{[^.]+?\}(?:\s*(?:minus|—))?)', content)
+    if cost_match:
+        cost_str = cost_match.group(1)
+        for m in PIP_RE.finditer(cost_str):
+            color = m.group(1)
+            if color != 'C' and color not in guide.required_colors:
+                guide.required_colors.append(color)
+
+    # Check for "no green sources" or "green is primary" patterns
+    mulligan_section = ""
+    in_mulligan = False
+    for line in content.split('\n'):
+        if '## Mulligan' in line:
+            in_mulligan = True
+            continue
+        if in_mulligan and line.startswith('## ') and 'Mulligan' not in line:
+            break
+        if in_mulligan:
+            mulligan_section += line + '\n'
+
+    mulligan_lower = mulligan_section.lower()
+
+    # Detect "no X sources" requirements
+    for color_word, symbol in _COLOR_WORD_MAP.items():
+        if f'no {color_word} source' in mulligan_lower or f'no {color_word}' in mulligan_lower:
+            if symbol not in guide.required_colors:
+                guide.required_colors.append(symbol)
+
+    # Check if deck emphasizes green as essential
+    if 'green is the primary' in mulligan_lower or 'green is primary' in mulligan_lower:
+        guide.needs_green = True
+    if 'no green' in mulligan_lower:
+        guide.needs_green = True
+
+    # Check if high-CMC commander means ramp is essential
+    if 'ramp' in mulligan_lower and ('auto-keep' in mulligan_lower or 'strong keep' in mulligan_lower):
+        guide.needs_ramp = True
+
+    # Check for "all high-CMC" or "all 4+" or "all top-end" mulligan triggers
+    if 'all 4+' in mulligan_lower or 'all high-cmc' in mulligan_lower or 'all top-end' in mulligan_lower:
+        guide.early_play_cmc = 3
+    if 'all 5+' in mulligan_lower:
+        guide.early_play_cmc = 4
+
+    return guide
+
+
+def _land_produces_color(card, color):
+    """Check if a land/mana source can produce a specific color."""
+    produced = card.get('produced_mana', [])
+    return color in produced
+
+
+def evaluate_hand_for_mulligan(hand, guide=None):
+    """Evaluate whether a 7-card hand is keepable using deck-specific rules.
 
     Returns (keepable: bool, reason: str).
-    A hand needs 2-5 lands and at least 1 playable card in the first 3 turns.
     """
+    if guide is None:
+        guide = MulliganGuide()
+
     lands = [c for c in hand if 'Land' in c.get('type_line', '')]
     nonlands = [c for c in hand if c not in lands]
+    # Include non-land mana sources (mana dorks, rocks)
+    mana_sources = lands + [c for c in nonlands if c.get('produced_mana')]
     land_count = len(lands)
 
+    # Hard fails
     if land_count <= 1:
         return False, f"too few lands ({land_count})"
     if land_count >= 6:
         return False, f"too many lands ({land_count})"
 
-    # Check if we have early plays (CMC 1-3)
-    early_plays = [c for c in nonlands if c.get('cmc', 0) <= 3]
-    if not early_plays and land_count < 4:
-        return False, "no early plays and fewer than 4 lands"
+    # Check required colors — need at least one source for each
+    available_colors = set()
+    for src in mana_sources:
+        for color in src.get('produced_mana', []):
+            available_colors.add(color)
 
-    return True, f"{land_count} lands, {len(early_plays)} early plays"
+    missing_colors = [c for c in guide.required_colors if c not in available_colors]
+    if missing_colors:
+        # Allow keeping if we have 2+ of the required colors and a fixer
+        any_color_sources = [s for s in mana_sources
+                             if len(s.get('produced_mana', [])) >= 3]
+        if not any_color_sources:
+            color_names = {'W': 'white', 'U': 'blue', 'B': 'black', 'R': 'red', 'G': 'green'}
+            missing_names = [color_names.get(c, c) for c in missing_colors]
+            return False, f"missing colors: {', '.join(missing_names)}"
+
+    # Green requirement for ramp-dependent decks
+    if guide.needs_green and 'G' not in available_colors:
+        return False, "no green source (deck needs green for ramp)"
+
+    # Early plays check
+    early_plays = [c for c in nonlands if c.get('cmc', 0) <= guide.early_play_cmc]
+    if not early_plays and land_count < 4:
+        return False, f"no early plays (CMC ≤{guide.early_play_cmc}) and fewer than 4 lands"
+
+    # Ramp check for high-CMC commander decks
+    ramp_patterns = ['add', 'search your library for a', 'mana']
+    has_ramp = any(
+        c.get('produced_mana') or
+        any(p in c.get('oracle_text', '').lower() for p in ramp_patterns)
+        for c in nonlands if c.get('cmc', 0) <= 3
+    )
+    if guide.needs_ramp and not has_ramp and land_count < 4:
+        return False, "no ramp and fewer than 4 lands (high-CMC commander)"
+
+    return True, f"{land_count} lands, {len(early_plays)} early plays, colors: {sorted(available_colors)}"
 
 
 class Opponent:
@@ -674,10 +801,11 @@ def check_game_over(player, opponents):
 
 # ==================== Game Init ====================
 
-def init_game_from_cards(cards, seed=None, opponent_archetypes=None):
+def init_game_from_cards(cards, seed=None, opponent_archetypes=None, mulligan_guide=None):
     """Initialize a game from a list of card dicts.
 
     cards: list of simplified card dicts (from make_card or card_from_scryfall)
+    mulligan_guide: optional MulliganGuide for deck-specific mulligan evaluation
     """
     rng = random.Random(seed)
 
@@ -702,7 +830,7 @@ def init_game_from_cards(cards, seed=None, opponent_archetypes=None):
     player.draw(7)
     mulligan_count = 0
     for _ in range(2):
-        keepable, reason = evaluate_hand_for_mulligan(player.hand)
+        keepable, reason = evaluate_hand_for_mulligan(player.hand, guide=mulligan_guide)
         if keepable:
             break
         mulligan_count += 1
