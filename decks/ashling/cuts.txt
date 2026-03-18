@@ -1,0 +1,12 @@
+# Ashling Cuts
+
+## Removed Cards
+
+- **Muldrotha, the Gravetide** — 6CMC, not an Elemental-focused recursion piece. Replaced with Brighthearth Banneret for cost reduction and lower curve.
+- **Omnath, Locus of Rage** — Removed (from precon changes)
+- **Collective Inferno** — Removed (from precon changes)
+- **Shimmercreep** — Removed (from precon changes)
+- **Thriving Bluff** — Removed (tapland upgrade)
+- **Thriving Grove** — Removed (tapland upgrade)
+- **Thriving Heath** — Removed (tapland upgrade)
+- **Thriving Isle** — Removed (tapland upgrade)

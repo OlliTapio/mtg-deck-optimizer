@@ -60,7 +60,7 @@
 1x Ramunap Excavator (otc) 202 [Recursion]
 1x Ramunap Ruins (otc) 311 [Land]
 1x Requisition Raid (otj) 26 [Removal]
-1x Return of the Wildspeaker (ecc) 115 [Draw]
+1x Hedge Shredder (big) 169 [Mill,Ramp,Buy]
 1x Sand Scout (otc) 11 [Ramp,Landfall]
 1x Satyr Wayfinder (eoc) 106 [Mill]
 1x Scattered Groves (otc) 315 [Land]

@@ -66,36 +66,5 @@ Goal: cast Brigid turn 3, start generating tokens and mana immediately.
 - T3: Land, Brigid + cast Kithkin from library top
 - T4: Flip Brigid for mana, deploy multiple creatures
 
-## Game Simulation Findings (2026-03-18)
-
-### Performance: 2 LLM games, 0 wins (best: 3rd place T10)
-- Go-wide strategy works early — Mirror Entity turned 7 tokens into 4/4s for 20 damage
-- Brigid's flip-for-tokens + flip-for-mana engine generates 1 token per turn cycle reliably
-- **Folds to board wipes** — one Akroan War Chapter II destroyed the entire board
-- **Folds to flyers** — no answers to Ureni's dragon army or Mothman's flying creatures
-- 35 lands is too few (1.8 average mulligans across simulations)
-
-### MVP Cards
-- **Mirror Entity** — all creatures become X/X with all types, enables lethal alpha strikes
-- **Wizened Cenn** — +1/+1 anthem is the backbone of every attack
-- **Cloudgoat Ranger** — 3 tokens on ETB rebuilds board quickly
-
-### Underperformers
-- **Mirrormind Crown** — 4-mana equipment never equipped, too slow
-- **Springleaf Parade** — competed for same mana as board development
-- **Dundoolin Weaver** — ETB irrelevant (no targets), died to Akroan War
-
-### Improvement Priorities
-1. **Add 2-3 more lands** (35 → 37-38) — 1.8 avg mulligans is worst in portfolio
-2. Add board protection (Rootborn Defenses — populate + indestructible)
-3. Add reach/flying answers (Sandsteppe Outcast? Or equipment with reach)
-4. Replace Mirrormind Crown with Swiftfoot Boots for commander protection
-
-### Round 2 Findings (confirmed)
-- Mulliganed to 5 AGAIN (1 land on 7-card hand). 35 lands is not enough — confirmed across 4 games
-- Akroan War Chapter II destroyed the board AGAIN (8 creatures → 2). Board protection is mandatory
-- Cloudgoat Ranger stranded in hand at 5 CMC — never hit 5 mana. Curve too high for 35 lands
-- Dundoolin Weaver confirmed underperformer — ETB fizzled, vanilla body
-
 ## Origin
 Custom build — all Lorwyn/Shadowmoor/Eclipsed Lorwyn Kithkin tribal
