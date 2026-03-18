@@ -54,7 +54,7 @@ Goal: cast Yuma by turn 4-5. He costs {5}{R}{G}{W} minus 1 per land in graveyard
 
 ## Game Simulation Findings (2026-03-18)
 
-### Performance: 4 LLM games, 1 win (won pod without Ureni)
+### Performance: 5 LLM games, 2 wins (won both no-Ureni pods)
 - Dune Chanter is THE make-or-break card — turns every land sac into a 4/2 Plant token
 - Zuran Orb + Splendid Reclamation + Dune Chanter = mass token generation + mass landfall
 - Overwhelming Stampede (+5/+5 trample to all) was the game-winning finisher
@@ -81,3 +81,11 @@ Goal: cast Yuma by turn 4-5. He costs {5}{R}{G}{W} minus 1 per land in graveyard
 - Green drought T1-5 happened AGAIN (4th game in a row). Harrow fetched Mountain+Plains instead of Forest+Mountain. URGENT: add more green sources
 - Commander flung by Brion AGAIN (stolen with Kari Zev's Expertise + flung for 6). Swiftfoot Boots is critical
 - Dune Chanter came online T9 but too late — needs to come out T4-5 to matter
+
+### Round 3 Findings (seed 6931, won T9 at 76 life!)
+- Lotus Cobra + Harrow + Sheltering Landscape = T4 Yuma for 3 mana (the dream)
+- Dune Chanter + Zuran Orb + Nahiri's Resolve (haste) = instant army of hasty 4/2 Plants
+- Overwhelming Stampede (+6/+6 trample) on 7+ Plants = 100+ trample damage, game over
+- Commander flung by Brion AGAIN (3rd game) — Swiftfoot Boots is MANDATORY
+- Splendid Reclamation returned 8 lands from GY, but without Yuma on field the Desert triggers didn't fire — sequence matters
+- Won with 76 life thanks to Zuran Orb gaining 22+ life over the game

@@ -104,7 +104,7 @@ Cast Muldrotha on turn 4-5 with some graveyard fuel already in place. Muldrotha 
 
 ## Game Simulation Findings (2026-03-18)
 
-### Performance: 2 LLM games, 1 win (won without Ureni in pod)
+### Performance: 3 LLM games, 1 win (won without Ureni in pod, eliminated T6 in another)
 - Won via Consuming Aberration as 80/80 fueled by everyone's graveyards
 - Syr Konrad + Blasphemous Act drained 12 life from each opponent in one board wipe
 - Spore Frog replayed every turn = repeatable fog, bought critical time
@@ -124,3 +124,10 @@ Cast Muldrotha on turn 4-5 with some graveyard fuel already in place. Muldrotha 
 2. Add haste enabler (Lightning Greaves/Swiftfoot Boots) — Consuming Aberration as 80/80 that can't attack for a turn cycle gives opponents time to answer
 3. Add more self-mill T1-2 (Stitcher's Supplier is great, consider Hedron Crab if not already included)
 4. Consider a secondary win condition beyond combat (Altar of Dementia mill-out)
+
+### Round 3 Findings (seed 6931)
+- Eliminated T6 by Brion stealing+flinging Yuma at Muldrotha (6 damage at 4 life)
+- Three tapped lands in opener = no plays until T3. Needs untapped colored sources
+- Brigid's aggro beat Muldrotha from 41 to 4 in 4 turns — needs early blockers badly
+- Living Death drawn T6 but couldn't cast (needed 5 mana, had 4) — one turn too slow
+- Add Baleful Strix or similar cheap blocker that replaces itself
