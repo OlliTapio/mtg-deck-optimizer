@@ -96,6 +96,11 @@ def cmd_create(decklists, seed=None):
     from game_mcp_server import _create_engine_no_mulligan
     engine = _create_engine_no_mulligan(decklists, seed)
 
+    # Randomize first player (Commander rule)
+    rng = random.Random(seed)
+    first_idx = rng.randint(0, len(engine.players) - 1)
+    engine.active_idx = first_idx
+
     meta = {
         'seed': seed,
         'phase': 'mulligan',  # mulligan -> playing -> done
