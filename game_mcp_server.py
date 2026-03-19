@@ -38,12 +38,18 @@ def _get_engine():
 
 # ==================== Tool Implementations ====================
 
-def new_game(decklists: list, seed: int = None) -> dict:
-    """Create a new game with the given decklist paths."""
+def new_game(decklists: list, seed: int = None, auto_mulligan: bool = True) -> dict:
+    """Create a new game. If auto_mulligan=False, players get 7 cards and must decide themselves."""
     global _engine, _game_id
     if seed is None:
         seed = random.randint(1, 99999)
-    _engine = GameEngine(decklists, seed=seed)
+
+    if auto_mulligan:
+        _engine = GameEngine(decklists, seed=seed)
+    else:
+        # Create engine without auto-mulligan: deal 7 to everyone
+        _engine = _create_engine_no_mulligan(decklists, seed=seed)
+
     _game_id = f"game_{seed}"
 
     players = []
@@ -62,6 +68,118 @@ def new_game(decklists: list, seed: int = None) -> dict:
         "players": players,
         "turn": _engine.turn,
         "active_player": _engine.active_player.name,
+    }
+
+
+def _create_engine_no_mulligan(decklists, seed):
+    """Create a GameEngine but skip automatic mulligans — deal 7 to everyone."""
+    from game_simulator import Player, card_from_scryfall
+    from card_cache import get_deck_cards
+
+    rng = random.Random(seed)
+    engine = GameEngine.__new__(GameEngine)
+    engine.rng = rng
+    engine.players = []
+    engine.turn = 1
+    engine.active_idx = 0
+    engine.phase = "setup"
+    engine.stack = None
+    engine.events = []
+    engine.judge_requests = []
+    engine.game_over = False
+
+    for i, path in enumerate(decklists):
+        cards_raw, _ = get_deck_cards(path)
+        cards = [card_from_scryfall(c) for c in cards_raw]
+
+        player_rng = random.Random(seed + i if seed else None)
+        commander = None
+        library = []
+        for c in cards:
+            if c.get('is_commander'):
+                commander = c
+            else:
+                library.append(c)
+
+        name = commander['name'] if commander else os.path.basename(os.path.dirname(path))
+        player = Player(name=name)
+        if commander:
+            player.command_zone.append(commander)
+
+        player_rng.shuffle(library)
+        player.library = library
+        player.draw(7)  # Deal 7, no mulligan evaluation
+
+        print(f"  Loaded {name}: 7 cards dealt (no auto-mulligan)", file=sys.stderr)
+        engine.players.append(player)
+
+    return engine
+
+
+def mulligan(player_name: str) -> dict:
+    """Mulligan: shuffle hand back, draw 7 new cards. Track mulligan count."""
+    engine = _get_engine()
+    player = _find_player(engine, player_name)
+
+    # Track mulligan count
+    if not hasattr(player, '_mulligan_count'):
+        player._mulligan_count = 0
+    player._mulligan_count += 1
+
+    # Shuffle hand back into library
+    player.library.extend(player.hand)
+    player.hand.clear()
+    engine.rng.shuffle(player.library)
+    player.draw(7)
+
+    hand = get_hand(player_name)
+    # Commander mulligan: first mulligan is free (bottom 0), subsequent bottom N-1
+    bottom_count = max(0, player._mulligan_count - 1)
+
+    return {
+        "mulligan_count": player._mulligan_count,
+        "hand": hand['hand'],
+        "hand_size": 7,
+        "bottom_required": bottom_count,
+        "message": f"Mulliganed (#{player._mulligan_count}). Drew 7 new cards." +
+                   (f" First mulligan is FREE! Keep 7." if player._mulligan_count == 1
+                    else f" Must bottom {bottom_count} card(s) when you keep."),
+    }
+
+
+def keep_hand(player_name: str, bottom_cards: list = None) -> dict:
+    """Keep your hand. Bottom N cards (where N = mulligan count) to the bottom of library."""
+    engine = _get_engine()
+    player = _find_player(engine, player_name)
+
+    mull_count = getattr(player, '_mulligan_count', 0)
+    # Commander: first mulligan is free, so bottom max(0, mull_count - 1)
+    bottom_count = max(0, mull_count - 1)
+
+    if bottom_count > 0 and bottom_cards:
+        for card_name in bottom_cards[:bottom_count]:
+            card = None
+            for c in player.hand:
+                if card_name.lower() in c['name'].lower():
+                    card = c
+                    break
+            if card:
+                player.hand.remove(card)
+                player.library.insert(0, card)  # Bottom of library
+    elif bottom_count > 0 and not bottom_cards:
+        # Auto-bottom highest CMC cards
+        for _ in range(bottom_count):
+            if player.hand:
+                worst = max(player.hand, key=lambda c: c.get('cmc', 0))
+                player.hand.remove(worst)
+                player.library.insert(0, worst)
+
+    hand = get_hand(player_name)
+    return {
+        "kept": True,
+        "hand_size": len(player.hand),
+        "bottomed": bottom_count,
+        "hand": hand['hand'],
     }
 
 
@@ -303,6 +421,8 @@ def main():
 
 TOOLS = {
     'new_game': new_game,
+    'mulligan': mulligan,
+    'keep_hand': keep_hand,
     'get_state': get_state,
     'get_hand': get_hand,
     'begin_turn': begin_turn,
