@@ -86,7 +86,22 @@ python3 game_http_server.py --port 8080
 /modify   - add/remove counters {"target_player","permanent","counter_type":"+1/+1","amount":3}
 /keyword  - grant keyword {"target_player","permanent","keyword":"trample"}
 /proliferate - proliferate {"targets":[{"player","permanent","counter_type"}]}
+/scry     - scry N cards, put some on bottom {"count":2,"bottom":["Card Name"]}
+/mill     - mill N cards to graveyard {"count":4}
+/move     - move card between zones {"card_name","from_zone","to_zone"}
+/games    - list all active games
 /judge    - call judge for rules dispute
+/resolve_judge - clear judge call and resume game
+
+# Web viewer (open in browser)
+http://127.0.0.1:8080/
+
+# CLI game watcher
+python3 game_watch.py --list               # list all games
+python3 game_watch.py g123                  # live watch mode
+python3 game_watch.py g123 --once           # scoreboard snapshot
+python3 game_watch.py g123 --events         # event log
+python3 game_watch.py g123 --full           # full board state
 /state    - see the board
 /priority - check whose turn it is
 ```

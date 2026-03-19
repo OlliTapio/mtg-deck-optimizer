@@ -63,6 +63,33 @@ def _notify_waiters(game_id):
 
 
 class GameHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        """Serve the game viewer HTML."""
+        if self.path in ('/', '/viewer', '/viewer.html'):
+            viewer_path = os.path.join(os.path.dirname(__file__), 'game_viewer.html')
+            if os.path.exists(viewer_path):
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/html')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                with open(viewer_path, 'rb') as f:
+                    self.wfile.write(f.read())
+            else:
+                self.send_response(404)
+                self.end_headers()
+                self.wfile.write(b'game_viewer.html not found')
+        else:
+            self.send_response(404)
+            self.end_headers()
+
+    def do_OPTIONS(self):
+        """Handle CORS preflight."""
+        self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.end_headers()
+
     def do_POST(self):
         content_length = int(self.headers.get('Content-Length', 0))
         body = self.rfile.read(content_length).decode('utf-8') if content_length > 0 else '{}'
@@ -195,6 +222,9 @@ class GameHandler(BaseHTTPRequestHandler):
                 with _lock:
                     result = cmd_priority(gid)
 
+            elif path == 'games':
+                result = self._list_games()
+
             elif path == 'wait':
                 result = self._handle_wait(gid, player, data.get('timeout', 120))
 
@@ -260,9 +290,34 @@ class GameHandler(BaseHTTPRequestHandler):
 
         return {'status': 'timeout'}
 
+    def _list_games(self):
+        """List all active games."""
+        import glob
+        games = []
+        for pkl_path in glob.glob('/tmp/mtg_games/*.pkl'):
+            gid = os.path.basename(pkl_path).replace('.pkl', '')
+            try:
+                with _lock:
+                    p = cmd_priority(gid)
+                if 'error' not in p:
+                    players = ', '.join(n.split(',')[0][:15] for n in p.get('mulligan_order', []))
+                    games.append({
+                        'game_id': gid,
+                        'turn': p.get('turn', 0),
+                        'phase': p.get('phase', '?'),
+                        'active_player': p.get('active_player', '?'),
+                        'players': players,
+                        'priority_queue': p.get('priority_queue', []),
+                    })
+            except Exception:
+                pass
+        games.sort(key=lambda g: g['game_id'])
+        return {'games': games}
+
     def _respond(self, code, data):
         self.send_response(code)
         self.send_header('Content-Type', 'application/json')
+        self.send_header('Access-Control-Allow-Origin', '*')
         self.end_headers()
         self.wfile.write(json.dumps(data).encode('utf-8'))
 
