@@ -407,9 +407,9 @@ class MultiplayerGame:
 
         # Draw (Commander: everyone draws including first player T1)
         player.draw()
-            if player.life <= 0:
-                self.log(f"  {player.name} draws from empty library and loses!")
-                return
+        if player.life <= 0:
+            self.log(f"  {player.name} draws from empty library and loses!")
+            return
 
         # Main Phase 1
         self.phase = "main1"

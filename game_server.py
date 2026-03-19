@@ -282,8 +282,13 @@ def cmd_action(game_id, player_name, action):
 
     # Check it's their turn or they have priority
     active = engine.active_player
-    has_priority = player_name in [p for p in meta.get('priority_queue', [])]
-    is_active = active.name.lower() in player_name.lower() or player_name.lower() in active.name.lower()
+    pq = meta.get('priority_queue', [])
+    has_priority = player.name in pq
+    is_active = active.name == player.name
+
+    # Active player can't act while priority queue has pending responses
+    if is_active and pq:
+        return {'error': f"Waiting for priority responses from: {', '.join(pq)}. They must respond or pass first."}
 
     if not is_active and not has_priority:
         return {'error': f"It's {active.name}'s turn and you don't have priority"}
@@ -440,6 +445,34 @@ def cmd_end(game_id, player_name):
     }
 
 
+def cmd_judge(game_id, player_name, question):
+    """Any player can call judge — flags a rules question or suspected illegal play."""
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    if 'judge_calls' not in meta:
+        meta['judge_calls'] = []
+
+    meta['judge_calls'].append({
+        'player': player.name,
+        'question': question,
+        'turn': engine.turn,
+        'phase': engine.phase,
+    })
+
+    # Pause game until judge resolves
+    meta['priority_queue'] = ['JUDGE']
+
+    _save_game(game_id, engine, meta)
+
+    return {
+        'judge_called': True,
+        'player': player.name,
+        'question': question,
+        'message': f"JUDGE CALLED by {player.name}: {question}. Game paused until resolved.",
+    }
+
+
 def cmd_priority(game_id):
     """Check who needs to act."""
     engine, meta = _load_game(game_id)
@@ -524,6 +557,9 @@ def main():
 
         elif cmd == 'respond':
             result = cmd_respond(sys.argv[2], sys.argv[3], ' '.join(sys.argv[4:]))
+
+        elif cmd == 'judge':
+            result = cmd_judge(sys.argv[2], sys.argv[3], ' '.join(sys.argv[4:]))
 
         elif cmd == 'priority':
             result = cmd_priority(sys.argv[2])

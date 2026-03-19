@@ -583,11 +583,11 @@ class GameEngine:
         # Draw (Commander: everyone draws, including first player turn 1)
         drew = None
         player.draw()
-            if player.hand:
-                drew = player.hand[-1]
-            if player.life <= 0:
-                self.events.append(f"{player.name} draws from empty library and loses!")
-                return None
+        if player.hand:
+            drew = player.hand[-1]
+        if player.life <= 0:
+            self.events.append(f"{player.name} draws from empty library and loses!")
+            return None
 
         self.phase = "main1"
         self.events.append(f"--- Turn {self.turn}: {player.name} ---")
