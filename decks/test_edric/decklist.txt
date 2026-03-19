@@ -94,7 +94,6 @@
 1x Island (isd) 256 [Land]
 1x Island (isd) 257 [Land]
 1x Island (isd) 258 [Land]
-1x Island (isd) 259 [Land]
 1x Simic Guildgate (gtc) 249 [Land]
 1x Terramorphic Expanse (c21) 321 [Land]
 1x Vivid Creek (mma) 234 [Land]

@@ -91,6 +91,8 @@
 1x Mountain (bfz) 265 [Land]
 1x Mountain (bfz) 266 [Land]
 1x Mountain (bfz) 267 [Land]
+1x Mountain (bfz) 268 [Land]
+1x Mountain (bfz) 269 [Land]
 1x Blighted Gorge (bfz) 230 [Land]
 1x Desert of the Fervent (hou) 170 [Land]
 1x Forgotten Cave (c21) 289 [Land]

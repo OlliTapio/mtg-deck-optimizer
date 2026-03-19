@@ -98,6 +98,3 @@
 1x Swamp (kld) 259 [Land]
 1x Swamp (kld) 260 [Land]
 1x Swamp (aer) 181 [Land]
-1x Swamp (aer) 182 [Land]
-1x Swamp (ima) 240 [Land]
-1x Swamp (ima) 241 [Land]
