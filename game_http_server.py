@@ -31,6 +31,12 @@ import random
 import threading
 import time
 from http.server import HTTPServer, BaseHTTPRequestHandler
+from socketserver import ThreadingMixIn
+
+
+class ThreadingHTTPServer(ThreadingMixIn, HTTPServer):
+    """HTTP server that handles each request in a new thread."""
+    daemon_threads = True
 
 # Import game logic
 from game_server import (
@@ -211,7 +217,7 @@ def main():
         idx = sys.argv.index('--port')
         port = int(sys.argv[idx + 1])
 
-    server = HTTPServer(('127.0.0.1', port), GameHandler)
+    server = ThreadingHTTPServer(('127.0.0.1', port), GameHandler)
     server.socket.settimeout(1)  # Allow clean shutdown
 
     print(f"Game server running on http://127.0.0.1:{port}", file=sys.stderr)
