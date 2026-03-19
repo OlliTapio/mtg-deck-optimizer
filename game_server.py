@@ -303,6 +303,7 @@ def cmd_action(game_id, player_name, action):
 
     if ok:
         meta['turn_actions'].append(f"{player.name}: {msg}")
+        meta['last_action'] = f"{player.name}: {msg}"
 
         # Check triggers
         triggers = []
@@ -473,6 +474,59 @@ def cmd_judge(game_id, player_name, question):
     }
 
 
+def cmd_wait(game_id, player_name, timeout=300):
+    """Block until it's this player's turn or they have priority. Returns game state when ready."""
+    import time
+    start = time.time()
+
+    while time.time() - start < timeout:
+        engine, meta = _load_game(game_id)
+        if engine is None:
+            return {'error': 'Game not found'}
+
+        player = _find(engine, player_name)
+        pname = player.name
+
+        # Check if game is over
+        if meta.get('phase') == 'done' or engine.game_over:
+            return {'status': 'game_over', 'winner': next((p.name for p in engine.players if p.life > 0), 'draw')}
+
+        # Check if still in mulligan phase and this player needs to act
+        if meta.get('phase') == 'mulligan':
+            if meta['mulligan_status'].get(pname) == 'pending':
+                hand = cmd_hand(game_id, player_name)
+                return {'status': 'mulligan', 'message': 'Decide: mulligan or keep', 'hand': hand}
+            else:
+                # Already kept, wait for others
+                time.sleep(1)
+                continue
+
+        # Check if it's their turn
+        active = engine.active_player
+        if active.name == pname:
+            return {
+                'status': 'your_turn',
+                'turn': engine.turn,
+                'phase': engine.phase,
+                'message': f"It's your turn (T{engine.turn}). Use begin, action, end commands.",
+            }
+
+        # Check if they have priority to respond
+        pq = meta.get('priority_queue', [])
+        if pname in pq:
+            return {
+                'status': 'priority',
+                'turn': engine.turn,
+                'message': f"You have priority to respond. Use respond command or pass.",
+                'last_action': meta.get('last_action', ''),
+            }
+
+        # Not our turn, wait
+        time.sleep(2)
+
+    return {'status': 'timeout', 'message': f'Waited {timeout}s, still not your turn'}
+
+
 def cmd_priority(game_id):
     """Check who needs to act."""
     engine, meta = _load_game(game_id)
@@ -557,6 +611,10 @@ def main():
 
         elif cmd == 'respond':
             result = cmd_respond(sys.argv[2], sys.argv[3], ' '.join(sys.argv[4:]))
+
+        elif cmd == 'wait':
+            timeout = int(sys.argv[4]) if len(sys.argv) > 4 else 300
+            result = cmd_wait(sys.argv[2], sys.argv[3], timeout=timeout)
 
         elif cmd == 'judge':
             result = cmd_judge(sys.argv[2], sys.argv[3], ' '.join(sys.argv[4:]))
