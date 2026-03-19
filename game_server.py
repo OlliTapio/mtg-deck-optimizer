@@ -111,9 +111,17 @@ def cmd_create(decklists, seed=None):
     first_idx = rng.randint(0, len(engine.players) - 1)
     engine.active_idx = first_idx
 
+    # Set mulligan order (sequential, starting from first player)
+    mulligan_order = []
+    for i in range(len(engine.players)):
+        idx = (first_idx + i) % len(engine.players)
+        mulligan_order.append(engine.players[idx].name)
+
     meta = {
         'seed': seed,
         'phase': 'mulligan',  # mulligan -> playing -> done
+        'mulligan_order': mulligan_order,  # sequential order
+        'mulligan_current': 0,  # index into mulligan_order
         'mulligan_status': {},  # player_name -> 'pending' | 'kept'
         'mulligan_count': {},   # player_name -> int
         'priority_queue': [],   # list of player names who need to respond
@@ -235,6 +243,9 @@ def cmd_keep(game_id, player_name, bottom_cards=None):
                     player.library.insert(0, worst)
 
     meta['mulligan_status'][pname] = 'kept'
+
+    # Advance to next player in mulligan order
+    meta['mulligan_current'] = meta.get('mulligan_current', 0) + 1
 
     # Check if all players have kept
     all_kept = all(s == 'kept' for s in meta['mulligan_status'].values())
@@ -692,12 +703,19 @@ def cmd_wait(game_id, player_name, timeout=300):
 def cmd_priority(game_id):
     """Check who needs to act."""
     engine, meta = _load_game(game_id)
+    mulligan_order = meta.get('mulligan_order', [])
+    mulligan_current = meta.get('mulligan_current', 0)
+    current_mulligan = mulligan_order[mulligan_current] if mulligan_current < len(mulligan_order) else None
+
     return {
         'active_player': engine.active_player.name,
         'turn': engine.turn,
         'phase': meta.get('phase', 'unknown'),
         'priority_queue': meta.get('priority_queue', []),
         'mulligan_pending': [name for name, status in meta.get('mulligan_status', {}).items() if status == 'pending'],
+        'mulligan_order': mulligan_order,
+        'mulligan_current': mulligan_current,
+        'mulligan_active': current_mulligan,
     }
 
 

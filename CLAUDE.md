@@ -56,6 +56,32 @@ python3 scryfall_search.py --search "id<=bug f:commander o:proliferate" --verbos
 
 ## Game Simulator Architecture
 
+**Game simulation IS a core feature of this project.** Subagents are expected to pilot decks, make mulligan decisions, play cards, attack opponents, and respond to spells via the game server. This is NOT outside scope — it's what the simulator tools are built for.
+
+### HTTP Game Server (`game_http_server.py`)
+Persistent server on http://127.0.0.1:8080. Agents interact via HTTP POST.
+```bash
+# Start server
+python3 game_http_server.py --port 8080
+
+# Agent endpoints (POST JSON with game_id + player)
+/create   - create a new game
+/hand     - see your cards
+/mulligan - shuffle and redraw
+/keep     - keep your hand
+/wait     - block until your turn (long-poll)
+/begin    - start your turn (draw)
+/valid    - see legal actions
+/action   - play a card {"action":"play Forest"}
+/end      - end your turn
+/respond  - instant-speed response or "pass"
+/damage   - deal combat damage
+/destroy  - kill a permanent
+/judge    - call judge for rules dispute
+/state    - see the board
+/priority - check whose turn it is
+```
+
 Three layers of game simulation, from simple to full LLM:
 
 ### 1. Auto-pilot (`auto_pilot.py`)

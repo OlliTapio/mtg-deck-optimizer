@@ -169,11 +169,14 @@ class GameHandler(BaseHTTPRequestHandler):
 
                 if phase == 'mulligan':
                     pending = result.get('mulligan_pending', [])
-                    # Check if this player needs to mulligan
-                    for name in pending:
-                        if player_name.lower() in name.lower() or name.lower() in player_name.lower():
+                    # Sequential mulligans: only the current player in order gets prompted
+                    mulligan_order = result.get('mulligan_order', pending)
+                    mulligan_current = result.get('mulligan_current', 0)
+                    if mulligan_current < len(mulligan_order):
+                        current_mulligan_player = mulligan_order[mulligan_current]
+                        if player_name.lower() in current_mulligan_player.lower() or current_mulligan_player.lower() in player_name.lower():
                             hand = cmd_hand(game_id, player_name)
-                            return {'status': 'mulligan', 'hand': hand}
+                            return {'status': 'mulligan', 'message': f'Your turn to mulligan ({mulligan_current+1}/{len(mulligan_order)})', 'hand': hand}
 
                 if phase == 'playing':
                     active = result.get('active_player', '')
