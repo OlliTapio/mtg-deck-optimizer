@@ -60,6 +60,60 @@ GAMES_DIR = Path("/tmp/mtg_games")
 GAMES_DIR.mkdir(exist_ok=True)
 
 
+def _trigger_hint(oracle_text, player_name, perm_name):
+    """Generate a resolution hint from oracle text telling the player what to call."""
+    oracle = oracle_text.lower()
+    hints = []
+
+    if 'draw' in oracle and 'card' in oracle:
+        import re
+        m = re.search(r'draw (\w+) card', oracle)
+        n = {'a': 1, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}.get(m.group(1), 1) if m else 1
+        hints.append(f'/draw count={n}')
+    if 'rad counter' in oracle:
+        hints.append('/modify target on opponent with counter_type="rad" amount=1')
+    if 'proliferate' in oracle:
+        hints.append('/proliferate with targets for each permanent/player that has counters')
+    if '+1/+1 counter' in oracle:
+        import re
+        m = re.search(r'(\w+) \+1/\+1 counter', oracle)
+        n = {'a': 1, 'one': 1, 'two': 2, 'three': 3, 'four': 4}.get(m.group(1), 1) if m else 1
+        hints.append(f'/modify counter_type="+1/+1" amount={n}')
+    if 'search your library' in oracle or 'search their library' in oracle:
+        if 'battlefield' in oracle:
+            hints.append('/search destination="battlefield" tapped=true')
+        elif 'hand' in oracle:
+            hints.append('/search destination="hand"')
+        else:
+            hints.append('/search destination="hand"')
+    if 'mill' in oracle:
+        import re
+        m = re.search(r'mill (\w+)', oracle)
+        n = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}.get(m.group(1) if m else '', 2)
+        hints.append(f'/mill count={n}')
+    if 'deals' in oracle and 'damage' in oracle:
+        hints.append('/damage target=PLAYER amount=N')
+    if 'destroy' in oracle:
+        hints.append('/destroy target_player=PLAYER permanent=CARD')
+    if 'return' in oracle and 'graveyard' in oracle:
+        if 'battlefield' in oracle:
+            hints.append('/move from_zone="graveyard" to_zone="battlefield"')
+        elif 'hand' in oracle:
+            hints.append('/move from_zone="graveyard" to_zone="hand"')
+    if 'scry' in oracle:
+        hints.append('/scry count=N')
+    if 'exile' in oracle:
+        hints.append('/move to_zone="exile"')
+    if 'loses' in oracle and 'life' in oracle:
+        hints.append('/damage (as life loss)')
+    if 'gains' in oracle and 'life' in oracle:
+        hints.append('(life gain not tracked beyond life total — use /damage with negative if needed)')
+    if 'experience counter' in oracle:
+        hints.append('/modify on player-tracking permanent with counter_type="experience"')
+
+    return '; '.join(hints) if hints else 'Read oracle text and resolve manually'
+
+
 # ==================== State Persistence ====================
 
 import fcntl
@@ -387,24 +441,37 @@ def cmd_action(game_id, player_name, action):
         meta['turn_actions'].append(f"{player.name}: {msg}")
         meta['last_action'] = f"{player.name}: {msg}"
 
-        # Check triggers
+        # Check triggers based on action type
         triggers = []
-        if 'play' in action.lower():
-            for tp, perm, oracle in detect_triggers(engine.players, 'landfall', {}):
+        action_lower = action.lower()
+
+        # Determine which trigger types to check
+        trigger_checks = []
+        if 'play' in action_lower:
+            trigger_checks.append('landfall')
+        if 'cast' in action_lower:
+            trigger_checks.append('etb')
+            trigger_checks.append('cast')
+        if 'attack' in action_lower:
+            trigger_checks.append('attack')
+            trigger_checks.append('damage')  # combat damage triggers
+        if 'activate' in action_lower:
+            trigger_checks.append('ltb')  # sacrifice triggers
+
+        for trigger_type in trigger_checks:
+            for tp, perm, oracle in detect_triggers(engine.players, trigger_type, {}):
+                # Generate resolution hint from oracle text
+                hint = _trigger_hint(oracle, tp.name, perm.name)
                 triggers.append({
                     'player': tp.name,
                     'permanent': perm.name,
-                    'type': 'landfall',
-                    'oracle': oracle[:80],
+                    'type': trigger_type,
+                    'oracle': oracle[:200],
+                    'resolve_hint': hint,
                 })
-        if 'cast' in action.lower():
-            for tp, perm, oracle in detect_triggers(engine.players, 'etb', {}):
-                triggers.append({
-                    'player': tp.name,
-                    'permanent': perm.name,
-                    'type': 'etb',
-                    'oracle': oracle[:80],
-                })
+
+        if triggers:
+            engine.events.append(f"  ⚡ TRIGGERS: {', '.join(t['permanent'] + '(' + t['type'] + ')' for t in triggers)}")
 
         result['triggers'] = triggers
 
@@ -567,6 +634,14 @@ def cmd_valid(game_id, player_name):
         if 'sacrifice' in oracle.lower() and '{T}' not in oracle:
             if 'sacrifice ' + perm.card.get('name', '').lower() in oracle.lower() or 'sacrifice this' in oracle.lower():
                 actions.append(f"activate {perm.name}")
+
+    # Equipment — show equip options
+    equipments = [p for p in player.battlefield if 'Equipment' in p.card.get('type_line', '')]
+    equip_targets = [p for p in player.battlefield if p.is_creature()]
+    if equipments and equip_targets:
+        for eq in equipments:
+            for cr in equip_targets:
+                actions.append(f"equip {eq.name} -> {cr.name}")
 
     creatures = [p for p in player.battlefield if p.is_creature() and not p.tapped and not p.summoning_sick]
     if creatures:
@@ -828,6 +903,55 @@ def cmd_proliferate(game_id, player_name, targets):
 
     _save_game(game_id, engine, meta)
     return {'proliferated': results}
+
+
+def cmd_equip(game_id, player_name, equipment_name, target_creature):
+    """Equip an equipment to a creature. Grants keywords from the equipment's oracle text."""
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    equip = None
+    creature = None
+    for perm in player.battlefield:
+        if equipment_name.lower() in perm.name.lower() and 'Equipment' in perm.card.get('type_line', ''):
+            equip = perm
+        if target_creature.lower() in perm.name.lower() and perm.is_creature():
+            creature = perm
+
+    if not equip:
+        return {'error': f"Equipment '{equipment_name}' not found on your battlefield"}
+    if not creature:
+        return {'error': f"Creature '{target_creature}' not found on your battlefield"}
+
+    # Parse keywords from oracle text
+    oracle = equip.card.get('oracle_text', '').lower()
+    granted = []
+    for kw in ['hexproof', 'shroud', 'haste', 'trample', 'flying', 'vigilance',
+               'lifelink', 'deathtouch', 'first strike', 'double strike', 'menace',
+               'indestructible', 'reach', 'ward']:
+        if kw in oracle:
+            creature.granted_keywords.add(kw)
+            granted.append(kw)
+
+    # Parse power/toughness boost
+    import re
+    pt_match = re.search(r'gets? \+(\d+)/\+(\d+)', oracle)
+    if pt_match:
+        power_boost = int(pt_match.group(1))
+        creature.counters['equipment_power'] = creature.counters.get('equipment_power', 0) + power_boost
+        granted.append(f"+{pt_match.group(1)}/+{pt_match.group(2)}")
+
+    # Track equip on the permanent
+    equip.counters['equipped_to'] = id(creature)
+
+    engine.events.append(f"{player.name} equips {equip.name} to {creature.name} ({', '.join(granted)})")
+    _save_game(game_id, engine, meta)
+    return {
+        'equipment': equip.name,
+        'creature': creature.name,
+        'granted': granted,
+        'creature_keywords': sorted(creature.all_keywords),
+    }
 
 
 def cmd_scry(game_id, player_name, count=1, bottom=None):

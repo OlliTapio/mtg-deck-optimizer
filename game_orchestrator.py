@@ -442,6 +442,30 @@ class GameEngine:
 
             return False, f"can't activate {perm.name}", False
 
+        # Equip
+        if action_lower.startswith("equip "):
+            # "equip Equipment -> Creature"
+            if '->' in action:
+                eq_name, cr_name = action[6:].split('->', 1)
+                eq_name = eq_name.strip()
+                cr_name = cr_name.strip()
+                equip = self._find_permanent(player, eq_name)
+                creature = self._find_permanent(player, cr_name)
+                if equip and creature and creature.is_creature():
+                    # Grant keywords from oracle text
+                    oracle = equip.card.get('oracle_text', '').lower()
+                    granted = []
+                    for kw in ['hexproof', 'shroud', 'haste', 'trample', 'flying', 'vigilance',
+                               'lifelink', 'deathtouch', 'first strike', 'double strike', 'menace',
+                               'indestructible', 'reach', 'ward']:
+                        if kw in oracle:
+                            creature.granted_keywords.add(kw)
+                            granted.append(kw)
+                    self.events.append(f"{player.name} equips {equip.name} to {creature.name} ({', '.join(granted) or 'attached'})")
+                    return True, f"equips {equip.name} to {creature.name} ({', '.join(granted) or 'attached'})", False
+                return False, f"can't equip: equipment or creature not found", False
+            return False, "equip format: equip Equipment -> Creature", False
+
         # Attack
         if action_lower.startswith("attack "):
             return self._resolve_attack(player, action)

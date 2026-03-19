@@ -83,6 +83,7 @@ Server: {SERVER_URL}. All calls are POST with JSON body containing game_id and p
 | /modify | game_id, player, target_player, permanent, counter_type, amount | Add/remove counters |
 | /keyword | game_id, player, target_player, permanent, keyword | Grant keyword to permanent |
 | /proliferate | game_id, player, targets:[...] | Proliferate counters |
+| /equip | game_id, player, equipment, creature | Equip equipment to creature |
 | /scry | game_id, player, count, bottom:["cards"] | Scry N, put named cards on bottom |
 | /mill | game_id, player, count | Mill N cards to graveyard |
 | /search | game_id, player, card_name, destination, tapped | Search library for card |
@@ -137,6 +138,20 @@ Read the oracle text of the card you cast. Match the effect to the right endpoin
 | "proliferate" | `/proliferate` targets=[...] | Karn's Bastion → `/proliferate` |
 | "gains trample/flying/etc" | `/keyword` permanent + keyword | |
 | "sacrifice" (your permanent) | `/destroy` your own permanent | Harrow → `/destroy` your land |
+| "equip" / Equipment on board | `/equip` equipment + creature | Swiftfoot Boots → `/equip` |
+
+## TRIGGERS — CRITICAL
+When you play a card or attack, the response includes a `triggers` array. **You MUST resolve each trigger.**
+Each trigger has a `resolve_hint` telling you which endpoint to call.
+
+Examples:
+- Mothman attacks → trigger: "rad counter" → call `/modify` on each opponent with counter_type="rad" amount=1
+- Mothman attacks → trigger: "proliferate" → call `/proliferate`
+- Yuriko deals combat damage → trigger: "reveal top card, lose life" → call `/scry` count=1, then `/damage`
+- Landfall trigger → check oracle text, call `/draw`, `/modify`, or `/search` as needed
+- ETB trigger → check oracle text, resolve with appropriate endpoint
+
+**After EVERY attack action, check the triggers in the response and resolve them before ending your turn.**
 
 When resolving multi-step effects (e.g. Cultivate = search basic to battlefield tapped + search basic to hand + shuffle), call each step in sequence.
 
