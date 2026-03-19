@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+"""HTTP Game Server for Commander multiplayer.
+
+Single persistent process. Agents call via HTTP (WebFetch).
+No file locking needed — requests are serialized by the server.
+
+Usage:
+    python3 game_http_server.py [--port 8080]
+
+Endpoints:
+    POST /create         {decklists: [...], seed: N}
+    POST /hand           {game_id, player}
+    POST /mulligan       {game_id, player}
+    POST /keep           {game_id, player, bottom_cards: [...]}
+    POST /begin          {game_id, player}
+    POST /action         {game_id, player, action: "play Forest"}
+    POST /valid          {game_id, player}
+    POST /state          {game_id, player}
+    POST /end            {game_id, player}
+    POST /respond        {game_id, player, action: "pass"}
+    POST /damage         {game_id, player, target, amount: N}
+    POST /destroy        {game_id, player, target_player, permanent}
+    POST /wait           {game_id, player}  -- long-polls until your turn
+    POST /judge          {game_id, player, question: "..."}
+    POST /priority       {game_id}
+"""
+import json
+import sys
+import os
+import random
+import threading
+import time
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+# Import game logic
+from game_server import (
+    cmd_create, cmd_hand, cmd_mulligan, cmd_keep,
+    cmd_begin, cmd_action, cmd_valid, cmd_state,
+    cmd_end, cmd_respond, cmd_damage, cmd_destroy,
+    cmd_judge, cmd_priority,
+)
+
+# Thread lock — serializes all game operations
+_lock = threading.Lock()
+
+# Active games for wait/long-polling
+_wait_events = {}  # game_id -> threading.Event
+
+
+def _notify_waiters(game_id):
+    """Wake up any waiting agents."""
+    if game_id in _wait_events:
+        _wait_events[game_id].set()
+        _wait_events[game_id] = threading.Event()
+
+
+class GameHandler(BaseHTTPRequestHandler):
+    def do_POST(self):
+        content_length = int(self.headers.get('Content-Length', 0))
+        body = self.rfile.read(content_length).decode('utf-8') if content_length > 0 else '{}'
+        try:
+            data = json.loads(body) if body else {}
+        except json.JSONDecodeError:
+            self._respond(400, {'error': 'Invalid JSON'})
+            return
+
+        path = self.path.strip('/')
+        gid = data.get('game_id', '')
+        player = data.get('player', '')
+
+        try:
+            if path == 'create':
+                with _lock:
+                    result = cmd_create(data.get('decklists', []), seed=data.get('seed'))
+                    _wait_events[result['game_id']] = threading.Event()
+
+            elif path == 'hand':
+                with _lock:
+                    result = cmd_hand(gid, player)
+
+            elif path == 'mulligan':
+                with _lock:
+                    result = cmd_mulligan(gid, player)
+                    _notify_waiters(gid)
+
+            elif path == 'keep':
+                with _lock:
+                    result = cmd_keep(gid, player, data.get('bottom_cards'))
+                    _notify_waiters(gid)
+
+            elif path == 'begin':
+                with _lock:
+                    result = cmd_begin(gid, player)
+
+            elif path == 'action':
+                with _lock:
+                    result = cmd_action(gid, player, data.get('action', ''))
+                    _notify_waiters(gid)
+
+            elif path == 'valid':
+                with _lock:
+                    result = cmd_valid(gid, player)
+
+            elif path == 'state':
+                with _lock:
+                    result = cmd_state(gid, player)
+
+            elif path == 'end':
+                with _lock:
+                    result = cmd_end(gid, player)
+                    _notify_waiters(gid)
+
+            elif path == 'respond':
+                with _lock:
+                    result = cmd_respond(gid, player, data.get('action', 'pass'))
+                    _notify_waiters(gid)
+
+            elif path == 'damage':
+                with _lock:
+                    result = cmd_damage(gid, player, data.get('target', ''), data.get('amount', 0))
+                    _notify_waiters(gid)
+
+            elif path == 'destroy':
+                with _lock:
+                    result = cmd_destroy(gid, player, data.get('target_player', ''), data.get('permanent', ''))
+                    _notify_waiters(gid)
+
+            elif path == 'judge':
+                with _lock:
+                    result = cmd_judge(gid, player, data.get('question', ''))
+                    _notify_waiters(gid)
+
+            elif path == 'priority':
+                with _lock:
+                    result = cmd_priority(gid)
+
+            elif path == 'wait':
+                result = self._handle_wait(gid, player, data.get('timeout', 120))
+
+            else:
+                result = {'error': f'Unknown endpoint: {path}'}
+
+            self._respond(200, result)
+
+        except Exception as e:
+            self._respond(500, {'error': str(e)})
+
+    def _handle_wait(self, game_id, player_name, timeout=120):
+        """Long-poll until it's the player's turn."""
+        start = time.time()
+
+        while time.time() - start < timeout:
+            with _lock:
+                try:
+                    result = cmd_priority(game_id)
+                except Exception:
+                    return {'error': 'Game not found'}
+
+                phase = result.get('phase', '')
+
+                if phase == 'done':
+                    return {'status': 'game_over'}
+
+                if phase == 'mulligan':
+                    pending = result.get('mulligan_pending', [])
+                    # Check if this player needs to mulligan
+                    for name in pending:
+                        if player_name.lower() in name.lower() or name.lower() in player_name.lower():
+                            hand = cmd_hand(game_id, player_name)
+                            return {'status': 'mulligan', 'hand': hand}
+
+                if phase == 'playing':
+                    active = result.get('active_player', '')
+                    pq = result.get('priority_queue', [])
+
+                    # Is it our turn?
+                    if player_name.lower() in active.lower() or active.lower() in player_name.lower():
+                        if not pq:
+                            return {'status': 'your_turn', 'turn': result.get('turn', 0)}
+
+                    # Do we have priority?
+                    for name in pq:
+                        if player_name.lower() in name.lower() or name.lower() in player_name.lower():
+                            return {'status': 'priority', 'last_action': ''}
+
+            # Wait for a state change notification, or timeout after 3s
+            evt = _wait_events.get(game_id)
+            if evt:
+                evt.wait(timeout=3)
+            else:
+                time.sleep(3)
+
+        return {'status': 'timeout'}
+
+    def _respond(self, code, data):
+        self.send_response(code)
+        self.send_header('Content-Type', 'application/json')
+        self.end_headers()
+        self.wfile.write(json.dumps(data).encode('utf-8'))
+
+    def log_message(self, format, *args):
+        # Compact logging
+        msg = format % args
+        if '/wait' not in msg:  # Don't spam wait polls
+            print(f"[{time.strftime('%H:%M:%S')}] {msg}", file=sys.stderr)
+
+
+def main():
+    port = 8080
+    if '--port' in sys.argv:
+        idx = sys.argv.index('--port')
+        port = int(sys.argv[idx + 1])
+
+    server = HTTPServer(('127.0.0.1', port), GameHandler)
+    server.socket.settimeout(1)  # Allow clean shutdown
+
+    print(f"Game server running on http://127.0.0.1:{port}", file=sys.stderr)
+    print(f"Endpoints: create, hand, mulligan, keep, begin, action, valid, state, end, respond, damage, destroy, wait, judge, priority", file=sys.stderr)
+
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print("\nShutting down.", file=sys.stderr)
+        server.server_close()
+
+
+if __name__ == '__main__':
+    main()
