@@ -580,10 +580,9 @@ class GameEngine:
             player.untap_all()
         player.reset_land_drops()
 
-        # Draw (skip very first turn)
+        # Draw (Commander: everyone draws, including first player turn 1)
         drew = None
-        if not (self.turn == 1 and self.active_idx == 0):
-            player.draw()
+        player.draw()
             if player.hand:
                 drew = player.hand[-1]
             if player.life <= 0:

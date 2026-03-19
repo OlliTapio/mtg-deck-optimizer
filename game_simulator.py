@@ -968,11 +968,10 @@ def run_game(gs, input_fn=None, output_fn=None, max_turns=15, rng=None):
         output_fn(f"  TURN {gs.turn_number}")
         output_fn(f"{'='*60}")
 
-        # ---- Draw (skip turn 1) ----
-        if gs.turn_number > 1:
-            p.draw()
-            drawn = p.hand[-1]['name'] if p.hand else "nothing"
-            output_fn(f"You draw: {drawn}")
+        # ---- Draw (Commander: everyone draws T1) ----
+        p.draw()
+        drawn = p.hand[-1]['name'] if p.hand else "nothing"
+        output_fn(f"You draw: {drawn}")
 
         if p.life <= 0:
             gs.game_over = True

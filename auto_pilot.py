@@ -84,15 +84,14 @@ def auto_play_turn(gs, rng, log):
     """Play one full turn with heuristic AI."""
     p = gs.player
 
-    # === Untap + Draw ===
+    # === Untap + Draw (Commander: everyone draws T1) ===
     if gs.turn_number > 1:
         p.untap_all()
     p.reset_land_drops()
 
-    if gs.turn_number > 1:
-        p.draw()
-        if p.life <= 0:
-            return
+    p.draw()
+    if p.life <= 0:
+        return
 
     log(f"\n{'='*60}")
     log(f"  TURN {gs.turn_number}")
