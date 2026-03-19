@@ -266,7 +266,7 @@ def cmd_keep(game_id, player_name, bottom_cards=None):
 # ==================== Turn Actions ====================
 
 def cmd_begin(game_id, player_name):
-    """Begin turn: untap, draw. ONLY the active player can call this."""
+    """Begin turn: untap, upkeep triggers, draw. ONLY the active player can call this."""
     engine, meta = _load_game(game_id)
 
     if meta['phase'] != 'playing':
@@ -284,6 +284,16 @@ def cmd_begin(game_id, player_name):
         return {'error': f"Priority pending for: {', '.join(pq)}. Cannot begin turn."}
 
     drew = engine.begin_turn()
+
+    # Detect upkeep triggers
+    upkeep_triggers = []
+    for tp, perm, oracle in detect_triggers(engine.players, 'upkeep', {}):
+        upkeep_triggers.append({
+            'player': tp.name,
+            'permanent': perm.name,
+            'type': 'upkeep',
+            'oracle': oracle[:120],
+        })
 
     meta['turn_actions'] = []
     meta['priority_queue'] = []
@@ -304,6 +314,46 @@ def cmd_begin(game_id, player_name):
         'drew': drew_info,
         'life': player.life,
         'hand_size': len(player.hand),
+        'upkeep_triggers': upkeep_triggers,
+    }
+
+
+def cmd_draw(game_id, player_name, count=1):
+    """Draw cards (for spell/ability effects). Agent calls this to resolve draw effects."""
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    drawn = []
+    for _ in range(count):
+        if player.library:
+            card = player.library.pop(0)
+            player.hand.append(card)
+            drawn.append({
+                'name': card['name'],
+                'mana_cost': card.get('mana_cost', ''),
+                'type_line': card.get('type_line', ''),
+            })
+        else:
+            player.life = 0
+            engine.events.append(f"{player.name} draws from empty library and loses!")
+            break
+
+    # Detect draw triggers
+    draw_triggers = []
+    for tp, perm, oracle in detect_triggers(engine.players, 'draw', {}):
+        draw_triggers.append({
+            'player': tp.name,
+            'permanent': perm.name,
+            'oracle': oracle[:120],
+        })
+
+    _save_game(game_id, engine, meta)
+    engine.events.append(f"{player.name} draws {len(drawn)} card(s)")
+
+    return {
+        'drawn': drawn,
+        'hand_size': len(player.hand),
+        'draw_triggers': draw_triggers,
     }
 
 
@@ -497,11 +547,37 @@ def cmd_valid(game_id, player_name):
         if can_cast(player, cmdr, commander_tax=player.commander_tax):
             actions.append("cast commander")
 
+    # Activated abilities on untapped permanents
+    for perm in player.battlefield:
+        if perm.tapped:
+            continue
+        oracle = perm.card.get('oracle_text', '')
+        # Find {T}: abilities that aren't pure mana
+        if '{T}:' in oracle or '{T},':
+            parts = oracle.split('{T}')
+            for part in parts[1:]:
+                ability = part.lstrip(':').lstrip(',').strip().split('\n')[0].strip()
+                # Skip pure mana abilities
+                if ability.startswith('Add {') or ability.startswith('Add one mana'):
+                    continue
+                if ability and len(ability) > 5:
+                    actions.append(f"activate {perm.name}")
+                    break
+        # Sacrifice abilities
+        if 'sacrifice' in oracle.lower() and '{T}' not in oracle:
+            if 'sacrifice ' + perm.card.get('name', '').lower() in oracle.lower() or 'sacrifice this' in oracle.lower():
+                actions.append(f"activate {perm.name}")
+
     creatures = [p for p in player.battlefield if p.is_creature() and not p.tapped and not p.summoning_sick]
     if creatures:
-        for opp in engine.players:
-            if opp is not player and opp.life > 0:
-                actions.append(f"attack all -> {opp.name}")
+        alive_opps = [opp for opp in engine.players if opp is not player and opp.life > 0]
+        for opp in alive_opps:
+            actions.append(f"attack all -> {opp.name}")
+        # Also show individual creature attacks if multiple creatures
+        if len(creatures) >= 2 and len(alive_opps) >= 2:
+            for c in creatures:
+                for opp in alive_opps:
+                    actions.append(f"attack {c.name} -> {opp.name}")
 
     actions.append("pass")
 
@@ -605,6 +681,347 @@ def cmd_destroy(game_id, player_name, target_player, permanent_name):
 
     _save_game(game_id, engine, meta)
     return {'destroyed': perm.name, 'owner': target.name}
+
+
+def cmd_modify(game_id, player_name, target_player, permanent_name, counter_type='+1/+1', amount=1):
+    """Add or remove counters on a permanent. Used to resolve counter effects.
+
+    counter_type: '+1/+1', '-1/-1', 'loyalty', 'rad', 'lore', 'charge', etc.
+    amount: positive to add, negative to remove.
+    """
+    engine, meta = _load_game(game_id)
+    target = _find(engine, target_player)
+
+    perm = None
+    for p in target.battlefield:
+        if permanent_name.lower() in p.name.lower():
+            perm = p
+            break
+
+    if not perm:
+        return {'error': f"'{permanent_name}' not found on {target.name}'s battlefield"}
+
+    old_count = perm.counters.get(counter_type, 0)
+    new_count = max(0, old_count + int(amount))
+    if new_count == 0 and counter_type in perm.counters:
+        del perm.counters[counter_type]
+    elif new_count > 0:
+        perm.counters[counter_type] = new_count
+
+    # Check if creature died from -1/-1 counters
+    result = {
+        'permanent': perm.name,
+        'owner': target.name,
+        'counter_type': counter_type,
+        'old_count': old_count,
+        'new_count': new_count,
+    }
+
+    if perm.is_creature() and perm.toughness <= 0:
+        target.battlefield.remove(perm)
+        if perm.card.get('is_commander'):
+            target.command_zone.append(perm.card)
+            engine.events.append(f"{perm.name} dies from -1/-1 counters → command zone")
+        else:
+            target.graveyard.append(perm.card)
+            engine.events.append(f"{perm.name} dies from -1/-1 counters → graveyard")
+        result['died'] = True
+    else:
+        if perm.is_creature():
+            result['power'] = perm.power
+            result['toughness'] = perm.toughness
+
+    action_word = "adds" if amount > 0 else "removes"
+    engine.events.append(f"{player_name} {action_word} {abs(amount)} {counter_type} counter(s) on {perm.name} ({new_count} total)")
+
+    _save_game(game_id, engine, meta)
+    return result
+
+
+def cmd_keyword(game_id, player_name, target_player, permanent_name, keyword, remove=False):
+    """Grant or remove a keyword on a permanent.
+
+    Keywords: trample, flying, hexproof, indestructible, deathtouch, lifelink,
+              menace, vigilance, reach, haste, first strike, double strike, finality, ward
+    """
+    engine, meta = _load_game(game_id)
+    target = _find(engine, target_player)
+
+    perm = None
+    for p in target.battlefield:
+        if permanent_name.lower() in p.name.lower():
+            perm = p
+            break
+
+    if not perm:
+        return {'error': f"'{permanent_name}' not found on {target.name}'s battlefield"}
+
+    kw = keyword.lower().strip()
+    if remove:
+        perm.granted_keywords.discard(kw)
+        engine.events.append(f"{perm.name} loses {kw}")
+    else:
+        perm.granted_keywords.add(kw)
+        engine.events.append(f"{perm.name} gains {kw}")
+
+    _save_game(game_id, engine, meta)
+    return {
+        'permanent': perm.name,
+        'keyword': kw,
+        'action': 'removed' if remove else 'granted',
+        'all_keywords': sorted(perm.all_keywords),
+    }
+
+
+def cmd_proliferate(game_id, player_name, targets):
+    """Proliferate: for each target (permanent or player), add one counter of a type already there.
+
+    targets: list of dicts, each with:
+      - {'player': 'Name', 'permanent': 'CardName', 'counter_type': '+1/+1'}
+      - {'player': 'Name', 'counter_type': 'poison'}  (for player counters — future)
+    """
+    engine, meta = _load_game(game_id)
+    results = []
+
+    for t in targets:
+        target_player = t.get('player', player_name)
+        perm_name = t.get('permanent', '')
+        counter_type = t.get('counter_type', '+1/+1')
+
+        if not perm_name:
+            # Player counter (poison, rad, etc.) — skip for now
+            results.append({'skipped': True, 'reason': 'player counters not yet supported'})
+            continue
+
+        target = _find(engine, target_player)
+        perm = None
+        for p in target.battlefield:
+            if perm_name.lower() in p.name.lower():
+                perm = p
+                break
+
+        if not perm:
+            results.append({'error': f"'{perm_name}' not found"})
+            continue
+
+        # Can only proliferate a counter type already present
+        if counter_type not in perm.counters or perm.counters[counter_type] <= 0:
+            results.append({'skipped': True, 'permanent': perm.name, 'reason': f'no {counter_type} counters to proliferate'})
+            continue
+
+        perm.counters[counter_type] += 1
+        entry = {
+            'permanent': perm.name,
+            'counter_type': counter_type,
+            'new_count': perm.counters[counter_type],
+        }
+        if perm.is_creature():
+            entry['power'] = perm.power
+            entry['toughness'] = perm.toughness
+        results.append(entry)
+
+    counter_summary = ", ".join(
+        f"{r['permanent']}({r['counter_type']}→{r['new_count']})"
+        for r in results if 'permanent' in r and 'new_count' in r
+    )
+    engine.events.append(f"{player_name} proliferates: {counter_summary}" if counter_summary else f"{player_name} proliferates (no targets)")
+
+    _save_game(game_id, engine, meta)
+    return {'proliferated': results}
+
+
+def cmd_scry(game_id, player_name, count=1, bottom=None):
+    """Scry N: look at top N cards, put any on bottom in specified order.
+
+    bottom: list of card names to put on bottom (rest stay on top in current order)
+    """
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    n = min(int(count), len(player.library))
+    top_cards = player.library[:n]
+
+    card_info = [{'name': c['name'], 'type_line': c.get('type_line', ''), 'mana_cost': c.get('mana_cost', '')} for c in top_cards]
+
+    if bottom is None:
+        # Just reveal the top N without rearranging
+        _save_game(game_id, engine, meta)
+        return {'top_cards': card_info, 'count': n, 'message': 'Specify bottom: [card names] to put cards on bottom'}
+
+    # Move specified cards to bottom
+    bottomed = []
+    kept_on_top = []
+    for card in top_cards:
+        if any(b.lower() in card['name'].lower() for b in (bottom or [])):
+            bottomed.append(card)
+        else:
+            kept_on_top.append(card)
+
+    # Rebuild library: kept on top + rest of library + bottomed
+    player.library = kept_on_top + player.library[n:] + bottomed
+
+    engine.events.append(f"{player.name} scries {n}: {len(bottomed)} to bottom")
+    _save_game(game_id, engine, meta)
+    return {
+        'kept_on_top': [c['name'] for c in kept_on_top],
+        'bottomed': [c['name'] for c in bottomed],
+    }
+
+
+def cmd_mill(game_id, player_name, count=1):
+    """Mill N cards: move top N from library to graveyard."""
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    milled = []
+    for _ in range(int(count)):
+        if not player.library:
+            break
+        card = player.library.pop(0)
+        player.graveyard.append(card)
+        milled.append({'name': card['name'], 'type_line': card.get('type_line', '')})
+
+    engine.events.append(f"{player.name} mills {len(milled)}: {', '.join(c['name'] for c in milled)}")
+    _save_game(game_id, engine, meta)
+    return {'milled': milled, 'library_size': len(player.library)}
+
+
+def cmd_search(game_id, player_name, card_name, destination='battlefield', tapped=True):
+    """Search a player's library for a card and put it somewhere.
+
+    For tutor effects (Sakura-Tribe Elder, Cultivate, etc.)
+    destination: 'battlefield', 'hand', 'graveyard', 'top' (top of library)
+    tapped: whether the card enters tapped (for lands)
+    """
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    # Find card in library
+    found = None
+    for i, card in enumerate(player.library):
+        if card_name.lower() in card['name'].lower():
+            found = i
+            break
+
+    if found is None:
+        # List available matches for the search
+        matches = [c['name'] for c in player.library if any(
+            t in c.get('type_line', '').lower() for t in card_name.lower().split()
+        )][:10]
+        return {'error': f"'{card_name}' not in library", 'similar': matches}
+
+    card = player.library.pop(found)
+
+    if destination == 'battlefield':
+        from game_simulator import Permanent
+        perm = Permanent(card=card, tapped=bool(tapped))
+        player.battlefield.append(perm)
+        engine.events.append(f"{player.name} searches library → {card['name']} to battlefield{'(tapped)' if tapped else ''}")
+    elif destination == 'hand':
+        player.hand.append(card)
+        engine.events.append(f"{player.name} searches library → {card['name']} to hand")
+    elif destination == 'graveyard':
+        player.graveyard.append(card)
+        engine.events.append(f"{player.name} searches library → {card['name']} to graveyard")
+    elif destination == 'top':
+        player.library.insert(0, card)
+        engine.events.append(f"{player.name} searches library → {card['name']} to top of library")
+    else:
+        return {'error': f"Unknown destination: {destination}"}
+
+    # Shuffle library after search (MTG rules)
+    import random
+    random.shuffle(player.library)
+
+    _save_game(game_id, engine, meta)
+    return {
+        'found': card['name'],
+        'destination': destination,
+        'tapped': tapped if destination == 'battlefield' else None,
+        'library_size': len(player.library),
+    }
+
+
+def cmd_resolve_judge(game_id, ruling):
+    """Judge resolves a pending call. Clears JUDGE from priority and resumes the game.
+
+    ruling: text explanation of the ruling
+    """
+    engine, meta = _load_game(game_id)
+
+    # Clear JUDGE from priority
+    pq = meta.get('priority_queue', [])
+    if 'JUDGE' in pq:
+        pq.remove('JUDGE')
+    meta['priority_queue'] = pq
+
+    # Log the ruling
+    engine.events.append(f"⚖️ JUDGE RULING: {ruling}")
+
+    if 'judge_calls' not in meta:
+        meta['judge_calls'] = []
+
+    _save_game(game_id, engine, meta)
+    return {
+        'resolved': True,
+        'ruling': ruling,
+        'priority_queue': pq,
+    }
+
+
+def cmd_move(game_id, player_name, card_name, from_zone, to_zone):
+    """Move a card between zones. For judge/effect resolution.
+
+    Zones: hand, battlefield, graveyard, exile, command_zone, library
+    """
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    zone_map = {
+        'hand': player.hand,
+        'graveyard': player.graveyard,
+        'exile': player.exile,
+        'command_zone': player.command_zone,
+        'library': player.library,
+    }
+
+    # Find and remove from source zone
+    if from_zone == 'battlefield':
+        found = None
+        for perm in player.battlefield:
+            if card_name.lower() in perm.name.lower():
+                found = perm
+                break
+        if not found:
+            return {'error': f"'{card_name}' not on battlefield"}
+        player.battlefield.remove(found)
+        card = found.card
+    elif from_zone in zone_map:
+        source = zone_map[from_zone]
+        found = None
+        for i, c in enumerate(source):
+            if card_name.lower() in c['name'].lower():
+                found = i
+                break
+        if found is None:
+            return {'error': f"'{card_name}' not in {from_zone}"}
+        card = source.pop(found)
+    else:
+        return {'error': f"Unknown zone: {from_zone}"}
+
+    # Add to destination
+    if to_zone == 'battlefield':
+        from game_simulator import Permanent
+        perm = Permanent(card=card)
+        player.battlefield.append(perm)
+    elif to_zone in zone_map:
+        zone_map[to_zone].append(card)
+    else:
+        return {'error': f"Unknown zone: {to_zone}"}
+
+    engine.events.append(f"{player.name} moves {card['name']} from {from_zone} → {to_zone}")
+    _save_game(game_id, engine, meta)
+    return {'moved': card['name'], 'from': from_zone, 'to': to_zone}
 
 
 def cmd_judge(game_id, player_name, question):

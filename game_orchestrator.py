@@ -59,17 +59,34 @@ def perm_summary(perm):
     """Summary of a permanent on the battlefield."""
     card = perm.card
     name = card['name']
-    tl = card.get('type_line', '')
     status = []
     if perm.tapped:
         status.append("tapped")
     if perm.summoning_sick:
         status.append("summoning sick")
     status_str = f" [{', '.join(status)}]" if status else ""
-    pt = f" ({perm.power}/{perm.toughness})" if perm.is_creature() else ""
+    # Power/toughness with counter info
+    pt = ""
+    if perm.is_creature():
+        if perm.counters.get('+1/+1', 0) > 0:
+            pt = f" ({perm.power}/{perm.toughness}, base {perm.base_power}/{perm.base_toughness} +{perm.counters['+1/+1']} counters)"
+        elif perm.counters.get('-1/-1', 0) > 0:
+            pt = f" ({perm.power}/{perm.toughness}, base {perm.base_power}/{perm.base_toughness} -{perm.counters['-1/-1']} counters)"
+        else:
+            pt = f" ({perm.power}/{perm.toughness})"
+    # Non-+1/+1 counters (loyalty, rad, lore, etc.)
+    counter_parts = []
+    for ctype, count in perm.counters.items():
+        if ctype not in ('+1/+1', '-1/-1') and count > 0:
+            counter_parts.append(f"{count} {ctype}")
+    counter_str = f" [{', '.join(counter_parts)}]" if counter_parts else ""
+    # Granted keywords
+    kw_str = ""
+    if perm.granted_keywords:
+        kw_str = f" {{{', '.join(sorted(perm.granted_keywords))}}}"
     produced = card.get('produced_mana', [])
     mana_str = f" [mana: {','.join(produced)}]" if produced and not perm.is_land() else ""
-    return f"{name}{pt}{status_str}{mana_str}"
+    return f"{name}{pt}{counter_str}{kw_str}{status_str}{mana_str}"
 
 
 # ==================== Trigger Detection ====================
@@ -296,11 +313,16 @@ class GameEngine:
             }
             # Lands
             land_counts = Counter()
+            special_lands = []
             for perm in p.battlefield:
                 if perm.is_land():
-                    status = " (tapped)" if perm.tapped else ""
-                    land_counts[perm.name + status] += 1
+                    if perm.counters or perm.granted_keywords:
+                        special_lands.append(perm_summary(perm))
+                    else:
+                        status = " (tapped)" if perm.tapped else ""
+                        land_counts[perm.name + status] += 1
             pd['lands'] = [f"{n}x {name}" if n > 1 else name for name, n in sorted(land_counts.items())]
+            pd['lands'].extend(special_lands)
 
             # Nonlands
             for perm in sorted(p.battlefield, key=lambda x: x.name):

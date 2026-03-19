@@ -35,6 +35,11 @@ python3 game_orchestrator.py decks/<a>/decklist.txt decks/<b>/decklist.txt decks
 # Multiplayer with N real decks (auto-pilot):
 python3 multiplayer_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt --ai auto --seed 42 --max-turns 12
 
+# LLM vs LLM game: Codex agents pilot each deck independently
+# Start server first, then launch agents:
+python3 game_http_server.py &
+python3 codex_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt decks/<c>/decklist.txt decks/<d>/decklist.txt --seed 42 --max-turns 12
+
 # Check prices for entire deck or specific cards
 python3 price_check.py --deck decks/<deck>/decklist.txt
 python3 price_check.py --cards "Card Name" "Card Name"
@@ -69,6 +74,7 @@ python3 game_http_server.py --port 8080
 /hand     - see your cards
 /mulligan - shuffle and redraw
 /keep     - keep your hand
+/draw     - draw N cards (for spell/ability effects) {"count":3}
 /wait     - block until your turn (long-poll)
 /begin    - start your turn (draw)
 /valid    - see legal actions
@@ -77,6 +83,9 @@ python3 game_http_server.py --port 8080
 /respond  - instant-speed response or "pass"
 /damage   - deal combat damage
 /destroy  - kill a permanent
+/modify   - add/remove counters {"target_player","permanent","counter_type":"+1/+1","amount":3}
+/keyword  - grant keyword {"target_player","permanent","keyword":"trample"}
+/proliferate - proliferate {"targets":[{"player","permanent","counter_type"}]}
 /judge    - call judge for rules dispute
 /state    - see the board
 /priority - check whose turn it is

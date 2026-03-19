@@ -106,7 +106,8 @@ class Permanent:
     card: dict
     tapped: bool = False
     summoning_sick: bool = False
-    counters: dict = field(default_factory=dict)
+    counters: dict = field(default_factory=dict)  # e.g. {'+1/+1': 3, 'loyalty': 4, 'rad': 2}
+    granted_keywords: set = field(default_factory=set)  # e.g. {'trample', 'finality', 'hexproof'}
 
     @property
     def name(self):
@@ -114,11 +115,30 @@ class Permanent:
 
     @property
     def power(self):
-        return self.card.get('power', 0)
+        base = self.card.get('power', 0)
+        return base + self.counters.get('+1/+1', 0) - self.counters.get('-1/-1', 0)
 
     @property
     def toughness(self):
+        base = self.card.get('toughness', 0)
+        return base + self.counters.get('+1/+1', 0) - self.counters.get('-1/-1', 0)
+
+    @property
+    def base_power(self):
+        return self.card.get('power', 0)
+
+    @property
+    def base_toughness(self):
         return self.card.get('toughness', 0)
+
+    @property
+    def all_keywords(self):
+        """Card's innate keywords + granted keywords."""
+        innate = set(k.lower() for k in self.card.get('keywords', []))
+        return innate | self.granted_keywords
+
+    def has_keyword(self, kw):
+        return kw.lower() in self.all_keywords
 
     def is_creature(self):
         return 'Creature' in self.card.get('type_line', '')
@@ -152,7 +172,7 @@ class Player:
             if not self.library:
                 self.life = -1  # lose from empty library
                 return
-            card = self.library.pop()
+            card = self.library.pop(0)  # index 0 = top of library
             self.hand.append(card)
 
     def untap_all(self):

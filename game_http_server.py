@@ -41,8 +41,10 @@ class ThreadingHTTPServer(ThreadingMixIn, HTTPServer):
 # Import game logic
 from game_server import (
     cmd_create, cmd_hand, cmd_mulligan, cmd_keep,
-    cmd_begin, cmd_action, cmd_valid, cmd_state,
+    cmd_begin, cmd_draw, cmd_action, cmd_valid, cmd_state,
     cmd_end, cmd_respond, cmd_damage, cmd_destroy,
+    cmd_modify, cmd_keyword, cmd_proliferate,
+    cmd_scry, cmd_mill, cmd_search, cmd_move, cmd_resolve_judge,
     cmd_judge, cmd_priority,
 )
 
@@ -98,6 +100,10 @@ class GameHandler(BaseHTTPRequestHandler):
                 with _lock:
                     result = cmd_begin(gid, player)
 
+            elif path == 'draw':
+                with _lock:
+                    result = cmd_draw(gid, player, data.get('count', 1))
+
             elif path == 'action':
                 with _lock:
                     result = cmd_action(gid, player, data.get('action', ''))
@@ -129,6 +135,55 @@ class GameHandler(BaseHTTPRequestHandler):
             elif path == 'destroy':
                 with _lock:
                     result = cmd_destroy(gid, player, data.get('target_player', ''), data.get('permanent', ''))
+                    _notify_waiters(gid)
+
+            elif path == 'modify':
+                with _lock:
+                    result = cmd_modify(gid, player, data.get('target_player', player),
+                                        data.get('permanent', ''),
+                                        data.get('counter_type', '+1/+1'),
+                                        data.get('amount', 1))
+                    _notify_waiters(gid)
+
+            elif path == 'keyword':
+                with _lock:
+                    result = cmd_keyword(gid, player, data.get('target_player', player),
+                                         data.get('permanent', ''),
+                                         data.get('keyword', ''),
+                                         data.get('remove', False))
+                    _notify_waiters(gid)
+
+            elif path == 'proliferate':
+                with _lock:
+                    result = cmd_proliferate(gid, player, data.get('targets', []))
+                    _notify_waiters(gid)
+
+            elif path == 'scry':
+                with _lock:
+                    result = cmd_scry(gid, player, data.get('count', 1), data.get('bottom'))
+
+            elif path == 'mill':
+                with _lock:
+                    result = cmd_mill(gid, player, data.get('count', 1))
+                    _notify_waiters(gid)
+
+            elif path == 'search':
+                with _lock:
+                    result = cmd_search(gid, player, data.get('card_name', ''),
+                                        data.get('destination', 'battlefield'),
+                                        data.get('tapped', True))
+                    _notify_waiters(gid)
+
+            elif path == 'move':
+                with _lock:
+                    result = cmd_move(gid, player, data.get('card_name', ''),
+                                      data.get('from_zone', ''),
+                                      data.get('to_zone', ''))
+                    _notify_waiters(gid)
+
+            elif path == 'resolve_judge':
+                with _lock:
+                    result = cmd_resolve_judge(gid, data.get('ruling', ''))
                     _notify_waiters(gid)
 
             elif path == 'judge':
@@ -181,6 +236,10 @@ class GameHandler(BaseHTTPRequestHandler):
                 if phase == 'playing':
                     active = result.get('active_player', '')
                     pq = result.get('priority_queue', [])
+
+                    # Judge pause — tell players to wait
+                    if 'JUDGE' in pq:
+                        return {'status': 'judge_pause', 'message': 'Judge is resolving a rules question. Please wait.'}
 
                     # Is it our turn?
                     if player_name.lower() in active.lower() or active.lower() in player_name.lower():
