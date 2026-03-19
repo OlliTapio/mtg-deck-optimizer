@@ -331,14 +331,27 @@ def cmd_action(game_id, player_name, action):
 
         result['triggers'] = triggers
 
-        # Set up priority for opponents if spell was cast
-        if 'cast' in action.lower() and ok:
+        # Set up priority for opponents if spell was cast or attack declared
+        if ('cast' in action.lower() or 'attack' in action.lower()) and ok:
             opponents_with_responses = []
             for opp in engine.players:
                 if opp is player or opp.life <= 0:
                     continue
                 if engine.has_instant_speed(opp):
                     opponents_with_responses.append(opp.name)
+
+            # For attacks, ALL defenders get priority to declare blockers
+            if 'attack' in action.lower():
+                for opp in engine.players:
+                    if opp is player or opp.life <= 0:
+                        continue
+                    # Anyone with creatures can block
+                    has_blockers = any(p.is_creature() and not p.tapped for p in opp.battlefield)
+                    if has_blockers and opp.name not in opponents_with_responses:
+                        opponents_with_responses.append(opp.name)
+                meta['combat_pending'] = True
+                result['combat'] = 'Attackers declared. Defenders may block or respond.'
+
             meta['priority_queue'] = opponents_with_responses
             result['priority_to'] = opponents_with_responses
 
@@ -363,22 +376,78 @@ def cmd_action(game_id, player_name, action):
 
 
 def cmd_respond(game_id, player_name, action):
-    """Respond during an opponent's turn (instant speed)."""
+    """Respond during an opponent's turn — instant-speed spells, abilities, or block declarations."""
     engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+    pname = player.name
 
-    if player_name not in meta.get('priority_queue', []):
-        return {'error': f"{player_name} doesn't have priority"}
+    if pname not in meta.get('priority_queue', []):
+        return {'error': f"{pname} doesn't have priority"}
 
-    if action.lower() == 'pass':
-        meta['priority_queue'].remove(player_name)
+    action_lower = action.lower().strip()
+
+    # Pass priority
+    if action_lower == 'pass':
+        meta['priority_queue'].remove(pname)
         _save_game(game_id, engine, meta)
         return {'passed': True, 'priority_remaining': meta['priority_queue']}
 
-    # Execute the response
+    # Block declaration: "block <attacker> with <blocker>"
+    if action_lower.startswith('block '):
+        # Parse: "block CreatureName with MyCreature"
+        parts = action[6:].split(' with ')
+        if len(parts) == 2:
+            attacker_name = parts[0].strip()
+            blocker_name = parts[1].strip()
+
+            # Find the attacker on any opponent's battlefield
+            attacker = None
+            for opp in engine.players:
+                for perm in opp.battlefield:
+                    if perm.is_creature() and perm.tapped and blocker_name.lower() != perm.name.lower():
+                        if attacker_name.lower() in perm.name.lower():
+                            attacker = perm
+                            break
+
+            # Find the blocker on this player's battlefield
+            blocker = None
+            for perm in player.battlefield:
+                if perm.is_creature() and not perm.tapped and blocker_name.lower() in perm.name.lower():
+                    blocker = perm
+                    break
+
+            if not blocker:
+                return {'error': f"No untapped creature '{blocker_name}' on your battlefield"}
+
+            # Record the block
+            if 'blocks' not in meta:
+                meta['blocks'] = []
+            meta['blocks'].append({
+                'blocker': blocker.name,
+                'blocker_owner': pname,
+                'attacker': attacker_name,
+            })
+
+            engine.events.append(f"  ↪ {pname} blocks {attacker_name} with {blocker.name}")
+
+            meta['priority_queue'].remove(pname)
+            _save_game(game_id, engine, meta)
+            return {
+                'blocked': True,
+                'message': f"Blocking {attacker_name} with {blocker.name}",
+                'priority_remaining': meta['priority_queue'],
+            }
+
+        return {'error': 'Block format: "block <attacker> with <your creature>"'}
+
+    # Instant-speed spell or ability
     result = cmd_action(game_id, player_name, action)
     if result.get('success'):
-        meta['priority_queue'].remove(player_name)
-        _save_game(game_id, engine, meta)
+        # Reload meta since cmd_action saved
+        _, meta = _load_game(game_id)
+        if pname in meta.get('priority_queue', []):
+            meta['priority_queue'].remove(pname)
+            _save_game(game_id, engine, meta)
 
     return result
 
@@ -449,6 +518,59 @@ def cmd_end(game_id, player_name):
         'turn': engine.turn,
         'game_over': engine.game_over,
     }
+
+
+def cmd_damage(game_id, player_name, target_player, amount):
+    """Deal damage to a player. Active player or priority holder can call this."""
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+    target = _find(engine, target_player)
+
+    target.life -= int(amount)
+    engine.events.append(f"{player.name} deals {amount} damage to {target.name} (life: {target.life})")
+
+    result = {'target': target.name, 'damage': int(amount), 'life_remaining': target.life}
+
+    if target.life <= 0 and target.life > -999:
+        target.life = -999
+        result['eliminated'] = True
+        engine.events.append(f"{target.name} eliminated!")
+
+    alive = [p for p in engine.players if p.life > 0]
+    if len(alive) <= 1:
+        engine.game_over = True
+        meta['phase'] = 'done'
+        result['game_over'] = True
+        result['winner'] = alive[0].name if alive else 'draw'
+
+    _save_game(game_id, engine, meta)
+    return result
+
+
+def cmd_destroy(game_id, player_name, target_player, permanent_name):
+    """Move a permanent to its owner's graveyard. For combat kills, removal, etc."""
+    engine, meta = _load_game(game_id)
+    target = _find(engine, target_player)
+
+    perm = None
+    for p in target.battlefield:
+        if permanent_name.lower() in p.name.lower():
+            perm = p
+            break
+
+    if not perm:
+        return {'error': f"'{permanent_name}' not found on {target.name}'s battlefield"}
+
+    target.battlefield.remove(perm)
+    if perm.card.get('is_commander'):
+        target.command_zone.append(perm.card)
+        engine.events.append(f"{perm.name} destroyed → command zone")
+    else:
+        target.graveyard.append(perm.card)
+        engine.events.append(f"{perm.name} destroyed → graveyard")
+
+    _save_game(game_id, engine, meta)
+    return {'destroyed': perm.name, 'owner': target.name}
 
 
 def cmd_judge(game_id, player_name, question):
@@ -616,6 +738,12 @@ def main():
 
         elif cmd == 'respond':
             result = cmd_respond(sys.argv[2], sys.argv[3], ' '.join(sys.argv[4:]))
+
+        elif cmd == 'damage':
+            result = cmd_damage(sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
+
+        elif cmd == 'destroy':
+            result = cmd_destroy(sys.argv[2], sys.argv[3], sys.argv[4], ' '.join(sys.argv[5:]))
 
         elif cmd == 'wait':
             timeout = int(sys.argv[4]) if len(sys.argv) > 4 else 300
