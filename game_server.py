@@ -62,24 +62,34 @@ GAMES_DIR.mkdir(exist_ok=True)
 
 # ==================== State Persistence ====================
 
+import fcntl
+
 def _save_game(game_id, engine, meta=None):
-    """Save engine state to disk."""
+    """Save engine state to disk with file locking."""
     path = GAMES_DIR / f"{game_id}.pkl"
-    state = {
-        'engine': engine,
-        'meta': meta or {},
-    }
-    with open(path, 'wb') as f:
-        pickle.dump(state, f)
+    lock_path = GAMES_DIR / f"{game_id}.lock"
+    with open(lock_path, 'w') as lock_f:
+        fcntl.flock(lock_f, fcntl.LOCK_EX)
+        state = {
+            'engine': engine,
+            'meta': meta or {},
+        }
+        with open(path, 'wb') as f:
+            pickle.dump(state, f)
+        fcntl.flock(lock_f, fcntl.LOCK_UN)
 
 
 def _load_game(game_id):
-    """Load engine state from disk."""
+    """Load engine state from disk with file locking."""
     path = GAMES_DIR / f"{game_id}.pkl"
+    lock_path = GAMES_DIR / f"{game_id}.lock"
     if not path.exists():
         return None, None
-    with open(path, 'rb') as f:
-        state = pickle.load(f)
+    with open(lock_path, 'w') as lock_f:
+        fcntl.flock(lock_f, fcntl.LOCK_SH)
+        with open(path, 'rb') as f:
+            state = pickle.load(f)
+        fcntl.flock(lock_f, fcntl.LOCK_UN)
     return state['engine'], state.get('meta', {})
 
 
@@ -245,18 +255,24 @@ def cmd_keep(game_id, player_name, bottom_cards=None):
 # ==================== Turn Actions ====================
 
 def cmd_begin(game_id, player_name):
-    """Begin turn: untap, draw."""
+    """Begin turn: untap, draw. ONLY the active player can call this."""
     engine, meta = _load_game(game_id)
 
     if meta['phase'] != 'playing':
         return {'error': f"Game in {meta['phase']} phase, not playing"}
 
-    drew = engine.begin_turn()
-    player = engine.active_player
+    # MUST check active player BEFORE mutating state
+    player = _find(engine, player_name)
+    active = engine.active_player
+    if active.name != player.name:
+        return {'error': f"It's {active.name}'s turn, not {player.name}'s. Use 'wait' to block until your turn."}
 
-    if player.name.lower() not in player_name.lower() and player_name.lower() not in player.name.lower():
-        _save_game(game_id, engine, meta)
-        return {'error': f"It's {player.name}'s turn, not {player_name}'s"}
+    # Also block if priority queue has pending responses
+    pq = meta.get('priority_queue', [])
+    if pq:
+        return {'error': f"Priority pending for: {', '.join(pq)}. Cannot begin turn."}
+
+    drew = engine.begin_turn()
 
     meta['turn_actions'] = []
     meta['priority_queue'] = []
@@ -496,9 +512,16 @@ def cmd_state(game_id, player_name):
 
 
 def cmd_end(game_id, player_name):
-    """End turn. Auto-discard to 7."""
+    """End turn. Auto-discard to 7. ONLY active player can end."""
     engine, meta = _load_game(game_id)
     player = _find(engine, player_name)
+
+    if engine.active_player.name != player.name:
+        return {'error': f"It's {engine.active_player.name}'s turn, not {player.name}'s. Cannot end."}
+
+    pq = meta.get('priority_queue', [])
+    if pq:
+        return {'error': f"Priority pending for: {', '.join(pq)}. Cannot end turn yet."}
 
     discarded = []
     while len(player.hand) > 7:
@@ -602,53 +625,65 @@ def cmd_judge(game_id, player_name, question):
 
 
 def cmd_wait(game_id, player_name, timeout=300):
-    """Block until it's this player's turn or they have priority. Returns game state when ready."""
+    """Block until it's this player's turn or they have priority.
+
+    Uses file locking to ensure only one agent acts at a time.
+    When released, the player is guaranteed to be the active player or have priority.
+    """
     import time
     start = time.time()
 
     while time.time() - start < timeout:
-        engine, meta = _load_game(game_id)
-        if engine is None:
-            return {'error': 'Game not found'}
+        # Acquire exclusive lock to check and claim
+        lock_path = GAMES_DIR / f"{game_id}.lock"
+        with open(lock_path, 'w') as lock_f:
+            fcntl.flock(lock_f, fcntl.LOCK_EX)
+            try:
+                engine, meta = _load_game(game_id)
+                if engine is None:
+                    return {'error': 'Game not found'}
 
-        player = _find(engine, player_name)
-        pname = player.name
+                player = _find(engine, player_name)
+                pname = player.name
 
-        # Check if game is over
-        if meta.get('phase') == 'done' or engine.game_over:
-            return {'status': 'game_over', 'winner': next((p.name for p in engine.players if p.life > 0), 'draw')}
+                # Game over?
+                if meta.get('phase') == 'done' or engine.game_over:
+                    return {'status': 'game_over', 'winner': next((p.name for p in engine.players if p.life > 0), 'draw')}
 
-        # Check if still in mulligan phase and this player needs to act
-        if meta.get('phase') == 'mulligan':
-            if meta['mulligan_status'].get(pname) == 'pending':
-                hand = cmd_hand(game_id, player_name)
-                return {'status': 'mulligan', 'message': 'Decide: mulligan or keep', 'hand': hand}
-            else:
-                # Already kept, wait for others
-                time.sleep(1)
-                continue
+                # Mulligan phase?
+                if meta.get('phase') == 'mulligan':
+                    if meta['mulligan_status'].get(pname) == 'pending':
+                        hand = cmd_hand(game_id, player_name)
+                        return {'status': 'mulligan', 'message': 'Decide: mulligan or keep', 'hand': hand}
+                    else:
+                        pass  # Already kept, wait for others
 
-        # Check if it's their turn
-        active = engine.active_player
-        if active.name == pname:
-            return {
-                'status': 'your_turn',
-                'turn': engine.turn,
-                'phase': engine.phase,
-                'message': f"It's your turn (T{engine.turn}). Use begin, action, end commands.",
-            }
+                # Playing phase — check if it's our turn
+                elif meta.get('phase') == 'playing':
+                    active = engine.active_player
+                    pq = meta.get('priority_queue', [])
 
-        # Check if they have priority to respond
-        pq = meta.get('priority_queue', [])
-        if pname in pq:
-            return {
-                'status': 'priority',
-                'turn': engine.turn,
-                'message': f"You have priority to respond. Use respond command or pass.",
-                'last_action': meta.get('last_action', ''),
-            }
+                    if active.name == pname and not pq:
+                        # It's our turn and no priority pending
+                        return {
+                            'status': 'your_turn',
+                            'turn': engine.turn,
+                            'phase': engine.phase,
+                            'message': f"It's your turn (T{engine.turn}). Use begin, action, end.",
+                        }
 
-        # Not our turn, wait
+                    if pname in pq:
+                        # We have priority to respond
+                        return {
+                            'status': 'priority',
+                            'turn': engine.turn,
+                            'message': f"You have priority. Respond or pass.",
+                            'last_action': meta.get('last_action', ''),
+                        }
+            finally:
+                fcntl.flock(lock_f, fcntl.LOCK_UN)
+
+        # Not our turn, sleep and retry
         time.sleep(2)
 
     return {'status': 'timeout', 'message': f'Waited {timeout}s, still not your turn'}
