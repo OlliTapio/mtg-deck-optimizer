@@ -596,12 +596,13 @@ def cmd_action(game_id, player_name, action):
             meta['priority_queue'] = opponents_with_responses
             result['priority_to'] = opponents_with_responses
 
-        # Check eliminations
+        # Check eliminations — remove dead player's cards from game
         elims = []
         for p in engine.players:
             if p.life <= 0 and p.life > -999:
                 elims.append(p.name)
                 p.life = -999
+                engine._remove_player_from_game(p)
         result['eliminations'] = elims
 
         # Check game over
@@ -849,6 +850,7 @@ def cmd_damage(game_id, player_name, target_player, amount):
         target.life = -999
         result['eliminated'] = True
         engine.events.append(f"{target.name} eliminated!")
+        engine._remove_player_from_game(target)
 
     alive = [p for p in engine.players if p.life > 0]
     if len(alive) <= 1:

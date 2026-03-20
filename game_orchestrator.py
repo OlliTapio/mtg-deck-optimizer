@@ -687,6 +687,7 @@ class GameEngine:
                         break
             if eliminated:
                 self.events.append(f"{name} eliminated in combat!")
+                self._remove_player_from_game(p)
 
         self.pending_combat = None
 
@@ -697,6 +698,26 @@ class GameEngine:
             result_msg += f"\nCreatures killed: {', '.join(k['name'] for k in killed_creatures)}"
 
         return True, result_msg, killed_creatures
+
+    def _remove_player_from_game(self, player):
+        """Remove all of an eliminated player's cards from the game.
+
+        Commander rules: when a player loses, all permanents they own leave
+        the battlefield, all spells/abilities they control on the stack cease,
+        and all cards they own in all zones are removed from the game.
+        """
+        removed = []
+        for perm in list(player.battlefield):
+            removed.append(perm.name)
+        player.battlefield.clear()
+        player.hand.clear()
+        player.graveyard.clear()
+        player.exile.clear()
+        player.library.clear()
+        player.command_zone.clear()
+
+        if removed:
+            self.events.append(f"  {player.name}'s permanents leave the game: {', '.join(removed)}")
 
     def has_instant_speed(self, player):
         """Check if player has any instant-speed options available.
