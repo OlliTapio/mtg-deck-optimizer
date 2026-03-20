@@ -15,7 +15,6 @@ h1 { color: #c9a227; margin-bottom: 8px; font-size: 1.3em; }
 }
 .controls button { cursor: pointer; background: #0f3460; }
 .controls button:hover { background: #1a5276; }
-.controls button.active { background: #c9a227; color: #1a1a2e; }
 .status-bar {
   background: #16213e; padding: 8px 12px; border-radius: 6px; margin-bottom: 12px;
   display: flex; justify-content: space-between; align-items: center;
@@ -25,12 +24,19 @@ h1 { color: #c9a227; margin-bottom: 8px; font-size: 1.3em; }
 .status-bar .judge { color: #ff6b6b; font-weight: bold; animation: pulse 1s infinite; }
 @keyframes pulse { 50% { opacity: 0.5; } }
 
-.players { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; margin-bottom: 12px; }
+/* Two-column layout */
+.main-layout { display: grid; grid-template-columns: 1fr 380px; gap: 12px; }
+@media (max-width: 900px) { .main-layout { grid-template-columns: 1fr; } }
+
+.board-col { min-width: 0; }
+.log-col { min-width: 0; }
+
+.players { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; margin-bottom: 12px; }
 .player-card {
   background: #16213e; border-radius: 8px; padding: 10px; border: 2px solid #333;
   transition: border-color 0.3s;
 }
-.player-card.active { border-color: #c9a227; }
+.player-card.active { border-color: #c9a227; box-shadow: 0 0 8px rgba(201,162,39,0.3); }
 .player-card.dead { opacity: 0.5; border-color: #600; }
 .player-card .name { font-weight: bold; font-size: 1em; margin-bottom: 4px; }
 .player-card .name .life { float: right; font-size: 1.2em; }
@@ -45,65 +51,74 @@ h1 { color: #c9a227; margin-bottom: 8px; font-size: 1.3em; }
 .player-card .lands { color: #8a8a6a; font-size: 0.8em; }
 .player-card .other { color: #b48ead; }
 .player-card .gy { color: #777; font-size: 0.8em; }
+.player-card .cmd-dmg { color: #bf616a; font-size: 0.75em; }
 .perm { display: inline-block; background: #0d1b2a; border: 1px solid #444; border-radius: 3px;
   padding: 1px 5px; margin: 1px; font-size: 0.8em; white-space: nowrap; }
 .perm.tapped { opacity: 0.6; font-style: italic; }
 .perm.sick { border-color: #665; }
-.perm .counters { color: #c9a227; font-weight: bold; }
-.perm .keywords { color: #88c0d0; font-size: 0.7em; }
 
-.events-panel {
-  background: #16213e; border-radius: 8px; padding: 10px; max-height: 300px;
-  overflow-y: auto; font-size: 0.85em; line-height: 1.5;
+/* Event log */
+.event-log {
+  background: #16213e; border-radius: 8px; padding: 10px;
+  height: calc(100vh - 120px); overflow-y: auto; font-size: 0.8em; line-height: 1.6;
+  position: sticky; top: 12px;
 }
-.events-panel .event { padding: 1px 0; }
-.events-panel .event.turn-marker { color: #c9a227; font-weight: bold; margin-top: 6px; }
-.events-panel .event.judge { color: #ff6b6b; }
-.events-panel .event.attack { color: #bf616a; }
-.events-panel .event.cast { color: #a3be8c; }
-.events-panel .event.land { color: #8a8a6a; }
-
-.game-list { margin: 20px 0; }
-.game-list table { border-collapse: collapse; width: 100%; }
-.game-list th, .game-list td { padding: 6px 10px; text-align: left; border-bottom: 1px solid #333; }
-.game-list th { color: #c9a227; }
-.game-list tr:hover { background: #16213e; cursor: pointer; }
+.event-log h3 { color: #c9a227; margin-bottom: 8px; font-size: 0.9em; }
+.event-log .ev { padding: 0 0 1px 0; border-bottom: 1px solid #1a1a2e; }
+.ev.turn-marker { color: #c9a227; font-weight: bold; margin-top: 8px; padding-top: 4px; border-top: 1px solid #333; }
+.ev.judge { color: #ff6b6b; }
+.ev.attack { color: #bf616a; }
+.ev.cast { color: #a3be8c; }
+.ev.land { color: #8a8a6a; }
+.ev.trigger { color: #ebcb8b; }
+.ev.damage { color: #d08770; }
+.ev.death { color: #bf616a; font-weight: bold; }
+.ev.rad { color: #b48ead; }
+.ev.counter { color: #88c0d0; }
+.ev.block { color: #5e81ac; }
+.ev.new { background: rgba(201,162,39,0.1); }
 
 .footer { margin-top: 12px; color: #555; font-size: 0.75em; text-align: center; }
 </style>
 </head>
 <body>
 
-<h1>⚔️ Commander Game Viewer</h1>
+<h1>Commander Game Viewer</h1>
 
 <div class="controls">
   <select id="gameSelect"><option value="">Select a game...</option></select>
-  <button onclick="refreshGames()">Refresh</button>
-  <label><input type="checkbox" id="autoRefresh" checked> Auto (5s)</label>
+  <button onclick="refreshGames()">Refresh Games</button>
+  <label><input type="checkbox" id="autoRefresh" checked> Auto 5s</label>
   <span id="lastUpdate" style="color:#666; font-size:0.8em;"></span>
 </div>
 
 <div id="gameView" style="display:none;">
   <div class="status-bar">
     <span class="turn" id="turnInfo">Turn ?</span>
-    <span class="phase" id="phaseInfo">—</span>
+    <span class="phase" id="phaseInfo"></span>
     <span id="judgeInfo"></span>
   </div>
 
-  <div class="players" id="playersGrid"></div>
-
-  <div class="events-panel" id="eventsPanel"></div>
+  <div class="main-layout">
+    <div class="board-col">
+      <div class="players" id="playersGrid"></div>
+    </div>
+    <div class="log-col">
+      <div class="event-log" id="eventLog">
+        <h3>Game Log</h3>
+        <div id="eventEntries"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div id="gameList" class="game-list"></div>
-
-<div class="footer">MTG Commander Game Viewer — polls game server at localhost:8080</div>
+<div class="footer">MTG Commander Game Viewer &mdash; http://127.0.0.1:8080</div>
 
 <script>
 const API = 'http://127.0.0.1:8080';
 let currentGame = null;
 let autoTimer = null;
-let lastEventCount = 0;
+let knownEventCount = 0;
 
 async function api(endpoint, data = {}) {
   try {
@@ -119,29 +134,10 @@ async function api(endpoint, data = {}) {
 }
 
 async function refreshGames() {
-  // Scan known game IDs by trying a range
   const select = document.getElementById('gameSelect');
   const current = select.value;
-
-  // Try to discover games from the server
-  const knownPrefixes = ['g'];
-  const games = [];
-
-  // Try common seeds/IDs
-  const ids = [];
-  for (let i = 1; i <= 999; i++) ids.push('g' + i);
-  for (let i = 1000; i <= 9999; i += 1111) ids.push('g' + i);
-
-  // Batch check - just try priority on likely IDs
-  // For efficiency, check via file listing
   try {
-    // We'll use a different approach - fetch game list from a new endpoint
-    const resp = await fetch(`${API}/games`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: '{}',
-    });
-    const data = await resp.json();
+    const data = await api('games');
     if (data.games) {
       select.innerHTML = '<option value="">Select a game...</option>';
       for (const g of data.games) {
@@ -151,25 +147,8 @@ async function refreshGames() {
         select.appendChild(opt);
       }
       if (current) select.value = current;
-      return;
     }
   } catch(e) {}
-
-  // Fallback: try known IDs
-  select.innerHTML = '<option value="">Select a game...</option>';
-  const tryIds = [42, 55, 77, 99, 123, 200, 300, 400, 501, 502, 601, 602, 700, 801, 802];
-  for (const id of tryIds) {
-    const gid = 'g' + id;
-    const p = await api('priority', { game_id: gid });
-    if (!p.error) {
-      const opt = document.createElement('option');
-      opt.value = gid;
-      const names = (p.mulligan_order || []).map(n => n.split(',')[0].split(' ').slice(-1)[0]).join('/');
-      opt.textContent = `${gid} — T${p.turn} ${p.phase} (${names})`;
-      select.appendChild(opt);
-    }
-  }
-  if (current) select.value = current;
 }
 
 function selectGame() {
@@ -179,9 +158,25 @@ function selectGame() {
     return;
   }
   currentGame = gid;
+  knownEventCount = 0;
+  document.getElementById('eventEntries').innerHTML = '';
   document.getElementById('gameView').style.display = 'block';
-  lastEventCount = 0;
   updateGame();
+}
+
+function classifyEvent(text) {
+  if (text.startsWith('---')) return 'turn-marker';
+  if (text.includes('⚖')) return 'judge';
+  if (text.includes('declares attackers') || text.includes('attacks for')) return 'attack';
+  if (text.includes('Combat damage')) return 'damage';
+  if (text.includes('blocked by') || text.includes('blocks')) return 'block';
+  if (text.includes('☠') || text.includes('eliminated') || text.includes('dies')) return 'death';
+  if (text.includes('⚡')) return 'trigger';
+  if (text.includes('☢') || text.includes('rad')) return 'rad';
+  if (text.includes('counter') || text.includes('proliferate')) return 'counter';
+  if (text.includes('casts') || text.includes('activates')) return 'cast';
+  if (text.includes('plays') && !text.includes('player')) return 'land';
+  return '';
 }
 
 async function updateGame() {
@@ -189,7 +184,7 @@ async function updateGame() {
 
   const priority = await api('priority', { game_id: currentGame });
   if (priority.error) {
-    document.getElementById('turnInfo').textContent = 'Error: ' + priority.error;
+    document.getElementById('turnInfo').textContent = 'Error';
     return;
   }
 
@@ -201,7 +196,7 @@ async function updateGame() {
   const judgeEl = document.getElementById('judgeInfo');
   if (pq.includes('JUDGE')) {
     judgeEl.className = 'judge';
-    judgeEl.textContent = '⚖️ JUDGE CALL';
+    judgeEl.textContent = 'JUDGE CALL';
   } else if (pq.length > 0) {
     judgeEl.className = 'phase';
     judgeEl.textContent = `Priority: ${pq.map(n => n.split(' ')[0]).join(', ')}`;
@@ -209,7 +204,26 @@ async function updateGame() {
     judgeEl.textContent = '';
   }
 
-  // Get state from each player's perspective (we need the full view)
+  // Update event log (incremental — only add new events)
+  const evData = await api('events', { game_id: currentGame });
+  if (evData.events && evData.events.length > knownEventCount) {
+    const entries = document.getElementById('eventEntries');
+    const newEvents = evData.events.slice(knownEventCount);
+    for (const ev of newEvents) {
+      const div = document.createElement('div');
+      div.className = `ev ${classifyEvent(ev)} new`;
+      div.textContent = ev;
+      entries.appendChild(div);
+      // Remove "new" highlight after 3s
+      setTimeout(() => div.classList.remove('new'), 3000);
+    }
+    knownEventCount = evData.events.length;
+    // Auto-scroll to bottom
+    const log = document.getElementById('eventLog');
+    log.scrollTop = log.scrollHeight;
+  }
+
+  // Update player boards
   const players = priority.mulligan_order || [];
   const grid = document.getElementById('playersGrid');
   grid.innerHTML = '';
@@ -218,7 +232,6 @@ async function updateGame() {
     const state = await api('state', { game_id: currentGame, player: playerName });
     const card = document.createElement('div');
     card.className = 'player-card';
-
     if (playerName === priority.active_player) card.classList.add('active');
 
     const stateText = state.state || '';
@@ -227,91 +240,72 @@ async function updateGame() {
 
     if (life <= 0 || life === -999) {
       card.classList.add('dead');
-      card.innerHTML = `<div class="name">☠️ ${playerName} <span class="life life-dead">DEAD</span></div>`;
+      card.innerHTML = `<div class="name">\u2620 ${playerName} <span class="life life-dead">DEAD</span></div>`;
       grid.appendChild(card);
       continue;
     }
 
     const lifeClass = life > 30 ? 'life-high' : life > 15 ? 'life-mid' : 'life-low';
-    const marker = playerName === priority.active_player ? ' ◄' : '';
+    const marker = playerName === priority.active_player ? ' \u25C4' : '';
 
-    // Parse the state text for this player's board
     let html = `<div class="name">${playerName}${marker} <span class="life ${lifeClass}">${life}</span></div>`;
 
-    // Extract board info from state text
+    // Parse board from state text
     const lines = stateText.split('\n');
-    let inMySection = false;
-    let lands = [];
-    let creatures = [];
-    let others = [];
-    let handSize = 0;
-    let gyCards = [];
-    let cmdZone = [];
+    let inSection = false;
+    let lands = [], creatures = [], others = [], handSize = 0, gyCards = [], cmdZone = [], cmdDmg = [];
 
     for (const line of lines) {
-      // Find our section
       if (line.includes(`${playerName} (YOU)`) || line.includes(`${playerName} (life:`)) {
-        inMySection = true;
-        continue;
+        inSection = true; continue;
       }
-      if (inMySection && line.match(/^── .+ \(life:/) && !line.includes(playerName)) {
-        inMySection = false;
-        continue;
-      }
-      if (inMySection && line.match(/^── .+ \(ELIMINATED/)) {
-        inMySection = false;
-        continue;
-      }
-      if (line.includes('RECENT EVENTS') || line.includes('YOUR HAND')) {
-        inMySection = false;
+      if (inSection && line.match(/^── .+ \(life:/) && !line.includes(playerName)) { inSection = false; continue; }
+      if (inSection && line.match(/^── .+ \(ELIMINATED/)) { inSection = false; continue; }
+      if (line.includes('RECENT EVENTS') || line.includes('YOUR HAND')) { inSection = false; continue; }
+
+      if (!inSection) {
+        const hm = line.match(/YOUR HAND \((\d+)\)/);
+        if (hm) handSize = parseInt(hm[1]);
         continue;
       }
 
-      if (!inMySection) {
-        // Count hand
-        const handMatch = line.match(/YOUR HAND \((\d+)\)/);
-        if (handMatch && stateText.indexOf(`You are: ${playerName}`) >= 0) {
-          handSize = parseInt(handMatch[1]);
-        }
-        continue;
-      }
-
-      const trimmed = line.trim();
-      if (trimmed.startsWith('Lands:')) {
-        lands = trimmed.replace('Lands: ', '').split(', ').filter(Boolean);
-      } else if (trimmed.startsWith('Hand:')) {
-        const m = trimmed.match(/Hand: (\d+)/);
-        if (m) handSize = parseInt(m[1]);
-      } else if (trimmed.startsWith('Graveyard:')) {
-        gyCards = trimmed.replace('Graveyard: ', '').split(', ').filter(Boolean);
-      } else if (trimmed.startsWith('Command zone:')) {
-        cmdZone = trimmed.replace('Command zone: ', '').split(', ').filter(Boolean);
-      } else if (trimmed && !trimmed.startsWith('──') && !trimmed.startsWith('╔') && !trimmed.startsWith('Available')) {
-        // It's a permanent
-        const isTapped = trimmed.includes('[tapped]');
-        const isSick = trimmed.includes('[summoning sick]');
-        const ptMatch = trimmed.match(/\((\d+)\/(\d+)/);
-        const counterMatch = trimmed.match(/\[(\d+ \w+)\]/);
-
-        if (ptMatch) {
-          creatures.push({ name: trimmed.split('(')[0].trim(), tapped: isTapped, sick: isSick, full: trimmed });
-        } else if (!trimmed.startsWith('[') && trimmed.length > 2) {
-          others.push({ name: trimmed.split('[')[0].trim(), tapped: isTapped, full: trimmed });
+      const t = line.trim();
+      if (t.startsWith('Lands:')) lands = t.replace('Lands: ', '').split(', ').filter(Boolean);
+      else if (t.startsWith('Hand:')) { const m = t.match(/Hand: (\d+)/); if (m) handSize = parseInt(m[1]); }
+      else if (t.startsWith('Graveyard:')) gyCards = t.replace('Graveyard: ', '').split(', ').filter(Boolean);
+      else if (t.startsWith('Command zone:')) cmdZone = t.replace('Command zone: ', '').split(', ').filter(Boolean);
+      else if (t && !t.startsWith('──') && !t.startsWith('\u2554') && !t.startsWith('Available') && !t.startsWith('\u26A0')) {
+        const isTapped = t.includes('[tapped]');
+        const isSick = t.includes('[summoning sick]');
+        if (t.match(/\(\d+\/\d+/)) {
+          creatures.push({ tapped: isTapped, sick: isSick, full: t });
+        } else if (!t.startsWith('[') && t.length > 2) {
+          others.push({ name: t.split('[')[0].trim(), tapped: isTapped, full: t });
         }
       }
     }
 
-    html += `<div class="stats">${lands.length} lands · ${creatures.length} creatures · ${handSize} cards`;
-    if (cmdZone.length) html += ` · CMD: ${cmdZone.join(', ')}`;
+    // Parse cmd damage and counters from the header line
+    const headerMatch = stateText.match(new RegExp(`${playerName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}.*?\\(([^)]+)\\)`));
+    let extraInfo = '';
+    if (headerMatch) {
+      const info = headerMatch[1];
+      if (info.includes('cmd dmg')) extraInfo = info.replace(/life: \d+/, '').replace(/\|/, '').trim();
+      if (info.includes('rad') || info.includes('poison') || info.includes('experience')) {
+        extraInfo = info.replace(/life: \d+/, '').replace(/\|/, '').trim();
+      }
+    }
+
+    html += `<div class="stats">${lands.length} lands \u00B7 ${creatures.length} creatures \u00B7 ${handSize} cards`;
+    if (cmdZone.length) html += ` \u00B7 CMD: ${cmdZone.join(', ')}`;
+    if (extraInfo) html += `<br><span class="cmd-dmg">${extraInfo}</span>`;
     html += `</div>`;
 
     if (creatures.length) {
       html += `<div class="zone"><span class="zone-label">Creatures</span><div class="creatures">`;
       for (const c of creatures) {
-        const cls = ['perm'];
-        if (c.tapped) cls.push('tapped');
-        if (c.sick) cls.push('sick');
-        html += `<span class="${cls.join(' ')}" title="${c.full}">${c.full.substring(0, 40)}</span> `;
+        const cls = ['perm']; if (c.tapped) cls.push('tapped'); if (c.sick) cls.push('sick');
+        html += `<span class="${cls.join(' ')}" title="${c.full}">${c.full.substring(0, 45)}</span> `;
       }
       html += `</div></div>`;
     }
@@ -319,68 +313,31 @@ async function updateGame() {
     if (others.length) {
       html += `<div class="zone"><span class="zone-label">Other</span><div class="other">`;
       for (const o of others) {
-        const cls = ['perm'];
-        if (o.tapped) cls.push('tapped');
+        const cls = ['perm']; if (o.tapped) cls.push('tapped');
         html += `<span class="${cls.join(' ')}" title="${o.full}">${o.name.substring(0, 30)}</span> `;
       }
       html += `</div></div>`;
     }
 
-    if (lands.length) {
-      html += `<div class="zone"><span class="zone-label">Lands</span><div class="lands">${lands.join(', ')}</div></div>`;
-    }
-
-    if (gyCards.length) {
-      html += `<div class="zone"><span class="zone-label">Graveyard (${gyCards.length})</span><div class="gy">${gyCards.join(', ')}</div></div>`;
-    }
+    if (lands.length) html += `<div class="zone"><span class="zone-label">Lands (${lands.length})</span><div class="lands">${lands.join(', ')}</div></div>`;
+    if (gyCards.length) html += `<div class="zone"><span class="zone-label">Graveyard (${gyCards.length})</span><div class="gy">${gyCards.join(', ')}</div></div>`;
 
     card.innerHTML = html;
     grid.appendChild(card);
   }
 
-  // Events panel — get from state text
-  const anyState = await api('state', { game_id: currentGame, player: players[0] });
-  const eventsPanel = document.getElementById('eventsPanel');
-  const stateText = anyState.state || '';
-  const eventIdx = stateText.indexOf('RECENT EVENTS');
-  if (eventIdx >= 0) {
-    const eventLines = stateText.substring(eventIdx).split('\n').slice(1).filter(l => l.trim());
-    let evHtml = '';
-    for (const line of eventLines) {
-      const trimmed = line.trim();
-      let cls = 'event';
-      if (trimmed.startsWith('---')) cls += ' turn-marker';
-      else if (trimmed.includes('⚖')) cls += ' judge';
-      else if (trimmed.includes('attack')) cls += ' attack';
-      else if (trimmed.includes('casts')) cls += ' cast';
-      else if (trimmed.includes('plays') && !trimmed.includes('player')) cls += ' land';
-      evHtml += `<div class="${cls}">${trimmed}</div>`;
-    }
-    eventsPanel.innerHTML = evHtml;
-    eventsPanel.scrollTop = eventsPanel.scrollHeight;
-  }
-
-  document.getElementById('lastUpdate').textContent = `Updated: ${new Date().toLocaleTimeString()}`;
+  document.getElementById('lastUpdate').textContent = new Date().toLocaleTimeString();
 }
 
-// Auto-refresh
 function toggleAuto() {
-  if (autoTimer) {
-    clearInterval(autoTimer);
-    autoTimer = null;
-  }
+  if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
   if (document.getElementById('autoRefresh').checked && currentGame) {
     autoTimer = setInterval(updateGame, 5000);
   }
 }
 
-document.getElementById('gameSelect').addEventListener('change', () => {
-  selectGame();
-  toggleAuto();
-});
+document.getElementById('gameSelect').addEventListener('change', () => { selectGame(); toggleAuto(); });
 document.getElementById('autoRefresh').addEventListener('change', toggleAuto);
-
-// Init
 refreshGames();
 </script>
 </body>

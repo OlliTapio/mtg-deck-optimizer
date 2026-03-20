@@ -227,6 +227,18 @@ class GameHandler(BaseHTTPRequestHandler):
                 with _lock:
                     result = cmd_priority(gid)
 
+            elif path == 'events':
+                with _lock:
+                    import pickle as _pkl
+                    pkl_path = f'/tmp/mtg_games/{gid}.pkl'
+                    if os.path.exists(pkl_path):
+                        with open(pkl_path, 'rb') as _f:
+                            _data = _pkl.load(_f)
+                        engine = _data.get('engine') or _data
+                        result = {'events': engine.events, 'count': len(engine.events)}
+                    else:
+                        result = {'error': 'Game not found'}
+
             elif path == 'games':
                 result = self._list_games()
 
