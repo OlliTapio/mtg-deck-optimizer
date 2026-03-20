@@ -134,29 +134,33 @@ def detect_triggers(players, event_type, event_data):
             oracle = perm.card.get('oracle_text', '').lower()
             perm_name_lower = perm.name.lower()
 
+            matched = False
             for pat in patterns:
                 if not re.search(pat, oracle):
                     continue
 
-                # Filter self-referential triggers:
-                # "when this land enters" should only fire if THIS permanent just entered
-                if event_type == 'etb' and pat in SELF_ETB:
-                    # Self-ETB: only if this perm is the one that entered
+                # Determine if this trigger is self-referential
+                # Self-ref: oracle mentions the card's own name or says "this creature/land/permanent"
+                is_self_ref = (
+                    perm_name_lower in oracle
+                    or 'when this ' in oracle
+                    or 'whenever this ' in oracle
+                )
+
+                if event_type == 'etb' and is_self_ref:
+                    # Self-ETB: only fire if THIS permanent just entered
                     if entering_card_name and perm_name_lower != entering_card_name:
                         continue
-                    # If no entering card specified, skip self-ETBs to be safe
                     if not entering_card_name:
                         continue
 
-                # "whenever THIS attacks" — only the attacker triggers
-                if event_type == 'attack':
-                    # Check if oracle says "whenever [card name] attacks" (self) vs "whenever a creature attacks" (any)
-                    if 'whenever a ' not in oracle and 'whenever an ' not in oracle:
-                        # Self-referential attack trigger — only fire for the attacking creature
-                        if attacking_perm_name and perm_name_lower != attacking_perm_name:
-                            continue
+                if event_type == 'attack' and is_self_ref:
+                    # Self-attack: only fire for the attacking creature
+                    if attacking_perm_name and perm_name_lower != attacking_perm_name:
+                        continue
 
                 triggers.append((player, perm, oracle))
+                matched = True
                 break
 
     return triggers
