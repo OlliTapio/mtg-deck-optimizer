@@ -396,7 +396,7 @@ def cmd_begin(game_id, player_name):
                             'player': tp.name,
                             'permanent': perm.name,
                             'nonland_count': nonland_milled,
-                            'resolve_hint': f'/modify counter_type="+1/+1" amount=1 on up to {nonland_milled} creatures (Mothman mill trigger)',
+                            'resolve_hint': f'Call /modify counter_type="+1/+1" amount=1 separately for up to {nonland_milled} DIFFERENT creatures you control. ONE counter per creature, NOT all on one creature.',
                         })
                         engine.events.append(f"  ⚡ MILL TRIGGER: {perm.name} — {nonland_milled} nonland(s) milled → up to {nonland_milled} +1/+1 counters")
 
