@@ -133,7 +133,9 @@ Read the oracle text of the card you cast. Match the effect to the right endpoin
 | "put a +1/+1 counter" / "N +1/+1 counters" | `/modify` counter_type="+1/+1" amount=N | Hardened Scales → `/modify` amount=1 |
 | "deals N damage to" | `/damage` target + amount | Drakuseth ETB → `/damage` |
 | "destroy target" / "destroy all" | `/destroy` target_player + permanent | Wrath → `/destroy` each creature |
-| "exile target" / "exile all" | `/destroy` with exile=true | Path to Exile → `/destroy` exile=true (triggers "dies" do NOT fire) |
+| "exile target" / "exile all" | `/destroy` with exile=true | Path to Exile → `/destroy` exile=true (no "dies" trigger) |
+| "return to hand" / bounce | `/move` from_zone="battlefield" to_zone="hand" | Unsummon → `/move` (LTB triggers fire, counters lost) |
+| "exile, then return" / blink | `/move` to exile, then `/move` back | Ephemerate → `/move` to exile, then `/move` to battlefield (gets ETB!) |
 | "mill N cards" | `/mill` count=N | Satyr Wayfinder → `/mill` count=4 then check GY for land |
 | "scry N" | `/scry` count=N, then bottom=["cards to bottom"] | Temple ETB → `/scry` count=1 |
 | "proliferate" | `/proliferate` targets=[...] | Karn's Bastion → `/proliferate` |

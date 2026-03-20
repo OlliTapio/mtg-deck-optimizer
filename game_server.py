@@ -1178,6 +1178,7 @@ def cmd_move(game_id, player_name, card_name, from_zone, to_zone):
         'library': player.library,
     }
 
+    triggers_ltb = []
     # Find and remove from source zone
     if from_zone == 'battlefield':
         found = None
@@ -1189,6 +1190,16 @@ def cmd_move(game_id, player_name, card_name, from_zone, to_zone):
             return {'error': f"'{card_name}' not on battlefield"}
         player.battlefield.remove(found)
         card = found.card
+        # LTB triggers when leaving battlefield
+        for tp, trig_perm, oracle in detect_triggers(engine.players, 'ltb', {}):
+            hint = _trigger_hint(oracle, tp.name, trig_perm.name)
+            triggers_ltb.append({
+                'player': tp.name,
+                'permanent': trig_perm.name,
+                'type': 'ltb',
+                'oracle': oracle[:200],
+                'resolve_hint': hint,
+            })
     elif from_zone in zone_map:
         source = zone_map[from_zone]
         found = None
@@ -1203,18 +1214,37 @@ def cmd_move(game_id, player_name, card_name, from_zone, to_zone):
         return {'error': f"Unknown zone: {from_zone}"}
 
     # Add to destination
+    triggers = []
     if to_zone == 'battlefield':
         from game_simulator import Permanent
         perm = Permanent(card=card)
+        if 'Creature' in card.get('type_line', ''):
+            perm.summoning_sick = True
         player.battlefield.append(perm)
+        # Entering battlefield triggers ETB
+        for tp, trig_perm, oracle in detect_triggers(engine.players, 'etb', {}):
+            hint = _trigger_hint(oracle, tp.name, trig_perm.name)
+            triggers.append({
+                'player': tp.name,
+                'permanent': trig_perm.name,
+                'type': 'etb',
+                'oracle': oracle[:200],
+                'resolve_hint': hint,
+            })
+        if triggers:
+            engine.events.append(f"  ⚡ ETB TRIGGERS: {', '.join(t['permanent'] for t in triggers)}")
     elif to_zone in zone_map:
         zone_map[to_zone].append(card)
     else:
         return {'error': f"Unknown zone: {to_zone}"}
 
+    all_triggers = triggers_ltb + triggers
+    if all_triggers:
+        engine.events.append(f"  ⚡ TRIGGERS: {', '.join(t['permanent'] + '(' + t['type'] + ')' for t in all_triggers)}")
+
     engine.events.append(f"{player.name} moves {card['name']} from {from_zone} → {to_zone}")
     _save_game(game_id, engine, meta)
-    return {'moved': card['name'], 'from': from_zone, 'to': to_zone}
+    return {'moved': card['name'], 'from': from_zone, 'to': to_zone, 'triggers': all_triggers}
 
 
 def cmd_judge(game_id, player_name, question):
