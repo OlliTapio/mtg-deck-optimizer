@@ -160,7 +160,13 @@ def format_snapshot(game, viewer, prompt=""):
         is_you = " (YOU)" if p['name'] == viewer['name'] else ""
         is_active = " ◄ACTIVE" if p['name'] == game['active_player'] else ""
         status = f"life: {p['life']}" if p['life'] > 0 else "ELIMINATED"
-        lines.append(f"── {p['name']}{is_you}{is_active} ({status}) ──")
+        # Show player counters (rad, poison, experience)
+        pcounters = p.get('player_counters', {})
+        counter_str = ""
+        if pcounters:
+            parts = [f"{v} {k}" for k, v in pcounters.items()]
+            counter_str = f" | {', '.join(parts)}"
+        lines.append(f"── {p['name']}{is_you}{is_active} ({status}{counter_str}) ──")
 
         if p['life'] <= 0:
             lines.append("  (eliminated)")
@@ -310,6 +316,7 @@ class GameEngine:
                 'nonlands': [],
                 'graveyard': [c['name'] for c in p.graveyard],
                 'command_zone': [c['name'] for c in p.command_zone],
+                'player_counters': dict(p.counters) if hasattr(p, 'counters') and p.counters else {},
             }
             # Lands
             land_counts = Counter()

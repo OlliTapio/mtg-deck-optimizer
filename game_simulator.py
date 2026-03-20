@@ -166,6 +166,7 @@ class Player:
         self.command_zone: list[dict] = []
         self.commander_tax: int = 0
         self.land_drops_remaining: int = 1
+        self.counters: dict = {}  # player-level counters: {'rad': 2, 'poison': 3, 'experience': 4}
 
     def draw(self, n=1):
         for _ in range(n):

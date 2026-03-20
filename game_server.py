@@ -71,7 +71,7 @@ def _trigger_hint(oracle_text, player_name, perm_name):
         n = {'a': 1, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}.get(m.group(1), 1) if m else 1
         hints.append(f'/draw count={n}')
     if 'rad counter' in oracle:
-        hints.append('/modify target on opponent with counter_type="rad" amount=1')
+        hints.append('/modify target_player=OPPONENT permanent="" counter_type="rad" amount=1 (player counter, not permanent)')
     if 'proliferate' in oracle:
         hints.append('/proliferate with targets for each permanent/player that has counters')
     if '+1/+1 counter' in oracle:
@@ -349,6 +349,38 @@ def cmd_begin(game_id, player_name):
             'oracle': oracle[:120],
         })
 
+    # Auto-resolve rad counters for the active player
+    # Rad: at beginning of precombat main phase, mill N (where N = rad counters),
+    # lose 1 life per nonland card milled, then remove all rad counters
+    rad_result = None
+    rad_count = player.counters.get('rad', 0)
+    if rad_count > 0:
+        milled = []
+        life_lost = 0
+        for _ in range(rad_count):
+            if not player.library:
+                break
+            card = player.library.pop(0)
+            player.graveyard.append(card)
+            is_land = 'Land' in card.get('type_line', '')
+            milled.append({'name': card['name'], 'is_land': is_land})
+            if not is_land:
+                life_lost += 1
+
+        player.life -= life_lost
+        player.counters['rad'] = 0
+        if player.counters['rad'] == 0:
+            del player.counters['rad']
+
+        mill_names = ', '.join(c['name'] for c in milled)
+        engine.events.append(f"☢ {player.name} resolves {rad_count} rad: mills {mill_names}, loses {life_lost} life (→ {player.life})")
+        rad_result = {
+            'rad_counters': rad_count,
+            'milled': milled,
+            'life_lost': life_lost,
+            'life_remaining': player.life,
+        }
+
     meta['turn_actions'] = []
     meta['priority_queue'] = []
     _save_game(game_id, engine, meta)
@@ -369,6 +401,8 @@ def cmd_begin(game_id, player_name):
         'life': player.life,
         'hand_size': len(player.hand),
         'upkeep_triggers': upkeep_triggers,
+        'rad': rad_result,
+        'player_counters': player.counters if player.counters else None,
     }
 
 
@@ -828,14 +862,37 @@ def cmd_destroy(game_id, player_name, target_player, permanent_name, exile=False
 
 
 def cmd_modify(game_id, player_name, target_player, permanent_name, counter_type='+1/+1', amount=1):
-    """Add or remove counters on a permanent. Used to resolve counter effects.
+    """Add or remove counters on a permanent OR player.
 
-    counter_type: '+1/+1', '-1/-1', 'loyalty', 'rad', 'lore', 'charge', etc.
+    counter_type: '+1/+1', '-1/-1', 'loyalty', 'rad', 'lore', 'charge', 'poison', 'experience', etc.
     amount: positive to add, negative to remove.
+    permanent_name: name of permanent, OR empty/"" to target the player directly (for rad, poison, experience)
     """
     engine, meta = _load_game(game_id)
     target = _find(engine, target_player)
 
+    # Player-level counters (rad, poison, experience)
+    if not permanent_name or permanent_name.lower() in ('player', '', 'self'):
+        old_count = target.counters.get(counter_type, 0)
+        new_count = max(0, old_count + int(amount))
+        if new_count == 0 and counter_type in target.counters:
+            del target.counters[counter_type]
+        elif new_count > 0:
+            target.counters[counter_type] = new_count
+
+        action_word = "gains" if amount > 0 else "loses"
+        engine.events.append(f"{target.name} {action_word} {abs(amount)} {counter_type} counter(s) ({new_count} total)")
+
+        _save_game(game_id, engine, meta)
+        return {
+            'player': target.name,
+            'counter_type': counter_type,
+            'old_count': old_count,
+            'new_count': new_count,
+            'all_player_counters': target.counters,
+        }
+
+    # Permanent-level counters
     perm = None
     for p in target.battlefield:
         if permanent_name.lower() in p.name.lower():

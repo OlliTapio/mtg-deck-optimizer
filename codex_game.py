@@ -148,7 +148,7 @@ When you play a card or attack, the response includes a `triggers` array. **You 
 Each trigger has a `resolve_hint` telling you which endpoint to call.
 
 Examples:
-- Mothman attacks → trigger: "rad counter" → call `/modify` on each opponent with counter_type="rad" amount=1
+- Mothman attacks → trigger: "rad counter" → call `/modify` on each opponent with permanent="" counter_type="rad" amount=1 (PLAYER counter, leave permanent empty)
 - Mothman attacks → trigger: "proliferate" → call `/proliferate`
 - Yuriko deals combat damage → trigger: "reveal top card, lose life" → call `/scry` count=1, then `/damage`
 - Landfall trigger → check oracle text, call `/draw`, `/modify`, or `/search` as needed
