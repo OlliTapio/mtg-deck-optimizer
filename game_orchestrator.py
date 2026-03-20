@@ -367,15 +367,14 @@ class GameEngine:
             pd['lands'] = [f"{n}x {name}" if n > 1 else name for name, n in sorted(land_counts.items())]
             pd['lands'].extend(special_lands)
 
-            # Nonlands — show oracle text for commanders and key enchantments
+            # Nonlands — show oracle snippet for commanders only (threat assessment without context bloat)
             for perm in sorted(p.battlefield, key=lambda x: x.name):
                 if not perm.is_land():
                     summary = perm_summary(perm)
-                    # Show truncated oracle for commanders and enchantments (threat assessment)
-                    if perm.card.get('is_commander') or 'Enchantment' in perm.card.get('type_line', ''):
+                    if perm.card.get('is_commander') and p is not viewer:
                         oracle = perm.card.get('oracle_text', '')
                         if oracle:
-                            summary += f"\n      Oracle: {oracle[:120]}"
+                            summary += f"\n      ⚠ {oracle[:80]}..."
                     pd['nonlands'].append(summary)
 
             game_dict['players'].append(pd)
