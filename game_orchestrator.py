@@ -196,12 +196,15 @@ def format_snapshot(game, viewer, prompt=""):
         is_you = " (YOU)" if p['name'] == viewer['name'] else ""
         is_active = " ◄ACTIVE" if p['name'] == game['active_player'] else ""
         status = f"life: {p['life']}" if p['life'] > 0 else "ELIMINATED"
-        # Show player counters (rad, poison, experience)
+        # Show player counters (rad, poison, experience) and commander damage
         pcounters = p.get('player_counters', {})
-        counter_str = ""
+        cmd_dmg = p.get('commander_damage', {})
+        extra_parts = []
         if pcounters:
-            parts = [f"{v} {k}" for k, v in pcounters.items()]
-            counter_str = f" | {', '.join(parts)}"
+            extra_parts.extend(f"{v} {k}" for k, v in pcounters.items())
+        if cmd_dmg:
+            extra_parts.extend(f"{v}/21 cmd dmg from {k}" for k, v in cmd_dmg.items() if v > 0)
+        counter_str = f" | {', '.join(extra_parts)}" if extra_parts else ""
         lines.append(f"── {p['name']}{is_you}{is_active} ({status}{counter_str}) ──")
 
         if p['life'] <= 0:
@@ -353,6 +356,7 @@ class GameEngine:
                 'graveyard': [c['name'] for c in p.graveyard],
                 'command_zone': [c['name'] for c in p.command_zone],
                 'player_counters': dict(p.counters) if hasattr(p, 'counters') and p.counters else {},
+                'commander_damage': dict(p.commander_damage) if hasattr(p, 'commander_damage') and p.commander_damage else {},
             }
             # Lands
             land_counts = Counter()
@@ -562,6 +566,7 @@ class GameEngine:
                 'toughness': perm.toughness,
                 'target': target.name,
                 'keywords': sorted(perm.all_keywords),
+                'is_commander': bool(perm.card.get('is_commander')),
             })
 
         if not attacker_info:
@@ -639,22 +644,48 @@ class GameEngine:
                     target.life -= power
                     total_dmg += power
                     damage_report[target_name] += power
+                    # Track commander damage
+                    if attack.get('is_commander'):
+                        cmdr_name = creature_name
+                        if not hasattr(target, 'commander_damage'):
+                            target.commander_damage = {}
+                        target.commander_damage[cmdr_name] = target.commander_damage.get(cmdr_name, 0) + power
 
         # Report damage
         if damage_report:
             parts = [f"{dmg} to {name}" for name, dmg in damage_report.items()]
             self.events.append(f"Combat damage: {', '.join(parts)}")
 
+        # Report commander damage totals
+        for attack in combat['attacks']:
+            if attack.get('is_commander'):
+                target = self._find_player(attack['target'])
+                if target and hasattr(target, 'commander_damage'):
+                    cmdr_total = target.commander_damage.get(attack['creature'], 0)
+                    if cmdr_total > 0:
+                        self.events.append(f"  ⚔ Commander damage: {attack['creature']} → {target.name}: {cmdr_total}/21")
+
         # Report killed creatures
         for kill in killed_creatures:
             self.events.append(f"  ☠ {kill['name']} dies in combat")
 
-        # Check for player eliminations
+        # Check for player eliminations (life or commander damage)
         msg_parts = []
         for name in damage_report:
             p = self._find_player(name)
-            if p and p.life <= 0:
-                msg_parts.append(f"☠ {name} is ELIMINATED!")
+            if not p:
+                continue
+            eliminated = False
+            if p.life <= 0:
+                eliminated = True
+                msg_parts.append(f"☠ {name} is ELIMINATED! (life)")
+            elif hasattr(p, 'commander_damage'):
+                for cmdr, dmg in p.commander_damage.items():
+                    if dmg >= 21:
+                        eliminated = True
+                        msg_parts.append(f"☠ {name} is ELIMINATED! (21 commander damage from {cmdr})")
+                        break
+            if eliminated:
                 self.events.append(f"{name} eliminated in combat!")
 
         self.pending_combat = None

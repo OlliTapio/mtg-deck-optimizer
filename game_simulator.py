@@ -167,6 +167,7 @@ class Player:
         self.commander_tax: int = 0
         self.land_drops_remaining: int = 1
         self.counters: dict = {}  # player-level counters: {'rad': 2, 'poison': 3, 'experience': 4}
+        self.commander_damage: dict = {}  # {commander_name: total_combat_damage_taken}
 
     def draw(self, n=1):
         for _ in range(n):

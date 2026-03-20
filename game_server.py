@@ -378,13 +378,34 @@ def cmd_begin(game_id, player_name):
         if player.counters['rad'] == 0:
             del player.counters['rad']
 
+        nonland_milled = sum(1 for c in milled if not c['is_land'])
         mill_names = ', '.join(c['name'] for c in milled)
         engine.events.append(f"☢ {player.name} resolves {rad_count} rad: mills {mill_names}, loses {life_lost} life (→ {player.life})")
+
+        # Check for Mothman's mill trigger: "Whenever one or more nonland cards are milled,
+        # put a +1/+1 counter on each of up to X target creatures, where X is nonland cards milled"
+        mill_triggers = []
+        if nonland_milled > 0:
+            for tp in engine.players:
+                if tp.life <= 0:
+                    continue
+                for perm in tp.battlefield:
+                    oracle = perm.card.get('oracle_text', '').lower()
+                    if 'nonland cards are milled' in oracle and '+1/+1 counter' in oracle:
+                        mill_triggers.append({
+                            'player': tp.name,
+                            'permanent': perm.name,
+                            'nonland_count': nonland_milled,
+                            'resolve_hint': f'/modify counter_type="+1/+1" amount=1 on up to {nonland_milled} creatures (Mothman mill trigger)',
+                        })
+                        engine.events.append(f"  ⚡ MILL TRIGGER: {perm.name} — {nonland_milled} nonland(s) milled → up to {nonland_milled} +1/+1 counters")
+
         rad_result = {
             'rad_counters': rad_count,
             'milled': milled,
             'life_lost': life_lost,
             'life_remaining': player.life,
+            'mill_triggers': mill_triggers,
         }
 
     meta['turn_actions'] = []
@@ -1166,9 +1187,28 @@ def cmd_mill(game_id, player_name, count=1):
         player.graveyard.append(card)
         milled.append({'name': card['name'], 'type_line': card.get('type_line', '')})
 
+    nonland_milled = sum(1 for c in milled if 'Land' not in c.get('type_line', ''))
     engine.events.append(f"{player.name} mills {len(milled)}: {', '.join(c['name'] for c in milled)}")
+
+    # Check for Mothman-style mill triggers
+    mill_triggers = []
+    if nonland_milled > 0:
+        for tp in engine.players:
+            if tp.life <= 0:
+                continue
+            for perm in tp.battlefield:
+                oracle = perm.card.get('oracle_text', '').lower()
+                if 'nonland cards are milled' in oracle and '+1/+1 counter' in oracle:
+                    mill_triggers.append({
+                        'player': tp.name,
+                        'permanent': perm.name,
+                        'nonland_count': nonland_milled,
+                        'resolve_hint': f'/modify counter_type="+1/+1" amount=1 on up to {nonland_milled} creatures',
+                    })
+                    engine.events.append(f"  ⚡ MILL TRIGGER: {perm.name} — {nonland_milled} nonland(s) milled")
+
     _save_game(game_id, engine, meta)
-    return {'milled': milled, 'library_size': len(player.library)}
+    return {'milled': milled, 'library_size': len(player.library), 'mill_triggers': mill_triggers}
 
 
 def cmd_search(game_id, player_name, card_name, destination='battlefield', tapped=True):
