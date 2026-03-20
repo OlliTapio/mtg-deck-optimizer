@@ -92,22 +92,36 @@ def perm_summary(perm):
 # ==================== Trigger Detection ====================
 
 def detect_triggers(players, event_type, event_data):
-    """Scan all permanents for triggers matching an event.
+    """Scan permanents for triggers matching an event.
 
     Returns list of (player, permanent, trigger_description) tuples.
     Events: 'etb', 'ltb', 'landfall', 'cast', 'attack', 'damage', 'draw', 'upkeep'
+
+    event_data can contain:
+      'card': the card that entered/left/was cast
+      'player': the player who owns the card
+      'attacker': the creature that attacked
     """
     triggers = []
 
+    # Self-referential ETB: "when THIS enters" — only fires for the card itself
+    # vs "whenever A creature enters" — fires for any creature entering
+    SELF_ETB = [r'when this .* enters', r'when .* enters the battlefield\b(?!.*whenever)']
+    OTHER_ETB = [r'whenever .* enters', r'whenever a .* enters']
+
     trigger_patterns = {
-        'etb': [r'when .* enters', r'enters the battlefield'],
-        'ltb': [r'when .* leaves', r'when .* dies', r'when .* is put into a graveyard'],
+        'etb': SELF_ETB + OTHER_ETB,
+        'ltb': [r'when .* leaves', r'when .* dies', r'when .* is put into a graveyard', r'whenever .* dies'],
         'landfall': [r'landfall', r'whenever a land .* enters'],
         'cast': [r'whenever .* cast', r'when you cast'],
         'attack': [r'whenever .* attacks', r'when .* attacks'],
         'upkeep': [r'at the beginning of your upkeep', r'at the beginning of each upkeep'],
         'draw': [r'whenever you draw', r'whenever a player draws'],
+        'damage': [r'whenever .* deals combat damage', r'whenever .* deals damage'],
     }
+
+    entering_card_name = event_data.get('card', {}).get('name', '').lower() if event_data.get('card') else ''
+    attacking_perm_name = event_data.get('attacker', '').lower() if event_data.get('attacker') else ''
 
     patterns = trigger_patterns.get(event_type, [])
     if not patterns:
@@ -118,10 +132,32 @@ def detect_triggers(players, event_type, event_data):
             continue
         for perm in player.battlefield:
             oracle = perm.card.get('oracle_text', '').lower()
+            perm_name_lower = perm.name.lower()
+
             for pat in patterns:
-                if re.search(pat, oracle):
-                    triggers.append((player, perm, oracle))
-                    break
+                if not re.search(pat, oracle):
+                    continue
+
+                # Filter self-referential triggers:
+                # "when this land enters" should only fire if THIS permanent just entered
+                if event_type == 'etb' and pat in SELF_ETB:
+                    # Self-ETB: only if this perm is the one that entered
+                    if entering_card_name and perm_name_lower != entering_card_name:
+                        continue
+                    # If no entering card specified, skip self-ETBs to be safe
+                    if not entering_card_name:
+                        continue
+
+                # "whenever THIS attacks" — only the attacker triggers
+                if event_type == 'attack':
+                    # Check if oracle says "whenever [card name] attacks" (self) vs "whenever a creature attacks" (any)
+                    if 'whenever a ' not in oracle and 'whenever an ' not in oracle:
+                        # Self-referential attack trigger — only fire for the attacking creature
+                        if attacking_perm_name and perm_name_lower != attacking_perm_name:
+                            continue
+
+                triggers.append((player, perm, oracle))
+                break
 
     return triggers
 

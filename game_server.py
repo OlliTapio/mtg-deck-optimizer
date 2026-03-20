@@ -479,6 +479,36 @@ def cmd_action(game_id, player_name, action):
         triggers = []
         action_lower = action.lower()
 
+        # Build event_data for trigger filtering
+        # Find the card involved in the action
+        event_card = None
+        if 'cast' in action_lower:
+            card_name = action_lower.replace('cast ', '').replace('commander', '').strip()
+            # Find the card on battlefield (just cast) or in command zone
+            for pp in engine.players:
+                for perm in pp.battlefield:
+                    if card_name and card_name in perm.name.lower():
+                        event_card = perm.card
+                        break
+        if 'play' in action_lower:
+            land_name = action_lower.replace('play ', '').strip()
+            for perm in player.battlefield:
+                if land_name in perm.name.lower():
+                    event_card = perm.card
+                    break
+
+        event_data = {'card': event_card, 'player': player} if event_card else {}
+
+        # For attacks, pass the attacker info
+        if 'attack' in action_lower:
+            # Extract first attacker name for self-referential trigger filtering
+            attacker_name = ''
+            if hasattr(engine, 'pending_combat') and engine.pending_combat:
+                attacks = engine.pending_combat.get('attacks', [])
+                if attacks:
+                    attacker_name = attacks[0]['creature']
+            event_data['attacker'] = attacker_name
+
         # Determine which trigger types to check
         trigger_checks = []
         if 'play' in action_lower:
@@ -488,13 +518,12 @@ def cmd_action(game_id, player_name, action):
             trigger_checks.append('cast')
         if 'attack' in action_lower:
             trigger_checks.append('attack')
-            trigger_checks.append('damage')  # combat damage triggers
+            trigger_checks.append('damage')
         if 'activate' in action_lower:
-            trigger_checks.append('ltb')  # sacrifice triggers
+            trigger_checks.append('ltb')
 
         for trigger_type in trigger_checks:
-            for tp, perm, oracle in detect_triggers(engine.players, trigger_type, {}):
-                # Generate resolution hint from oracle text
+            for tp, perm, oracle in detect_triggers(engine.players, trigger_type, event_data):
                 hint = _trigger_hint(oracle, tp.name, perm.name)
                 triggers.append({
                     'player': tp.name,
