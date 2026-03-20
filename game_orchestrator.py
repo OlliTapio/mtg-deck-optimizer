@@ -501,30 +501,123 @@ class GameEngine:
         if not attacks:
             return False, "no valid attacks", False
 
-        total_dmg = 0
-        damage_report = Counter()
+        # Phase 1: Declare attackers — tap them, store pending attacks
+        # Damage is NOT applied yet — defenders get to block first
+        attacker_info = []
         for perm, target in attacks:
             if perm.tapped or perm.summoning_sick or not perm.is_creature():
                 continue
-            dmg = perm.power
-            if dmg > 0:
-                target.life -= dmg
-                perm.tapped = True
-                total_dmg += dmg
-                damage_report[target.name] += dmg
+            perm.tapped = True
+            attacker_info.append({
+                'creature': perm.name,
+                'power': perm.power,
+                'toughness': perm.toughness,
+                'target': target.name,
+                'keywords': sorted(perm.all_keywords),
+            })
 
-        parts = [f"{dmg} to {name}" for name, dmg in damage_report.items()]
-        msg = f"attacks for {', '.join(parts)}"
+        if not attacker_info:
+            return False, "no valid attackers (all tapped or summoning sick)", False
+
+        # Store pending combat for resolution after blocks
+        self.pending_combat = {
+            'attacker': attacker.name,
+            'attacks': attacker_info,
+            'blocks': [],  # filled by block declarations
+        }
+
+        targets_str = ", ".join(f"{a['creature']}({a['power']}/{a['toughness']}) → {a['target']}" for a in attacker_info)
+        total_by_target = Counter()
+        for a in attacker_info:
+            total_by_target[a['target']] += a['power']
+        summary = ", ".join(f"{dmg} to {name}" for name, dmg in total_by_target.items())
+        msg = f"declares attackers: {summary} (defenders may block)"
         self.events.append(f"{attacker.name} {msg}")
 
-        # Check for kills
+        return True, msg, False
+
+    def resolve_combat(self):
+        """Resolve pending combat after blocks are declared. Called by the server."""
+        if not hasattr(self, 'pending_combat') or not self.pending_combat:
+            return False, "no pending combat"
+
+        combat = self.pending_combat
+        blocks = combat.get('blocks', [])
+        attacker_player = self._find_player(combat['attacker'])
+
+        # Build block mapping: attacker_creature -> list of blockers
+        blocked_by = {}  # creature_name -> [(blocker_name, blocker_power, blocker_toughness)]
+        for block in blocks:
+            att_name = block['attacker']
+            if att_name not in blocked_by:
+                blocked_by[att_name] = []
+            blocked_by[att_name].append(block)
+
+        total_dmg = 0
+        damage_report = Counter()
+        killed_creatures = []
+
+        for attack in combat['attacks']:
+            creature_name = attack['creature']
+            target_name = attack['target']
+            power = attack['power']
+            target = self._find_player(target_name)
+
+            if creature_name in blocked_by:
+                # Creature is blocked — damage goes to blockers, not player
+                blockers = blocked_by[creature_name]
+                remaining_dmg = power
+                for b in blockers:
+                    # Attacker damages blocker
+                    if remaining_dmg > 0:
+                        self.events.append(f"  ↪ {creature_name} ({power}) blocked by {b['blocker']} ({b['blocker_power']}/{b['blocker_toughness']})")
+                        # Check if blocker dies (damage >= toughness)
+                        if remaining_dmg >= b['blocker_toughness']:
+                            killed_creatures.append({'name': b['blocker'], 'owner': b['blocker_owner']})
+                        remaining_dmg -= b['blocker_toughness']
+                    # Blocker damages attacker
+                    if b['blocker_power'] >= attack['toughness']:
+                        killed_creatures.append({'name': creature_name, 'owner': combat['attacker']})
+
+                # Trample: excess damage goes to player
+                has_trample = 'trample' in attack.get('keywords', [])
+                if has_trample and remaining_dmg > 0 and target:
+                    target.life -= remaining_dmg
+                    damage_report[target_name] += remaining_dmg
+                    self.events.append(f"  ↪ {creature_name} tramples {remaining_dmg} to {target_name}")
+            else:
+                # Unblocked — all damage to player
+                if power > 0 and target:
+                    target.life -= power
+                    total_dmg += power
+                    damage_report[target_name] += power
+
+        # Report damage
+        if damage_report:
+            parts = [f"{dmg} to {name}" for name, dmg in damage_report.items()]
+            self.events.append(f"Combat damage: {', '.join(parts)}")
+
+        # Report killed creatures
+        for kill in killed_creatures:
+            self.events.append(f"  ☠ {kill['name']} dies in combat")
+
+        # Check for player eliminations
+        msg_parts = []
         for name in damage_report:
             p = self._find_player(name)
             if p and p.life <= 0:
-                msg += f"\n☠ {name} is ELIMINATED!"
-                self.events.append(f"{name} eliminated by {attacker.name}!")
+                msg_parts.append(f"☠ {name} is ELIMINATED!")
+                self.events.append(f"{name} eliminated in combat!")
 
-        return True, msg, False
+        self.pending_combat = None
+
+        result_msg = f"Combat resolved: {', '.join(f'{d} to {n}' for n, d in damage_report.items())}"
+        if msg_parts:
+            result_msg += "\n" + "\n".join(msg_parts)
+        if killed_creatures:
+            result_msg += f"\nCreatures killed: {', '.join(k['name'] for k in killed_creatures)}"
+
+        return True, result_msg, killed_creatures
 
     def has_instant_speed(self, player):
         """Check if player has any instant-speed options available.

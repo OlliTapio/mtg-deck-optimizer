@@ -113,7 +113,8 @@ The engine moves cards between zones but does NOT auto-resolve spell effects. YO
 | Keywords | /keyword | `{{"target_player":"{player_name}","permanent":"Card","keyword":"trample"}}` |
 | Proliferate | /proliferate | `{{"targets":[{{"player":"{player_name}","permanent":"Card","counter_type":"+1/+1"}}]}}` |
 | Damage | /damage | `{{"target":"TargetPlayer","amount":3}}` |
-| Destroy | /destroy | `{{"target_player":"TargetPlayer","permanent":"Card Name"}}` |
+| Destroy (→ graveyard) | /destroy | `{{"target_player":"TargetPlayer","permanent":"Card Name"}}` — triggers "dies" |
+| Exile (→ exile) | /destroy | `{{"target_player":"TargetPlayer","permanent":"Card Name","exile":true}}` — no "dies" trigger |
 | Move between zones | /move | `{{"card_name":"Card","from_zone":"graveyard","to_zone":"hand"}}` |
 
 **IMPORTANT: Resolve effects YOURSELF using the table below. Do NOT call /judge unless truly ambiguous.**
@@ -132,7 +133,7 @@ Read the oracle text of the card you cast. Match the effect to the right endpoin
 | "put a +1/+1 counter" / "N +1/+1 counters" | `/modify` counter_type="+1/+1" amount=N | Hardened Scales → `/modify` amount=1 |
 | "deals N damage to" | `/damage` target + amount | Drakuseth ETB → `/damage` |
 | "destroy target" / "destroy all" | `/destroy` target_player + permanent | Wrath → `/destroy` each creature |
-| "exile target" | `/move` from_zone="battlefield" to_zone="exile" | Path to Exile → `/move` |
+| "exile target" / "exile all" | `/destroy` with exile=true | Path to Exile → `/destroy` exile=true (triggers "dies" do NOT fire) |
 | "mill N cards" | `/mill` count=N | Satyr Wayfinder → `/mill` count=4 then check GY for land |
 | "scry N" | `/scry` count=N, then bottom=["cards to bottom"] | Temple ETB → `/scry` count=1 |
 | "proliferate" | `/proliferate` targets=[...] | Karn's Bastion → `/proliferate` |
@@ -186,7 +187,13 @@ First mulligan is FREE (you get 7 cards back). Keep a hand with:
 ## Priority / Responses
 When /wait returns "priority", an opponent did something. Call /respond with either:
 - An instant-speed spell: `"cast Counterspell"` or `"cast Path to Exile"`
-- Or just: `"pass"`
+- A block declaration: `"block AttackerName with MyCreature"` — your creature blocks theirs
+- Or just: `"pass"` — if all defenders pass, combat damage resolves
+
+**Blocking**: When an opponent attacks, you get priority to block. Use `/respond` with:
+`"block Xenagos, God of Revels with Sakura-Tribe Elder"` — your creature intercepts theirs.
+Blocked creatures deal damage to blockers instead of you. If blocker toughness <= attacker power, blocker dies.
+If attacker has trample, excess damage goes to you. You can block multiple attackers with different creatures.
 
 When /wait returns "judge_pause", a rules question is being resolved. Just call /wait again — do NOT call /judge yourself.
 

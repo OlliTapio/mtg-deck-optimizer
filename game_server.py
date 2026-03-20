@@ -533,8 +533,21 @@ def cmd_respond(game_id, player_name, action):
     # Pass priority
     if action_lower == 'pass':
         meta['priority_queue'].remove(pname)
+
+        # If all defenders have passed and combat is pending, resolve it
+        combat_result = None
+        if not meta['priority_queue'] and meta.get('combat_pending'):
+            if hasattr(engine, 'pending_combat') and engine.pending_combat:
+                ok, msg, killed = engine.resolve_combat()
+                combat_result = {'combat_resolved': True, 'message': msg, 'killed': killed}
+            meta['combat_pending'] = False
+            meta['blocks'] = []
+
         _save_game(game_id, engine, meta)
-        return {'passed': True, 'priority_remaining': meta['priority_queue']}
+        result = {'passed': True, 'priority_remaining': meta['priority_queue']}
+        if combat_result:
+            result['combat'] = combat_result
+        return result
 
     # Block declaration: "block <attacker> with <blocker>"
     if action_lower.startswith('block '):
@@ -563,24 +576,43 @@ def cmd_respond(game_id, player_name, action):
             if not blocker:
                 return {'error': f"No untapped creature '{blocker_name}' on your battlefield"}
 
-            # Record the block
+            # Record block in both meta and engine's pending_combat
             if 'blocks' not in meta:
                 meta['blocks'] = []
-            meta['blocks'].append({
+            block_record = {
                 'blocker': blocker.name,
                 'blocker_owner': pname,
+                'blocker_power': blocker.power,
+                'blocker_toughness': blocker.toughness,
                 'attacker': attacker_name,
-            })
+            }
+            meta['blocks'].append(block_record)
+
+            # Also add to engine's pending_combat
+            if hasattr(engine, 'pending_combat') and engine.pending_combat:
+                engine.pending_combat['blocks'].append(block_record)
 
             engine.events.append(f"  ↪ {pname} blocks {attacker_name} with {blocker.name}")
 
             meta['priority_queue'].remove(pname)
+
+            # If all defenders have passed/blocked, resolve combat
+            combat_result = None
+            if not meta['priority_queue'] and meta.get('combat_pending'):
+                ok, msg, killed = engine.resolve_combat()
+                meta['combat_pending'] = False
+                meta['blocks'] = []
+                combat_result = {'combat_resolved': True, 'message': msg, 'killed': killed}
+
             _save_game(game_id, engine, meta)
-            return {
+            result = {
                 'blocked': True,
                 'message': f"Blocking {attacker_name} with {blocker.name}",
                 'priority_remaining': meta['priority_queue'],
             }
+            if combat_result:
+                result['combat'] = combat_result
+            return result
 
         return {'error': 'Block format: "block <attacker> with <your creature>"'}
 
@@ -732,8 +764,14 @@ def cmd_damage(game_id, player_name, target_player, amount):
     return result
 
 
-def cmd_destroy(game_id, player_name, target_player, permanent_name):
-    """Move a permanent to its owner's graveyard. For combat kills, removal, etc."""
+def cmd_destroy(game_id, player_name, target_player, permanent_name, exile=False):
+    """Remove a permanent from the battlefield.
+
+    exile=False: destroy (goes to graveyard, triggers "dies" / "when put into graveyard")
+    exile=True: exile (goes to exile zone, does NOT trigger "dies")
+
+    Commanders always go to command zone (owner's choice per rules).
+    """
     engine, meta = _load_game(game_id)
     target = _find(engine, target_player)
 
@@ -747,15 +785,46 @@ def cmd_destroy(game_id, player_name, target_player, permanent_name):
         return {'error': f"'{permanent_name}' not found on {target.name}'s battlefield"}
 
     target.battlefield.remove(perm)
+
+    # Determine destination
+    destination = 'exile' if exile else 'graveyard'
+    action_word = 'exiled' if exile else 'destroyed'
+
     if perm.card.get('is_commander'):
+        # Commander always goes to command zone (owner's choice, we default to CZ)
         target.command_zone.append(perm.card)
-        engine.events.append(f"{perm.name} destroyed → command zone")
+        engine.events.append(f"{perm.name} {action_word} → command zone")
+        destination = 'command_zone'
+    elif exile:
+        target.exile.append(perm.card)
+        engine.events.append(f"{perm.name} exiled")
     else:
         target.graveyard.append(perm.card)
         engine.events.append(f"{perm.name} destroyed → graveyard")
 
+    # Detect death/LTB triggers (only on destroy, not exile)
+    triggers = []
+    if not exile:
+        for tp, trig_perm, oracle in detect_triggers(engine.players, 'ltb', {}):
+            hint = _trigger_hint(oracle, tp.name, trig_perm.name)
+            triggers.append({
+                'player': tp.name,
+                'permanent': trig_perm.name,
+                'type': 'dies',
+                'oracle': oracle[:200],
+                'resolve_hint': hint,
+            })
+        if triggers:
+            engine.events.append(f"  ⚡ DEATH TRIGGERS: {', '.join(t['permanent'] + '(' + t['type'] + ')' for t in triggers)}")
+
     _save_game(game_id, engine, meta)
-    return {'destroyed': perm.name, 'owner': target.name}
+    return {
+        'removed': perm.name,
+        'owner': target.name,
+        'destination': destination,
+        'exile': exile,
+        'triggers': triggers,
+    }
 
 
 def cmd_modify(game_id, player_name, target_player, permanent_name, counter_type='+1/+1', amount=1):

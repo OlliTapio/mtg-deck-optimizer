@@ -161,7 +161,7 @@ class GameHandler(BaseHTTPRequestHandler):
 
             elif path == 'destroy':
                 with _lock:
-                    result = cmd_destroy(gid, player, data.get('target_player', ''), data.get('permanent', ''))
+                    result = cmd_destroy(gid, player, data.get('target_player', ''), data.get('permanent', ''), exile=data.get('exile', False))
                     _notify_waiters(gid)
 
             elif path == 'modify':
