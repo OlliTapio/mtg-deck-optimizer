@@ -421,6 +421,10 @@ def cmd_begin(game_id, player_name):
             'oracle_text': drew.get('oracle_text', '')[:100],
         }
 
+    # Include board state and valid actions so agent doesn't need separate calls
+    snapshot = engine.get_snapshot(player)
+    valid = cmd_valid(game_id, player_name)
+
     return {
         'turn': engine.turn,
         'player': player.name,
@@ -430,6 +434,8 @@ def cmd_begin(game_id, player_name):
         'upkeep_triggers': upkeep_triggers,
         'rad': rad_result,
         'player_counters': player.counters if player.counters else None,
+        'state': snapshot,
+        'valid_actions': valid.get('actions', []),
     }
 
 
@@ -566,7 +572,8 @@ def cmd_action(game_id, player_name, action):
         result['triggers'] = triggers
 
         # Set up priority for opponents if spell was cast or attack declared
-        if ('cast' in action.lower() or 'attack' in action.lower()) and ok:
+        # Skip priority for land plays — no one responds to land drops
+        if ('cast' in action.lower() or 'attack' in action.lower()) and ok and 'play' not in action.lower():
             opponents_with_responses = []
             for opp in engine.players:
                 if opp is player or opp.life <= 0:

@@ -136,6 +136,7 @@ Read the oracle text of the card you cast. Match the effect to the right endpoin
 | "exile target" / "exile all" | `/destroy` with exile=true | Path to Exile → `/destroy` exile=true (no "dies" trigger) |
 | "return to hand" / bounce | `/move` from_zone="battlefield" to_zone="hand" | Unsummon → `/move` (LTB triggers fire, counters lost) |
 | "exile, then return" / blink | `/move` to exile, then `/move` back | Ephemerate → `/move` to exile, then `/move` to battlefield (gets ETB!) |
+| "ninjutsu" / "commander ninjutsu" | `/move` attacker battlefield→hand, then `/move` ninja hand→battlefield | Attack with evasive creature, then swap for ninja before damage |
 | "mill N cards" | `/mill` count=N | Satyr Wayfinder → `/mill` count=4 then check GY for land |
 | "scry N" | `/scry` count=N, then bottom=["cards to bottom"] | Temple ETB → `/scry` count=1 |
 | "proliferate" | `/proliferate` targets=[...] | Karn's Bastion → `/proliferate` |
@@ -162,13 +163,14 @@ Only call `/judge` for truly complex interactions you cannot figure out from the
 
 ## Turn Sequence (do this EVERY turn)
 1. `/wait` — blocks until your turn
-2. `/begin` — draws a card for you
-3. `/state` — look at the board, assess threats
-4. `/valid` — see what you can do
-5. Play land, cast spells, attack — use `/action` for each, check `/valid` between actions
-6. `/end` — end your turn
+2. `/begin` — draws a card, returns board state + valid actions + rad resolution (ALL IN ONE CALL)
+3. Play land, cast spells, attack — use `/action` for each, check `/valid` between actions
+4. **Resolve triggers** from action responses before continuing
+5. `/end` — end your turn
 
-Think about each action. What advances your win condition? What do opponents threaten?
+`/begin` gives you everything: drew card, board state, valid actions, upkeep triggers, rad resolution. No need for separate `/state` or `/valid` after `/begin`.
+
+Think about each action. What advances your win condition? What do opponents threaten? Check opponent commanders' oracle text in the state.
 
 ## COMBAT
 Attack when it advances your win condition. Consider:
