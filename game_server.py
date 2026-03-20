@@ -70,6 +70,9 @@ def _trigger_hint(oracle_text, player_name, perm_name):
         m = re.search(r'draw (\w+) card', oracle)
         n = {'a': 1, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}.get(m.group(1), 1) if m else 1
         hints.append(f'/draw count={n}')
+    if 'put that card into your hand' in oracle or 'put it into your hand' in oracle:
+        # Yuriko-style: reveal top card → into hand (it's a draw)
+        hints.append('/draw count=1 (reveal top card and put into hand)')
     if 'rad counter' in oracle:
         hints.append('/modify target_player=OPPONENT permanent="" counter_type="rad" amount=1 (player counter, not permanent)')
     if 'proliferate' in oracle:
@@ -105,7 +108,10 @@ def _trigger_hint(oracle_text, player_name, perm_name):
     if 'exile' in oracle:
         hints.append('/move to_zone="exile"')
     if 'loses' in oracle and 'life' in oracle:
-        hints.append('/damage (as life loss)')
+        if 'each opponent' in oracle:
+            hints.append('/damage each opponent (life loss = mana value of revealed card)')
+        else:
+            hints.append('/damage (as life loss)')
     if 'gains' in oracle and 'life' in oracle:
         hints.append('(life gain not tracked beyond life total — use /damage with negative if needed)')
     if 'experience counter' in oracle:
