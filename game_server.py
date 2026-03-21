@@ -1113,6 +1113,64 @@ def cmd_proliferate(game_id, player_name, targets):
     return {'proliferated': results}
 
 
+def cmd_ninjutsu(game_id, player_name, attacker_name, ninja_name, from_zone='hand'):
+    """Ninjutsu/Commander Ninjutsu: swap an unblocked attacker for a ninja.
+
+    The attacker returns to hand, the ninja enters battlefield tapped and attacking.
+    from_zone: 'hand' for regular ninjutsu, 'command_zone' for commander ninjutsu.
+    """
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    # Find the attacker on battlefield (must be tapped = declared attacker)
+    attacker = None
+    for perm in player.battlefield:
+        if attacker_name.lower() in perm.name.lower() and perm.tapped:
+            attacker = perm
+            break
+    if not attacker:
+        return {'error': f"No tapped attacker '{attacker_name}' found (must be attacking)"}
+
+    # Find ninja in hand or command zone
+    ninja_card = None
+    if from_zone == 'command_zone':
+        for c in player.command_zone:
+            if ninja_name.lower() in c['name'].lower():
+                ninja_card = c
+                break
+        if ninja_card:
+            player.command_zone.remove(ninja_card)
+            player.commander_tax += 2  # ninjutsu still incurs commander tax? Actually no — commander ninjutsu bypasses tax
+            player.commander_tax -= 2  # undo — commander ninjutsu does NOT increase tax
+    else:
+        for c in player.hand:
+            if ninja_name.lower() in c['name'].lower():
+                ninja_card = c
+                break
+        if ninja_card:
+            player.hand.remove(ninja_card)
+
+    if not ninja_card:
+        return {'error': f"'{ninja_name}' not found in {from_zone}"}
+
+    # Return attacker to hand
+    player.battlefield.remove(attacker)
+    player.hand.append(attacker.card)
+
+    # Put ninja onto battlefield tapped and attacking
+    ninja_perm = Permanent(card=ninja_card, tapped=True, summoning_sick=False)
+    player.battlefield.append(ninja_perm)
+
+    engine.events.append(f"{player.name} ninjutsu: {attacker.name} → hand, {ninja_card['name']} enters attacking!")
+
+    _save_game(game_id, engine, meta)
+    return {
+        'returned': attacker.name,
+        'ninja': ninja_card['name'],
+        'from_zone': from_zone,
+    }
+
+
 def cmd_token(game_id, player_name, name, power=1, toughness=1, type_line="Creature Token", keywords=None, count=1):
     """Create token creatures on a player's battlefield.
 

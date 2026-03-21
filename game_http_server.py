@@ -44,7 +44,7 @@ from game_server import (
     cmd_begin, cmd_draw, cmd_action, cmd_valid, cmd_state,
     cmd_end, cmd_respond, cmd_damage, cmd_destroy,
     cmd_modify, cmd_keyword, cmd_proliferate,
-    cmd_token, cmd_equip, cmd_scry, cmd_mill, cmd_search, cmd_move, cmd_resolve_judge,
+    cmd_ninjutsu, cmd_token, cmd_equip, cmd_scry, cmd_mill, cmd_search, cmd_move, cmd_resolve_judge,
     cmd_judge, cmd_priority,
 )
 
@@ -183,6 +183,13 @@ class GameHandler(BaseHTTPRequestHandler):
             elif path == 'proliferate':
                 with _lock:
                     result = cmd_proliferate(gid, player, data.get('targets', []))
+                    _notify_waiters(gid)
+
+            elif path == 'ninjutsu':
+                with _lock:
+                    result = cmd_ninjutsu(gid, player, data.get('attacker', ''),
+                                          data.get('ninja', ''),
+                                          data.get('from_zone', 'hand'))
                     _notify_waiters(gid)
 
             elif path == 'token':
