@@ -159,6 +159,17 @@ def detect_triggers(players, event_type, event_data):
                     if attacking_perm_name and perm_name_lower != attacking_perm_name:
                         continue
 
+                # "you" triggers: "whenever you cast/draw/attack" only fire for controller
+                # Check if oracle uses "you" language (not "a player" or "an opponent")
+                acting_player = event_data.get('player')
+                is_you_trigger = (
+                    'whenever you ' in oracle
+                    or 'when you ' in oracle
+                    or 'you control' in oracle
+                )
+                if is_you_trigger and acting_player and acting_player is not player:
+                    continue
+
                 triggers.append((player, perm, oracle))
                 matched = True
                 break
