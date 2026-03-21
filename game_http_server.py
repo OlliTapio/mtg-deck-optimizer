@@ -269,6 +269,17 @@ class GameHandler(BaseHTTPRequestHandler):
                 if phase == 'done':
                     return {'status': 'game_over'}
 
+                # Check if this player is eliminated
+                import pickle as _pkl2
+                _pkl_path = f'/tmp/mtg_games/{game_id}.pkl'
+                if os.path.exists(_pkl_path):
+                    with open(_pkl_path, 'rb') as _pf:
+                        _gdata = _pkl2.load(_pf)
+                    _eng = _gdata.get('engine') or _gdata
+                    for _p in _eng.players:
+                        if (player_name.lower() in _p.name.lower() or _p.name.lower() in player_name.lower()) and _p.life <= 0:
+                            return {'status': 'eliminated', 'message': 'You have been eliminated from the game.'}
+
                 if phase == 'mulligan':
                     pending = result.get('mulligan_pending', [])
                     # Sequential mulligans: only the current player in order gets prompted

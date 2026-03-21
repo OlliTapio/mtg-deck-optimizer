@@ -1055,8 +1055,17 @@ def cmd_proliferate(game_id, player_name, targets):
         counter_type = t.get('counter_type', '+1/+1')
 
         if not perm_name:
-            # Player counter (poison, rad, etc.) — skip for now
-            results.append({'skipped': True, 'reason': 'player counters not yet supported'})
+            # Player counter (poison, rad, experience, etc.)
+            target = _find(engine, target_player)
+            if counter_type not in target.counters or target.counters[counter_type] <= 0:
+                results.append({'skipped': True, 'player': target.name, 'reason': f'no {counter_type} counters to proliferate'})
+            else:
+                target.counters[counter_type] += 1
+                results.append({
+                    'player': target.name,
+                    'counter_type': counter_type,
+                    'new_count': target.counters[counter_type],
+                })
             continue
 
         target = _find(engine, target_player)

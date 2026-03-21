@@ -201,6 +201,8 @@ If attacker has trample, excess damage goes to you. You can block multiple attac
 
 When /wait returns "judge_pause", a rules question is being resolved. Just call /wait again — do NOT call /judge yourself.
 
+When /wait returns "eliminated", you are dead. Write your POST-GAME REPORT and stop playing.
+
 ## Your Deck Strategy
 {strategy_md if strategy_md else "No specific strategy notes. Play smart based on what you draw."}
 
