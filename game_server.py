@@ -107,6 +107,14 @@ def _trigger_hint(oracle_text, player_name, perm_name):
         hints.append('/scry count=N')
     if 'exile' in oracle:
         hints.append('/move to_zone="exile"')
+    if 'create' in oracle and 'token' in oracle:
+        import re
+        # Try to parse "create a N/N TokenType creature token" or "create N N/N tokens"
+        token_match = re.search(r'create (?:a |one |two |three |four |five |\d+ )?(\d+)/(\d+) .*?(?:creature )?token', oracle)
+        if token_match:
+            hints.append(f'/token name="Token" power={token_match.group(1)} toughness={token_match.group(2)}')
+        else:
+            hints.append('/token name="Token" power=N toughness=N count=N')
     if 'loses' in oracle and 'life' in oracle:
         if 'each opponent' in oracle:
             hints.append('/damage each opponent (life loss = mana value of revealed card)')
@@ -1103,6 +1111,37 @@ def cmd_proliferate(game_id, player_name, targets):
 
     _save_game(game_id, engine, meta)
     return {'proliferated': results}
+
+
+def cmd_token(game_id, player_name, name, power=1, toughness=1, type_line="Creature Token", keywords=None, count=1):
+    """Create token creatures on a player's battlefield.
+
+    name: token name (e.g. "Zombie", "Plant Warrior", "Goblin")
+    power/toughness: P/T of the token
+    type_line: type line (default "Creature Token")
+    keywords: list of keywords (e.g. ["flying", "haste"])
+    count: number of tokens to create
+    """
+    engine, meta = _load_game(game_id)
+    player = _find(engine, player_name)
+
+    created = []
+    for _ in range(int(count)):
+        perm = create_token(player, name, int(power), int(toughness),
+                            type_line=type_line, keywords=keywords or [])
+        created.append({
+            'name': perm.name,
+            'power': perm.power,
+            'toughness': perm.toughness,
+        })
+
+    engine.events.append(f"{player.name} creates {count}x {name} {power}/{toughness} token(s)")
+    _save_game(game_id, engine, meta)
+    return {
+        'created': created,
+        'count': int(count),
+        'token': f"{name} {power}/{toughness}",
+    }
 
 
 def cmd_equip(game_id, player_name, equipment_name, target_creature):

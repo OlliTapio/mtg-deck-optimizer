@@ -44,7 +44,7 @@ from game_server import (
     cmd_begin, cmd_draw, cmd_action, cmd_valid, cmd_state,
     cmd_end, cmd_respond, cmd_damage, cmd_destroy,
     cmd_modify, cmd_keyword, cmd_proliferate,
-    cmd_equip, cmd_scry, cmd_mill, cmd_search, cmd_move, cmd_resolve_judge,
+    cmd_token, cmd_equip, cmd_scry, cmd_mill, cmd_search, cmd_move, cmd_resolve_judge,
     cmd_judge, cmd_priority,
 )
 
@@ -183,6 +183,14 @@ class GameHandler(BaseHTTPRequestHandler):
             elif path == 'proliferate':
                 with _lock:
                     result = cmd_proliferate(gid, player, data.get('targets', []))
+                    _notify_waiters(gid)
+
+            elif path == 'token':
+                with _lock:
+                    result = cmd_token(gid, player, data.get('name', 'Token'),
+                                       data.get('power', 1), data.get('toughness', 1),
+                                       data.get('type_line', 'Creature Token'),
+                                       data.get('keywords'), data.get('count', 1))
                     _notify_waiters(gid)
 
             elif path == 'equip':

@@ -86,6 +86,7 @@ python3 game_http_server.py --port 8080
 /modify   - add/remove counters {"target_player","permanent","counter_type":"+1/+1","amount":3}
 /keyword  - grant keyword {"target_player","permanent","keyword":"trample"}
 /proliferate - proliferate {"targets":[{"player","permanent","counter_type"}]}
+/token    - create token creatures {"name":"Zombie","power":2,"toughness":2,"count":3}
 /scry     - scry N cards, put some on bottom {"count":2,"bottom":["Card Name"]}
 /mill     - mill N cards to graveyard {"count":4}
 /move     - move card between zones {"card_name","from_zone","to_zone"}

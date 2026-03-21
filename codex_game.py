@@ -83,6 +83,7 @@ Server: {SERVER_URL}. All calls are POST with JSON body containing game_id and p
 | /modify | game_id, player, target_player, permanent, counter_type, amount | Add/remove counters |
 | /keyword | game_id, player, target_player, permanent, keyword | Grant keyword to permanent |
 | /proliferate | game_id, player, targets:[...] | Proliferate counters |
+| /token | game_id, player, name, power, toughness, count, keywords | Create token creatures |
 | /equip | game_id, player, equipment, creature | Equip equipment to creature |
 | /scry | game_id, player, count, bottom:["cards"] | Scry N, put named cards on bottom |
 | /mill | game_id, player, count | Mill N cards to graveyard |
@@ -136,6 +137,7 @@ Read the oracle text of the card you cast. Match the effect to the right endpoin
 | "exile target" / "exile all" | `/destroy` with exile=true | Path to Exile → `/destroy` exile=true (no "dies" trigger) |
 | "return to hand" / bounce | `/move` from_zone="battlefield" to_zone="hand" | Unsummon → `/move` (LTB triggers fire, counters lost) |
 | "exile, then return" / blink | `/move` to exile, then `/move` back | Ephemerate → `/move` to exile, then `/move` to battlefield (gets ETB!) |
+| "create a token" / "create N tokens" | `/token` name + power + toughness + count | Krenko → `/token` name="Goblin" power=1 toughness=1 count=5 |
 | "ninjutsu" / "commander ninjutsu" | `/move` attacker battlefield→hand, then `/move` ninja hand→battlefield | Attack with evasive creature, then swap for ninja before damage |
 | "mill N cards" | `/mill` count=N | Satyr Wayfinder → `/mill` count=4 then check GY for land |
 | "scry N" | `/scry` count=N, then bottom=["cards to bottom"] | Temple ETB → `/scry` count=1 |
