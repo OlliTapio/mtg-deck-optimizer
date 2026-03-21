@@ -310,6 +310,37 @@ class GameHandler(BaseHTTPRequestHandler):
                     active = result.get('active_player', '')
                     pq = result.get('priority_queue', [])
 
+                    # Auto-pass stale priority: if priority queue has been stuck for 60s, clear it
+                    if pq and 'JUDGE' not in pq:
+                        now = time.time()
+                        pq_key = f'{game_id}_pq'
+                        if not hasattr(self, '_pq_timestamps'):
+                            self.__class__._pq_timestamps = {}
+                        pq_str = str(pq)
+                        stored = self._pq_timestamps.get(pq_key)
+                        if stored and stored[0] == pq_str and now - stored[1] > 60:
+                            # Priority stuck for 60s — auto-pass everyone
+                            import pickle as _pkl3
+                            _pkl_path3 = f'/tmp/mtg_games/{game_id}.pkl'
+                            if os.path.exists(_pkl_path3):
+                                with open(_pkl_path3, 'rb') as _pf3:
+                                    _gdata3 = _pkl3.load(_pf3)
+                                _meta3 = _gdata3.get('meta', {})
+                                _eng3 = _gdata3.get('engine') or _gdata3
+                                _eng3.events.append(f"  ⏱ Auto-pass: {', '.join(pq)} timed out on priority")
+                                if _meta3.get('combat_pending') and hasattr(_eng3, 'pending_combat') and _eng3.pending_combat:
+                                    _eng3.resolve_combat()
+                                    _meta3['combat_pending'] = False
+                                _meta3['priority_queue'] = []
+                                _meta3['blocks'] = []
+                                from game_server import _save_game
+                                _save_game(game_id, _eng3, _meta3)
+                                _notify_waiters(game_id)
+                                del self._pq_timestamps[pq_key]
+                                continue  # Re-check state
+                        elif not stored or stored[0] != pq_str:
+                            self._pq_timestamps[pq_key] = (pq_str, now)
+
                     # Judge pause — tell players to wait
                     if 'JUDGE' in pq:
                         return {'status': 'judge_pause', 'message': 'Judge is resolving a rules question. Please wait.'}

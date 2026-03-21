@@ -581,6 +581,7 @@ def cmd_action(game_id, player_name, action):
 
         # Set up priority for opponents if spell was cast or attack declared
         # Skip priority for land plays — no one responds to land drops
+        import time as _time
         if ('cast' in action.lower() or 'attack' in action.lower()) and ok and 'play' not in action.lower():
             opponents_with_responses = []
             for opp in engine.players:
@@ -1336,12 +1337,31 @@ def cmd_search(game_id, player_name, card_name, destination='battlefield', tappe
     engine, meta = _load_game(game_id)
     player = _find(engine, player_name)
 
-    # Find card in library
+    # Find card in library — prefer exact match, then type match, then substring
     found = None
+    search_lower = card_name.lower().strip()
+
+    # Pass 1: exact name match
     for i, card in enumerate(player.library):
-        if card_name.lower() in card['name'].lower():
+        if card['name'].lower() == search_lower:
             found = i
             break
+
+    # Pass 2: type_line match (e.g. searching for "Forest" matches basic Forest type)
+    if found is None:
+        for i, card in enumerate(player.library):
+            type_line = card.get('type_line', '').lower()
+            # "Basic Land — Forest" matches search for "Forest"
+            if f'— {search_lower}' in type_line or f'basic land — {search_lower}' in type_line:
+                found = i
+                break
+
+    # Pass 3: substring match (last resort)
+    if found is None:
+        for i, card in enumerate(player.library):
+            if search_lower in card['name'].lower():
+                found = i
+                break
 
     if found is None:
         # List available matches for the search
