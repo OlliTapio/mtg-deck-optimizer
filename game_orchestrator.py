@@ -386,14 +386,17 @@ class GameEngine:
             pd['lands'] = [f"{n}x {name}" if n > 1 else name for name, n in sorted(land_counts.items())]
             pd['lands'].extend(special_lands)
 
-            # Nonlands — show oracle snippet for commanders only (threat assessment without context bloat)
+            # Nonlands — show oracle for own permanents + opponent commanders
             for perm in sorted(p.battlefield, key=lambda x: x.name):
                 if not perm.is_land():
                     summary = perm_summary(perm)
-                    if perm.card.get('is_commander') and p is not viewer:
-                        oracle = perm.card.get('oracle_text', '')
-                        if oracle:
-                            summary += f"\n      ⚠ {oracle[:80]}..."
+                    oracle = perm.card.get('oracle_text', '')
+                    if p is viewer and oracle:
+                        # Own permanents: show oracle so agent remembers abilities
+                        summary += f"\n      Oracle: {oracle[:100]}"
+                    elif perm.card.get('is_commander') and p is not viewer and oracle:
+                        # Opponent commanders: threat assessment
+                        summary += f"\n      ⚠ {oracle[:80]}..."
                     pd['nonlands'].append(summary)
 
             game_dict['players'].append(pd)

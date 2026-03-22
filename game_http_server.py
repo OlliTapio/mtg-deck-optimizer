@@ -355,6 +355,40 @@ class GameHandler(BaseHTTPRequestHandler):
                         if player_name.lower() in name.lower() or name.lower() in player_name.lower():
                             return {'status': 'priority', 'last_action': ''}
 
+            # Auto-advance stale active player: if active player hasn't acted for 90s, end their turn
+            if phase == 'playing' and not pq:
+                now2 = time.time()
+                turn_key = f'{game_id}_turn'
+                if not hasattr(self.__class__, '_turn_timestamps'):
+                    self.__class__._turn_timestamps = {}
+                current_turn_str = f'{result.get("turn",0)}_{active}'
+                stored_turn = self._turn_timestamps.get(turn_key)
+                if stored_turn and stored_turn[0] == current_turn_str and now2 - stored_turn[1] > 90:
+                    # Active player hasn't acted for 90s — auto-end their turn
+                    import pickle as _pkl4
+                    _pkl_path4 = f'/tmp/mtg_games/{game_id}.pkl'
+                    if os.path.exists(_pkl_path4):
+                        with open(_pkl_path4, 'rb') as _pf4:
+                            _gdata4 = _pkl4.load(_pf4)
+                        _meta4 = _gdata4.get('meta', {})
+                        _eng4 = _gdata4.get('engine') or _gdata4
+                        _eng4.events.append(f"  ⏱ {active} timed out — auto-ending turn")
+                        # Discard to 7 and advance
+                        ap = _eng4.active_player
+                        while len(ap.hand) > 7:
+                            worst = max(ap.hand, key=lambda c: c.get('cmc', 0))
+                            ap.hand.remove(worst)
+                            ap.graveyard.append(worst)
+                        _eng4.advance_turn()
+                        _meta4['priority_queue'] = []
+                        from game_server import _save_game
+                        _save_game(game_id, _eng4, _meta4)
+                        _notify_waiters(game_id)
+                        del self._turn_timestamps[turn_key]
+                        continue
+                elif not stored_turn or stored_turn[0] != current_turn_str:
+                    self._turn_timestamps[turn_key] = (current_turn_str, now2)
+
             # Wait for a state change notification, or timeout after 3s
             evt = _wait_events.get(game_id)
             if evt:
