@@ -1,41 +1,69 @@
 # Yuma, Proud Protector
 1 Desert Warfare
+1 Evendo Brushrazer
+1 Hedge Shredder
 1 Horizon Explorer
-1 Splendid Reclamation
 1 Nahiri's Resolve
+1 Splendid Reclamation
 1 Broken Bond
 
 # The Wise Mothman
-1 Gyre Sage
+1 Animal Attendant
+1 Armored Scrapgorger
 1 Binding the Old Gods
+1 Birds of Paradise
+1 Bojuka Bog
+1 Bugenhagen, Wise Elder
 1 Cankerbloom
-1 Tezzeret's Gambit
-1 Simic Ascendancy
-1 Repulsive Mutation
-1 Fathom Mage
-1 Flotsam // Jetsam
-1 Evolution Witness
-1 Incubation Druid
+1 Collective Resistance
 1 Defiler of Vigor
-1 Scheming Aspirant
-1 Jenova, Ancient Calamity
-1 Master Biomancer
+1 Dreamtide Whale
+1 Duskshell Crawler
+1 Evolution Sage
+1 Evolution Witness
+1 Fathom Mage
+1 Fetid Pools
+1 Flotsam // Jetsam
 1 Flux Channeler
-1 Singularity Rupture
+1 Glen Elendra Guardian
+1 Haunted Mire
+1 Incubation Druid
+1 Kami of Whispered Hopes
+1 Massacre Girl
+1 Master Biomancer
 1 Psychic Corrosion
-1 Conduit of Worlds
 1 Ray Fillet, Wave Warrior
+1 Reanimate
+1 Repulsive Mutation
 1 Ripples of Potential
-1 Wave Goodbye
+1 Sakura-Tribe Elder
+1 Simic Ascendancy
+1 Singularity Rupture
 1 Sodden Verdure
-1 Triskelion
 1 Stubborn Denial
+1 Swiftfoot Boots
+1 Tangled Islet
+1 Tezzeret's Gambit
+1 Triskelion
 1 Tromell, Seymour's Butler
-1 Armorcraft Judge
+1 Unnatural Restoration
 1 Vernal Fen
 1 Vigor
+1 Wave Goodbye
 
 # Ashling, the Limitless
 1 Ashling, Rekindled
-1 Shinestriker
 1 Ashling's Command
+1 Brighthearth Banneret
+1 Flamekin Harbinger
+1 Flock Impostor
+1 Grave Sifter
+1 Kindred Discovery
+1 Patriarch's Bidding
+1 Shinestriker
+1 The World Tree
+
+# Ureni of the Unwritten
+1 Cascade Bluffs
+1 Spinerock Knoll
+1 Steam Vents

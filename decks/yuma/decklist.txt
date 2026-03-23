@@ -88,3 +88,4 @@
 1x Wreck and Rebuild (otc) 250 [Removal]
 1x Yuma, Proud Protector (otc) 4 [Commander{top}]
 1x Zuran Orb (mh2) 300 [Finisher]
+1x Evendo Brushrazer (eoc) [Ramp,noDeck,Buy]

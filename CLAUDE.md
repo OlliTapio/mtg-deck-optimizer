@@ -57,7 +57,42 @@ python3 scryfall_search.py --lookup "Card Name" --verbose
 
 # Search Scryfall with raw query
 python3 scryfall_search.py --search "id<=bug f:commander o:proliferate" --verbose
+
+# Scryfall search examples with otags and common filters
+python3 scryfall_search.py --search "otag:ramp t:creature cmc=2 id<=bug f:commander" --verbose
+python3 scryfall_search.py --search "otag:mana-dork t:creature cmc<=2 id<=bug f:commander" --verbose
+python3 scryfall_search.py --search "otag:board-wipe id<=bug f:commander cmc<=4" --verbose
+python3 scryfall_search.py --search "otag:removal t:instant id<=bug f:commander cmc<=2" --verbose
+python3 scryfall_search.py --search "t:creature o:'+1/+1 counter' cmc<=3 id<=bug f:commander" --verbose
+python3 scryfall_search.py --search "t:land o:'{G}' o:'{U}' -t:basic eur<=5" --verbose
 ```
+
+## Scryfall Search Syntax Quick Reference
+- `id<=bug` — color identity within Sultai (BUG). Use `id<=rg`, `id<=wub`, etc.
+- `f:commander` — legal in Commander format
+- `cmc<=3` or `cmc=2` — converted mana cost filter
+- `t:creature`, `t:instant`, `t:land` — type filter
+- `o:'text'` — oracle text contains
+- `eur<=10` — price filter in euros
+- `-o:'text'` — exclude oracle text
+- `-t:legendary` — exclude type
+- `set:fin` — specific set code
+- `otag:tag-name` — Scryfall community otags (see below)
+
+### Common Scryfall otags
+- `otag:ramp` — mana acceleration (dorks, rocks, land fetch)
+- `otag:mana-dork` — creatures that tap for mana
+- `otag:board-wipe` — mass removal
+- `otag:removal` — targeted removal
+- `otag:counterspell` — counter spells
+- `otag:card-advantage` — card draw and value engines
+- `otag:tutor` — search library effects
+- `otag:recursion` — graveyard recursion
+- `otag:evasion` — flying, unblockable, menace, etc.
+- `otag:lifegain` — life gain effects
+- `otag:graveyard-hate` — graveyard disruption
+- `otag:mill` — mill effects
+- `otag:proliferate` — proliferate effects
 
 ## Game Simulator Architecture
 
