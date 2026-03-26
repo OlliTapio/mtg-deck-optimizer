@@ -6,10 +6,10 @@
 1x Lasting Tarfire — weak enchantment, no counter synergy
 1x Harmonize — generic draw, Auntie Ool draws enough
 1x Cathartic Pyre — weak removal, no counter synergy
-1x Putrefy — generic removal, replaced with Obelisk Spider
+1x Puppeteer Clique — persist anti-synergy with -1/-1 counters, situational ETB dependent on opponents' graveyards; replaced with Putrefy
+1x Vraska, Betrayal's Sting — 6 CMC planeswalker, -2 removal is slow and off-theme; replaced with Terminate
 1x Archfiend of Ifnir — no cycling/discard support in the deck
 1x Night's Whisper — generic draw, replaced with Thirsting Roots
-1x Terminate — generic removal, replaced with Unnatural Restoration
 1x Sol Ring — no synergy, replaced with Birds of Paradise
 1x Evolving Wilds — slow fetch, replaced with Blood Crypt
 1x Golgari Rot Farm — bounce land tempo loss, replaced with Twilight Mire
@@ -18,11 +18,10 @@
 1x Infernal Grasp — generic removal, replaced with Blight Rot
 
 ## Basic land adjustments
-- Reduced from 8 to 10 Swamp (net +2, matching black pip demand)
+- Reduced from 8 to 10 Swamp, then down to 8 (net 0; 2 Swamps replaced with Scuzzback Scrounger and Ammit Eternal)
 - Reduced from 6 to 5 Forest (-1)
 - Reduced from 4 to 2 Mountain (-2, red well-served by duals)
 - Cut 1 Swamp for Boggart Trawler (MDFC)
 
 ## Maybeboard
 1x Takenuma, Abandoned Mire — €7.93, good but already have 11 recursion pieces
-1x Generous Patron (wait for reprint/price drop if FF version unavailable)
