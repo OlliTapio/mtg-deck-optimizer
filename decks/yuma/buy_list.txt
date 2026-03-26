@@ -1,2 +1,4 @@
+1 Desert Warfare
+1 Dire-Strain Rampage
 1 Hedge Shredder
 1 Evendo Brushrazer [noDeck]

@@ -88,3 +88,4 @@
 1x Watchful Radstag (pip) 87 [Counters,Creature]
 1x Winding Constrictor (pip) 223 [Counters,Creature]
 1x Woodland Cemetery (pip) 316 [Land]
+1x High Score (tmc) 70 [Counters,Draw,Maybeboard,Buy]
