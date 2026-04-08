@@ -1,12 +1,34 @@
-# Ashling Cuts
+# Ashling Cuts from Precon (Elemental Companions Commander)
 
-## Removed Cards
+## Done
 
-- **Muldrotha, the Gravetide** — 6CMC, not an Elemental-focused recursion piece. Replaced with Brighthearth Banneret for cost reduction and lower curve.
-- **Omnath, Locus of Rage** — Removed (from precon changes)
-- **Collective Inferno** — Removed (from precon changes)
-- **Shimmercreep** — Removed (from precon changes)
-- **Thriving Bluff** — Removed (tapland upgrade)
-- **Thriving Grove** — Removed (tapland upgrade)
-- **Thriving Heath** — Removed (tapland upgrade)
-- **Thriving Isle** — Removed (tapland upgrade)
+### Lands
+1x Thriving Isle → Hallowed Fountain ✅
+1x Thriving Grove → Cinder Glade ✅
+1x Thriving Bluff → Rootbound Crag ✅
+1x Thriving Heath → Flamekin Harbinger ✅
+
+### Artifacts/Enchantments
+1x Timeless Lotus → Brighthearth Banneret ✅
+1x Fertile Ground → Kulrath Zealot ✅
+1x Chromatic Lantern → Reflections of Littjara ✅
+1x Distant Melody → Harmonized Crescendo ✅
+1x Elemental Spectacle → Sunderflock ✅
+
+### Creatures
+1x Cream of the Crop → ?
+1x Abundant Growth → ?
+1x Hoofprints of the Stag → ?
+1x Omnath, Locus of Rage → ?
+1x Jegantha, the Wellspring → ?
+1x Shimmercreep → ?
+
+## Not cut (stays in deck)
+- Muldrotha, the Gravetide — keeping for recursion value
+- Frontier Bivouac — 5-color fixing
+- Thriving Moor — still in physical deck
+- Opal Palace — still in physical deck
+
+## Already in physical deck (not from precon)
+- Collective Inferno
+- Omni-Changeling

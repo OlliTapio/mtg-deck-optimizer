@@ -66,3 +66,6 @@ Goal: cast Mothman turn 3-4. He costs {1}{B}{G}{U} — all 3 colors required.
 - Tainted lands need a Swamp — keep Swamp-producing lands in opening hand when possible
 - Many tapped lands (Temples, Opulent Palace) — plan your first 3 turns carefully around tap timing
 
+## Maybeboard
+- Karn's Bastion — colorless proliferate land, future upgrade
+

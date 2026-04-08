@@ -1,27 +1,37 @@
 # Blight Curse — Cuts from Precon
 
 ## Removed from deck
-1x Riveteers Overlook — slow tapland, replaced with Karn's Bastion
-1x Terramorphic Expanse — slow fetch, replaced with Reliquary Tower
-1x Lasting Tarfire — weak enchantment, no counter synergy
-1x Harmonize — generic draw, Auntie Ool draws enough
-1x Cathartic Pyre — weak removal, no counter synergy
-1x Puppeteer Clique — persist anti-synergy with -1/-1 counters, situational ETB dependent on opponents' graveyards; replaced with Putrefy
-1x Vraska, Betrayal's Sting — 6 CMC planeswalker, -2 removal is slow and off-theme; replaced with Terminate
-1x Archfiend of Ifnir — no cycling/discard support in the deck
-1x Night's Whisper — generic draw, replaced with Thirsting Roots
-1x Sol Ring — no synergy, replaced with Birds of Paradise
-1x Evolving Wilds — slow fetch, replaced with Blood Crypt
-1x Golgari Rot Farm — bounce land tempo loss, replaced with Twilight Mire
-1x Rakdos Carnarium — bounce land tempo loss, replaced with Graven Cairns
-1x Gruul Turf — bounce land tempo loss, replaced with Fire-Lit Thicket
-1x Infernal Grasp — generic removal, replaced with Blight Rot
+
+### Lands
+1x Terramorphic Expanse → Karn's Bastion — slow fetch ✅
+1x Evolving Wilds → Blood Crypt — slow fetch ✅
+1x Riveteers Overlook → Reliquary Tower — slow tapland
+1x Golgari Rot Farm → Twilight Mire — bounce land tempo loss
+1x Rakdos Carnarium → Graven Cairns — bounce land tempo loss
+1x Gruul Turf → Fire-Lit Thicket — bounce land tempo loss
+
+### Creatures
+1x Puppeteer Clique → Nest of Scarabs — persist anti-synergy with -1/-1 counters, situational ETB
+1x Archfiend of Ifnir → Unnatural Restoration — no cycling/discard support in the deck
+
+### Instants/Sorceries
+1x Cathartic Pyre → Obelisk Spider — weak removal, no counter synergy
+1x Infernal Grasp → Grim Affliction — generic removal
+1x Harmonize → Generous Patron — generic draw, Auntie Ool draws enough
+1x Night's Whisper → Thirsting Roots — generic draw
+
+### Enchantments
+1x Lasting Tarfire → Blight Rot — weak enchantment, no counter synergy ✅
+
+### Artifacts/Planeswalkers
+1x Sol Ring → Birds of Paradise — no synergy ✅
+1x Vraska, Betrayal's Sting → Contagion Engine — 6 CMC planeswalker, -2 removal is slow and off-theme ✅
 
 ## Basic land adjustments
-- Reduced from 8 to 10 Swamp, then down to 8 (net 0; 2 Swamps replaced with Scuzzback Scrounger and Ammit Eternal)
-- Reduced from 6 to 5 Forest (-1)
-- Reduced from 4 to 2 Mountain (-2, red well-served by duals)
-- Cut 1 Swamp for Boggart Trawler (MDFC)
+- Forest 6 → 5 (-1)
+- Mountain 4 → 2 (-2, red well-served by duals)
+- Swamp 8 → 7 (-1, Boggart Trawler is a Swamp MDFC)
+- Freed 4 basic slots for: Scuzzback Scrounger, Ammit Eternal, Boggart Trawler, Stalwart Successor
 
 ## Maybeboard
 1x Takenuma, Abandoned Mire — €7.93, good but already have 11 recursion pieces

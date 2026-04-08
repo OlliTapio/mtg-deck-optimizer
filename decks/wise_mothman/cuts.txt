@@ -6,7 +6,7 @@
 1x Negate (mom) 68 [Removal] -> Flux Channeler (noncreature spells proliferate)
 1x Infesting Radroach (pip) 46 [Mill,Creature] -> Scheming Aspirant (drain on proliferate)
 1x Vault 12: The Necropolis (pip) 51 [Mill] -> Tromell, Seymour's Butler (ETB counters + multi-proliferate)
-1x Mortuary Mire (pip) 272 [Land] -> Swamp (fix tainted lands)
+1x Mortuary Mire (pip) 272 [Land] -> Swamp (fix tainted lands) [REVERTED - Mire back in, Karn's Bastion slot]
 1x Nesting Grounds (pip) 276 [Land] -> Singularity Rupture (board wipe + mill)
 1x Counterspell (dsc) 114 [Removal] -> Repulsive Mutation (counter + counters)
 1x Raul, Trouble Shooter (pip) 115 [Recursion,Creature] -> Conduit of Worlds (passive recursion)
