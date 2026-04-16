@@ -16,6 +16,22 @@ def parse_decklist(filepath):
             line = line.strip()
             if not line:
                 continue
+            # Handle basics without set/number/tags, e.g. "5x Forest"
+            m_basic = re.match(r'^(\d+)x\s+(Plains|Island|Swamp|Mountain|Forest)\s*$', line)
+            if m_basic:
+                count = int(m_basic.group(1))
+                name = m_basic.group(2)
+                for _ in range(count):
+                    cards.append({
+                        'name': name,
+                        'count': 1,
+                        'set': '',
+                        'number': '0',
+                        'foil': False,
+                        'tags': ['Land'],
+                    })
+                continue
+
             m = re.match(
                 r'^(\d+)x\s+(.+?)\s+\((\w+)\)\s+(\S+)\s*(\*F\*)?\s*\[(.+)\]$',
                 line
