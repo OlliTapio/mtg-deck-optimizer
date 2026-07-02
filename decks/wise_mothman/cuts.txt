@@ -50,3 +50,11 @@
 1x Swamp (pip) 321 [Land] -> Bojuka Bog (free graveyard exile on ETB)
 1x Forest (pip) 325 [Land] -> Swamp (rebalance colors, more B sources)
 1x Swamp (pip) 321 [Land] -> Island (rebalance colors, more U sources)
+
+# Round 7 cuts (manabase untapping + color rebalance + 2 spells)
+1x Marcus, Mutant Mayor (pip) 109 [Draw,Creature] -> Pensive Professor (counter/proliferate draw engine, lowers curve 5->3)
+1x Singularity Rupture (dft) 111 [Removal,Buy] -> Vicious Rivalry (scalable one-sided-ish wipe; Rupture nuked own board incl Mothman)
+1x Tainted Isle (pip) 299 [Land] -> Dreamroot Cascade (GU slow, unconditional fixing, untapped T3+; removes Swamp-dependency)
+1x Tainted Wood (pip) 301 [Land] -> Turbulent Wilderness (GU, Forest Island types, fetchable; boosts blue)
+1x Tangled Islet (blb) 262 [Land,Buy] -> Rejuvenating Springs (GU bond, always untapped in EDH)
+1x Haunted Mire (dsk) 267 [Land,Buy] -> Deathcap Glade (BG slow, untapped T3+; cuts a filler tapland, check lands unaffected)

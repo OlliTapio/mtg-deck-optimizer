@@ -16,7 +16,9 @@ Rad counters are **incidental** — chip damage and mill disruption, NOT the pri
 
 ## Non-obvious Design Decisions
 - Wave Goodbye chosen specifically because this deck's creatures always have +1/+1 counters (functionally one-sided)
-- Tainted lands kept despite being conditional — Swamp count was increased to support them
+- Tainted Isle/Wood cut (Round 7): they produced only colorless without a Swamp in play — too fragile. Replaced with GU/BG slow + bond lands for unconditional fixing. This also relaxed the old "keep Swamp count high" constraint, since the only remaining Swamp-dependent lands (Drowned Catacomb, Woodland Cemetery) each have a Forest/Island fallback.
+- Manabase deliberately GU-skewed: green (48 pips, primary) and blue (24 pips, double-pip on Pensive/Wave Goodbye) were under-sourced vs black. Land color sources rebalanced to ~G22/U19/B20 to match pip share. GU duals are also the cheapest side of every land cycle.
+- Only 5 always-tapped lands kept, each for ETB value/fixing (Bojuka Bog, Mortuary Mire, Opulent Palace, Path of Ancestry, Fetid Pools). Pure-filler taplands (Haunted Mire, Tangled Islet) were cut for untapped/conditional lands.
 - Stubborn Denial over more expensive counterspells — Ferocious is reliably online in this deck
 - Conduit of Worlds over Raul — keeps mana open for instant-speed interaction
 - Undead Alchemist was cut despite being on-theme — replacing combat damage with mill is anti-synergy with the counter beatdown plan
@@ -62,9 +64,10 @@ Goal: cast Mothman turn 3-4. He costs {1}{B}{G}{U} — all 3 colors required.
 - T4: The Wise Mothman — engine already online
 
 ### Key color notes
-- Farseek and Nature's Lore can find Sunken Hollow, Hinterland Harbor, etc. — use them to fix the missing color
-- Tainted lands need a Swamp — keep Swamp-producing lands in opening hand when possible
-- Many tapped lands (Temples, Opulent Palace) — plan your first 3 turns carefully around tap timing
+- Farseek finds Island/Swamp-typed lands (basics or duals like Sunken Hollow, Turbulent Wilderness); Nature's Lore finds any Forest-typed land incl. duals; Sakura-Tribe Elder ("Steve") finds basic lands only (plus it chump-blocks and ramps) — use them to fix the missing color
+- Green is primary (48 pips) but propped up partly by dorks/ramp; still prioritize a green land T1 for Birds/Incubation Druid
+- Slow lands (Dreamroot Cascade, Deathcap Glade) are tapped T1-2 but untapped from T3 — fine for the T3-4 Mothman plan; lead on basics/dorks early
+- Rejuvenating Springs enters untapped in any real multiplayer game (2+ opponents)
 
 ## Maybeboard
 - Karn's Bastion — colorless proliferate land, future upgrade
