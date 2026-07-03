@@ -67,6 +67,10 @@ def get_land_info(card):
             condition = 'always_tapped'
     elif 'two or fewer other lands' in oracle:
         condition = 'fast'  # Fast lands: untapped T1-3
+    elif 'two or more other lands' in oracle:
+        condition = 'slow'  # Slow lands: tapped T1-2, untapped once 2+ other lands (T3+)
+    elif 'eight or more lands' in oracle:
+        condition = 'slow'  # Turbulent lands: opponents reach 8+ lands ~T3 in a pod
     elif 'unless you control a Forest or an Island' in oracle:
         condition = 'check_forest_island'
     elif 'unless you control an Island or a Swamp' in oracle:
@@ -144,6 +148,8 @@ def simulate_mana_turn(lands_info, turn, is_commander=True):
             entered_tapped = not ('Swamp' in prior_subtypes or 'Forest' in prior_subtypes)
         elif cond == 'check_2basics':
             entered_tapped = (prior_basics < 2)
+        elif cond == 'slow':
+            entered_tapped = (len(prior_lands) < 2)  # untapped once 2+ other lands already in play
         elif cond == 'untapped':
             entered_tapped = False
         elif cond == 'filter':
@@ -193,43 +199,41 @@ def optimal_land_order(lands_info):
     conditional = [l for l in lands_info if l['condition'] in (
         'fast', 'check_swamp_forest', 'check_forest_island', 'check_island_swamp', 'check_2basics'
     )]
+    slow = [l for l in lands_info if l['condition'] == 'slow']
     tainted = [l for l in lands_info if l['condition'] == 'tainted']
     filters = [l for l in lands_info if l['condition'] == 'filter']
     other_untapped = [l for l in lands_info if l['condition'] == 'untapped'
                       and l['name'] not in ('Forest', 'Island', 'Swamp', 'Plains', 'Mountain')]
 
     # Sort each group by color count (more colors first)
-    for group in [always_tapped, basics, conditional, tainted, filters, other_untapped]:
+    for group in [always_tapped, basics, conditional, slow, tainted, filters, other_untapped]:
         group.sort(key=lambda l: -len(l['colors']))
 
-    # Optimal order: tapped T1 (get it out of the way), then basics, then untapped colored,
-    # then conditional, then tainted, then filters
-    # But only play 1 tapped land early; if we have multiple, basics first for the rest
-    # Exception: if we have a basic that produces needed colors for T1 plays, lead with that
+    # Optimal order: get one tapped land out of the way T1 (a slow land played T1 is
+    # tapped anyway since you control 0 other lands), then basics, untapped colored,
+    # conditional, and finally remaining slow lands late (untapped once 2+ lands are out).
     result = []
+    remaining_tapped = list(always_tapped)
+    remaining_slow = list(slow)
     has_untapped_t1 = bool(basics) or bool(other_untapped)
-    if always_tapped and len(lands_info) >= 2 and has_untapped_t1:
-        # We have both tapped and untapped — play tapped T1, untapped T2
-        result.append(always_tapped[0])
-        remaining_tapped = always_tapped[1:]
-    elif always_tapped and len(lands_info) >= 2 and not has_untapped_t1:
-        # Only tapped + conditional — play tapped first
-        result.append(always_tapped[0])
-        remaining_tapped = always_tapped[1:]
-    else:
-        remaining_tapped = always_tapped
+    if len(lands_info) >= 2 and (has_untapped_t1 or always_tapped or slow):
+        # Play one tapped land T1: prefer an always-tapped land, else a slow land
+        if always_tapped:
+            result.append(always_tapped[0])
+            remaining_tapped = always_tapped[1:]
+        elif slow and has_untapped_t1:
+            result.append(slow[0])
+            remaining_slow = slow[1:]
 
-    # Then basics (enable check lands and tainted)
+    # Then basics (enable check lands), untapped colored, conditional untapped
     result.extend(basics)
-    # Then other untapped colored lands (Command Tower, Exotic Orchard, etc.)
     result.extend(other_untapped)
-    # Then conditional lands (check lands, fast lands)
     result.extend(conditional)
-    # Then tainted lands
+    # Remaining slow lands play late, where 2+ other lands make them untapped
+    result.extend(remaining_slow)
+    # Then tainted, filters, and any leftover always-tapped lands
     result.extend(tainted)
-    # Then filters
     result.extend(filters)
-    # Then any remaining tapped lands
     result.extend(remaining_tapped)
 
     return result
@@ -325,8 +329,9 @@ def evaluate_hand(hand, cmdr_card=None):
     lands_info = [get_land_info(l) for l in lands]
     ordered_lands = optimal_land_order(lands_info)
 
-    # Count always-tapped lands
-    tapped_count = sum(1 for l in lands_info if l['condition'] == 'always_tapped')
+    # Count lands that enter tapped early (always-tapped + slow/turbulent, which are
+    # tapped T1-2 in a low-land hand — exactly the regime the mulligan rule cares about)
+    tapped_count = sum(1 for l in lands_info if l['condition'] in ('always_tapped', 'slow'))
 
     # Simulate base mana from lands for turns 1-5
     base_turn_data = {}
