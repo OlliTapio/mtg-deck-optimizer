@@ -58,3 +58,10 @@
 1x Tainted Wood (pip) 301 [Land] -> Turbulent Wilderness (GU, Forest Island types, fetchable; boosts blue)
 1x Tangled Islet (blb) 262 [Land,Buy] -> Rejuvenating Springs (GU bond, always untapped in EDH)
 1x Haunted Mire (dsk) 267 [Land,Buy] -> Deathcap Glade (BG slow, untapped T3+; cuts a filler tapland, check lands unaffected)
+1x Simic Ascendancy (rna) 207 [Counters,Buy] -> Rampaging Yao Guai (sync w/ Archidekt; Mutant body + X counters + artifact/enchant removal, alt-wincon enchantment cut)
+1x Putrefy (pip) 219 [Removal] -> Beast Within (instant, destroys ANY permanent incl. lands/PWs/enchantments; exile-quality flexibility vs Putrefy's redundant artifact/creature mode)
+
+# Round 8 cuts (spell//land MDFCs — cut 3 black lands, add 3 flex cards that are lands when needed but nonland cards for Mothman's mill trigger)
+1x Mortuary Mire (pip) 272 [Land] -> Boggart Trawler // Boggart Bog (slow recursion for a flexible GY-exile body; kept Bojuka Bog too for GY control since we feed our own yard; back taps B)
+1x Swamp (pip) 321 [Land] -> Revitalizing Repast // Old-Growth Grove (instant +1/+1 counter + indestructible; back taps B/G; black oversupplied)
+1x Swamp (pip) 321 [Land] -> Bridgeworks Battle // Tanglespan Bridgeworks (sorcery +2/+2 + fight removal; back taps G; black oversupplied)

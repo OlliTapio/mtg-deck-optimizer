@@ -18,10 +18,16 @@ Rad counters are **incidental** — chip damage and mill disruption, NOT the pri
 - Wave Goodbye chosen specifically because this deck's creatures always have +1/+1 counters (functionally one-sided)
 - Tainted Isle/Wood cut (Round 7): they produced only colorless without a Swamp in play — too fragile. Replaced with GU/BG slow + bond lands for unconditional fixing. This also relaxed the old "keep Swamp count high" constraint, since the only remaining Swamp-dependent lands (Drowned Catacomb, Woodland Cemetery) each have a Forest/Island fallback.
 - Manabase deliberately GU-skewed: green (48 pips, primary) and blue (24 pips, double-pip on Pensive/Wave Goodbye) were under-sourced vs black. Land color sources rebalanced to ~G22/U19/B20 to match pip share. GU duals are also the cheapest side of every land cycle.
-- Only 5 always-tapped lands kept, each for ETB value/fixing (Bojuka Bog, Mortuary Mire, Opulent Palace, Path of Ancestry, Fetid Pools). Pure-filler taplands (Haunted Mire, Tangled Islet) were cut for untapped/conditional lands.
+- Only 4 always-tapped lands kept, each for ETB value/fixing (Bojuka Bog, Opulent Palace, Path of Ancestry, Fetid Pools). (Mortuary Mire was the 5th, cut in Round 8 for a spell//land MDFC.) Pure-filler taplands (Haunted Mire, Tangled Islet) were cut for untapped/conditional lands.
 - Stubborn Denial over more expensive counterspells — Ferocious is reliably online in this deck
 - Conduit of Worlds over Raul — keeps mana open for instant-speed interaction
 - Undead Alchemist was cut despite being on-theme — replacing combat damage with mill is anti-synergy with the counter beatdown plan
+- Spell//land MDFCs added by cutting 3 black lands (Mortuary Mire + 2x Swamp), not spells — they count as land drops when mana-light but as **nonland cards** in library/graveyard (CR 712.14: characteristics off the battlefield are the front face's), so being milled feeds Mothman's +1/+1 trigger and rad-counter life loss. Cuts protected blue (tightest color) and trimmed oversupplied black; net land sources G +2 / U ±0 / B −1.
+  - Revitalizing Repast // Old-Growth Grove ({B/G}) — instant: +1/+1 counter + indestructible. Protects Mothman AND feeds doublers/proliferate/Fathom Mage. Back taps B or G.
+  - Bridgeworks Battle // Tanglespan Bridgeworks ({2}{G}) — sorcery: +2/+2 then fight. Removal leveraging the deck's big counter creatures. Back taps G.
+  - Boggart Trawler // Boggart Bog ({2}{B}) — Goblin, ETB exile a graveyard. Kept Bojuka Bog alongside it: the deck feeds its own graveyard (Reanimate/World Shaper), so two GY-exile effects give control over when/whose yard gets hit. Reanimatable as a creature. Back taps B.
+  - Mortuary Mire cut over Bojuka Bog — it was the slowest recursion (tapped, returns to top of library not hand, one-shot); Boggart Trawler is now recurable via Reanimate/Evolution Witness/Unnatural Restoration anyway.
+  - Caveat: the deck's recursion is permanent-only (Unnatural Restoration/Evolution Witness return permanents; Reanimate creatures; Jetsam hits opponents' yards). So Repast (instant) and Bridgeworks (sorcery) are one-and-done once used or milled — acceptable, since milling them still makes Mothman counters.
 
 ## Mulligan Strategy
 
@@ -71,4 +77,6 @@ Goal: cast Mothman turn 3-4. He costs {1}{B}{G}{U} — all 3 colors required.
 
 ## Maybeboard
 - Karn's Bastion — colorless proliferate land, future upgrade
+- Bane of Progress — mass artifact/enchantment wipe that enters with a +1/+1 counter per permanent destroyed (on-theme). Sideboard-style answer vs artifact/enchantment-heavy pods.
+- High Score — counter/draw payoff
 
