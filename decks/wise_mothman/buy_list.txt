@@ -14,6 +14,7 @@
 1 Evolution Witness
 1 Fathom Mage
 1 Fetid Pools
+1 Flooded Grove
 1 Flotsam // Jetsam
 1 Flux Channeler
 1 Glen Elendra Guardian
@@ -24,7 +25,6 @@
 1 Psychic Corrosion
 1 Ray Fillet, Wave Warrior
 1 Reanimate
-1 Rejuvenating Springs
 1 Repulsive Mutation
 1 Revitalizing Repast // Old-Growth Grove
 1 Ripples of Potential

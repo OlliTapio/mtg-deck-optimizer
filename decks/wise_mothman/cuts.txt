@@ -61,6 +61,9 @@
 1x Simic Ascendancy (rna) 207 [Counters,Buy] -> Rampaging Yao Guai (sync w/ Archidekt; Mutant body + X counters + artifact/enchant removal, alt-wincon enchantment cut)
 1x Putrefy (pip) 219 [Removal] -> Beast Within (instant, destroys ANY permanent incl. lands/PWs/enchantments; exile-quality flexibility vs Putrefy's redundant artifact/creature mode)
 
+# Round 9 cuts (budget-driven filter land swap)
+1x Rejuvenating Springs (ltc) 325 [Land,Buy] -> Flooded Grove (GU Shadowmoor filter; ~€7.18 cheaper, same GU pair, always untapped + taps {C} alone or filters GU; loses bond land's unconditional colored mana but deck's green density feeds the filter easily)
+
 # Round 8 cuts (spell//land MDFCs — cut 3 black lands, add 3 flex cards that are lands when needed but nonland cards for Mothman's mill trigger)
 1x Mortuary Mire (pip) 272 [Land] -> Boggart Trawler // Boggart Bog (slow recursion for a flexible GY-exile body; kept Bojuka Bog too for GY control since we feed our own yard; back taps B)
 1x Swamp (pip) 321 [Land] -> Revitalizing Repast // Old-Growth Grove (instant +1/+1 counter + indestructible; back taps B/G; black oversupplied)
