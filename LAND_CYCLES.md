@@ -34,11 +34,11 @@ against Flipside Gaming, Draftsim, and EDHREC land rankings.
 | **S** | Bond lands (Battlebond) | Yes if 2+ opponents | Excellent | *Always* untapped in EDH, no life — Command Zone/MTGGoldfish favorite |
 | **A** | Triomes | Tapped | Excellent (3 colors, 2 types) | Best 3+ color fixing; fetchable + cycling |
 | **A** | Check lands | Yes if you control the typed land | Excellent | Near-always untapped in 2–3 colors |
-| **A** | Fast lands | Yes (first 3 turns) | Excellent early | Perfect for the turns that matter |
+| **A** | Fast lands | Yes (first 3 turns) | Excellent early | Best in fast/cEDH metas; **any drop from turn 4+ enters tapped** |
+| **A** | Slow lands | Yes once you control 2+ lands (T3+) | Good | **≥ fasts in long (Bracket ≤3) games** — untapped on late drops/topdecks too |
 | **A** | Pain lands | Always | Very good (+ colorless) | 1 life for color; life is cheap in EDH |
 | **A** | Verge lands | Yes if you control a relevant type | Very good | Newer; unlocks easily on a fixed base |
 | **A** | Filter lands (Shadowmoor/Eventide) | Always | Flexible double-output | Need a colored input to make color |
-| **B** | Slow lands | Yes once you control 2+ lands (T3+) | Good | Casual favorite; tapped T1–2 |
 | **B** | Surveil lands | Tapped | Good (2 types) | Card selection + fetchable |
 | **B** | Horizon lands | Always (1 life to tap) | Good | Sac-to-draw flood insurance |
 | **B** | Battle / tango lands | Yes if you control 2+ basics | Good | Slow on a basic-light base |
@@ -101,7 +101,7 @@ Command Zone caveat: only worth it if you actually run fetchable targets (shocks
 | Woodland Cemetery | BG | 0.86 | ✅ |
 
 ### A — Fast lands (Scars / Kaladesh / MOM)
-`Enters tapped unless you control 2 or fewer other lands.` Untapped turns 1–3.
+`Enters tapped unless you control 2 or fewer other lands.` Untapped turns 1–3, but **tapped on any land drop from turn 4 onward**. Best where the early curve decides the game (faster metas / cEDH).
 | Land | Colors | EUR | Budget |
 |------|--------|-----|--------|
 | Darkslick Shores | UB | 2.56 | ✅ |
@@ -132,8 +132,8 @@ Command Zone caveat: only worth it if you actually run fetchable targets (shocks
 | Flooded Grove | GU | 0.34 | ✅ |
 | Twilight Mire | BG | 0.53 | ✅ |
 
-### B — Slow lands (Midnight Hunt / Crimson Vow)
-`Enters tapped unless you control 2+ other lands.` Untapped from T3 on.
+### A — Slow lands (Midnight Hunt / Crimson Vow)
+`Enters tapped unless you control 2+ other lands.` Tapped only as one of your first two lands; **untapped from turn 3 on, including topdecks**. In the long games typical of Bracket 1–3, most land drops happen once you already control 3+ lands — so slows come in untapped *more often* than fast lands (which are tapped from turn 4+). For this repo's brackets they rank **alongside or above fast lands**; fasts only pull ahead in fast/cEDH metas where turns 1–3 decide the game.
 | Land | Colors | EUR | Budget |
 |------|--------|-----|--------|
 | Shipwreck Marsh | UB | 5.03 | ✅ |
