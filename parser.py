@@ -33,14 +33,14 @@ def parse_decklist(filepath):
                 continue
 
             m = re.match(
-                r'^(\d+)x\s+(.+?)\s+\((\w+)\)\s+(\S+)\s*(\*F\*)?\s*\[(.+)\]$',
+                r'^(\d+)x\s+(.+?)\s+\((\w+)\)\s+(\S+)\s*(\*F\*)?\s*\[(.*)\]$',
                 line
             )
             if not m:
                 print(f"WARN: Could not parse: {line}", file=sys.stderr)
                 continue
             count, name, card_set, number, foil, tags_raw = m.groups()
-            tags = [t.strip() for t in tags_raw.split(',')]
+            tags = [t.strip() for t in tags_raw.split(',') if t.strip()]
             cards.append({
                 'name': name,
                 'count': int(count),
