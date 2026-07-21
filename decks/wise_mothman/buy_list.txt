@@ -1,46 +1,7 @@
-1 Animal Attendant
-1 Armored Scrapgorger
-1 Binding the Old Gods
-1 Birds of Paradise
 1 Boggart Trawler // Boggart Bog
 1 Bridgeworks Battle // Tanglespan Bridgeworks
-1 Bugenhagen, Wise Elder
-1 Cankerbloom
 1 Deathcap Glade
-1 Defiler of Vigor
-1 Dreamtide Whale
-1 Duskshell Crawler
-1 Evolution Sage
-1 Evolution Witness
-1 Fathom Mage
-1 Fetid Pools
 1 Flooded Grove
-1 Flotsam // Jetsam
-1 Flux Channeler
-1 Glen Elendra Guardian
-1 Incubation Druid
-1 Kami of Whispered Hopes
-1 Massacre Girl
-1 Master Biomancer
-1 Psychic Corrosion
-1 Ray Fillet, Wave Warrior
-1 Reanimate
-1 Repulsive Mutation
+1 Pensive Professor
 1 Revitalizing Repast // Old-Growth Grove
-1 Ripples of Potential
-1 Sakura-Tribe Elder
-1 Sodden Verdure
-1 Stubborn Denial
-1 Swiftfoot Boots
-1 Tezzeret's Gambit
-1 Triskelion
-1 Tromell, Seymour's Butler
-1 Unnatural Restoration
-1 Vernal Fen
 1 Vicious Rivalry
-1 Vigor
-1 Wave Goodbye
-
-# Maybeboard (optional upgrades)
-1 Bane of Progress
-1 High Score
