@@ -13,14 +13,14 @@
 ### Creatures
 1x Puppeteer Clique → Nest of Scarabs — persist anti-synergy with -1/-1 counters, situational ETB
 1x Archfiend of Ifnir → Unnatural Restoration — no cycling/discard support in the deck
-1x Warren Torchmaster → Banewhip Punisher — Warren only blights your OWN creature for haste (weak engine glue); Banewhip's ETB -1/-1 counter hits an OPPONENT (Auntie drain + Hapatra/Nest tokens) and it sacs to destroy any countered creature
-1x Ammit Eternal → Contagion Clasp — off-plan afflict beater that shrinks itself; Clasp is a cheap ETB -1/-1 counter + repeatable proliferate engine (7th proliferate source)
 
 ### Instants/Sorceries
 1x Cathartic Pyre → Obelisk Spider — weak removal, no counter synergy
 1x Infernal Grasp → Grim Affliction — generic removal
 1x Harmonize → Generous Patron — generic draw, Auntie Ool draws enough
 1x Night's Whisper → Thirsting Roots — generic draw
+1x Putrefy → Incremental Blight — generic "destroy" places no -1/-1 counters; Incremental Blight (OWNED, base precon) hits THREE creatures with counters = multi-hit Auntie drain/draw + Hapatra/Nest tokens (EDHREC +0.59 synergy)
+1x Terminate → Contagion Clasp — generic creature-only "destroy"; Contagion Clasp (OWNED, base precon) is an ETB -1/-1 counter + repeatable proliferate engine (EDHREC +0.70). Artifact/enchantment coverage stays with Assassin's Trophy (destroys any permanent, instant speed), Binding the Old Gods, Wickerbough Elder, Glissa.
 
 ### Enchantments
 1x Lasting Tarfire → Blight Rot — weak enchantment, no counter synergy ✅
@@ -41,6 +41,19 @@
   (destroy a land + ramp a basic + non-fliers can't block); back is a red land. Land count stays 37.
 - Swamp → Demolition Field — colorless land that sacs to destroy a nonbasic + ramps a basic.
 - Two targeted LD pieces only — does NOT tip into mass land denial (Bracket 2 legal).
+
+## Owned precon bench (base Enduring Cursecraft cards NOT currently run — free to re-add)
+Verified against the base precon list (archidekt "auntie ool precon all 100 cards"). These were
+dropped from the precon; we own them, so prefer these over buying equivalents.
+- Fire Covenant — instant, X damage split among creatures; with Everlasting Torment all damage
+  becomes -1/-1 counters = instant-speed multi-hit. Strong future add (EDHREC +0.40).
+- Grave Titan — 6-CMC bomb, off-theme goodstuff (no -1/-1 synergy).
+- Liliana, Death Wielder — 8-CMC planeswalker, too slow/off-theme.
+- Tree of Perdition — sets a creature's toughness to 13, no counter synergy.
+- Commander's Sphere, Cathartic Reunion, Hoarder's Greed, Painful Truths — generic ramp/draw,
+  deck has better on-theme options.
+- Ferrafor, Young Yew — secondary precon legend, off-plan.
+(Archfiend of Ifnir also owned but cut for lack of discard/cycle support — see Creatures above.)
 
 ## Maybeboard
 1x Takenuma, Abandoned Mire — €7.93, good but already have 11 recursion pieces

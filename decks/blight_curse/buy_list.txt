@@ -1,8 +1,6 @@
-1 Banewhip Punisher
 1 Blight Rot
 1 Blood Crypt
 1 Boggart Trawler
-1 Contagion Clasp
 1 Contagion Engine
 1 Demolition Field
 1 Fire-Lit Thicket
