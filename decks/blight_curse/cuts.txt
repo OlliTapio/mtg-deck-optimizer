@@ -13,6 +13,8 @@
 ### Creatures
 1x Puppeteer Clique → Nest of Scarabs — persist anti-synergy with -1/-1 counters, situational ETB
 1x Archfiend of Ifnir → Unnatural Restoration — no cycling/discard support in the deck
+1x Warren Torchmaster → Banewhip Punisher — Warren only blights your OWN creature for haste (weak engine glue); Banewhip's ETB -1/-1 counter hits an OPPONENT (Auntie drain + Hapatra/Nest tokens) and it sacs to destroy any countered creature
+1x Ammit Eternal → Contagion Clasp — off-plan afflict beater that shrinks itself; Clasp is a cheap ETB -1/-1 counter + repeatable proliferate engine (7th proliferate source)
 
 ### Instants/Sorceries
 1x Cathartic Pyre → Obelisk Spider — weak removal, no counter synergy
@@ -29,9 +31,16 @@
 
 ## Basic land adjustments
 - Forest 6 → 5 (-1)
-- Mountain 4 → 2 (-2, red well-served by duals)
-- Swamp 8 → 7 (-1, Boggart Trawler is a Swamp MDFC)
-- Freed 4 basic slots for: Scuzzback Scrounger, Ammit Eternal, Boggart Trawler, Stalwart Successor
+- Mountain 4 → 2 → 1 (-3, red well-served by duals; last cut for Sundering Eruption MDFC red land)
+- Swamp 8 → 7 → freed 1 more for Demolition Field
+- Freed basic slots for: Scuzzback Scrounger, Boggart Trawler, Stalwart Successor,
+  Sundering Eruption // Volcanic Fissure (red MDFC land + LD spell), Demolition Field (colorless LD land)
+
+## Land-destruction interaction added (GitHub issue #2)
+- Mountain → Sundering Eruption // Volcanic Fissure — flex land that doubles as {2}{R} LD spell
+  (destroy a land + ramp a basic + non-fliers can't block); back is a red land. Land count stays 37.
+- Swamp → Demolition Field — colorless land that sacs to destroy a nonbasic + ramps a basic.
+- Two targeted LD pieces only — does NOT tip into mass land denial (Bracket 2 legal).
 
 ## Maybeboard
 1x Takenuma, Abandoned Mire — €7.93, good but already have 11 recursion pieces

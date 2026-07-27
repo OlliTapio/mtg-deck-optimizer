@@ -29,6 +29,9 @@ Precon: Enduring Cursecraft (ECC), upgraded
 ## Bracket 2 Restrictions
 - No Quillspike (goes infinite with Devoted Druid)
 - Blowfly + Nest of Scarabs + Grave Venerations is a 3-card combo (allowed at Bracket 2)
+- Land destruction is capped at TWO targeted pieces (Sundering Eruption MDFC, Demolition Field),
+  both riding land slots. This is deliberate flex interaction — do NOT add more LD or it tips
+  into mass land denial (Bracket 2 violation).
 
 ## Maybeboard
 - Takenuma, Abandoned Mire (~€7.93) — B land with recursion channel
