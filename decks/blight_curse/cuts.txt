@@ -19,8 +19,8 @@
 1x Infernal Grasp → Grim Affliction — generic removal
 1x Harmonize → Generous Patron — generic draw, Auntie Ool draws enough
 1x Night's Whisper → Thirsting Roots — generic draw
-1x Putrefy → Incremental Blight — generic "destroy" places no -1/-1 counters; Incremental Blight (OWNED, base precon) hits THREE creatures with counters = multi-hit Auntie drain/draw + Hapatra/Nest tokens (EDHREC +0.59 synergy)
-1x Terminate → Contagion Clasp — generic creature-only "destroy"; Contagion Clasp (OWNED, base precon) is an ETB -1/-1 counter + repeatable proliferate engine (EDHREC +0.70). Artifact/enchantment coverage stays with Assassin's Trophy (destroys any permanent, instant speed), Binding the Old Gods, Wickerbough Elder, Glissa.
+1x Terminate → Druid of Purification — generic creature-only "destroy" with no counter synergy; Druid (buy, €1.47) is multi-hit artifact/enchantment removal (each player destroys an artifact/enchant they don't control = can blow up several opponents' permanents at once) plus a body. Directly fills the artifact/enchantment gap.
+   NOTE: Putrefy KEPT — it is instant-speed flexible removal (creature/artifact) and keeps the instant count at 4 (Assassin's Trophy, Putrefy, Grim Affliction, Blight Rot).
 
 ### Enchantments
 1x Lasting Tarfire → Blight Rot — weak enchantment, no counter synergy ✅
@@ -42,11 +42,14 @@
 - Swamp → Demolition Field — colorless land that sacs to destroy a nonbasic + ramps a basic.
 - Two targeted LD pieces only — does NOT tip into mass land denial (Bracket 2 legal).
 
-## Owned precon bench (base Enduring Cursecraft cards NOT currently run — free to re-add)
+## Owned precon bench (base Enduring Cursecraft cards NOT currently run)
 Verified against the base precon list (archidekt "auntie ool precon all 100 cards"). These were
-dropped from the precon; we own them, so prefer these over buying equivalents.
+deliberately dropped from the precon. RULE: do NOT re-add removed cards unless explicitly asked —
+they were cut for a reason. Listed here for reference only.
+- Incremental Blight — multi-target -1/-1 sorcery (EDHREC +0.59). Removed; leave benched.
+- Contagion Clasp — ETB -1/-1 + proliferate (EDHREC +0.70). Removed; leave benched.
 - Fire Covenant — instant, X damage split among creatures; with Everlasting Torment all damage
-  becomes -1/-1 counters = instant-speed multi-hit. Strong future add (EDHREC +0.40).
+  becomes -1/-1 counters = instant-speed multi-hit (EDHREC +0.40). Removed; leave benched.
 - Grave Titan — 6-CMC bomb, off-theme goodstuff (no -1/-1 synergy).
 - Liliana, Death Wielder — 8-CMC planeswalker, too slow/off-theme.
 - Tree of Perdition — sets a creature's toughness to 13, no counter synergy.

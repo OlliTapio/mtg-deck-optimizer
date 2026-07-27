@@ -3,6 +3,7 @@
 1 Boggart Trawler
 1 Contagion Engine
 1 Demolition Field
+1 Druid of Purification
 1 Fire-Lit Thicket
 1 Generous Patron
 1 Graven Cairns
