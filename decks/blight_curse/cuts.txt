@@ -40,7 +40,7 @@
 - Mountain → Sundering Eruption // Volcanic Fissure — flex land that doubles as {2}{R} LD spell
   (destroy a land + ramp a basic + non-fliers can't block); back is a red land. Land count stays 37.
 - Swamp → Demolition Field — colorless land that sacs to destroy a nonbasic + ramps a basic.
-- Two targeted LD pieces only — does NOT tip into mass land denial (Bracket 2 legal).
+- Two targeted LD pieces only — does NOT tip into mass land denial (Bracket 3 legal).
 
 ## Owned precon bench (base Enduring Cursecraft cards NOT currently run)
 Verified against the base precon list (archidekt "auntie ool precon all 100 cards"). These were
