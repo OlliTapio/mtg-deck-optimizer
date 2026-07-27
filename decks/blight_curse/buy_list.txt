@@ -2,6 +2,8 @@
 1 Blood Crypt
 1 Boggart Trawler
 1 Contagion Engine
+1 Demolition Field
+1 Druid of Purification
 1 Fire-Lit Thicket
 1 Generous Patron
 1 Graven Cairns
@@ -10,6 +12,8 @@
 1 Nest of Scarabs
 1 Obelisk Spider
 1 Reliquary Tower
+1 Sundering Eruption // Volcanic Fissure
 1 Thirsting Roots
 1 Twilight Mire
 1 Unnatural Restoration
+1 Vandalblast
