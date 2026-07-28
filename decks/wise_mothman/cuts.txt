@@ -69,3 +69,4 @@
 1x Swamp (pip) 321 [Land] -> Revitalizing Repast // Old-Growth Grove (instant +1/+1 counter + indestructible; back taps B/G; black oversupplied)
 1x Swamp (pip) 321 [Land] -> Bridgeworks Battle // Tanglespan Bridgeworks (sorcery +2/+2 + fight removal; back taps G; black oversupplied)
 1x Beast Within (msc) 169 [Removal] -> Into the Flood Maw ({U} instant bounce; answers indestructible threats deck cannot destroy, Gift mode hits any nonland permanent, lowers curve 3->1)
+1x Watchful Radstag (pip) 87 [Counters,Creature] -> Shadowspear (owned; strips opponents hexproof/indestructible so the all-destroy removal suite works vs indestructible, lifelink offsets rad/self-damage; Radstag was off-engine evolve filler)
