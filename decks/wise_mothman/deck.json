@@ -2244,26 +2244,26 @@
       "buy": false
     },
     {
-      "name": "Watchful Radstag",
+      "name": "Shadowspear",
       "count": 1,
-      "mana_cost": "{2}{G}",
-      "cmc": 3.0,
-      "type_line": "Creature \u2014 Elk Mutant",
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Legendary Artifact \u2014 Equipment",
       "types": [
-        "Creature"
+        "Artifact"
       ],
-      "oracle_text": "Evolve (Whenever a creature you control enters, if that creature has greater power or toughness than this creature, put a +1/+1 counter on this creature.)\nWhenever this creature evolves, create a token that's a copy of it.",
-      "color_identity": [
-        "G"
-      ],
+      "oracle_text": "Equipped creature gets +1/+1 and has trample and lifelink.\n{1}: Permanents your opponents control lose hexproof and indestructible until end of turn.\nEquip {2}",
+      "color_identity": [],
       "keywords": [
-        "Evolve"
+        "Equip"
       ],
       "produced_mana": [],
-      "otags": [],
-      "price_eur": "0.81",
-      "set": "pip",
-      "number": "87",
+      "otags": [
+        "lifegain"
+      ],
+      "price_eur": "23.25",
+      "set": "thb",
+      "number": "236",
       "foil": false,
       "buy": false
     },

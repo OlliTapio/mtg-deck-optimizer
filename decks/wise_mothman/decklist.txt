@@ -83,7 +83,7 @@
 1x Vexing Radgull (pip) 41 [Proliferate,Creature]
 1x Vigor (tmc) 53 []
 1x Viridescent Bog (pip) 154 [Land]
-1x Watchful Radstag (pip) 87 [Counters,Creature]
+1x Shadowspear (thb) 236 [Equipment]
 1x Winding Constrictor (pip) 223 [Counters,Creature]
 1x Woodland Cemetery (pip) 316 [Land]
 1x High Score (tmc) 70 [Counters,Draw,Maybeboard]
