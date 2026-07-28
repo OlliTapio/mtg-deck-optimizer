@@ -60,7 +60,7 @@
 1x Wave Goodbye (otc) 24 [Removal]
 1x Sodden Verdure (tmc) 74 [Land]
 1x Armored Scrapgorger (one) 158 [Ramp,Creature]
-1x Beast Within (msc) 169 [Removal]
+1x Into the Flood Maw (blb) 52 [Removal]
 1x Sunken Hollow (pip) 296 [Land]
 2x Swamp (pip) 321 [Land]
 1x Swiftfoot Boots (fdn) 258 [Protection]
