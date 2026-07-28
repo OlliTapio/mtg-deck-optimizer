@@ -1,0 +1,174 @@
+# Cards considered and cut (with reasons)
+
+## Cut: ramp that does not ramp 2 (nets only 1 land/mana into play)
+Arcane Signet        - only +1 mana; doesn't advance land count for landfall
+Gruul Signet         - only +1 mana (filter)
+Sakura-Tribe Elder   - fetches 1 basic; fragile
+Cultivate            - 1 land to play + 1 to hand = ramps 1 now
+Kodama's Reach       - same as Cultivate; ramps 1 now
+Roiling Regrowth     - sac a land, fetch 2 = net +1 land
+
+## Cut: low-CMC aggro creatures (wrong plan — this is battlecruiser, not stompy aggro)
+Gruul Spellbreaker, Scavenging Ooze, Wildborn Preserver, Bonecrusher Giant,
+Managorger Hydra, Rhonas the Indomitable, Charging Monstrosaur, Territorial Allosaurus,
+Beanstalk Giant, Spellbreaker Behemoth, Thunderfoot Baloth, Nessian Wilds Ravager,
+Migloz Maze Crusher, Ancient Imperiosaur (kept as flex beater)
+
+## Cut: over the €10/card budget cap
+Pathbreaker Ibex     - €12.43
+Guardian Project     - €13.78
+Green Sun's Zenith   - €17.31
+Dust Bowl            - €28.12 (and repeatable LD = mass land denial risk at Bracket 3)
+Akroma's Memorial    - €19.66 BUT OWNED, so included off-budget
+
+## Cut: pricey non-essential staples (budget)
+Birds of Paradise (€7.84), Xenagos God of Revels (€6.38), Scute Swarm (€6.46),
+Vigor (€7.66), Cultivator Colossus (€4.96), Beast Whisperer (€5.68),
+Elemental Bond (€3.85), Rhythm of the Wild (€3.68 -> replaced by Fires of Yavimaya),
+Fyndhorn Elves (€3.26, redundant dork)
+
+## Swapped OUT during tuning (cards owned / available for re-inclusion)
+Apex Devastator      -> Raph & Mikey, Troublemakers (on-curve 7-drop vs uncastable CMC 10)
+Kodama of the East Tree -> Skyline Despot (monarch dragon; both cheat-into-play, Skyline on-curve)
+Nesting Dragon       -> Undermountain Adventurer (initiative + taps {G}{G} ramp-2)
+Hydra Broodmaster    -> Caves of Chaos Adventurer (initiative + impulse draw)
+Comet Storm          -> Court of Ire (monarch; redundant X-burn with Crackle + Banefire)
+Genesis Wave         -> Tempt with Discovery (multiplayer ramp)
+Ezuri's Predation    -> Court of Bounty (monarch ramp/cheat; deck leans attack, fewer wipes OK)
+Zhur-Taa Ancient     -> Michelangelo, Improviser (symmetric mana doubler helps opponents = breaks
+                        the one-sided rule; Michelangelo sneaks in + cheats a land+creature into play)
+
+## ~€50 trim (if strict budget needed)
+Cut Apex Devastator (€4.24) + Kodama of the East Tree (€3.16) + Ezuri's Predation (€2.36),
+add 3x ~€0.40 beasts (e.g. Charging Monstrosaur, Territorial Allosaurus, Spellbreaker Behemoth).
+
+## Cut: violated deck's own design rules (replaced 2026-07-27)
+Bane of Progress     -> Chandra's Ignition (Rule 4: Bane is a SYMMETRIC wipe that nukes our own
+                        enchantment/artifact payloads; Ignition hits only OTHER creatures + burns
+                        each opponent = one-sided)
+Grow from the Ashes  -> Vastwood Surge (Rule 5: base mode ramps only 1, same sin as cut Cultivate;
+                        Vastwood ramps 2 and kicks into team-wide +2/+2 finisher)
+Zendikar Resurgent   -> Tyrranax Rex (Rule 3: 7-mana pure value engine, no board impact; Rex is a
+                        7/7 haste / ward 4 / uncounterable closer that attacks off ramp)
+
+## Batch add: 7-drop bombs + one-sided sweeper (2026-07-27) — 6 in / 6 out
+Boundless Realms     -> Jumbo Cactuar (7-mana do-nothing ramp -> +9999/+0 attacker; Rule 3)
+Circuitous Route     -> The Endstone (redundant ramp -> draw engine; Rule 3 exception, owner's call)
+Ranger's Path        -> Leatherhead, Iron Gator (redundant ramp -> haste/trample team +2/+2 anthem)
+Cavalier of Thorns   -> Moldgraf Monstrosity (defensive wall -> 8/8 trample + reanimate-2 on death)
+Ancient Imperiosaur  -> Silverclad Ferocidons (weakest vanilla 7 -> Enrage sac synergy w/ our pings)
+Explosive Vegetation -> Avengers Disassembled (vanilla tapped-basics ramp -> 3-to-each-creature
+                        sweeper; one-sided in practice, our fatties survive + flexible land hate)
+# Ugin, Eye of the Storms: OWNED but left out — €41.61 and rewards colorless spells (deck runs ~3).
+#   Available off-budget if the colorless count ever grows.
+# Net effect: ramp 19->14 (toward template), Mass Disruption 3->4/6, but CMC7 slot 12->15 (top-heavy
+#   by design — battlecruiser). Avg CMC 4.89 -> 5.00.
+
+## Ramp consistency tune (2026-07-27) — restore ~85% T3 ramp-2 by 2nd hand, cut NO bombs
+Nissa's Renewal      -> Explosive Vegetation (slow 6-CMC ramp -> on-curve ramp-2)
+Verdant Mastery      -> Circuitous Route     (slow 6-CMC ramp -> on-curve ramp-2)
+Explosive Welcome    -> Ranger's Path        (slow 8-CMC ramp -> on-curve ramp-2)
+Decimate             -> Expand the Sphere     (clunky 4-target removal, removal 27/12 over -> ramp-2)
+# Early ramp-2 enablers 8 -> 12  =>  60.7% first-7, 84.6% by 2nd hand (Radha on top). Kept all
+#   15 seven-drops. Do NOT drop below 12 early ramp-2 pieces (see deck CLAUDE.md).
+
+## Protection + haste upgrade (2026-07-27)
+Fires of Yavimaya    -> Rhythm of the Wild (haste anthem -> haste/riot + creature spells can't be
+                        countered; protects bombs from counterspells)
+Crackle with Power   -> Collective Resistance (redundant €7.05 X-burn -> instant escalate:
+                        destroy artifact / destroy enchantment / hexproof+indestructible a creature.
+                        One-sided interaction + protection in one card; fits "instant or one-sided".)
+# Non-bomb interaction audit: all pieces are instant OR one-sided/targeted. No symmetric wrath.
+# Heroic Intervention IS budget-legal via cheaper prints (~€6.78, TMNT/UB reprints) if we want it.
+
+## Board protection add (2026-07-27)
+Hull Breach          -> Heroic Intervention (sorcery artifact/enchant destruction now redundant with
+                        Collective Resistance -> board-wide hexproof + indestructible, best-in-slot
+                        protection vs wraths/spot removal)
+
+## Cheap printings (buy guide — decklist uses (na) placeholders; buy the cheapest legal print)
+Heroic Intervention  €6.78  Marvel Universe (UB)   <- the print that keeps it under the €10 cap
+Silverclad Ferocidons €0.65 TMNT: Source Material (UB)  <- vs €3.14 default, saves ~€2.50
+Chandra's Ignition   €3.53  Magic Origins          <- AVOID the €11.87 Secret Lair print
+Rhythm of the Wild   €3.27  Ravnica Allegiance (or €3.92 TMNT UB)
+The Endstone         €2.51  Edge of Eternities Promos
+Michelangelo         €2.94  TMNT (only print)
+Akroma's Memorial    €16.52 Future Sight (cheapest) — NO UB reprint exists; stays OWNED/off-budget
+
+## Defensive disruption add (2026-07-27)
+Banefire             -> Jaheira's Respite (redundant X-burn reach; removal 24/12 over -> instant Fog
+                        that ramps X basics = #attackers. Counts as mass DISRUPTION, not ramp,
+                        despite Scryfall's ramp/tutor otag. Scales in multiplayer.)
+# Mass disruption really = 6 (4 board-wipe otag + Jaheira's Respite fog + Terastodon). Tool shows 4/6.
+
+## Multiplayer theme swaps (2026-07-27)
+Lightning Bolt       -> Maximum Carnage (Spider-Man saga: I force-attack away from you, II add RRR,
+                        III 5 to each opponent. Political + pseudo-ramp + reach. Loses cheap spot burn.)
+Abrade               -> Druid of Purification (spot artifact removal -> one-sided mass A/E: everyone
+                        destroys an A/E YOU don't control, sparing your engines. Kept Beast Within +
+                        Chaos Warp as the best flexible instants.)
+Jumbo Cactuar        -> Thorn Mammoth (chumpable no-evasion beater -> repeatable fight engine: every
+                        creature/token that enters fights something; great with Avenger/Omnath/Baloths
+                        token ETBs. On-curve 7-for-7 swap.)
+# "Keeps-fighting" card the user meant = Barroom Brawl (CLB, {1}{G}, €0.23): creature fights the
+#   left player's creature, then that player may COPY it around the table. Cheap political chain-fight,
+#   available if wanted. Apex Altisaur (€6.08 CMC9 enrage chain-fight) also on the bench.
+
+## User cuts on Archidekt (2026-07-27) — deck now at 93, needs 7 to reach 100
+Removed off-plan goodstuff / soft top-end ("stinkers"):
+  Thragtusk (5), Verdurous Gearhulk (5), Regisaur Alpha (5)  -- value 5-drops, not 2-4-7 bombs
+  Steel Hellkite (6)   -- one-sided wipe; its cut dropped Mass Disruption otag 4->3
+  Mascot Exhibition (7), Pelakka Wurm (7), Tyrranax Rex (7)  -- softer 7-drops
+Archidekt: https://archidekt.com/decks/24739537/oops_only_battlecruisers
+# Open gaps to address when refilling the 7 slots:
+#  1) NO cheap instant removal (<3 CMC) — cheapest creature answer is Beast Within/Chaos Warp at 3.
+#  2) Mass disruption thin (otag 3, functional ~5). Steel Hellkite / Ezuri's Predation would restore.
+# Bench candidates: Lightning Bolt, Abrade, Fire Prophecy (cheap instant removal); Barroom Brawl,
+#  Ezuri's Predation, Apex Altisaur (multiplayer fight/wipe).
+
+## Refill from owned collection (2026-07-27) — building 93 -> 100
++ Eladamri's Vineyard ({G}, owned) — DELIBERATE exception to the "one-sided only" rule. Symmetric
+  on paper (each player adds {G}{G} at first main) but we're the green deck so we get full value;
+  non-green opponents get generic only. Repeatable Sol-Ring-style ramp = ~1 turn faster (1-4-6).
+  Do NOT cut as a "symmetric" violation — this is intentional.
+
+## Owned-collection refill to 100 (2026-07-27)
+Ramp swaps (owned in, generic 4-CMC ramp out):
+  Explosive Vegetation -> New Generation's Technique (search-2-basics + Sneak line)
+  Circuitous Route     -> Zimone's Experiment (dig-5: lands to battlefield + creatures to hand)
+Adds (all owned):
+  + Snake Umbra (draw on combat dmg + totem armor protection)
+  + Bear Umbra (untap all lands on attack = ramp + totem armor)
+  + Sapling Nursery (affinity-for-Forests landfall 3/4 reach maker)
+  + Whispersilk Cloak (unblockable + shroud evasion/protection)
+  + Shadowspear (OWNED, €23.25 off-budget like Akroma's; {1} strips opp hexproof/indestructible)
+  + Raphael, the Nightwatcher (double-strike anthem for attackers; Sneak) -- final slot, swap if wanted
+# 2nd off-budget OWNED card is now Shadowspear (€23) alongside Akroma's (€19).
+# Curve very 4-heavy (17 at CMC4) and Mass Disruption still 3 otag (~5 functional) - no removal added.
+
+## Manabase tune (2026-07-27)
++ Command Tower (owned) over 1 Mountain — perfect RG fixing
++ Cinder Glade + Sheltered Thicket over 2 Mountains — Forest-typed duals FETCHABLE by Skyshroud
+  Claim / Ranger's Path / Hunting Wilds; add red fixing + flood insurance (Thicket cycles)
++ Gruul Turf over 1 Mountain — RG bounce land = repeatable landfall (Avenger/Omnath/Baloths/Moraug)
++ Scavenger Grounds over 1 Forest — graveyard-hate desert (sacs itself); colorless
+# Passed on Arid Archway (colorless {C}{C} bounce taxes GGG). Gates skipped — no Gate-fetcher left
+#   after Circuitous Route was cut. Final lands: 19 Forest / 7 Mountain / 10 nonbasic = 36.
+
+## Synced to Archidekt as source of truth (2026-07-27) — user edits on deck 24739537
+- Colossal Majesty  -> Bridgeworks Battle // Tanglespan Bridgeworks (fight spell OR land, flex)
+- Field of Ruin     -> Sundering Eruption // Volcanic Fissure (land destruction + "can't block", OR land)
+- Forest 19->18, Mountain 7->8
+# Hand sim (300k): Radha castable T2 = 51.7% on the play (~77% by 2nd hand); limiter is drawing a
+#   RED source. Fast-mana opener (Sol Ring or Eladamri's) = 13.7%; both = 0.4%.
+
+## Manabase consistency + Inferno cut (2026-07-28)
+- Basics 18F/8M -> 14F/12M. Green is self-fixing (Forest-fetchers refill it), so basics lean red to
+  make turn-2 Radha's {R} more reliable. Red sources 14 -> 20. Radha-on-2 ~52% -> ~56%.
+- Inferno Titan -> Slash, Reptile Rampager (owned). Inferno was a weak {R}{R} 6/6 (value, not a
+  finisher); Slash is 5-CMC multiplayer reach (2 to each opponent per creature ETB).
+# We mulligan for Radha, so per-hand castability matters — hence the red-leaning basics.
+
+## Upgrades (if budget flexes up)
+Rhythm of the Wild, Xenagos God of Revels, Traverse the Outlands (€5.52),
+The Great Henge, Craterhoof Behemoth.
