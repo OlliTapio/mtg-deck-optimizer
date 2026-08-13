@@ -8,8 +8,8 @@ compatibility_date = "2026-06-22"
 directory = "./web/public"
 not_found_handling = "single-page-application"
 
-# Custom domain (optional). Uncomment once you want it on the otl.fi zone —
-# wrangler creates the DNS record + cert on deploy.
-# [[routes]]
-# pattern = "decks.otl.fi"
-# custom_domain = true
+# Custom domain. Wrangler creates the DNS record + cert on deploy; the otl.fi
+# zone must live in the same Cloudflare account as this Worker.
+[[routes]]
+pattern = "decks.otl.fi"
+custom_domain = true
