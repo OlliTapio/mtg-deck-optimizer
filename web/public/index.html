@@ -61,6 +61,10 @@
   .stack.stacked .card { margin-bottom: -112%; }
   .stack.stacked .card:last-child { margin-bottom: 0; }
   .card:hover { z-index: 3; }
+  /* Touch screens have no hover, so tapping a stacked card opens it: it lifts
+     above its neighbours and pushes the rest of the stack down. */
+  .card.open { z-index: 4; }
+  .stack.stacked .card.open { margin-bottom: 0; }
   .card .qty {
     position: absolute; top: 4%; right: 5%;
     background: rgba(0,0,0,.82); color: #fff;
@@ -166,6 +170,11 @@ function sortedGroups(cards, mode) {
 function cardEl(card) {
   const a = document.createElement('div');
   a.className = 'card';
+  a.onclick = () => {
+    const wasOpen = a.classList.contains('open');
+    board.querySelectorAll('.card.open').forEach(el => el.classList.remove('open'));
+    if (!wasOpen) a.classList.add('open');
+  };
   a.title = [card.name, card.mana_cost, card.type_line, card.oracle_text]
     .filter(Boolean).join('\n');
   const placeholder = () => {
@@ -276,6 +285,7 @@ async function load(slug) {
   } catch {
     // A missing/unparseable bundle must not leave the previous deck on screen.
     if (seq !== loadSeq) return;
+    current = null;  // don't let a layout toggle re-render the previous deck
     document.getElementById('empty').textContent =
       `No data for ${slug} — run build_site.py.`;
     board.innerHTML = '';
@@ -301,7 +311,15 @@ function fillDecks() {
 }
 
 (async function init() {
-  const meta = await (await fetch('data/index.json')).json();
+  let meta;
+  try {
+    const res = await fetch('data/index.json');
+    if (!res.ok) throw new Error(res.status);
+    meta = await res.json();
+  } catch {
+    document.getElementById('empty').textContent = 'No deck index — run build_site.py.';
+    return;
+  }
   index = meta.decks;
   if (meta.type_order) TYPE_ORDER = meta.type_order;  // single source: build_site.py
   const wanted = decodeURIComponent(location.hash.slice(1));

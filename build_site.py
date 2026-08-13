@@ -19,8 +19,9 @@ from collections import Counter
 
 from card_cache import get_card
 from deck_analyzer import (
-    MAIN_TYPES, count_pips, get_color_identity, get_cmc, get_mana_cost,
-    get_oracle_text, get_price_eur, get_produced_mana, get_type_line,
+    MAIN_TYPES, count_pips, front_face_cost, get_color_identity, get_cmc,
+    get_mana_cost, get_oracle_text, get_price_eur, get_produced_mana,
+    get_type_line,
 )
 from parser import parse_decklist
 
@@ -50,8 +51,8 @@ def image_url(sf, size="normal"):
 def primary_type(sf):
     """The card's main type, used for the site's type grouping.
 
-    Land wins over other types so that a land creature files under Land; the
-    front face decides for split/modal cards, matching the cmc we report.
+    Land wins over other types so that a land creature files under Land, and
+    the front face decides for split/modal cards.
     """
     line = get_type_line(sf).split("//")[0]
     if "Land" in line:
@@ -73,11 +74,6 @@ def category_of(card, sf):
         if tag not in TYPE_TAGS:
             return tag
     return primary_type(sf)
-
-
-def front_face_cost(mana_cost):
-    """Only the front face's cost counts toward pips, like the reported cmc."""
-    return (mana_cost or "").split(" // ")[0]
 
 
 def is_draft(slug):
@@ -138,10 +134,13 @@ def build_deck(slug):
     parsed = parse_decklist(path)
     missing = []
 
+    deck_identity = set()
+
     def card_data(card):
         sf = get_card(card["name"])
         if sf is None:
             missing.append(card["name"])
+        deck_identity.update(get_color_identity(sf))
         return sf
 
     commander = None
@@ -162,13 +161,19 @@ def build_deck(slug):
         built = build_card(card, card_data(card))
         key = (built["name"], built["category"])
         if key in by_key:
-            by_key[key]["count"] += built["count"]
+            stack = by_key[key]
+            stack["count"] += built["count"]
+            # A stack is "buy"/foil if any of its copies is.
+            stack["buy"] = stack["buy"] or built["buy"]
+            stack["foil"] = stack["foil"] or built["foil"]
             continue
         by_key[key] = built
         cards.append(built)
 
     total = sum(c["count"] for c in cards) + (1 if commander else 0)
     name = commander["name"] if commander else slug.replace("_", " ").title()
+    if not identity:  # no commander row: fall back to the cards' own identity
+        identity = sorted(deck_identity)
     symbols, production = mana_stats(
         ([commander] if commander else []) + cards, identity
     )

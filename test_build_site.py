@@ -4,7 +4,7 @@ import json
 import pytest
 
 import build_site
-from deck_analyzer import count_pips
+from deck_analyzer import count_pips, front_face_cost
 
 
 def sf(type_line="Creature — Human", cmc=2.0, mana_cost="{1}{G}", **extra):
@@ -87,8 +87,8 @@ def test_count_pips(cost, expected):
 
 def test_front_face_cost_only():
     # Murderous Rider is one card, so its {1}{B}{B} counts once, not twice.
-    assert build_site.front_face_cost("{1}{B}{B} // {1}{B}{B}") == "{1}{B}{B}"
-    assert build_site.front_face_cost("") == ""
+    assert front_face_cost("{1}{B}{B} // {1}{B}{B}") == "{1}{B}{B}"
+    assert front_face_cost("") == ""
 
 
 def test_mana_stats_counts_pips_per_copy_and_filters_production():
@@ -209,3 +209,32 @@ def test_committed_bundle_is_self_consistent():
             assert card["type"] in build_site.TYPE_ORDER, card
             # A mangled decklist line would surface as a junk column heading.
             assert "[" not in card["category"] and "]" not in card["category"], card
+
+
+def test_malformed_decklist_line_is_skipped_with_a_warning(tmp_path, capsys):
+    """Two printings merged onto one line must not become a card or a category."""
+    from parser import parse_decklist
+
+    path = tmp_path / "decklist.txt"
+    path.write_text("1x Gruul Turf (cmd) 280 [Land] (otj) 286 [Land]\n")
+    parsed = parse_decklist(str(path))
+
+    assert parsed["deck"] == []
+    assert "Malformed line" in capsys.readouterr().err
+
+
+def test_merged_stack_keeps_buy_and_foil_flags(monkeypatch, tmp_path):
+    deck_dir = tmp_path / "decks" / "testdeck"
+    deck_dir.mkdir(parents=True)
+    (deck_dir / "decklist.txt").write_text(
+        "1x Forest (pip) 1 [Land]\n"
+        "1x Forest (pip) 2 *F* [Land,Buy]\n"
+    )
+    monkeypatch.setattr(build_site, "DECKS_DIR", str(tmp_path / "decks"))
+    monkeypatch.setattr(build_site, "get_card",
+                        lambda name: sf(type_line="Basic Land — Forest", mana_cost=""))
+
+    deck, _ = build_site.build_deck("testdeck")
+
+    stack = deck["cards"][0]
+    assert stack["count"] == 2 and stack["buy"] is True and stack["foil"] is True

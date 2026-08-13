@@ -94,6 +94,12 @@ SYMBOL_PATTERN = re.compile(r'\{([^}]+)\}')
 PIP_COLORS = ('W', 'U', 'B', 'R', 'G', 'C')
 
 
+def front_face_cost(mana_cost_str):
+    """Only the front face of a split/modal card is ever paid, so only its
+    pips count — get_mana_cost joins the faces with ' // '."""
+    return (mana_cost_str or '').split(' // ')[0]
+
+
 def count_pips(mana_cost_str):
     """Count coloured pips, counting every colour half of a compound symbol.
 
@@ -193,7 +199,7 @@ def mode_full(all_cards, cmdr_name):
     for c in all_cards:
         if 'Land' in classify_type(get_type_line(c['scryfall'])):
             continue
-        pips = count_pips(get_mana_cost(c['scryfall']))
+        pips = count_pips(front_face_cost(get_mana_cost(c['scryfall'])))
         for color, cnt in pips.items():
             total_pips[color] += cnt * c['count']
     for color in COLOR_ORDER:

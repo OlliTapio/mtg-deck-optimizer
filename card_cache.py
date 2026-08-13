@@ -32,12 +32,25 @@ def _load_cache():
 
 
 def _save_cache(cache):
-    """Write the JSON cache to disk."""
+    """Write the JSON cache to disk, keeping entries other processes added.
+
+    Long-lived processes (game servers) hold their in-memory snapshot for their
+    whole lifetime, so re-read before writing instead of overwriting the file
+    with a stale full dict.
+    """
     global _cache
-    _cache = cache
     os.makedirs(CACHE_DIR, exist_ok=True)
+    merged = {}
+    if os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE, "r") as f:
+                merged = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            merged = {}
+    merged.update(cache)
+    _cache = merged
     with open(CACHE_FILE, "w") as f:
-        json.dump(cache, f, indent=2, ensure_ascii=False)
+        json.dump(merged, f, indent=2, ensure_ascii=False)
 
 
 def _rate_limit():
