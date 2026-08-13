@@ -4,7 +4,13 @@
 //   npm test            # starts the preview server itself, see playwright.config.mjs
 import { test, expect, devices } from '@playwright/test';
 
-const cards = page => page.locator('.stack.stacked .card');
+// Scope to one stack: card indices across the whole board would silently span
+// two columns if a deck's first group were short, making position tests vacuous.
+const cards = page => page.locator('.stack.stacked').nth(1).locator('.card');
+const deckData = async (page) => {
+  const slug = await page.evaluate(() => location.hash.slice(1));
+  return (await page.request.get(`/data/${slug}.json`)).json();
+};
 // Position within the document, not the viewport: clicking may scroll the
 // element into view, and what matters is that the layout doesn't shift.
 const topOf = loc => loc.evaluate(el => el.getBoundingClientRect().top + window.scrollY);
@@ -17,9 +23,18 @@ const visibleHeight = loc => loc.evaluate(el => {
 });
 const fullHeight = loc => loc.evaluate(el => Math.round(el.getBoundingClientRect().height));
 
+// Collected from before navigation, so load-time failures are caught too.
+let pageErrors;
+
 test.beforeEach(async ({ page }) => {
+  pageErrors = [];
+  page.on('pageerror', e => pageErrors.push(String(e)));
   await page.goto('/');
   await expect(page.locator('.card').first()).toBeVisible();
+});
+
+test.afterEach(() => {
+  expect(pageErrors).toEqual([]);
 });
 
 test.describe('deck view', () => {
@@ -36,28 +51,37 @@ test.describe('deck view', () => {
 
   test('cards in a group are ordered by mana cost', async ({ page }) => {
     const group = page.locator('.cat', { hasText: 'Creature' }).first();
-    const names = await group.locator('.hit').evaluateAll(els => els.map(e => e.title));
-    const deck = await page.evaluate(() => window.location.hash.slice(1));
-    const data = await (await fetch(`http://127.0.0.1:8000/data/${deck}.json`)).json();
+    const names = await group.locator('.hit').evaluateAll(
+      els => els.map(e => e.title.split(' — ')[0]));
+    const data = await deckData(page);
     const cmcOf = name => (data.cards.find(c => c.name === name) || {}).cmc ?? 0;
     const cmcs = names.map(cmcOf);
     expect(cmcs).toEqual([...cmcs].sort((a, b) => a - b));
   });
 
-  test('group-by-category uses the decklist tags', async ({ page }) => {
+  test('group-by-category uses the categories in the deck data', async ({ page }) => {
+    const data = await deckData(page);
+    const expected = new Set(data.cards.map(c => c.category).concat('Commander'));
+
     await page.selectOption('#group', 'category');
-    const headings = await page.locator('.cat h2').allInnerTexts();
-    expect(headings.join(' ')).toMatch(/Ramp|Removal|Draw|Counters/);
+
+    const headings = (await page.locator('.cat h2').allInnerTexts())
+      .map(t => t.replace(/\s*\(\d+\)\s*$/, '').trim());
+    expect(headings.length).toBe(expected.size);
+    for (const h of headings) expect(expected.has(h)).toBe(true);
   });
 
-  test('switching deck loads the other deck', async ({ page }) => {
-    const first = await page.locator('#count').innerText();
-    await page.selectOption('#deck', { index: 1 });
+  test('switching deck loads that deck', async ({ page }) => {
+    const other = await page.locator('#deck option').nth(1).getAttribute('value');
+
+    await page.selectOption('#deck', other);
     await expect(page.locator('.card').first()).toBeVisible();
-    expect(page.url()).toContain('#');
-    expect(await page.locator('.cat').count()).toBeGreaterThan(0);
-    expect(await page.locator('#count').innerText()).toBeTruthy();
-    expect(first).toBeTruthy();
+
+    expect(new URL(page.url()).hash).toBe(`#${other}`);
+    const data = await deckData(page);
+    expect(data.slug).toBe(other);
+    await expect(page.locator('#count')).toHaveText(`${data.total} cards`);
+    await expect(page.locator('.cat').first()).toContainText('Commander');
   });
 
   test('drafts are hidden until asked for', async ({ page }) => {
@@ -132,17 +156,72 @@ test.describe('stacked cards', () => {
     await expect(above).toHaveClass(/open/);      // toggling is per card
   });
 
-  test('a tap hits the card whose strip you touched, not the one on top of it', async ({ page }) => {
+  test('a tap on a covered area belongs to the card drawn on top', async ({ page }) => {
     const card = cards(page).nth(3);
-    const name = await card.locator('.hit').getAttribute('title');
+    const next = cards(page).nth(4);
     await card.locator('.hit').scrollIntoViewIfNeeded();
 
-    // Tap the visible strip; the next card covers this card's centre.
-    await card.locator('.hit').click();
+    // 60% down card 3 is covered by the cards stacked over it.
+    const box = await card.boundingBox();
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height * 0.6);
+
+    await expect(card).not.toHaveClass(/open/);
+    const openCount = await cards(page).locator('.open').count()
+      + await page.locator('.card.open').count();
+    expect(openCount).toBeGreaterThan(0);   // some later card took the tap
+    expect(await next.evaluate(el => el.classList.contains('open'))
+      || await cards(page).nth(5).evaluate(el => el.classList.contains('open'))
+      || await cards(page).nth(6).evaluate(el => el.classList.contains('open'))).toBe(true);
+  });
+
+  test('the tappable strip is exactly the part of the card you can see', async ({ page }) => {
+    const card = cards(page).nth(2);
+    await card.locator('.hit').scrollIntoViewIfNeeded();
+
+    const hitHeight = await card.locator('.hit')
+      .evaluate(el => Math.round(el.getBoundingClientRect().height));
+    expect(Math.abs(hitHeight - await visibleHeight(card))).toBeLessThanOrEqual(2);
+
+    // The last card in a stack is fully visible, so all of it is tappable.
+    const last = cards(page).last();
+    await last.locator('.hit').scrollIntoViewIfNeeded();
+    const lastHit = await last.locator('.hit')
+      .evaluate(el => Math.round(el.getBoundingClientRect().height));
+    expect(lastHit).toBeGreaterThanOrEqual(await fullHeight(last) - 2);
+  });
+
+  test('cards are reachable and openable by keyboard', async ({ page }) => {
+    const card = cards(page).nth(1);
+    await card.locator('.hit').focus();
+    await expect(card.locator('.hit')).toHaveAttribute('aria-expanded', 'false');
+
+    await page.keyboard.press('Enter');
 
     await expect(card).toHaveClass(/open/);
-    await card.locator('.info').click();
-    await expect(page.locator('#preview .text b')).toContainText(name);
+    await expect(card.locator('.hit')).toHaveAttribute('aria-expanded', 'true');
+
+    // Tab moves to the details button of the open card, which opens the dialog
+    // and returns focus when closed.
+    await page.keyboard.press('Tab');
+    await expect(card.locator('.info')).toBeFocused();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('#preview')).toHaveClass(/open/);
+    await page.keyboard.press('Escape');
+    await expect(page.locator('#preview')).not.toHaveClass(/open/);
+    await expect(card.locator('.info')).toBeFocused();
+  });
+
+  test('switching tabs keeps the open cards and the board as it was', async ({ page }) => {
+    const card = cards(page).nth(3);
+    await card.locator('.hit').scrollIntoViewIfNeeded();
+    await card.locator('.hit').click();
+    const cardTop = await topOf(card);
+
+    await page.locator('#tab-stats').click();
+    await page.locator('#tab-cards').click();
+
+    await expect(card).toHaveClass(/open/);
+    expect(await topOf(card)).toBeCloseTo(cardTop, 0);
   });
 
   test('card details open from the info button and close on tap or Escape', async ({ page }) => {
@@ -203,12 +282,36 @@ test.describe('stats tab', () => {
     }
   });
 
-  test('land count in the template check equals the Land column', async ({ page }) => {
-    const landHeading = await page.locator('.cat h2', { hasText: 'Land' }).last().innerText();
-    const lands = Number(landHeading.replace(/\D/g, ''));
+  test('the land row counts modal cards with a land back, unlike the Land column', async ({ page }) => {
+    const data = await deckData(page);
+    const landColumn = data.cards.filter(c => c.type === 'Land')
+      .reduce((n, c) => n + c.count, 0);
+    const landDrops = data.cards.filter(c => c.is_land)
+      .reduce((n, c) => n + c.count, 0);
+    expect(landDrops).toBeGreaterThanOrEqual(landColumn);
+
+    const heading = await page.locator('.cat h2', { hasText: 'Land' }).last().innerText();
+    expect(Number(heading.replace(/\D/g, ''))).toBe(landColumn);
+
     await page.locator('#tab-stats').click();
     await expect(page.locator('.stats section', { hasText: 'Template check' }))
-      .toContainText(`${lands}/38`);
+      .toContainText(`${landDrops}/38`);
+  });
+
+  test('otag, type and curve numbers match the deck data', async ({ page }) => {
+    const data = await deckData(page);
+    await page.locator('#tab-stats').click();
+
+    const otags = page.locator('.stats section', { hasText: 'otags' });
+    for (const [tag, n] of Object.entries(data.stats.otags).slice(0, 5)) {
+      await expect(otags.locator('.stat-row', { hasText: tag }).first()).toContainText(String(n));
+    }
+    const types = page.locator('.stats section', { hasText: 'Card types' });
+    for (const [type, n] of Object.entries(data.stats.types)) {
+      await expect(types.locator('.stat-row', { hasText: type }).first()).toContainText(String(n));
+    }
+    await expect(page.locator('.stats section', { hasText: 'Mana curve' }))
+      .toContainText(`avg ${data.stats.avg_cmc}`);
   });
 });
 
@@ -235,11 +338,17 @@ test.describe('layout', () => {
     expect(small).toEqual([]);
   });
 
-  test('every card image loads', async ({ page }) => {
-    const broken = await page.evaluate(() =>
-      [...document.querySelectorAll('.card img')]
-        .filter(i => i.complete && i.naturalWidth === 0).map(i => i.alt));
-    expect(broken).toEqual([]);
+  test('card images actually decode', async ({ page }) => {
+    // Lazy images are never "complete" on first paint, so force a sample and
+    // wait for it — otherwise the assertion is empty by construction.
+    const result = await page.evaluate(async () => {
+      const imgs = [...document.querySelectorAll('.card img')].slice(0, 8);
+      const broken = [];
+      await Promise.all(imgs.map(i => i.decode().catch(() => broken.push(i.alt))));
+      return {tried: imgs.length, broken};
+    });
+    expect(result.tried).toBeGreaterThan(0);
+    expect(result.broken).toEqual([]);
     expect(await page.locator('.missing').count()).toBe(0);
   });
 });

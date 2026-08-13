@@ -99,7 +99,11 @@
      covers the rest, so a tap on a covered area must belong to the card drawn
      on top of it, not the one underneath. An open card is tappable all over. */
   .card { pointer-events: none; }
-  .hit { position: absolute; inset: 0; pointer-events: auto; }
+  .hit {
+    position: absolute; inset: 0; pointer-events: auto;
+    background: transparent; border: 0; padding: 0; cursor: pointer;
+  }
+  .hit:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .stack.stacked .hit { bottom: 80%; }
   .stack.stacked .card:last-child .hit,
   .stack.stacked .card.open .hit { bottom: 0; }
@@ -108,11 +112,13 @@
   /* Details (printing, price, otags) for the card that's open. */
   .info {
     position: absolute; top: 4%; right: 5%; pointer-events: auto;
-    display: none; align-items: center; justify-content: center;
-    width: 30px; height: 30px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; border-radius: 50%; border: 0; cursor: pointer;
     background: rgba(0,0,0,.82); color: #fff; font-size: 15px; font-weight: 700;
+    /* Hidden but focusable order-wise only when its card is open. */
+    visibility: hidden;
   }
-  .card.open .info { display: flex; }
+  .card.open .info { visibility: visible; }
   .card.open .qty { right: calc(5% + 36px); }
   .card .qty {
     position: absolute; top: 4%; right: 5%;
@@ -221,7 +227,9 @@
   <p id="empty"></p>
 </main>
 
-<div id="preview"><div class="sheet"></div></div>
+<div id="preview" role="dialog" aria-modal="true" aria-label="card details">
+  <div class="sheet"></div>
+</div>
 
 <script>
 const board = document.getElementById('board');
@@ -292,10 +300,13 @@ function cardEl(card) {
   const el = document.createElement('div');
   el.className = 'card';
   el.append(imageOrPlaceholder(card, card.image));
-  const hit = document.createElement('div');
+  // A button, so the card is reachable by keyboard as well as by tap.
+  const hit = document.createElement('button');
+  hit.type = 'button';
   hit.className = 'hit';
-  hit.title = card.name;
-  hit.onclick = () => toggleOpen(el);
+  hit.title = card.buy ? `${card.name} — on the buy list` : card.name;
+  hit.setAttribute('aria-expanded', 'false');
+  hit.onclick = () => toggleOpen(el, hit);
   el.append(hit);
   if (card.count > 1) {
     const q = document.createElement('span');
@@ -310,10 +321,12 @@ function cardEl(card) {
     el.append(b);
   }
   const info = document.createElement('button');
+  info.type = 'button';
   info.className = 'info';
   info.textContent = 'i';
-  info.title = 'card details';
-  info.onclick = e => { e.stopPropagation(); openPreview(card); };
+  info.title = `${card.name} details`;
+  info.tabIndex = -1;  // only reachable once its card is open
+  info.onclick = e => { e.stopPropagation(); openPreview(card, info); };
   el.append(info);
   return el;
 }
@@ -321,11 +334,15 @@ function cardEl(card) {
 // Each card toggles on its own: opening one only pushes the cards after it down,
 // so the tapped card — and everything above it — never moves. Auto-closing a
 // card higher up would shift the page under the reader's finger instead.
-function toggleOpen(el) {
-  el.classList.toggle('open');
+function toggleOpen(el, hit) {
+  const open = el.classList.toggle('open');
+  hit.setAttribute('aria-expanded', String(open));
+  el.querySelector('.info').tabIndex = open ? 0 : -1;
 }
 
-function openPreview(card) {
+let previewOpener = null;
+
+function openPreview(card, opener) {
   const sheet = preview.firstElementChild;
   sheet.innerHTML = '';
   sheet.append(imageOrPlaceholder(card, card.image));
@@ -356,9 +373,17 @@ function openPreview(card) {
   }
   sheet.append(text);
   preview.classList.add('open');
+  previewOpener = opener || null;
+  sheet.tabIndex = -1;
+  sheet.focus();
 }
 
-function closePreview() { preview.classList.remove('open'); }
+function closePreview() {
+  if (!preview.classList.contains('open')) return;
+  preview.classList.remove('open');
+  if (previewOpener) previewOpener.focus();  // back to the button that opened it
+  previewOpener = null;
+}
 // Any tap on the overlay closes it, including on the card itself — tapping
 // twice should never leave a card stuck open.
 preview.onclick = closePreview;
@@ -473,6 +498,10 @@ let current = null;
 let loadSeq = 0;
 let tab = 'cards';
 
+// What each pane currently holds, so switching tabs doesn't rebuild the board
+// (which would lose the scroll position and every open card).
+let rendered = {cards: null, stats: null};
+
 function showTab(name) {
   tab = name;
   tabs.cards.setAttribute('aria-selected', String(name === 'cards'));
@@ -482,8 +511,13 @@ function showTab(name) {
   if (current) render(current);
 }
 
-function render(deck) {
+function render(deck, force = false) {
   countEl.textContent = `${deck.total} cards`;
+  const key = tab === 'cards'
+    ? `${deck.slug}|${groupEl.value}|${stackedEl.checked}`
+    : deck.slug;
+  if (!force && rendered[tab] === key) return;
+  rendered[tab] = key;
   if (tab === 'cards') renderCards(deck); else renderStats(deck);
 }
 
@@ -491,6 +525,7 @@ function clearView() {
   board.innerHTML = '';
   statsEl.innerHTML = '';
   countEl.textContent = '';
+  rendered = {cards: null, stats: null};
 }
 
 async function load(slug) {

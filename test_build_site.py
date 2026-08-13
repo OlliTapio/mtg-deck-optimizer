@@ -282,3 +282,63 @@ def test_committed_bundle_has_stats_for_every_deck():
         assert stats["types"] and stats["curve"] and stats["template"]
         # otags come from cache/otags.json; every real deck should have some
         assert stats["otags"], slug
+
+
+# --- split cards and modal lands ---
+
+def test_front_face_cmc_uses_only_the_front_half_of_a_split_card():
+    # Scryfall reports cmc 8 for Find // Finality: both halves added together.
+    split = sf(mana_cost="{B/G}{B/G} // {4}{B}{G}", cmc=8.0)
+    assert build_site.front_face_cmc(split) == 2.0
+
+    # Anything that isn't split keeps Scryfall's value, back face and all.
+    assert build_site.front_face_cmc(sf(mana_cost="{3}{G}{G}", cmc=5.0)) == 5.0
+
+
+@pytest.mark.parametrize("cost,expected", [
+    ("{2}{X} // {2}", 2.0),        # X is 0 when the spell is cast
+    ("{2/B}{G} // {1}", 3.0),      # {2/B} costs 2 or B, so it counts as 2
+    ("{G/W/P} // {1}", 1.0),
+])
+def test_front_face_cmc_symbol_values(cost, expected):
+    assert build_site.front_face_cmc(sf(mana_cost=cost, cmc=99.0)) == expected
+
+
+@pytest.mark.parametrize("type_line,land", [
+    ("Creature — Goblin // Land", True),      # MDFC land back still makes a drop
+    ("Sorcery // Land", True),
+    ("Land // Land", True),
+    ("Basic Land — Forest", True),
+    ("Creature — Human", False),
+    ("Sorcery", False),
+])
+def test_is_land_looks_at_every_face(type_line, land):
+    assert build_site.is_land(sf(type_line=type_line)) is land
+
+
+def test_land_template_row_counts_modal_land_backs():
+    """An MDFC files under its front face in the columns but is still a land."""
+    cards = [
+        build_site.build_card(row("Boggart Trawler"),
+                              sf(type_line="Creature — Goblin // Land", mana_cost="{2}{B}")),
+        build_site.build_card(row("Forest", count=36),
+                              sf(type_line="Basic Land — Forest", mana_cost="")),
+    ]
+    stats = build_site.deck_stats(cards, {})
+    lands = {t["label"]: t["count"] for t in stats["template"]}["Lands"]
+
+    assert stats["types"] == {"Creature": 1, "Land": 36}
+    assert lands == 37
+
+
+def test_committed_bundle_curve_has_no_split_card_inflation():
+    """No deck should show a card at a mana value it can't be cast for."""
+    for slug in build_site.deck_slugs():
+        with open(f"{build_site.OUT_DIR}/{slug}.json") as f:
+            deck = json.load(f)
+        for card in deck["cards"]:
+            if " // " in (card["mana_cost"] or ""):
+                front = build_site.front_face_cost(card["mana_cost"])
+                assert card["cmc"] <= 10, (slug, card["name"])
+                assert card["cmc"] == build_site.front_face_cmc(
+                    {"mana_cost": card["mana_cost"], "cmc": card["cmc"]}), (slug, card["name"], front)

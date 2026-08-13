@@ -33,10 +33,12 @@ the details overlay, the Stats tab, the missing-data path. It serves
 `web/public` itself, and writes screenshots to `.playwright/` (gitignored).
 
 ```bash
-npm install                       # first time
-npx playwright install webkit chromium
-npm test                          # or: npm run test:ui
+npm install     # first time
+npm test        # `pretest` installs the browsers; or: npm run test:ui
 ```
+
+The suite serves the bundle on its own port (8321), so it never picks up a
+`npm run preview` server from another worktree.
 
 ## Update after a decklist change
 

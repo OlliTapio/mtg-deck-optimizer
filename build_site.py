@@ -5,8 +5,11 @@ the browser needs — image URL, type line, mana cost, pip/production counts —
 into JSON. cache/ is gitignored, so this runs locally and the generated JSON is
 committed, the same way property-bot commits public/listings.json.
 
-Scryfall field access and pip counting come from deck_analyzer so the site and
-the CLI analysis can't drift apart.
+Scryfall field access and pip counting come from deck_analyzer, so the site and
+`deck_analyzer.py` report the same pips. The other Stats-tab numbers are the
+site's own reading and deliberately differ from the CLI's: a card counts once,
+under its primary type, and the template rows count copies (not distinct names)
+and include mana-dork/card-advantage otags.
 
 Usage:
     python3 build_site.py                 # all decks
@@ -14,6 +17,7 @@ Usage:
 """
 import json
 import os
+import re
 import sys
 from collections import Counter
 
@@ -74,6 +78,37 @@ def primary_type(sf):
     return "Other"
 
 
+def full_type_line(sf):
+    """Every face's type line — Scryfall's top-level one for a DFC is "A // B"."""
+    if not sf:
+        return ""
+    return sf.get("type_line") or " // ".join(
+        f.get("type_line", "") for f in sf.get("card_faces", []))
+
+
+def is_land(sf):
+    """True if any face is a land: an MDFC land back still makes a land drop."""
+    return "Land" in full_type_line(sf)
+
+
+def front_face_cmc(sf):
+    """Mana value of the front face.
+
+    Scryfall's top-level cmc adds both halves of a split card (Find // Finality
+    is 8), which would file it in a bucket nobody can ever pay.
+    """
+    cost = get_mana_cost(sf)
+    if " // " not in cost:
+        return get_cmc(sf)
+    value = 0
+    for symbol in re.findall(r"\{([^}]+)\}", front_face_cost(cost)):
+        # {2/B} costs 2 or B, so it's worth 2; {X} is 0 on the stack.
+        parts = [int(p) if p.isdigit() else (0 if p == "X" else 1)
+                 for p in symbol.split("/")]
+        value += max(parts)
+    return float(value)
+
+
 def category_of(card, sf):
     """The card's Archidekt category: its functional tag, else its type.
 
@@ -105,7 +140,8 @@ def build_card(card, sf, otags=()):
         "number": card.get("number"),
         "foil": card.get("foil", False),
         "buy": any(t == "Buy" for t in card.get("tags", [])),
-        "cmc": get_cmc(sf),
+        "cmc": front_face_cmc(sf),
+        "is_land": is_land(sf),
         "mana_cost": get_mana_cost(sf),
         "produced_mana": get_produced_mana(sf),
         "type_line": get_type_line(sf),
@@ -146,8 +182,13 @@ def deck_stats(cards, otag_counts):
     """
     types = Counter()
     curve = Counter()
+    lands = 0
     for card in cards:
         types[card["type"]] += card["count"]
+        # An MDFC with a land back counts as a land drop even though its front
+        # face files it under Creature/Sorcery in the card columns.
+        if card.get("is_land"):
+            lands += card["count"]
         if card["type"] != "Land":
             curve[int(card["cmc"] or 0)] += card["count"]
 
@@ -157,7 +198,7 @@ def deck_stats(cards, otag_counts):
     template = []
     for label, target, otags in TEMPLATE:
         if otags is None:
-            count = types["Land"]
+            count = lands
         else:
             # A card with both "removal" and "counterspell" counts once.
             count = sum(c["count"] for c in cards
