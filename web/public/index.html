@@ -79,6 +79,32 @@
   .grid-view .stack { display: grid; gap: 10px; }
   a { color: var(--accent); }
   #empty { color: var(--muted); }
+
+  /* Bottom mana bar: pip count in mana costs + sources producing each colour. */
+  footer {
+    position: sticky; bottom: 0; z-index: 5;
+    display: flex; gap: 28px; flex-wrap: wrap; align-items: center;
+    padding: 8px 16px;
+    background: var(--panel);
+    border-top: 1px solid var(--line);
+  }
+  .mana-group { display: flex; align-items: center; gap: 10px; }
+  .mana-group > b { font-size: 12px; font-weight: 600; color: var(--muted); }
+  .pip-stat { display: inline-flex; align-items: center; gap: 4px; }
+  .pip-stat > span { font-variant-numeric: tabular-nums; }
+  .pip-stat > i { color: var(--muted); font-style: normal; font-size: 12px; }
+  .pip {
+    width: 17px; height: 17px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 700; color: #1a1a1a;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.35);
+  }
+  .pip.W { background: #f8f2dc; }
+  .pip.U { background: #9fd4ee; }
+  .pip.B { background: #b6aca8; }
+  .pip.R { background: #f0a08a; }
+  .pip.G { background: #98ccac; }
+  .pip.C { background: #ccc2bf; }
 </style>
 </head>
 <body>
@@ -86,44 +112,59 @@
   <h1>Decks</h1>
   <select id="deck"></select>
   <span class="meta" id="count"></span>
+  <label>group
+    <select id="group">
+      <option value="type">type</option>
+      <option value="category">category</option>
+    </select>
+  </label>
   <label><input type="checkbox" id="stacked" checked> stack</label>
-  <label><input type="checkbox" id="wip"> show wip/test</label>
+  <label><input type="checkbox" id="drafts"> show drafts</label>
 </header>
 <main><div class="columns" id="board"></div><p id="empty"></p></main>
+<footer id="mana"></footer>
 
 <script>
 const board = document.getElementById('board');
 const deckSel = document.getElementById('deck');
 const countEl = document.getElementById('count');
 const stackedEl = document.getElementById('stacked');
-const wipEl = document.getElementById('wip');
+const draftsEl = document.getElementById('drafts');
+const groupEl = document.getElementById('group');
 let index = [];
 
-const CAT_LAST = ['Land'];
+// Commander pinned first, Land last. Type groups keep the conventional
+// Archidekt order; tag categories fall back to biggest-group-first.
+const TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
+                    'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
 
-function sortedCategories(cards) {
+function groupKey(card, mode) {
+  if (card.category === 'Commander') return 'Commander';
+  return mode === 'type' ? (card.type || 'Other') : card.category;
+}
+
+function sortedGroups(cards, mode) {
   const groups = new Map();
   for (const c of cards) {
-    if (!groups.has(c.category)) groups.set(c.category, []);
-    groups.get(c.category).push(c);
+    const key = groupKey(c, mode);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(c);
   }
   for (const list of groups.values()) {
     list.sort((a, b) => (a.cmc ?? 0) - (b.cmc ?? 0) || a.name.localeCompare(b.name));
   }
   const total = list => list.reduce((n, c) => n + c.count, 0);
+  const rank = key => key === 'Commander' ? -1 : key === 'Land' ? 1 : 0;
   return [...groups.entries()].sort((a, b) => {
-    const la = CAT_LAST.indexOf(a[0]), lb = CAT_LAST.indexOf(b[0]);
-    if (la !== lb) return (la < 0 ? -1 : la) - (lb < 0 ? -1 : lb);
+    if (rank(a[0]) !== rank(b[0])) return rank(a[0]) - rank(b[0]);
+    if (mode === 'type') return TYPE_ORDER.indexOf(a[0]) - TYPE_ORDER.indexOf(b[0]);
     return total(b[1]) - total(a[1]) || a[0].localeCompare(b[0]);
   });
 }
 
 function cardEl(card) {
-  const a = document.createElement('a');
+  const a = document.createElement('div');
   a.className = 'card';
-  a.href = card.scryfall_uri || '#';
-  a.target = '_blank';
-  a.rel = 'noopener';
   a.title = [card.name, card.mana_cost, card.type_line, card.oracle_text]
     .filter(Boolean).join('\n');
   if (card.image) {
@@ -153,11 +194,70 @@ function cardEl(card) {
   return a;
 }
 
+const COLORS = ['W', 'U', 'B', 'R', 'G', 'C'];
+
+// Coloured pips in mana costs. Hybrid/phyrexian symbols like {G/U} or {B/P}
+// count once for each colour half, matching Archidekt's symbol count.
+function pipCounts(cards) {
+  const counts = {};
+  for (const card of cards) {
+    for (const sym of (card.mana_cost || '').match(/\{[^}]+\}/g) || []) {
+      for (const part of sym.slice(1, -1).split('/')) {
+        if (COLORS.includes(part) && part !== 'C') {
+          counts[part] = (counts[part] || 0) + card.count;
+        }
+      }
+    }
+  }
+  return counts;
+}
+
+// Sources of each colour: any permanent whose produced_mana includes it.
+function productionCounts(cards) {
+  const counts = {};
+  for (const card of cards) {
+    for (const m of card.produced_mana || []) {
+      if (COLORS.includes(m)) counts[m] = (counts[m] || 0) + card.count;
+    }
+  }
+  return counts;
+}
+
+function manaGroup(title, counts, totalLabel) {
+  const wrap = document.createElement('div');
+  wrap.className = 'mana-group';
+  const label = document.createElement('b');
+  label.textContent = title;
+  wrap.append(label);
+  const total = COLORS.reduce((n, c) => n + (counts[c] || 0), 0);
+  for (const c of COLORS) {
+    if (!counts[c]) continue;
+    const stat = document.createElement('span');
+    stat.className = 'pip-stat';
+    stat.title = `${counts[c]} ${c} ${totalLabel}`;
+    stat.innerHTML =
+      `<span class="pip ${c}">${c}</span><span>${counts[c]}</span>` +
+      `<i>${total ? Math.round((counts[c] / total) * 100) : 0}%</i>`;
+    wrap.append(stat);
+  }
+  return wrap;
+}
+
+function renderMana(cards) {
+  const foot = document.getElementById('mana');
+  foot.innerHTML = '';
+  foot.append(
+    manaGroup('Mana symbols', pipCounts(cards), 'pips'),
+    manaGroup('Mana production', productionCounts(cards), 'sources'),
+  );
+}
+
 function render(deck) {
   board.innerHTML = '';
   countEl.textContent = `${deck.total} cards`;
   const cards = deck.commander ? [deck.commander, ...deck.cards] : deck.cards;
-  for (const [cat, list] of sortedCategories(cards)) {
+  renderMana(cards);
+  for (const [cat, list] of sortedGroups(cards, groupEl.value)) {
     const col = document.createElement('section');
     col.className = 'cat';
     const h = document.createElement('h2');
@@ -171,6 +271,8 @@ function render(deck) {
   }
 }
 
+let current = null;
+
 async function load(slug) {
   document.getElementById('empty').textContent = '';
   location.hash = slug;
@@ -180,16 +282,17 @@ async function load(slug) {
     board.innerHTML = '';
     return;
   }
-  render(await res.json());
+  current = await res.json();
+  render(current);
 }
 
 function fillDecks() {
-  const visible = index.filter(d => wipEl.checked || !d.wip);
+  const visible = index.filter(d => draftsEl.checked || !d.draft);
   deckSel.innerHTML = '';
   for (const d of visible) {
     const o = document.createElement('option');
     o.value = d.slug;
-    o.textContent = `${d.name} (${d.total})`;
+    o.textContent = `${d.name} (${d.total})${d.draft ? ' — draft' : ''}`;
     deckSel.append(o);
   }
   return visible;
@@ -198,7 +301,7 @@ function fillDecks() {
 (async function init() {
   index = (await (await fetch('data/index.json')).json()).decks;
   const wanted = decodeURIComponent(location.hash.slice(1));
-  if (wanted && index.find(d => d.slug === wanted && d.wip)) wipEl.checked = true;
+  if (wanted && index.find(d => d.slug === wanted && d.draft)) draftsEl.checked = true;
   let visible = fillDecks();
   const start = visible.find(d => d.slug === wanted) || visible[0];
   if (!start) { document.getElementById('empty').textContent = 'No decks built yet.'; return; }
@@ -206,8 +309,9 @@ function fillDecks() {
   await load(start.slug);
 
   deckSel.onchange = () => load(deckSel.value);
-  stackedEl.onchange = () => load(deckSel.value);
-  wipEl.onchange = () => {
+  // Layout toggles only need a re-render, not a refetch.
+  stackedEl.onchange = groupEl.onchange = () => current && render(current);
+  draftsEl.onchange = () => {
     const current = deckSel.value;
     visible = fillDecks();
     deckSel.value = visible.find(d => d.slug === current) ? current : visible[0].slug;

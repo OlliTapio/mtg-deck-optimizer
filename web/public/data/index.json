@@ -5,161 +5,161 @@
    "name": "Ashling, the Limitless",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/5/9/5924c01f-2815-4e37-b700-3ba6cc81e0e4.jpg?1768940591",
-   "wip": false
+   "draft": false
   },
   {
    "slug": "blight_curse",
    "name": "Auntie Ool, Cursewretch",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/9/a/9a2e4252-9fbc-4d43-8935-db2cafaa7b5f.jpg?1768940605",
-   "wip": false
+   "draft": false
   },
   {
    "slug": "radha_battlecruiser",
    "name": "Radha, Heir to Keld",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/e/c/ecb7c19a-b4af-405d-b016-a546ed12a99d.jpg?1783918429",
-   "wip": false
+   "draft": true
   },
   {
    "slug": "test_atraxa",
    "name": "Atraxa, Praetors' Voice",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.jpg?1599707796",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_edric",
    "name": "Edric, Spymaster of Trest",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/2/2/22d6a4c9-4bdd-4e70-8481-95260e6aa7ab.jpg?1712354689",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_ff_cloud",
    "name": "Cloud, Ex-SOLDIER",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/0/7/07b4e4f8-6a31-4533-be51-668ce3ddc84f.jpg?1752052926",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_ff_yshtola",
    "name": "Y'shtola, Night's Blessed",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/c/7/c7f2c2d5-e052-49e8-b5de-712858c2ea78.jpg?1752052932",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_isshin",
    "name": "Isshin, Two Heavens as One",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/a/0/a062a004-984e-4b62-960c-af7288f7a3e9.jpg?1768629410",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_krenko",
    "name": "Krenko, Mob Boss",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/8/2/824b2d73-2151-4e5e-9f05-8f63e2bdcaa9.jpg?1730632010",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_meren",
    "name": "Meren of Clan Nel Toth",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/5/0/508b1442-bf2c-4ad6-9bcf-bd894e081ab6.jpg?1743207181",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_nivmizzet",
    "name": "Niv-Mizzet, Parun",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/8/6/86c5c337-d25f-4c3e-9762-09ed0c2d36d7.jpg?1712354750",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_teysa",
    "name": "Teysa Karlov",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/c/d/cd14f1ce-7fcd-485c-b7ca-01c5b45fdc01.jpg?1689999296",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_valgavoth",
    "name": "Valgavoth, Harrower of Souls",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/8/d/8d7c1f6c-af45-4449-8cf8-e13830b3df8a.jpg?1726596807",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_winota",
    "name": "Winota, Joiner of Forces",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/5/d/5dd13a6c-23d3-44ce-a628-cb1c19d777c4.jpg?1761053652",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_xenagos",
    "name": "Xenagos, God of Revels",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/6/f/6f1bc3bb-46da-492a-850c-f1f588ad8d18.jpg?1732546037",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_yuriko",
    "name": "Yuriko, the Tiger's Shadow",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/f/e/fe9be3e0-076c-4703-9750-2a6b0a178bc9.jpg?1761053654",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "test_zada",
    "name": "Zada, Hedron Grinder",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/4/5/4520cdcc-a10f-4b39-9c6f-ba86f6aa2c87.jpg?1689998306",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "ureni",
    "name": "Ureni of the Unwritten",
    "total": 103,
    "art": "https://cards.scryfall.io/small/front/f/5/f54ecbf1-83df-4486-bd6a-7d1f173b6863.jpg?1745970982",
-   "wip": false
+   "draft": false
   },
   {
    "slug": "wip_brigid",
    "name": "Brigid, Clachan's Heart // Brigid, Doun's Mind",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/c/b/cb7d5bbb-4f68-4e38-8bb0-a95af21b24c8.jpg?1767887768",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "wip_brion",
    "name": "Brion Stoutarm",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/b/0/b097c70a-d1d6-4972-b94d-d7d8a6f443e2.jpg?1562439762",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "wip_muldrotha",
    "name": "Muldrotha, the Gravetide",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/7/0/705b4d97-2f50-47f7-9053-d748f4337553.jpg?1769685324",
-   "wip": true
+   "draft": true
   },
   {
    "slug": "wise_mothman",
    "name": "The Wise Mothman",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/c/f/cfb80c75-4b1b-4f25-923a-933855e7345c.jpg?1769163701",
-   "wip": false
+   "draft": false
   },
   {
    "slug": "yuma",
    "name": "Yuma, Proud Protector",
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/1/8/18df72be-07d2-4412-b36d-a45119763db3.jpg?1714110413",
-   "wip": false
+   "draft": false
   }
  ]
 }

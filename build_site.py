@@ -59,18 +59,33 @@ def category_of(card, sf):
     return primary_type(sf)
 
 
+def is_draft(slug):
+    """Decks not yet physically built: a DRAFT marker file, or a wip_/test_ slug."""
+    return slug.startswith(("wip_", "test_")) or os.path.exists(
+        os.path.join(DECKS_DIR, slug, "DRAFT")
+    )
+
+
 def build_card(card, sf):
     return {
         "name": card["name"],
         "count": card["count"],
         "category": category_of(card, sf),
+        "type": primary_type(sf),
         "tags": card.get("clean_tags") or [],
         "set": card.get("set") or (sf or {}).get("set"),
         "number": card.get("number"),
         "foil": card.get("foil", False),
         "buy": any(t == "Buy" for t in card.get("tags", [])),
         "cmc": (sf or {}).get("cmc"),
-        "mana_cost": (sf or {}).get("mana_cost"),
+        # mana_cost drives the pip count, produced_mana the production count
+        # (the site's bottom bar, like Archidekt's).
+        "mana_cost": (sf or {}).get("mana_cost") or " // ".join(
+            f.get("mana_cost", "") for f in (sf or {}).get("card_faces", [])
+        ),
+        "produced_mana": (sf or {}).get("produced_mana") or sorted({
+            m for f in (sf or {}).get("card_faces", []) for m in f.get("produced_mana", [])
+        }),
         "type_line": (sf or {}).get("type_line"),
         "oracle_text": (sf or {}).get("oracle_text"),
         "image": image_url(sf, "normal"),
@@ -138,7 +153,7 @@ def main():
             "name": deck["name"],
             "total": deck["total"],
             "art": (deck["commander"] or {}).get("image_small"),
-            "wip": slug.startswith(("wip_", "test_")),
+            "draft": is_draft(slug),
         })
 
     # Rebuilding a subset must not drop the other decks from the index.
