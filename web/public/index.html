@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decks</title>
+<style>
+  :root {
+    --bg: #16181d;
+    --panel: #1e2128;
+    --line: #2c313b;
+    --text: #e6e8ec;
+    --muted: #939aa8;
+    --accent: #8ab4f8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    position: sticky; top: 0; z-index: 5;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    padding: 10px 16px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+  }
+  h1 { font-size: 15px; margin: 0; font-weight: 600; letter-spacing: .02em; }
+  select, label { font: inherit; }
+  select {
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px;
+  }
+  .meta { color: var(--muted); }
+  label { color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
+
+  main { padding: 16px; }
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+    align-items: start;
+  }
+  .cat h2 {
+    font-size: 13px; font-weight: 600; margin: 0 0 8px;
+    padding-bottom: 5px; border-bottom: 1px solid var(--line);
+  }
+  .cat h2 span { color: var(--muted); font-weight: 400; }
+
+  /* Stacked cards: only the title bar of each card shows until the last one. */
+  .stack { position: relative; }
+  .card { position: relative; display: block; }
+  .card img {
+    display: block; width: 100%; border-radius: 4.75% / 3.5%;
+    background: #0d0f12;
+  }
+  /* A card is ~140% as tall as it is wide; overlapping by 112% leaves the
+     name/mana line of every card visible, like Archidekt's stacked view. */
+  .stack.stacked .card { margin-bottom: -112%; }
+  .stack.stacked .card:last-child { margin-bottom: 0; }
+  .card:hover { z-index: 3; }
+  .card .qty {
+    position: absolute; top: 4%; right: 5%;
+    background: rgba(0,0,0,.82); color: #fff;
+    border-radius: 10px; padding: 1px 7px; font-size: 12px; font-weight: 600;
+  }
+  .card .buy {
+    position: absolute; top: 4%; left: 5%;
+    background: rgba(200,120,20,.92); color: #fff;
+    border-radius: 10px; padding: 1px 7px; font-size: 11px; font-weight: 600;
+  }
+  .missing {
+    aspect-ratio: 488 / 680; display: flex; align-items: center;
+    justify-content: center; text-align: center; padding: 8px;
+    border: 1px solid var(--line); border-radius: 8px; color: var(--muted);
+  }
+  .grid-view .stack { display: grid; gap: 10px; }
+  a { color: var(--accent); }
+  #empty { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Decks</h1>
+  <select id="deck"></select>
+  <span class="meta" id="count"></span>
+  <label><input type="checkbox" id="stacked" checked> stack</label>
+  <label><input type="checkbox" id="wip"> show wip/test</label>
+</header>
+<main><div class="columns" id="board"></div><p id="empty"></p></main>
+
+<script>
+const board = document.getElementById('board');
+const deckSel = document.getElementById('deck');
+const countEl = document.getElementById('count');
+const stackedEl = document.getElementById('stacked');
+const wipEl = document.getElementById('wip');
+let index = [];
+
+const CAT_LAST = ['Land'];
+
+function sortedCategories(cards) {
+  const groups = new Map();
+  for (const c of cards) {
+    if (!groups.has(c.category)) groups.set(c.category, []);
+    groups.get(c.category).push(c);
+  }
+  for (const list of groups.values()) {
+    list.sort((a, b) => (a.cmc ?? 0) - (b.cmc ?? 0) || a.name.localeCompare(b.name));
+  }
+  const total = list => list.reduce((n, c) => n + c.count, 0);
+  return [...groups.entries()].sort((a, b) => {
+    const la = CAT_LAST.indexOf(a[0]), lb = CAT_LAST.indexOf(b[0]);
+    if (la !== lb) return (la < 0 ? -1 : la) - (lb < 0 ? -1 : lb);
+    return total(b[1]) - total(a[1]) || a[0].localeCompare(b[0]);
+  });
+}
+
+function cardEl(card) {
+  const a = document.createElement('a');
+  a.className = 'card';
+  a.href = card.scryfall_uri || '#';
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.title = [card.name, card.mana_cost, card.type_line, card.oracle_text]
+    .filter(Boolean).join('\n');
+  if (card.image) {
+    const img = document.createElement('img');
+    img.src = card.image;
+    img.alt = card.name;
+    img.loading = 'lazy';
+    a.append(img);
+  } else {
+    const d = document.createElement('div');
+    d.className = 'missing';
+    d.textContent = card.name;
+    a.append(d);
+  }
+  if (card.count > 1) {
+    const q = document.createElement('span');
+    q.className = 'qty';
+    q.textContent = card.count + '×';
+    a.append(q);
+  }
+  if (card.buy) {
+    const b = document.createElement('span');
+    b.className = 'buy';
+    b.textContent = 'buy';
+    a.append(b);
+  }
+  return a;
+}
+
+function render(deck) {
+  board.innerHTML = '';
+  countEl.textContent = `${deck.total} cards`;
+  const cards = deck.commander ? [deck.commander, ...deck.cards] : deck.cards;
+  for (const [cat, list] of sortedCategories(cards)) {
+    const col = document.createElement('section');
+    col.className = 'cat';
+    const h = document.createElement('h2');
+    h.innerHTML = `${cat} <span>(${list.reduce((n, c) => n + c.count, 0)})</span>`;
+    const stack = document.createElement('div');
+    stack.className = 'stack' + (stackedEl.checked ? ' stacked' : '');
+    // A quantity>1 card shows once with an "N×" badge, like Archidekt.
+    list.forEach(c => stack.append(cardEl(c)));
+    col.append(h, stack);
+    board.append(col);
+  }
+}
+
+async function load(slug) {
+  document.getElementById('empty').textContent = '';
+  location.hash = slug;
+  const res = await fetch(`data/${slug}.json`);
+  if (!res.ok) {
+    document.getElementById('empty').textContent = `No data for ${slug} — run build_site.py.`;
+    board.innerHTML = '';
+    return;
+  }
+  render(await res.json());
+}
+
+function fillDecks() {
+  const visible = index.filter(d => wipEl.checked || !d.wip);
+  deckSel.innerHTML = '';
+  for (const d of visible) {
+    const o = document.createElement('option');
+    o.value = d.slug;
+    o.textContent = `${d.name} (${d.total})`;
+    deckSel.append(o);
+  }
+  return visible;
+}
+
+(async function init() {
+  index = (await (await fetch('data/index.json')).json()).decks;
+  const wanted = decodeURIComponent(location.hash.slice(1));
+  if (wanted && index.find(d => d.slug === wanted && d.wip)) wipEl.checked = true;
+  let visible = fillDecks();
+  const start = visible.find(d => d.slug === wanted) || visible[0];
+  if (!start) { document.getElementById('empty').textContent = 'No decks built yet.'; return; }
+  deckSel.value = start.slug;
+  await load(start.slug);
+
+  deckSel.onchange = () => load(deckSel.value);
+  stackedEl.onchange = () => load(deckSel.value);
+  wipEl.onchange = () => {
+    const current = deckSel.value;
+    visible = fillDecks();
+    deckSel.value = visible.find(d => d.slug === current) ? current : visible[0].slug;
+    load(deckSel.value);
+  };
+  window.onhashchange = () => {
+    const slug = decodeURIComponent(location.hash.slice(1));
+    if (slug && slug !== deckSel.value && index.find(d => d.slug === slug)) {
+      deckSel.value = slug;
+      load(slug);
+    }
+  };
+})();
+</script>
+</body>
+</html>

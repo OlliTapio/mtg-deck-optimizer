@@ -1,0 +1,15 @@
+{
+  "name": "mtg-decks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Archidekt-style viewer for the decks in this repo",
+  "scripts": {
+    "build": "python3 build_site.py",
+    "deploy": "wrangler deploy",
+    "publish": "npm run build && npm run deploy",
+    "preview": "python3 -m http.server --directory web/public 8000"
+  },
+  "devDependencies": {
+    "wrangler": "^4.103.0"
+  }
+}

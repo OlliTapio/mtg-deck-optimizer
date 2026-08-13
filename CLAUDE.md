@@ -40,6 +40,11 @@ python3 multiplayer_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt --ai a
 python3 game_http_server.py &
 python3 codex_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt decks/<c>/decklist.txt decks/<d>/decklist.txt --seed 42 --max-turns 12
 
+# Rebuild the deck site data bundle after any decklist change (see web/README.md)
+python3 build_site.py [<deck_folder> ...]
+npm run preview   # serve web/public on http://127.0.0.1:8000
+npm run publish   # rebuild data + wrangler deploy
+
 # Check prices for entire deck or specific cards
 python3 price_check.py --deck decks/<deck>/decklist.txt
 python3 price_check.py --cards "Card Name" "Card Name"
