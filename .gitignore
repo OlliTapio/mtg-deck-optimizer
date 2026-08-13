@@ -6,3 +6,4 @@ cache/
 .playwright-cli/
 node_modules/
 .wrangler/
+cache
