@@ -238,3 +238,47 @@ def test_merged_stack_keeps_buy_and_foil_flags(monkeypatch, tmp_path):
 
     stack = deck["cards"][0]
     assert stack["count"] == 2 and stack["buy"] is True and stack["foil"] is True
+
+
+# --- stats tab data ---
+
+def test_deck_stats_types_curve_and_average():
+    cards = [
+        build_site.build_card(row("Forest", count=3),
+                              sf(type_line="Basic Land — Forest", mana_cost="", cmc=0.0)),
+        build_site.build_card(row("Llanowar Elves"), sf(cmc=1.0), ["ramp", "mana-dork"]),
+        build_site.build_card(row("Beast Within"),
+                              sf(type_line="Instant", cmc=3.0), ["removal"]),
+    ]
+    stats = build_site.deck_stats(cards, {"ramp": 1})
+
+    assert stats["types"] == {"Creature": 1, "Instant": 1, "Land": 3}
+    assert stats["curve"] == {"1": 1, "3": 1}   # lands are excluded
+    assert stats["avg_cmc"] == 2.0
+    assert stats["otags"] == {"ramp": 1}
+
+
+def test_deck_stats_template_counts_a_card_once_per_category():
+    """A removal spell that also counters counts once toward disruption."""
+    cards = [
+        build_site.build_card(row("Repulsive Mutation"), sf(type_line="Instant"),
+                              ["removal", "counterspell"]),
+        build_site.build_card(row("Cultivate"), sf(type_line="Sorcery"), ["ramp"]),
+        build_site.build_card(row("Forest", count=38),
+                              sf(type_line="Basic Land — Forest", mana_cost="")),
+    ]
+    template = {t["label"]: t for t in build_site.deck_stats(cards, {})["template"]}
+
+    assert template["Targeted disruption"]["count"] == 1
+    assert template["Ramp"]["count"] == 1
+    assert template["Lands"] == {"label": "Lands", "count": 38, "target": 38}
+
+
+def test_committed_bundle_has_stats_for_every_deck():
+    for slug in build_site.deck_slugs():
+        with open(f"{build_site.OUT_DIR}/{slug}.json") as f:
+            deck = json.load(f)
+        stats = deck["stats"]
+        assert stats["types"] and stats["curve"] and stats["template"]
+        # otags come from cache/otags.json; every real deck should have some
+        assert stats["otags"], slug

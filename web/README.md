@@ -1,8 +1,15 @@
 # Deck site
 
-Read-only Archidekt-style viewer for the decks in this repo: a deck picker plus
-card images grouped into their Archidekt categories. Nothing else — no editing,
-no stats, no API.
+Read-only Archidekt-style viewer for the decks in this repo. Two tabs:
+
+- **Cards** — card images grouped by card type (or by Archidekt category),
+  sorted by mana cost, Commander first and Land last. Tapping a card opens it
+  full size with its printing, price and otags.
+- **Stats** — mana symbols and mana production per colour, the Command Zone
+  template check, Scryfall otag counts (removal, ramp, draw, …), card types and
+  the mana curve.
+
+No editing, no API.
 
 - `web/public/index.html` — the whole site (vanilla JS, no build step)
 - `web/public/data/*.json` — generated data bundle, **committed** (one file per
@@ -10,10 +17,24 @@ no stats, no API.
 - `build_site.py` — regenerates the bundle from `decks/*/decklist.txt`
 - `wrangler.toml` — static-assets-only Worker (`name = "mtg-decks"`)
 
-Categories come from the `[...]` tags in `decklist.txt` (Archidekt writes the
-primary category first); untagged cards fall back to their Scryfall card type.
-Card images/prices/oracle text are baked in from `cache/cards.json` at build
-time, because `cache/` is gitignored — the browser never calls Scryfall.
+Categories come from the `[...]` tags in `decklist.txt`; untagged cards fall back
+to their Scryfall card type. Card data is baked in from `cache/cards.json` and
+`cache/otags.json` at build time, because `cache/` is gitignored — the browser
+only loads card images from Scryfall's CDN. Stats (pips, curve, template check)
+are computed in `build_site.py` via `deck_analyzer.py`, so the site and the CLI
+analysis always agree.
+
+## UX check
+
+`web/ux_check.mjs` drives the site with Playwright on an iPhone 11 viewport plus
+a desktop viewport, and fails if it finds a layout, tap-target or interaction
+problem. Screenshots go to `.playwright/` (gitignored).
+
+```bash
+npm install                 # first time; then: npx playwright install chromium
+npm run preview &           # serves web/public on :8000
+npm run ux
+```
 
 ## Update after a decklist change
 

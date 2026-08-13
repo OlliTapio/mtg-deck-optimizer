@@ -23,6 +23,7 @@ from deck_analyzer import (
     get_mana_cost, get_oracle_text, get_price_eur, get_produced_mana,
     get_type_line,
 )
+from otag_fetcher import OTAGS, fetch_otags_for_cards
 from parser import parse_decklist
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -34,6 +35,16 @@ TYPE_TAGS = set(MAIN_TYPES)
 TYPE_ORDER = ["Commander", "Creature", "Planeswalker", "Instant", "Sorcery",
               "Artifact", "Enchantment", "Battle", "Other", "Land"]
 COLORS = ["W", "U", "B", "R", "G", "C"]
+
+# Command Zone template (2025 New Era), see command_zone_template.md. Each row
+# is (label, target, otags that count toward it).
+TEMPLATE = [
+    ("Lands", 38, None),
+    ("Ramp", 10, ["ramp", "mana-dork"]),
+    ("Card advantage", 12, ["draw", "card-advantage"]),
+    ("Targeted disruption", 12, ["removal", "counterspell"]),
+    ("Mass disruption", 6, ["board-wipe"]),
+]
 
 
 def image_url(sf, size="normal"):
@@ -83,10 +94,11 @@ def is_draft(slug):
     )
 
 
-def build_card(card, sf):
+def build_card(card, sf, otags=()):
     return {
         "name": card["name"],
         "count": card["count"],
+        "otags": list(otags),
         "category": category_of(card, sf),
         "type": primary_type(sf),
         "set": card.get("set") or (sf or {}).get("set"),
@@ -125,11 +137,48 @@ def mana_stats(cards, identity):
     )
 
 
-def build_deck(slug):
+def deck_stats(cards, otag_counts):
+    """The numbers behind the site's Stats tab.
+
+    Curve and type counts exclude nothing — a card counts once for its primary
+    type — while the template check follows command_zone_template.md, where one
+    card can serve several categories.
+    """
+    types = Counter()
+    curve = Counter()
+    for card in cards:
+        types[card["type"]] += card["count"]
+        if card["type"] != "Land":
+            curve[int(card["cmc"] or 0)] += card["count"]
+
+    nonland = sum(n for cmc, n in curve.items())
+    avg_cmc = (sum(cmc * n for cmc, n in curve.items()) / nonland) if nonland else 0
+
+    template = []
+    for label, target, otags in TEMPLATE:
+        if otags is None:
+            count = types["Land"]
+        else:
+            # A card with both "removal" and "counterspell" counts once.
+            count = sum(c["count"] for c in cards
+                        if any(t in c["otags"] for t in otags))
+        template.append({"label": label, "count": count, "target": target})
+
+    return {
+        "types": {t: types[t] for t in TYPE_ORDER if types[t]},
+        "curve": {str(cmc): curve[cmc] for cmc in sorted(curve)},
+        "avg_cmc": round(avg_cmc, 2),
+        "otags": otag_counts,
+        "template": template,
+    }
+
+
+def build_deck(slug, otags_by_name=None):
     """Build one deck's JSON payload from its decklist.txt.
 
     Returns (deck, missing) where missing lists cards with no Scryfall data.
     """
+    otags_by_name = otags_by_name or {}
     path = os.path.join(DECKS_DIR, slug, "decklist.txt")
     parsed = parse_decklist(path)
     missing = []
@@ -148,7 +197,7 @@ def build_deck(slug):
     if parsed["commander"]:
         c = parsed["commander"]
         sf = card_data(c)
-        commander = build_card(c, sf)
+        commander = build_card(c, sf, otags_by_name.get(c["name"], []))
         commander["category"] = "Commander"
         commander["image_small"] = image_url(sf, "small")
         identity = get_color_identity(sf)
@@ -158,7 +207,8 @@ def build_deck(slug):
     cards = []
     by_key = {}
     for card in parsed["deck"]:
-        built = build_card(card, card_data(card))
+        built = build_card(card, card_data(card),
+                           otags_by_name.get(card["name"], []))
         key = (built["name"], built["category"])
         if key in by_key:
             stack = by_key[key]
@@ -174,9 +224,13 @@ def build_deck(slug):
     name = commander["name"] if commander else slug.replace("_", " ").title()
     if not identity:  # no commander row: fall back to the cards' own identity
         identity = sorted(deck_identity)
-    symbols, production = mana_stats(
-        ([commander] if commander else []) + cards, identity
-    )
+    all_cards = ([commander] if commander else []) + cards
+    symbols, production = mana_stats(all_cards, identity)
+
+    otag_counts = Counter()
+    for card in all_cards:
+        for tag in card["otags"]:
+            otag_counts[tag] += card["count"]
 
     return {
         "slug": slug,
@@ -187,6 +241,8 @@ def build_deck(slug):
         "color_identity": identity,
         "mana_symbols": symbols,
         "mana_production": production,
+        "stats": deck_stats(all_cards,
+                            {t: otag_counts[t] for t in OTAGS if otag_counts[t]}),
     }, missing
 
 
@@ -234,11 +290,20 @@ def main():
     slugs = requested or known
     os.makedirs(OUT_DIR, exist_ok=True)
 
+    # One otag pass for every card in the build: uncached names cost a batch of
+    # Scryfall searches, so doing it per deck would repeat the work.
+    names = set()
+    for slug in slugs:
+        parsed = parse_decklist(os.path.join(DECKS_DIR, slug, "decklist.txt"))
+        cards = parsed["deck"] + ([parsed["commander"]] if parsed["commander"] else [])
+        names.update(c["name"] for c in cards)
+    otags_by_name = fetch_otags_for_cards(sorted(names))
+
     entries = []
     missing = {}
     for slug in slugs:
         print(f"Building {slug}...", file=sys.stderr)
-        deck, deck_missing = build_deck(slug)
+        deck, deck_missing = build_deck(slug, otags_by_name)
         if deck_missing:
             missing[slug] = deck_missing
         if deck["total"] != 100:
