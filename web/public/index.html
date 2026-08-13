@@ -187,7 +187,6 @@
   }
   .stat-row .label { display: flex; align-items: center; gap: 6px; }
   .stat-row .num { font-variant-numeric: tabular-nums; }
-  .stat-row .num i { color: var(--muted); font-style: normal; font-size: 12px; }
   .bar {
     grid-column: 1 / -1; height: 4px; border-radius: 2px;
     background: var(--line); overflow: hidden;
@@ -201,13 +200,6 @@
     font-size: 10px; font-weight: 700; color: #1a1a1a;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,.35);
   }
-  .pip.W { background: var(--W); }
-  .pip.U { background: var(--U); }
-  .pip.B { background: var(--B); }
-  .pip.R { background: var(--R); }
-  .pip.G { background: var(--G); }
-  .pip.C { background: var(--C); }
-
   /* Mana is one stacked bar per question — the split between colours is the
      whole point, and five separate bars made it something you had to add up. */
   .mana-bar {
@@ -215,12 +207,14 @@
     overflow: hidden; background: var(--line); margin: 2px 0 8px;
   }
   .mana-bar > span { display: block; height: 100%; }
-  .mana-bar .W { background: var(--W); }
-  .mana-bar .U { background: var(--U); }
-  .mana-bar .B { background: var(--B); }
-  .mana-bar .R { background: var(--R); }
-  .mana-bar .G { background: var(--G); }
-  .mana-bar .C { background: var(--C); }
+  /* One rule per colour for both the pips and the bar segments, so a colour
+     can't end up meaning two different things in the same section. */
+  .pip.W, .mana-bar .W { background: var(--W); }
+  .pip.U, .mana-bar .U { background: var(--U); }
+  .pip.B, .mana-bar .B { background: var(--B); }
+  .pip.R, .mana-bar .R { background: var(--R); }
+  .pip.G, .mana-bar .G { background: var(--G); }
+  .pip.C, .mana-bar .C { background: var(--C); }
   .legend { display: flex; flex-wrap: wrap; gap: 6px 12px; }
   .legend > span {
     display: inline-flex; align-items: center; gap: 5px;
@@ -448,26 +442,15 @@ function renderCards(deck) {
 
 // --- stats ---
 
-function statRow(label, value, {pip, pct, bar, barClass} = {}) {
+function statRow(label, value, {bar, barClass} = {}) {
   const row = document.createElement('div');
   row.className = 'stat-row';
   const l = document.createElement('div');
   l.className = 'label';
-  if (pip) {
-    const p = document.createElement('span');
-    p.className = 'pip ' + pip;
-    p.textContent = pip;
-    l.append(p);
-  }
   l.append(document.createTextNode(label));
   const num = document.createElement('div');
   num.className = 'num';
   num.textContent = value;
-  if (pct !== undefined) {
-    const i = document.createElement('i');
-    i.textContent = ` ${pct}%`;
-    num.append(i);
-  }
   row.append(l, num);
   if (bar !== undefined) {
     const b = document.createElement('div');

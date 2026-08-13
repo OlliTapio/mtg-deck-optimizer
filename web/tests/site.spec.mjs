@@ -307,18 +307,49 @@ test.describe('stats tab', () => {
       const colours = Object.entries(counts).filter(([, n]) => n);
       const total = colours.reduce((n, [, v]) => n + v, 0);
       const line = lines.nth(i);
-      // One bar with one segment per colour in the deck, widths summing to 100%.
       await expect(line.locator('.mana-bar')).toHaveCount(1);
-      const widths = await line.locator('.mana-bar > span')
-        .evaluateAll(els => els.map(e => parseFloat(e.style.width)));
-      expect(widths.length).toBe(colours.length);
-      expect(widths.reduce((a, b) => a + b, 0)).toBeCloseTo(100, 2);
-      await expect(line.locator('.head')).toContainText(String(total));
-      for (const [c, n] of colours) {
-        await expect(line.locator('.legend > span', { hasText: String(n) }).first())
-          .toBeVisible();
-        await expect(line.locator(`.mana-bar > span.${c}`)).toHaveCount(1);
+
+      // A deck with no coloured mana at all draws an empty bar, not a broken one.
+      if (!colours.length) {
+        await expect(line.locator('.mana-bar > span')).toHaveCount(0);
+        await expect(line.locator('.legend')).toHaveText('none');
+        continue;
       }
+      await expect(line.locator('.head')).toContainText(String(total));
+
+      // One segment per colour, in COLORS order, each as wide as *its own*
+      // share: checking only that the widths add up to 100% would pass just
+      // as well with every colour's count attached to the wrong segment.
+      const segments = await line.locator('.mana-bar > span').evaluateAll(
+        els => els.map(e => [e.className, parseFloat(e.style.width)]));
+      expect(segments.map(([c]) => c)).toEqual(colours.map(([c]) => c));
+      for (const [j, [c, n]] of colours.entries()) {
+        const pct = n / total * 100;
+        expect(segments[j][1]).toBeCloseTo(pct, 4);
+        // Same for the legend: the count sits next to the pip it belongs to.
+        const item = line.locator('.legend > span', { has: page.locator(`.pip.${c}`) });
+        await expect(item).toHaveText(new RegExp(`^${c}\\s*${n}\\s*${Math.round(pct)}%$`));
+      }
+    }
+  });
+
+  // No deck in the bundle is colourless today, so the empty branch would
+  // otherwise never be exercised until the day someone builds such a deck.
+  test('a deck with no coloured mana says so instead of drawing an empty bar', async ({ page }) => {
+    const slug = await page.evaluate(() => location.hash.slice(1));
+    const data = await deckData(page);
+    await page.route(`**/data/${slug}.json`, route => route.fulfill({
+      json: {...data, mana_symbols: {}, mana_production: {}},
+    }));
+    await page.reload();
+    await page.locator('#tab-stats').click();
+
+    const lines = page.locator('.mana-line');
+    await expect(lines).toHaveCount(2);
+    for (const i of [0, 1]) {
+      await expect(lines.nth(i).locator('.mana-bar > span')).toHaveCount(0);
+      await expect(lines.nth(i).locator('.legend')).toHaveText('none');
+      await expect(lines.nth(i).locator('.head')).toContainText('0');
     }
   });
 
