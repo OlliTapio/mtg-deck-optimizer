@@ -11,6 +11,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -19,6 +20,7 @@ from parser import parse_decklist
 CACHE_FILE = os.path.join(os.path.dirname(__file__), 'cache', 'otags.json')
 HEADERS = {'User-Agent': 'MTGDeckOptimizer/1.0', 'Accept': 'application/json'}
 REQUEST_DELAY = 0.1
+TIMEOUT = 20
 
 OTAGS = [
     'ramp', 'removal', 'draw', 'board-wipe', 'counterspell',
@@ -61,8 +63,13 @@ def batch_names(names, max_chars=600):
 
 
 def search_otag(otag, name_batches):
-    """Search Scryfall for cards matching an otag from the given name batches."""
+    """Search Scryfall for cards matching an otag from the given name batches.
+
+    Returns (matches, ok). ok is False when a query failed, so the caller can
+    avoid caching "this card has no otags" from a network error.
+    """
     matches = set()
+    ok = True
     for batch in name_batches:
         time.sleep(REQUEST_DELAY)
         name_filter = ' or '.join(batch)
@@ -71,20 +78,27 @@ def search_otag(otag, name_batches):
         url = f'https://api.scryfall.com/cards/search?{params}'
         req = urllib.request.Request(url, headers=HEADERS)
         try:
-            with urllib.request.urlopen(req) as resp:
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
                 data = json.loads(resp.read())
                 for card in data.get('data', []):
                     matches.add(card['name'])
                 while data.get('has_more'):
                     time.sleep(REQUEST_DELAY)
                     req2 = urllib.request.Request(data['next_page'], headers=HEADERS)
-                    with urllib.request.urlopen(req2) as resp2:
+                    with urllib.request.urlopen(req2, timeout=TIMEOUT) as resp2:
                         data = json.loads(resp2.read())
                         for card in data.get('data', []):
                             matches.add(card['name'])
-        except urllib.error.HTTPError:
-            pass
-    return matches
+        except urllib.error.HTTPError as e:
+            # 404 means "no card in this batch has the tag", which is a real
+            # answer; anything else is a failure we shouldn't cache.
+            if e.code != 404:
+                print(f"  WARNING: otag:{otag} query failed ({e.code})", file=sys.stderr)
+                ok = False
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            print(f"  WARNING: otag:{otag} query failed ({e})", file=sys.stderr)
+            ok = False
+    return matches, ok
 
 
 def fetch_otags_for_cards(card_names):
@@ -98,20 +112,26 @@ def fetch_otags_for_cards(card_names):
         print(f"Fetching otags for {len(uncached)} uncached cards...", file=sys.stderr)
         batches = batch_names(uncached)
         total_queries = 0
-
-        # Initialize uncached cards with empty lists
-        for name in uncached:
-            cache[name] = []
+        fetched = {name: [] for name in uncached}
+        complete = True
 
         for otag in OTAGS:
-            matches = search_otag(otag, batches)
+            matches, ok = search_otag(otag, batches)
             total_queries += len(batches)
+            complete = complete and ok
             for name in matches:
-                if name in cache and otag not in cache[name]:
-                    cache[name].append(otag)
+                if name in fetched and otag not in fetched[name]:
+                    fetched[name].append(otag)
 
         print(f"  {total_queries} API queries made.", file=sys.stderr)
-        save_cache(cache)
+        if complete:
+            cache.update(fetched)
+            save_cache(cache)
+        else:
+            # Caching now would record "no otags" for every uncached card and
+            # never retry, so leave the cache alone and return what we have.
+            print("  Some queries failed — not caching this run.", file=sys.stderr)
+            return {n: cache.get(n, fetched.get(n, [])) for n in card_names}
     else:
         print(f"All {len(card_names)} cards already cached.", file=sys.stderr)
 

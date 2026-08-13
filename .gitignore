@@ -4,3 +4,8 @@ cache/
 .claude/
 .playwright/
 .playwright-cli/
+node_modules/
+.wrangler/
+cache
+test-results/
+playwright-report/

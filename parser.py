@@ -32,14 +32,21 @@ def parse_decklist(filepath):
                     })
                 continue
 
+            # Tags are the last [...] group on the line; matching them
+            # non-greedily keeps a duplicated printing suffix out of the tags.
             m = re.match(
-                r'^(\d+)x\s+(.+?)\s+\((\w+)\)\s+(\S+)\s*(\*F\*)?\s*\[(.*)\]$',
+                r'^(\d+)x\s+(.+?)\s+\((\w+)\)\s+(\S+)\s*(\*F\*)?\s*\[([^\]]*)\]$',
                 line
             )
             if not m:
                 print(f"WARN: Could not parse: {line}", file=sys.stderr)
                 continue
             count, name, card_set, number, foil, tags_raw = m.groups()
+            if '[' in name or ']' in name:
+                # e.g. two printings merged onto one line — the name would be
+                # garbage and never resolve on Scryfall.
+                print(f"WARN: Malformed line (duplicate printing?): {line}", file=sys.stderr)
+                continue
             tags = [t.strip() for t in tags_raw.split(',') if t.strip()]
             cards.append({
                 'name': name,

@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decks</title>
+<style>
+  :root {
+    --bg: #16181d;
+    --panel: #1e2128;
+    --line: #2c313b;
+    --text: #e6e8ec;
+    --muted: #939aa8;
+    --accent: #8ab4f8;
+    --ok: #7fbf8f;
+    --warn: #d8a657;
+  }
+  * { box-sizing: border-box; }
+  /* display:grid on .columns/.stats would otherwise beat the UA [hidden] rule. */
+  [hidden] { display: none !important; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  header {
+    position: sticky; top: 0; z-index: 5;
+    padding: 8px 12px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+  }
+  .row {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .row + .row { margin-top: 8px; }
+  h1 { font-size: 15px; margin: 0; font-weight: 600; }
+  select, label, button { font: inherit; }
+  select {
+    background: var(--bg); color: var(--text); max-width: 62vw;
+    border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px;
+    /* iOS ignores padding on a native select, so set the height directly;
+       16px keeps Safari from zooming when the control is focused. */
+    min-height: 36px; font-size: 16px; appearance: none; -webkit-appearance: none;
+  }
+  .meta { color: var(--muted); }
+  /* Comfortable tap targets on a phone: the whole label is the target. */
+  label {
+    color: var(--muted); display: inline-flex; align-items: center; gap: 6px;
+    min-height: 34px; padding: 0 2px;
+  }
+  input[type=checkbox] { width: 22px; height: 22px; }
+
+  .tabs { display: flex; gap: 6px; }
+  .tabs button {
+    background: transparent; color: var(--muted); cursor: pointer;
+    border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px;
+  }
+  .tabs button[aria-selected=true] {
+    background: var(--bg); color: var(--text); border-color: var(--accent);
+  }
+
+  main { padding: 12px; }
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    align-items: start;
+  }
+  @media (min-width: 700px) {
+    .columns { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 20px; }
+  }
+  .cat h2 {
+    font-size: 13px; font-weight: 600; margin: 0 0 8px;
+    padding-bottom: 5px; border-bottom: 1px solid var(--line);
+  }
+  .cat h2 span { color: var(--muted); font-weight: 400; }
+
+  /* Stacked cards: a card is ~140% as tall as it is wide, so overlapping by
+     112% leaves each card's name/mana line visible, like Archidekt. */
+  .stack { position: relative; }
+  .stack:not(.stacked) { display: grid; gap: 10px; }
+  .card { position: relative; display: block; cursor: pointer; }
+  .card img {
+    display: block; width: 100%; border-radius: 4.75% / 3.5%;
+    background: #0d0f12;
+    /* Reserve the card's shape before the lazy image arrives, so scrolling
+       doesn't reflow the stack under the reader. */
+    aspect-ratio: 488 / 680;
+  }
+  .stack.stacked .card { margin-bottom: -112%; }
+  .stack.stacked .card:last-child { margin-bottom: 0; }
+  /* Tapping a card opens it in place: it keeps its position and the rest of the
+     stack slides down below it. Tapping it again closes the stack back up. */
+  .stack.stacked .card.open { margin-bottom: 0; }
+  .card.open { z-index: 2; }
+  /* Only the strip you can actually see is tappable: in a stack the next card
+     covers the rest, so a tap on a covered area must belong to the card drawn
+     on top of it, not the one underneath. An open card is tappable all over. */
+  .card { pointer-events: none; }
+  .hit {
+    position: absolute; inset: 0; pointer-events: auto;
+    background: transparent; border: 0; padding: 0; cursor: pointer;
+  }
+  .hit:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .stack.stacked .hit { bottom: 80%; }
+  .stack.stacked .card:last-child .hit,
+  .stack.stacked .card.open .hit { bottom: 0; }
+  .card:has(.hit:hover) { z-index: 3; }
+
+  /* Details (printing, price, otags) for the card that's open. */
+  .info {
+    position: absolute; top: 4%; right: 5%; pointer-events: auto;
+    display: flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; border-radius: 50%; border: 0; cursor: pointer;
+    background: rgba(0,0,0,.82); color: #fff; font-size: 15px; font-weight: 700;
+    /* Hidden but focusable order-wise only when its card is open. */
+    visibility: hidden;
+  }
+  .card.open .info { visibility: visible; }
+  .card.open .qty { right: calc(5% + 36px); }
+  .card .qty {
+    position: absolute; top: 4%; right: 5%;
+    background: rgba(0,0,0,.82); color: #fff;
+    border-radius: 10px; padding: 1px 7px; font-size: 12px; font-weight: 600;
+  }
+  /* An edge stripe rather than a badge: a badge sat on top of the card name,
+     which is the one line you can read in a stack. */
+  .card .buy {
+    position: absolute; top: 3%; bottom: 3%; left: 0; width: 5px;
+    border-radius: 3px; background: var(--warn);
+  }
+  .missing {
+    aspect-ratio: 488 / 680; display: flex; align-items: center;
+    justify-content: center; text-align: center; padding: 8px;
+    border: 1px solid var(--line); border-radius: 8px; color: var(--muted);
+  }
+  #empty { color: var(--muted); }
+
+  /* Tapping a card opens it in an overlay: touch screens have no hover, and an
+     overlay changes no layout, so the stack keeps its scroll position. */
+  #preview {
+    position: fixed; inset: 0; z-index: 20;
+    display: none; align-items: center; justify-content: center;
+    padding: 16px; background: rgba(8,9,12,.86);
+  }
+  #preview.open { display: flex; }
+  #preview .sheet {
+    max-width: 380px; width: 100%; max-height: 100%; overflow-y: auto;
+  }
+  #preview img, #preview .missing { width: 100%; border-radius: 12px; }
+  #preview .text {
+    margin-top: 10px; padding: 10px 12px; border-radius: 10px;
+    background: var(--panel); white-space: pre-wrap;
+    color: var(--muted); font-size: 13px;
+  }
+  #preview .text b { color: var(--text); font-size: 14px; }
+  #preview .tags { color: var(--accent); font-size: 12px; }
+
+  /* Stats tab */
+  .stats {
+    display: grid; gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: start;
+  }
+  .stats section {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 10px; padding: 12px 14px;
+  }
+  .stats h3 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--muted); margin: 0 0 10px; font-weight: 600;
+  }
+  .stat-row {
+    display: grid; grid-template-columns: 1fr auto; gap: 8px;
+    align-items: center; padding: 3px 0;
+  }
+  .stat-row .label { display: flex; align-items: center; gap: 6px; }
+  .stat-row .num { font-variant-numeric: tabular-nums; }
+  .stat-row .num i { color: var(--muted); font-style: normal; font-size: 12px; }
+  .bar {
+    grid-column: 1 / -1; height: 4px; border-radius: 2px;
+    background: var(--line); overflow: hidden;
+  }
+  .bar > span { display: block; height: 100%; background: var(--accent); }
+  .bar.ok > span { background: var(--ok); }
+  .bar.warn > span { background: var(--warn); }
+  .pip {
+    width: 17px; height: 17px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 700; color: #1a1a1a;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.35);
+  }
+  .pip.W { background: #f8f2dc; }
+  .pip.U { background: #9fd4ee; }
+  .pip.B { background: #b6aca8; }
+  .pip.R { background: #f0a08a; }
+  .pip.G { background: #98ccac; }
+  .pip.C { background: #ccc2bf; }
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <h1>Decks</h1>
+    <select id="deck"></select>
+    <span class="meta" id="count"></span>
+  </div>
+  <div class="row">
+    <div class="tabs" role="tablist">
+      <button id="tab-cards" role="tab" aria-selected="true">Cards</button>
+      <button id="tab-stats" role="tab" aria-selected="false">Stats</button>
+    </div>
+    <select id="group" title="group cards by" aria-label="group cards by">
+      <option value="type">by type</option>
+      <option value="category">by category</option>
+    </select>
+    <label><input type="checkbox" id="stacked" checked> stack</label>
+    <label><input type="checkbox" id="drafts"> drafts</label>
+  </div>
+</header>
+
+<main>
+  <div class="columns" id="board"></div>
+  <div class="stats" id="stats" hidden></div>
+  <p id="empty"></p>
+</main>
+
+<div id="preview" role="dialog" aria-modal="true" aria-label="card details">
+  <div class="sheet"></div>
+</div>
+
+<script>
+const board = document.getElementById('board');
+const statsEl = document.getElementById('stats');
+const deckSel = document.getElementById('deck');
+const countEl = document.getElementById('count');
+const emptyEl = document.getElementById('empty');
+const stackedEl = document.getElementById('stacked');
+const draftsEl = document.getElementById('drafts');
+const groupEl = document.getElementById('group');
+const preview = document.getElementById('preview');
+const tabs = {cards: document.getElementById('tab-cards'),
+              stats: document.getElementById('tab-stats')};
+let index = [];
+let TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
+                  'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
+const COLORS = ['W', 'U', 'B', 'R', 'G', 'C'];
+
+// --- grouping ---
+
+function groupKey(card, mode) {
+  if (card.category === 'Commander') return 'Commander';
+  return mode === 'type' ? (card.type || 'Other') : card.category;
+}
+
+function sortedGroups(cards, mode) {
+  const groups = new Map();
+  for (const c of cards) {
+    const key = groupKey(c, mode);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(c);
+  }
+  for (const list of groups.values()) {
+    list.sort((a, b) => (a.cmc ?? 0) - (b.cmc ?? 0) || a.name.localeCompare(b.name));
+  }
+  const total = list => list.reduce((n, c) => n + c.count, 0);
+  // Commander first, Land last; type mode keeps the conventional type order,
+  // category mode falls back to biggest group first.
+  const rank = key => key === 'Commander' ? -1 : key === 'Land' ? 1 : 0;
+  const typeIdx = key => (TYPE_ORDER.indexOf(key) + 1) || TYPE_ORDER.length;
+  return [...groups.entries()].sort((a, b) => {
+    if (rank(a[0]) !== rank(b[0])) return rank(a[0]) - rank(b[0]);
+    if (mode === 'type') return typeIdx(a[0]) - typeIdx(b[0]);
+    return total(b[1]) - total(a[1]) || a[0].localeCompare(b[0]);
+  });
+}
+
+// --- cards ---
+
+function imageOrPlaceholder(card, src) {
+  const placeholder = () => {
+    const d = document.createElement('div');
+    d.className = 'missing';
+    d.textContent = card.name;
+    return d;
+  };
+  if (!src) return placeholder();
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = card.name;
+  img.loading = 'lazy';
+  // Scryfall image URLs are versioned and can rot.
+  img.onerror = () => img.replaceWith(placeholder());
+  return img;
+}
+
+function cardEl(card) {
+  const el = document.createElement('div');
+  el.className = 'card';
+  el.append(imageOrPlaceholder(card, card.image));
+  // A button, so the card is reachable by keyboard as well as by tap.
+  const hit = document.createElement('button');
+  hit.type = 'button';
+  hit.className = 'hit';
+  hit.title = card.buy ? `${card.name} — on the buy list` : card.name;
+  hit.setAttribute('aria-expanded', 'false');
+  hit.onclick = () => toggleOpen(el, hit);
+  el.append(hit);
+  if (card.count > 1) {
+    const q = document.createElement('span');
+    q.className = 'qty';
+    q.textContent = card.count + '×';
+    el.append(q);
+  }
+  if (card.buy) {
+    const b = document.createElement('span');
+    b.className = 'buy';
+    b.title = 'on the buy list';  // stripe only: text here would cover the name
+    el.append(b);
+  }
+  const info = document.createElement('button');
+  info.type = 'button';
+  info.className = 'info';
+  info.textContent = 'i';
+  info.title = `${card.name} details`;
+  info.tabIndex = -1;  // only reachable once its card is open
+  info.onclick = e => { e.stopPropagation(); openPreview(card, info); };
+  el.append(info);
+  return el;
+}
+
+// Each card toggles on its own: opening one only pushes the cards after it down,
+// so the tapped card — and everything above it — never moves. Auto-closing a
+// card higher up would shift the page under the reader's finger instead.
+function toggleOpen(el, hit) {
+  const open = el.classList.toggle('open');
+  hit.setAttribute('aria-expanded', String(open));
+  el.querySelector('.info').tabIndex = open ? 0 : -1;
+}
+
+let previewOpener = null;
+
+function openPreview(card, opener) {
+  const sheet = preview.firstElementChild;
+  sheet.innerHTML = '';
+  sheet.append(imageOrPlaceholder(card, card.image));
+
+  // The image already shows name/type/oracle, so the panel below adds only what
+  // it can't: printing, price, otags — and the rules text when there's no image.
+  const text = document.createElement('div');
+  text.className = 'text';
+  const title = document.createElement('b');
+  title.textContent = `${card.name} ${card.mana_cost || ''}`.trim();
+  text.append(title);
+  const facts = [
+    card.count > 1 ? `${card.count} copies` : null,
+    card.set ? `${card.set.toUpperCase()} ${card.number || ''}`.trim() : null,
+    card.foil ? 'foil' : null,
+    card.price_eur ? `€${card.price_eur}` : null,
+    card.buy ? 'on the buy list' : null,
+  ].filter(Boolean);
+  if (facts.length) text.append('\n' + facts.join(' · '));
+  if (!card.image) {
+    text.append('\n' + [card.type_line, card.oracle_text].filter(Boolean).join('\n'));
+  }
+  if (card.otags?.length) {
+    const tags = document.createElement('div');
+    tags.className = 'tags';
+    tags.textContent = card.otags.join(' · ');
+    text.append('\n', tags);
+  }
+  sheet.append(text);
+  preview.classList.add('open');
+  previewOpener = opener || null;
+  sheet.tabIndex = -1;
+  sheet.focus();
+}
+
+function closePreview() {
+  if (!preview.classList.contains('open')) return;
+  preview.classList.remove('open');
+  if (previewOpener) previewOpener.focus();  // back to the button that opened it
+  previewOpener = null;
+}
+// Any tap on the overlay closes it, including on the card itself — tapping
+// twice should never leave a card stuck open.
+preview.onclick = closePreview;
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closePreview();
+});
+
+function renderCards(deck) {
+  board.innerHTML = '';
+  const cards = deck.commander ? [deck.commander, ...deck.cards] : deck.cards;
+  for (const [cat, list] of sortedGroups(cards, groupEl.value)) {
+    const col = document.createElement('section');
+    col.className = 'cat';
+    const h = document.createElement('h2');
+    h.textContent = cat + ' ';
+    const n = document.createElement('span');
+    n.textContent = `(${list.reduce((sum, c) => sum + c.count, 0)})`;
+    h.append(n);
+    const stack = document.createElement('div');
+    stack.className = 'stack' + (stackedEl.checked ? ' stacked' : '');
+    // A card with quantity > 1 shows once with an "N×" badge, like Archidekt.
+    list.forEach(c => stack.append(cardEl(c)));
+    col.append(h, stack);
+    board.append(col);
+  }
+}
+
+// --- stats ---
+
+function statRow(label, value, {pip, pct, bar, barClass} = {}) {
+  const row = document.createElement('div');
+  row.className = 'stat-row';
+  const l = document.createElement('div');
+  l.className = 'label';
+  if (pip) {
+    const p = document.createElement('span');
+    p.className = 'pip ' + pip;
+    p.textContent = pip;
+    l.append(p);
+  }
+  l.append(document.createTextNode(label));
+  const num = document.createElement('div');
+  num.className = 'num';
+  num.textContent = value;
+  if (pct !== undefined) {
+    const i = document.createElement('i');
+    i.textContent = ` ${pct}%`;
+    num.append(i);
+  }
+  row.append(l, num);
+  if (bar !== undefined) {
+    const b = document.createElement('div');
+    b.className = 'bar' + (barClass ? ' ' + barClass : '');
+    const fill = document.createElement('span');
+    fill.style.width = Math.min(100, Math.round(bar * 100)) + '%';
+    b.append(fill);
+    row.append(b);
+  }
+  return row;
+}
+
+function statSection(title, rows) {
+  const s = document.createElement('section');
+  const h = document.createElement('h3');
+  h.textContent = title;
+  s.append(h, ...rows);
+  return s;
+}
+
+function manaSection(title, counts, label) {
+  const total = COLORS.reduce((n, c) => n + (counts[c] || 0), 0);
+  const rows = COLORS.filter(c => counts[c]).map(c => statRow(
+    c, counts[c], {pip: c, pct: total ? Math.round(counts[c] / total * 100) : 0,
+                   bar: total ? counts[c] / total : 0}));
+  return statSection(`${title} — ${total} ${label}`, rows.length ? rows
+    : [statRow('none', 0)]);
+}
+
+function renderStats(deck) {
+  statsEl.innerHTML = '';
+  const s = deck.stats || {};
+
+  statsEl.append(manaSection('Mana symbols', deck.mana_symbols || {}, 'pips'));
+  statsEl.append(manaSection('Mana production', deck.mana_production || {}, 'sources'));
+
+  // Command Zone template (see command_zone_template.md): under target is the
+  // thing worth seeing, so colour the bar by that.
+  statsEl.append(statSection('Template check', (s.template || []).map(t => statRow(
+    t.label, `${t.count}/${t.target}`,
+    {bar: t.count / t.target, barClass: t.count >= t.target ? 'ok' : 'warn'}))));
+
+  const otags = Object.entries(s.otags || {}).sort((a, b) => b[1] - a[1]);
+  const otagMax = otags.length ? otags[0][1] : 1;
+  statsEl.append(statSection('Scryfall otags', otags.length
+    ? otags.map(([tag, n]) => statRow(tag, n, {bar: n / otagMax}))
+    : [statRow('no otag data', 0)]));
+
+  const types = Object.entries(s.types || {});
+  const typeMax = Math.max(1, ...types.map(([, n]) => n));
+  statsEl.append(statSection('Card types', types.map(([t, n]) =>
+    statRow(t, n, {bar: n / typeMax}))));
+
+  const curve = Object.entries(s.curve || {});
+  const curveMax = Math.max(1, ...curve.map(([, n]) => n));
+  statsEl.append(statSection(`Mana curve — avg ${s.avg_cmc ?? '?'} CMC`,
+    curve.map(([cmc, n]) => statRow(`${cmc} CMC`, n, {bar: n / curveMax}))));
+}
+
+// --- tabs + loading ---
+
+let current = null;
+let loadSeq = 0;
+let tab = 'cards';
+
+// What each pane currently holds, so switching tabs doesn't rebuild the board
+// (which would lose the scroll position and every open card).
+let rendered = {cards: null, stats: null};
+
+function showTab(name) {
+  tab = name;
+  tabs.cards.setAttribute('aria-selected', String(name === 'cards'));
+  tabs.stats.setAttribute('aria-selected', String(name === 'stats'));
+  board.hidden = name !== 'cards';
+  statsEl.hidden = name !== 'stats';
+  if (current) render(current);
+}
+
+function render(deck, force = false) {
+  countEl.textContent = `${deck.total} cards`;
+  const key = tab === 'cards'
+    ? `${deck.slug}|${groupEl.value}|${stackedEl.checked}`
+    : deck.slug;
+  if (!force && rendered[tab] === key) return;
+  rendered[tab] = key;
+  if (tab === 'cards') renderCards(deck); else renderStats(deck);
+}
+
+function clearView() {
+  board.innerHTML = '';
+  statsEl.innerHTML = '';
+  countEl.textContent = '';
+  rendered = {cards: null, stats: null};
+}
+
+async function load(slug) {
+  const seq = ++loadSeq;
+  emptyEl.textContent = '';
+  location.hash = slug;
+  let deck;
+  try {
+    const res = await fetch(`data/${slug}.json`);
+    if (!res.ok) throw new Error(res.status);
+    deck = await res.json();
+  } catch {
+    if (seq !== loadSeq) return;
+    current = null;  // don't let a toggle re-render the previous deck
+    clearView();
+    emptyEl.textContent = `No data for ${slug} — run build_site.py.`;
+    return;
+  }
+  if (seq !== loadSeq) return;  // a newer load already won
+  current = deck;
+  render(current);
+}
+
+function fillDecks() {
+  const visible = index.filter(d => draftsEl.checked || !d.draft);
+  deckSel.innerHTML = '';
+  for (const d of visible) {
+    const o = document.createElement('option');
+    o.value = d.slug;
+    o.textContent = `${d.name} (${d.total})${d.draft ? ' — draft' : ''}`;
+    deckSel.append(o);
+  }
+  return visible;
+}
+
+(async function init() {
+  let meta;
+  try {
+    const res = await fetch('data/index.json');
+    if (!res.ok) throw new Error(res.status);
+    meta = await res.json();
+  } catch {
+    emptyEl.textContent = 'No deck index — run build_site.py.';
+    return;
+  }
+  index = meta.decks;
+  if (meta.type_order) TYPE_ORDER = meta.type_order;  // single source: build_site.py
+
+  const wanted = decodeURIComponent(location.hash.slice(1));
+  if (wanted && index.find(d => d.slug === wanted && d.draft)) draftsEl.checked = true;
+  let visible = fillDecks();
+  const start = visible.find(d => d.slug === wanted) || visible[0];
+  if (!start) { emptyEl.textContent = 'No decks built yet.'; return; }
+  deckSel.value = start.slug;
+  showTab('cards');
+  await load(start.slug);
+
+  deckSel.onchange = () => load(deckSel.value);
+  tabs.cards.onclick = () => showTab('cards');
+  tabs.stats.onclick = () => showTab('stats');
+  // Layout toggles only need a re-render, not a refetch.
+  stackedEl.onchange = groupEl.onchange = () => current && render(current);
+  draftsEl.onchange = () => {
+    const selected = deckSel.value;
+    visible = fillDecks();
+    if (!visible.length) {
+      current = null;
+      clearView();
+      emptyEl.textContent = 'No built decks — tick "drafts".';
+      return;
+    }
+    deckSel.value = visible.find(d => d.slug === selected) ? selected : visible[0].slug;
+    load(deckSel.value);
+  };
+  window.onhashchange = () => {
+    const slug = decodeURIComponent(location.hash.slice(1));
+    if (slug && slug !== deckSel.value && index.find(d => d.slug === slug)) {
+      deckSel.value = slug;
+      load(slug);
+    }
+  };
+})();
+</script>
+</body>
+</html>
