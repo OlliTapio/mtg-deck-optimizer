@@ -140,6 +140,30 @@ test.describe('stacked cards', () => {
     expect(await topOf(card)).toBeCloseTo(cardTop, 0);
   });
 
+  // Cards are drawn in document order and nothing may lift one out of it: a
+  // tap leaves :hover behind on a touch screen, so a rule raising the card
+  // being tapped outlives the tap, and the closed card goes on covering the
+  // slivers of the cards after it — which reads as "closing did nothing".
+  // Opening makes room for the whole card, so no card ever needs raising.
+  test('no card is painted out of stack order, open or closed', async ({ page }) => {
+    const zIndexes = () => cards(page).evaluateAll(
+      els => els.map(el => getComputedStyle(el).zIndex));
+    const card = cards(page).nth(4);
+    await card.locator('.hit').scrollIntoViewIfNeeded();
+
+    await card.locator('.hit').click();
+    await expect(card).toHaveClass(/open/);
+    expect(new Set(await zIndexes())).toEqual(new Set(['auto']));
+
+    await card.locator('.hit').click();
+    await expect(card).not.toHaveClass(/open/);
+    expect(new Set(await zIndexes())).toEqual(new Set(['auto']));
+
+    // And the card it covered before opening is back to its own sliver.
+    expect(await visibleHeight(cards(page).nth(5)))
+      .toBe(await visibleHeight(cards(page).nth(6)));
+  });
+
   test('opening a card keeps the position of the cards above it', async ({ page }) => {
     const above = cards(page).nth(2);
     const below = cards(page).nth(6);
@@ -254,8 +278,10 @@ test.describe('stats tab', () => {
     await page.locator('#tab-stats').click();
 
     const titles = (await page.locator('.stats h3').allInnerTexts()).join(' ').toLowerCase();
-    expect(titles).toContain('mana symbols');
-    expect(titles).toContain('mana production');
+    expect(titles).toContain('mana');
+    const mana = (await page.locator('.mana-line .head b').allInnerTexts()).join(' ').toLowerCase();
+    expect(mana).toContain('mana symbols');
+    expect(mana).toContain('mana production');
     expect(titles).toContain('template check');
     expect(titles).toContain('otags');
     expect(titles).toContain('card types');
@@ -271,9 +297,35 @@ test.describe('stats tab', () => {
     await expect(page.locator('#stats')).toBeHidden();
   });
 
+  test('mana is one stacked bar per question, split by colour', async ({ page }) => {
+    const data = await deckData(page);
+    await page.locator('#tab-stats').click();
+
+    const lines = page.locator('.mana-line');
+    await expect(lines).toHaveCount(2);
+    for (const [i, counts] of [data.mana_symbols, data.mana_production].entries()) {
+      const colours = Object.entries(counts).filter(([, n]) => n);
+      const total = colours.reduce((n, [, v]) => n + v, 0);
+      const line = lines.nth(i);
+      // One bar with one segment per colour in the deck, widths summing to 100%.
+      await expect(line.locator('.mana-bar')).toHaveCount(1);
+      const widths = await line.locator('.mana-bar > span')
+        .evaluateAll(els => els.map(e => parseFloat(e.style.width)));
+      expect(widths.length).toBe(colours.length);
+      expect(widths.reduce((a, b) => a + b, 0)).toBeCloseTo(100, 2);
+      await expect(line.locator('.head')).toContainText(String(total));
+      for (const [c, n] of colours) {
+        await expect(line.locator('.legend > span', { hasText: String(n) }).first())
+          .toBeVisible();
+        await expect(line.locator(`.mana-bar > span.${c}`)).toHaveCount(1);
+      }
+    }
+  });
+
   test('template check matches the deck data', async ({ page }) => {
-    const slug = await page.evaluate(() => location.hash.slice(1));
-    const data = await (await fetch(`http://127.0.0.1:8000/data/${slug}.json`)).json();
+    // Via the page's own origin: a hard-coded port picks up whatever server
+    // happens to be running there, which is a different bundle or no JSON at all.
+    const data = await deckData(page);
     await page.locator('#tab-stats').click();
 
     const section = page.locator('.stats section', { hasText: 'Template check' });
