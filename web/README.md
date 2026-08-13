@@ -24,16 +24,18 @@ only loads card images from Scryfall's CDN. Stats (pips, curve, template check)
 are computed in `build_site.py` via `deck_analyzer.py`, so the site and the CLI
 analysis always agree.
 
-## UX check
+## Tests
 
-`web/ux_check.mjs` drives the site with Playwright on an iPhone 11 viewport plus
-a desktop viewport, and fails if it finds a layout, tap-target or interaction
-problem. Screenshots go to `.playwright/` (gitignored).
+`web/tests/site.spec.mjs` drives the site with Playwright on an iPhone 11
+viewport (WebKit — the stacked-card interaction is built for a phone) and on a
+desktop viewport: grouping and ordering, open/close in a stack, tap targets,
+the details overlay, the Stats tab, the missing-data path. It serves
+`web/public` itself, and writes screenshots to `.playwright/` (gitignored).
 
 ```bash
-npm install                 # first time; then: npx playwright install chromium
-npm run preview &           # serves web/public on :8000
-npm run ux
+npm install                       # first time
+npx playwright install webkit chromium
+npm test                          # or: npm run test:ui
 ```
 
 ## Update after a decklist change

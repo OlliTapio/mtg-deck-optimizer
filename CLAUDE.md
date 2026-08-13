@@ -43,7 +43,7 @@ python3 codex_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt decks/<c>/de
 # Rebuild the deck site data bundle after any decklist change (see web/README.md)
 python3 build_site.py [<deck_folder> ...]
 npm run preview   # serve web/public on http://127.0.0.1:8000
-npm run ux        # Playwright UX check (iPhone 11 + desktop) against :8000
+npm test          # Playwright site tests (iPhone 11 WebKit + desktop)
 npm run publish   # rebuild data + wrangler deploy
 
 # Check prices for entire deck or specific cards

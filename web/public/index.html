@@ -40,6 +40,9 @@
   select {
     background: var(--bg); color: var(--text); max-width: 62vw;
     border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px;
+    /* iOS ignores padding on a native select, so set the height directly;
+       16px keeps Safari from zooming when the control is focused. */
+    min-height: 36px; font-size: 16px; appearance: none; -webkit-appearance: none;
   }
   .meta { color: var(--muted); }
   /* Comfortable tap targets on a phone: the whole label is the target. */
@@ -82,17 +85,35 @@
   .card img {
     display: block; width: 100%; border-radius: 4.75% / 3.5%;
     background: #0d0f12;
+    /* Reserve the card's shape before the lazy image arrives, so scrolling
+       doesn't reflow the stack under the reader. */
+    aspect-ratio: 488 / 680;
   }
   .stack.stacked .card { margin-bottom: -112%; }
   .stack.stacked .card:last-child { margin-bottom: 0; }
+  /* Tapping a card opens it in place: it keeps its position and the rest of the
+     stack slides down below it. Tapping it again closes the stack back up. */
+  .stack.stacked .card.open { margin-bottom: 0; }
+  .card.open { z-index: 2; }
   /* Only the strip you can actually see is tappable: in a stack the next card
      covers the rest, so a tap on a covered area must belong to the card drawn
-     on top of it, not the one underneath. */
+     on top of it, not the one underneath. An open card is tappable all over. */
   .card { pointer-events: none; }
   .hit { position: absolute; inset: 0; pointer-events: auto; }
   .stack.stacked .hit { bottom: 80%; }
-  .stack.stacked .card:last-child .hit { bottom: 0; }
+  .stack.stacked .card:last-child .hit,
+  .stack.stacked .card.open .hit { bottom: 0; }
   .card:has(.hit:hover) { z-index: 3; }
+
+  /* Details (printing, price, otags) for the card that's open. */
+  .info {
+    position: absolute; top: 4%; right: 5%; pointer-events: auto;
+    display: none; align-items: center; justify-content: center;
+    width: 30px; height: 30px; border-radius: 50%;
+    background: rgba(0,0,0,.82); color: #fff; font-size: 15px; font-weight: 700;
+  }
+  .card.open .info { display: flex; }
+  .card.open .qty { right: calc(5% + 36px); }
   .card .qty {
     position: absolute; top: 4%; right: 5%;
     background: rgba(0,0,0,.82); color: #fff;
@@ -274,7 +295,7 @@ function cardEl(card) {
   const hit = document.createElement('div');
   hit.className = 'hit';
   hit.title = card.name;
-  hit.onclick = () => openPreview(card);
+  hit.onclick = () => toggleOpen(el);
   el.append(hit);
   if (card.count > 1) {
     const q = document.createElement('span');
@@ -288,7 +309,20 @@ function cardEl(card) {
     b.title = 'on the buy list';  // stripe only: text here would cover the name
     el.append(b);
   }
+  const info = document.createElement('button');
+  info.className = 'info';
+  info.textContent = 'i';
+  info.title = 'card details';
+  info.onclick = e => { e.stopPropagation(); openPreview(card); };
+  el.append(info);
   return el;
+}
+
+// Each card toggles on its own: opening one only pushes the cards after it down,
+// so the tapped card — and everything above it — never moves. Auto-closing a
+// card higher up would shift the page under the reader's finger instead.
+function toggleOpen(el) {
+  el.classList.toggle('open');
 }
 
 function openPreview(card) {

@@ -8,10 +8,11 @@
     "deploy": "wrangler deploy",
     "publish": "npm run build && npm run deploy",
     "preview": "python3 -m http.server --directory web/public 8000",
-    "ux": "node web/ux_check.mjs"
+    "test": "playwright test",
+    "test:ui": "playwright test --ui"
   },
   "devDependencies": {
-    "playwright": "^1.62.1",
+    "@playwright/test": "^1.62.1",
     "wrangler": "^4.103.0"
   }
 }
