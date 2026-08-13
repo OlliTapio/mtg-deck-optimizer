@@ -1,4 +1,16 @@
 {
+ "type_order": [
+  "Commander",
+  "Creature",
+  "Planeswalker",
+  "Instant",
+  "Sorcery",
+  "Artifact",
+  "Enchantment",
+  "Battle",
+  "Other",
+  "Land"
+ ],
  "decks": [
   {
    "slug": "ashling",

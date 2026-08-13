@@ -44,5 +44,6 @@ push to `main` auto-deploys and no API token is needed anywhere. Because the
 data bundle is committed, the build command can stay empty — Cloudflare just
 uploads `web/public`.
 
-To put it on a custom domain, uncomment the `[[routes]]` block in
-`wrangler.toml` (the zone must live in the same Cloudflare account) and deploy.
+The custom domain `decks.otl.fi` is already declared in `wrangler.toml`; a
+deploy from another Cloudflare account would need that `[[routes]]` block
+changed or removed first.

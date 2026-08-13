@@ -30,7 +30,7 @@
 1x Evolving Wilds (otc) 292 [Land]
 1x Felidar Retreat (cmm) 821 [Landfall,Tokens]
 5x Forest
-1x Gruul Turf (cmd) 280 [Land] (otj) 286 [Land]
+1x Gruul Turf (otj) 286 [Land]
 1x Garruk's Uprising (blc) 219 [Draw]
 1x Harrow (otc) 194 [Ramp]
 1x Hashep Oasis (otc) 299 [Land]

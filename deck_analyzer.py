@@ -90,17 +90,21 @@ def classify_type(type_line):
 
 # --- Mana pip counting ---
 
-PIP_PATTERN = re.compile(r'\{([WUBRGC])\}')
-HYBRID_PATTERN = re.compile(r'\{([WUBRG])/([WUBRG])\}')
+SYMBOL_PATTERN = re.compile(r'\{([^}]+)\}')
+PIP_COLORS = ('W', 'U', 'B', 'R', 'G', 'C')
 
 
 def count_pips(mana_cost_str):
+    """Count coloured pips, counting every colour half of a compound symbol.
+
+    {W/U} scores W and U, {2/B} and {B/P} score B, {G/W/P} scores G and W;
+    generic ({3}), {X} and snow ({S}) score nothing.
+    """
     pips = Counter()
-    for m in HYBRID_PATTERN.finditer(mana_cost_str):
-        pips[m.group(1)] += 1
-        pips[m.group(2)] += 1
-    for m in PIP_PATTERN.finditer(mana_cost_str):
-        pips[m.group(1)] += 1
+    for symbol in SYMBOL_PATTERN.findall(mana_cost_str):
+        for part in symbol.split('/'):
+            if part in PIP_COLORS:
+                pips[part] += 1
     return pips
 
 

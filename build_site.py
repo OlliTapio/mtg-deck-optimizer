@@ -1,9 +1,12 @@
 """Build the static data bundle for the deck site (web/public/data/).
 
 Reads every decks/*/decklist.txt (source of truth) and bakes the Scryfall bits
-the browser needs — image URL, type line, mana cost, cmc, price — into JSON.
-cache/ is gitignored, so this runs locally and the generated JSON is committed,
-the same way property-bot commits public/listings.json.
+the browser needs — image URL, type line, mana cost, pip/production counts —
+into JSON. cache/ is gitignored, so this runs locally and the generated JSON is
+committed, the same way property-bot commits public/listings.json.
+
+Scryfall field access and pip counting come from deck_analyzer so the site and
+the CLI analysis can't drift apart.
 
 Usage:
     python3 build_site.py                 # all decks
@@ -12,16 +15,24 @@ Usage:
 import json
 import os
 import sys
+from collections import Counter
 
 from card_cache import get_card
+from deck_analyzer import (
+    MAIN_TYPES, count_pips, get_color_identity, get_cmc, get_mana_cost,
+    get_oracle_text, get_price_eur, get_produced_mana, get_type_line,
+)
 from parser import parse_decklist
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DECKS_DIR = os.path.join(ROOT, "decks")
 OUT_DIR = os.path.join(ROOT, "web", "public", "data")
 
-TYPE_TAGS = {"Creature", "Sorcery", "Instant", "Enchantment", "Artifact", "Planeswalker", "Battle"}
-TYPE_ORDER = ["Creature", "Planeswalker", "Instant", "Sorcery", "Artifact", "Enchantment", "Battle", "Land"]
+TYPE_TAGS = set(MAIN_TYPES)
+# Column order in the site's type grouping.
+TYPE_ORDER = ["Commander", "Creature", "Planeswalker", "Instant", "Sorcery",
+              "Artifact", "Enchantment", "Battle", "Other", "Land"]
+COLORS = ["W", "U", "B", "R", "G", "C"]
 
 
 def image_url(sf, size="normal"):
@@ -37,26 +48,36 @@ def image_url(sf, size="normal"):
 
 
 def primary_type(sf):
-    """The main card type, used as a fallback category for untagged cards."""
-    line = (sf or {}).get("type_line", "")
-    if "//" in line:
-        line = line.split("//")[0]
+    """The card's main type, used for the site's type grouping.
+
+    Land wins over other types so that a land creature files under Land; the
+    front face decides for split/modal cards, matching the cmc we report.
+    """
+    line = get_type_line(sf).split("//")[0]
+    if "Land" in line:
+        return "Land"
     for t in TYPE_ORDER:
-        if t in line:
+        if t in MAIN_TYPES and t in line:
             return t
     return "Other"
 
 
 def category_of(card, sf):
-    """Archidekt exports the primary category first in the [..] bracket list."""
-    tags = card.get("clean_tags") or []
-    if tags:
-        # Prefer a functional tag over a bare type tag when both are present.
-        for tag in tags:
-            if tag not in TYPE_TAGS:
-                return tag
-        return tags[0]
+    """The card's Archidekt category: its functional tag, else its type.
+
+    The [...] tags in decklist.txt are Archidekt categories; a functional tag
+    (Ramp, Removal, ...) is preferred over a bare type tag regardless of the
+    order they were exported in. Multiple functional tags: first one wins.
+    """
+    for tag in card.get("clean_tags") or []:
+        if tag not in TYPE_TAGS:
+            return tag
     return primary_type(sf)
+
+
+def front_face_cost(mana_cost):
+    """Only the front face's cost counts toward pips, like the reported cmc."""
+    return (mana_cost or "").split(" // ")[0]
 
 
 def is_draft(slug):
@@ -72,46 +93,73 @@ def build_card(card, sf):
         "count": card["count"],
         "category": category_of(card, sf),
         "type": primary_type(sf),
-        "tags": card.get("clean_tags") or [],
         "set": card.get("set") or (sf or {}).get("set"),
         "number": card.get("number"),
         "foil": card.get("foil", False),
         "buy": any(t == "Buy" for t in card.get("tags", [])),
-        "cmc": (sf or {}).get("cmc"),
-        # mana_cost drives the pip count, produced_mana the production count
-        # (the site's bottom bar, like Archidekt's).
-        "mana_cost": (sf or {}).get("mana_cost") or " // ".join(
-            f.get("mana_cost", "") for f in (sf or {}).get("card_faces", [])
-        ),
-        "produced_mana": (sf or {}).get("produced_mana") or sorted({
-            m for f in (sf or {}).get("card_faces", []) for m in f.get("produced_mana", [])
-        }),
-        "type_line": (sf or {}).get("type_line"),
-        "oracle_text": (sf or {}).get("oracle_text"),
+        "cmc": get_cmc(sf),
+        "mana_cost": get_mana_cost(sf),
+        "produced_mana": get_produced_mana(sf),
+        "type_line": get_type_line(sf),
+        "oracle_text": get_oracle_text(sf),
         "image": image_url(sf, "normal"),
-        "image_small": image_url(sf, "small"),
-        "scryfall_uri": (sf or {}).get("scryfall_uri"),
-        "price_eur": ((sf or {}).get("prices") or {}).get("eur"),
+        "price_eur": get_price_eur(sf),
     }
 
 
+def mana_stats(cards, identity):
+    """Archidekt's bottom bar: coloured pips in costs, and sources per colour.
+
+    Production is limited to the deck's colour identity (+ colourless) so that
+    any-colour dorks don't report red/white sources in a Sultai deck.
+    """
+    allowed = set(identity) | {"C"}
+    symbols = Counter()
+    production = Counter()
+    for card in cards:
+        for color, n in count_pips(front_face_cost(card["mana_cost"])).items():
+            if color in COLORS:
+                symbols[color] += n * card["count"]
+        for m in card["produced_mana"]:
+            if m in COLORS and m in allowed:
+                production[m] += card["count"]
+    return (
+        {c: symbols[c] for c in COLORS if symbols[c]},
+        {c: production[c] for c in COLORS if production[c]},
+    )
+
+
 def build_deck(slug):
-    """Build one deck's JSON payload from its decklist.txt."""
+    """Build one deck's JSON payload from its decklist.txt.
+
+    Returns (deck, missing) where missing lists cards with no Scryfall data.
+    """
     path = os.path.join(DECKS_DIR, slug, "decklist.txt")
     parsed = parse_decklist(path)
+    missing = []
+
+    def card_data(card):
+        sf = get_card(card["name"])
+        if sf is None:
+            missing.append(card["name"])
+        return sf
 
     commander = None
+    identity = []
     if parsed["commander"]:
         c = parsed["commander"]
-        commander = build_card(c, get_card(c["name"]))
+        sf = card_data(c)
+        commander = build_card(c, sf)
         commander["category"] = "Commander"
+        commander["image_small"] = image_url(sf, "small")
+        identity = get_color_identity(sf)
 
-    # parser.py emits basics as one entry per copy ("7x Forest" -> 7 rows);
-    # merge same name+category back into a single stack with a count.
+    # parser.py emits one row per copy for basics ("7x Forest") and for exports
+    # that list each copy with its own set/number; merge them into one stack.
     cards = []
     by_key = {}
     for card in parsed["deck"]:
-        built = build_card(card, get_card(card["name"]))
+        built = build_card(card, card_data(card))
         key = (built["name"], built["category"])
         if key in by_key:
             by_key[key]["count"] += built["count"]
@@ -121,6 +169,9 @@ def build_deck(slug):
 
     total = sum(c["count"] for c in cards) + (1 if commander else 0)
     name = commander["name"] if commander else slug.replace("_", " ").title()
+    symbols, production = mana_stats(
+        ([commander] if commander else []) + cards, identity
+    )
 
     return {
         "slug": slug,
@@ -128,7 +179,10 @@ def build_deck(slug):
         "commander": commander,
         "cards": cards,
         "total": total,
-    }
+        "color_identity": identity,
+        "mana_symbols": symbols,
+        "mana_production": production,
+    }, missing
 
 
 def deck_slugs():
@@ -138,39 +192,73 @@ def deck_slugs():
     )
 
 
+def index_entry(deck):
+    return {
+        "slug": deck["slug"],
+        "name": deck["name"],
+        "total": deck["total"],
+        "art": (deck["commander"] or {}).get("image_small"),
+        "draft": is_draft(deck["slug"]),
+    }
+
+
+def merge_index(entries, previous, known):
+    """Fold freshly built entries into a previous index, dropping gone decks.
+
+    draft flags are recomputed for carried-over decks so adding a DRAFT marker
+    takes effect without a full rebuild.
+    """
+    by_slug = {e["slug"]: e for e in previous if e["slug"] in known}
+    for entry in by_slug.values():
+        entry["draft"] = is_draft(entry["slug"])
+    for entry in entries:
+        by_slug[entry["slug"]] = entry
+    return [by_slug[s] for s in sorted(by_slug)]
+
+
 def main():
-    slugs = sys.argv[1:] or deck_slugs()
+    requested = sys.argv[1:]
+    known = deck_slugs()
+
+    unknown = [s for s in requested if s not in known]
+    if unknown:
+        print(f"Unknown deck(s): {', '.join(unknown)}", file=sys.stderr)
+        print(f"Known: {', '.join(known)}", file=sys.stderr)
+        return 2
+
+    slugs = requested or known
     os.makedirs(OUT_DIR, exist_ok=True)
 
-    index = []
+    entries = []
+    missing = {}
     for slug in slugs:
         print(f"Building {slug}...", file=sys.stderr)
-        deck = build_deck(slug)
+        deck, deck_missing = build_deck(slug)
+        if deck_missing:
+            missing[slug] = deck_missing
+        if deck["total"] != 100:
+            print(f"  WARNING: {slug} has {deck['total']} cards, not 100", file=sys.stderr)
         with open(os.path.join(OUT_DIR, f"{slug}.json"), "w") as f:
             json.dump(deck, f, ensure_ascii=False, separators=(",", ":"))
-        index.append({
-            "slug": slug,
-            "name": deck["name"],
-            "total": deck["total"],
-            "art": (deck["commander"] or {}).get("image_small"),
-            "draft": is_draft(slug),
-        })
+        entries.append(index_entry(deck))
 
-    # Rebuilding a subset must not drop the other decks from the index.
     index_path = os.path.join(OUT_DIR, "index.json")
-    if len(slugs) < len(deck_slugs()) and os.path.exists(index_path):
+    if requested and os.path.exists(index_path):
         with open(index_path) as f:
-            existing = json.load(f).get("decks", [])
-        by_slug = {d["slug"]: d for d in existing}
-        for entry in index:
-            by_slug[entry["slug"]] = entry
-        index = [by_slug[s] for s in sorted(by_slug)]
+            previous = json.load(f).get("decks", [])
+        entries = merge_index(entries, previous, set(known))
 
     with open(index_path, "w") as f:
-        json.dump({"decks": index}, f, ensure_ascii=False, indent=1)
+        json.dump({"type_order": TYPE_ORDER, "decks": entries}, f,
+                  ensure_ascii=False, indent=1)
 
-    print(f"Wrote {len(index)} decks to {OUT_DIR}", file=sys.stderr)
+    print(f"Wrote {len(entries)} decks to {OUT_DIR}", file=sys.stderr)
+    if missing:
+        for slug, names in missing.items():
+            print(f"  NO SCRYFALL DATA in {slug}: {', '.join(names)}", file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

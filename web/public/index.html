@@ -76,8 +76,7 @@
     justify-content: center; text-align: center; padding: 8px;
     border: 1px solid var(--line); border-radius: 8px; color: var(--muted);
   }
-  .grid-view .stack { display: grid; gap: 10px; }
-  a { color: var(--accent); }
+  .stack:not(.stacked) { display: grid; gap: 10px; }
   #empty { color: var(--muted); }
 
   /* Bottom mana bar: pip count in mana costs + sources producing each colour. */
@@ -135,8 +134,8 @@ let index = [];
 
 // Commander pinned first, Land last. Type groups keep the conventional
 // Archidekt order; tag categories fall back to biggest-group-first.
-const TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
-                    'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
+let TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
+                  'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
 
 function groupKey(card, mode) {
   if (card.category === 'Commander') return 'Commander';
@@ -157,7 +156,9 @@ function sortedGroups(cards, mode) {
   const rank = key => key === 'Commander' ? -1 : key === 'Land' ? 1 : 0;
   return [...groups.entries()].sort((a, b) => {
     if (rank(a[0]) !== rank(b[0])) return rank(a[0]) - rank(b[0]);
-    if (mode === 'type') return TYPE_ORDER.indexOf(a[0]) - TYPE_ORDER.indexOf(b[0]);
+    // Unknown types sort last rather than first (indexOf would give -1).
+    const typeIdx = key => (TYPE_ORDER.indexOf(key) + 1) || TYPE_ORDER.length;
+    if (mode === 'type') return typeIdx(a[0]) - typeIdx(b[0]);
     return total(b[1]) - total(a[1]) || a[0].localeCompare(b[0]);
   });
 }
@@ -167,17 +168,23 @@ function cardEl(card) {
   a.className = 'card';
   a.title = [card.name, card.mana_cost, card.type_line, card.oracle_text]
     .filter(Boolean).join('\n');
+  const placeholder = () => {
+    const d = document.createElement('div');
+    d.className = 'missing';
+    d.textContent = card.name;
+    return d;
+  };
   if (card.image) {
     const img = document.createElement('img');
     img.src = card.image;
     img.alt = card.name;
     img.loading = 'lazy';
+    // Scryfall image URLs are versioned and can rot; show the name instead of
+    // a broken-image icon.
+    img.onerror = () => img.replaceWith(placeholder());
     a.append(img);
   } else {
-    const d = document.createElement('div');
-    d.className = 'missing';
-    d.textContent = card.name;
-    a.append(d);
+    a.append(placeholder());
   }
   if (card.count > 1) {
     const q = document.createElement('span');
@@ -196,33 +203,8 @@ function cardEl(card) {
 
 const COLORS = ['W', 'U', 'B', 'R', 'G', 'C'];
 
-// Coloured pips in mana costs. Hybrid/phyrexian symbols like {G/U} or {B/P}
-// count once for each colour half, matching Archidekt's symbol count.
-function pipCounts(cards) {
-  const counts = {};
-  for (const card of cards) {
-    for (const sym of (card.mana_cost || '').match(/\{[^}]+\}/g) || []) {
-      for (const part of sym.slice(1, -1).split('/')) {
-        if (COLORS.includes(part) && part !== 'C') {
-          counts[part] = (counts[part] || 0) + card.count;
-        }
-      }
-    }
-  }
-  return counts;
-}
-
-// Sources of each colour: any permanent whose produced_mana includes it.
-function productionCounts(cards) {
-  const counts = {};
-  for (const card of cards) {
-    for (const m of card.produced_mana || []) {
-      if (COLORS.includes(m)) counts[m] = (counts[m] || 0) + card.count;
-    }
-  }
-  return counts;
-}
-
+// Pip and production counts are computed in build_site.py (see mana_stats) so
+// the site and the CLI analysis report the same numbers.
 function manaGroup(title, counts, totalLabel) {
   const wrap = document.createElement('div');
   wrap.className = 'mana-group';
@@ -235,20 +217,25 @@ function manaGroup(title, counts, totalLabel) {
     const stat = document.createElement('span');
     stat.className = 'pip-stat';
     stat.title = `${counts[c]} ${c} ${totalLabel}`;
-    stat.innerHTML =
-      `<span class="pip ${c}">${c}</span><span>${counts[c]}</span>` +
-      `<i>${total ? Math.round((counts[c] / total) * 100) : 0}%</i>`;
+    const pip = document.createElement('span');
+    pip.className = 'pip ' + c;
+    pip.textContent = c;
+    const n = document.createElement('span');
+    n.textContent = counts[c];
+    const pct = document.createElement('i');
+    pct.textContent = `${total ? Math.round((counts[c] / total) * 100) : 0}%`;
+    stat.append(pip, n, pct);
     wrap.append(stat);
   }
   return wrap;
 }
 
-function renderMana(cards) {
+function renderMana(deck) {
   const foot = document.getElementById('mana');
   foot.innerHTML = '';
   foot.append(
-    manaGroup('Mana symbols', pipCounts(cards), 'pips'),
-    manaGroup('Mana production', productionCounts(cards), 'sources'),
+    manaGroup('Mana symbols', deck.mana_symbols || {}, 'pips'),
+    manaGroup('Mana production', deck.mana_production || {}, 'sources'),
   );
 }
 
@@ -256,12 +243,15 @@ function render(deck) {
   board.innerHTML = '';
   countEl.textContent = `${deck.total} cards`;
   const cards = deck.commander ? [deck.commander, ...deck.cards] : deck.cards;
-  renderMana(cards);
+  renderMana(deck);
   for (const [cat, list] of sortedGroups(cards, groupEl.value)) {
     const col = document.createElement('section');
     col.className = 'cat';
     const h = document.createElement('h2');
-    h.innerHTML = `${cat} <span>(${list.reduce((n, c) => n + c.count, 0)})</span>`;
+    h.textContent = cat + ' ';
+    const n = document.createElement('span');
+    n.textContent = `(${list.reduce((sum, c) => sum + c.count, 0)})`;
+    h.append(n);
     const stack = document.createElement('div');
     stack.className = 'stack' + (stackedEl.checked ? ' stacked' : '');
     // A quantity>1 card shows once with an "N×" badge, like Archidekt.
@@ -272,17 +262,29 @@ function render(deck) {
 }
 
 let current = null;
+let loadSeq = 0;
 
 async function load(slug) {
+  const seq = ++loadSeq;
   document.getElementById('empty').textContent = '';
   location.hash = slug;
-  const res = await fetch(`data/${slug}.json`);
-  if (!res.ok) {
-    document.getElementById('empty').textContent = `No data for ${slug} — run build_site.py.`;
+  let deck;
+  try {
+    const res = await fetch(`data/${slug}.json`);
+    if (!res.ok) throw new Error(res.status);
+    deck = await res.json();
+  } catch {
+    // A missing/unparseable bundle must not leave the previous deck on screen.
+    if (seq !== loadSeq) return;
+    document.getElementById('empty').textContent =
+      `No data for ${slug} — run build_site.py.`;
     board.innerHTML = '';
+    document.getElementById('mana').innerHTML = '';
+    countEl.textContent = '';
     return;
   }
-  current = await res.json();
+  if (seq !== loadSeq) return;  // a newer load already won
+  current = deck;
   render(current);
 }
 
@@ -299,7 +301,9 @@ function fillDecks() {
 }
 
 (async function init() {
-  index = (await (await fetch('data/index.json')).json()).decks;
+  const meta = await (await fetch('data/index.json')).json();
+  index = meta.decks;
+  if (meta.type_order) TYPE_ORDER = meta.type_order;  // single source: build_site.py
   const wanted = decodeURIComponent(location.hash.slice(1));
   if (wanted && index.find(d => d.slug === wanted && d.draft)) draftsEl.checked = true;
   let visible = fillDecks();
@@ -312,9 +316,16 @@ function fillDecks() {
   // Layout toggles only need a re-render, not a refetch.
   stackedEl.onchange = groupEl.onchange = () => current && render(current);
   draftsEl.onchange = () => {
-    const current = deckSel.value;
+    const selected = deckSel.value;
     visible = fillDecks();
-    deckSel.value = visible.find(d => d.slug === current) ? current : visible[0].slug;
+    if (!visible.length) {
+      board.innerHTML = '';
+      document.getElementById('mana').innerHTML = '';
+      countEl.textContent = '';
+      document.getElementById('empty').textContent = 'No built decks — tick "show drafts".';
+      return;
+    }
+    deckSel.value = visible.find(d => d.slug === selected) ? selected : visible[0].slug;
     load(deckSel.value);
   };
   window.onhashchange = () => {

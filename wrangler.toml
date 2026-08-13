@@ -6,7 +6,10 @@ compatibility_date = "2026-06-22"
 # the same way property-bot commits public/listings.json.
 [assets]
 directory = "./web/public"
-not_found_handling = "single-page-application"
+# Deck selection is a URL hash, so nothing needs server-side rewriting — and a
+# real 404 for a missing data/<slug>.json is what the site's error path expects
+# (the SPA fallback would answer 200 with index.html instead).
+not_found_handling = "none"
 
 # Custom domain. Wrangler creates the DNS record + cert on deploy; the otl.fi
 # zone must live in the same Cloudflare account as this Worker.
