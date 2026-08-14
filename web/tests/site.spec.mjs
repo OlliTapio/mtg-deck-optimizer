@@ -172,6 +172,33 @@ test.describe('stacked cards', () => {
       .toBe(await visibleHeight(cards(page).nth(6)));
   });
 
+  // No Playwright profile can be both hover-capable and touch — Chromium and
+  // WebKit tie the hover/pointer media features to hasTouch — but real hybrids
+  // (a touchscreen laptop, an iPad with a trackpad) report hover:hover for
+  // their primary pointer while a finger does the tapping. So drive the last
+  // pointer type directly: the events are synthetic, the wiring under test
+  // (listener → html.touch → the CSS guard) is the real thing.
+  test('a finger on a device that also has a mouse gets no lift', async ({ page }) => {
+    const hovers = await page.evaluate(
+      () => matchMedia('(hover: hover) and (pointer: fine)').matches);
+    test.skip(!hovers, 'touch-primary: the media query already rules the lift out');
+    const zIndexes = () => cards(page).evaluateAll(
+      els => els.map(el => getComputedStyle(el).zIndex));
+    const card = cards(page).nth(4);
+    await card.locator('.hit').scrollIntoViewIfNeeded();
+
+    await card.locator('.hit').hover();
+    expect((await zIndexes()).filter(z => z !== 'auto')).toEqual(['3']);
+
+    // A finger touches down; the mouse hasn't moved, so nothing else changes.
+    await card.locator('.hit').dispatchEvent('pointerdown', {pointerType: 'touch'});
+    expect(new Set(await zIndexes())).toEqual(new Set(['auto']));
+
+    // Back to the mouse, and the lift comes back with it.
+    await cards(page).nth(6).locator('.hit').hover();
+    expect((await zIndexes()).filter(z => z !== 'auto')).toEqual(['3']);
+  });
+
   test('opening a card keeps the position of the cards above it', async ({ page }) => {
     const above = cards(page).nth(2);
     const below = cards(page).nth(6);

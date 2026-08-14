@@ -116,11 +116,13 @@
   .stack.stacked .card:last-child .hit,
   .stack.stacked .card.open .hit { bottom: 0; }
   /* Hovering lifts a card clear of the stack, so a mouse can peek at one
-     without opening it. Pointing devices only: a finger leaves :hover behind
-     after the tap, so on a touch screen this would outlive the tap and leave a
-     closed card covering the stack below it — which reads as "it never closed". */
+     without opening it. A mouse only: a finger leaves :hover behind after the
+     tap, so this would outlive the tap and leave a closed card covering the
+     stack below it — which reads as "it never closed". The media query rules
+     out touch-primary devices; `html.touch`, set from the last pointer event,
+     rules out the finger on a device that also has a mouse. */
   @media (hover: hover) and (pointer: fine) {
-    .card:has(.hit:hover) { z-index: 3; }
+    html:not(.touch) .card:has(.hit:hover) { z-index: 3; }
   }
 
   /* Details (printing, price, otags) for the card that's open. */
@@ -281,6 +283,15 @@ let index = [];
 let TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
                   'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
 const COLORS = ['W', 'U', 'B', 'R', 'G', 'C'];
+
+// Which input is actually in use, for the hover lift below. The media query
+// alone isn't enough: a hybrid device — a touchscreen laptop, an iPad with a
+// trackpad — reports hover:hover/pointer:fine for its *primary* pointer while
+// you tap the screen with a finger, and the finger still leaves :hover behind.
+for (const type of ['pointerover', 'pointerdown']) {
+  addEventListener(type, e => document.documentElement.classList.toggle(
+    'touch', e.pointerType !== 'mouse'), {capture: true, passive: true});
+}
 
 // --- grouping ---
 
