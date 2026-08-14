@@ -14,6 +14,13 @@
     --accent: #8ab4f8;
     --ok: #7fbf8f;
     --warn: #d8a657;
+    /* Mana colours, shared by the pips and the stacked mana bars. */
+    --W: #f8f2dc;
+    --U: #9fd4ee;
+    --B: #b6aca8;
+    --R: #f0a08a;
+    --G: #98ccac;
+    --C: #ccc2bf;
   }
   * { box-sizing: border-box; }
   /* display:grid on .columns/.stats would otherwise beat the UA [hidden] rule. */
@@ -92,9 +99,10 @@
   .stack.stacked .card { margin-bottom: -112%; }
   .stack.stacked .card:last-child { margin-bottom: 0; }
   /* Tapping a card opens it in place: it keeps its position and the rest of the
-     stack slides down below it. Tapping it again closes the stack back up. */
+     stack slides down below it. Tapping it again closes the stack back up.
+     Opening makes room for the whole card rather than raising it, so a closed
+     card is never left painting over its neighbours. */
   .stack.stacked .card.open { margin-bottom: 0; }
-  .card.open { z-index: 2; }
   /* Only the strip you can actually see is tappable: in a stack the next card
      covers the rest, so a tap on a covered area must belong to the card drawn
      on top of it, not the one underneath. An open card is tappable all over. */
@@ -107,7 +115,15 @@
   .stack.stacked .hit { bottom: 80%; }
   .stack.stacked .card:last-child .hit,
   .stack.stacked .card.open .hit { bottom: 0; }
-  .card:has(.hit:hover) { z-index: 3; }
+  /* Hovering lifts a card clear of the stack, so a mouse can peek at one
+     without opening it. A mouse only: a finger leaves :hover behind after the
+     tap, so this would outlive the tap and leave a closed card covering the
+     stack below it — which reads as "it never closed". The media query rules
+     out touch-primary devices; `html.touch`, set from the last pointer event,
+     rules out the finger on a device that also has a mouse. */
+  @media (hover: hover) and (pointer: fine) {
+    html:not(.touch) .card:has(.hit:hover) { z-index: 3; }
+  }
 
   /* Details (printing, price, otags) for the card that's open. */
   .info {
@@ -178,7 +194,6 @@
   }
   .stat-row .label { display: flex; align-items: center; gap: 6px; }
   .stat-row .num { font-variant-numeric: tabular-nums; }
-  .stat-row .num i { color: var(--muted); font-style: normal; font-size: 12px; }
   .bar {
     grid-column: 1 / -1; height: 4px; border-radius: 2px;
     background: var(--line); overflow: hidden;
@@ -192,12 +207,33 @@
     font-size: 10px; font-weight: 700; color: #1a1a1a;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,.35);
   }
-  .pip.W { background: #f8f2dc; }
-  .pip.U { background: #9fd4ee; }
-  .pip.B { background: #b6aca8; }
-  .pip.R { background: #f0a08a; }
-  .pip.G { background: #98ccac; }
-  .pip.C { background: #ccc2bf; }
+  /* Mana is one stacked bar per question — the split between colours is the
+     whole point, and five separate bars made it something you had to add up. */
+  .mana-bar {
+    display: flex; height: 12px; border-radius: 6px;
+    overflow: hidden; background: var(--line); margin: 2px 0 8px;
+  }
+  .mana-bar > span { display: block; height: 100%; }
+  /* One rule per colour for both the pips and the bar segments, so a colour
+     can't end up meaning two different things in the same section. */
+  .pip.W, .mana-bar .W { background: var(--W); }
+  .pip.U, .mana-bar .U { background: var(--U); }
+  .pip.B, .mana-bar .B { background: var(--B); }
+  .pip.R, .mana-bar .R { background: var(--R); }
+  .pip.G, .mana-bar .G { background: var(--G); }
+  .pip.C, .mana-bar .C { background: var(--C); }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 12px; }
+  .legend > span {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-variant-numeric: tabular-nums;
+  }
+  .legend i { color: var(--muted); font-style: normal; font-size: 12px; }
+  .mana-line + .mana-line { margin-top: 14px; }
+  .mana-line > .head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 8px; color: var(--muted); font-size: 12px;
+  }
+  .mana-line > .head b { color: var(--text); font-size: 13px; font-weight: 600; }
 </style>
 </head>
 <body>
@@ -247,6 +283,15 @@ let index = [];
 let TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
                   'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
 const COLORS = ['W', 'U', 'B', 'R', 'G', 'C'];
+
+// Which input is actually in use, for the hover lift below. The media query
+// alone isn't enough: a hybrid device — a touchscreen laptop, an iPad with a
+// trackpad — reports hover:hover/pointer:fine for its *primary* pointer while
+// you tap the screen with a finger, and the finger still leaves :hover behind.
+for (const type of ['pointerover', 'pointerdown']) {
+  addEventListener(type, e => document.documentElement.classList.toggle(
+    'touch', e.pointerType !== 'mouse'), {capture: true, passive: true});
+}
 
 // --- grouping ---
 
@@ -413,26 +458,15 @@ function renderCards(deck) {
 
 // --- stats ---
 
-function statRow(label, value, {pip, pct, bar, barClass} = {}) {
+function statRow(label, value, {bar, barClass} = {}) {
   const row = document.createElement('div');
   row.className = 'stat-row';
   const l = document.createElement('div');
   l.className = 'label';
-  if (pip) {
-    const p = document.createElement('span');
-    p.className = 'pip ' + pip;
-    p.textContent = pip;
-    l.append(p);
-  }
   l.append(document.createTextNode(label));
   const num = document.createElement('div');
   num.className = 'num';
   num.textContent = value;
-  if (pct !== undefined) {
-    const i = document.createElement('i');
-    i.textContent = ` ${pct}%`;
-    num.append(i);
-  }
   row.append(l, num);
   if (bar !== undefined) {
     const b = document.createElement('div');
@@ -453,21 +487,57 @@ function statSection(title, rows) {
   return s;
 }
 
-function manaSection(title, counts, label) {
-  const total = COLORS.reduce((n, c) => n + (counts[c] || 0), 0);
-  const rows = COLORS.filter(c => counts[c]).map(c => statRow(
-    c, counts[c], {pip: c, pct: total ? Math.round(counts[c] / total * 100) : 0,
-                   bar: total ? counts[c] / total : 0}));
-  return statSection(`${title} — ${total} ${label}`, rows.length ? rows
-    : [statRow('none', 0)]);
+// One line per question: a single stacked bar split by colour, with the counts
+// as its legend — rather than a bar per colour, which had to be added up by eye.
+function manaLine(title, counts, label) {
+  const line = document.createElement('div');
+  line.className = 'mana-line';
+  const present = COLORS.filter(c => counts[c]);
+  const total = present.reduce((n, c) => n + counts[c], 0);
+
+  const head = document.createElement('div');
+  head.className = 'head';
+  const name = document.createElement('b');
+  name.textContent = title;
+  const sum = document.createElement('span');
+  sum.textContent = `${total} ${label}`;
+  head.append(name, sum);
+
+  const bar = document.createElement('div');
+  bar.className = 'mana-bar';
+  const legend = document.createElement('div');
+  legend.className = 'legend';
+  for (const c of present) {
+    const pct = Math.round(counts[c] / total * 100);
+    const seg = document.createElement('span');
+    seg.className = c;
+    seg.style.width = counts[c] / total * 100 + '%';
+    seg.title = `${c} ${counts[c]} (${pct}%)`;
+    bar.append(seg);
+
+    const item = document.createElement('span');
+    const p = document.createElement('span');
+    p.className = 'pip ' + c;
+    p.textContent = c;
+    const n = document.createElement('i');
+    n.textContent = `${pct}%`;
+    item.append(p, document.createTextNode(String(counts[c])), n);
+    legend.append(item);
+  }
+  if (!present.length) legend.textContent = 'none';
+
+  line.append(head, bar, legend);
+  return line;
 }
 
 function renderStats(deck) {
   statsEl.innerHTML = '';
   const s = deck.stats || {};
 
-  statsEl.append(manaSection('Mana symbols', deck.mana_symbols || {}, 'pips'));
-  statsEl.append(manaSection('Mana production', deck.mana_production || {}, 'sources'));
+  statsEl.append(statSection('Mana', [
+    manaLine('Mana symbols', deck.mana_symbols || {}, 'pips'),
+    manaLine('Mana production', deck.mana_production || {}, 'sources'),
+  ]));
 
   // Command Zone template (see command_zone_template.md): under target is the
   // thing worth seeing, so colour the bar by that.

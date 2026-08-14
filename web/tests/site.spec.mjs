@@ -140,6 +140,65 @@ test.describe('stacked cards', () => {
     expect(await topOf(card)).toBeCloseTo(cardTop, 0);
   });
 
+  // Hovering lifts a card clear of the stack so a mouse can peek at one, but a
+  // finger can't take the hover back: the tap leaves :hover behind, so on a
+  // touch screen the same rule outlives the tap and the closed card goes on
+  // covering the slivers of the cards after it — which reads as "closing did
+  // nothing". Opening makes room for the card instead, so it never needs lifting.
+  test('only a pointing device lifts a card out of stack order', async ({ page }) => {
+    const zIndexes = () => cards(page).evaluateAll(
+      els => els.map(el => getComputedStyle(el).zIndex));
+    const hovers = await page.evaluate(
+      () => matchMedia('(hover: hover) and (pointer: fine)').matches);
+    const card = cards(page).nth(4);
+    await card.locator('.hit').scrollIntoViewIfNeeded();
+
+    await card.locator('.hit').click();
+    await expect(card).toHaveClass(/open/);
+    await card.locator('.hit').click();
+    await expect(card).not.toHaveClass(/open/);
+
+    if (hovers) {
+      // The mouse is still resting on the card it closed, so that one — and
+      // only that one — is lifted, until the pointer leaves.
+      expect((await zIndexes()).filter(z => z !== 'auto')).toEqual(['3']);
+      await page.mouse.move(0, 0);
+    }
+    // A tap leaves nothing behind: on touch, closing is the end of it.
+    expect(new Set(await zIndexes())).toEqual(new Set(['auto']));
+
+    // And the card it covered before opening is back to its own sliver.
+    expect(await visibleHeight(cards(page).nth(5)))
+      .toBe(await visibleHeight(cards(page).nth(6)));
+  });
+
+  // No Playwright profile can be both hover-capable and touch — Chromium and
+  // WebKit tie the hover/pointer media features to hasTouch — but real hybrids
+  // (a touchscreen laptop, an iPad with a trackpad) report hover:hover for
+  // their primary pointer while a finger does the tapping. So drive the last
+  // pointer type directly: the events are synthetic, the wiring under test
+  // (listener → html.touch → the CSS guard) is the real thing.
+  test('a finger on a device that also has a mouse gets no lift', async ({ page }) => {
+    const hovers = await page.evaluate(
+      () => matchMedia('(hover: hover) and (pointer: fine)').matches);
+    test.skip(!hovers, 'touch-primary: the media query already rules the lift out');
+    const zIndexes = () => cards(page).evaluateAll(
+      els => els.map(el => getComputedStyle(el).zIndex));
+    const card = cards(page).nth(4);
+    await card.locator('.hit').scrollIntoViewIfNeeded();
+
+    await card.locator('.hit').hover();
+    expect((await zIndexes()).filter(z => z !== 'auto')).toEqual(['3']);
+
+    // A finger touches down; the mouse hasn't moved, so nothing else changes.
+    await card.locator('.hit').dispatchEvent('pointerdown', {pointerType: 'touch'});
+    expect(new Set(await zIndexes())).toEqual(new Set(['auto']));
+
+    // Back to the mouse, and the lift comes back with it.
+    await cards(page).nth(6).locator('.hit').hover();
+    expect((await zIndexes()).filter(z => z !== 'auto')).toEqual(['3']);
+  });
+
   test('opening a card keeps the position of the cards above it', async ({ page }) => {
     const above = cards(page).nth(2);
     const below = cards(page).nth(6);
@@ -254,8 +313,10 @@ test.describe('stats tab', () => {
     await page.locator('#tab-stats').click();
 
     const titles = (await page.locator('.stats h3').allInnerTexts()).join(' ').toLowerCase();
-    expect(titles).toContain('mana symbols');
-    expect(titles).toContain('mana production');
+    expect(titles).toContain('mana');
+    const mana = (await page.locator('.mana-line .head b').allInnerTexts()).join(' ').toLowerCase();
+    expect(mana).toContain('mana symbols');
+    expect(mana).toContain('mana production');
     expect(titles).toContain('template check');
     expect(titles).toContain('otags');
     expect(titles).toContain('card types');
@@ -271,9 +332,66 @@ test.describe('stats tab', () => {
     await expect(page.locator('#stats')).toBeHidden();
   });
 
-  test('template check matches the deck data', async ({ page }) => {
+  test('mana is one stacked bar per question, split by colour', async ({ page }) => {
+    const data = await deckData(page);
+    await page.locator('#tab-stats').click();
+
+    const lines = page.locator('.mana-line');
+    await expect(lines).toHaveCount(2);
+    for (const [i, counts] of [data.mana_symbols, data.mana_production].entries()) {
+      const colours = Object.entries(counts).filter(([, n]) => n);
+      const total = colours.reduce((n, [, v]) => n + v, 0);
+      const line = lines.nth(i);
+      await expect(line.locator('.mana-bar')).toHaveCount(1);
+
+      // A deck with no coloured mana at all draws an empty bar, not a broken one.
+      if (!colours.length) {
+        await expect(line.locator('.mana-bar > span')).toHaveCount(0);
+        await expect(line.locator('.legend')).toHaveText('none');
+        continue;
+      }
+      await expect(line.locator('.head')).toContainText(String(total));
+
+      // One segment per colour, in COLORS order, each as wide as *its own*
+      // share: checking only that the widths add up to 100% would pass just
+      // as well with every colour's count attached to the wrong segment.
+      const segments = await line.locator('.mana-bar > span').evaluateAll(
+        els => els.map(e => [e.className, parseFloat(e.style.width)]));
+      expect(segments.map(([c]) => c)).toEqual(colours.map(([c]) => c));
+      for (const [j, [c, n]] of colours.entries()) {
+        const pct = n / total * 100;
+        expect(segments[j][1]).toBeCloseTo(pct, 4);
+        // Same for the legend: the count sits next to the pip it belongs to.
+        const item = line.locator('.legend > span', { has: page.locator(`.pip.${c}`) });
+        await expect(item).toHaveText(new RegExp(`^${c}\\s*${n}\\s*${Math.round(pct)}%$`));
+      }
+    }
+  });
+
+  // No deck in the bundle is colourless today, so the empty branch would
+  // otherwise never be exercised until the day someone builds such a deck.
+  test('a deck with no coloured mana says so instead of drawing an empty bar', async ({ page }) => {
     const slug = await page.evaluate(() => location.hash.slice(1));
-    const data = await (await fetch(`http://127.0.0.1:8000/data/${slug}.json`)).json();
+    const data = await deckData(page);
+    await page.route(`**/data/${slug}.json`, route => route.fulfill({
+      json: {...data, mana_symbols: {}, mana_production: {}},
+    }));
+    await page.reload();
+    await page.locator('#tab-stats').click();
+
+    const lines = page.locator('.mana-line');
+    await expect(lines).toHaveCount(2);
+    for (const i of [0, 1]) {
+      await expect(lines.nth(i).locator('.mana-bar > span')).toHaveCount(0);
+      await expect(lines.nth(i).locator('.legend')).toHaveText('none');
+      await expect(lines.nth(i).locator('.head')).toContainText('0');
+    }
+  });
+
+  test('template check matches the deck data', async ({ page }) => {
+    // Via the page's own origin: a hard-coded port picks up whatever server
+    // happens to be running there, which is a different bundle or no JSON at all.
+    const data = await deckData(page);
     await page.locator('#tab-stats').click();
 
     const section = page.locator('.stats section', { hasText: 'Template check' });
