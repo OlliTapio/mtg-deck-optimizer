@@ -140,23 +140,31 @@ test.describe('stacked cards', () => {
     expect(await topOf(card)).toBeCloseTo(cardTop, 0);
   });
 
-  // Cards are drawn in document order and nothing may lift one out of it: a
-  // tap leaves :hover behind on a touch screen, so a rule raising the card
-  // being tapped outlives the tap, and the closed card goes on covering the
-  // slivers of the cards after it — which reads as "closing did nothing".
-  // Opening makes room for the whole card, so no card ever needs raising.
-  test('no card is painted out of stack order, open or closed', async ({ page }) => {
+  // Hovering lifts a card clear of the stack so a mouse can peek at one, but a
+  // finger can't take the hover back: the tap leaves :hover behind, so on a
+  // touch screen the same rule outlives the tap and the closed card goes on
+  // covering the slivers of the cards after it — which reads as "closing did
+  // nothing". Opening makes room for the card instead, so it never needs lifting.
+  test('only a pointing device lifts a card out of stack order', async ({ page }) => {
     const zIndexes = () => cards(page).evaluateAll(
       els => els.map(el => getComputedStyle(el).zIndex));
+    const hovers = await page.evaluate(
+      () => matchMedia('(hover: hover) and (pointer: fine)').matches);
     const card = cards(page).nth(4);
     await card.locator('.hit').scrollIntoViewIfNeeded();
 
     await card.locator('.hit').click();
     await expect(card).toHaveClass(/open/);
-    expect(new Set(await zIndexes())).toEqual(new Set(['auto']));
-
     await card.locator('.hit').click();
     await expect(card).not.toHaveClass(/open/);
+
+    if (hovers) {
+      // The mouse is still resting on the card it closed, so that one — and
+      // only that one — is lifted, until the pointer leaves.
+      expect((await zIndexes()).filter(z => z !== 'auto')).toEqual(['3']);
+      await page.mouse.move(0, 0);
+    }
+    // A tap leaves nothing behind: on touch, closing is the end of it.
     expect(new Set(await zIndexes())).toEqual(new Set(['auto']));
 
     // And the card it covered before opening is back to its own sliver.

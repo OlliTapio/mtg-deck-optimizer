@@ -100,10 +100,8 @@
   .stack.stacked .card:last-child { margin-bottom: 0; }
   /* Tapping a card opens it in place: it keeps its position and the rest of the
      stack slides down below it. Tapping it again closes the stack back up.
-     Nothing here raises a card above its neighbours: opening already makes room
-     for the whole card, and a z-index that outlives the tap (a touch keeps its
-     :hover, so the rule sticks) leaves a closed card covering the stack below
-     it, which reads as "the card never closed". */
+     Opening makes room for the whole card rather than raising it, so a closed
+     card is never left painting over its neighbours. */
   .stack.stacked .card.open { margin-bottom: 0; }
   /* Only the strip you can actually see is tappable: in a stack the next card
      covers the rest, so a tap on a covered area must belong to the card drawn
@@ -117,6 +115,13 @@
   .stack.stacked .hit { bottom: 80%; }
   .stack.stacked .card:last-child .hit,
   .stack.stacked .card.open .hit { bottom: 0; }
+  /* Hovering lifts a card clear of the stack, so a mouse can peek at one
+     without opening it. Pointing devices only: a finger leaves :hover behind
+     after the tap, so on a touch screen this would outlive the tap and leave a
+     closed card covering the stack below it — which reads as "it never closed". */
+  @media (hover: hover) and (pointer: fine) {
+    .card:has(.hit:hover) { z-index: 3; }
+  }
 
   /* Details (printing, price, otags) for the card that's open. */
   .info {
