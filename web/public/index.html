@@ -58,6 +58,19 @@
     min-height: 34px; padding: 0 2px;
   }
   input[type=checkbox] { width: 22px; height: 22px; }
+  /* Text fields match the select's box. 16px keeps iOS from zooming on focus. */
+  input[type=text], input[type=password], input[type=number] {
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px;
+    min-height: 36px; font: inherit; font-size: 16px;
+  }
+  .btn {
+    background: var(--bg); color: var(--text); cursor: pointer;
+    border: 1px solid var(--line); border-radius: 6px;
+    min-height: 36px; padding: 0 12px;
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { border-color: var(--accent); color: var(--accent); }
 
   .tabs { display: flex; gap: 6px; }
   .tabs button {
@@ -234,6 +247,59 @@
     gap: 8px; color: var(--muted); font-size: 12px;
   }
   .mana-line > .head b { color: var(--text); font-size: 13px; font-weight: 600; }
+
+  /* Wants & trades tab — a list, not a board: these are cards you don't own
+     yet (or want rid of), so the name, the count and the price are the point
+     and the picture is only there to recognise a card by. */
+  .wants { display: grid; gap: 16px; }
+  .wants-bar {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px;
+  }
+  .wants-bar form { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  #want-name { flex: 1 1 190px; min-width: 0; }
+  #want-note { flex: 1 1 130px; min-width: 0; }
+  #want-count { width: 66px; }
+  #wants-msg { margin: 0; color: var(--muted); }
+  #wants-msg.error { color: var(--warn); }
+  .want-lists {
+    display: grid; gap: 18px; align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .want-list {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 10px; padding: 12px 14px;
+  }
+  .want-list h2 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--muted); margin: 0 0 6px; font-weight: 600;
+  }
+  .want-list h2 span { text-transform: none; letter-spacing: 0; }
+  .want-row {
+    display: grid; grid-template-columns: 34px 1fr auto;
+    gap: 10px; align-items: center;
+    padding: 6px 0; border-top: 1px solid var(--line);
+  }
+  .want-row .thumb {
+    background: none; border: 0; padding: 0; cursor: pointer; width: 34px;
+  }
+  .want-row .thumb img, .want-row .thumb .missing {
+    width: 34px; border-radius: 3px; font-size: 8px; padding: 2px;
+  }
+  .want-row b { font-weight: 600; }
+  .want-row .sub { color: var(--muted); font-size: 12px; }
+  .want-controls { display: flex; align-items: center; gap: 4px; }
+  /* Hidden rather than absent while locked, so the read-only list keeps the
+     same row layout a trade partner would see. */
+  .wants:not(.editing) .want-controls { display: none; }
+  .want-controls button {
+    width: 32px; height: 32px; font: inherit; cursor: pointer;
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--line); border-radius: 6px;
+  }
+  .want-controls button:disabled { opacity: .4; cursor: default; }
+  .want-controls .remove:hover { border-color: var(--warn); color: var(--warn); }
+  .want-num { min-width: 30px; text-align: center; font-variant-numeric: tabular-nums; }
 </style>
 </head>
 <body>
@@ -247,19 +313,47 @@
     <div class="tabs" role="tablist">
       <button id="tab-cards" role="tab" aria-selected="true">Cards</button>
       <button id="tab-stats" role="tab" aria-selected="false">Stats</button>
+      <button id="tab-wants" role="tab" aria-selected="false">Trades</button>
     </div>
-    <select id="group" title="group cards by" aria-label="group cards by">
-      <option value="type">by type</option>
-      <option value="category">by category</option>
-    </select>
-    <label><input type="checkbox" id="stacked" checked> stack</label>
-    <label><input type="checkbox" id="drafts"> drafts</label>
+    <span id="deck-controls" class="row">
+      <select id="group" title="group cards by" aria-label="group cards by">
+        <option value="type">by type</option>
+        <option value="category">by category</option>
+      </select>
+      <label><input type="checkbox" id="stacked" checked> stack</label>
+      <label><input type="checkbox" id="drafts"> drafts</label>
+    </span>
   </div>
 </header>
 
 <main>
   <div class="columns" id="board"></div>
   <div class="stats" id="stats" hidden></div>
+  <section class="wants" id="wants" hidden>
+    <div class="wants-bar">
+      <!-- Reading the list needs no password; changing it does. -->
+      <form id="unlock-form">
+        <input type="password" id="pw" placeholder="edit password"
+               autocomplete="current-password" aria-label="edit password">
+        <button type="submit" class="btn">Unlock edits</button>
+      </form>
+      <form id="want-form" hidden>
+        <input type="text" id="want-name" list="want-suggest" placeholder="card name"
+               autocomplete="off" aria-label="card name" required>
+        <datalist id="want-suggest"></datalist>
+        <select id="want-list" aria-label="which list">
+          <option value="want">want</option>
+          <option value="trade">for trade</option>
+        </select>
+        <input type="number" id="want-count" value="1" min="1" max="99" aria-label="how many">
+        <input type="text" id="want-note" placeholder="note" aria-label="note">
+        <button type="submit" class="btn primary" id="want-add">Add</button>
+        <button type="button" class="btn" id="lock">Lock</button>
+      </form>
+      <p id="wants-msg"></p>
+    </div>
+    <div class="want-lists" id="want-lists"></div>
+  </section>
   <p id="empty"></p>
 </main>
 
@@ -277,8 +371,15 @@ const stackedEl = document.getElementById('stacked');
 const draftsEl = document.getElementById('drafts');
 const groupEl = document.getElementById('group');
 const preview = document.getElementById('preview');
+const wantsEl = document.getElementById('wants');
+const wantListsEl = document.getElementById('want-lists');
+const wantsMsg = document.getElementById('wants-msg');
+const deckControls = document.getElementById('deck-controls');
+const unlockForm = document.getElementById('unlock-form');
+const wantForm = document.getElementById('want-form');
 const tabs = {cards: document.getElementById('tab-cards'),
-              stats: document.getElementById('tab-stats')};
+              stats: document.getElementById('tab-stats'),
+              wants: document.getElementById('tab-wants')};
 let index = [];
 let TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
                   'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
@@ -562,6 +663,264 @@ function renderStats(deck) {
     curve.map(([cmc, n]) => statRow(`${cmc} CMC`, n, {bar: n / curveMax}))));
 }
 
+// --- wants & trades ---
+//
+// A standalone list of cards to get hold of and cards to give away: no deck
+// owns it, so it is stored server-side (web/worker.js) rather than built from
+// decks/. Anyone can read it — that's the point, you show it to a trade
+// partner — but changing it needs the edit password, which is kept for the
+// tab's lifetime only and sent with every write.
+
+const WANTS_HASH = 'trades';
+const PW_KEY = 'mtg-decks-edit-pw';
+const LIST_TITLES = {want: 'Wants', trade: 'For trade'};
+const SCRYFALL = 'https://api.scryfall.com';
+let wants = null;
+let editPw = '';
+
+// sessionStorage throws when cookies are blocked; the list still works, it just
+// asks for the password again after a reload.
+function rememberPw(value) {
+  try {
+    if (value) sessionStorage.setItem(PW_KEY, value);
+    else sessionStorage.removeItem(PW_KEY);
+  } catch { /* not remembered */ }
+}
+
+async function api(path, method = 'GET', payload) {
+  const headers = {};
+  if (payload) headers['content-type'] = 'application/json';
+  if (method !== 'GET') headers['x-edit-password'] = editPw;
+  const res = await fetch(path, {
+    method, headers, body: payload ? JSON.stringify(payload) : undefined,
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    // The password was wrong, or has changed under us: drop back to read-only
+    // rather than leaving buttons that can't work.
+    if (res.status === 401) setUnlocked(false);
+    throw new Error(data.error || `request failed (${res.status})`);
+  }
+  return data;
+}
+
+function message(msg, isError = false) {
+  wantsMsg.textContent = msg;
+  wantsMsg.classList.toggle('error', isError && Boolean(msg));
+}
+
+// Best effort in both directions: Scryfall gives the row its picture, set and
+// price, and if it can't be reached the card is still added by name.
+async function scryfallLookup(name) {
+  try {
+    const res = await fetch(`${SCRYFALL}/cards/named?fuzzy=${encodeURIComponent(name)}`);
+    if (!res.ok) return null;
+    const card = await res.json();
+    const face = card.card_faces?.[0] || {};
+    return {
+      name: card.name,
+      image: (card.image_uris || face.image_uris || {}).normal || '',
+      set: card.set || '',
+      number: card.collector_number || '',
+      mana_cost: card.mana_cost || face.mana_cost || '',
+      type_line: card.type_line || face.type_line || '',
+      price_eur: card.prices?.eur || '',
+      scryfall_uri: card.scryfall_uri || '',
+    };
+  } catch {
+    return null;
+  }
+}
+
+let suggestTimer = 0;
+
+function suggestNames() {
+  clearTimeout(suggestTimer);
+  const q = document.getElementById('want-name').value.trim();
+  if (q.length < 3) return;
+  suggestTimer = setTimeout(async () => {
+    let names = [];
+    try {
+      const res = await fetch(`${SCRYFALL}/cards/autocomplete?q=${encodeURIComponent(q)}`);
+      if (!res.ok) return;
+      ({data: names = []} = await res.json());
+    } catch {
+      return;  // typing the full name still works
+    }
+    const list = document.getElementById('want-suggest');
+    list.innerHTML = '';
+    for (const name of names.slice(0, 12)) {
+      const option = document.createElement('option');
+      option.value = name;
+      list.append(option);
+    }
+  }, 250);
+}
+
+function wantRow(item) {
+  const row = document.createElement('div');
+  row.className = 'want-row';
+  row.dataset.name = item.name;
+
+  // The same overlay the deck view uses, so a row shows the full card.
+  const thumb = document.createElement('button');
+  thumb.type = 'button';
+  thumb.className = 'thumb';
+  thumb.title = `${item.name} details`;
+  thumb.append(imageOrPlaceholder(item, item.image));
+  thumb.onclick = () => openPreview(item, thumb);
+
+  const label = document.createElement('div');
+  const name = document.createElement('b');
+  name.textContent = item.name;
+  const sub = document.createElement('div');
+  sub.className = 'sub';
+  sub.textContent = [
+    item.set ? item.set.toUpperCase() : null,
+    item.price_eur ? `€${item.price_eur}` : null,
+    item.note || null,
+  ].filter(Boolean).join(' · ');
+  label.append(name, sub);
+
+  const controls = document.createElement('div');
+  controls.className = 'want-controls';
+  const minus = document.createElement('button');
+  minus.type = 'button';
+  minus.className = 'less';
+  minus.textContent = '−';
+  minus.title = `one fewer ${item.name}`;
+  minus.disabled = item.count <= 1;
+  minus.onclick = () => setCount(item, item.count - 1);
+  const num = document.createElement('span');
+  num.className = 'want-num';
+  num.textContent = `${item.count}×`;
+  const plus = document.createElement('button');
+  plus.type = 'button';
+  plus.className = 'more';
+  plus.textContent = '+';
+  plus.title = `one more ${item.name}`;
+  plus.onclick = () => setCount(item, item.count + 1);
+  const remove = document.createElement('button');
+  remove.type = 'button';
+  remove.className = 'remove';
+  remove.textContent = '×';
+  remove.title = `remove ${item.name}`;
+  remove.onclick = () => removeWant(item);
+  controls.append(minus, num, plus, remove);
+
+  row.append(thumb, label, controls);
+  return row;
+}
+
+function renderWants() {
+  wantListsEl.innerHTML = '';
+  const items = wants?.items || [];
+  countEl.textContent = `${items.reduce((n, i) => n + i.count, 0)} cards listed`;
+  for (const key of ['want', 'trade']) {
+    const list = items.filter(i => i.list === key)
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const total = list.reduce((n, i) => n + i.count, 0);
+    const price = list.reduce((sum, i) => sum + (parseFloat(i.price_eur) || 0) * i.count, 0);
+
+    const section = document.createElement('section');
+    section.className = 'want-list';
+    section.dataset.list = key;
+    const h = document.createElement('h2');
+    h.textContent = LIST_TITLES[key] + ' ';
+    const meta = document.createElement('span');
+    meta.textContent = `(${total}${price ? ` · €${price.toFixed(2)}` : ''})`;
+    h.append(meta);
+    section.append(h);
+    if (!list.length) {
+      const none = document.createElement('p');
+      none.className = 'meta';
+      none.textContent = 'nothing here yet';
+      section.append(none);
+    }
+    list.forEach(item => section.append(wantRow(item)));
+    wantListsEl.append(section);
+  }
+}
+
+async function loadWants() {
+  try {
+    wants = await api('/api/wants');
+    message('');
+  } catch (err) {
+    wants = null;
+    message(`Can't load the list: ${err.message}`, true);
+  }
+  renderWants();
+}
+
+async function mutate(run, done) {
+  try {
+    await run();
+    await loadWants();
+    message(done);
+  } catch (err) {
+    message(err.message, true);
+  }
+}
+
+async function addWant(event) {
+  event.preventDefault();
+  const nameEl = document.getElementById('want-name');
+  const noteEl = document.getElementById('want-note');
+  const countInput = document.getElementById('want-count');
+  const typed = nameEl.value.trim();
+  if (!typed) return;
+  message(`Looking up ${typed}…`);
+  const found = await scryfallLookup(typed);
+  await mutate(() => api('/api/wants', 'POST', {
+    ...(found || {}),
+    name: found?.name || typed,
+    list: document.getElementById('want-list').value,
+    count: Number(countInput.value) || 1,
+    note: noteEl.value.trim(),
+  }), `Added ${found?.name || typed}.`);
+  nameEl.value = '';
+  noteEl.value = '';
+  countInput.value = '1';
+  nameEl.focus();
+}
+
+const setCount = (item, count) => mutate(
+  () => api(`/api/wants/${encodeURIComponent(item.id)}`, 'PATCH', {count}),
+  `${item.name}: ${count}×.`);
+
+const removeWant = item => mutate(
+  () => api(`/api/wants/${encodeURIComponent(item.id)}`, 'DELETE'),
+  `Removed ${item.name}.`);
+
+function setUnlocked(on) {
+  wantsEl.classList.toggle('editing', on);
+  wantForm.hidden = !on;
+  unlockForm.hidden = on;
+  if (!on) {
+    editPw = '';
+    rememberPw('');
+  }
+}
+
+async function unlock(event) {
+  event.preventDefault();
+  const pwEl = document.getElementById('pw');
+  const pw = pwEl.value;
+  if (!pw) return;
+  editPw = pw;
+  try {
+    await api('/api/unlock', 'POST', {});
+    rememberPw(pw);
+    setUnlocked(true);
+    pwEl.value = '';
+    message('Edits unlocked.');
+  } catch (err) {
+    setUnlocked(false);  // clears the password it just tried
+    message(err.message, true);
+  }
+}
+
 // --- tabs + loading ---
 
 let current = null;
@@ -574,11 +933,24 @@ let rendered = {cards: null, stats: null};
 
 function showTab(name) {
   tab = name;
-  tabs.cards.setAttribute('aria-selected', String(name === 'cards'));
-  tabs.stats.setAttribute('aria-selected', String(name === 'stats'));
+  for (const [key, button] of Object.entries(tabs)) {
+    button.setAttribute('aria-selected', String(key === name));
+  }
   board.hidden = name !== 'cards';
   statsEl.hidden = name !== 'stats';
-  if (current) render(current);
+  wantsEl.hidden = name !== 'wants';
+  // The deck picker and the layout toggles say nothing about the trades list.
+  deckSel.hidden = deckControls.hidden = name === 'wants';
+  if (name === 'wants') {
+    location.hash = WANTS_HASH;
+    emptyEl.textContent = '';
+    if (wants) renderWants(); else loadWants();
+    return;
+  }
+  // Coming back from the trades list, hand the hash back to the deck — unless
+  // the hash is what moved us, in which case it already names the deck.
+  if (current && location.hash.slice(1) === WANTS_HASH) location.hash = current.slug;
+  if (current) render(current); else countEl.textContent = '';
 }
 
 function render(deck, force = false) {
@@ -601,7 +973,7 @@ function clearView() {
 async function load(slug) {
   const seq = ++loadSeq;
   emptyEl.textContent = '';
-  location.hash = slug;
+  if (tab !== 'wants') location.hash = slug;  // the trades list owns the hash there
   let deck;
   try {
     const res = await fetch(`data/${slug}.json`);
@@ -616,7 +988,7 @@ async function load(slug) {
   }
   if (seq !== loadSeq) return;  // a newer load already won
   current = deck;
-  render(current);
+  if (tab !== 'wants') render(current);
 }
 
 function fillDecks() {
@@ -631,13 +1003,39 @@ function fillDecks() {
   return visible;
 }
 
+// Everything the trades list needs, wired before the decks are fetched: the
+// list is independent of decks/ and has to work even when no deck is built.
+function initWants() {
+  tabs.wants.onclick = () => showTab('wants');
+  unlockForm.onsubmit = unlock;
+  wantForm.onsubmit = addWant;
+  document.getElementById('want-name').oninput = suggestNames;
+  document.getElementById('lock').onclick = () => {
+    setUnlocked(false);
+    message('Edits locked.');
+  };
+  let saved = '';
+  try {
+    saved = sessionStorage.getItem(PW_KEY) || '';
+  } catch { /* no session storage; the password just isn't remembered */ }
+  if (!saved) return;
+  // Check the remembered password still works rather than showing edit
+  // controls that would fail on first use.
+  editPw = saved;
+  api('/api/unlock', 'POST', {}).then(() => setUnlocked(true), () => setUnlocked(false));
+}
+
 (async function init() {
+  initWants();
+  const startTab = decodeURIComponent(location.hash.slice(1)) === WANTS_HASH
+    ? 'wants' : 'cards';
   let meta;
   try {
     const res = await fetch('data/index.json');
     if (!res.ok) throw new Error(res.status);
     meta = await res.json();
   } catch {
+    showTab(startTab);
     emptyEl.textContent = 'No deck index — run build_site.py.';
     return;
   }
@@ -648,9 +1046,13 @@ function fillDecks() {
   if (wanted && index.find(d => d.slug === wanted && d.draft)) draftsEl.checked = true;
   let visible = fillDecks();
   const start = visible.find(d => d.slug === wanted) || visible[0];
-  if (!start) { emptyEl.textContent = 'No decks built yet.'; return; }
+  if (!start) {
+    showTab(startTab);
+    emptyEl.textContent = 'No decks built yet.';
+    return;
+  }
   deckSel.value = start.slug;
-  showTab('cards');
+  showTab(startTab);
   await load(start.slug);
 
   deckSel.onchange = () => load(deckSel.value);
@@ -672,10 +1074,17 @@ function fillDecks() {
   };
   window.onhashchange = () => {
     const slug = decodeURIComponent(location.hash.slice(1));
+    if (slug === WANTS_HASH) {
+      if (tab !== 'wants') showTab('wants');
+      return;
+    }
     if (slug && slug !== deckSel.value && index.find(d => d.slug === slug)) {
       deckSel.value = slug;
       load(slug);
     }
+    // A deck in the hash means the deck view — the hash already names it, so
+    // showTab leaves it alone.
+    if (tab === 'wants') showTab('cards');
   };
 })();
 </script>

@@ -9,3 +9,5 @@ node_modules/
 cache
 test-results/
 playwright-report/
+# Local stand-in for the WANTS KV namespace (web/devserver.py).
+web/wants.local.json

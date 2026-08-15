@@ -18,8 +18,15 @@ export default defineConfig({
     { name: 'desktop', use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } } },
   ],
   webServer: {
-    command: `python3 -m http.server --directory web/public ${PORT}`,
+    // devserver.py, not a plain file server: the wants & trades tab needs the
+    // /api/* routes, and the suite should exercise the ones the site talks to.
+    command: `python3 web/devserver.py ${PORT}`,
     url: `http://127.0.0.1:${PORT}/data/index.json`,
     reuseExistingServer: !process.env.CI,
+    env: {
+      // Never the real web/wants.local.json: the wants tests add and remove rows.
+      WANTS_STORE: '.playwright/wants.test.json',
+      EDIT_PASSWORD: 'test-password',
+    },
   },
 });

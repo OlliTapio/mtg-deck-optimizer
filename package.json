@@ -7,7 +7,7 @@
     "build": "python3 build_site.py",
     "deploy": "wrangler deploy",
     "publish": "npm run build && npm run deploy",
-    "preview": "python3 -m http.server --directory web/public 8000",
+    "preview": "python3 web/devserver.py 8000",
     "pretest": "playwright install webkit chromium",
     "test": "playwright test",
     "test:ui": "playwright test --ui"
