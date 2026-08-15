@@ -234,37 +234,123 @@
     gap: 8px; color: var(--muted); font-size: 12px;
   }
   .mana-line > .head b { color: var(--text); font-size: 13px; font-weight: 600; }
+
+  /* Wants & trades tab — the one view that writes anything. It borrows the
+     card grid from the deck view (.columns/.cat/.stack), so a wanted card
+     looks exactly like the same card in a deck. */
+  .bar-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .bar-row + .bar-row { margin-top: 10px; }
+  #wants .columns { margin-top: 14px; }
+  button.action {
+    background: var(--panel); color: var(--text); cursor: pointer;
+    border: 1px solid var(--line); border-radius: 8px;
+    padding: 7px 14px; min-height: 36px;
+  }
+  button.action:disabled { opacity: .5; cursor: default; }
+  button.action.on { border-color: var(--accent); color: var(--accent); }
+  .field {
+    background: var(--bg); color: var(--text); font: inherit;
+    border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px;
+    /* 16px, like the selects: anything smaller makes Safari zoom on focus. */
+    min-height: 36px; font-size: 16px; min-width: 0;
+  }
+  #want-name { flex: 3 1 190px; }
+  #want-note { flex: 2 1 150px; }
+  #want-count { width: 74px; }
+  .err { color: var(--warn); }
+  /* Remove sits opposite the details button, in the strip of the card that
+     stays visible in a stack. Only rendered while the list is unlocked. */
+  .card .del {
+    position: absolute; top: 4%; left: 5%; pointer-events: auto;
+    display: flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; border-radius: 50%; border: 0; cursor: pointer;
+    background: rgba(0,0,0,.82); color: var(--R); font-size: 17px; line-height: 1;
+  }
+  .card button.qty {
+    border: 0; font: inherit; font-size: 12px; font-weight: 600;
+    pointer-events: auto; cursor: pointer;
+  }
+
+  /* Password prompt. Above #preview, so it is never opened behind a card. */
+  #unlock {
+    position: fixed; inset: 0; z-index: 30;
+    display: none; align-items: center; justify-content: center;
+    padding: 16px; background: rgba(8,9,12,.86);
+  }
+  #unlock.open { display: flex; }
+  #unlock form {
+    display: grid; gap: 10px; width: 100%; max-width: 320px;
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 12px; padding: 16px;
+  }
+  #unlock h3 { margin: 0; font-size: 14px; }
 </style>
 </head>
 <body>
 <header>
   <div class="row">
     <h1>Decks</h1>
-    <select id="deck"></select>
+    <select id="deck" class="deck-only"></select>
     <span class="meta" id="count"></span>
   </div>
   <div class="row">
     <div class="tabs" role="tablist">
       <button id="tab-cards" role="tab" aria-selected="true">Cards</button>
       <button id="tab-stats" role="tab" aria-selected="false">Stats</button>
+      <button id="tab-wants" role="tab" aria-selected="false">Wants</button>
     </div>
-    <select id="group" title="group cards by" aria-label="group cards by">
+    <select id="group" class="deck-only" title="group cards by" aria-label="group cards by">
       <option value="type">by type</option>
       <option value="category">by category</option>
     </select>
     <label><input type="checkbox" id="stacked" checked> stack</label>
-    <label><input type="checkbox" id="drafts"> drafts</label>
+    <label class="deck-only"><input type="checkbox" id="drafts"> drafts</label>
   </div>
 </header>
 
 <main>
   <div class="columns" id="board"></div>
   <div class="stats" id="stats" hidden></div>
-  <p id="empty"></p>
+  <!-- Wants & trades: a standalone list, deliberately unconnected to the decks. -->
+  <section id="wants" hidden>
+    <div class="bar-row">
+      <button type="button" id="wants-edit" class="action">Edit</button>
+      <span class="meta" id="wants-status"></span>
+    </div>
+    <form class="bar-row" id="wants-add" hidden>
+      <input class="field" id="want-name" list="want-names" autocomplete="off"
+             placeholder="card name" aria-label="card name" required>
+      <datalist id="want-names"></datalist>
+      <input class="field" id="want-count" type="number" min="1" max="99" value="1"
+             aria-label="how many">
+      <select class="field" id="want-list" aria-label="which list">
+        <option value="want">want</option>
+        <option value="trade">for trade</option>
+      </select>
+      <input class="field" id="want-note" maxlength="200"
+             placeholder="note (optional)" aria-label="note">
+      <button type="submit" id="want-add" class="action on">Add</button>
+    </form>
+    <div class="columns" id="wants-board"></div>
+  </section>
+  <p id="empty" class="deck-only"></p>
 </main>
 
 <div id="preview" role="dialog" aria-modal="true" aria-label="card details">
   <div class="sheet"></div>
+</div>
+
+<div id="unlock" role="dialog" aria-modal="true" aria-label="unlock editing">
+  <form id="unlock-form">
+    <h3>Password to edit the list</h3>
+    <input class="field" id="unlock-password" type="password" autocomplete="current-password"
+           aria-label="password" required>
+    <span class="meta err" id="unlock-error"></span>
+    <div class="bar-row">
+      <button type="submit" class="action on">Unlock</button>
+      <button type="button" id="unlock-cancel" class="action">Cancel</button>
+    </div>
+  </form>
 </div>
 
 <script>
@@ -278,7 +364,8 @@ const draftsEl = document.getElementById('drafts');
 const groupEl = document.getElementById('group');
 const preview = document.getElementById('preview');
 const tabs = {cards: document.getElementById('tab-cards'),
-              stats: document.getElementById('tab-stats')};
+              stats: document.getElementById('tab-stats'),
+              wants: document.getElementById('tab-wants')};
 let index = [];
 let TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
                   'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
@@ -341,7 +428,10 @@ function imageOrPlaceholder(card, src) {
   return img;
 }
 
-function cardEl(card) {
+// `edit` is only passed by the wants & trades tab, and only while it's
+// unlocked: {onRemove} adds a remove button, {onDrop} makes the quantity badge
+// take one copy off.
+function cardEl(card, edit = {}) {
   const el = document.createElement('div');
   el.className = 'card';
   el.append(imageOrPlaceholder(card, card.image));
@@ -354,10 +444,26 @@ function cardEl(card) {
   hit.onclick = () => toggleOpen(el, hit);
   el.append(hit);
   if (card.count > 1) {
-    const q = document.createElement('span');
+    const droppable = Boolean(edit.onDrop);
+    const q = document.createElement(droppable ? 'button' : 'span');
     q.className = 'qty';
     q.textContent = card.count + '×';
+    if (droppable) {
+      q.type = 'button';
+      q.title = `remove one copy of ${card.name}`;
+      q.onclick = e => { e.stopPropagation(); edit.onDrop(); };
+    }
     el.append(q);
+  }
+  if (edit.onRemove) {
+    const del = document.createElement('button');
+    del.type = 'button';
+    del.className = 'del';
+    del.textContent = '×';
+    del.title = `remove ${card.name}`;
+    del.setAttribute('aria-label', `remove ${card.name}`);
+    del.onclick = e => { e.stopPropagation(); edit.onRemove(); };
+    el.append(del);
   }
   if (card.buy) {
     const b = document.createElement('span');
@@ -405,6 +511,8 @@ function openPreview(card, opener) {
     card.foil ? 'foil' : null,
     card.price_eur ? `€${card.price_eur}` : null,
     card.buy ? 'on the buy list' : null,
+    card.list === 'want' ? 'wanted' : card.list === 'trade' ? 'for trade' : null,
+    card.note || null,
   ].filter(Boolean);
   if (facts.length) text.append('\n' + facts.join(' · '));
   if (!card.image) {
@@ -562,6 +670,287 @@ function renderStats(deck) {
     curve.map(([cmc, n]) => statRow(`${cmc} CMC`, n, {bar: n / curveMax}))));
 }
 
+// --- wants & trades ---
+
+// A list of cards to look for and cards to give away, with no link to any deck.
+// It lives in the Worker's KV store (see worker/index.js) rather than in the
+// data bundle, because it's the one thing on the site that is edited from the
+// phone instead of from a decklist. Reading is public; editing needs the
+// password, which buys a signed token that's kept for a month.
+
+const wantsEl = document.getElementById('wants');
+const wantsBoard = document.getElementById('wants-board');
+const wantsStatus = document.getElementById('wants-status');
+const wantsForm = document.getElementById('wants-add');
+const editBtn = document.getElementById('wants-edit');
+const addBtn = document.getElementById('want-add');
+const nameInput = document.getElementById('want-name');
+const nameOptions = document.getElementById('want-names');
+const countInput = document.getElementById('want-count');
+const listInput = document.getElementById('want-list');
+const noteInput = document.getElementById('want-note');
+const unlockEl = document.getElementById('unlock');
+const unlockForm = document.getElementById('unlock-form');
+const unlockInput = document.getElementById('unlock-password');
+const unlockError = document.getElementById('unlock-error');
+
+const TOKEN_KEY = 'wants-token';
+const LISTS = [['want', 'Wants', 'nothing on the wants list yet'],
+               ['trade', 'For trade', 'nothing offered for trade yet']];
+
+let token = localStorage.getItem(TOKEN_KEY) || '';
+let editing = false;
+let wants = [];
+let wantsLoaded = false;
+
+function setStatus(message, isError = false) {
+  wantsStatus.textContent = message;
+  wantsStatus.className = isError ? 'meta err' : 'meta';
+}
+
+function forgetToken() {
+  token = '';
+  localStorage.removeItem(TOKEN_KEY);
+}
+
+async function api(path, {method = 'GET', body} = {}) {
+  const res = await fetch('/api' + path, {
+    method,
+    headers: {
+      ...(body === undefined ? {} : {'content-type': 'application/json'}),
+      ...(token ? {authorization: `Bearer ${token}`} : {}),
+    },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  // A plain static server (npm run preview, the test suite) has no /api at all,
+  // and answers with HTML — hence the guard rather than a bare res.json().
+  let data = null;
+  try { data = await res.json(); } catch { /* not JSON: fall through to the status */ }
+  if (res.status === 401 && token) { forgetToken(); setEditing(false); }
+  if (!res.ok) throw new Error(data?.error || `the list is unavailable (${res.status})`);
+  return data;
+}
+
+function setEditing(on) {
+  editing = on;
+  editBtn.textContent = on ? 'Lock' : 'Edit';
+  editBtn.classList.toggle('on', on);
+  wantsForm.hidden = !on;
+  renderWants();
+}
+
+function renderWants() {
+  wantsBoard.innerHTML = '';
+  for (const [list, title, emptyText] of LISTS) {
+    const mine = wants.filter(i => i.list === list)
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const col = document.createElement('section');
+    col.className = 'cat';
+    const h = document.createElement('h2');
+    h.textContent = title + ' ';
+    const n = document.createElement('span');
+    n.textContent = `(${mine.reduce((sum, i) => sum + i.count, 0)})`;
+    h.append(n);
+    const stack = document.createElement('div');
+    stack.className = 'stack' + (stackedEl.checked ? ' stacked' : '');
+    for (const item of mine) {
+      stack.append(cardEl(item, editing
+        ? {onRemove: () => removeWant(item), onDrop: () => dropCopy(item)}
+        : {}));
+    }
+    if (!mine.length) {
+      const p = document.createElement('p');
+      p.className = 'meta';
+      p.textContent = emptyText;
+      stack.append(p);
+    }
+    col.append(h, stack);
+    wantsBoard.append(col);
+  }
+  const totals = LISTS.map(([list]) => wants.filter(i => i.list === list)
+    .reduce((sum, i) => sum + i.count, 0));
+  countEl.textContent = `${totals[0]} wanted · ${totals[1]} for trade`;
+}
+
+async function loadWants() {
+  try {
+    const data = await api('/wants');
+    wants = data.items || [];
+    wantsLoaded = true;
+    setStatus('');
+  } catch (err) {
+    wants = [];
+    setStatus(err.message, true);
+  }
+  renderWants();
+}
+
+// A token from a previous visit may have expired, or the password may have been
+// changed since — ask before showing controls that would then fail.
+async function checkSession() {
+  if (!token) return setEditing(false);
+  try {
+    const {editing: ok} = await api('/session');
+    if (!ok) forgetToken();
+    setEditing(Boolean(ok));
+  } catch {
+    setEditing(false);
+  }
+}
+
+async function showWants() {
+  renderWants();
+  if (wantsLoaded) return;
+  await loadWants();
+  await checkSession();
+}
+
+// --- editing ---
+
+function openUnlock() {
+  unlockError.textContent = '';
+  unlockInput.value = '';
+  unlockEl.classList.add('open');
+  unlockInput.focus();
+}
+
+function closeUnlock() {
+  unlockEl.classList.remove('open');
+  editBtn.focus();
+}
+
+editBtn.onclick = () => {
+  if (!editing) return openUnlock();
+  forgetToken();
+  setEditing(false);
+  setStatus('locked');
+};
+
+unlockForm.onsubmit = async e => {
+  e.preventDefault();
+  unlockError.textContent = '';
+  try {
+    const data = await api('/session', {method: 'POST', body: {password: unlockInput.value}});
+    token = data.token;
+    localStorage.setItem(TOKEN_KEY, token);
+    closeUnlock();
+    setEditing(true);
+    setStatus('editing unlocked');
+  } catch (err) {
+    unlockError.textContent = err.message;
+    unlockInput.select();
+  }
+};
+
+document.getElementById('unlock-cancel').onclick = closeUnlock;
+unlockEl.onclick = e => { if (e.target === unlockEl) closeUnlock(); };
+
+// The card's printing, art and price come from Scryfall at the moment it's
+// added, so the list renders like the rest of the site without the Worker
+// needing to talk to Scryfall itself. A card it can't find is still added by
+// name — the list is more useful than the picture.
+async function scryfall(path) {
+  const res = await fetch('https://api.scryfall.com' + path);
+  if (!res.ok) throw new Error(`Scryfall says ${res.status}`);
+  return res.json();
+}
+
+function snapshot(sf, name) {
+  if (!sf) return {name};
+  const faces = sf.card_faces || [];
+  const front = sf.image_uris ? sf : faces.find(f => f.image_uris) || {};
+  return {
+    name: sf.name || name,
+    set: sf.set,
+    number: sf.collector_number,
+    mana_cost: sf.mana_cost || faces[0]?.mana_cost || '',
+    type_line: sf.type_line || faces[0]?.type_line || '',
+    oracle_text: sf.oracle_text
+      || faces.map(f => f.oracle_text).filter(Boolean).join('\n//\n'),
+    image: front.image_uris?.normal || null,
+    price_eur: sf.prices?.eur || null,
+    cmc: sf.cmc,
+    scryfall_uri: sf.scryfall_uri,
+  };
+}
+
+let suggestTimer = 0;
+
+nameInput.oninput = () => {
+  clearTimeout(suggestTimer);
+  const query = nameInput.value.trim();
+  if (query.length < 3) return;
+  suggestTimer = setTimeout(async () => {
+    let names = [];
+    try {
+      names = (await scryfall('/cards/autocomplete?q=' + encodeURIComponent(query))).data || [];
+    } catch { return; }  // offline: the full name typed by hand still works
+    nameOptions.innerHTML = '';
+    for (const name of names) {
+      const option = document.createElement('option');
+      option.value = name;
+      nameOptions.append(option);
+    }
+  }, 250);
+};
+
+wantsForm.onsubmit = async e => {
+  e.preventDefault();
+  const name = nameInput.value.trim();
+  if (!name) return;
+  addBtn.disabled = true;
+  setStatus(`looking up ${name}…`);
+  let card = null;
+  try {
+    card = await scryfall('/cards/named?fuzzy=' + encodeURIComponent(name));
+  } catch { /* unknown card or no network: add it by name */ }
+  try {
+    const {item, merged} = await api('/wants/items', {
+      method: 'POST',
+      body: {
+        ...snapshot(card, name),
+        list: listInput.value,
+        count: Number(countInput.value) || 1,
+        note: noteInput.value.trim(),
+      },
+    });
+    wants = wants.filter(w => w.id !== item.id).concat(item);
+    nameInput.value = '';
+    noteInput.value = '';
+    countInput.value = '1';
+    setStatus(merged ? `${item.name} — now ${item.count}×` : `added ${item.name}`);
+    renderWants();
+  } catch (err) {
+    setStatus(err.message, true);
+  } finally {
+    addBtn.disabled = false;
+  }
+};
+
+async function removeWant(item) {
+  if (!confirm(`Remove ${item.name}?`)) return;
+  try {
+    await api('/wants/items/' + encodeURIComponent(item.id), {method: 'DELETE'});
+    wants = wants.filter(w => w.id !== item.id);
+    setStatus(`removed ${item.name}`);
+    renderWants();
+  } catch (err) {
+    setStatus(err.message, true);
+  }
+}
+
+async function dropCopy(item) {
+  try {
+    const {item: updated} = await api('/wants/items/' + encodeURIComponent(item.id),
+      {method: 'PATCH', body: {count: item.count - 1}});
+    wants = wants.map(w => w.id === updated.id ? updated : w);
+    setStatus(`${updated.name} — now ${updated.count}×`);
+    renderWants();
+  } catch (err) {
+    setStatus(err.message, true);
+  }
+}
+
 // --- tabs + loading ---
 
 let current = null;
@@ -574,11 +963,26 @@ let rendered = {cards: null, stats: null};
 
 function showTab(name) {
   tab = name;
-  tabs.cards.setAttribute('aria-selected', String(name === 'cards'));
-  tabs.stats.setAttribute('aria-selected', String(name === 'stats'));
+  for (const [key, button] of Object.entries(tabs)) {
+    button.setAttribute('aria-selected', String(key === name));
+  }
   board.hidden = name !== 'cards';
   statsEl.hidden = name !== 'stats';
-  if (current) render(current);
+  wantsEl.hidden = name !== 'wants';
+  // The deck picker, grouping and drafts say nothing about the wants list.
+  for (const el of document.querySelectorAll('.deck-only')) el.hidden = name === 'wants';
+  if (name === 'wants') {
+    location.hash = 'wants';
+    showWants();
+    return;
+  }
+  if (current) {
+    location.hash = current.slug;
+    render(current);
+  } else if (deckSel.value && !loadSeq) {
+    // Opened straight on #wants: the deck view hasn't fetched anything yet.
+    load(deckSel.value);
+  }
 }
 
 function render(deck, force = false) {
@@ -648,16 +1052,22 @@ function fillDecks() {
   if (wanted && index.find(d => d.slug === wanted && d.draft)) draftsEl.checked = true;
   let visible = fillDecks();
   const start = visible.find(d => d.slug === wanted) || visible[0];
-  if (!start) { emptyEl.textContent = 'No decks built yet.'; return; }
-  deckSel.value = start.slug;
-  showTab('cards');
-  await load(start.slug);
-
   deckSel.onchange = () => load(deckSel.value);
-  tabs.cards.onclick = () => showTab('cards');
-  tabs.stats.onclick = () => showTab('stats');
+  for (const [name, button] of Object.entries(tabs)) button.onclick = () => showTab(name);
   // Layout toggles only need a re-render, not a refetch.
-  stackedEl.onchange = groupEl.onchange = () => current && render(current);
+  stackedEl.onchange = groupEl.onchange = () =>
+    tab === 'wants' ? renderWants() : current && render(current);
+
+  if (start) deckSel.value = start.slug;
+  // The wants list is its own view, so it opens even when no deck is built.
+  if (wanted === 'wants') {
+    showTab('wants');
+  } else if (!start) {
+    emptyEl.textContent = 'No decks built yet.';
+  } else {
+    showTab('cards');
+    await load(start.slug);
+  }
   draftsEl.onchange = () => {
     const selected = deckSel.value;
     visible = fillDecks();
@@ -672,7 +1082,10 @@ function fillDecks() {
   };
   window.onhashchange = () => {
     const slug = decodeURIComponent(location.hash.slice(1));
-    if (slug && slug !== deckSel.value && index.find(d => d.slug === slug)) {
+    if (slug === 'wants') return showTab('wants');
+    if (slug && index.find(d => d.slug === slug)) {
+      if (tab === 'wants') showTab('cards');
+      if (slug === deckSel.value) return;
       deckSel.value = slug;
       load(slug);
     }

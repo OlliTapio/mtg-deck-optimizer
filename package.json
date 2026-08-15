@@ -2,14 +2,17 @@
   "name": "mtg-decks",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Static Archidekt-style viewer for the decks in this repo",
   "scripts": {
     "build": "python3 build_site.py",
     "deploy": "wrangler deploy",
     "publish": "npm run build && npm run deploy",
     "preview": "python3 -m http.server --directory web/public 8000",
+    "dev": "wrangler dev",
     "pretest": "playwright install webkit chromium",
-    "test": "playwright test",
+    "test": "npm run test:worker && playwright test",
+    "test:worker": "node --test worker/index.test.mjs",
     "test:ui": "playwright test --ui"
   },
   "devDependencies": {

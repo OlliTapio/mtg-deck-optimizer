@@ -1,0 +1,3 @@
+# Copy to .dev.vars (gitignored) so `npm run dev` can unlock the wants list.
+# In production this is a secret, not a var:  npx wrangler secret put EDIT_PASSWORD
+EDIT_PASSWORD=pick-a-password

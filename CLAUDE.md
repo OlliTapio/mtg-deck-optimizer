@@ -42,9 +42,13 @@ python3 codex_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt decks/<c>/de
 
 # Rebuild the deck site data bundle after any decklist change (see web/README.md)
 python3 build_site.py [<deck_folder> ...]
-npm run preview   # serve web/public on http://127.0.0.1:8000
-npm test          # Playwright site tests (iPhone 11 WebKit + desktop)
+npm run preview   # serve web/public on http://127.0.0.1:8000 (decks only, no API)
+npm run dev       # wrangler dev: the site plus the wants & trades API
+npm test          # worker API tests, then Playwright (iPhone 11 WebKit + desktop)
 npm run publish   # rebuild data + wrangler deploy
+
+# The site's Wants tab (#wants) is a standalone wants/trades list kept in
+# Cloudflare KV, not in this repo — nothing there affects any decklist.
 
 # Check prices for entire deck or specific cards
 python3 price_check.py --deck decks/<deck>/decklist.txt
