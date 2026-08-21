@@ -247,6 +247,7 @@
     <div class="tabs" role="tablist">
       <button id="tab-cards" role="tab" aria-selected="true">Cards</button>
       <button id="tab-stats" role="tab" aria-selected="false">Stats</button>
+      <button id="tab-trades" role="tab" aria-selected="false">Trades</button>
     </div>
     <select id="group" title="group cards by" aria-label="group cards by">
       <option value="type">by type</option>
@@ -260,6 +261,7 @@
 <main>
   <div class="columns" id="board"></div>
   <div class="stats" id="stats" hidden></div>
+  <div class="stats" id="trades" hidden></div>
   <p id="empty"></p>
 </main>
 
@@ -277,8 +279,11 @@ const stackedEl = document.getElementById('stacked');
 const draftsEl = document.getElementById('drafts');
 const groupEl = document.getElementById('group');
 const preview = document.getElementById('preview');
+const tradesEl = document.getElementById('trades');
 const tabs = {cards: document.getElementById('tab-cards'),
-              stats: document.getElementById('tab-stats')};
+              stats: document.getElementById('tab-stats'),
+              trades: document.getElementById('tab-trades')};
+let TRADE_WANTS = [];
 let index = [];
 let TYPE_ORDER = ['Commander', 'Creature', 'Planeswalker', 'Instant', 'Sorcery',
                   'Artifact', 'Enchantment', 'Battle', 'Other', 'Land'];
@@ -562,6 +567,42 @@ function renderStats(deck) {
     curve.map(([cmc, n]) => statRow(`${cmc} CMC`, n, {bar: n / curveMax}))));
 }
 
+// --- trade wants (cross-deck, not per-deck) ---
+
+// Cards to get by trade rather than buy. Grouped by the deck that wants each
+// one; the deck name comes from the index so build_site.py stays the only place
+// that knows a slug's display name.
+function renderTrades() {
+  tradesEl.innerHTML = '';
+  const total = TRADE_WANTS.reduce((n, w) => n + w.count, 0);
+  if (!total) {
+    tradesEl.append(statSection('Trade wants', [statRow('none recorded', '')]));
+    return;
+  }
+  const nameOf = slug => (index.find(d => d.slug === slug) || {}).name || slug;
+  const byDeck = new Map();
+  for (const w of TRADE_WANTS) {
+    if (!byDeck.has(w.slug)) byDeck.set(w.slug, []);
+    byDeck.get(w.slug).push(w);
+  }
+  const head = statSection(`Trade wants — ${total} card${total === 1 ? '' : 's'}`,
+    [statRow('to acquire by trade, not purchase', '')]);
+  tradesEl.append(head);
+  for (const [slug, wants] of byDeck) {
+    const rows = [];
+    for (const w of wants) {
+      rows.push(statRow(w.name, w.count > 1 ? `x${w.count}` : '1'));
+      if (w.note) {
+        const p = document.createElement('p');
+        p.className = 'meta';
+        p.textContent = w.note;
+        rows.push(p);
+      }
+    }
+    tradesEl.append(statSection(nameOf(slug), rows));
+  }
+}
+
 // --- tabs + loading ---
 
 let current = null;
@@ -570,18 +611,28 @@ let tab = 'cards';
 
 // What each pane currently holds, so switching tabs doesn't rebuild the board
 // (which would lose the scroll position and every open card).
-let rendered = {cards: null, stats: null};
+let rendered = {cards: null, stats: null, trades: null};
 
 function showTab(name) {
   tab = name;
-  tabs.cards.setAttribute('aria-selected', String(name === 'cards'));
-  tabs.stats.setAttribute('aria-selected', String(name === 'stats'));
+  for (const [key, btn] of Object.entries(tabs)) {
+    btn.setAttribute('aria-selected', String(name === key));
+  }
   board.hidden = name !== 'cards';
   statsEl.hidden = name !== 'stats';
+  tradesEl.hidden = name !== 'trades';
+  // Trades are cross-deck, so they render with no deck loaded (and even if a
+  // deck fetch failed) — everything they need is already in the index.
+  if (name === 'trades') {
+    if (rendered.trades !== 'trades') { rendered.trades = 'trades'; renderTrades(); }
+    return;
+  }
   if (current) render(current);
 }
 
 function render(deck, force = false) {
+  // The trades pane is deck-independent; showTab owns rendering it.
+  if (tab === 'trades') return;
   countEl.textContent = `${deck.total} cards`;
   const key = tab === 'cards'
     ? `${deck.slug}|${groupEl.value}|${stackedEl.checked}`
@@ -595,7 +646,7 @@ function clearView() {
   board.innerHTML = '';
   statsEl.innerHTML = '';
   countEl.textContent = '';
-  rendered = {cards: null, stats: null};
+  rendered = {cards: null, stats: null, trades: null};
 }
 
 async function load(slug) {
@@ -643,6 +694,7 @@ function fillDecks() {
   }
   index = meta.decks;
   if (meta.type_order) TYPE_ORDER = meta.type_order;  // single source: build_site.py
+  TRADE_WANTS = meta.trade_wants || [];
 
   const wanted = decodeURIComponent(location.hash.slice(1));
   if (wanted && index.find(d => d.slug === wanted && d.draft)) draftsEl.checked = true;
@@ -656,6 +708,7 @@ function fillDecks() {
   deckSel.onchange = () => load(deckSel.value);
   tabs.cards.onclick = () => showTab('cards');
   tabs.stats.onclick = () => showTab('stats');
+  tabs.trades.onclick = () => showTab('trades');
   // Layout toggles only need a re-render, not a refetch.
   stackedEl.onchange = groupEl.onchange = () => current && render(current);
   draftsEl.onchange = () => {

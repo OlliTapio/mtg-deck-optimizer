@@ -27,6 +27,13 @@
    "draft": false
   },
   {
+   "slug": "cirdan_council",
+   "name": "Círdan the Shipwright",
+   "total": 100,
+   "art": "https://cards.scryfall.io/small/front/c/4/c4f23d68-d0de-4b57-b0f9-9c0ca770c3c1.jpg?1783916021",
+   "draft": false
+  },
+  {
    "slug": "radha_battlecruiser",
    "name": "Radha, Heir to Keld",
    "total": 100,
@@ -172,6 +179,14 @@
    "total": 100,
    "art": "https://cards.scryfall.io/small/front/1/8/18df72be-07d2-4412-b36d-a45119763db3.jpg?1714110413",
    "draft": false
+  }
+ ],
+ "trade_wants": [
+  {
+   "count": 1,
+   "name": "Walking Ballista",
+   "note": "Combo A upgrade over Triskelion: same \"remove a counter: 1 damage\" engine, but CMC 0, castable early as removal/reach, and 4 mana cheaper to assemble with a doubler down. Triskelion stays until this is traded for.",
+   "slug": "wise_mothman"
   }
  ]
 }

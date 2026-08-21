@@ -3,7 +3,30 @@
 ## Win Conditions (in order)
 1. **Commander damage** — Mothman grows via +1/+1 counters each attack (doubled by Hardened Scales, Branching Evolution, Corpsejack Menace). A flying beater with few blockers reaches 21 commander damage in 3-4 swings.
 2. **Combat beatdown** — the whole board grows from counter doublers + proliferate. Swing wide with big creatures.
-3. **Combo A: Walking Ballista + Vigor + counter doubler** — Ballista pings itself, Vigor replaces damage with +1/+1 counters, counter doubler (Hardened Scales/Branching Evolution/Corpsejack) makes it grow each loop. Infinite damage to any target.
+3. **Combo A: Triskelion (or Walking Ballista) + Vigor + counter doubler** — INSTANT WIN,
+   do not cut any piece. The list runs **Triskelion** ({6}, EUR0.17).
+   **Walking Ballista is the preferred upgrade** (EUR8.66, within the <=EUR10 cap): CMC 0
+   X-spell, castable early as removal/reach, {4} mana sink to grow, and an actual +1/+1
+   counter payoff rather than a dead 6-drop. Cuts combo assembly from 13 mana to 9 and
+   removes one of the three cards named in the "all top-end" mulligan rule below.
+   Mana saved vs Triskelion's flat {6}: **4 mana** with a doubler already on the battlefield
+   (X=1 = {1}{1}, the normal case), 2 mana if no doubler is down yet (X=2 = {2}{2}).
+   STATUS: not a buy. Olli will slot it in **only if he manages to trade for it** — until
+   then Triskelion stays in the list and the combo is fully functional as-is.
+   PLAY NOTE - loop needs 2 counters, not 1: Ballista is printed **0/0** (Triskelion is
+   **1/1**). At zero counters Ballista is 0/0 and dies to CR 704.5f as a state-based action,
+   checked after costs are paid but before the ability resolves - Vigor then has nothing to
+   put a counter on and the loop breaks. This mostly self-solves: the doubler is already a
+   required combo piece and it doubles Ballista's ENTRY counters (Corpsejack/Branching
+   Evolution = 2X, Hardened Scales = X+1), so X=1 for {1}{1} enters as a 2/2 and is
+   loop-safe. Without a doubler on board, cast it for X>=2.
+   Remove a +1/+1 counter from Triskelion, targeting Triskelion itself. Vigor prevents the
+   damage (Triskelion is "another creature you control" from Vigor's perspective) and puts a
+   +1/+1 counter back on it. A doubler (Hardened Scales / Branching Evolution / Corpsejack
+   Menace) turns that 1 counter into 2, so each loop nets **+1 counter**. Grow Triskelion
+   arbitrarily large, then aim the removals at faces for unbounded damage.
+   Bracket 3 OK: it is a THREE-card combo costing 13+ mana (6+6+1..4), so it cannot come
+   online in the first ~6 turns, and it requires real board presence.
 4. **Combo B: Fathom Mage + Mothman + Psychic Corrosion** — Mothman's +1/+1 counters trigger Fathom Mage draws, Psychic Corrosion mills opponents on each draw. Infinite mill.
 
 Rad counters are **incidental** — chip damage and mill disruption, NOT the primary plan.

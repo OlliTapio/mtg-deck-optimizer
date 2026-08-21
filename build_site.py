@@ -294,6 +294,43 @@ def deck_slugs():
     )
 
 
+def parse_trade_wants(slug):
+    """Cards to acquire by trade rather than purchase (decks/<slug>/trade_wants.txt).
+
+    Deliberately separate from the `Buy` tag / buy_list.txt so trades never get
+    counted as spending. Format mirrors buy_list.txt with an optional note:
+        <count> <card name> | <optional note>
+    """
+    path = os.path.join(DECKS_DIR, slug, "trade_wants.txt")
+    if not os.path.exists(path):
+        return []
+    wants = []
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            body, _, note = line.partition("|")
+            m = re.match(r"^(\d+)\s*x?\s+(.+)$", body.strip())
+            count, name = (int(m.group(1)), m.group(2).strip()) if m else (1, body.strip())
+            wants.append({"count": count, "name": name, "note": note.strip() or None})
+    return wants
+
+
+def all_trade_wants(known):
+    """Flat cross-deck want list, tagged with the deck that wants each card.
+
+    Built from every known deck rather than only the requested ones: reading a
+    text file costs nothing, and this way a single-deck rebuild can never drop
+    another deck's wants out of the committed index.
+    """
+    wants = []
+    for slug in known:
+        for want in parse_trade_wants(slug):
+            wants.append({**want, "slug": slug})
+    return wants
+
+
 def index_entry(deck):
     return {
         "slug": deck["slug"],
@@ -360,7 +397,8 @@ def main():
         entries = merge_index(entries, previous, set(known))
 
     with open(index_path, "w") as f:
-        json.dump({"type_order": TYPE_ORDER, "decks": entries}, f,
+        json.dump({"type_order": TYPE_ORDER, "decks": entries,
+                   "trade_wants": all_trade_wants(known)}, f,
                   ensure_ascii=False, indent=1)
 
     print(f"Wrote {len(entries)} decks to {OUT_DIR}", file=sys.stderr)

@@ -60,3 +60,8 @@ they were cut for a reason. Listed here for reference only.
 
 ## Maybeboard
 1x Takenuma, Abandoned Mire — €7.93, good but already have 11 recursion pieces
+
+## Pending physical changes (bought, not yet swapped in the sleeve)
+- Chain Reaction OUT -> Vandalblast IN — Vandalblast is bought and owned; the
+  physical deck still has Chain Reaction in the slot. Swap when convenient.
+  Repo files already reflect the finished state (Vandalblast in the 100).

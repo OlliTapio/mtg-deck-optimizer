@@ -10,7 +10,7 @@
 1x Canyon Slough (ecc) 145 [Land]
 1x Carnifex Demon (ecc) 72 [Creature]
 1x Grim Affliction (nph) 65 [Instant,Buy]
-1x Vandalblast (msc) 168 [Sorcery,Buy]
+1x Vandalblast (msc) 168 [Sorcery]
 1x Channeler Initiate (ecc) 101 [Creature]
 1x Chimil, the Inner Sun (ecc) 137 [Artifact]
 1x Cinder Glade (ecc) 146 [Land]
