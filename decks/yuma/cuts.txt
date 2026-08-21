@@ -1,1 +1,11 @@
 Return of the Wildspeaker — 5 CMC instant draw/pump, replaced by Hedge Shredder. Rarely cast due to wanting to tap out for proactive plays; deck has enough draw from Yuma's attack trigger and other sources.
+
+## 2026-08-20
+1x The Mending of Dominaria (otc) 197 -> Mole Man, Moloid Master (msh, buy EUR2.86)
+   5-CMC saga cut for a 3-CMC landfall engine. Mole Man plays lands from the graveyard
+   and makes a 1/1 Moloid on every landfall (tokens mill on attack).
+   ENGINE (not a tension): Mole Man replays a land from GY -> landfall makes a Moloid ->
+   Yuma attacks and sacs that land -> the land (a Desert under Dune Chanter) hits the GY
+   again, making a 4/2 Plant Warrior + a draw. The sac returns the land to the graveyard
+   immediately, so Yuma's -1/land discount is restored, not drained. Moloid attack-mill
+   adds further lands to the GY, deepening the discount.

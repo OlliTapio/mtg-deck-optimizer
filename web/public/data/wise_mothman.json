@@ -1,4 +1,7 @@
 {
+  "id": "wise_mothman",
+  "name": "The Wise Mothman",
+  "bracket": 3,
   "commander": {
     "name": "The Wise Mothman",
     "count": 1,
@@ -28,7 +31,8 @@
     "foil": true,
     "buy": false
   },
-  "deck": [
+  "total_cards": 100,
+  "cards": [
     {
       "name": "Agent Frank Horrigan",
       "count": 1,
@@ -2400,8 +2404,827 @@
       "buy": true
     }
   ],
-  "metadata": {
-    "source_file": "decks/wise_mothman/decklist.txt",
-    "total_cards": 100
-  }
+  "analytics": {
+    "type_counts": {
+      "Creature": 37,
+      "Instant": 11,
+      "Sorcery": 11,
+      "Enchantment": 5,
+      "Artifact": 3,
+      "Land": 38
+    },
+    "curve": {
+      "0": 0,
+      "1": 6,
+      "2": 20,
+      "3": 16,
+      "4": 11,
+      "5": 3,
+      "6": 3,
+      "7": 1,
+      "8": 2,
+      "avg": 3.13
+    },
+    "pips": {
+      "U": 24,
+      "B": 19,
+      "G": 48
+    },
+    "otag_groups": {
+      "board-wipe": [
+        "Find // Finality",
+        "Massacre Girl",
+        "Nuclear Fallout",
+        "Vicious Rivalry",
+        "Wave Goodbye"
+      ],
+      "card-advantage": [
+        "Bugenhagen, Wise Elder",
+        "Evolution Witness",
+        "Fathom Mage",
+        "Fetid Pools",
+        "Find // Finality",
+        "Flotsam // Jetsam",
+        "Guardian Project",
+        "Inspiring Call",
+        "Mariposa Military Base",
+        "Mirelurk Queen",
+        "Pensive Professor",
+        "Ray Fillet, Wave Warrior",
+        "Tezzeret's Gambit",
+        "Unnatural Restoration"
+      ],
+      "counterspell": [
+        "Glen Elendra Guardian",
+        "Repulsive Mutation",
+        "Stubborn Denial"
+      ],
+      "draw": [
+        "Bugenhagen, Wise Elder",
+        "Fathom Mage",
+        "Fetid Pools",
+        "Flotsam // Jetsam",
+        "Guardian Project",
+        "Inspiring Call",
+        "Mariposa Military Base",
+        "Mirelurk Queen",
+        "Pensive Professor",
+        "Ray Fillet, Wave Warrior",
+        "Tezzeret's Gambit"
+      ],
+      "evasion": [
+        "Alpha Deathclaw",
+        "Birds of Paradise",
+        "Glen Elendra Guardian",
+        "Massacre Girl",
+        "Ray Fillet, Wave Warrior",
+        "The Wise Mothman",
+        "Thrummingbird",
+        "Vexing Radgull"
+      ],
+      "graveyard-hate": [
+        "Armored Scrapgorger",
+        "Boggart Trawler // Boggart Bog",
+        "Bojuka Bog",
+        "Flotsam // Jetsam",
+        "Scavenging Ooze"
+      ],
+      "lifegain": [
+        "Scavenging Ooze",
+        "Shadowspear"
+      ],
+      "mana-dork": [
+        "Animal Attendant",
+        "Armored Scrapgorger",
+        "Birds of Paradise",
+        "Bugenhagen, Wise Elder",
+        "Incubation Druid",
+        "Kami of Whispered Hopes"
+      ],
+      "mill": [
+        "Flotsam // Jetsam",
+        "Mariposa Military Base",
+        "Mirelurk Queen",
+        "Mole Man, Moloid Master",
+        "Nuclear Fallout",
+        "Psychic Corrosion",
+        "Tato Farmer",
+        "The Wise Mothman",
+        "Vexing Radgull"
+      ],
+      "proliferate": [
+        "Agent Frank Horrigan",
+        "Atomize",
+        "Cankerbloom",
+        "Dreamtide Whale",
+        "Evolution Sage",
+        "Flux Channeler",
+        "Mutational Advantage",
+        "Ripples of Potential",
+        "Tezzeret's Gambit",
+        "Thrummingbird",
+        "Tromell, Seymour's Butler",
+        "Unnatural Restoration",
+        "Vexing Radgull"
+      ],
+      "ramp": [
+        "Animal Attendant",
+        "Armored Scrapgorger",
+        "Binding the Old Gods",
+        "Birds of Paradise",
+        "Bugenhagen, Wise Elder",
+        "Farseek",
+        "Incubation Druid",
+        "Kami of Whispered Hopes",
+        "Rampant Growth",
+        "Sakura-Tribe Elder",
+        "Tato Farmer"
+      ],
+      "recursion": [
+        "Evolution Witness",
+        "Find // Finality",
+        "Flotsam // Jetsam",
+        "Mole Man, Moloid Master",
+        "Reanimate",
+        "Tato Farmer",
+        "Unnatural Restoration",
+        "Vigor"
+      ],
+      "removal": [
+        "Alpha Deathclaw",
+        "Assassin's Trophy",
+        "Atomize",
+        "Binding the Old Gods",
+        "Bridgeworks Battle // Tanglespan Bridgeworks",
+        "Cankerbloom",
+        "Collective Resistance",
+        "Find // Finality",
+        "Into the Flood Maw",
+        "Massacre Girl",
+        "Nuclear Fallout",
+        "Rampaging Yao Guai",
+        "Triskelion",
+        "Vicious Rivalry",
+        "Wave Goodbye"
+      ],
+      "tutor": [
+        "Binding the Old Gods",
+        "Farseek",
+        "Rampant Growth",
+        "Sakura-Tribe Elder"
+      ]
+    },
+    "template": [
+      {
+        "key": "targeted",
+        "label": "Targeted Disruption",
+        "have": 18,
+        "target": 12
+      },
+      {
+        "key": "mass",
+        "label": "Mass Disruption",
+        "have": 5,
+        "target": 6
+      },
+      {
+        "key": "card_advantage",
+        "label": "Card Advantage",
+        "have": 14,
+        "target": 12
+      },
+      {
+        "key": "ramp",
+        "label": "Ramp",
+        "have": 11,
+        "target": 10
+      }
+    ]
+  },
+  "buy_list": [
+    {
+      "count": 1,
+      "name": "Boggart Trawler // Boggart Bog"
+    },
+    {
+      "count": 1,
+      "name": "Bridgeworks Battle // Tanglespan Bridgeworks"
+    },
+    {
+      "count": 1,
+      "name": "Deathcap Glade"
+    },
+    {
+      "count": 1,
+      "name": "Flooded Grove"
+    },
+    {
+      "count": 1,
+      "name": "Pensive Professor"
+    },
+    {
+      "count": 1,
+      "name": "Revitalizing Repast // Old-Growth Grove"
+    },
+    {
+      "count": 1,
+      "name": "Vicious Rivalry"
+    },
+    {
+      "count": 1,
+      "name": "Mole Man, Moloid Master"
+    }
+  ],
+  "trade_wants": [
+    {
+      "count": 1,
+      "name": "Walking Ballista",
+      "note": "Combo A upgrade over Triskelion: same \"remove a counter: 1 damage\" engine, but CMC 0, castable early as removal/reach, and 4 mana cheaper to assemble with a doubler down. Triskelion stays until this is traded for."
+    }
+  ],
+  "cuts": [
+    {
+      "round": "Round 1 cuts (replaced with proliferate/interaction synergy)",
+      "out": {
+        "name": "Casualties of War",
+        "set": "pip",
+        "number": "213"
+      },
+      "in_name": "Tezzeret's Gambit",
+      "reason": "draw + proliferate",
+      "raw": "1x Casualties of War (pip) 213 [Removal] -> Tezzeret's Gambit (draw + proliferate)"
+    },
+    {
+      "round": "Round 1 cuts (replaced with proliferate/interaction synergy)",
+      "out": {
+        "name": "Negate",
+        "set": "mom",
+        "number": "68"
+      },
+      "in_name": "Flux Channeler",
+      "reason": "noncreature spells proliferate",
+      "raw": "1x Negate (mom) 68 [Removal] -> Flux Channeler (noncreature spells proliferate)"
+    },
+    {
+      "round": "Round 1 cuts (replaced with proliferate/interaction synergy)",
+      "out": {
+        "name": "Infesting Radroach",
+        "set": "pip",
+        "number": "46"
+      },
+      "in_name": "Scheming Aspirant",
+      "reason": "drain on proliferate",
+      "raw": "1x Infesting Radroach (pip) 46 [Mill,Creature] -> Scheming Aspirant (drain on proliferate)"
+    },
+    {
+      "round": "Round 1 cuts (replaced with proliferate/interaction synergy)",
+      "out": {
+        "name": "Vault 12: The Necropolis",
+        "set": "pip",
+        "number": "51"
+      },
+      "in_name": "Tromell, Seymour's Butler",
+      "reason": "ETB counters + multi-proliferate",
+      "raw": "1x Vault 12: The Necropolis (pip) 51 [Mill] -> Tromell, Seymour's Butler (ETB counters + multi-proliferate)"
+    },
+    {
+      "round": "Round 1 cuts (replaced with proliferate/interaction synergy)",
+      "out": {
+        "name": "Mortuary Mire",
+        "set": "pip",
+        "number": "272"
+      },
+      "in_name": "Swamp (fix tainted lands) [REVERTED - Mire back in, Karn's Bastion slot]",
+      "reason": "",
+      "raw": "1x Mortuary Mire (pip) 272 [Land] -> Swamp (fix tainted lands) [REVERTED - Mire back in, Karn's Bastion slot]"
+    },
+    {
+      "round": "Round 1 cuts (replaced with proliferate/interaction synergy)",
+      "out": {
+        "name": "Nesting Grounds",
+        "set": "pip",
+        "number": "276"
+      },
+      "in_name": "Singularity Rupture",
+      "reason": "board wipe + mill",
+      "raw": "1x Nesting Grounds (pip) 276 [Land] -> Singularity Rupture (board wipe + mill)"
+    },
+    {
+      "round": "Round 1 cuts (replaced with proliferate/interaction synergy)",
+      "out": {
+        "name": "Counterspell",
+        "set": "dsc",
+        "number": "114"
+      },
+      "in_name": "Repulsive Mutation",
+      "reason": "counter + counters",
+      "raw": "1x Counterspell (dsc) 114 [Removal] -> Repulsive Mutation (counter + counters)"
+    },
+    {
+      "round": "Round 1 cuts (replaced with proliferate/interaction synergy)",
+      "out": {
+        "name": "Raul, Trouble Shooter",
+        "set": "pip",
+        "number": "115"
+      },
+      "in_name": "Conduit of Worlds",
+      "reason": "passive recursion",
+      "raw": "1x Raul, Trouble Shooter (pip) 115 [Recursion,Creature] -> Conduit of Worlds (passive recursion)"
+    },
+    {
+      "round": "Round 2 cuts (wipes, interaction, wincons)",
+      "out": {
+        "name": "Screeching Scorchbeast",
+        "set": "pip",
+        "number": "49"
+      },
+      "in_name": "Wave Goodbye",
+      "reason": "one-sided bounce wipe",
+      "raw": "1x Screeching Scorchbeast (pip) 49 [Mill,Creature] -> Wave Goodbye (one-sided bounce wipe)"
+    },
+    {
+      "round": "Round 2 cuts (wipes, interaction, wincons)",
+      "out": {
+        "name": "Glowing One",
+        "set": "pip",
+        "number": "76"
+      },
+      "in_name": "Flotsam // Jetsam",
+      "reason": "mill + theft",
+      "raw": "1x Glowing One (pip) 76 [Mill,Creature] -> Flotsam // Jetsam (mill + theft)"
+    },
+    {
+      "round": "Round 2 cuts (wipes, interaction, wincons)",
+      "out": {
+        "name": "Vault 87: Forced Evolution",
+        "set": "pip",
+        "number": "122"
+      },
+      "in_name": "Armorcraft Judge",
+      "reason": "burst draw creature",
+      "raw": "1x Vault 87: Forced Evolution (pip) 122 [Draw] -> Armorcraft Judge (burst draw creature)"
+    },
+    {
+      "round": "Round 2 cuts (wipes, interaction, wincons)",
+      "out": {
+        "name": "Bloatfly Swarm",
+        "set": "pip",
+        "number": "42"
+      },
+      "in_name": "Binding the Old Gods",
+      "reason": "removal + ramp saga",
+      "raw": "1x Bloatfly Swarm (pip) 42 [Mill,Creature] -> Binding the Old Gods (removal + ramp saga)"
+    },
+    {
+      "round": "Round 2 cuts (wipes, interaction, wincons)",
+      "out": {
+        "name": "Struggle for Project Purity",
+        "set": "pip",
+        "number": "39"
+      },
+      "in_name": "Awaken the Honored Dead",
+      "reason": "removal + mill + recursion saga",
+      "raw": "1x Struggle for Project Purity (pip) 39 [Draw] -> Awaken the Honored Dead (removal + mill + recursion saga)"
+    },
+    {
+      "round": "Round 2 cuts (wipes, interaction, wincons)",
+      "out": {
+        "name": "Contaminated Drink",
+        "set": "pip",
+        "number": "99"
+      },
+      "in_name": "Simic Ascendancy",
+      "reason": "alt wincon",
+      "raw": "1x Contaminated Drink (pip) 99 [Draw] -> Simic Ascendancy (alt wincon)"
+    },
+    {
+      "round": "Round 2 cuts (wipes, interaction, wincons)",
+      "out": {
+        "name": "Putrefy",
+        "set": "pip",
+        "number": "219"
+      },
+      "in_name": "Massacre Girl",
+      "reason": "creature-based wipe",
+      "raw": "1x Putrefy (pip) 219 [Removal] -> Massacre Girl (creature-based wipe)"
+    },
+    {
+      "round": "Round 2 cuts (wipes, interaction, wincons)",
+      "out": {
+        "name": "Undead Alchemist",
+        "set": "mic",
+        "number": "105"
+      },
+      "in_name": "Stubborn Denial",
+      "reason": "1-mana hard counter with ferocious",
+      "raw": "1x Undead Alchemist (mic) 105 [Mill] -> Stubborn Denial (1-mana hard counter with ferocious)"
+    },
+    {
+      "round": "Round 3 cuts (Awaken reverted, counter sources, recursion)",
+      "out": {
+        "name": "Awaken the Honored Dead",
+        "set": null,
+        "number": null
+      },
+      "in_name": "Putrefy",
+      "reason": "reverted - Awaken returns to hand not battlefield, needs discard",
+      "raw": "1x Awaken the Honored Dead -> Putrefy (reverted - Awaken returns to hand not battlefield, needs discard)"
+    },
+    {
+      "round": "Round 3 cuts (Awaken reverted, counter sources, recursion)",
+      "out": {
+        "name": "Herd Baloth",
+        "set": "mh2",
+        "number": "165"
+      },
+      "in_name": "Evolution Witness",
+      "reason": "repeatable recursion on counter triggers",
+      "raw": "1x Herd Baloth (mh2) 165 [Creature] -> Evolution Witness (repeatable recursion on counter triggers)"
+    },
+    {
+      "round": "Round 3 cuts (Awaken reverted, counter sources, recursion)",
+      "out": {
+        "name": "Inexorable Tide",
+        "set": "pip",
+        "number": "177"
+      },
+      "in_name": "Defiler of Vigor",
+      "reason": "independent counter source for whole board",
+      "raw": "1x Inexorable Tide (pip) 177 [Proliferate] -> Defiler of Vigor (independent counter source for whole board)"
+    },
+    {
+      "round": "Round 4 cuts (protection + creature ramp)",
+      "out": {
+        "name": "Scheming Aspirant",
+        "set": "one",
+        "number": "83"
+      },
+      "in_name": "Snakeskin Veil",
+      "reason": "cheap protection + counter synergy",
+      "raw": "1x Scheming Aspirant (one) 83 [Proliferate,Creature] -> Snakeskin Veil (cheap protection + counter synergy)"
+    },
+    {
+      "round": "Round 4 cuts (protection + creature ramp)",
+      "out": {
+        "name": "Sol Ring",
+        "set": "pip",
+        "number": "232"
+      },
+      "in_name": "Llanowar Elves",
+      "reason": "creature ramp for Guardian Project/Tromell/Defiler triggers",
+      "raw": "1x Sol Ring (pip) 232 [Ramp] -> Llanowar Elves (creature ramp for Guardian Project/Tromell/Defiler triggers)"
+    },
+    {
+      "round": "Round 4 cuts (protection + creature ramp)",
+      "out": {
+        "name": "Arcane Signet",
+        "set": "pip",
+        "number": "224"
+      },
+      "in_name": "Kami of Whispered Hopes",
+      "reason": "counter doubler #5 + mana dork",
+      "raw": "1x Arcane Signet (pip) 224 [Ramp] -> Kami of Whispered Hopes (counter doubler #5 + mana dork)"
+    },
+    {
+      "round": "Round 4 cuts (protection + creature ramp)",
+      "out": {
+        "name": "Conduit of Worlds",
+        "set": "one",
+        "number": "233"
+      },
+      "in_name": "World Shaper",
+      "reason": "creature land recursion + mass landfall on death",
+      "raw": "1x Conduit of Worlds (one) 233 [Recursion] -> World Shaper (creature land recursion + mass landfall on death)"
+    },
+    {
+      "round": "Round 4 cuts (protection + creature ramp)",
+      "out": {
+        "name": "Radstorm",
+        "set": "pip",
+        "number": "37"
+      },
+      "in_name": "Scavenging Ooze",
+      "reason": "graveyard hate + counter growth at 2CMC",
+      "raw": "1x Radstorm (pip) 37 [Proliferate] -> Scavenging Ooze (graveyard hate + counter growth at 2CMC)"
+    },
+    {
+      "round": "Round 5 cuts (4CMC reduction, proliferate creatures, mana fixing)",
+      "out": {
+        "name": "Jenova, Ancient Calamity",
+        "set": "fin",
+        "number": "228"
+      },
+      "in_name": "Duskshell Crawler",
+      "reason": "ETB counter + trample for countered creatures",
+      "raw": "1x Jenova, Ancient Calamity (fin) 228 [Creature] -> Duskshell Crawler (ETB counter + trample for countered creatures)"
+    },
+    {
+      "round": "Round 5 cuts (4CMC reduction, proliferate creatures, mana fixing)",
+      "out": {
+        "name": "Armorcraft Judge",
+        "set": "kld",
+        "number": "146"
+      },
+      "in_name": "Dreamtide Whale",
+      "reason": "passive repeatable proliferate",
+      "raw": "1x Armorcraft Judge (kld) 146 [Draw,Creature] -> Dreamtide Whale (passive repeatable proliferate)"
+    },
+    {
+      "round": "Round 5 cuts (4CMC reduction, proliferate creatures, mana fixing)",
+      "out": {
+        "name": "The Master, Transcendent",
+        "set": "pip",
+        "number": "6"
+      },
+      "in_name": "Glen Elendra Guardian",
+      "reason": "counterspell on a body",
+      "raw": "1x The Master, Transcendent (pip) 6 [Recursion,Creature] -> Glen Elendra Guardian (counterspell on a body)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Llanowar Elves",
+        "set": "pip",
+        "number": "239"
+      },
+      "in_name": "Armored Scrapgorger",
+      "reason": "any-color dork + graveyard hate + grows",
+      "raw": "1x Llanowar Elves (pip) 239 [Ramp] -> Armored Scrapgorger (any-color dork + graveyard hate + grows)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Devoted Druid",
+        "set": "2x2",
+        "number": "143"
+      },
+      "in_name": "Animal Attendant",
+      "reason": "any-color dork + +1/+1 on non-Human creatures",
+      "raw": "1x Devoted Druid (2x2) 143 [Ramp] -> Animal Attendant (any-color dork + +1/+1 on non-Human creatures)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Rampant Growth",
+        "set": "pip",
+        "number": "204"
+      },
+      "in_name": "Bugenhagen, Wise Elder",
+      "reason": "any-color creature dork + card draw with 7+ power",
+      "raw": "1x Rampant Growth (pip) 204 [Ramp] -> Bugenhagen, Wise Elder (any-color creature dork + card draw with 7+ power)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Temple of Deceit",
+        "set": "pip",
+        "number": "303"
+      },
+      "in_name": "Fetid Pools",
+      "reason": "Island Swamp typed dual, fetchable",
+      "raw": "1x Temple of Deceit (pip) 303 [Land] -> Fetid Pools (Island Swamp typed dual, fetchable)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Temple of Malady",
+        "set": "pip",
+        "number": "306"
+      },
+      "in_name": "Haunted Mire",
+      "reason": "Swamp Forest typed dual, fetchable",
+      "raw": "1x Temple of Malady (pip) 306 [Land] -> Haunted Mire (Swamp Forest typed dual, fetchable)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Temple of Mystery",
+        "set": "pip",
+        "number": "308"
+      },
+      "in_name": "Tangled Islet",
+      "reason": "Forest Island typed dual, fetchable",
+      "raw": "1x Temple of Mystery (pip) 308 [Land] -> Tangled Islet (Forest Island typed dual, fetchable)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Evolving Wilds",
+        "set": "pip",
+        "number": "263"
+      },
+      "in_name": "Forest",
+      "reason": "basic, always untapped",
+      "raw": "1x Evolving Wilds (pip) 263 [Land] -> Forest (basic, always untapped)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Terramorphic Expanse",
+        "set": "pip",
+        "number": "313"
+      },
+      "in_name": "Island",
+      "reason": "basic, always untapped",
+      "raw": "1x Terramorphic Expanse (pip) 313 [Land] -> Island (basic, always untapped)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Swamp",
+        "set": "pip",
+        "number": "321"
+      },
+      "in_name": "Bojuka Bog",
+      "reason": "free graveyard exile on ETB",
+      "raw": "1x Swamp (pip) 321 [Land] -> Bojuka Bog (free graveyard exile on ETB)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Forest",
+        "set": "pip",
+        "number": "325"
+      },
+      "in_name": "Swamp",
+      "reason": "rebalance colors, more B sources",
+      "raw": "1x Forest (pip) 325 [Land] -> Swamp (rebalance colors, more B sources)"
+    },
+    {
+      "round": "Round 6 cuts (color-fixing dorks, manabase, graveyard hate)",
+      "out": {
+        "name": "Swamp",
+        "set": "pip",
+        "number": "321"
+      },
+      "in_name": "Island",
+      "reason": "rebalance colors, more U sources",
+      "raw": "1x Swamp (pip) 321 [Land] -> Island (rebalance colors, more U sources)"
+    },
+    {
+      "round": "Round 7 cuts (manabase untapping + color rebalance + 2 spells)",
+      "out": {
+        "name": "Marcus, Mutant Mayor",
+        "set": "pip",
+        "number": "109"
+      },
+      "in_name": "Pensive Professor",
+      "reason": "counter/proliferate draw engine, lowers curve 5->3",
+      "raw": "1x Marcus, Mutant Mayor (pip) 109 [Draw,Creature] -> Pensive Professor (counter/proliferate draw engine, lowers curve 5->3)"
+    },
+    {
+      "round": "Round 7 cuts (manabase untapping + color rebalance + 2 spells)",
+      "out": {
+        "name": "Singularity Rupture",
+        "set": "dft",
+        "number": "111"
+      },
+      "in_name": "Vicious Rivalry",
+      "reason": "scalable one-sided-ish wipe; Rupture nuked own board incl Mothman",
+      "raw": "1x Singularity Rupture (dft) 111 [Removal,Buy] -> Vicious Rivalry (scalable one-sided-ish wipe; Rupture nuked own board incl Mothman)"
+    },
+    {
+      "round": "Round 7 cuts (manabase untapping + color rebalance + 2 spells)",
+      "out": {
+        "name": "Tainted Isle",
+        "set": "pip",
+        "number": "299"
+      },
+      "in_name": "Dreamroot Cascade",
+      "reason": "GU slow, unconditional fixing, untapped T3+; removes Swamp-dependency",
+      "raw": "1x Tainted Isle (pip) 299 [Land] -> Dreamroot Cascade (GU slow, unconditional fixing, untapped T3+; removes Swamp-dependency)"
+    },
+    {
+      "round": "Round 7 cuts (manabase untapping + color rebalance + 2 spells)",
+      "out": {
+        "name": "Tainted Wood",
+        "set": "pip",
+        "number": "301"
+      },
+      "in_name": "Turbulent Wilderness",
+      "reason": "GU, Forest Island types, fetchable; boosts blue",
+      "raw": "1x Tainted Wood (pip) 301 [Land] -> Turbulent Wilderness (GU, Forest Island types, fetchable; boosts blue)"
+    },
+    {
+      "round": "Round 7 cuts (manabase untapping + color rebalance + 2 spells)",
+      "out": {
+        "name": "Tangled Islet",
+        "set": "blb",
+        "number": "262"
+      },
+      "in_name": "Rejuvenating Springs",
+      "reason": "GU bond, always untapped in EDH",
+      "raw": "1x Tangled Islet (blb) 262 [Land,Buy] -> Rejuvenating Springs (GU bond, always untapped in EDH)"
+    },
+    {
+      "round": "Round 7 cuts (manabase untapping + color rebalance + 2 spells)",
+      "out": {
+        "name": "Haunted Mire",
+        "set": "dsk",
+        "number": "267"
+      },
+      "in_name": "Deathcap Glade",
+      "reason": "BG slow, untapped T3+; cuts a filler tapland, check lands unaffected",
+      "raw": "1x Haunted Mire (dsk) 267 [Land,Buy] -> Deathcap Glade (BG slow, untapped T3+; cuts a filler tapland, check lands unaffected)"
+    },
+    {
+      "round": "Round 7 cuts (manabase untapping + color rebalance + 2 spells)",
+      "out": {
+        "name": "Simic Ascendancy",
+        "set": "rna",
+        "number": "207"
+      },
+      "in_name": "Rampaging Yao Guai",
+      "reason": "sync w/ Archidekt; Mutant body + X counters + artifact/enchant removal, alt-wincon enchantment cut",
+      "raw": "1x Simic Ascendancy (rna) 207 [Counters,Buy] -> Rampaging Yao Guai (sync w/ Archidekt; Mutant body + X counters + artifact/enchant removal, alt-wincon enchantment cut)"
+    },
+    {
+      "round": "Round 7 cuts (manabase untapping + color rebalance + 2 spells)",
+      "out": {
+        "name": "Putrefy",
+        "set": "pip",
+        "number": "219"
+      },
+      "in_name": "Beast Within",
+      "reason": "instant, destroys ANY permanent incl. lands/PWs/enchantments; exile-quality flexibility vs Putrefy's redundant artifact/creature mode",
+      "raw": "1x Putrefy (pip) 219 [Removal] -> Beast Within (instant, destroys ANY permanent incl. lands/PWs/enchantments; exile-quality flexibility vs Putrefy's redundant artifact/creature mode)"
+    },
+    {
+      "round": "Round 9 cuts (budget-driven filter land swap)",
+      "out": {
+        "name": "Rejuvenating Springs",
+        "set": "ltc",
+        "number": "325"
+      },
+      "in_name": "Flooded Grove",
+      "reason": "GU Shadowmoor filter; ~\u20ac7.18 cheaper, same GU pair, always untapped + taps {C} alone or filters GU; loses bond land's unconditional colored mana but deck's green density feeds the filter easily",
+      "raw": "1x Rejuvenating Springs (ltc) 325 [Land,Buy] -> Flooded Grove (GU Shadowmoor filter; ~\u20ac7.18 cheaper, same GU pair, always untapped + taps {C} alone or filters GU; loses bond land's unconditional colored mana but deck's green density feeds the filter easily)"
+    },
+    {
+      "round": "Round 8 cuts (spell//land MDFCs \u2014 cut 3 black lands, add 3 flex cards that are lands when needed but nonland cards for Mothman's mill trigger)",
+      "out": {
+        "name": "Mortuary Mire",
+        "set": "pip",
+        "number": "272"
+      },
+      "in_name": "Boggart Trawler // Boggart Bog",
+      "reason": "slow recursion for a flexible GY-exile body; kept Bojuka Bog too for GY control since we feed our own yard; back taps B",
+      "raw": "1x Mortuary Mire (pip) 272 [Land] -> Boggart Trawler // Boggart Bog (slow recursion for a flexible GY-exile body; kept Bojuka Bog too for GY control since we feed our own yard; back taps B)"
+    },
+    {
+      "round": "Round 8 cuts (spell//land MDFCs \u2014 cut 3 black lands, add 3 flex cards that are lands when needed but nonland cards for Mothman's mill trigger)",
+      "out": {
+        "name": "Swamp",
+        "set": "pip",
+        "number": "321"
+      },
+      "in_name": "Revitalizing Repast // Old-Growth Grove",
+      "reason": "instant +1/+1 counter + indestructible; back taps B/G; black oversupplied",
+      "raw": "1x Swamp (pip) 321 [Land] -> Revitalizing Repast // Old-Growth Grove (instant +1/+1 counter + indestructible; back taps B/G; black oversupplied)"
+    },
+    {
+      "round": "Round 8 cuts (spell//land MDFCs \u2014 cut 3 black lands, add 3 flex cards that are lands when needed but nonland cards for Mothman's mill trigger)",
+      "out": {
+        "name": "Swamp",
+        "set": "pip",
+        "number": "321"
+      },
+      "in_name": "Bridgeworks Battle // Tanglespan Bridgeworks",
+      "reason": "sorcery +2/+2 + fight removal; back taps G; black oversupplied",
+      "raw": "1x Swamp (pip) 321 [Land] -> Bridgeworks Battle // Tanglespan Bridgeworks (sorcery +2/+2 + fight removal; back taps G; black oversupplied)"
+    },
+    {
+      "round": "Round 8 cuts (spell//land MDFCs \u2014 cut 3 black lands, add 3 flex cards that are lands when needed but nonland cards for Mothman's mill trigger)",
+      "out": {
+        "name": "Beast Within",
+        "set": "msc",
+        "number": "169"
+      },
+      "in_name": "Into the Flood Maw",
+      "reason": "{U} instant bounce; answers indestructible threats deck cannot destroy, Gift mode hits any nonland permanent, lowers curve 3->1",
+      "raw": "1x Beast Within (msc) 169 [Removal] -> Into the Flood Maw ({U} instant bounce; answers indestructible threats deck cannot destroy, Gift mode hits any nonland permanent, lowers curve 3->1)"
+    },
+    {
+      "round": "Round 8 cuts (spell//land MDFCs \u2014 cut 3 black lands, add 3 flex cards that are lands when needed but nonland cards for Mothman's mill trigger)",
+      "out": {
+        "name": "Watchful Radstag",
+        "set": "pip",
+        "number": "87"
+      },
+      "in_name": "Shadowspear",
+      "reason": "owned; strips opponents hexproof/indestructible so the all-destroy removal suite works vs indestructible, lifelink offsets rad/self-damage; Radstag was off-engine evolve filler",
+      "raw": "1x Watchful Radstag (pip) 87 [Counters,Creature] -> Shadowspear (owned; strips opponents hexproof/indestructible so the all-destroy removal suite works vs indestructible, lifelink offsets rad/self-damage; Radstag was off-engine evolve filler)"
+    },
+    {
+      "round": "Round 8 cuts (spell//land MDFCs \u2014 cut 3 black lands, add 3 flex cards that are lands when needed but nonland cards for Mothman's mill trigger)",
+      "out": {
+        "name": "World Shaper",
+        "set": "rix",
+        "number": "151"
+      },
+      "in_name": "Mole Man, Moloid Master",
+      "reason": "msh, buy EUR2.86",
+      "raw": "1x World Shaper (rix) 151 -> Mole Man, Moloid Master (msh, buy EUR2.86)"
+    }
+  ]
 }

@@ -1,0 +1,2009 @@
+{
+  "commander": {
+    "name": "Brion Stoutarm",
+    "count": 1,
+    "mana_cost": "{2}{R}{W}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature \u2014 Giant Warrior",
+    "types": [
+      "Creature"
+    ],
+    "oracle_text": "Lifelink\n{R}, {T}, Sacrifice another creature: Brion Stoutarm deals damage equal to the sacrificed creature's power to target player or planeswalker.",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "keywords": [
+      "Lifelink"
+    ],
+    "produced_mana": [],
+    "otags": [
+      "removal",
+      "lifegain",
+      "sacrifice-outlet"
+    ],
+    "price_eur": "0.45",
+    "set": "lrw",
+    "number": "142",
+    "foil": false,
+    "buy": false
+  },
+  "deck": [
+    {
+      "name": "Claim the Firstborn",
+      "count": 1,
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Gain control of target creature with mana value 3 or less until end of turn. Untap that creature. It gains haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.23",
+      "set": "eld",
+      "number": "118",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Cleansing Nova",
+      "count": 1,
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Choose one \u2014\n\u2022 Destroy all creatures.\n\u2022 Destroy all artifacts and enchantments.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.48",
+      "set": "m19",
+      "number": "9",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mark of Mutiny",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Gain control of target creature until end of turn. Put a +1/+1 counter on it and untap it. That creature gains haste until end of turn. (It can attack and {T} this turn.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.13",
+      "set": "ima",
+      "number": "139",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Furnace Reins",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Gain control of target creature until end of turn. Untap that creature. Until end of turn, it gains haste and \"Whenever this creature deals combat damage to a player or battle, create a Treasure token.\" (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Treasure"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.27",
+      "set": "otj",
+      "number": "127",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Kari Zev's Expertise",
+      "count": 1,
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Gain control of target creature or Vehicle until end of turn. Untap it. It gains haste until end of turn.\nYou may cast a spell with mana value 2 or less from your hand without paying its mana cost.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.70",
+      "set": "aer",
+      "number": "88",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Involuntary Employment",
+      "count": 1,
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. Create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Treasure"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.13",
+      "set": "snc",
+      "number": "110",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "The Akroan War",
+      "count": 1,
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Enchantment \u2014 Saga",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI \u2014 Gain control of target creature for as long as this Saga remains on the battlefield.\nII \u2014 Until your next turn, creatures your opponents control attack each combat if able.\nIII \u2014 Each tapped creature deals damage to itself equal to its power.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.36",
+      "set": "thb",
+      "number": "124",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Zealous Conscripts",
+      "count": 1,
+      "mana_cost": "{4}{R}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Human Warrior",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Haste\nWhen this creature enters, gain control of target permanent until end of turn. Untap that permanent. It gains haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Haste"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.31",
+      "set": "mm3",
+      "number": "116",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Word of Seizing",
+      "count": 1,
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nUntap target permanent and gain control of it until end of turn. It gains haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Split second"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.18",
+      "set": "tsr",
+      "number": "198",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mass Mutiny",
+      "count": 1,
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "For each opponent, gain control of up to one target creature that player controls until end of turn. Untap those creatures. They gain haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.25",
+      "set": "plc",
+      "number": "97",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mob Rule",
+      "count": 1,
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Choose one \u2014\n\u2022 Gain control of all creatures with power 4 or greater until end of turn. Untap those creatures. They gain haste until end of turn.\n\u2022 Gain control of all creatures with power 3 or less until end of turn. Untap those creatures. They gain haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.50",
+      "set": "frf",
+      "number": "109",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Captivating Crew",
+      "count": 1,
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Human Pirate",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{3}{R}: Gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn. Activate only as a sorcery.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "xln",
+      "number": "137",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Coercive Recruiter",
+      "count": 1,
+      "mana_cost": "{4}{R}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Orc Pirate",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever this creature or another Pirate you control enters, gain control of target creature until end of turn. Untap that creature. Until end of turn, it gains haste and becomes a Pirate in addition to its other types.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.26",
+      "set": "cmr",
+      "number": "169",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Austere Command",
+      "count": 1,
+      "mana_cost": "{4}{W}{W}",
+      "cmc": 6.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Choose two \u2014\n\u2022 Destroy all artifacts.\n\u2022 Destroy all enchantments.\n\u2022 Destroy all creatures with mana value 3 or less.\n\u2022 Destroy all creatures with mana value 4 or greater.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.44",
+      "set": "lrw",
+      "number": "3",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Molten Primordial",
+      "count": 1,
+      "mana_cost": "{5}{R}{R}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Avatar",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Haste\nWhen this creature enters, for each opponent, gain control of up to one target creature that player controls until end of turn. Untap those creatures. They gain haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Haste"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "3.24",
+      "set": "gtc",
+      "number": "101",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Firbolg Flutist",
+      "count": 1,
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Giant Bard",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Enthralling Performance \u2014 When this creature enters, gain control of target creature you don't control until end of turn. Untap it. It gains haste and myriad until end of turn. (Whenever it attacks, for each opponent other than defending player, you may create a token copy that's tapped and attacking that player or a planeswalker they control. Exile the tokens at end of combat.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Enthralling Performance"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.46",
+      "set": "clb",
+      "number": "173",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Insurrection",
+      "count": 1,
+      "mana_cost": "{5}{R}{R}{R}",
+      "cmc": 8.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Untap all creatures and gain control of them until end of turn. They gain haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "5.84",
+      "set": "cmd",
+      "number": "126",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Act of Aggression",
+      "count": 1,
+      "mana_cost": "{3}{R/P}{R/P}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "({R/P} can be paid with either {R} or 2 life.)\nGain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.42",
+      "set": "nph",
+      "number": "78",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Goblin Bombardment",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Sacrifice a creature: This enchantment deals 1 damage to any target.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "2.58",
+      "set": "mh2",
+      "number": "279",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Altar of Dementia",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Sacrifice a creature: Target player mills cards equal to the sacrificed creature's power.",
+      "color_identity": [],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "9.82",
+      "set": "mh1",
+      "number": "218",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Thornbite Staff",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Kindred Artifact \u2014 Shaman Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Equipped creature has \"{2}, {T}: This creature deals 1 damage to any target\" and \"Whenever a creature dies, untap this creature.\"\nWhenever a Shaman creature enters, you may attach this Equipment to it.\nEquip {4}",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "6.68",
+      "set": "mor",
+      "number": "145",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Fling",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "As an additional cost to cast this spell, sacrifice a creature.\nFling deals damage equal to the sacrificed creature's power to any target.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.15",
+      "set": "eld",
+      "number": "126",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Kazuul's Fury // Kazuul's Cliffs",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Instant // Land",
+      "types": [
+        "Instant",
+        "Land"
+      ],
+      "oracle_text": "As an additional cost to cast this spell, sacrifice a creature.\nKazuul's Fury deals damage equal to the sacrificed creature's power to any target.\n---\nThis land enters tapped.\n{T}: Add {R}.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [
+        "removal",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.67",
+      "set": "znr",
+      "number": "146",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Thud",
+      "count": 1,
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "As an additional cost to cast this spell, sacrifice a creature.\nThud deals damage equal to the sacrificed creature's power to any target.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.56",
+      "set": "m19",
+      "number": "163",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Soul's Fire",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Target creature you control deals damage equal to its power to any target.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.21",
+      "set": "ala",
+      "number": "115",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Serra Avatar",
+      "count": 1,
+      "mana_cost": "{4}{W}{W}{W}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Avatar",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Serra Avatar's power and toughness are each equal to your life total.\nWhen Serra Avatar is put into a graveyard from anywhere, shuffle it into its owner's library.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "0.38",
+      "set": "m13",
+      "number": "28",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Phyrexian Processor",
+      "count": 1,
+      "mana_cost": "{4}",
+      "cmc": 4.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "As this artifact enters, pay any amount of life.\n{4}, {T}: Create an X/X black Phyrexian Minion creature token, where X is the life paid as this artifact entered.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.53",
+      "set": "fdn",
+      "number": "265",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mimic Vat",
+      "count": 1,
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Imprint \u2014 Whenever a nontoken creature dies, you may exile that card. If you do, return each other card exiled with this artifact to its owner's graveyard.\n{3}, {T}: Create a token that's a copy of a card exiled with this artifact. It gains haste. Exile it at the beginning of the next end step.",
+      "color_identity": [],
+      "keywords": [
+        "Imprint"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "graveyard-hate"
+      ],
+      "price_eur": "0.43",
+      "set": "cmr",
+      "number": "322",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Flameshadow Conjuring",
+      "count": 1,
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever a nontoken creature you control enters, you may pay {R}. If you do, create a token that's a copy of that creature. That token gains haste. Exile it at the beginning of the next end step.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "2.49",
+      "set": "ori",
+      "number": "147",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Ball Lightning",
+      "count": 1,
+      "mana_cost": "{R}{R}{R}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)\nHaste (This creature can attack and {T} as soon as it comes under your control.)\nAt the beginning of the end step, sacrifice this creature.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Haste",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.36",
+      "set": "m10",
+      "number": "125",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Spark Trooper",
+      "count": 1,
+      "mana_cost": "{1}{R}{R}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Elemental Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Trample, lifelink, haste\nAt the beginning of the end step, sacrifice this creature.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Lifelink",
+        "Haste",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "lifegain"
+      ],
+      "price_eur": "0.23",
+      "set": "gtc",
+      "number": "109",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Eater of Days",
+      "count": 1,
+      "mana_cost": "{4}",
+      "cmc": 4.0,
+      "type_line": "Artifact Creature \u2014 Leviathan",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "oracle_text": "Flying, trample\nWhen this creature enters, you skip your next two turns.",
+      "color_identity": [],
+      "keywords": [
+        "Flying",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "1.24",
+      "set": "dst",
+      "number": "120",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Feldon of the Third Path",
+      "count": 1,
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Human Artificer",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{2}{R}, {T}: Create a token that's a copy of target creature card in your graveyard, except it's an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of the next end step.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "0.89",
+      "set": "cmm",
+      "number": "209",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Angrath's Marauders",
+      "count": 1,
+      "mana_cost": "{5}{R}{R}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Human Pirate",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "If a source you control would deal damage to a permanent or player, it deals double that damage to that permanent or player instead.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.33",
+      "set": "xln",
+      "number": "132",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Adarkar Valkyrie",
+      "count": 1,
+      "mana_cost": "{4}{W}{W}",
+      "cmc": 6.0,
+      "type_line": "Snow Creature \u2014 Angel",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying, vigilance\n{T}: When target creature other than this creature dies this turn, return that card to the battlefield under your control.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Flying",
+        "Vigilance"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.61",
+      "set": "csp",
+      "number": "1",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Solemn Simulacrum",
+      "count": 1,
+      "mana_cost": "{4}",
+      "cmc": 4.0,
+      "type_line": "Artifact Creature \u2014 Golem",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.\nWhen this creature dies, you may draw a card.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "draw",
+        "tutor",
+        "card-advantage"
+      ],
+      "price_eur": "0.31",
+      "set": "cmm",
+      "number": "395",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Humble Defector",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Human Rogue",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{T}: Draw two cards. Target opponent gains control of this creature. Activate only during your turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.15",
+      "set": "a25",
+      "number": "135",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Well of Lost Dreams",
+      "count": 1,
+      "mana_cost": "{4}",
+      "cmc": 4.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Whenever you gain life, you may pay {X}, where X is less than or equal to the amount of life you gained. If you do, draw X cards.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.91",
+      "set": "cmm",
+      "number": "413",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Reforge the Soul",
+      "count": 1,
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Each player discards their hand, then draws seven cards.\nMiracle {1}{R} (You may cast this card for its miracle cost when you draw it if it's the first card you drew this turn.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Miracle"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "1.94",
+      "set": "avr",
+      "number": "151",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Showdown of the Skalds",
+      "count": 1,
+      "mana_cost": "{2}{R}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment \u2014 Saga",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI \u2014 Exile the top four cards of your library. Until the end of your next turn, you may play those cards.\nII, III \u2014 Whenever you cast a spell this turn, put a +1/+1 counter on target creature you control.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage"
+      ],
+      "price_eur": "0.64",
+      "set": "khm",
+      "number": "229",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Sol Ring",
+      "count": 1,
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.85",
+      "set": "fdn",
+      "number": "271",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Arcane Signet",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.22",
+      "set": "fdn",
+      "number": "247",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Boros Signet",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{1}, {T}: Add {R}{W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.51",
+      "set": "cmm",
+      "number": "367",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mind Stone",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}, Sacrifice this artifact: Draw a card.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "ramp",
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.24",
+      "set": "fdn",
+      "number": "262",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Commander's Sphere",
+      "count": 1,
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.\nSacrifice this artifact: Draw a card.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.19",
+      "set": "cmm",
+      "number": "373",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Fire Diamond",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "This artifact enters tapped.\n{T}: Add {R}.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.26",
+      "set": "cmm",
+      "number": "378",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Marble Diamond",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "This artifact enters tapped.\n{T}: Add {W}.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.23",
+      "set": "cmm",
+      "number": "384",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Knight of the White Orchid",
+      "count": 1,
+      "mana_cost": "{W}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Human Knight",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "First strike\nWhen this creature enters, if an opponent controls more lands than you, you may search your library for a Plains card, put it onto the battlefield, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "First strike"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "2.18",
+      "set": "ori",
+      "number": "21",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Wayfarer's Bauble",
+      "count": 1,
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{2}, {T}, Sacrifice this artifact: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.27",
+      "set": "cmm",
+      "number": "412",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mask of Memory",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Whenever equipped creature deals combat damage to a player, you may draw two cards. If you do, discard a card.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.21",
+      "set": "cmm",
+      "number": "383",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Tome of Legends",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "This artifact enters with a page counter on it.\nWhenever your commander enters or attacks, put a page counter on this artifact.\n{1}, {T}, Remove a page counter from this artifact: Draw a card.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.45",
+      "set": "eld",
+      "number": "332",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Welcoming Vampire",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Vampire",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever one or more other creatures you control with power 2 or less enter, draw a card. This ability triggers only once each turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage",
+        "evasion"
+      ],
+      "price_eur": "1.29",
+      "set": "vow",
+      "number": "46",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mentor of the Meek",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Human Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever another creature you control with power 2 or less enters, you may pay {1}. If you do, draw a card.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.24",
+      "set": "m19",
+      "number": "27",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Sunforger",
+      "count": 1,
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Equipped creature gets +4/+0.\n{R}{W}, Unattach this Equipment: Search your library for a red or white instant card with mana value 4 or less and cast that card without paying its mana cost. Then shuffle.\nEquip {3}",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.86",
+      "set": "cmm",
+      "number": "401",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Swords to Plowshares",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Exile target creature. Its controller gains life equal to its power.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "lifegain"
+      ],
+      "price_eur": "1.63",
+      "set": "cmm",
+      "number": "56",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Path to Exile",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "removal",
+        "tutor"
+      ],
+      "price_eur": "1.49",
+      "set": "cmm",
+      "number": "40",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Generous Gift",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Destroy target permanent. Its controller creates a 3/3 green Elephant creature token.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "1.12",
+      "set": "cmm",
+      "number": "20",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Chaos Warp",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.49",
+      "set": "cmm",
+      "number": "178",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Blasphemous Act",
+      "count": 1,
+      "mana_cost": "{8}{R}",
+      "cmc": 9.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "This spell costs {1} less to cast for each creature on the battlefield.\nBlasphemous Act deals 13 damage to each creature.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.68",
+      "set": "cmm",
+      "number": "171",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Wear // Tear",
+      "count": 1,
+      "mana_cost": "{1}{R} // {W}",
+      "cmc": 3.0,
+      "type_line": "Instant // Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Destroy target artifact.\nFuse (You may cast one or both halves of this card from your hand.)\n---\nDestroy target enchantment.\nFuse (You may cast one or both halves of this card from your hand.)",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Fuse"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "1.47",
+      "set": "dgm",
+      "number": "135",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Lightning Greaves",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Equipped creature has haste and shroud. (It can't be the target of spells or abilities.)\nEquip {0}",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "4.55",
+      "set": "cmm",
+      "number": "382",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Swiftfoot Boots",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Equipped creature has hexproof and haste. (It can't be the target of spells or abilities your opponents control. It can attack and {T} no matter when it came under your control.)\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "2.05",
+      "set": "fdn",
+      "number": "275",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Boros Charm",
+      "count": 1,
+      "mana_cost": "{R}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Choose one \u2014\n\u2022 Boros Charm deals 4 damage to target player or planeswalker.\n\u2022 Permanents you control gain indestructible until end of turn.\n\u2022 Target creature gains double strike until end of turn.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": null,
+      "set": "cmm",
+      "number": "172",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Command Tower",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.19",
+      "set": "fdn",
+      "number": "252",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Sacred Foundry",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R} or {W}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "9.26",
+      "set": "rvr",
+      "number": "283",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Battlefield Forge",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {R} or {W}. This land deals 1 damage to you.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.38",
+      "set": "bro",
+      "number": "257",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Clifftop Retreat",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control a Mountain or a Plains.\n{T}: Add {R} or {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.34",
+      "set": "cmm",
+      "number": "418",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Inspiring Vantage",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control two or fewer other lands.\n{T}: Add {R} or {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "2.17",
+      "set": "klr",
+      "number": "283",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Rugged Prairie",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.31",
+      "set": "shm",
+      "number": "247",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Temple of Triumph",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {R} or {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.15",
+      "set": "cmm",
+      "number": "459",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Slayers' Stronghold",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{R}{W}, {T}: Target creature gets +2/+0 and gains vigilance and haste until end of turn.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [],
+      "price_eur": "0.24",
+      "set": "avr",
+      "number": "229",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Sunhome, Fortress of the Legion",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{2}{R}{W}, {T}: Target creature gains double strike until end of turn.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [],
+      "price_eur": "0.25",
+      "set": "hop",
+      "number": "138",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Needle Spires",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {R} or {W}.\n{2}{R}{W}: Until end of turn, this land becomes a 2/1 red and white Elemental creature with double strike. It's still a land.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "ogw",
+      "number": "176",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Boros Garrison",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, return a land you control to its owner's hand.\n{T}: Add {R}{W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.26",
+      "set": "cmm",
+      "number": "416",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Wind-Scarred Crag",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, you gain 1 life.\n{T}: Add {R} or {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [
+        "lifegain"
+      ],
+      "price_eur": "0.07",
+      "set": "fdn",
+      "number": "285",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Evolving Wilds",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.10",
+      "set": "fdn",
+      "number": "253",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Terramorphic Expanse",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.21",
+      "set": "fdn",
+      "number": "277",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mountain",
+      "count": 12,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Mountain",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "fdn",
+      "number": "299",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Plains",
+      "count": 10,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "fdn",
+      "number": "293",
+      "foil": false,
+      "buy": false
+    }
+  ],
+  "metadata": {
+    "source_file": "decks/wip_brion/decklist.txt",
+    "total_cards": 100
+  }
+}

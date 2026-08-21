@@ -1,0 +1,68 @@
+name: deck.json sync check
+
+# Issue #7: a stale deck.json can never land. For every deck whose decklist.txt
+# changed, regenerate deck.json and fail if the committed copy differs.
+
+on:
+  pull_request:
+    paths:
+      - 'decks/**/decklist.txt'
+      - 'decks/**/deck.json'
+      - 'deck_to_json.py'
+      - 'sync_decks.py'
+      - 'parser.py'
+      - 'card_cache.py'
+      - 'otag_fetcher.py'
+      - 'deck_analyzer.py'
+  push:
+    branches: [main]
+    paths:
+      - 'decks/**/decklist.txt'
+
+jobs:
+  sync-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # need the base commit to diff changed decklists
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # cache/ is gitignored (cards.json is ~10MB). Persist it across runs so we
+      # only hit Scryfall for newly-referenced cards. Keyed on the decklists so a
+      # deck change invalidates only when needed; restore-keys warms from any prior.
+      - name: Cache Scryfall data
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: scryfall-${{ hashFiles('decks/**/decklist.txt') }}
+          restore-keys: |
+            scryfall-
+
+      - name: Determine changed decks
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="origin/${{ github.base_ref }}"
+          else
+            BASE="${{ github.event.before }}"
+          fi
+          git fetch origin "${{ github.base_ref }}" 2>/dev/null || true
+          DIRS=$(git diff --name-only "$BASE" HEAD -- 'decks/**/decklist.txt' \
+                 | xargs -r -n1 dirname | sort -u)
+          echo "dirs<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$DIRS" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+          echo "Changed decks:"; echo "$DIRS"
+
+      - name: Check deck.json is in sync
+        run: |
+          DIRS="${{ steps.changed.outputs.dirs }}"
+          if [ -z "$DIRS" ]; then
+            echo "No decklist.txt changes; nothing to check."
+            exit 0
+          fi
+          python3 sync_decks.py --check $DIRS

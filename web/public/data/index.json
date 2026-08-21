@@ -1,0 +1,142 @@
+{
+  "decks": [
+    {
+      "id": "ashling",
+      "name": "Ashling, the Limitless \u2014 5-Color Elementals",
+      "bracket": 3,
+      "commander": "Ashling, the Limitless",
+      "total_cards": 100,
+      "colors": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "buy_count": 10,
+      "trade_count": 0
+    },
+    {
+      "id": "blight_curse",
+      "name": "Blight Curse \u2014 Auntie Ool, Cursewretch",
+      "bracket": 3,
+      "commander": "Auntie Ool, Cursewretch",
+      "total_cards": 100,
+      "colors": [
+        "B",
+        "G",
+        "R"
+      ],
+      "buy_count": 18,
+      "trade_count": 0
+    },
+    {
+      "id": "cirdan_council",
+      "name": "C\u00edrdan the Shipwright \u2014 Group-Hug Voting Politics",
+      "bracket": 3,
+      "commander": "C\u00edrdan the Shipwright",
+      "total_cards": 100,
+      "colors": [
+        "G",
+        "U"
+      ],
+      "buy_count": 0,
+      "trade_count": 0
+    },
+    {
+      "id": "radha_battlecruiser",
+      "name": "Radha Battlecruiser \u2014 \"2-4-7\"",
+      "bracket": 3,
+      "commander": "Radha, Heir to Keld",
+      "total_cards": 100,
+      "colors": [
+        "G",
+        "R"
+      ],
+      "buy_count": 0,
+      "trade_count": 0
+    },
+    {
+      "id": "ureni",
+      "name": "Ureni of the Unwritten",
+      "bracket": 3,
+      "commander": "Ureni of the Unwritten",
+      "total_cards": 103,
+      "colors": [
+        "G",
+        "R",
+        "U"
+      ],
+      "buy_count": 3,
+      "trade_count": 0
+    },
+    {
+      "id": "wip_brigid",
+      "name": "Brigid, Clachan's Heart // Brigid, Doun's Mind",
+      "bracket": 1,
+      "commander": "Brigid, Clachan's Heart // Brigid, Doun's Mind",
+      "total_cards": 100,
+      "colors": [
+        "G",
+        "W"
+      ],
+      "buy_count": 71,
+      "trade_count": 0
+    },
+    {
+      "id": "wip_brion",
+      "name": "Brion Stoutarm \u2014 Threaten & Throw",
+      "bracket": 2,
+      "commander": "Brion Stoutarm",
+      "total_cards": 100,
+      "colors": [
+        "R",
+        "W"
+      ],
+      "buy_count": 78,
+      "trade_count": 0
+    },
+    {
+      "id": "wip_muldrotha",
+      "name": "Muldrotha, the Gravetide",
+      "bracket": 3,
+      "commander": "Muldrotha, the Gravetide",
+      "total_cards": 100,
+      "colors": [
+        "B",
+        "G",
+        "U"
+      ],
+      "buy_count": 76,
+      "trade_count": 0
+    },
+    {
+      "id": "wise_mothman",
+      "name": "The Wise Mothman",
+      "bracket": 3,
+      "commander": "The Wise Mothman",
+      "total_cards": 100,
+      "colors": [
+        "B",
+        "G",
+        "U"
+      ],
+      "buy_count": 8,
+      "trade_count": 1
+    },
+    {
+      "id": "yuma",
+      "name": "Yuma, Proud Protector",
+      "bracket": 2,
+      "commander": "Yuma, Proud Protector",
+      "total_cards": 100,
+      "colors": [
+        "G",
+        "R",
+        "W"
+      ],
+      "buy_count": 5,
+      "trade_count": 0
+    }
+  ]
+}

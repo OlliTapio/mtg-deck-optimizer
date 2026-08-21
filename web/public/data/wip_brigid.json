@@ -1,0 +1,2257 @@
+{
+  "id": "wip_brigid",
+  "name": "Brigid, Clachan's Heart // Brigid, Doun's Mind",
+  "bracket": 1,
+  "commander": {
+    "name": "Brigid, Clachan's Heart // Brigid, Doun's Mind",
+    "count": 1,
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature \u2014 Kithkin Warrior // Legendary Creature \u2014 Kithkin Soldier",
+    "types": [
+      "Creature"
+    ],
+    "oracle_text": "Whenever this creature enters or transforms into Brigid, Clachan's Heart, create a 1/1 green and white Kithkin creature token.\nAt the beginning of your first main phase, you may pay {G}. If you do, transform Brigid.\n---\n{T}: Add X {G} or X {W}, where X is the number of other creatures you control.\nAt the beginning of your first main phase, you may pay {W}. If you do, transform Brigid.",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "keywords": [
+      "Transform"
+    ],
+    "produced_mana": [
+      "G"
+    ],
+    "otags": [
+      "ramp",
+      "mana-dork"
+    ],
+    "price_eur": "0.53",
+    "set": "ecl",
+    "number": "7",
+    "foil": false,
+    "buy": false
+  },
+  "total_cards": 100,
+  "cards": [
+    {
+      "name": "Goldmeadow Harrier",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{W}, {T}: Tap target creature.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "lrw",
+      "number": "18",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cenn's Tactician",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{W}, {T}: Put a +1/+1 counter on target Soldier creature.\nEach creature you control with a +1/+1 counter on it can block an additional creature each combat.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.22",
+      "set": "mor",
+      "number": "5",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kinsbaile Aspirant",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Kithkin Citizen",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "As an additional cost to cast this spell, behold a Kithkin or pay {2}. (To behold a Kithkin, choose a Kithkin you control or reveal a Kithkin card from your hand.)\nWhenever another creature you control enters, this creature gets +1/+1 until end of turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Behold"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.09",
+      "set": "ecl",
+      "number": "20",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Figure of Fable",
+      "count": 1,
+      "mana_cost": "{G/W}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Kithkin",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{G/W}: This creature becomes a Kithkin Scout with base power and toughness 2/3.\n{1}{G/W}{G/W}: If this creature is a Scout, it becomes a Kithkin Soldier with base power and toughness 4/5.\n{3}{G/W}{G/W}{G/W}: If this creature is a Soldier, it becomes a Kithkin Avatar with base power and toughness 7/8 and protection from each of your opponents.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.40",
+      "set": "ecl",
+      "number": "215",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Universal Automaton",
+      "count": 1,
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact Creature \u2014 Shapeshifter",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)",
+      "color_identity": [],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.41",
+      "set": "mh1",
+      "number": "235",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ballyrush Banneret",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Kithkin spells and Soldier spells you cast cost {1} less to cast.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "mor",
+      "number": "1",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kinscaer Sentry",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "First strike, lifelink\nWhenever this creature attacks, you may put a creature card with mana value X or less from your hand onto the battlefield tapped and attacking, where X is the number of attacking creatures you control.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Lifelink",
+        "First strike"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "lifegain"
+      ],
+      "price_eur": "1.12",
+      "set": "ecl",
+      "number": "19",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Knight of Meadowgrain",
+      "count": 1,
+      "mana_cost": "{W}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Knight",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "First strike\nLifelink (Damage dealt by this creature also causes you to gain that much life.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Lifelink",
+        "First strike"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "lifegain"
+      ],
+      "price_eur": "0.59",
+      "set": "lrw",
+      "number": "21",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Wizened Cenn",
+      "count": 1,
+      "mana_cost": "{W}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Cleric",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Other Kithkin creatures you control get +1/+1.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.25",
+      "set": "lrw",
+      "number": "49",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Patrol Signaler",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{1}{W}, {Q}: Create a 1/1 white Kithkin Soldier creature token. ({Q} is the untap symbol.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.35",
+      "set": "eve",
+      "number": "9",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cenn's Heir",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever this creature attacks, it gets +1/+1 until end of turn for each other attacking Kithkin.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.16",
+      "set": "lrw",
+      "number": "8",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mistmeadow Skulk",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Rogue",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Lifelink, protection from mana value 3 or greater",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Lifelink",
+        "Protection"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion",
+        "lifegain"
+      ],
+      "price_eur": "0.19",
+      "set": "shm",
+      "number": "14",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Eclipsed Kithkin",
+      "count": 1,
+      "mana_cost": "{G/W}{G/W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Scout",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, look at the top four cards of your library. You may reveal a Kithkin, Forest, or Plains card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage"
+      ],
+      "price_eur": "0.11",
+      "set": "ecl",
+      "number": "213",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Thoughtweft Lieutenant",
+      "count": 1,
+      "mana_cost": "{G}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever this creature or another Kithkin you control enters, target creature you control gets +1/+1 and gains trample until end of turn.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.08",
+      "set": "ecl",
+      "number": "238",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Bristlebane Battler",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Trample, ward {2}\nThis creature enters with five -1/-1 counters on it.\nWhenever another creature you control enters while this creature has a -1/-1 counter on it, remove a -1/-1 counter from this creature.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Trample",
+        "Ward"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.43",
+      "set": "ecl",
+      "number": "136",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dundoolin Weaver",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Kithkin Druid",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, if you control three or more creatures, return target permanent card from your graveyard to your hand.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "0.11",
+      "set": "ecl",
+      "number": "158",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Impostor of the Sixth Pride",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "mh1",
+      "number": "14",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Guardian Gladewalker",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nWhen this creature enters, put a +1/+1 counter on target creature.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.13",
+      "set": "khm",
+      "number": "174",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Masked Vandal",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nWhen this creature enters, you may exile a creature card from your graveyard. If you do, exile target artifact or enchantment an opponent controls.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "2.71",
+      "set": "khm",
+      "number": "184",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Preeminent Captain",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "First strike (This creature deals combat damage before creatures without first strike.)\nWhenever this creature attacks, you may put a Soldier creature card from your hand onto the battlefield tapped and attacking.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "First strike"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.71",
+      "set": "mor",
+      "number": "20",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Order of Whiteclay",
+      "count": 1,
+      "mana_cost": "{1}{W}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Kithkin Cleric",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{1}{W}{W}, {Q}: Return target creature card with mana value 3 or less from your graveyard to the battlefield. ({Q} is the untap symbol.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "0.32",
+      "set": "shm",
+      "number": "16",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kinsbaile Borderguard",
+      "count": 1,
+      "mana_cost": "{1}{W}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "This creature enters with a +1/+1 counter on it for each other Kithkin you control.\nWhen this creature dies, create a 1/1 white Kithkin Soldier creature token for each counter on it.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "2.22",
+      "set": "mor",
+      "number": "14",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kithkin Harbinger",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Kithkin Wizard",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, you may search your library for a Kithkin card, reveal it, then shuffle and put that card on top.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.24",
+      "set": "lrw",
+      "number": "26",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kithkin Billyrider",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Kithkin Knight",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Double strike",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Double strike"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.06",
+      "set": "ecl",
+      "number": "18",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kithkin Mourncaller",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Kithkin Scout",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever an attacking Kithkin or Elf is put into your graveyard from the battlefield, you may draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.22",
+      "set": "eve",
+      "number": "126",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Wary Farmer",
+      "count": 1,
+      "mana_cost": "{1}{G/W}{G/W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Kithkin Citizen",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "At the beginning of your end step, if another creature entered the battlefield under your control this turn, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill"
+      ],
+      "price_eur": "0.04",
+      "set": "ecl",
+      "number": "240",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mirror Entity",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\n{X}: Until end of turn, creatures you control have base power and toughness X/X and gain all creature types.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.51",
+      "set": "lrw",
+      "number": "20",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Realmwalker",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nAs this creature enters, choose a creature type.\nYou may look at the top card of your library any time.\nYou may cast creature spells of the chosen type from the top of your library.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage"
+      ],
+      "price_eur": "1.49",
+      "set": "khm",
+      "number": "188",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Chomping Changeling",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nWhen this creature enters, destroy up to one target artifact or enchantment.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.43",
+      "set": "ecl",
+      "number": "153",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kinsbaile Cavalier",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Kithkin Knight",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Knight creatures you control have double strike.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "5.18",
+      "set": "mor",
+      "number": "10",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Galepowder Mage",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Kithkin Wizard",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever this creature attacks, exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "0.20",
+      "set": "lrw",
+      "number": "14",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Brigid, Hero of Kinsbaile",
+      "count": 1,
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Kithkin Archer",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "First strike\n{T}: Brigid deals 2 damage to each attacking or blocking creature target player controls.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "First strike"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "1.20",
+      "set": "lrw",
+      "number": "6",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Champion of the Clachan",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Kithkin Knight",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flash\nAs an additional cost to cast this spell, behold a Kithkin and exile it. (Exile a Kithkin you control or a Kithkin card from your hand.)\nOther Kithkin you control get +1/+1.\nWhen this creature leaves the battlefield, return the exiled card to its owner's hand.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Behold",
+        "Flash"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "ecl",
+      "number": "5",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kithkin Rabble",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Kithkin",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Vigilance\nKithkin Rabble's power and toughness are each equal to the number of white permanents you control.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Vigilance"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.23",
+      "set": "eve",
+      "number": "7",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Gallant Fowlknight",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Kithkin Knight",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, creatures you control get +1/+0 until end of turn. Kithkin creatures you control also gain first strike until end of turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.05",
+      "set": "ecl",
+      "number": "12",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ballynock Trapper",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Kithkin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{T}: Tap target creature.\nWhenever you cast a white spell, you may untap this creature.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.16",
+      "set": "eve",
+      "number": "2",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Irregular Cohort",
+      "count": 1,
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nWhen this creature enters, create a 2/2 colorless Shapeshifter creature token with changeling.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.31",
+      "set": "mh1",
+      "number": "15",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Chameleon Colossus",
+      "count": 1,
+      "mana_cost": "{2}{G}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nProtection from black\n{2}{G}{G}: This creature gets +X/+X until end of turn, where X is its power.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Protection",
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.50",
+      "set": "mor",
+      "number": "116",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cloudgoat Ranger",
+      "count": 1,
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Giant Warrior Ranger",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, create three 1/1 white Kithkin Soldier creature tokens.\nTap three untapped Kithkin you control: This creature gets +2/+0 and gains flying until end of turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.08",
+      "set": "lrw",
+      "number": "10",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Selfless Safewright",
+      "count": 1,
+      "mana_cost": "{3}{G}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Elf Warrior",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flash\nConvoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nWhen this creature enters, choose a creature type. Other permanents you control of that type gain hexproof and indestructible until end of turn.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Flash",
+        "Convoke"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.82",
+      "set": "ecl",
+      "number": "175",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Resplendent Mentor",
+      "count": 1,
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Kithkin Cleric",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "White creatures you control have \"{T}: You gain 1 life.\"",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "lifegain"
+      ],
+      "price_eur": "0.48",
+      "set": "shm",
+      "number": "19",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kithkeeper",
+      "count": 1,
+      "mana_cost": "{6}{W}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Vivid \u2014 When this creature enters, create X 1/1 green and white Kithkin creature tokens, where X is the number of colors among permanents you control.\nTap three untapped creatures you control: This creature gets +3/+0 and gains flying until end of turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Vivid"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.07",
+      "set": "ecl",
+      "number": "17",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ajani, Outland Chaperone",
+      "count": 1,
+      "mana_cost": "{1}{W}{W}",
+      "cmc": 3.0,
+      "type_line": "Legendary Planeswalker \u2014 Ajani",
+      "types": [
+        "Planeswalker"
+      ],
+      "oracle_text": "+1: Create a 1/1 green and white Kithkin creature token.\n\u22122: Ajani deals 4 damage to target tapped creature.\n\u22128: Look at the top X cards of your library, where X is your life total. You may put any number of nonland permanent cards with mana value 3 or less from among them onto the battlefield. Then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "card-advantage"
+      ],
+      "price_eur": "2.73",
+      "set": "ecl",
+      "number": "199",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Militia's Pride",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Kindred Enchantment \u2014 Kithkin",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever a nontoken creature you control attacks, you may pay {W}. If you do, create a 1/1 white Kithkin Soldier creature token that's tapped and attacking.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.03",
+      "set": "lrw",
+      "number": "30",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Clachan Festival",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Kindred Enchantment \u2014 Kithkin",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When this enchantment enters, create two 1/1 green and white Kithkin creature tokens.\n{4}{W}: Create a 1/1 green and white Kithkin creature token.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.08",
+      "set": "ecl",
+      "number": "4",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Light from Within",
+      "count": 1,
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Chroma \u2014 Each creature you control gets +1/+1 for each white mana symbol in its mana cost.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Chroma"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.18",
+      "set": "eve",
+      "number": "5",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Armored Ascension",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment \u2014 Aura",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Enchant creature\nEnchanted creature gets +1/+1 for each Plains you control and has flying.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.15",
+      "set": "shm",
+      "number": "1",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kinbinding",
+      "count": 1,
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Creatures you control get +X/+X, where X is the number of creatures that entered the battlefield under your control this turn.\nAt the beginning of combat on your turn, create a 1/1 green and white Kithkin creature token.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.29",
+      "set": "ecl",
+      "number": "16",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Springleaf Parade",
+      "count": 1,
+      "mana_cost": "{X}{G}{G}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When this enchantment enters, create X 1/1 colorless Shapeshifter creature tokens with changeling. (They're every creature type.)\nCreature tokens you control have \"{T}: Add one mana of any color.\"",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "6.92",
+      "set": "ecc",
+      "number": "39",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Shields of Velis Vel",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Kindred Instant \u2014 Shapeshifter",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nCreatures target player controls get +0/+1 and gain all creature types until end of turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.42",
+      "set": "lrw",
+      "number": "31",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Surge of Thoughtweft",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Kindred Instant \u2014 Kithkin",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Creatures you control get +1/+1 until end of turn. If you control a Kithkin, draw a card.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.11",
+      "set": "lrw",
+      "number": "37",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Personify",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Exile target creature you control, then return that card to the battlefield under its owner's control. Create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "ecl",
+      "number": "29",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Keep Out",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Choose one \u2014\n\u2022 Keep Out deals 4 damage to target tapped creature.\n\u2022 Destroy target enchantment.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.07",
+      "set": "ecl",
+      "number": "15",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Deglamer",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Choose target artifact or enchantment. Its owner shuffles it into their library.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "1.46",
+      "set": "mor",
+      "number": "118",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Crib Swap",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Kindred Instant \u2014 Shapeshifter",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nExile target creature. Its controller creates a 1/1 colorless Shapeshifter creature token with changeling.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.07",
+      "set": "lrw",
+      "number": "11",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Brigid's Command",
+      "count": 1,
+      "mana_cost": "{1}{G}{W}",
+      "cmc": 3.0,
+      "type_line": "Kindred Sorcery \u2014 Kithkin",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Choose two \u2014\n\u2022 Create a token that's a copy of target Kithkin you control.\n\u2022 Target player creates a 1/1 green and white Kithkin creature token.\n\u2022 Target creature you control gets +3/+3 until end of turn.\n\u2022 Target creature you control fights target creature an opponent controls.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Fight"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.18",
+      "set": "ecl",
+      "number": "200",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cenn's Enlistment",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Create two 1/1 white Kithkin Soldier creature tokens.\nRetrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Retrace"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "eve",
+      "number": "3",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Morningtide's Light",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Exile any number of target creatures. At the beginning of the next end step, return those cards to the battlefield tapped under their owners' control.\nUntil your next turn, prevent all damage that would be dealt to you.\nExile Morningtide's Light.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "2.66",
+      "set": "ecl",
+      "number": "26",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Obsidian Battle-Axe",
+      "count": 1,
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Kindred Artifact \u2014 Warrior Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Equipped creature gets +2/+1 and has haste.\nWhenever a Warrior creature enters, you may attach this Equipment to it.\nEquip {3}",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.22",
+      "set": "mor",
+      "number": "147",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Veteran's Armaments",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Kindred Artifact \u2014 Soldier Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Equipped creature has \"Whenever this creature attacks or blocks, it gets +1/+1 until end of turn for each attacking creature.\"\nWhenever a Soldier creature enters, you may attach this Equipment to it.\nEquip {2}",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.16",
+      "set": "mor",
+      "number": "29",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Runed Stalactite",
+      "count": 1,
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Equipped creature gets +1/+1 and is every creature type.\nEquip {2}",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.19",
+      "set": "lrw",
+      "number": "260",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Stalactite Dagger",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "When this Equipment enters, create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)\nEquipped creature gets +1/+1 and is all creature types.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.08",
+      "set": "ecl",
+      "number": "259",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mirrormind Crown",
+      "count": 1,
+      "mana_cost": "{4}",
+      "cmc": 4.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "As long as this Equipment is attached to a creature, the first time you would create one or more tokens each turn, you may instead create that many tokens that are copies of equipped creature.\nEquip {2}",
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.51",
+      "set": "ecl",
+      "number": "257",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dawn-Blessed Pennant",
+      "count": 1,
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "As this artifact enters, choose Elemental, Elf, Faerie, Giant, Goblin, Kithkin, Merfolk, or Treefolk.\nWhenever a permanent you control of the chosen type enters, you gain 1 life.\n{2}, {T}, Sacrifice this artifact: Return target card of the chosen type from your graveyard to your hand.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion",
+        "card-advantage",
+        "lifegain"
+      ],
+      "price_eur": "0.17",
+      "set": "ecl",
+      "number": "250",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rustic Clachan",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "As this land enters, you may reveal a Kithkin card from your hand. If you don't, this land enters tapped.\n{T}: Add {W}.\nReinforce 1\u2014{1}{W} ({1}{W}, Discard this card: Put a +1/+1 counter on target creature.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Reinforce"
+      ],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.16",
+      "set": "mor",
+      "number": "150",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Eclipsed Realms",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "As this land enters, choose Elemental, Elf, Faerie, Giant, Goblin, Kithkin, Merfolk, or Treefolk.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a spell of the chosen type or activate an ability of a source of the chosen type.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.56",
+      "set": "ecl",
+      "number": "263",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Windbrisk Heights",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "Hideaway 4 (When this land enters, look at the top four cards of your library, exile one face down, then put the rest on the bottom in a random order.)\nThis land enters tapped.\n{T}: Add {W}.\n{W}, {T}: You may play the exiled card without paying its mana cost if you attacked with three or more creatures this turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Hideaway"
+      ],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.22",
+      "set": "lrw",
+      "number": "281",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mosswort Bridge",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "Hideaway 4 (When this land enters, look at the top four cards of your library, exile one face down, then put the rest on the bottom in a random order.)\nThis land enters tapped.\n{T}: Add {G}.\n{G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Hideaway"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.41",
+      "set": "lrw",
+      "number": "270",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mutavault",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{1}: This land becomes a 2/2 creature with all creature types until end of turn. It's still a land.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [],
+      "price_eur": "4.77",
+      "set": "mor",
+      "number": "148",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Abundant Countryside",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell.\n{6}, {T}: Create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "6.51",
+      "set": "ecc",
+      "number": "42",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Command Tower",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.19",
+      "set": "ecl",
+      "number": "268",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Evolving Wilds",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.10",
+      "set": "ecl",
+      "number": "269",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Temple Garden",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Forest Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G} or {W}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "6.84",
+      "set": "rvr",
+      "number": "290",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Plains",
+      "count": 14,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "ecl",
+      "number": "277",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 12,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "ecl",
+      "number": "275",
+      "foil": false,
+      "buy": false
+    }
+  ],
+  "analytics": {
+    "type_counts": {
+      "Creature": 43,
+      "Instant": 6,
+      "Sorcery": 3,
+      "Enchantment": 6,
+      "Artifact": 7,
+      "Land": 35,
+      "Planeswalker": 1
+    },
+    "curve": {
+      "0": 0,
+      "1": 8,
+      "2": 22,
+      "3": 16,
+      "4": 14,
+      "5": 4,
+      "6": 0,
+      "7": 1,
+      "avg": 2.82
+    },
+    "pips": {
+      "W": 59,
+      "G": 21
+    },
+    "otag_groups": {
+      "card-advantage": [
+        "Ajani, Outland Chaperone",
+        "Dawn-Blessed Pennant",
+        "Dundoolin Weaver",
+        "Eclipsed Kithkin",
+        "Kithkin Mourncaller",
+        "Realmwalker",
+        "Surge of Thoughtweft"
+      ],
+      "draw": [
+        "Kithkin Mourncaller",
+        "Surge of Thoughtweft"
+      ],
+      "evasion": [
+        "Chameleon Colossus",
+        "Cloudgoat Ranger",
+        "Figure of Fable",
+        "Galepowder Mage",
+        "Kithkeeper",
+        "Mistmeadow Skulk"
+      ],
+      "lifegain": [
+        "Dawn-Blessed Pennant",
+        "Kinscaer Sentry",
+        "Knight of Meadowgrain",
+        "Mistmeadow Skulk",
+        "Resplendent Mentor"
+      ],
+      "mana-dork": [
+        "Brigid, Clachan's Heart // Brigid, Doun's Mind"
+      ],
+      "mill": [
+        "Wary Farmer"
+      ],
+      "ramp": [
+        "Brigid, Clachan's Heart // Brigid, Doun's Mind",
+        "Springleaf Parade"
+      ],
+      "recursion": [
+        "Dawn-Blessed Pennant",
+        "Dundoolin Weaver",
+        "Order of Whiteclay"
+      ],
+      "removal": [
+        "Ajani, Outland Chaperone",
+        "Brigid's Command",
+        "Brigid, Hero of Kinsbaile",
+        "Chomping Changeling",
+        "Crib Swap",
+        "Deglamer",
+        "Galepowder Mage",
+        "Keep Out",
+        "Masked Vandal"
+      ],
+      "tutor": [
+        "Evolving Wilds",
+        "Kithkin Harbinger"
+      ]
+    },
+    "template": [
+      {
+        "key": "targeted",
+        "label": "Targeted Disruption",
+        "have": 9,
+        "target": 12
+      },
+      {
+        "key": "mass",
+        "label": "Mass Disruption",
+        "have": 0,
+        "target": 6
+      },
+      {
+        "key": "card_advantage",
+        "label": "Card Advantage",
+        "have": 7,
+        "target": 12
+      },
+      {
+        "key": "ramp",
+        "label": "Ramp",
+        "have": 2,
+        "target": 10
+      }
+    ]
+  },
+  "buy_list": [
+    {
+      "count": 1,
+      "name": "Ajani, Outland Chaperone"
+    },
+    {
+      "count": 1,
+      "name": "Armored Ascension"
+    },
+    {
+      "count": 1,
+      "name": "Ballynock Trapper"
+    },
+    {
+      "count": 1,
+      "name": "Ballyrush Banneret"
+    },
+    {
+      "count": 1,
+      "name": "Bristlebane Battler"
+    },
+    {
+      "count": 1,
+      "name": "Brigid, Clachan's Heart // Brigid, Doun's Mind"
+    },
+    {
+      "count": 1,
+      "name": "Brigid, Hero of Kinsbaile"
+    },
+    {
+      "count": 1,
+      "name": "Brigid's Command"
+    },
+    {
+      "count": 1,
+      "name": "Cenn's Enlistment"
+    },
+    {
+      "count": 1,
+      "name": "Cenn's Heir"
+    },
+    {
+      "count": 1,
+      "name": "Cenn's Tactician"
+    },
+    {
+      "count": 1,
+      "name": "Chameleon Colossus"
+    },
+    {
+      "count": 1,
+      "name": "Champion of the Clachan"
+    },
+    {
+      "count": 1,
+      "name": "Chomping Changeling"
+    },
+    {
+      "count": 1,
+      "name": "Clachan Festival"
+    },
+    {
+      "count": 1,
+      "name": "Cloudgoat Ranger"
+    },
+    {
+      "count": 1,
+      "name": "Crib Swap"
+    },
+    {
+      "count": 1,
+      "name": "Dawn-Blessed Pennant"
+    },
+    {
+      "count": 1,
+      "name": "Deglamer"
+    },
+    {
+      "count": 1,
+      "name": "Dundoolin Weaver"
+    },
+    {
+      "count": 1,
+      "name": "Eclipsed Kithkin"
+    },
+    {
+      "count": 1,
+      "name": "Figure of Fable"
+    },
+    {
+      "count": 1,
+      "name": "Galepowder Mage"
+    },
+    {
+      "count": 1,
+      "name": "Gallant Fowlknight"
+    },
+    {
+      "count": 1,
+      "name": "Goldmeadow Harrier"
+    },
+    {
+      "count": 1,
+      "name": "Guardian Gladewalker"
+    },
+    {
+      "count": 1,
+      "name": "Impostor of the Sixth Pride"
+    },
+    {
+      "count": 1,
+      "name": "Irregular Cohort"
+    },
+    {
+      "count": 1,
+      "name": "Keep Out"
+    },
+    {
+      "count": 1,
+      "name": "Kinbinding"
+    },
+    {
+      "count": 1,
+      "name": "Kinsbaile Aspirant"
+    },
+    {
+      "count": 1,
+      "name": "Kinsbaile Borderguard"
+    },
+    {
+      "count": 1,
+      "name": "Kinsbaile Cavalier"
+    },
+    {
+      "count": 1,
+      "name": "Kinscaer Sentry"
+    },
+    {
+      "count": 1,
+      "name": "Kithkeeper"
+    },
+    {
+      "count": 1,
+      "name": "Kithkin Billyrider"
+    },
+    {
+      "count": 1,
+      "name": "Kithkin Harbinger"
+    },
+    {
+      "count": 1,
+      "name": "Kithkin Mourncaller"
+    },
+    {
+      "count": 1,
+      "name": "Kithkin Rabble"
+    },
+    {
+      "count": 1,
+      "name": "Knight of Meadowgrain"
+    },
+    {
+      "count": 1,
+      "name": "Light from Within"
+    },
+    {
+      "count": 1,
+      "name": "Masked Vandal"
+    },
+    {
+      "count": 1,
+      "name": "Militia's Pride"
+    },
+    {
+      "count": 1,
+      "name": "Mirror Entity"
+    },
+    {
+      "count": 1,
+      "name": "Mirrormind Crown"
+    },
+    {
+      "count": 1,
+      "name": "Mistmeadow Skulk"
+    },
+    {
+      "count": 1,
+      "name": "Morningtide's Light"
+    },
+    {
+      "count": 1,
+      "name": "Mosswort Bridge"
+    },
+    {
+      "count": 1,
+      "name": "Mutavault"
+    },
+    {
+      "count": 1,
+      "name": "Obsidian Battle-Axe"
+    },
+    {
+      "count": 1,
+      "name": "Order of Whiteclay"
+    },
+    {
+      "count": 1,
+      "name": "Patrol Signaler"
+    },
+    {
+      "count": 1,
+      "name": "Personify"
+    },
+    {
+      "count": 1,
+      "name": "Preeminent Captain"
+    },
+    {
+      "count": 1,
+      "name": "Realmwalker"
+    },
+    {
+      "count": 1,
+      "name": "Resplendent Mentor"
+    },
+    {
+      "count": 1,
+      "name": "Runed Stalactite"
+    },
+    {
+      "count": 1,
+      "name": "Rustic Clachan"
+    },
+    {
+      "count": 1,
+      "name": "Selfless Safewright"
+    },
+    {
+      "count": 1,
+      "name": "Shields of Velis Vel"
+    },
+    {
+      "count": 1,
+      "name": "Springleaf Parade"
+    },
+    {
+      "count": 1,
+      "name": "Stalactite Dagger"
+    },
+    {
+      "count": 1,
+      "name": "Surge of Thoughtweft"
+    },
+    {
+      "count": 1,
+      "name": "Temple Garden"
+    },
+    {
+      "count": 1,
+      "name": "Thoughtweft Lieutenant"
+    },
+    {
+      "count": 1,
+      "name": "Thoughtweft Trio"
+    },
+    {
+      "count": 1,
+      "name": "Universal Automaton"
+    },
+    {
+      "count": 1,
+      "name": "Veteran's Armaments"
+    },
+    {
+      "count": 1,
+      "name": "Wary Farmer"
+    },
+    {
+      "count": 1,
+      "name": "Windbrisk Heights"
+    },
+    {
+      "count": 1,
+      "name": "Wizened Cenn"
+    }
+  ],
+  "trade_wants": [],
+  "cuts": []
+}

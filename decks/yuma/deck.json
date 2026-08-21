@@ -1,0 +1,2632 @@
+{
+  "commander": {
+    "name": "Yuma, Proud Protector",
+    "count": 1,
+    "mana_cost": "{5}{R}{G}{W}",
+    "cmc": 8.0,
+    "type_line": "Legendary Creature \u2014 Human Ranger",
+    "types": [
+      "Creature"
+    ],
+    "oracle_text": "This spell costs {1} less to cast for each land card in your graveyard.\nWhenever Yuma enters or attacks, you may sacrifice a land. If you do, draw a card.\nWhenever a Desert card is put into your graveyard from anywhere, create a 4/2 green Plant Warrior creature token with reach.",
+    "color_identity": [
+      "G",
+      "R",
+      "W"
+    ],
+    "keywords": [],
+    "produced_mana": [],
+    "otags": [
+      "draw",
+      "card-advantage",
+      "sacrifice-outlet"
+    ],
+    "price_eur": "0.30",
+    "set": "otc",
+    "number": "4",
+    "foil": false,
+    "buy": false
+  },
+  "deck": [
+    {
+      "name": "Abraded Bluffs",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, it deals 1 damage to target opponent.\n{T}: Add {R} or {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.23",
+      "set": "otj",
+      "number": "251",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Aftermath Analyst",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Elf Detective",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, mill three cards. (Put the top three cards of your library into your graveyard.)\n{3}{G}, Sacrifice this creature: Return all land cards from your graveyard to the battlefield tapped.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "mill",
+        "recursion"
+      ],
+      "price_eur": "1.23",
+      "set": "mkm",
+      "number": "148",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ancient Greenwarden",
+      "count": 1,
+      "mana_cost": "{4}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Reach (This creature can block creatures with flying.)\nYou may play lands from your graveyard.\nIf a land entering causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Reach"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "10.32",
+      "set": "otc",
+      "number": "186",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Annie Joins Up",
+      "count": 1,
+      "mana_cost": "{1}{R}{G}{W}",
+      "cmc": 4.0,
+      "type_line": "Legendary Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When Annie Joins Up enters, it deals 5 damage to target creature or planeswalker an opponent controls.\nIf a triggered ability of a legendary creature you control triggers, that ability triggers an additional time.",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "4.34",
+      "set": "otj",
+      "number": "191",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Arid Archway",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, return a land you control to its owner's hand. If another Desert was returned this way, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)\n{T}: Add {C}{C}.",
+      "color_identity": [],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "mill"
+      ],
+      "price_eur": "0.68",
+      "set": "otj",
+      "number": "250",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Avenger of Zendikar",
+      "count": 1,
+      "mana_cost": "{5}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, create a 0/1 green Plant creature token for each land you control.\nLandfall \u2014 Whenever a land you control enters, you may put a +1/+1 counter on each Plant creature you control.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.56",
+      "set": "otc",
+      "number": "187",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Bitter Reunion",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When this enchantment enters, you may discard a card. If you do, draw two cards.\n{1}, Sacrifice this enchantment: Creatures you control gain haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.72",
+      "set": "otc",
+      "number": "156",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Bovine Intervention",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Destroy target artifact or creature. Its controller creates a 2/2 white Ox creature token.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.14",
+      "set": "otj",
+      "number": "6",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Legendary Artifact // Legendary Land \u2014 Cave",
+      "types": [
+        "Artifact",
+        "Land"
+      ],
+      "oracle_text": "When Brass's Tunnel-Grinder enters, discard any number of cards, then draw that many cards plus one.\nAt the beginning of your end step, if you descended this turn, put a bore counter on Brass's Tunnel-Grinder. Then if there are three or more bore counters on it, remove those counters and transform it. (You descended if a permanent card was put into your graveyard from anywhere.)\n---\n(Transforms from Brass's Tunnel-Grinder.)\n{T}: Add {R}.\nWhenever you cast a permanent spell using mana produced by Tecutlan, discover X, where X is that spell's mana value.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Transform",
+        "Discover"
+      ],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [
+        "ramp",
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "1.83",
+      "set": "lci",
+      "number": "135",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Bristling Backwoods",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, it deals 1 damage to target opponent.\n{T}: Add {R} or {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "otj",
+      "number": "253",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cactus Preserve",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add one mana of any type that a land you control could produce.\n{3}: Until end of turn, this land becomes an X/X green Plant creature with reach, where X is the greatest mana value among your commanders. It's still a land.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "3.72",
+      "set": "otc",
+      "number": "40",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cactusfolk Sureshot",
+      "count": 1,
+      "mana_cost": "{2}{R}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Plant Mercenary",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Reach\nWard {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)\nAt the beginning of combat on your turn, other creatures you control with power 4 or greater gain trample and haste until end of turn.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Reach",
+        "Ward"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.15",
+      "set": "otj",
+      "number": "199",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Catharsis",
+      "count": 1,
+      "mana_cost": "{4}{R/W}{R/W}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, if {W}{W} was spent to cast it, create two 1/1 green and white Kithkin creature tokens.\nWhen this creature enters, if {R}{R} was spent to cast it, creatures you control get +1/+1 and gain haste until end of turn.\nEvoke {R/W}{R/W} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Evoke"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.89",
+      "set": "ecl",
+      "number": "209",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cinder Glade",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R} or {G}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.15",
+      "set": "blc",
+      "number": "299",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Command Tower",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.19",
+      "set": "otc",
+      "number": "280",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Conduit of Worlds",
+      "count": 1,
+      "mana_cost": "{2}{G}{G}",
+      "cmc": 4.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "You may play lands from your graveyard.\n{T}: Choose target nonland permanent card in your graveyard. If you haven't cast a spell this turn, you may cast that card. If you do, you can't cast additional spells this turn. Activate only as a sorcery.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "3.78",
+      "set": "one",
+      "number": "163",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Conduit Pylons",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "When this land enters, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)\n{T}: Add {C}.\n{1}, {T}: Add one mana of any color.",
+      "color_identity": [],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "mill"
+      ],
+      "price_eur": "0.17",
+      "set": "otj",
+      "number": "254",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Creosote Heath",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, it deals 1 damage to target opponent.\n{T}: Add {G} or {W}.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.12",
+      "set": "otj",
+      "number": "255",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Decaying Time Loop",
+      "count": 1,
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Discard all the cards in your hand, then draw that many cards.\nRetrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Retrace"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.25",
+      "set": "who",
+      "number": "80",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Decimate",
+      "count": 1,
+      "mana_cost": "{2}{R}{G}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Destroy target artifact, target creature, target enchantment, and target land. (You can't cast this spell unless you have legal choices for all its targets.)",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.16",
+      "set": "otc",
+      "number": "220",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Desert of the Fervent",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {R}.\nCycling {1}{R} ({1}{R}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.22",
+      "set": "otc",
+      "number": "284",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Desert of the Indomitable",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {G}.\nCycling {1}{G} ({1}{G}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.14",
+      "set": "otc",
+      "number": "285",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Desert of the True",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {W}.\nCycling {1}{W} ({1}{W}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.12",
+      "set": "otc",
+      "number": "286",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dryad of the Ilysian Grove",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment Creature \u2014 Nymph Dryad",
+      "types": [
+        "Creature",
+        "Enchantment"
+      ],
+      "oracle_text": "You may play an additional land on each of your turns.\nLands you control are every basic land type in addition to their other types.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "5.40",
+      "set": "cmm",
+      "number": "891",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dune Chanter",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Plant Druid",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Reach\nLands you control and land cards you own that aren't on the battlefield are Deserts in addition to their other types.\nLands you control have \"{T}: Add one mana of any color.\"\n{T}: Mill two cards. You gain 1 life for each land card milled this way.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Reach",
+        "Mill"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "mill",
+        "lifegain"
+      ],
+      "price_eur": "0.45",
+      "set": "otc",
+      "number": "31",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dunes of the Dead",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\nWhen this land is put into a graveyard from the battlefield, create a 2/2 black Zombie creature token.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "otc",
+      "number": "291",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Horizon Explorer",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Insect Scout",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Lands you control enter untapped.\nWhenever you attack a player, create a Lander token. (It's an artifact with \"{2}, {T}, Sacrifice this token: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.\")",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "3.14",
+      "set": "fin",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Embrace the Unknown",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Exile the top two cards of your library. Until the end of your next turn, you may play those cards.\nRetrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Retrace"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage"
+      ],
+      "price_eur": "0.42",
+      "set": "otc",
+      "number": "28",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Entish Restoration",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Sacrifice a land. Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle. If you control a creature with power 4 or greater, instead search your library for up to three basic land cards, put them onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "1.80",
+      "set": "ltr",
+      "number": "163",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Evolving Wilds",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.10",
+      "set": "otc",
+      "number": "292",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Felidar Retreat",
+      "count": 1,
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Landfall \u2014 Whenever a land you control enters, choose one \u2014\n\u2022 Create a 2/2 white Cat Beast creature token.\n\u2022 Put a +1/+1 counter on each creature you control. Those creatures gain vigilance until end of turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.42",
+      "set": "cmm",
+      "number": "821",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Gruul Turf",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, return a land you control to its owner's hand.\n{T}: Add {R}{G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.13",
+      "set": "cmd",
+      "number": "280",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Garruk's Uprising",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When this enchantment enters, if you control a creature with power 4 or greater, draw a card.\nCreatures you control have trample. (Each of those creatures can deal excess combat damage to the player or planeswalker it's attacking.)\nWhenever a creature you control with power 4 or greater enters, draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.46",
+      "set": "blc",
+      "number": "219",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Harrow",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "As an additional cost to cast this spell, sacrifice a land.\nSearch your library for up to two basic land cards, put them onto the battlefield, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.23",
+      "set": "otc",
+      "number": "194",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hashep Oasis",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}, Pay 1 life: Add {G}.\n{1}{G}{G}, {T}, Sacrifice a Desert: Target creature gets +3/+3 until end of turn. Activate only as a sorcery.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "G"
+      ],
+      "otags": [
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.17",
+      "set": "otc",
+      "number": "299",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hazezon, Shaper of Sand",
+      "count": 1,
+      "mana_cost": "{R}{G}{W}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Human Warrior",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Desertwalk (This creature can't be blocked as long as defending player controls a Desert.)\nYou may play Desert lands from your graveyard.\nWhenever a Desert you control enters, create two 1/1 red, green, and white Sand Warrior creature tokens.",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Landwalk",
+        "Desertwalk"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "recursion",
+        "evasion"
+      ],
+      "price_eur": "0.19",
+      "set": "otc",
+      "number": "229",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hour of Promise",
+      "count": 1,
+      "mana_cost": "{4}{G}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for up to two land cards, put them onto the battlefield tapped, then shuffle. Then if you control three or more Deserts, create two 2/2 black Zombie creature tokens.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.19",
+      "set": "otc",
+      "number": "195",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Jungle Shrine",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {R}, {G}, or {W}.",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "otc",
+      "number": "303",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Prismatic Undercurrents",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Vivid \u2014 When this enchantment enters, search your library for up to X basic land cards, where X is the number of colors among permanents you control. Reveal those cards, put them into your hand, then shuffle.\nYou may play an additional land on each of your turns.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Vivid"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.19",
+      "set": "fin",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Krosan Verge",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{2}, {T}, Sacrifice this land: Search your library for a Forest card and a Plains card, put them onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.16",
+      "set": "otc",
+      "number": "304",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Life from the Loam",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Return up to three target land cards from your graveyard to your hand.\nDredge 3 (If you would draw a card, you may mill three cards instead. If you do, return this card from your graveyard to your hand.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Dredge",
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "4.12",
+      "set": "rvr",
+      "number": "148",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Lotus Cobra",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Snake",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Landfall \u2014 Whenever a land you control enters, add one mana of any color.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "mana-dork"
+      ],
+      "price_eur": "5.54",
+      "set": "j25",
+      "number": "685",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Magmatic Insight",
+      "count": 1,
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "As an additional cost to cast this spell, discard a land card.\nDraw two cards.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.23",
+      "set": "otc",
+      "number": "173",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Map the Frontier",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for up to two basic land cards and/or Desert cards, put them onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.15",
+      "set": "otj",
+      "number": "170",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Midnight Tilling",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Mill four cards, then you may return a permanent card from among them to your hand. (To mill four cards, put the top four cards of your library into your graveyard.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "card-advantage"
+      ],
+      "price_eur": "0.09",
+      "set": "ecl",
+      "number": "182",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mirage Mesa",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped. As it enters, choose a color.\n{T}: Add one mana of the chosen color.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.08",
+      "set": "otj",
+      "number": "262",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mosswort Bridge",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "Hideaway 4 (When this land enters, look at the top four cards of your library, exile one face down, then put the rest on the bottom in a random order.)\nThis land enters tapped.\n{T}: Add {G}.\n{G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Hideaway"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.41",
+      "set": "dsc",
+      "number": "288",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mountain",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Mountain",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mountain",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Mountain",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mountain",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Mountain",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Nahiri's Lithoforming",
+      "count": 1,
+      "mana_cost": "{X}{R}{R}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Sacrifice X lands. For each land sacrificed this way, draw a card. You may play X additional lands this turn. Lands you control enter tapped this turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "draw",
+        "card-advantage",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.38",
+      "set": "znr",
+      "number": "151",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rampant Growth",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.51",
+      "set": "clb",
+      "number": "245",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Omnath, Locus of Rage",
+      "count": 1,
+      "mana_cost": "{3}{R}{R}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Landfall \u2014 Whenever a land you control enters, create a 5/5 red and green Elemental creature token.\nWhenever Omnath or another Elemental you control dies, Omnath deals 3 damage to any target.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.32",
+      "set": "otc",
+      "number": "236",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Oracle of Mul Daya",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Elf Shaman",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "You may play an additional land on each of your turns.\nPlay with the top card of your library revealed.\nYou may play lands from the top of your library.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "card-advantage"
+      ],
+      "price_eur": "3.37",
+      "set": "otc",
+      "number": "200",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Overwhelming Stampede",
+      "count": 1,
+      "mana_cost": "{3}{G}{G}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Until end of turn, creatures you control gain trample and get +X/+X, where X is the greatest power among creatures you control.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "2.91",
+      "set": "dsc",
+      "number": "192",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Painted Bluffs",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "otc",
+      "number": "309",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Path to Exile",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "removal",
+        "tutor"
+      ],
+      "price_eur": "1.49",
+      "set": "otc",
+      "number": "85",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Phylath, World Sculptor",
+      "count": 1,
+      "mana_cost": "{4}{R}{G}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When Phylath enters, create a 0/1 green Plant creature token for each basic land you control.\nLandfall \u2014 Whenever a land you control enters, put four +1/+1 counters on target Plant you control.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "znr",
+      "number": "234",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Plains",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Plains",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Plains",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Plains",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hedge Shredder",
+      "count": 1,
+      "mana_cost": "{2}{G}{G}",
+      "cmc": 4.0,
+      "type_line": "Artifact \u2014 Vehicle",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Whenever this Vehicle attacks, you may mill two cards.\nWhenever one or more land cards are put into your graveyard from your library, put them onto the battlefield tapped.\nCrew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Crew",
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "mill",
+        "recursion"
+      ],
+      "price_eur": "1.65",
+      "set": "big",
+      "number": "169",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Pyrrhic Strike",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "As an additional cost to cast this spell, you may blight 2. (You may put two -1/-1 counters on a creature you control.)\nChoose one. If this spell's additional cost was paid, choose both instead.\n\u2022 Destroy target artifact or enchantment.\n\u2022 Destroy target creature with mana value 3 or greater.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Blight"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.16",
+      "set": "ecl",
+      "number": "30",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ramunap Excavator",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Snake Cleric",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "You may play lands from your graveyard.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "3.65",
+      "set": "otc",
+      "number": "202",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ramunap Ruins",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}, Pay 1 life: Add {R}.\n{2}{R}{R}, {T}, Sacrifice a Desert: This land deals 2 damage to each opponent.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R"
+      ],
+      "otags": [
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.42",
+      "set": "otc",
+      "number": "311",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Requisition Raid",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Spree (Choose one or more additional costs.)\n+ {1} \u2014 Destroy target artifact.\n+ {1} \u2014 Destroy target enchantment.\n+ {1} \u2014 Put a +1/+1 counter on each creature target player controls.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Spree"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.67",
+      "set": "otj",
+      "number": "26",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Return of the Wildspeaker",
+      "count": 1,
+      "mana_cost": "{4}{G}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Choose one \u2014\n\u2022 Draw cards equal to the greatest power among non-Human creatures you control.\n\u2022 Non-Human creatures you control get +3/+3 until end of turn.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.71",
+      "set": "eld",
+      "number": "172",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sand Scout",
+      "count": 1,
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Human Scout",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, if an opponent controls more lands than you, search your library for a Desert card, put it onto the battlefield tapped, then shuffle.\nWhenever one or more land cards are put into your graveyard from anywhere, create a 1/1 red, green, and white Sand Warrior creature token. This ability triggers only once each turn.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.98",
+      "set": "otc",
+      "number": "11",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Satyr Wayfinder",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Satyr",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, reveal the top four cards of your library. You may put a land card from among them into your hand. Put the rest into your graveyard.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "card-advantage"
+      ],
+      "price_eur": "0.09",
+      "set": "eoc",
+      "number": "106",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Scattered Groves",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Forest Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G} or {W}.)\nThis land enters tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.17",
+      "set": "otc",
+      "number": "315",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Scavenger Grounds",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{2}, {T}, Sacrifice a Desert: Exile all graveyards.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "graveyard-hate",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.48",
+      "set": "otc",
+      "number": "316",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Scute Swarm",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Insect",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Landfall \u2014 Whenever a land you control enters, create a 1/1 green Insect creature token. If you control six or more lands, create a token that's a copy of this creature instead.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "4.13",
+      "set": "otc",
+      "number": "205",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Colossal Rattlewurm",
+      "count": 1,
+      "mana_cost": "{2}{G}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Wurm",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Colossal Rattlewurm has flash as long as you control a Desert.\nTrample\n{1}{G}, Exile this card from your graveyard: Search your library for a Desert card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.19",
+      "set": "otj",
+      "number": "158",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Shamanic Revelation",
+      "count": 1,
+      "mana_cost": "{3}{G}{G}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Draw a card for each creature you control.\nFerocious \u2014 You gain 4 life for each creature you control with power 4 or greater.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Ferocious"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage",
+        "lifegain"
+      ],
+      "price_eur": "1.02",
+      "set": "blc",
+      "number": "237",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Shefet Dunes",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Desert",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}, Pay 1 life: Add {W}.\n{2}{W}{W}, {T}, Sacrifice a Desert: Creatures you control get +1/+1 until end of turn. Activate only as a sorcery.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "W"
+      ],
+      "otags": [
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.24",
+      "set": "otc",
+      "number": "318",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sheltered Thicket",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R} or {G}.)\nThis land enters tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.14",
+      "set": "otc",
+      "number": "319",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sheltering Landscape",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice this land: Search your library for a basic Mountain, Forest, or Plains card, put it onto the battlefield tapped, then shuffle.\nCycling {R}{G}{W} ({R}{G}{W}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "draw",
+        "tutor",
+        "card-advantage"
+      ],
+      "price_eur": "0.14",
+      "set": "mh3",
+      "number": "227",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Six",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Treefolk",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Reach\nWhenever Six attacks, mill three cards. You may put a land card from among them into your hand.\nDuring your turn, nonland permanent cards in your graveyard have retrace. (You may cast permanent cards from your graveyard by discarding a land card in addition to paying their other costs.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Reach",
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "6.13",
+      "set": "mh3",
+      "number": "169",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Spelunking",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When this enchantment enters, draw a card, then you may put a land card from your hand onto the battlefield. If you put a Cave onto the battlefield this way, you gain 4 life.\nLands you control enter untapped.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "draw",
+        "card-advantage",
+        "lifegain"
+      ],
+      "price_eur": "3.08",
+      "set": "lci",
+      "number": "213",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Springbloom Druid",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elf Druid",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, you may sacrifice a land. If you do, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.21",
+      "set": "otc",
+      "number": "208",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Stomping Ground",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R} or {G}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "7.81",
+      "set": "rvr",
+      "number": "289",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Stroke of Midnight",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Destroy target nonland permanent. Its controller creates a 1/1 white Human creature token.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.41",
+      "set": "tdc",
+      "number": "132",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sun Titan",
+      "count": 1,
+      "mana_cost": "{4}{W}{W}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Giant",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Vigilance\nWhenever this creature enters or attacks, you may return target permanent card with mana value 3 or less from your graveyard to the battlefield.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Vigilance"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "recursion"
+      ],
+      "price_eur": "0.31",
+      "set": "otc",
+      "number": "87",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sunscorched Divide",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{1}, {T}: Add {R}{W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.48",
+      "set": "otc",
+      "number": "326",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mole Man, Moloid Master",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Human Villain",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "You may play lands from your graveyard.\nLandfall \u2014 Whenever a land you control enters, create a 1/1 green Minion creature token named Moloid with \"Whenever this token attacks, you may mill a card.\"",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Mill",
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "recursion"
+      ],
+      "price_eur": "2.87",
+      "set": "msh",
+      "number": "177",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Titania, Protector of Argoth",
+      "count": 1,
+      "mana_cost": "{3}{G}{G}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When Titania enters, return target land card from your graveyard to the battlefield.\nWhenever a land you control is put into a graveyard from the battlefield, create a 5/3 green Elemental creature token.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "recursion"
+      ],
+      "price_eur": "0.44",
+      "set": "otc",
+      "number": "210",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Desert Warfare",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever you sacrifice a Desert and whenever a Desert card is put into your graveyard from your hand or library, put that card onto the battlefield under your control at the beginning of your next end step.\nAt the beginning of combat on your turn, if you control five or more Deserts, create that many 1/1 red, green, and white Sand Warrior creature tokens. They gain haste.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": null,
+      "set": "otc",
+      "number": "27",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Vibrance",
+      "count": 1,
+      "mana_cost": "{3}{R/G}{R/G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, if {R}{R} was spent to cast it, this creature deals 3 damage to any target.\nWhen this creature enters, if {G}{G} was spent to cast it, search your library for a land card, reveal it, put it into your hand, then shuffle. You gain 2 life.\nEvoke {R/G}{R/G}",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Evoke"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "tutor",
+        "lifegain"
+      ],
+      "price_eur": "8.69",
+      "set": "ecl",
+      "number": "249",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Winding Way",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Choose creature or land. Reveal the top four cards of your library. Put all cards of the chosen type revealed this way into your hand and the rest into your graveyard.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "card-advantage"
+      ],
+      "price_eur": "1.02",
+      "set": "otc",
+      "number": "213",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Worldsoul's Rage",
+      "count": 1,
+      "mana_cost": "{X}{R}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Worldsoul's Rage deals X damage to any target. Put up to X land cards from your hand and/or graveyard onto the battlefield tapped.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "removal",
+        "recursion"
+      ],
+      "price_eur": "0.22",
+      "set": "mkm",
+      "number": "244",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Wreck and Rebuild",
+      "count": 1,
+      "mana_cost": "{1}{R}{G}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Choose one \u2014\n\u2022 Destroy target artifact or enchantment.\n\u2022 Mill five cards, then you may put a land card from your graveyard onto the battlefield tapped.\nFlashback {3}{R}{G}",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Flashback",
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "removal",
+        "mill",
+        "recursion"
+      ],
+      "price_eur": "0.22",
+      "set": "otc",
+      "number": "250",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Zuran Orb",
+      "count": 1,
+      "mana_cost": "{0}",
+      "cmc": 0.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Sacrifice a land: You gain 2 life.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "lifegain",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "1.22",
+      "set": "mh2",
+      "number": "300",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Evendo Brushrazer",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Insect Warrior",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever you sacrifice a nontoken permanent, exile the top card of your library.\nDuring your turn, as long as you've sacrificed a nontoken permanent this turn, you may play cards exiled with this creature.\n{T}, Sacrifice a land: Add {R}{R}.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [
+        "ramp",
+        "mana-dork",
+        "card-advantage",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.32",
+      "set": "eoc",
+      "number": "0",
+      "foil": false,
+      "buy": false
+    }
+  ],
+  "metadata": {
+    "source_file": "decks/yuma/decklist.txt",
+    "total_cards": 100
+  }
+}

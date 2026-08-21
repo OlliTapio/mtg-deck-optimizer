@@ -1,0 +1,59 @@
+name: Rebuild site data
+
+# Regenerates deck.json (real decks) + the SPA data bundle and commits them.
+# Cloudflare Workers Builds is connected to this repo, so the resulting push to
+# main auto-deploys the site (build command runs the Vite build over the
+# committed bundle). No Cloudflare API tokens needed here — same model as
+# property-bot's refresh.yml.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'decks/**/decklist.txt'
+      - 'build_site_data.py'
+      - 'deck_to_json.py'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-data
+  cancel-in-progress: false
+
+jobs:
+  build-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache Scryfall data
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: scryfall-${{ hashFiles('decks/**/decklist.txt') }}
+          restore-keys: |
+            scryfall-
+
+      - name: Regenerate deck.json (real decks) + bundle
+        run: |
+          DIRS=$(ls -d decks/*/ | grep -vE 'decks/test_')
+          python3 sync_decks.py $DIRS
+          python3 build_site_data.py
+
+      - name: Commit if data changed
+        run: |
+          git config user.name "deck-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add decks/*/deck.json web/public/data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Rebuild deck data ($(date -u +%Y-%m-%d))"
+            git push
+          fi

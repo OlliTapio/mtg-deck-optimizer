@@ -1,0 +1,2440 @@
+{
+  "commander": {
+    "name": "Ureni of the Unwritten",
+    "count": 1,
+    "mana_cost": "{4}{G}{U}{R}",
+    "cmc": 7.0,
+    "type_line": "Legendary Creature \u2014 Spirit Dragon",
+    "types": [
+      "Creature"
+    ],
+    "oracle_text": "Flying, trample\nWhenever Ureni enters or attacks, look at the top eight cards of your library. You may put a Dragon creature card from among them onto the battlefield. Put the rest on the bottom of your library in a random order.",
+    "color_identity": [
+      "G",
+      "R",
+      "U"
+    ],
+    "keywords": [
+      "Flying",
+      "Trample"
+    ],
+    "produced_mana": [],
+    "otags": [
+      "card-advantage",
+      "evasion"
+    ],
+    "price_eur": "11.40",
+    "set": "tdc",
+    "number": "9",
+    "foil": false,
+    "buy": false
+  },
+  "deck": [
+    {
+      "name": "Atarka, World Render",
+      "count": 1,
+      "mana_cost": "{5}{R}{G}",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying, trample\nWhenever a Dragon you control attacks, it gains double strike until end of turn.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.39",
+      "set": "tdc",
+      "number": "281",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Beast Within",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Destroy target permanent. Its controller creates a 3/3 green Beast creature token.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.86",
+      "set": "tdc",
+      "number": "249",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Blasphemous Act",
+      "count": 1,
+      "mana_cost": "{8}{R}",
+      "cmc": 9.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "This spell costs {1} less to cast for each creature on the battlefield.\nBlasphemous Act deals 13 damage to each creature.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.68",
+      "set": "tdc",
+      "number": "207",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Bloomvine Regent // Claim Territory",
+      "count": 1,
+      "mana_cost": "{3}{G}{G} // {2}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dragon // Sorcery \u2014 Omen",
+      "types": [
+        "Creature",
+        "Sorcery"
+      ],
+      "oracle_text": "Flying\nWhenever this creature or another Dragon you control enters, you gain 3 life.\n---\nSearch your library for up to two basic Forest cards, reveal them, put one onto the battlefield tapped and the other into your hand, then shuffle. (Also shuffle this card.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor",
+        "evasion",
+        "lifegain"
+      ],
+      "price_eur": "0.67",
+      "set": "tdm",
+      "number": "136",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Bountiful Landscape",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice this land: Search your library for a basic Forest, Island, or Mountain card, put it onto the battlefield tapped, then shuffle.\nCycling {G}{U}{R} ({G}{U}{R}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "draw",
+        "tutor",
+        "card-advantage"
+      ],
+      "price_eur": "0.21",
+      "set": "tdc",
+      "number": "342",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Brainstorm",
+      "count": 1,
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Draw three cards, then put two cards from your hand on top of your library in any order.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "2.44",
+      "set": "dsc",
+      "number": "113",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Broodcaller Scourge",
+      "count": 1,
+      "mana_cost": "{5}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever one or more Dragons you control deal combat damage to a player, you may put a permanent card with mana value less than or equal to that damage from your hand onto the battlefield.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.61",
+      "set": "tdc",
+      "number": "44",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Carnelian Orb of Dragonkind",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add {R}. If that mana is spent on a Dragon creature spell, it gains haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.65",
+      "set": "j25",
+      "number": "131",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Chaos Warp",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "The owner of target permanent shuffles it into their library, then reveals the top card of their library. If it's a permanent card, they put it onto the battlefield.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.49",
+      "set": "tdc",
+      "number": "208",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cinder Glade",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R} or {G}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.15",
+      "set": "tdc",
+      "number": "350",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Command Tower",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.19",
+      "set": "tdc",
+      "number": "107",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Counterspell",
+      "count": 1,
+      "mana_cost": "{U}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Counter target spell.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "counterspell"
+      ],
+      "price_eur": "2.32",
+      "set": "dsc",
+      "number": "114",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cultivate",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for up to two basic land cards, reveal those cards, put one onto the battlefield tapped and the other into your hand, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.15",
+      "set": "tdc",
+      "number": "253",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Deceptive Frostkite",
+      "count": 1,
+      "mana_cost": "{U}{U}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nYou may have this creature enter as a copy of a creature you control with power 4 or greater, except it's a Dragon in addition to its other types and it has flying.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.52",
+      "set": "tdc",
+      "number": "19",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dragon Tempest",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever a creature you control with flying enters, it gains haste until end of turn.\nWhenever a Dragon you control enters, it deals X damage to any target, where X is the number of Dragons you control.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "2.37",
+      "set": "tdc",
+      "number": "94",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dragon's Hoard",
+      "count": 1,
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "Whenever a Dragon you control enters, put a gold counter on this artifact.\n{T}, Remove a gold counter from this artifact: Draw a card.\n{T}: Add one mana of any color.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.51",
+      "set": "tdc",
+      "number": "317",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dragonlord Atarka",
+      "count": 1,
+      "mana_cost": "{5}{R}{G}",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Elder Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying, trample\nWhen Dragonlord Atarka enters, it deals 5 damage divided as you choose among any number of target creatures and/or planeswalkers your opponents control.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "0.62",
+      "set": "tdc",
+      "number": "285",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Drakuseth, Maw of Flames",
+      "count": 1,
+      "mana_cost": "{4}{R}{R}{R}",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever Drakuseth attacks, it deals 4 damage to any target and 3 damage to each of up to two other targets.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "0.50",
+      "set": "fdn",
+      "number": "193",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Dread Linnorm // Scale Deflection",
+      "count": 1,
+      "mana_cost": "{6}{G} // {3}{G}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Snake Dragon // Instant \u2014 Adventure",
+      "types": [
+        "Creature",
+        "Instant"
+      ],
+      "oracle_text": "This creature can't be blocked by creatures with power 3 or less.\n---\nPut two +1/+1 counters on target creature and untap it. It gains hexproof until end of turn. (Then exile this card. You may cast the creature later from exile.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.18",
+      "set": "clb",
+      "number": "225",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Elemental Bond",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever a creature you control with power 3 or greater enters, draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "3.86",
+      "set": "tdc",
+      "number": "254",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Encroaching Dragonstorm",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When this enchantment enters, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle.\nWhen a Dragon you control enters, return this enchantment to its owner's hand.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.14",
+      "set": "tdm",
+      "number": "305",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Essence Flux",
+      "count": 1,
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Exile target creature you control, then return that card to the battlefield under its owner's control. If it's a Spirit, put a +1/+1 counter on it.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.87",
+      "set": "inr",
+      "number": "64",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Evolving Wilds",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "0.10",
+      "set": "tdm",
+      "number": "255",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.14",
+      "set": "tdc",
+      "number": "360",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Farseek",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a Plains, Island, Swamp, or Mountain card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.90",
+      "set": "tdc",
+      "number": "255",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Flooded Grove",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{G/U}, {T}: Add {G}{G}, {G}{U}, or {U}{U}.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.34",
+      "set": "tdc",
+      "number": "364",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 5,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "tdm",
+      "number": "285",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "tdm",
+      "number": "286",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Frontier Bivouac",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {G}, {U}, or {R}.",
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.15",
+      "set": "tdm",
+      "number": "256",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Frontier Siege",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "As this enchantment enters, choose Khans or Dragons.\n\u2022 Khans \u2014 At the beginning of each of your main phases, add {G}{G}.\n\u2022 Dragons \u2014 Whenever a creature you control with flying enters, you may have it fight target creature you don't control.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Fight"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [
+        "ramp",
+        "removal"
+      ],
+      "price_eur": "0.23",
+      "set": "tdc",
+      "number": "256",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Frostcliff Siege",
+      "count": 1,
+      "mana_cost": "{1}{U}{R}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "As this enchantment enters, choose Jeskai or Temur.\n\u2022 Jeskai \u2014 Whenever one or more creatures you control deal combat damage to a player, draw a card.\n\u2022 Temur \u2014 Creatures you control get +1/+0 and have trample and haste.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "2.25",
+      "set": "tdm",
+      "number": "187",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Garruk's Uprising",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When this enchantment enters, if you control a creature with power 4 or greater, draw a card.\nCreatures you control have trample. (Each of those creatures can deal excess combat damage to the player or planeswalker it's attacking.)\nWhenever a creature you control with power 4 or greater enters, draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.46",
+      "set": "blc",
+      "number": "219",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hammerhead Tyrant",
+      "count": 1,
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever you cast a spell, return up to one target nonland permanent an opponent controls with mana value less than or equal to that spell's mana value to its owner's hand.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "0.32",
+      "set": "tdc",
+      "number": "21",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Haven of the Spirit Dragon",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a Dragon creature spell.\n{2}, {T}, Sacrifice this land: Return target Dragon creature card or Ugin planeswalker card from your graveyard to your hand.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "0.59",
+      "set": "tdc",
+      "number": "370",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hellkite Courser",
+      "count": 1,
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhen this creature enters, you may put a commander you own from the command zone onto the battlefield. It gains haste. Return it to the command zone at the beginning of the next end step.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "3.42",
+      "set": "tdc",
+      "number": "218",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hellkite Tyrant",
+      "count": 1,
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying, trample\nWhenever this creature deals combat damage to a player, gain control of all artifacts that player controls.\nAt the beginning of your upkeep, if you control twenty or more artifacts, you win the game.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": null,
+      "set": "rvr",
+      "number": "111",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Herd Heirloom",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add one mana of any color. Spend this mana only to cast a creature spell.\n{T}: Until end of turn, target creature you control with power 4 or greater gains trample and \"Whenever this creature deals combat damage to a player, draw a card.\"",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "3.19",
+      "set": "tdm",
+      "number": "144",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hinterland Harbor",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control a Forest or an Island.\n{T}: Add {G} or {U}.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.14",
+      "set": "tdc",
+      "number": "371",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Incinerator of the Guilty",
+      "count": 1,
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying, trample\nWhenever this creature deals combat damage to a player, you may collect evidence X. When you do, this creature deals X damage to each creature and planeswalker that player controls. (To collect evidence X, exile cards with total mana value X or greater from your graveyard.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe",
+        "evasion"
+      ],
+      "price_eur": "0.85",
+      "set": "mkm",
+      "number": "132",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Island",
+      "count": 3,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Island",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {U}.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "tdm",
+      "number": "280",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Jade Orb of Dragonkind",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add {G}. When you spend this mana to cast a Dragon creature spell, it enters with an additional +1/+1 counter on it and gains hexproof until your next turn. (It can't be the target of spells or abilities your opponents control.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.20",
+      "set": "clb",
+      "number": "236",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Karplusan Forest",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {R} or {G}. This land deals 1 damage to you.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.84",
+      "set": "tdc",
+      "number": "374",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kiora, Behemoth Beckoner",
+      "count": 1,
+      "mana_cost": "{2}{G/U}",
+      "cmc": 3.0,
+      "type_line": "Legendary Planeswalker \u2014 Kiora",
+      "types": [
+        "Planeswalker"
+      ],
+      "oracle_text": "Whenever a creature you control with power 4 or greater enters, draw a card.\n\u22121: Untap target permanent.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.85",
+      "set": "plst",
+      "number": "WAR-232",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kodama's Reach",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Sorcery \u2014 Arcane",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for up to two basic land cards, reveal those cards, put one onto the battlefield tapped and the other into your hand, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "1.11",
+      "set": "tdc",
+      "number": "261",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Last Night Together",
+      "count": 1,
+      "mana_cost": "{3}{R}{G}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Choose two target creatures. Untap them. Put two +1/+1 counters on each of them. They gain vigilance, indestructible, and haste until end of turn. After this main phase, there is an additional combat phase. Only the chosen creatures can attack during that combat phase.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.24",
+      "set": "who",
+      "number": "140",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Lathliss, Dragon Queen",
+      "count": 1,
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever another nontoken Dragon you control enters, create a 5/5 red Dragon creature token with flying.\n{1}{R}: Dragons you control get +1/+0 until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.90",
+      "set": "tdc",
+      "number": "219",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Lozhan, Dragons' Legacy",
+      "count": 1,
+      "mana_cost": "{3}{U}{R}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Dragon Shaman",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever you cast an Adventure or Dragon spell, Lozhan deals damage equal to that spell's mana value to any target that isn't a commander.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "0.21",
+      "set": "clb",
+      "number": "281",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Magmaquake",
+      "count": 1,
+      "mana_cost": "{X}{R}{R}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Magmaquake deals X damage to each creature without flying and each planeswalker.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.25",
+      "set": "scd",
+      "number": "149",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Marang River Regent // Coil and Catch",
+      "count": 1,
+      "mana_cost": "{4}{U}{U} // {3}{U}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Dragon // Instant \u2014 Omen",
+      "types": [
+        "Creature",
+        "Instant"
+      ],
+      "oracle_text": "Flying\nWhen this creature enters, return up to two other target nonland permanents to their owners' hands.\n---\nDraw three cards, then discard a card. (Then shuffle this card into its owner's library.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "draw",
+        "card-advantage",
+        "evasion"
+      ],
+      "price_eur": "2.54",
+      "set": "tdm",
+      "number": "51",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Migration Path",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "draw",
+        "tutor",
+        "card-advantage"
+      ],
+      "price_eur": "0.32",
+      "set": "tdc",
+      "number": "262",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Miirym, Sentinel Wyrm",
+      "count": 1,
+      "mana_cost": "{3}{G}{U}{R}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u2014 Dragon Spirit",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying, ward {2}\nWhenever another nontoken Dragon you control enters, create a token that's a copy of it, except the token isn't legendary.",
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Ward"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "5.92",
+      "set": "clb",
+      "number": "284",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mossfire Valley",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{1}, {T}: Add {R}{G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.16",
+      "set": "tdc",
+      "number": "378",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mosswort Bridge",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "Hideaway 4 (When this land enters, look at the top four cards of your library, exile one face down, then put the rest on the bottom in a random order.)\nThis land enters tapped.\n{T}: Add {G}.\n{G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Hideaway"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.41",
+      "set": "tdc",
+      "number": "379",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mountain",
+      "count": 6,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Mountain",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "tdm",
+      "number": "283",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Nature's Lore",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a Forest card, put that card onto the battlefield, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "2.80",
+      "set": "mkc",
+      "number": "178",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Negate",
+      "count": 1,
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Counter target noncreature spell.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "counterspell"
+      ],
+      "price_eur": "0.07",
+      "set": "mom",
+      "number": "68",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Parapet Thrasher",
+      "count": 1,
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever one or more Dragons you control deal combat damage to an opponent, choose one that hasn't been chosen this turn \u2014\n\u2022 Destroy target artifact that opponent controls.\n\u2022 This creature deals 4 damage to each other opponent.\n\u2022 Exile the top card of your library. You may play it this turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "card-advantage",
+        "evasion"
+      ],
+      "price_eur": "0.60",
+      "set": "tdc",
+      "number": "36",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Path of Ancestry",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1. (Look at the top card of your library. You may put that card on the bottom.)",
+      "color_identity": [],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.09",
+      "set": "tdc",
+      "number": "382",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rampant Growth",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.51",
+      "set": "tdc",
+      "number": "265",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Return of the Wildspeaker",
+      "count": 1,
+      "mana_cost": "{4}{G}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Choose one \u2014\n\u2022 Draw cards equal to the greatest power among non-Human creatures you control.\n\u2022 Non-Human creatures you control get +3/+3 until end of turn.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.71",
+      "set": "otc",
+      "number": "203",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rockfall Vale",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {R} or {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "1.75",
+      "set": "tdc",
+      "number": "387",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rootbound Crag",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control a Mountain or a Forest.\n{T}: Add {R} or {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "tdc",
+      "number": "388",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sakura-Tribe Elder",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Snake Shaman",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Sacrifice this creature: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.43",
+      "set": "tdc",
+      "number": "266",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sapphire Dragon // Psionic Pulse",
+      "count": 1,
+      "mana_cost": "{5}{U}{U} // {2}{U}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Dragon // Instant \u2014 Adventure",
+      "types": [
+        "Creature",
+        "Instant"
+      ],
+      "oracle_text": "Flying\nWhenever this creature attacks or blocks, scry 2.\n---\nCounter target noncreature spell. (Then exile this card. You may cast the creature later from exile.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Scry",
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "counterspell",
+        "evasion"
+      ],
+      "price_eur": "0.25",
+      "set": "clb",
+      "number": "94",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sarkhan, Soul Aflame",
+      "count": 1,
+      "mana_cost": "{1}{U}{R}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Human Shaman",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Dragon spells you cast cost {1} less to cast.\nWhenever a Dragon you control enters, you may have Sarkhan become a copy of it until end of turn, except its name is Sarkhan, Soul Aflame and it's legendary in addition to its other types.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.88",
+      "set": "tdc",
+      "number": "301",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Scourge of the Throne",
+      "count": 1,
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nDethrone (Whenever this creature attacks the player with the most life or tied for most life, put a +1/+1 counter on it.)\nWhenever this creature attacks for the first time each turn, if it's attacking the player with the most life or tied for most life, untap all attacking creatures. After this phase, there is an additional combat phase.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Dethrone"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.52",
+      "set": "tdc",
+      "number": "230",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Selvala's Stampede",
+      "count": 1,
+      "mana_cost": "{4}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Council's dilemma \u2014 Starting with you, each player votes for wild or free. Reveal cards from the top of your library until you reveal a creature card for each wild vote. Put those creature cards onto the battlefield, then shuffle the rest into your library. You may put a permanent card from your hand onto the battlefield for each free vote.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Council's dilemma"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "card-advantage"
+      ],
+      "price_eur": "0.56",
+      "set": "tdc",
+      "number": "269",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sheltered Thicket",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R} or {G}.)\nThis land enters tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.14",
+      "set": "tdc",
+      "number": "392",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Shivan Reef",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This land deals 1 damage to you.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.46",
+      "set": "tdc",
+      "number": "393",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Smuggler's Surprise",
+      "count": 1,
+      "mana_cost": "{G}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Spree (Choose one or more additional costs.)\n+ {2} \u2014 Mill four cards. You may put up to two creature and/or land cards from among the milled cards into your hand.\n+ {4}{G} \u2014 You may put up to two creature cards from your hand onto the battlefield.\n+ {1} \u2014 Creatures you control with power 4 or greater gain hexproof and indestructible until end of turn.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Spree",
+        "Mill"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "mill",
+        "card-advantage"
+      ],
+      "price_eur": "5.14",
+      "set": "otj",
+      "number": "180",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sol Ring",
+      "count": 1,
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.85",
+      "set": "tdc",
+      "number": "106",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Spire Garden",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {R} or {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "2.92",
+      "set": "clb",
+      "number": "361",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Storm's Wrath",
+      "count": 1,
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Storm's Wrath deals 4 damage to each creature and each planeswalker.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.19",
+      "set": "tdc",
+      "number": "236",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sulfur Falls",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control an Island or a Mountain.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.46",
+      "set": "tdc",
+      "number": "396",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sword Coast Serpent // Capsizing Wave",
+      "count": 1,
+      "mana_cost": "{5}{U}{U} // {1}{U}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Serpent Dragon // Instant \u2014 Adventure",
+      "types": [
+        "Creature",
+        "Instant"
+      ],
+      "oracle_text": "This creature can't be blocked as long as you've cast a noncreature spell this turn.\n---\nReturn target creature to its owner's hand. (Then exile this card. You may cast the creature later from exile.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "0.23",
+      "set": "clb",
+      "number": "99",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Teferi's Time Twist",
+      "count": 1,
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Exile target permanent you control. Return that card to the battlefield under its owner's control at the beginning of the next end step. If it enters as a creature, it enters with an additional +1/+1 counter on it.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.29",
+      "set": "war",
+      "number": "72",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Temple of Abandon",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {R} or {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.18",
+      "set": "tdc",
+      "number": "400",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Temple of Mystery",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {G} or {U}.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "tdc",
+      "number": "404",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Temple of the Dragon Queen",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "As this land enters, you may reveal a Dragon card from your hand. This land enters tapped unless you revealed a Dragon card this way or you control a Dragon.\nAs this land enters, choose a color.\n{T}: Add one mana of the chosen color.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.26",
+      "set": "tdc",
+      "number": "104",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Temur Ascendancy",
+      "count": 1,
+      "mana_cost": "{G}{U}{R}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Creatures you control have haste.\nWhenever a creature you control with power 4 or greater enters, you may draw a card.",
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "2.55",
+      "set": "tdc",
+      "number": "305",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Terror of Mount Velus",
+      "count": 1,
+      "mana_cost": "{5}{R}{R}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nDouble strike (This creature deals both first-strike and regular combat damage.)\nWhen this creature enters, creatures you control gain double strike until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Double strike"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "1.31",
+      "set": "afc",
+      "number": "145",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Thrakkus the Butcher",
+      "count": 1,
+      "mana_cost": "{3}{R}{G}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Dragon Peasant",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Trample\nWhenever Thrakkus attacks, double the power of each Dragon you control until end of turn.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.28",
+      "set": "clb",
+      "number": "295",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Thunder Dragon",
+      "count": 1,
+      "mana_cost": "{5}{R}{R}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhen this creature enters, it deals 3 damage to each creature without flying.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe",
+        "evasion"
+      ],
+      "price_eur": "0.38",
+      "set": "clb",
+      "number": "810",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Thundermane Dragon",
+      "count": 1,
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nYou may look at the top card of your library any time.\nYou may cast creature spells with power 4 or greater from the top of your library. If you cast a creature spell this way, it gains haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage",
+        "evasion"
+      ],
+      "price_eur": "0.94",
+      "set": "tdc",
+      "number": "38",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ureni, the Song Unending",
+      "count": 1,
+      "mana_cost": "{5}{G}{U}{R}",
+      "cmc": 8.0,
+      "type_line": "Legendary Creature \u2014 Spirit Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying, protection from white and from black\nWhen Ureni enters, it deals X damage divided as you choose among any number of target creatures and/or planeswalkers your opponents control, where X is the number of lands you control.",
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Protection"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "2.51",
+      "set": "tdm",
+      "number": "233",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Utvara Hellkite",
+      "count": 1,
+      "mana_cost": "{6}{R}{R}",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Dragon",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhenever a Dragon you control attacks, create a 6/6 red Dragon creature token with flying.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "13.19",
+      "set": "rvr",
+      "number": "129",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Whirlwing Stormbrood // Dynamic Soar",
+      "count": 1,
+      "mana_cost": "{4}{U} // {2}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dragon // Sorcery \u2014 Omen",
+      "types": [
+        "Creature",
+        "Sorcery"
+      ],
+      "oracle_text": "Flash\nFlying\nYou may cast sorcery spells and Dragon spells as though they had flash.\n---\nPut three +1/+1 counters on target creature you control. (Then shuffle this card into its owner's library.)",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Flash"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.10",
+      "set": "tdm",
+      "number": "234",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Yavimaya Coast",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {G} or {U}. This land deals 1 damage to you.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.50",
+      "set": "tdc",
+      "number": "413",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cascade Bluffs",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{U/R}, {T}: Add {U}{U}, {U}{R}, or {R}{R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.75",
+      "set": "shm",
+      "number": "269",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Spinerock Knoll",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "Hideaway 4 (When this land enters, look at the top four cards of your library, exile one face down, then put the rest on the bottom in a random order.)\nThis land enters tapped.\n{T}: Add {R}.\n{R}, {T}: You may play the exiled card without paying its mana cost if an opponent was dealt 7 or more damage this turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Hideaway"
+      ],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.66",
+      "set": "shm",
+      "number": "248",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Steam Vents",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Island Mountain",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "8.96",
+      "set": "rvr",
+      "number": "289",
+      "foil": false,
+      "buy": true
+    }
+  ],
+  "metadata": {
+    "source_file": "decks/ureni/decklist.txt",
+    "total_cards": 103
+  }
+}

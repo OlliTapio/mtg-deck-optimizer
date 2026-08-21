@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.dev.vars
+
+# public/data/ IS committed: it's the generated bundle the deployed site serves
+# (regenerated + committed by .github/workflows/build-data.yml, like
+# property-bot's listings.json). Cloudflare Workers Builds runs the Vite build
+# over it — no Python needed at deploy time.

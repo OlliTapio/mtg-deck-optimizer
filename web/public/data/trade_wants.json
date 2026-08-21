@@ -1,0 +1,11 @@
+{
+  "wants": [
+    {
+      "count": 1,
+      "name": "Walking Ballista",
+      "note": "Combo A upgrade over Triskelion: same \"remove a counter: 1 damage\" engine, but CMC 0, castable early as removal/reach, and 4 mana cheaper to assemble with a doubler down. Triskelion stays until this is traded for.",
+      "deck_id": "wise_mothman",
+      "deck_name": "The Wise Mothman"
+    }
+  ]
+}

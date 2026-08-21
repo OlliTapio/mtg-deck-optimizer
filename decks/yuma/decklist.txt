@@ -80,7 +80,7 @@
 1x Stroke of Midnight (tdc) 132 [Removal]
 1x Sun Titan (otc) 87 [Recursion]
 1x Sunscorched Divide (otc) 326 [Land]
-1x The Mending of Dominaria (otc) 197 [Recursion,Enchantment]
+1x Mole Man, Moloid Master (msh) 177 [Creature,Buy]
 1x Titania, Protector of Argoth (otc) 210 [Landfall]
 1x Desert Warfare (otc) 27 [Landfall,Tokens]
 1x Vibrance (ecl) 249 [Removal]

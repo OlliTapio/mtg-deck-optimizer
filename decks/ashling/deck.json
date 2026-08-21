@@ -1,0 +1,2388 @@
+{
+  "commander": {
+    "name": "Ashling, the Limitless",
+    "count": 1,
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature \u2014 Elemental Sorcerer",
+    "types": [
+      "Creature"
+    ],
+    "oracle_text": "Elemental permanent spells you cast from your hand gain evoke {4} as you cast them. (If you cast a spell for its evoke cost, it's sacrificed when it enters.)\nWhenever you sacrifice a nontoken Elemental, create a token that's a copy of it. The token gains haste until end of turn. At the beginning of your next end step, sacrifice it unless you pay {W}{U}{B}{R}{G}.",
+    "color_identity": [
+      "B",
+      "G",
+      "R",
+      "U",
+      "W"
+    ],
+    "keywords": [],
+    "produced_mana": [],
+    "otags": [],
+    "price_eur": "0.66",
+    "set": "ecc",
+    "number": "1",
+    "foil": false,
+    "buy": false
+  },
+  "deck": [
+    {
+      "name": "Abundant Countryside",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell.\n{6}, {T}: Create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "6.51",
+      "set": "ecc",
+      "number": "42",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ancient Ziggurat",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color. Spend this mana only to cast a creature spell.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "1.26",
+      "set": "ecc",
+      "number": "144",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Arcane Signet",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.22",
+      "set": "ecc",
+      "number": "55",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ashling, Rekindled",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Legendary Creature \u2014 Elemental Sorcerer // Legendary Creature \u2014 Elemental Wizard",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever this creature enters or transforms into Ashling, Rekindled, you may discard a card. If you do, draw a card.\nAt the beginning of your first main phase, you may pay {U}. If you do, transform Ashling.\n---\nWhenever this creature transforms into Ashling, Rimebound and at the beginning of your first main phase, add two mana of any one color. Spend this mana only to cast spells with mana value 4 or greater.\nAt the beginning of your first main phase, you may pay {R}. If you do, transform Ashling.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Transform"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.99",
+      "set": "ecl",
+      "number": "200",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Ashling's Command",
+      "count": 1,
+      "mana_cost": "{3}{U}{R}",
+      "cmc": 5.0,
+      "type_line": "Kindred Instant \u2014 Elemental",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Choose two \u2014\n\u2022 Create a token that's a copy of target Elemental you control.\n\u2022 Target player draws two cards.\n\u2022 Ashling's Command deals 2 damage to each creature target player controls.\n\u2022 Target player creates two Treasure tokens.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Treasure"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "removal",
+        "draw",
+        "board-wipe",
+        "card-advantage"
+      ],
+      "price_eur": "0.39",
+      "set": "ecl",
+      "number": "205",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Avenger of Zendikar",
+      "count": 1,
+      "mana_cost": "{5}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, create a 0/1 green Plant creature token for each land you control.\nLandfall \u2014 Whenever a land you control enters, you may put a +1/+1 counter on each Plant creature you control.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.56",
+      "set": "ecc",
+      "number": "98",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Bane of Progress",
+      "count": 1,
+      "mana_cost": "{4}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, destroy all artifacts and enchantments. Put a +1/+1 counter on this creature for each permanent destroyed this way.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.38",
+      "set": "ecc",
+      "number": "99",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Belonging",
+      "count": 1,
+      "mana_cost": "{5}{W}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, create three 1/1 colorless Shapeshifter creature tokens with changeling. (They're every creature type.)\nEncore {6}{W}{W} ({6}{W}{W}, Exile this card from your graveyard: For each opponent, create a token copy that attacks that opponent this turn if able. They gain haste. Sacrifice them at the beginning of the next end step. Activate only as a sorcery.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Encore"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.30",
+      "set": "ecc",
+      "number": "5",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Blasphemous Act",
+      "count": 1,
+      "mana_cost": "{8}{R}",
+      "cmc": 9.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "This spell costs {1} less to cast for each creature on the battlefield.\nBlasphemous Act deals 13 damage to each creature.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe"
+      ],
+      "price_eur": "0.68",
+      "set": "ecc",
+      "number": "89",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cavalier of Thorns",
+      "count": 1,
+      "mana_cost": "{2}{G}{G}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Elemental Knight",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Reach\nWhen this creature enters, reveal the top five cards of your library. Put a land card from among them onto the battlefield and the rest into your graveyard.\nWhen this creature dies, you may exile it. If you do, put another target card from your graveyard on top of your library.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Reach"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "mill",
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "0.46",
+      "set": "ecc",
+      "number": "100",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Champion of the Path",
+      "count": 1,
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Elemental Sorcerer",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "As an additional cost to cast this spell, behold an Elemental and exile it. (Exile an Elemental you control or an Elemental card from your hand.)\nWhenever another Elemental you control enters, it deals damage equal to its power to each opponent.\nWhen this creature leaves the battlefield, return the exiled card to its owner's hand.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Behold"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.45",
+      "set": "ecl",
+      "number": "130",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cinder Glade",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R} or {G}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.15",
+      "set": "tmc",
+      "number": "61",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Command Tower",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.19",
+      "set": "ecc",
+      "number": "59",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Crib Swap",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Kindred Instant \u2014 Shapeshifter",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nExile target creature. Its controller creates a 1/1 colorless Shapeshifter creature token with changeling.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.07",
+      "set": "ecl",
+      "number": "11",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Cultivate",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for up to two basic land cards, reveal those cards, put one onto the battlefield tapped and the other into your hand, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.15",
+      "set": "ecc",
+      "number": "103",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Descendants' Fury",
+      "count": 1,
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "Whenever one or more creatures you control deal combat damage to a player, you may sacrifice one of them. If you do, reveal cards from the top of your library until you reveal a creature card that shares a creature type with the sacrificed creature. Put that card onto the battlefield and the rest on the bottom of your library in a random order.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage",
+        "sacrifice-outlet"
+      ],
+      "price_eur": "0.41",
+      "set": "ecc",
+      "number": "93",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Eclipsed Flamekin",
+      "count": 1,
+      "mana_cost": "{1}{U/R}{U/R}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elemental Scout",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, look at the top four cards of your library. You may reveal an Elemental, Island, or Mountain card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage"
+      ],
+      "price_eur": "0.08",
+      "set": "ecl",
+      "number": "219",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Eclipsed Realms",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "As this land enters, choose Elemental, Elf, Faerie, Giant, Goblin, Kithkin, Merfolk, or Treefolk.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a spell of the chosen type or activate an ability of a source of the chosen type.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.56",
+      "set": "ecl",
+      "number": "263",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Endurance",
+      "count": 1,
+      "mana_cost": "{1}{G}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flash\nReach\nWhen this creature enters, up to one target player puts all the cards from their graveyard on the bottom of their library in a random order.\nEvoke\u2014Exile a green card from your hand.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Reach",
+        "Evoke",
+        "Flash"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "recursion",
+        "graveyard-hate"
+      ],
+      "price_eur": "4.70",
+      "set": "ecc",
+      "number": "51",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.14",
+      "set": "ecc",
+      "number": "148",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Faeburrow Elder",
+      "count": 1,
+      "mana_cost": "{1}{G}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Treefolk Druid",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Vigilance\nThis creature gets +1/+1 for each color among permanents you control.\n{T}: For each color among permanents you control, add one mana of that color.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Vigilance"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "mana-dork"
+      ],
+      "price_eur": "0.51",
+      "set": "ecc",
+      "number": "53",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Farseek",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a Plains, Island, Swamp, or Mountain card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.90",
+      "set": "eoc",
+      "number": "50",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Fellwar Stone",
+      "count": 1,
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "1.23",
+      "set": "ecc",
+      "number": "141",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Flock Impostor",
+      "count": 1,
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nFlash\nFlying\nWhen this creature enters, return up to one other target creature you control to its owner's hand.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Changeling",
+        "Flying",
+        "Flash"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.12",
+      "set": "ecl",
+      "number": "16",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Flamebraider",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Elemental Bard",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{T}: Add two mana in any combination of colors. Spend this mana only to cast Elemental spells or activate abilities of Elemental sources.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "mana-dork"
+      ],
+      "price_eur": "0.16",
+      "set": "ecl",
+      "number": "139",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Flamekin Village",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "As this land enters, you may reveal an Elemental card from your hand. If you don't, this land enters tapped.\n{T}: Add {R}.\n{R}, {T}: Target creature gains haste until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.39",
+      "set": "ecc",
+      "number": "149",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Forest",
+      "count": 8,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "ecl",
+      "number": "273",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Foundation Breaker",
+      "count": 1,
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, you may destroy target artifact or enchantment.\nEvoke {1}{G} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Evoke"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.18",
+      "set": "ecc",
+      "number": "108",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "The World Tree",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {G}.\nAs long as you control six or more lands, lands you control have \"{T}: Add one mana of any color.\"\n{W}{W}{U}{U}{B}{B}{R}{R}{G}{G}, {T}, Sacrifice this land: Search your library for any number of God cards, put them onto the battlefield, then shuffle.",
+      "color_identity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "4.79",
+      "set": "khm",
+      "number": "275",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Fury",
+      "count": 1,
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Double strike\nWhen this creature enters, it deals 4 damage divided as you choose among any number of target creatures and/or planeswalkers.\nEvoke\u2014Exile a red card from your hand.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Evoke",
+        "Double strike"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "1.52",
+      "set": "ecc",
+      "number": "50",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Garruk's Uprising",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "When this enchantment enters, if you control a creature with power 4 or greater, draw a card.\nCreatures you control have trample. (Each of those creatures can deal excess combat damage to the player or planeswalker it's attacking.)\nWhenever a creature you control with power 4 or greater enters, draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.46",
+      "set": "ecc",
+      "number": "109",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Grave Sifter",
+      "count": 1,
+      "mana_cost": "{5}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental Beast",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, each player chooses a creature type and returns any number of cards of that type from their graveyard to their hand.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "7.30",
+      "set": "cma",
+      "number": "168",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Greenwarden of Murasa",
+      "count": 1,
+      "mana_cost": "{4}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, you may return target card from your graveyard to your hand.\nWhen this creature dies, you may exile it. If you do, return target card from your graveyard to your hand.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion",
+        "card-advantage"
+      ],
+      "price_eur": "0.25",
+      "set": "ecc",
+      "number": "110",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Hallowed Fountain",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Plains Island",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {W} or {U}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "7.66",
+      "set": "ecl",
+      "number": "265",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Harmonized Crescendo",
+      "count": 1,
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 6.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nChoose a creature type. Draw a card for each permanent you control of that type.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Convoke"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.63",
+      "set": "ecl",
+      "number": "54",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Haunting Voyage",
+      "count": 1,
+      "mana_cost": "{4}{B}{B}",
+      "cmc": 6.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Choose a creature type. Return up to two creature cards of that type from your graveyard to the battlefield. If this spell was foretold, return all creature cards of that type from your graveyard to the battlefield instead.\nForetell {5}{B}{B} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Foretell"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "0.61",
+      "set": "ecc",
+      "number": "75",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Horde of Notions",
+      "count": 1,
+      "mana_cost": "{W}{U}{B}{R}{G}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Vigilance, trample, haste\n{W}{U}{B}{R}{G}: You may play target Elemental card from your graveyard without paying its mana cost.",
+      "color_identity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Vigilance",
+        "Haste",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "0.21",
+      "set": "ecc",
+      "number": "124",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Impulsivity",
+      "count": 1,
+      "mana_cost": "{6}{R}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, you may cast target instant or sorcery card from a graveyard without paying its mana cost. If that spell would be put into a graveyard, exile it instead.\nEncore {7}{R}{R} ({7}{R}{R}, Exile this card from your graveyard: For each opponent, create a token copy that attacks that opponent this turn if able. They gain haste. Sacrifice them at the beginning of the next end step. Activate only as a sorcery.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Encore"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "0.35",
+      "set": "ecc",
+      "number": "33",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Incandescent Soulstoke",
+      "count": 1,
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elemental Shaman",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Other Elemental creatures you control get +1/+1.\n{1}{R}, {T}: You may put an Elemental creature card from your hand onto the battlefield. That creature gains haste until end of turn. Sacrifice it at the beginning of the next end step.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "ecc",
+      "number": "94",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Ingot Chewer",
+      "count": 1,
+      "mana_cost": "{4}{R}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, destroy target artifact.\nEvoke {R} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Evoke"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal"
+      ],
+      "price_eur": "0.12",
+      "set": "ecc",
+      "number": "95",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Island",
+      "count": 2,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Island",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {U}.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "ecl",
+      "number": "270",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Jubilation",
+      "count": 1,
+      "mana_cost": "{5}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, creatures you control get +2/+2 and gain trample until end of turn.\nEncore {7}{G}{G} ({7}{G}{G}, Exile this card from your graveyard: For each opponent, create a token copy that attacks that opponent this turn if able. They gain haste. Sacrifice them at the beginning of the next end step. Activate only as a sorcery.)",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Encore"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.44",
+      "set": "ecc",
+      "number": "37",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Jungle Shrine",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {R}, {G}, or {W}.",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.20",
+      "set": "ecc",
+      "number": "154",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kindred Summons",
+      "count": 1,
+      "mana_cost": "{5}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Choose a creature type. Reveal cards from the top of your library until you reveal X creature cards of the chosen type, where X is the number of creatures you control of that type. Put those cards onto the battlefield, then shuffle the rest of the revealed cards into your library.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage"
+      ],
+      "price_eur": "2.09",
+      "set": "ecc",
+      "number": "112",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Flamekin Harbinger",
+      "count": 1,
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Elemental Shaman",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, you may search your library for an Elemental card, reveal it, then shuffle and put that card on top.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "tutor"
+      ],
+      "price_eur": "5.03",
+      "set": "mor",
+      "number": "51",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Kulrath Zealot",
+      "count": 1,
+      "mana_cost": "{5}{R}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental Warrior",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, exile the top card of your library. Until the end of your next turn, you may play that card.\nBasic landcycling {1}{R} ({1}{R}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Landcycling",
+        "Basic landcycling",
+        "Typecycling",
+        "Cycling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "tutor",
+        "card-advantage"
+      ],
+      "price_eur": "0.06",
+      "set": "ecl",
+      "number": "148",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Lamentation",
+      "count": 1,
+      "mana_cost": "{5}{B}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, destroy target creature an opponent controls. You gain 3 life.\nEncore {6}{B}{B} ({6}{B}{B}, Exile this card from your graveyard: For each opponent, create a token copy that attacks that opponent this turn if able. They gain haste. Sacrifice them at the beginning of the next end step. Activate only as a sorcery.)",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Encore"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "lifegain"
+      ],
+      "price_eur": "0.35",
+      "set": "ecc",
+      "number": "30",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Maelstrom Wanderer",
+      "count": 1,
+      "mana_cost": "{5}{G}{U}{R}",
+      "cmc": 8.0,
+      "type_line": "Legendary Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Creatures you control have haste.\nCascade, cascade (When you cast this spell, exile cards from the top of your library until you exile a nonland card that costs less. You may cast it without paying its mana cost. Put the exiled cards on the bottom in a random order. Then do it again.)",
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Cascade"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage"
+      ],
+      "price_eur": "0.39",
+      "set": "ecc",
+      "number": "127",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mass of Mysteries",
+      "count": 1,
+      "mana_cost": "{W}{U}{B}{R}{G}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "First strike, vigilance, trample\nAt the beginning of combat on your turn, another target Elemental you control gains myriad until end of turn. (Whenever it attacks, for each opponent other than defending player, you may create a token copy that's tapped and attacking that player or a planeswalker they control. Exile the tokens at end of combat.)",
+      "color_identity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Vigilance",
+        "First strike",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "ecc",
+      "number": "3",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Mountain",
+      "count": 2,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Mountain",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "ecl",
+      "number": "272",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Brighthearth Banneret",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Elemental Warrior",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Elemental spells and Warrior spells you cast cost {1} less to cast.\nReinforce 1\u2014{1}{R} ({1}{R}, Discard this card: Put a +1/+1 counter on target creature.)",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Reinforce"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.02",
+      "set": "mor",
+      "number": "58",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Mulldrifter",
+      "count": 1,
+      "mana_cost": "{4}{U}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nWhen this creature enters, draw two cards.\nEvoke {2}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Evoke"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage",
+        "evasion"
+      ],
+      "price_eur": "0.28",
+      "set": "ecc",
+      "number": "67",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Omnath, Locus of the Roil",
+      "count": 1,
+      "mana_cost": "{1}{G}{U}{R}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When Omnath enters, it deals damage to any target equal to the number of Elementals you control.\nLandfall \u2014 Whenever a land you control enters, put a +1/+1 counter on target Elemental you control. If you control eight or more lands, draw a card.",
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.93",
+      "set": "ecc",
+      "number": "130",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Omni-Changeling",
+      "count": 1,
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nConvoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nYou may have this creature enter as a copy of any creature on the battlefield, except it has changeling.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Convoke",
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "ecl",
+      "number": "62",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Opulent Palace",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {B}, {G}, or {U}.",
+      "color_identity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "ecc",
+      "number": "157",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Path of Ancestry",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1. (Look at the top card of your library. You may put that card on the bottom.)",
+      "color_identity": [],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.09",
+      "set": "ecc",
+      "number": "158",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Path to Exile",
+      "count": 1,
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "oracle_text": "Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "removal",
+        "tutor"
+      ],
+      "price_eur": "1.49",
+      "set": "ecc",
+      "number": "65",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Plains",
+      "count": 2,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.11",
+      "set": "ecl",
+      "number": "269",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Primal Beyond",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "As this land enters, you may reveal an Elemental card from your hand. If you don't, this land enters tapped.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast an Elemental spell or activate an ability of an Elemental.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.35",
+      "set": "ecc",
+      "number": "159",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Raging Ravine",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {R} or {G}.\n{2}{R}{G}: Until end of turn, this land becomes a 3/3 red and green Elemental creature with \"Whenever this creature attacks, put a +1/+1 counter on it.\" It's still a land.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.26",
+      "set": "ecc",
+      "number": "160",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rain-Slicked Copse",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Forest Island",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G} or {U}.)\nThis land enters tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.14",
+      "set": "ecc",
+      "number": "43",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rampant Growth",
+      "count": 1,
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "tutor"
+      ],
+      "price_eur": "0.51",
+      "set": "fic",
+      "number": "313",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Realmwalker",
+      "count": 1,
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Changeling (This card is every creature type.)\nAs this creature enters, choose a creature type.\nYou may look at the top card of your library any time.\nYou may cast creature spells of the chosen type from the top of your library.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Changeling"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "card-advantage"
+      ],
+      "price_eur": "1.49",
+      "set": "ecc",
+      "number": "114",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Reflections of Littjara",
+      "count": 1,
+      "mana_cost": "{4}{U}",
+      "cmc": 5.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "As this enchantment enters, choose a creature type.\nWhenever you cast a spell of the chosen type, copy that spell. (A copy of a permanent spell becomes a token.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "1.44",
+      "set": "tdc",
+      "number": "164",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Risen Reef",
+      "count": 1,
+      "mana_cost": "{1}{G}{U}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever this creature or another Elemental you control enters, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped. If you don't put the card onto the battlefield, put it into your hand.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "ramp",
+        "card-advantage"
+      ],
+      "price_eur": "0.33",
+      "set": "ecc",
+      "number": "132",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Rootbound Crag",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped unless you control a Mountain or a Forest.\n{T}: Add {R} or {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "tmc",
+      "number": "72",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sandsteppe Citadel",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {W}, {B}, or {G}.",
+      "color_identity": [
+        "B",
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.17",
+      "set": "ecc",
+      "number": "164",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Savage Lands",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {B}, {R}, or {G}.",
+      "color_identity": [
+        "B",
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R"
+      ],
+      "otags": [],
+      "price_eur": "0.21",
+      "set": "ecc",
+      "number": "165",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Seaside Citadel",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "This land enters tapped.\n{T}: Add {G}, {W}, or {U}.",
+      "color_identity": [
+        "G",
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.23",
+      "set": "ecc",
+      "number": "166",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Secluded Courtyard",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "As this land enters, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type or activate an ability of a creature source of the chosen type.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.40",
+      "set": "ecc",
+      "number": "62",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Selvala, Heart of the Wilds",
+      "count": 1,
+      "mana_cost": "{1}{G}{G}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Elf Scout",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever another creature enters, its controller may draw a card if its power is greater than each other creature's power.\n{G}, {T}: Add X mana in any combination of colors, where X is the greatest power among creatures you control.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "draw",
+        "mana-dork",
+        "card-advantage"
+      ],
+      "price_eur": "2.51",
+      "set": "ecc",
+      "number": "116",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Shatter the Sky",
+      "count": 1,
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Each player who controls a creature with power 4 or greater draws a card. Then destroy all creatures.",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "draw",
+        "board-wipe",
+        "card-advantage"
+      ],
+      "price_eur": "0.22",
+      "set": "ecc",
+      "number": "66",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Shinestriker",
+      "count": 1,
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nVivid \u2014 When this creature enters, draw cards equal to the number of colors among permanents you control.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Vivid"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage",
+        "evasion"
+      ],
+      "price_eur": "0.14",
+      "set": "ecl",
+      "number": "75",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Shriekmaw",
+      "count": 1,
+      "mana_cost": "{4}{B}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Fear (This creature can't be blocked except by artifact creatures and/or black creatures.)\nWhen this creature enters, destroy target nonartifact, nonblack creature.\nEvoke {1}{B} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Evoke",
+        "Fear"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "evasion"
+      ],
+      "price_eur": "0.21",
+      "set": "ecc",
+      "number": "85",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Slithermuse",
+      "count": 1,
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature leaves the battlefield, choose an opponent. If that player has more cards in hand than you, draw cards equal to the difference.\nEvoke {3}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Evoke"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.26",
+      "set": "ecc",
+      "number": "69",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Smokebraider",
+      "count": 1,
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Elemental Shaman",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "{T}: Add two mana in any combination of colors. Spend this mana only to cast Elemental spells or activate abilities of Elementals.",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [
+        "ramp",
+        "mana-dork"
+      ],
+      "price_eur": "0.26",
+      "set": "ecc",
+      "number": "96",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sodden Verdure",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Forest Island",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {G} or {U}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "otags": [],
+      "price_eur": "0.47",
+      "set": "ecc",
+      "number": "44",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sol Ring",
+      "count": 1,
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "otags": [
+        "ramp"
+      ],
+      "price_eur": "0.85",
+      "set": "ecc",
+      "number": "57",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Kindred Discovery",
+      "count": 1,
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "oracle_text": "As this enchantment enters, choose a creature type.\nWhenever a creature you control of the chosen type enters or attacks, draw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "10.21",
+      "set": "c17",
+      "number": "11",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Subterfuge",
+      "count": 1,
+      "mana_cost": "{4}{U}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "When this creature enters, target creature gains flying and \"Whenever this creature deals combat damage to a player, draw that many cards\" until end of turn.\nEncore {7}{U}{U} ({7}{U}{U}, Exile this card from your graveyard: For each opponent, create a token copy that attacks that opponent this turn if able. They gain haste. Sacrifice them at the beginning of the next end step. Activate only as a sorcery.)",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Encore"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "draw",
+        "card-advantage"
+      ],
+      "price_eur": "0.32",
+      "set": "ecc",
+      "number": "6",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Sunderflock",
+      "count": 1,
+      "mana_cost": "{7}{U}{U}",
+      "cmc": 9.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "This spell costs {X} less to cast, where X is the greatest mana value among Elementals you control.\nFlying\nWhen this creature enters, if you cast it, return all non-Elemental creatures to their owners' hands.",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "board-wipe",
+        "evasion"
+      ],
+      "price_eur": "3.36",
+      "set": "ecl",
+      "number": "74",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Swamp",
+      "count": 2,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Swamp",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "({T}: Add {B}.)",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "otags": [],
+      "price_eur": "0.10",
+      "set": "ecl",
+      "number": "271",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Patriarch's Bidding",
+      "count": 1,
+      "mana_cost": "{3}{B}{B}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "oracle_text": "Each player chooses a creature type. Each player returns all creature cards of a type chosen this way from their graveyard to the battlefield.",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [
+        "recursion"
+      ],
+      "price_eur": "2.77",
+      "set": "ons",
+      "number": "161",
+      "foil": false,
+      "buy": true
+    },
+    {
+      "name": "Titan of Industry",
+      "count": 1,
+      "mana_cost": "{4}{G}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Elemental",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Reach, trample\nWhen this creature enters, choose two \u2014\n\u2022 Destroy target artifact or enchantment.\n\u2022 Target player gains 5 life.\n\u2022 Create a 4/4 green Rhino Warrior creature token.\n\u2022 Put a shield counter on a creature you control.",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Reach",
+        "Trample"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "removal",
+        "lifegain"
+      ],
+      "price_eur": "0.69",
+      "set": "ecc",
+      "number": "117",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Twinflame Travelers",
+      "count": 1,
+      "mana_cost": "{2}{U}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Elemental Sorcerer",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Flying\nIf a triggered ability of another Elemental you control triggers, it triggers an additional time.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "0.19",
+      "set": "ecl",
+      "number": "248",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Unclaimed Territory",
+      "count": 1,
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "types": [
+        "Land"
+      ],
+      "oracle_text": "As this land enters, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type.",
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "otags": [],
+      "price_eur": "0.34",
+      "set": "ecc",
+      "number": "175",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Vernal Sovereign",
+      "count": 1,
+      "mana_cost": "{4}{G}{W}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elemental Elk",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Whenever this creature enters or attacks, create a green and white Elemental creature token with \"This token's power and toughness are each equal to the number of creatures you control.\"",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [],
+      "otags": [],
+      "price_eur": "0.22",
+      "set": "ecc",
+      "number": "135",
+      "foil": false,
+      "buy": false
+    },
+    {
+      "name": "Yarok, the Desecrated",
+      "count": 1,
+      "mana_cost": "{2}{B}{G}{U}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Elemental Horror",
+      "types": [
+        "Creature"
+      ],
+      "oracle_text": "Deathtouch, lifelink\nIf a permanent entering causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.",
+      "color_identity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Lifelink",
+        "Deathtouch"
+      ],
+      "produced_mana": [],
+      "otags": [
+        "lifegain"
+      ],
+      "price_eur": "0.43",
+      "set": "ecc",
+      "number": "136",
+      "foil": false,
+      "buy": false
+    }
+  ],
+  "metadata": {
+    "source_file": "decks/ashling/decklist.txt",
+    "total_cards": 100
+  }
+}

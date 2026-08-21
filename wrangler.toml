@@ -1,0 +1,37 @@
+# Cloudflare Worker + static assets for the deck site (epic #6).
+# Mirrors the property-bot setup: a git-connected Cloudflare Workers Build
+# auto-deploys on every push to main — no API tokens in GitHub.
+#
+# One-time Cloudflare dashboard setup (Workers > Builds > Connect repo):
+#   - Root directory:   (repo root)
+#   - Build command:    cd web && npm ci && npm run build
+#   - Deploy command:   npx wrangler deploy
+# The build produces web/dist, which is served below via [assets].
+
+name = "mtg-deck-site"
+compatibility_date = "2026-07-01"
+
+# M1 is read-only: no Worker script, assets-only. `wrangler deploy` with just
+# [assets] and no `main` deploys a static site. The write API (main = a Worker
+# script) is added in M3.
+[assets]
+directory = "./web/dist"
+
+# --- M3 (draft change workflow) — uncomment when adding the write API ---
+# main = "web/worker/index.js"       # serves /api/* then falls through to ASSETS
+#
+# [assets]
+# directory = "./web/dist"
+# binding = "ASSETS"                  # Worker falls through to static files
+#
+# Event-sourced change log lives in D1 (see plan). Create once with:
+#   npx wrangler d1 create mtg-deck-changes
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "mtg-deck-changes"
+# database_id = "<printed by the create command>"
+#
+# Shared edit passphrase gates writes (same pattern as property-bot's
+# FAV_PASSPHRASE). Stored as an encrypted secret, never in this file:
+#   npx wrangler secret put EDIT_PASSWORD
+# Exposed to the Worker as env.EDIT_PASSWORD; never reaches the browser.
