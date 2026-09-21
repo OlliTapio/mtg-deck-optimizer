@@ -262,8 +262,11 @@ def mode_full(all_cards, cmdr_name):
     removal = set(otag_groups.get('removal', []))
     counters = set(otag_groups.get('counterspell', []))
     wipes = set(otag_groups.get('board-wipe', []))
-    draw = set(otag_groups.get('draw', []))
-    card_adv = set(otag_groups.get('card-advantage', []))
+    cycling_lands = {c['name'] for c in all_cards
+                     if 'Land' in get_type_line(c['scryfall'])
+                     and 'Cycling' in get_keywords(c['scryfall'])}
+    draw = set(otag_groups.get('draw', [])) - cycling_lands
+    card_adv = set(otag_groups.get('card-advantage', [])) - cycling_lands
     ramp = set(otag_groups.get('ramp', []))
 
     print(f"\n  --- Command Zone Template Check (otag-based) ---")
