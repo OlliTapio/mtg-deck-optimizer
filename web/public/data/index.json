@@ -27,13 +27,6 @@
    "draft": false
   },
   {
-   "slug": "cirdan_council",
-   "name": "Círdan the Shipwright",
-   "total": 100,
-   "art": "https://cards.scryfall.io/small/front/c/4/c4f23d68-d0de-4b57-b0f9-9c0ca770c3c1.jpg?1783916021",
-   "draft": false
-  },
-  {
    "slug": "radha_battlecruiser",
    "name": "Radha, Heir to Keld",
    "total": 100,
@@ -144,27 +137,6 @@
    "total": 103,
    "art": "https://cards.scryfall.io/small/front/f/5/f54ecbf1-83df-4486-bd6a-7d1f173b6863.jpg?1745970982",
    "draft": false
-  },
-  {
-   "slug": "wip_brigid",
-   "name": "Brigid, Clachan's Heart // Brigid, Doun's Mind",
-   "total": 100,
-   "art": "https://cards.scryfall.io/small/front/c/b/cb7d5bbb-4f68-4e38-8bb0-a95af21b24c8.jpg?1767887768",
-   "draft": true
-  },
-  {
-   "slug": "wip_brion",
-   "name": "Brion Stoutarm",
-   "total": 100,
-   "art": "https://cards.scryfall.io/small/front/b/0/b097c70a-d1d6-4972-b94d-d7d8a6f443e2.jpg?1562439762",
-   "draft": true
-  },
-  {
-   "slug": "wip_muldrotha",
-   "name": "Muldrotha, the Gravetide",
-   "total": 100,
-   "art": "https://cards.scryfall.io/small/front/7/0/705b4d97-2f50-47f7-9053-d748f4337553.jpg?1769685324",
-   "draft": true
   },
   {
    "slug": "wise_mothman",
