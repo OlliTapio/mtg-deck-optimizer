@@ -27,13 +27,6 @@
    "draft": false
   },
   {
-   "slug": "radha_battlecruiser",
-   "name": "Radha, Heir to Keld",
-   "total": 100,
-   "art": "https://cards.scryfall.io/small/front/e/c/ecb7c19a-b4af-405d-b016-a546ed12a99d.jpg?1783918429",
-   "draft": true
-  },
-  {
    "slug": "test_atraxa",
    "name": "Atraxa, Praetors' Voice",
    "total": 100,
