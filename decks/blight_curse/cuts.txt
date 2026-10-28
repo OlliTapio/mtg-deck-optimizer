@@ -11,7 +11,7 @@
 1x Gruul Turf → Fire-Lit Thicket — bounce land tempo loss
 
 ### Creatures
-1x Puppeteer Clique → Nest of Scarabs — persist anti-synergy with -1/-1 counters, situational ETB
+1x Puppeteer Clique → Ammit Eternal — persist anti-synergy with -1/-1 counters, situational ETB
 1x Archfiend of Ifnir → Unnatural Restoration — no cycling/discard support in the deck
 
 ### Instants/Sorceries
@@ -20,7 +20,7 @@
 1x Harmonize → Generous Patron — generic draw, Auntie Ool draws enough
 1x Night's Whisper → Thirsting Roots — generic draw
 1x Terminate → Druid of Purification — generic creature-only "destroy" with no counter synergy; Druid (buy, €1.47) is multi-hit artifact/enchantment removal (each player destroys an artifact/enchant they don't control = can blow up several opponents' permanents at once) plus a body. Directly fills the artifact/enchantment gap.
-   NOTE: Putrefy KEPT — it is instant-speed flexible removal (creature/artifact) and keeps the instant count at 4 (Assassin's Trophy, Putrefy, Grim Affliction, Blight Rot).
+   NOTE: Putrefy was kept here, later replaced by Tear Asunder (see counter-engine upgrade below).
 
 ### Enchantments
 1x Lasting Tarfire → Blight Rot — weak enchantment, no counter synergy ✅
@@ -61,7 +61,21 @@ they were cut for a reason. Listed here for reference only.
 ## Maybeboard
 1x Takenuma, Abandoned Mire — €7.93, good but already have 11 recursion pieces
 
-## Pending physical changes (bought, not yet swapped in the sleeve)
-- Chain Reaction OUT -> Vandalblast IN — Vandalblast is bought and owned; the
-  physical deck still has Chain Reaction in the slot. Swap when convenient.
-  Repo files already reflect the finished state (Vandalblast in the 100).
+## Counter engine + movement upgrade (Oct 2026)
+More counter generation, counter movement, cheaper interaction. All cuts owned (bench).
+1x Putrefy → Tear Asunder (buy) — instant, {1}{G} exiles artifact/enchantment, kicked
+   {1}{G}+{1}{B} exiles any nonland permanent; covers artifact/enchantment hate lost with Vandalblast.
+1x Aberrant Return → Requiting Hex (buy) — {B} instant, blight 1 = Auntie draw + Hapatra/Nest
+   triggers, kills MV<=2 creature. Drops a 6-drop; recursion was over-represented.
+1x Chimil, the Inner Sun → Fate Transfer (buy) — instant-speed counter MOVER: shift -1/-1
+   counters from own creature (already drew) onto an opponent's (drain + kill + Patron/Hapatra/Nest).
+   Chimil was a 6-mana off-theme value artifact.
+1x Arcane Signet → Wall of Roots (buy) — once per turn, instant speed: -1/-1 counter for {G}
+   = Auntie draw. Ramp count unchanged.
+1x Midnight Banshee → Murderous Redcap (buy) — persist returns it with a -1/-1 counter (draw,
+   snake, insect); ETB ping becomes counters under Everlasting Torment. Banshee (BBB 6-drop)
+   shrank our own green creatures. No Solemnity/Vizier of Remedies in deck → no infinite.
+1x Vandalblast → Chain Reaction — Vandalblast was never physically sleeved; Chain Reaction
+   stays (owned). Damage sweeper that kills creatures with counters (Necroskitter/Reaper/
+   Pillagers/Blowfly triggers) and becomes a -1/-1 counter wipe with Everlasting Torment.
+   Vandalblast is now owned bench.
