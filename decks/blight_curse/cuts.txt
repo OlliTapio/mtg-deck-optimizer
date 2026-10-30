@@ -79,3 +79,10 @@ More counter generation, counter movement, cheaper interaction. All cuts owned (
    stays (owned). Damage sweeper that kills creatures with counters (Necroskitter/Reaper/
    Pillagers/Blowfly triggers) and becomes a -1/-1 counter wipe with Everlasting Torment.
    Vandalblast is now owned bench.
+1x Burning Curiosity → Fain, the Broker (buy) — "{T}, Remove a counter from a creature you
+   control: Treasure" works on -1/-1 counters, so spent blight counters become mana and
+   creatures can be re-blighted for more Auntie draws. Also the deck's only repeatable sac
+   outlet: sac creatures with -1/-1 counters for Blowfly/Scorpion God/Dread Tiller/Puca's/
+   Shadow Urchin/Grave Venerations triggers; sac Murderous Redcap to persist it, then strip the
+   counter for Treasure to reset persist. Untap costs {3}{B} → no infinite. Avoid putting his
+   +1/+1 counters on own creatures holding -1/-1 counters (they annihilate).

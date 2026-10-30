@@ -6,7 +6,7 @@
 1x Binding the Old Gods (ecc) 120 [Enchantment]
 1x Black Sun's Zenith (ecc) 71 [Sorcery]
 1x Blowfly Infestation (ecc) 46 [Enchantment]
-1x Burning Curiosity (ecl) 129 [Sorcery]
+1x Fain, the Broker (brc) 105 [Creature,Buy]
 1x Canyon Slough (ecc) 145 [Land]
 1x Carnifex Demon (ecc) 72 [Creature]
 1x Grim Affliction (nph) 65 [Instant,Buy]

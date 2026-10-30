@@ -24,6 +24,7 @@ Precon: Enduring Cursecraft (ECC), upgraded
 - Generous Patron = draw when putting counters on opponents' creatures
 - Nesting Grounds = move -1/-1 counters from own creatures to opponents' (sorcery speed)
 - Fate Transfer = move -1/-1 counters from own creatures to opponents' (instant speed)
+- Fain, the Broker = sac outlet + removes -1/-1 counters for Treasure (resets persist/blight)
 - Wall of Roots / Devoted Druid / Requiting Hex / Murderous Redcap (persist) = self-counter draw outlets
 - 6 proliferate sources to multiply counters and advance sagas
 - Everlasting Torment = all damage becomes -1/-1 counters (wither for everything)
