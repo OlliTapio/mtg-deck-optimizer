@@ -7,6 +7,7 @@ and work out what to change.
 interactions and invent ones that don't exist. So the model never judges synergy unaided.
 It calls tools that compute the evidence and reasons from that:
 
+- **Archidekt pull:** public decks are pulled straight into the repo's decklist format
 - **Card data:** full rules text and Scryfall's community function tags ("otags") for every
   card, cached locally
 - **Deck analysis:** card types, mana curve, cut candidates, instant- vs sorcery-speed
@@ -24,6 +25,7 @@ It calls tools that compute the evidence and reasons from that:
 ## Usage
 
 ```bash
+python3 archidekt.py pull https://archidekt.com/decks/<id> --synergy   # pull a public deck and score it
 python3 deck_analyzer.py decks/<deck>/decklist.txt            # full analysis
 python3 deck_analyzer.py decks/<deck>/decklist.txt --cuts     # cut candidates
 python3 synergy.py decks/<deck>/decklist.txt                  # synergy report

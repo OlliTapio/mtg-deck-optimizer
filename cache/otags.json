@@ -20,6 +20,11 @@
     "card-advantage",
     "lifegain"
   ],
+  "Aether Syphon": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
   "Aetherize": [
     "removal",
     "board-wipe"
@@ -69,6 +74,9 @@
     "sacrifice-outlet"
   ],
   "Ammit Eternal": [],
+  "An Offer You Can't Refuse": [
+    "counterspell"
+  ],
   "Ancient Greenwarden": [
     "recursion"
   ],
@@ -220,6 +228,9 @@
   "Basilisk Collar": [
     "lifegain"
   ],
+  "Basking Broodscale": [
+    "ramp"
+  ],
   "Bastion Protector": [],
   "Bastion of Remembrance": [
     "lifegain"
@@ -289,7 +300,15 @@
   "Blighted Gorge": [
     "removal"
   ],
+  "Blighted Woodland": [
+    "ramp",
+    "tutor"
+  ],
   "Bloated Contaminator": [],
+  "Bloatfly Swarm": [
+    "mill",
+    "evasion"
+  ],
   "Blood Artist": [
     "lifegain"
   ],
@@ -611,6 +630,15 @@
     "card-advantage"
   ],
   "Contaminated Aquifer": [],
+  "Contaminated Drink": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Contentious Plan": [
+    "draw",
+    "card-advantage"
+  ],
   "Corpse Augur": [
     "draw",
     "card-advantage"
@@ -618,6 +646,11 @@
   "Corpsejack Menace": [],
   "Counterspell": [
     "counterspell"
+  ],
+  "Court of Cunning": [
+    "draw",
+    "mill",
+    "card-advantage"
   ],
   "Coveted Jewel": [
     "ramp",
@@ -842,6 +875,9 @@
   "Dream Thrush": [
     "evasion"
   ],
+  "Dreamborn Muse": [
+    "mill"
+  ],
   "Dreamroot Cascade": [],
   "Dreamtide Whale": [],
   "Drown in Ichor": [
@@ -1017,6 +1053,10 @@
     "mill",
     "recursion"
   ],
+  "Eye Collector": [
+    "mill",
+    "evasion"
+  ],
   "Eye of Nidhogg": [
     "recursion"
   ],
@@ -1084,6 +1124,10 @@
   "Felidar Retreat": [],
   "Fellwar Stone": [
     "ramp"
+  ],
+  "Feral Ghoul": [
+    "mill",
+    "evasion"
   ],
   "Festering Thicket": [
     "draw",
@@ -1160,6 +1204,16 @@
   ],
   "Flourishing Defenses": [],
   "Flux Channeler": [],
+  "Folio of Fancies": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Foreboding Landscape": [
+    "draw",
+    "tutor",
+    "card-advantage"
+  ],
   "Foreboding Ruins": [],
   "Forgotten Cave": [
     "draw",
@@ -1181,6 +1235,9 @@
   "Frantic Search": [
     "draw",
     "card-advantage"
+  ],
+  "Fraying Sanity": [
+    "mill"
   ],
   "Frontier Bivouac": [],
   "Frontier Siege": [
@@ -1225,6 +1282,9 @@
   ],
   "Geothermal Bog": [],
   "Ghalta, Primal Hunger": [],
+  "Ghoulcaller's Bell": [
+    "mill"
+  ],
   "Giant Cindermaw": [],
   "Gift of Doom": [
     "sacrifice-outlet"
@@ -1250,6 +1310,10 @@
   ],
   "Glorious End": [
     "counterspell"
+  ],
+  "Glowing One": [
+    "mill",
+    "lifegain"
   ],
   "Goblin Anarchomancer": [],
   "Goblin Assassin": [
@@ -1413,6 +1477,10 @@
     "draw",
     "card-advantage"
   ],
+  "Harold and Bob, First Numens": [
+    "ramp",
+    "mill"
+  ],
   "Harrow": [
     "ramp",
     "tutor",
@@ -1482,6 +1550,10 @@
   "Hildibrand Manderville": [],
   "Hinterland Harbor": [],
   "Hissing Miasma": [],
+  "Hollowmurk Siege": [
+    "draw",
+    "card-advantage"
+  ],
   "Horde of Notions": [
     "recursion"
   ],
@@ -1554,6 +1626,11 @@
   "Infernal Grasp": [
     "removal"
   ],
+  "Infesting Radroach": [
+    "mill",
+    "recursion",
+    "evasion"
+  ],
   "Infinite Reflection": [],
   "Ingenious Infiltrator": [
     "draw",
@@ -1583,6 +1660,12 @@
   ],
   "Into the Story": [
     "draw",
+    "card-advantage"
+  ],
+  "Invasion of Amonkhet // Lazotep Convert": [
+    "draw",
+    "mill",
+    "recursion",
     "card-advantage"
   ],
   "Invigorated Rampage": [],
@@ -1680,6 +1763,9 @@
     "draw",
     "card-advantage"
   ],
+  "Kitsune's Technique": [
+    "mill"
+  ],
   "Kodama's Reach": [
     "ramp",
     "tutor"
@@ -1762,6 +1848,7 @@
     "ramp",
     "mana-dork"
   ],
+  "Llanowar Wastes": [],
   "Looming Spires": [],
   "Looter il-Kor": [
     "draw",
@@ -1796,6 +1883,9 @@
   ],
   "Malignus": [],
   "Manabarbs": [],
+  "Manic Scribe": [
+    "mill"
+  ],
   "Map the Frontier": [
     "ramp",
     "tutor"
@@ -1901,6 +1991,9 @@
     "draw",
     "card-advantage"
   ],
+  "Mindcrank": [
+    "mill"
+  ],
   "Mirage Mesa": [],
   "Mirelurk Queen": [
     "draw",
@@ -1998,6 +2091,10 @@
     "mana-dork"
   ],
   "Myrel, Shield of Argive": [],
+  "Myriad Landscape": [
+    "ramp",
+    "tutor"
+  ],
   "Mythos of Snapdax": [
     "removal",
     "board-wipe"
@@ -2124,6 +2221,9 @@
   ],
   "Overflowing Basin": [],
   "Overgrown Tomb": [],
+  "Overwhelmed Apprentice": [
+    "mill"
+  ],
   "Overwhelming Instinct": [
     "draw",
     "card-advantage"
@@ -2199,6 +2299,7 @@
     "removal",
     "sacrifice-outlet"
   ],
+  "Plaza of Heroes": [],
   "Poison-Tip Archer": [],
   "Polluted Delta": [
     "tutor"
@@ -2326,6 +2427,11 @@
     "ramp"
   ],
   "Raucous Carnival": [],
+  "Raul, Trouble Shooter": [
+    "mill",
+    "recursion",
+    "card-advantage"
+  ],
   "Ravenous Chupacabra": [
     "removal"
   ],
@@ -2434,11 +2540,17 @@
     "card-advantage"
   ],
   "Rite of Replication": [],
+  "Riverchurn Monument": [
+    "mill"
+  ],
   "Rockfall Vale": [],
   "Rogue's Passage": [],
   "Rootbound Crag": [],
   "Rouse the Mob": [],
   "Rugged Prairie": [],
+  "Ruin Crab": [
+    "mill"
+  ],
   "Rule of Law": [],
   "Rush of Adrenaline": [],
   "SOLDIER Military Program": [],
@@ -2499,6 +2611,10 @@
   "Scourge of the Throne": [
     "evasion"
   ],
+  "Screeching Scorchbeast": [
+    "mill",
+    "evasion"
+  ],
   "Scute Swarm": [],
   "Scuzzback Scrounger": [
     "ramp"
@@ -2541,6 +2657,9 @@
   "Serum Visions": [
     "draw",
     "card-advantage"
+  ],
+  "Shadow Kin": [
+    "mill"
   ],
   "Shadow Urchin": [
     "card-advantage"
@@ -2590,6 +2709,10 @@
   "Shipbreaker Kraken": [
     "removal"
   ],
+  "Shipwreck Marsh": [],
+  "Shire Terrace": [
+    "tutor"
+  ],
   "Shivan Gorge": [],
   "Shivan Reef": [],
   "Shock": [
@@ -2621,6 +2744,10 @@
   "Sinister Gnarlbark": [
     "draw",
     "card-advantage"
+  ],
+  "Siren of the Silent Song": [
+    "mill",
+    "evasion"
   ],
   "Six": [
     "mill",
@@ -2814,6 +2941,15 @@
   "Stroke of Midnight": [
     "removal"
   ],
+  "Strong, the Brutish Thespian": [
+    "mill",
+    "lifegain"
+  ],
+  "Struggle for Project Purity": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
   "Stubborn Denial": [
     "counterspell"
   ],
@@ -2900,6 +3036,9 @@
     "removal",
     "evasion"
   ],
+  "Sword of Body and Mind": [
+    "mill"
+  ],
   "Sword of Vengeance": [],
   "Sword of the Animist": [
     "ramp",
@@ -2918,6 +3057,7 @@
     "mill"
   ],
   "Tainted Field": [],
+  "Tainted Isle": [],
   "Tainted Observer": [
     "evasion"
   ],
@@ -2930,6 +3070,9 @@
     "ramp"
   ],
   "Talisman of Creativity": [
+    "ramp"
+  ],
+  "Talisman of Curiosity": [
     "ramp"
   ],
   "Talisman of Dominance": [
@@ -3007,6 +3150,10 @@
   "Terramorphic Expanse": [
     "tutor"
   ],
+  "Terrasymbiosis": [
+    "draw",
+    "card-advantage"
+  ],
   "Terror of Mount Velus": [
     "evasion"
   ],
@@ -3047,6 +3194,15 @@
     "lifegain"
   ],
   "The Lord of Pain": [
+    "evasion"
+  ],
+  "The Master of Lake-town": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "The Mindskinner": [
+    "mill",
     "evasion"
   ],
   "The Reaper, King No More": [

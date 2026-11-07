@@ -7376,6 +7376,972 @@
    }
   ]
  },
+ "8122f1fb56bf79f1": {
+  "almost": [
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Hullbreaker Horror",
+     "Sol Ring"
+    ],
+    "id": "513-5034--46",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Hullbreaker Horror"
+    ],
+    "notes": "",
+    "popularity": 366425,
+    "prerequisites": "",
+    "produces": [
+     "Infinite colorless mana",
+     "Infinite storm count"
+    ],
+    "requires": [
+     "Permanent Castable for {C}"
+    ],
+    "steps": "Activate Sol Ring by tapping it, adding {C} {C}.\nCast the permanent that can be cast using {C} by paying its mana cost.\nHullbreaker Horror triggers, returning Sol Ring from the battlefield to your hand.\nCast Sol Ring by paying {1}. \nHullbreaker Horror triggers, returning the permanent cast in step 2 from the battlefield to your hand.\nRepeat.\nIf the permanent can be cast by paying {0}, this combo nets infinite colorless mana.",
+    "url": "https://commanderspellbook.com/combo/513-5034--46/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Bloodchief Ascension",
+     "Mindcrank"
+    ],
+    "id": "936-1290",
+    "identity": "B",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Bloodchief Ascension"
+    ],
+    "notes": "",
+    "popularity": 64199,
+    "prerequisites": "Three or more quest counters on Bloodchief Ascension. You have a way to make an opponent lose life.",
+    "produces": [
+     "Infinite mill",
+     "Near-infinite lifegain",
+     "Near-infinite lifegain triggers",
+     "Near-infinite lifeloss"
+    ],
+    "requires": [],
+    "steps": "Cause one or more opponents to lose life.\nMindcrank triggers once for each life loss event, causing that player to mill cards equal to the amount of life lost.\nBloodchief Ascension triggers once for each card milled, causing that player to lose 2 life and you to gain 2 life for each trigger.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/936-1290/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Tidespout Tyrant",
+     "Sol Ring"
+    ],
+    "id": "542-5034",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{1}",
+    "missing": [
+     "Tidespout Tyrant"
+    ],
+    "notes": "",
+    "popularity": 38005,
+    "prerequisites": "You control a nontoken permanent that can be cast using {C}.",
+    "produces": [
+     "Infinite colorless mana",
+     "Infinite storm count"
+    ],
+    "requires": [],
+    "steps": "Cast Sol Ring by paying its mana cost.\nTidespout Tyrant triggers, returning a nontoken permanent that can be cast using {C} from the battlefield to your hand.\nActivate Sol Ring by tapping it, adding {C}{C}.\nCast the nontoken permanent returned in step 2 by paying its mana cost.\nTidespout Tyrant triggers, returning Sol Ring from the battlefield to your hand.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/542-5034/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Riverchurn Monument",
+     "Maddening Cacophony"
+    ],
+    "id": "5080-6285",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{6}{U}{U}{U}{U}",
+    "missing": [
+     "Maddening Cacophony"
+    ],
+    "notes": "",
+    "popularity": 25973,
+    "prerequisites": "You have not activated Riverchurn Monument's exhaust ability.",
+    "produces": [
+     "Infinite mill"
+    ],
+    "requires": [],
+    "steps": "Cast Maddening Cacophony with kicker by paying {4}{U}{U}, causing each opponent to mill half their library, rounded up.\nActivate Riverchurn Monument's exhaust ability by paying {2}{U}{U} and tapping it, causing each opponent to mill the remainder of their library.",
+    "url": "https://commanderspellbook.com/combo/5080-6285/"
+   },
+   {
+    "bracket_tag": "P",
+    "cards": [
+     "Fraying Sanity",
+     "Traumatize"
+    ],
+    "id": "464-781",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{3}{U}{U}",
+    "missing": [
+     "Traumatize"
+    ],
+    "notes": "",
+    "popularity": 21108,
+    "prerequisites": "Fraying Sanity is attached to an opponent.",
+    "produces": [
+     "Infinite self-mill",
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Cast Traumatize by paying {3}{U}{U}, causing an opponent to mill half their library, rounded down.\nAt the beginning of your end step, Fraying Sanity triggers, causing the opponent to mill cards equal to the number of cards put into their graveyard this turn.",
+    "url": "https://commanderspellbook.com/combo/464-781/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "The Mindskinner",
+     "Syr Konrad, the Grim"
+    ],
+    "id": "1819-6003",
+    "identity": "UB",
+    "infinite": false,
+    "mana_needed": "",
+    "missing": [
+     "Syr Konrad, the Grim"
+    ],
+    "notes": "This combo ends once all triggers have resolved and opponents have not milled any creature cards. You can then attempt to deal damage again to restart the combo, if needed. Dealing a larger amount of damage, such as having The Mindskinner and other creatures attack, ensures a larger amount of iterations.",
+    "popularity": 20460,
+    "prerequisites": "You have a way to deal damage to an opponent.",
+    "produces": [
+     "Near-infinite mill"
+    ],
+    "requires": [],
+    "steps": "Attempt to deal damage to an opponent.\nThe damage is replaced by The Mindskinner, instead causing each opponent to mill that many cards.\nSyr Konrad triggers for each creature card put into your graveyard.\nResolve the first trigger, attempting to deal 1 damage to each opponent.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/1819-6003/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Duskmantle Guildmage",
+     "Mindcrank"
+    ],
+    "id": "936-5069",
+    "identity": "UB",
+    "infinite": true,
+    "mana_needed": "{1}{U}{B} plus an additional {2}{U}{B} for each opponent you have",
+    "missing": [
+     "Duskmantle Guildmage"
+    ],
+    "notes": "",
+    "popularity": 19824,
+    "prerequisites": "Each opponent has a life total that is less than or equal to their library size.",
+    "produces": [
+     "Each opponent loses the game",
+     "Infinite mill",
+     "Near-infinite lifeloss"
+    ],
+    "requires": [],
+    "steps": "Activate Duskmantle Guildmage's first ability by paying {1}{U}{B}, causing your opponent to lose life whenever a card is put into their graveyard this turn.\nActivate Duskmantle Guildmage's second ability by paying {2}{U}{B}, causing an opponent to mill two cards.\nDuskmantle Guildmage triggers twice.\nResolve the first trigger, causing the opponent to lose 1 life.\nMindcrank triggers, causing the opponent to mill a card.\nDuskmantle Guildmage triggers, causing the opponent to lose 1 life.\nRepeat from step 5 until the opponent has a life total of zero, causing them to lose the game.\nRepeat from step 2 for each other opponent.",
+    "url": "https://commanderspellbook.com/combo/936-5069/"
+   },
+   {
+    "bracket_tag": "O",
+    "cards": [
+     "Fraying Sanity",
+     "Cut Your Losses"
+    ],
+    "id": "464-1861",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{4}{U}{U}",
+    "missing": [
+     "Cut Your Losses"
+    ],
+    "notes": "",
+    "popularity": 18776,
+    "prerequisites": "Fraying Sanity is attached to an opponent. Optionally, you control an additional creature with power 2 or greater.",
+    "produces": [
+     "Near-infinite mill for target opponent",
+     "Infinite self-mill",
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Cast Cut Your Losses by paying {4}{U}{U}, causing an opponent to mill half their library, rounded down.\nAt the beginning of your end step, Fraying Sanity triggers, causing the opponent to mill cards equal to the number of cards put into their graveyard this turn.",
+    "url": "https://commanderspellbook.com/combo/464-1861/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Riverchurn Monument",
+     "Jidoor, Aristocratic Capital // Overture"
+    ],
+    "id": "6285-6590",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{6}{U}{U}{U}{U}",
+    "missing": [
+     "Jidoor, Aristocratic Capital // Overture"
+    ],
+    "notes": "If the opponent had an empty graveyard and an odd number of cards in their library when the combo is performed, they will have one card remaining in their library.",
+    "popularity": 18768,
+    "prerequisites": "You have not activated Riverchurn Monument's exhaust ability.",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Cast Overture by paying {4}{U}{U}, causing each opponent to mill half their library, rounded down.\nActivate Riverchurn Monument's exhaust ability by paying {2}{U}{U} and tapping it, causing each opponent to mill the remainder of their library.",
+    "url": "https://commanderspellbook.com/combo/6285-6590/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Fraying Sanity",
+     "Terisian Mindbreaker"
+    ],
+    "id": "464-5230",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Terisian Mindbreaker"
+    ],
+    "notes": "",
+    "popularity": 14651,
+    "prerequisites": "Fraying Sanity is attached to an opponent. Terisian Mindbreaker does not have summoning sickness.",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Declare Terisian Mindbreaker as an attacker, triggering its ability, causing each opponent to mill half their library, rounded up.\nAt the beginning of your end step, Fraying Sanity triggers, causing the opponent to mill cards equal to the number of cards put into their graveyard this turn.",
+    "url": "https://commanderspellbook.com/combo/464-5230/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Fraying Sanity",
+     "Fleet Swallower"
+    ],
+    "id": "464-1848",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Fleet Swallower"
+    ],
+    "notes": "This combo can only mill yourself or one opponent, not both.",
+    "popularity": 14474,
+    "prerequisites": "Fleet Swallower does not have summoning sickness.",
+    "produces": [
+     "Infinite self-mill",
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Declare Fleet Swallower as an attacker.\nWhen Fleet Swallower attacks, it triggers, causing the player Fraying Sanity is attached to to mill half their library, rounded up.\nAt the beginning of your end step, Fraying Sanity triggers, causing that player to mill cards equal to the number of cards put into their graveyard this turn.",
+    "url": "https://commanderspellbook.com/combo/464-1848/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Riverchurn Monument",
+     "Singularity Rupture"
+    ],
+    "id": "6285-6746",
+    "identity": "UB",
+    "infinite": true,
+    "mana_needed": "{6}{U}{U}{U}{U}",
+    "missing": [
+     "Singularity Rupture"
+    ],
+    "notes": "Each of the targeted players will have one card remaining if their deck size was odd and their graveyard was empty to start the combo. Otherwise, their library will be empty.",
+    "popularity": 13584,
+    "prerequisites": "You have not activated Riverchurn Monument's exhaust ability.",
+    "produces": [
+     "Infinite mill"
+    ],
+    "requires": [],
+    "steps": "Cast Singularity Rupture with kicker by paying {4}{U}{U}, causing each opponent to mill half their library, rounded up.\nActivate Riverchurn Monument's exhaust ability by paying {2}{U}{U} and tapping it, causing each opponent to mill the remainder of their library.",
+    "url": "https://commanderspellbook.com/combo/6285-6746/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Riverchurn Monument",
+     "Traumatize"
+    ],
+    "id": "781-6285",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{5}{U}{U}{U}{U}",
+    "missing": [
+     "Traumatize"
+    ],
+    "notes": "The opponent will have one card remaining if their deck size was odd to start the combo. If it was even, their library will be empty.",
+    "popularity": 13308,
+    "prerequisites": "You have not activated Riverchurn Monument's exhaust ability.",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Cast Traumatize by paying {3}{U}{U}, causing a player to mill half their library, rounded down.\nActivate Riverchurn Monument's exhaust ability by paying {2}{U}{U} and tapping it, causing each player to mill cards equal to the number of cards in their graveyard, thus causing the player targeted by Traumatize to mill the rest of their library.",
+    "url": "https://commanderspellbook.com/combo/781-6285/"
+   },
+   {
+    "bracket_tag": "P",
+    "cards": [
+     "Fraying Sanity",
+     "Jidoor, Aristocratic Capital // Overture"
+    ],
+    "id": "464-6590",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{4}{U}{U}",
+    "missing": [
+     "Jidoor, Aristocratic Capital // Overture"
+    ],
+    "notes": "",
+    "popularity": 12989,
+    "prerequisites": "Fraying Sanity is attached to an opponent.",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Cast Overture by paying {4}{U}{U}, causing an opponent to mill half their library, rounded down.\nAt the beginning of your end step, Fraying Sanity triggers, causing the opponent to mill cards equal to the number of cards put into their graveyard this turn.",
+    "url": "https://commanderspellbook.com/combo/464-6590/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Riverchurn Monument",
+     "Cut Your Losses"
+    ],
+    "id": "1861-6285",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{6}{U}{U}{U}{U}",
+    "missing": [
+     "Cut Your Losses"
+    ],
+    "notes": "You may use Cut Your Losses's casualty ability, if desired, to cause two players to mill cards.",
+    "popularity": 12867,
+    "prerequisites": "You have not activated Riverchurn Monument's exhaust ability.",
+    "produces": [
+     "Infinite mill for up to two target players"
+    ],
+    "requires": [],
+    "steps": "Cast Cut Your Losses by paying {4}{U}{U}, causing a player to mill half their library, rounded up.\nActivate Riverchurn Monument's exhaust ability by paying {2}{U}{U} and tapping it, causing each player to mill cards equal to the number of cards in their graveyard, thus causing the player targeted by Cut Your Losses to mill the rest of their library.",
+    "url": "https://commanderspellbook.com/combo/1861-6285/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Riverchurn Monument",
+     "Terisian Mindbreaker"
+    ],
+    "id": "5230-6285",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{2}{U}{U}",
+    "missing": [
+     "Terisian Mindbreaker"
+    ],
+    "notes": "",
+    "popularity": 10165,
+    "prerequisites": "Terisian Mindbreaker does not have summoning sickness. You have not activated Riverchurn Monument's exhaust ability.",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Declare Terisian Mindbreaker as an attacker, triggering its ability, causing an opponent to mill half their library, rounded up.\nActivate Riverchurn Monument's exhaust ability by paying {2}{U}{U} and tapping it, causing each player to mill cards equal to the number of cards in their graveyard, thus causing the player attacked by Terisian Mindbreaker to mill the rest of their library.",
+    "url": "https://commanderspellbook.com/combo/5230-6285/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Basking Broodscale",
+     "Mazirek, Kraul Death Priest"
+    ],
+    "id": "317-5641",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "{1}{G}",
+    "missing": [
+     "Mazirek, Kraul Death Priest"
+    ],
+    "notes": "",
+    "popularity": 8003,
+    "prerequisites": "Basking Broodscale does not have a +1/+1 counter on it.",
+    "produces": [
+     "Infinite colorless mana",
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB",
+     "Infinite creature sacrifice triggers",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Basking Broodscale's adapt ability by paying {1}{G}, putting a +1/+1 counter on it.\nBasking Broodscale triggers, creating a 0/1 Eldrazi Spawn creature token.\nActivate the Eldrazi Spawn by sacrificing it, adding {C}.\nMazirek triggers, putting a +1/+1 counter on each creature you control.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/317-5641/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Riverchurn Monument",
+     "Fleet Swallower"
+    ],
+    "id": "1848-6285",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{2}{U}{U}",
+    "missing": [
+     "Fleet Swallower"
+    ],
+    "notes": "",
+    "popularity": 7784,
+    "prerequisites": "Fleet Swallower does not have summoning sickness. You have not activated Riverchurn Monument's exhaust ability.",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Declare Fleet Swallower as an attacker, triggering its ability, causing a player to mill half their library, rounded up.\nActivate Riverchurn Monument's exhaust ability by paying {2}{U}{U} and tapping it, causing each player to mill cards equal to the number of cards in their graveyard, thus causing the player targeted by Fleet Swallower's ability to mill the remainder of their library.",
+    "url": "https://commanderspellbook.com/combo/1848-6285/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Bruvac the Grandiloquent",
+     "Kitsune's Technique"
+    ],
+    "id": "95-7268",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{4}{U}{U} at most",
+    "missing": [
+     "Bruvac the Grandiloquent"
+    ],
+    "notes": "If able, you can instead cast Kitsune's Technique using its sneak cost.",
+    "popularity": 7521,
+    "prerequisites": "",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Cast Kitsune's Technique by paying its mana cost, causing an opponent to mill their library due to Bruvac.",
+    "url": "https://commanderspellbook.com/combo/95-7268/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Bloodchief Ascension",
+     "The Master of Lake-town"
+    ],
+    "id": "1290-7848",
+    "identity": "B",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Bloodchief Ascension"
+    ],
+    "notes": "",
+    "popularity": 5148,
+    "prerequisites": "Three or more quest counters on Bloodchief Ascension. You have a way to make an opponent lose life.",
+    "produces": [
+     "Infinite mill",
+     "Near-infinite lifegain",
+     "Near-infinite lifegain triggers",
+     "Near-infinite lifeloss"
+    ],
+    "requires": [],
+    "steps": "Cause one or more opponents to lose life.\nThe Master of Lake-town triggers once for each life loss event, causing that player to mill cards equal to the amount of life lost.\nBloodchief Ascension triggers once for each card milled, causing that player to lose 2 life and you to gain 2 life for each trigger.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/1290-7848/"
+   },
+   {
+    "bracket_tag": "O",
+    "cards": [
+     "Crackdown Construct",
+     "Lightning Greaves"
+    ],
+    "id": "876-4944",
+    "identity": "C",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Crackdown Construct"
+    ],
+    "notes": "",
+    "popularity": 3949,
+    "prerequisites": "You control another creature.",
+    "produces": [
+     "Infinitely large creature until end of turn"
+    ],
+    "requires": [],
+    "steps": "Activate Lightning Greaves's equip ability by paying {0}, targeting any creature you control except the creature that has Lightning Greaves attached.\nCrackdown Construct triggers, giving it +1/+1 until end of turn.\nResolve Lightning Greaves's equip ability.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/876-4944/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Tarrian's Soulcleaver",
+     "Basking Broodscale"
+    ],
+    "id": "5445-5641",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Tarrian's Soulcleaver"
+    ],
+    "notes": "",
+    "popularity": 3483,
+    "prerequisites": "Tarrian's Soulcleaver attached to Basking Broodscale. You have a way to put a +1/+1 counter on Basking Broodscale.",
+    "produces": [
+     "Infinite creature LTB",
+     "Infinite creature ETB",
+     "Infinite creature sacrifice triggers",
+     "Infinite death triggers",
+     "Infinite colorless mana",
+     "Infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Put a +1/+1 counter on Basking Broodscale.\nBasking Broodscale triggers, creating a 0/1 Eldrazi Spawn creature token.\nActivate the Eldrazi Spawn by sacrificing it, adding {C}.\nWhen the Eldrazi Spawn dies, Tarrian's Soulcleaver triggers, putting a +1/+1 counter on Basking Broodscale.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/5445-5641/"
+   },
+   {
+    "bracket_tag": "O",
+    "cards": [
+     "Peer into the Abyss",
+     "Psychic Corrosion"
+    ],
+    "id": "1561-4032",
+    "identity": "UB",
+    "infinite": true,
+    "mana_needed": "{4}{B}{B}{B}",
+    "missing": [
+     "Peer into the Abyss"
+    ],
+    "notes": "",
+    "popularity": 3238,
+    "prerequisites": "Number of cards in library greater than or equal to the number of cards in each opponent's library.",
+    "produces": [
+     "Infinite mill"
+    ],
+    "requires": [],
+    "steps": "Cast Peer into the Abyss, targeting yourself.\nPsychich Corrosion triggers for each card you've drawn, milling each opponent's libary completely.\nPass the turn to your opponent; They will lose when they attempt to draw a card on their turns.\n",
+    "url": "https://commanderspellbook.com/combo/1561-4032/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Enter the Infinite",
+     "Psychic Corrosion"
+    ],
+    "id": "953-4032",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{8}{U}{U}{U}{U}",
+    "missing": [
+     "Enter the Infinite"
+    ],
+    "notes": "",
+    "popularity": 3144,
+    "prerequisites": "Number of cards in library is at least half of the highest number of cards among opponents' libraries.",
+    "produces": [
+     "Infinite mill"
+    ],
+    "requires": [],
+    "steps": "Cast Enter the Infinite.\nPsychic Corrosion triggers for each card you've drawn, milling each opponent's library completely.\nPass the turn to your opponent; They will lose when they attempt to draw a card on their turn.",
+    "url": "https://commanderspellbook.com/combo/953-4032/"
+   },
+   {
+    "bracket_tag": "C",
+    "cards": [
+     "Peer into the Abyss",
+     "Folio of Fancies"
+    ],
+    "id": "1561-4216",
+    "identity": "UB",
+    "infinite": false,
+    "mana_needed": "{6}{U}{B}{B}{B}",
+    "missing": [
+     "Peer into the Abyss"
+    ],
+    "notes": "",
+    "popularity": 3037,
+    "prerequisites": "",
+    "produces": [
+     "Target opponent loses the game"
+    ],
+    "requires": [],
+    "steps": "Cast Peer into the Abyss by paying {4}{B}{B}{B}, causing target opponent to draw half their library and lose half their life.\nActivate Folio of Fancies's last ability by paying {2}{U} and tapping it, causing each opponent to mill cards equal to the number of cards in their hand.\nDuring their draw step, the opponent targeted in step 1 loses the game due to drawing from an empty library.",
+    "url": "https://commanderspellbook.com/combo/1561-4216/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Basking Broodscale",
+     "Blade of the Bloodchief"
+    ],
+    "id": "1988-5641",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Blade of the Bloodchief"
+    ],
+    "notes": "",
+    "popularity": 2675,
+    "prerequisites": "You have a way to put a +1/+1 counter on Basking Broodscale. Blade of the Bloodchief attached to Basking Broodscale.",
+    "produces": [
+     "Infinite +1/+1 counters on a creature",
+     "Infinite colorless mana",
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB",
+     "Infinite creature sacrifice triggers"
+    ],
+    "requires": [],
+    "steps": "Put a +1/+1 counter on Basking Broodscale.\nBasking Broodscale triggers, creating a 0/1 Eldrazi Spawn creature token.\nActivate the Eldrazi Spawn by sacrificing it, adding {C}.\nWhen the Eldrazi Spawn dies, Blade of the Bloodchief triggers, putting a +1/+1 counter on Basking Broodscale.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/1988-5641/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Long Feng, Grand Secretariat",
+     "Basking Broodscale"
+    ],
+    "id": "5641-6872",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Long Feng, Grand Secretariat"
+    ],
+    "notes": "",
+    "popularity": 2403,
+    "prerequisites": "You have a way to put a +1/+1 counter on Basking Broodscale.",
+    "produces": [
+     "Infinite creature LTB",
+     "Infinite creature ETB",
+     "Infinite creature sacrifice triggers",
+     "Infinite death triggers",
+     "Infinite colorless mana",
+     "Infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Put a +1/+1 counter on Basking Broodscale.\nBasking Broodscale triggers, creating a 0/1 Eldrazi Spawn creature token.\nActivate the Eldrazi Spawn by sacrificing it, adding {C}.\nWhen the Eldrazi Spawn dies, Lord Feng triggers, putting a +1/+1 counter on Basking Broodscale.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/5641-6872/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Cephalid Illusionist",
+     "Lightning Greaves"
+    ],
+    "id": "876-2904",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Cephalid Illusionist"
+    ],
+    "notes": "",
+    "popularity": 2267,
+    "prerequisites": "",
+    "produces": [
+     "Infinite self-mill"
+    ],
+    "requires": [],
+    "steps": "Activate Lightning Greaves's equip ability by paying {0}, targeting Cephalid Illusionist.\nCephalid Illusionist triggers, causing you to mill three cards.\nResolve the Lightning Greaves ability, attaching it to Cephalid Illusionist.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/876-2904/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Terrasymbiosis",
+     "Body of Research"
+    ],
+    "id": "648-6743",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "{G}{G}{G}{U}{U}{U}",
+    "missing": [
+     "Body of Research"
+    ],
+    "notes": "",
+    "popularity": 2227,
+    "prerequisites": "You have not drawn cards using Terrasymbiosis this turn.",
+    "produces": [
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature token",
+     "Infinite card draw"
+    ],
+    "requires": [],
+    "steps": "Cast Body of Research by paying {G}{G}{G}{U}{U}{U}, creating a 0/0 Fractal creature token and then putting a number of +1/+1 counters on it equal to your deck size.\nTerrasymbiosis triggers, causing you to draw a card for each +1/+1 counter placed, thus causing you to draw your library.",
+    "url": "https://commanderspellbook.com/combo/648-6743/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Basking Broodscale",
+     "Sadistic Glee"
+    ],
+    "id": "2082-5641",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "{1}{G} or a way to put a +1/+1 counter on Basking Broodscale if it has a +1/+1 counter on it",
+    "missing": [
+     "Sadistic Glee"
+    ],
+    "notes": "",
+    "popularity": 1616,
+    "prerequisites": "Sadistic Glee attached to Basking Broodscale.",
+    "produces": [
+     "Infinite creature LTB",
+     "Infinite creature ETB",
+     "Infinite creature sacrifice triggers",
+     "Infinite death triggers",
+     "Infinite colorless mana",
+     "Infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "If Basking Broodscale does not have a +1/+1 counter on it, activate Basking Broodscale's adapt ability by paying {1}{G}, putting a +1/+1 counter on it.\nOtherwise, put a +1/+1 counter on Basking Broodscale using any other method.\nBasking Broodscale triggers, creating a 0/1 Eldrazi Spawn creature token. \nActivate the Eldrazi Spawn by sacrificing it, adding {C}.\nWhen the Eldrazi Spawn dies, Sadisitc Glee triggers, putting a +1/+1 counter on Basking Broodscale.\nRepeat from step 3.",
+    "url": "https://commanderspellbook.com/combo/2082-5641/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Duskmantle Guildmage",
+     "The Master of Lake-town"
+    ],
+    "id": "5069-7848",
+    "identity": "UB",
+    "infinite": true,
+    "mana_needed": "{1}{U}{B} plus an additional {2}{U}{B} for each opponent you have",
+    "missing": [
+     "Duskmantle Guildmage"
+    ],
+    "notes": "",
+    "popularity": 1599,
+    "prerequisites": "Each opponent has a life total that is less than or equal to their library size.",
+    "produces": [
+     "Each opponent loses the game",
+     "Infinite mill",
+     "Near-infinite lifeloss"
+    ],
+    "requires": [],
+    "steps": "Activate Duskmantle Guildmage's first ability by paying {1}{U}{B}, causing your opponent to lose life whenever a card is put into their graveyard this turn.\nActivate Duskmantle Guildmage's second ability by paying {2}{U}{B}, causing an opponent to mill two cards.\nDuskmantle Guildmage triggers twice.\nResolve the first trigger, causing the opponent to lose 1 life.\nThe Master of Lake-town triggers, causing the opponent to mill a card.\nDuskmantle Guildmage triggers, causing the opponent to lose 1 life.\nRepeat from step 5 until the opponent has a life total of zero, causing them to lose the game.\nRepeat from step 2 for each other opponent.",
+    "url": "https://commanderspellbook.com/combo/5069-7848/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Donatello, the Brains",
+     "Basking Broodscale"
+    ],
+    "id": "5641-7363",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "{2}{G}{G}",
+    "missing": [
+     "Donatello, the Brains"
+    ],
+    "notes": "",
+    "popularity": 1442,
+    "prerequisites": "",
+    "produces": [
+     "Infinite artifact ETB",
+     "Infinite artifact LTB",
+     "Infinite artifact sacrifice triggers",
+     "Infinite +1/+1 counters on a creature",
+     "Infinite creature ETB",
+     "Infinite creature LTB",
+     "Infinite death triggers",
+     "Infinite creature sacrifice triggers"
+    ],
+    "requires": [],
+    "steps": "Cast Basking Broodscale by paying {1}{G}.\nActivate Basking Broodscale's adapt ability by paying {1}{G}, putting a +1/+1 counter on it.\nBasking Broodscale triggers, creating a 0/1 Eldrazi Spawn creature token and a Mutagen token due to Donatello.\nActivate the Eldrazi Spawn by sacrificing it, adding {C}.\nActivate the Mutagen by paying {1}, tapping and sacrificing it, putting a +1/+1 counter on Basking Broodscale.\nRepeat from step 3.",
+    "url": "https://commanderspellbook.com/combo/5641-7363/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Basking Broodscale",
+     "Ghost Lantern // Bind Spirit"
+    ],
+    "id": "4455-5641",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "{1}{G}",
+    "missing": [
+     "Ghost Lantern // Bind Spirit"
+    ],
+    "notes": "",
+    "popularity": 1094,
+    "prerequisites": "Basking Broodscale does not have a +1/+1 counter on it. Ghost Lantern attached to Basking Broodscale.",
+    "produces": [
+     "Infinite +1/+1 counters on a creature",
+     "Infinite colorless mana",
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB",
+     "Infinite creature sacrifice triggers"
+    ],
+    "requires": [],
+    "steps": "Activate Basking Broodscale's adapt ability by paying {1}{G}, putting a +1/+1 counter on it.\nBasking Broodscale triggers, creating a 0/1 Eldrazi Spawn creature token.\nActivate the Eldrazi Spawn by sacrificing it, adding {C}.\nWhen the Eldrazi Spawn dies, Ghost Lantern triggers, putting a +1/+1 counter on Basking Broodscale.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/4455-5641/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Basking Broodscale",
+     "Necrosynthesis"
+    ],
+    "id": "1628-5641",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Necrosynthesis"
+    ],
+    "notes": "",
+    "popularity": 957,
+    "prerequisites": "Necrosynthesis attached to Basking Broodscale. You have a way to put a +1/+1 counter on Basking Broodscale.",
+    "produces": [
+     "Infinite +1/+1 counters on a creature",
+     "Infinite colorless mana",
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB",
+     "Infinite creature sacrifice triggers"
+    ],
+    "requires": [],
+    "steps": "Put a +1/+1 counter on Basking Broodscale.\nBasking Broodscale triggers, creating a 0/1 Eldrazi Spawn creature token.\nActivate the Eldrazi Spawn by sacrificing it, adding {C}.\nWhen the Eldrazi Spawn dies, Necrosynthesis triggers, putting a +1/+1 counter on Basking Broodscale.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/1628-5641/"
+   },
+   {
+    "bracket_tag": "O",
+    "cards": [
+     "Aether Syphon",
+     "Peer into the Abyss"
+    ],
+    "id": "1561-6272",
+    "identity": "UB",
+    "infinite": false,
+    "mana_needed": "{4}{B}{B}{B}",
+    "missing": [
+     "Peer into the Abyss"
+    ],
+    "notes": "",
+    "popularity": 232,
+    "prerequisites": "Your life total is at least 2. You have max speed.",
+    "produces": [
+     "Near-infinite mill",
+     "Near-infinite card draw",
+     "Near-infinite draw triggers"
+    ],
+    "requires": [],
+    "steps": "Cast Peer into the Abyss by paying {4}{B}{B}{B}, causing you to draw half your library and lose half your life total, rounding up each time.\nAether Syphon triggers, causing each opponent to mill 2 cards for each card drawn this way.",
+    "url": "https://commanderspellbook.com/combo/1561-6272/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Cephalid Aristocrat",
+     "Lightning Greaves"
+    ],
+    "id": "876-2796",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Cephalid Aristocrat"
+    ],
+    "notes": "",
+    "popularity": 203,
+    "prerequisites": "You control an additional creature.",
+    "produces": [
+     "Infinite self-mill"
+    ],
+    "requires": [],
+    "steps": "Activate Lightning Greaves's equip ability by paying {0}, targeting Cephalid Aristocrat.\nCephalid Aristocrat triggers, causing you to mill two cards.\nResolve Lightning Greaves's ability, attaching it to Cephalid Aristrocrat.\nActivate Lightning Greaves's equip ability by paying {0}, attaching it to another creature you control.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/876-2796/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "The Mindskinner",
+     "Body of Research"
+    ],
+    "id": "648-6003",
+    "identity": "GU",
+    "infinite": false,
+    "mana_needed": "{G}{G}{G}{U}{U}{U}",
+    "missing": [
+     "Body of Research"
+    ],
+    "notes": "If desired, you may repeat this loop on subsequent turns. You may also attack with other creatures, as able, to cause opponents to mill more cards.",
+    "popularity": 50,
+    "prerequisites": "An opponent cannot block creatures you control.",
+    "produces": [
+     "Near-infinite mill"
+    ],
+    "requires": [],
+    "steps": "Cast Body of Research by paying {G}{G}{G}{U}{U}{U}, creating a 0/0 Fractal creature token, then putting a number of +1/+1 counters on it equal to your deck size.\nOptionally, give the Fractal token haste, or proceed to your next turn.\nDeclare the Fractal and The Mindskinner, if desired/able, as attackers.\nWhen the Fractal, and The Mindskinner if it attacked, would deal combat damage to the opponent, The Mindskinner prevents that damage, and causes each opponent to mill that many cards.",
+    "url": "https://commanderspellbook.com/combo/648-6003/"
+   }
+  ],
+  "commanders": [
+   "The Wise Mothman"
+  ],
+  "included": [
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Riverchurn Monument",
+     "Kitsune's Technique"
+    ],
+    "id": "6285-7268",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{6}{U}{U}{U}{U} at most",
+    "missing": [],
+    "notes": "If able, you can instead cast Kitsune's Technique for its sneak cost, reducing the needed mana by {3}{U}.",
+    "popularity": 5786,
+    "prerequisites": "You have not activated Riverchurn Monument's exhaust ability.",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Cast Kitsune's Technique by paying {4}{U}{U}, causing an opponent to mill half their library, rounded up.\nActivate Riverchurn Monument's exhaust ability by paying {2}{U}{U} and tapping it, causing the opponent to mill the remainder of their library.",
+    "url": "https://commanderspellbook.com/combo/6285-7268/"
+   },
+   {
+    "bracket_tag": "P",
+    "cards": [
+     "Fraying Sanity",
+     "Kitsune's Technique"
+    ],
+    "id": "464-7268",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{4}{U}{U} at most",
+    "missing": [],
+    "notes": "",
+    "popularity": 4996,
+    "prerequisites": "Fraying Sanity is attached to an opponent.",
+    "produces": [
+     "Infinite mill for target opponent"
+    ],
+    "requires": [],
+    "steps": "Cast Kitsune's Technique by paying {4}{U}{U}, causing an opponent to mill half their library, rounded up.\nAt the beginning of your end step, Fraying Sanity triggers, causing the opponent to mill cards equal to the number of cards put into their graveyard this turn.",
+    "url": "https://commanderspellbook.com/combo/464-7268/"
+   }
+  ]
+ },
  "9bdc0dc4ee06438c": {
   "almost": [
    {

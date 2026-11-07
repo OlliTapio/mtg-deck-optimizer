@@ -76,13 +76,15 @@
  ],
  "cards": {
   "Auntie Ool, Cursewretch": {
-   "total": 135.0,
+   "total": 152.0,
    "cmdr_fit": 0.0,
-   "partners": 41,
-   "best_partner": "Carnifex Demon",
+   "partners": 51,
+   "best_partner": "Channeler Initiate",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
-    "counters_m1m1": 67.5
+    "counters_m1m1": 67.5,
+    "ramp": 8.5
    }
   },
   "Aberrant Return": {
@@ -91,18 +93,22 @@
    "partners": 12,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "graveyard": 1.5
    }
   },
   "Arcane Signet": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 3.44,
+   "cmdr_fit": 1.0,
+   "partners": 1,
+   "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 2.438,
+   "themes": {
+    "ramp": 2.94
+   }
   },
   "Contagion Engine": {
    "total": 17.25,
@@ -110,6 +116,7 @@
    "partners": 11,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "counters_any": 0.75
@@ -121,15 +128,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Binding the Old Gods": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 3.44,
+   "cmdr_fit": 1.0,
+   "partners": 1,
+   "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 2.438,
+   "themes": {
+    "ramp": 2.94
+   }
   },
   "Black Sun's Zenith": {
    "total": 16.5,
@@ -137,6 +148,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -147,6 +159,7 @@
    "partners": 13,
    "best_partner": "Flourishing Defenses",
    "combo_piece": true,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "combo": 6.0,
@@ -159,6 +172,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -169,6 +183,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Carnifex Demon": {
@@ -177,6 +192,7 @@
    "partners": 40,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 63.0
    }
@@ -187,6 +203,7 @@
    "partners": 11,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "counters_any": 0.75
@@ -198,16 +215,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Channeler Initiate": {
-   "total": 66.0,
-   "cmdr_fit": 6.0,
+   "total": 69.44,
+   "cmdr_fit": 7.0,
    "partners": 40,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
-    "counters_m1m1": 63.0
+    "counters_m1m1": 63.0,
+    "ramp": 2.94
    }
   },
   "Chimil, the Inner Sun": {
@@ -216,6 +236,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Cinder Glade": {
@@ -224,6 +245,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Command Tower": {
@@ -232,6 +254,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Darkness Descends": {
@@ -240,6 +263,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -250,6 +274,7 @@
    "partners": 19,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "graveyard": 7.5,
@@ -257,13 +282,15 @@
    }
   },
   "Devoted Druid": {
-   "total": 13.0,
-   "cmdr_fit": 3.0,
+   "total": 16.44,
+   "cmdr_fit": 4.0,
    "partners": 7,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
     "counters_m1m1": 10.5,
+    "ramp": 2.94,
     "type:Elf": 1.0
    }
   },
@@ -273,16 +300,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Dread Tiller": {
-   "total": 21.0,
-   "cmdr_fit": 3.0,
+   "total": 24.44,
+   "cmdr_fit": 4.0,
    "partners": 14,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
     "counters_m1m1": 15.0,
+    "ramp": 2.94,
     "graveyard": 1.5,
     "type:Scarecrow": 1.0,
     "dies": 1.0,
@@ -295,6 +325,7 @@
    "partners": 41,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 67.5,
     "fodder": 1.0
@@ -306,6 +337,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Everlasting Torment": {
@@ -314,6 +346,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Evolution Sage": {
@@ -322,6 +355,7 @@
    "partners": 16,
    "best_partner": "Flourishing Defenses",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 7.5,
     "landfall": 5.0,
@@ -335,6 +369,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Exotic Orchard": {
@@ -343,15 +378,18 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Farseek": {
-   "total": 1.0,
-   "cmdr_fit": 0.0,
-   "partners": 1,
+   "total": 4.44,
+   "cmdr_fit": 1.0,
+   "partners": 2,
    "best_partner": "Evolution Sage",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
+    "ramp": 2.94,
     "landfall": 1.0
    }
   },
@@ -361,6 +399,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Flourishing Defenses": {
@@ -369,6 +408,7 @@
    "partners": 42,
    "best_partner": "Blowfly Infestation",
    "combo_piece": true,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 55.5,
     "type:Elf": 5.0,
@@ -383,6 +423,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Glissa Sunslayer": {
@@ -391,6 +432,7 @@
    "partners": 1,
    "best_partner": "Flourishing Defenses",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elf": 1.0
    }
@@ -401,6 +443,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Grave Venerations": {
@@ -409,6 +452,7 @@
    "partners": 3,
    "best_partner": "Ifnir Deadlands",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "graveyard": 1.5,
     "dies": 1.0
@@ -420,6 +464,7 @@
    "partners": 40,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 63.0,
     "type:Scarecrow": 1.0
@@ -431,6 +476,7 @@
    "partners": 19,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "graveyard": 7.5
@@ -442,6 +488,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Hapatra, Vizier of Poisons": {
@@ -450,6 +497,7 @@
    "partners": 13,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": true,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "combo": 2.0,
@@ -463,6 +511,7 @@
    "partners": 2,
    "best_partner": "Blowfly Infestation",
    "combo_piece": true,
+   "ramp_bonus": 0.0,
    "themes": {
     "combo": 2.0,
     "fodder": 1.0
@@ -474,6 +523,7 @@
    "partners": 19,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "fodder": 7.0,
@@ -481,12 +531,15 @@
    }
   },
   "Ignoble Hierarch": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 3.44,
+   "cmdr_fit": 1.0,
+   "partners": 1,
+   "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 2.438,
+   "themes": {
+    "ramp": 2.94
+   }
   },
   "Blight Rot": {
    "total": 16.5,
@@ -494,6 +547,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -504,6 +558,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -514,6 +569,7 @@
    "partners": 1,
    "best_partner": "Flourishing Defenses",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elf": 1.0
    }
@@ -524,6 +580,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Midnight Banshee": {
@@ -532,6 +589,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -542,15 +600,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Sundering Eruption // Volcanic Fissure": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 3.44,
+   "cmdr_fit": 1.0,
+   "partners": 1,
+   "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 2.438,
+   "themes": {
+    "ramp": 2.94
+   }
   },
   "Demolition Field": {
    "total": 1.0,
@@ -558,17 +620,21 @@
    "partners": 1,
    "best_partner": "Evolution Sage",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "landfall": 1.0
    }
   },
   "Nature's Lore": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 3.44,
+   "cmdr_fit": 1.0,
+   "partners": 1,
+   "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 2.438,
+   "themes": {
+    "ramp": 2.94
+   }
   },
   "Necroskitter": {
    "total": 18.0,
@@ -576,6 +642,7 @@
    "partners": 12,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "graveyard": 1.5
@@ -587,16 +654,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Thirsting Roots": {
-   "total": 9.0,
-   "cmdr_fit": 1.5,
+   "total": 12.44,
+   "cmdr_fit": 2.5,
    "partners": 11,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
     "counters_m1m1": 7.5,
+    "ramp": 2.94,
     "counters_any": 0.75
    }
   },
@@ -606,6 +676,7 @@
    "partners": 11,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "fodder": 1.0
@@ -617,6 +688,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Persist": {
@@ -625,6 +697,7 @@
    "partners": 39,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 55.5,
     "graveyard": 1.5
@@ -636,6 +709,7 @@
    "partners": 3,
    "best_partner": "Ifnir Deadlands",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "graveyard": 1.5,
     "dies": 1.0
@@ -647,6 +721,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Obelisk Spider": {
@@ -655,6 +730,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -665,15 +741,18 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Rampant Growth": {
-   "total": 1.0,
-   "cmdr_fit": 0.0,
-   "partners": 1,
+   "total": 4.44,
+   "cmdr_fit": 1.0,
+   "partners": 2,
    "best_partner": "Evolution Sage",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
+    "ramp": 2.94,
     "landfall": 1.0
    }
   },
@@ -683,6 +762,7 @@
    "partners": 11,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 7.5,
     "counters_any": 0.75
@@ -694,15 +774,18 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Sakura-Tribe Elder": {
-   "total": 2.0,
-   "cmdr_fit": 0.0,
-   "partners": 2,
+   "total": 5.44,
+   "cmdr_fit": 1.0,
+   "partners": 3,
    "best_partner": "Evolution Sage",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
+    "ramp": 2.94,
     "landfall": 1.0,
     "type:Snake": 1.0
    }
@@ -713,6 +796,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Shadow Urchin": {
@@ -721,6 +805,7 @@
    "partners": 11,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "dies": 1.0
@@ -732,6 +817,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Sinister Gnarlbark": {
@@ -740,6 +826,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -750,6 +837,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -760,15 +848,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Birds of Paradise": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 3.44,
+   "cmdr_fit": 1.0,
+   "partners": 1,
+   "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 2.438,
+   "themes": {
+    "ramp": 2.94
+   }
   },
   "Soul Immolation": {
    "total": 0.0,
@@ -776,6 +868,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Soul Snuffers": {
@@ -784,6 +877,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0
    }
@@ -794,27 +888,33 @@
    "partners": 7,
    "best_partner": "Flourishing Defenses",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_any": 4.5,
     "type:Warrior": 1.0
    }
   },
   "Boggart Trawler": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 3.44,
+   "cmdr_fit": 1.0,
+   "partners": 1,
+   "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 2.438,
+   "themes": {
+    "ramp": 2.94
+   }
   },
   "Scuzzback Scrounger": {
-   "total": 17.5,
-   "cmdr_fit": 3.0,
+   "total": 20.94,
+   "cmdr_fit": 4.0,
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
     "counters_m1m1": 15.0,
+    "ramp": 2.94,
     "type:Warrior": 1.0
    }
   },
@@ -824,6 +924,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Unnatural Restoration": {
@@ -832,6 +933,7 @@
    "partners": 13,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 7.5,
     "graveyard": 1.5,
@@ -844,6 +946,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "The Reaper, King No More": {
@@ -852,6 +955,7 @@
    "partners": 12,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "graveyard": 1.5,
@@ -864,6 +968,7 @@
    "partners": 13,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "graveyard": 1.5,
@@ -877,16 +982,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Village Pillagers": {
-   "total": 17.5,
-   "cmdr_fit": 3.0,
+   "total": 20.94,
+   "cmdr_fit": 4.0,
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
     "counters_m1m1": 15.0,
+    "ramp": 2.94,
     "type:Warrior": 1.0
    }
   },
@@ -896,6 +1004,7 @@
    "partners": 10,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 15.0,
     "type:Warrior": 1.0
@@ -907,6 +1016,7 @@
    "partners": 41,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 63.0
    }
@@ -917,6 +1027,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Wickerbough Elder": {
@@ -925,19 +1036,22 @@
    "partners": 41,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_m1m1": 63.0
    }
   },
   "Wickersmith's Tools": {
-   "total": 61.0,
-   "cmdr_fit": 3.0,
+   "total": 64.44,
+   "cmdr_fit": 4.0,
    "partners": 39,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
+   "ramp_bonus": 2.438,
    "themes": {
     "counters_m1m1": 55.5,
     "type:Scarecrow": 3.0,
+    "ramp": 2.94,
     "fodder": 1.0
    }
   },
@@ -947,6 +1061,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   }
  },
@@ -1021,6 +1136,46 @@
    "url": "https://commanderspellbook.com/combo/2228-4994/"
   }
  ],
+ "ramp": {
+  "avg_mv": 3.25,
+  "commander_mv": 4.0,
+  "expensive": [
+   "Aberrant Return",
+   "Carnifex Demon",
+   "Chimil, the Inner Sun",
+   "Contagion Engine",
+   "Eventide's Shadow",
+   "Flourishing Defenses",
+   "Grim Poppet",
+   "Kulrath Knight",
+   "Midnight Banshee",
+   "Soul Immolation",
+   "The Reaper, King No More",
+   "The Scorpion God",
+   "Village Pillagers"
+  ],
+  "commander_weight": 0.5,
+  "curve_bonus": 2.438,
+  "cards": [
+   "Arcane Signet",
+   "Binding the Old Gods",
+   "Birds of Paradise",
+   "Boggart Trawler",
+   "Channeler Initiate",
+   "Devoted Druid",
+   "Dread Tiller",
+   "Farseek",
+   "Ignoble Hierarch",
+   "Nature's Lore",
+   "Rampant Growth",
+   "Sakura-Tribe Elder",
+   "Scuzzback Scrounger",
+   "Sundering Eruption // Volcanic Fissure",
+   "Thirsting Roots",
+   "Village Pillagers",
+   "Wickersmith's Tools"
+  ]
+ },
  "unmatched": [
   {
    "card": "Massacre Girl, Known Killer",
@@ -1321,6 +1476,31 @@
  "pairs": [
   {
    "a": "Auntie Ool, Cursewretch",
+   "b": "Channeler Initiate",
+   "score": 7.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    },
+    {
+     "tag": "ramp",
+     "producer": "Channeler Initiate",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
    "b": "Carnifex Demon",
    "score": 6.0,
    "reasons": [
@@ -1334,25 +1514,6 @@
      "tag": "counters_m1m1",
      "producer": "Auntie Ool, Cursewretch",
      "payoff": "Carnifex Demon",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Auntie Ool, Cursewretch",
-   "b": "Channeler Initiate",
-   "score": 6.0,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Channeler Initiate",
-     "payoff": "Auntie Ool, Cursewretch",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_m1m1",
-     "producer": "Auntie Ool, Cursewretch",
-     "payoff": "Channeler Initiate",
      "weight": 1.5
     }
    ]
@@ -1430,6 +1591,101 @@
      "producer": "Auntie Ool, Cursewretch",
      "payoff": "Wickerbough Elder",
      "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Devoted Druid",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Devoted Druid",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "ramp",
+     "producer": "Devoted Druid",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Dread Tiller",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "ramp",
+     "producer": "Dread Tiller",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Scuzzback Scrounger",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "ramp",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Village Pillagers",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "ramp",
+     "producer": "Village Pillagers",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Wickersmith's Tools",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    },
+    {
+     "tag": "ramp",
+     "producer": "Wickersmith's Tools",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
     }
    ]
   },
@@ -1551,32 +1807,6 @@
     {
      "tag": "counters_m1m1",
      "producer": "Dawnhand Dissident",
-     "payoff": "Auntie Ool, Cursewretch",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Auntie Ool, Cursewretch",
-   "b": "Devoted Druid",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Devoted Druid",
-     "payoff": "Auntie Ool, Cursewretch",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Auntie Ool, Cursewretch",
-   "b": "Dread Tiller",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Dread Tiller",
      "payoff": "Auntie Ool, Cursewretch",
      "weight": 1.5
     }
@@ -1753,19 +1983,6 @@
   },
   {
    "a": "Auntie Ool, Cursewretch",
-   "b": "Scuzzback Scrounger",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Scuzzback Scrounger",
-     "payoff": "Auntie Ool, Cursewretch",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Auntie Ool, Cursewretch",
    "b": "The Reaper, King No More",
    "score": 3.0,
    "reasons": [
@@ -1785,19 +2002,6 @@
     {
      "tag": "counters_m1m1",
      "producer": "The Scorpion God",
-     "payoff": "Auntie Ool, Cursewretch",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Auntie Ool, Cursewretch",
-   "b": "Village Pillagers",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Village Pillagers",
      "payoff": "Auntie Ool, Cursewretch",
      "weight": 1.5
     }
@@ -2015,14 +2219,20 @@
   },
   {
    "a": "Auntie Ool, Cursewretch",
-   "b": "Wickersmith's Tools",
-   "score": 3.0,
+   "b": "Thirsting Roots",
+   "score": 2.5,
    "reasons": [
     {
      "tag": "counters_m1m1",
-     "producer": "Auntie Ool, Cursewretch",
-     "payoff": "Wickersmith's Tools",
-     "weight": 1.5
+     "producer": "Thirsting Roots",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.75
+    },
+    {
+     "tag": "ramp",
+     "producer": "Thirsting Roots",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
     }
    ]
   },
@@ -2345,19 +2555,6 @@
     {
      "tag": "counters_m1m1",
      "producer": "Evolution Sage",
-     "payoff": "Auntie Ool, Cursewretch",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Auntie Ool, Cursewretch",
-   "b": "Thirsting Roots",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Thirsting Roots",
      "payoff": "Auntie Ool, Cursewretch",
      "weight": 0.75
     }
@@ -5978,6 +6175,136 @@
    ]
   },
   {
+   "a": "Arcane Signet",
+   "b": "Auntie Ool, Cursewretch",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Arcane Signet",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Binding the Old Gods",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Binding the Old Gods",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Birds of Paradise",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Birds of Paradise",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Boggart Trawler",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Boggart Trawler",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Farseek",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Farseek",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Ignoble Hierarch",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Ignoble Hierarch",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Nature's Lore",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Nature's Lore",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Rampant Growth",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Rampant Growth",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Sakura-Tribe Elder",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Sakura-Tribe Elder",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Sundering Eruption // Volcanic Fissure",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Sundering Eruption // Volcanic Fissure",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
    "a": "Carnifex Demon",
    "b": "Evolution Sage",
    "score": 0.75,
@@ -6777,18 +7104,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Warlock",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warlock"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warlock",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warlock"
    }
   ],
   "Aberrant Return": [
@@ -7027,18 +7354,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Demon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Demon"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Demon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Demon"
    }
   ],
   "Grim Affliction": [
@@ -7232,18 +7559,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Dragonskull Summit": [],
@@ -7390,18 +7717,18 @@
   ],
   "Evolution Sage": [
    {
-    "tag": "proliferate",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Proliferate"
-   },
-   {
     "tag": "landfall",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Landfall"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
    },
    {
     "tag": "counters_p1p1",
@@ -7439,18 +7766,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Blood Crypt": [],
@@ -7568,11 +7895,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Zombie",
+    "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Zombie"
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "type:Elf",
@@ -7582,11 +7909,11 @@
     "evidence": "is a Elf"
    },
    {
-    "tag": "type:Phyrexian",
+    "tag": "type:Zombie",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Phyrexian"
+    "evidence": "is a Zombie"
    }
   ],
   "Twilight Mire": [],
@@ -7722,18 +8049,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    }
   ],
   "Fire-Lit Thicket": [],
@@ -7945,18 +8272,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
    }
   ],
   "Generous Patron": [
@@ -8430,18 +8757,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Savage Lands": [],
@@ -8536,18 +8863,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Zombie",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Zombie"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
    }
   ],
   "Smoldering Marsh": [],
@@ -8599,18 +8926,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Stalwart Successor": [
@@ -8696,18 +9023,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    }
   ],
   "Swamp": [],
@@ -8931,18 +9258,18 @@
     "evidence": "power 5"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    }
   ],
   "Warren Torchmaster": [
@@ -8961,18 +9288,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    }
   ],
   "Ammit Eternal": [
@@ -9005,18 +9332,18 @@
     "evidence": "power 5"
    },
    {
-    "tag": "type:Zombie",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Zombie"
-   },
-   {
     "tag": "type:Demon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Demon"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
    },
    {
     "tag": "type:Crocodile",
@@ -9156,15 +9483,6 @@
  "cuts": {
   "candidates": [
    {
-    "name": "Boggart Trawler",
-    "cmc": 3.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": -0.167
-   },
-   {
     "name": "Everlasting Torment",
     "cmc": 3.0,
     "synergy": 0.0,
@@ -9178,6 +9496,15 @@
     "cmc": 5.0,
     "synergy": 16.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.056
+   },
+   {
+    "name": "Boggart Trawler",
+    "cmc": 3.0,
+    "synergy": 3.44,
+    "cmdr_fit": 1.0,
     "combo_piece": false,
     "roles": [],
     "cut_score": 0.056
@@ -9198,7 +9525,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.278
+    "cut_score": 0.246
    },
    {
     "name": "Evolution Sage",
@@ -9207,7 +9534,7 @@
     "cmdr_fit": 1.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.278
+    "cut_score": 0.262
    },
    {
     "name": "Necroskitter",
@@ -9216,7 +9543,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.563
+    "cut_score": 0.532
    },
    {
     "name": "Warren Torchmaster",
@@ -9283,19 +9610,6 @@
     "cut_score": -0.405
    },
    {
-    "name": "Binding the Old Gods",
-    "cmc": 4.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "removal",
-     "tutor"
-    ],
-    "cut_score": -0.341
-   },
-   {
     "name": "Druid of Purification",
     "cmc": 4.0,
     "synergy": 0.0,
@@ -9319,6 +9633,18 @@
     "cut_score": -0.341
    },
    {
+    "name": "Grave Venerations",
+    "cmc": 4.0,
+    "synergy": 2.5,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": -0.167
+   },
+   {
     "name": "Putrefy",
     "cmc": 3.0,
     "synergy": 0.0,
@@ -9330,27 +9656,17 @@
     "cut_score": -0.167
    },
    {
-    "name": "Sundering Eruption // Volcanic Fissure",
-    "cmc": 3.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
+    "name": "Binding the Old Gods",
+    "cmc": 4.0,
+    "synergy": 3.44,
+    "cmdr_fit": 1.0,
     "combo_piece": false,
     "roles": [
+     "ramp",
      "removal",
      "tutor"
     ],
-    "cut_score": -0.167
-   },
-   {
-    "name": "Arcane Signet",
-    "cmc": 2.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": -0.04
+    "cut_score": -0.119
    },
    {
     "name": "Assassin's Trophy",
@@ -9364,52 +9680,29 @@
     "cut_score": -0.04
    },
    {
-    "name": "Nature's Lore",
-    "cmc": 2.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": -0.04
-   },
-   {
-    "name": "Grave Venerations",
-    "cmc": 4.0,
-    "synergy": 2.5,
+    "name": "Generous Patron",
+    "cmc": 3.0,
+    "synergy": 1.0,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
     ],
-    "cut_score": -0.008
+    "cut_score": -0.024
    },
    {
-    "name": "Birds of Paradise",
-    "cmc": 1.0,
-    "synergy": 0.0,
+    "name": "Glissa Sunslayer",
+    "cmc": 3.0,
+    "synergy": 1.0,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
-     "mana-dork",
-     "ramp"
+     "card-advantage",
+     "draw",
+     "removal"
     ],
-    "cut_score": 0.0
-   },
-   {
-    "name": "Ignoble Hierarch",
-    "cmc": 1.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "mana-dork",
-     "ramp"
-    ],
-    "cut_score": 0.0
+    "cut_score": -0.024
    },
    {
     "name": "Vandalblast",
@@ -9436,29 +9729,38 @@
     "cut_score": 0.008
    },
    {
-    "name": "Generous Patron",
+    "name": "Puca's Covenant",
     "cmc": 3.0,
-    "synergy": 1.0,
+    "synergy": 2.5,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage",
-     "draw"
+     "card-advantage"
     ],
-    "cut_score": 0.087
+    "cut_score": 0.008
    },
    {
-    "name": "Glissa Sunslayer",
+    "name": "Nest of Scarabs",
     "cmc": 3.0,
-    "synergy": 1.0,
+    "synergy": 3.0,
     "cmdr_fit": 0.0,
+    "combo_piece": true,
+    "roles": [
+     "combo piece"
+    ],
+    "cut_score": 0.04
+   },
+   {
+    "name": "Sundering Eruption // Volcanic Fissure",
+    "cmc": 3.0,
+    "synergy": 3.44,
+    "cmdr_fit": 1.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage",
-     "draw",
-     "removal"
+     "removal",
+     "tutor"
     ],
-    "cut_score": 0.087
+    "cut_score": 0.056
    },
    {
     "name": "Darkness Descends",
@@ -9508,73 +9810,60 @@
     "cut_score": 0.167
    },
    {
-    "name": "Puca's Covenant",
-    "cmc": 3.0,
-    "synergy": 2.5,
-    "cmdr_fit": 0.0,
+    "name": "Arcane Signet",
+    "cmc": 2.0,
+    "synergy": 3.44,
+    "cmdr_fit": 1.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage"
+     "ramp"
     ],
-    "cut_score": 0.167
+    "cut_score": 0.183
    },
    {
-    "name": "Nest of Scarabs",
-    "cmc": 3.0,
-    "synergy": 3.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": true,
-    "roles": [
-     "combo piece"
-    ],
-    "cut_score": 0.198
-   },
-   {
-    "name": "Farseek",
+    "name": "Nature's Lore",
     "cmc": 2.0,
-    "synergy": 1.0,
-    "cmdr_fit": 0.0,
+    "synergy": 3.44,
+    "cmdr_fit": 1.0,
     "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.214
+    "cut_score": 0.183
    },
    {
-    "name": "Rampant Growth",
-    "cmc": 2.0,
-    "synergy": 1.0,
-    "cmdr_fit": 0.0,
+    "name": "Birds of Paradise",
+    "cmc": 1.0,
+    "synergy": 3.44,
+    "cmdr_fit": 1.0,
     "combo_piece": false,
     "roles": [
-     "ramp",
-     "tutor"
+     "mana-dork",
+     "ramp"
     ],
-    "cut_score": 0.214
+    "cut_score": 0.222
    },
    {
-    "name": "Village Pillagers",
-    "cmc": 5.0,
-    "synergy": 17.5,
+    "name": "Ignoble Hierarch",
+    "cmc": 1.0,
+    "synergy": 3.44,
+    "cmdr_fit": 1.0,
+    "combo_piece": false,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.222
+   },
+   {
+    "name": "The Reaper, King No More",
+    "cmc": 6.0,
+    "synergy": 19.0,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
-     "board-wipe",
-     "ramp",
      "removal"
-    ],
-    "cut_score": 0.246
-   },
-   {
-    "name": "Sakura-Tribe Elder",
-    "cmc": 2.0,
-    "synergy": 2.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
     ],
     "cut_score": 0.278
    },
@@ -9624,15 +9913,40 @@
     "cut_score": 0.294
    },
    {
-    "name": "The Reaper, King No More",
-    "cmc": 6.0,
-    "synergy": 19.0,
-    "cmdr_fit": 3.0,
+    "name": "Farseek",
+    "cmc": 2.0,
+    "synergy": 4.44,
+    "cmdr_fit": 1.0,
     "combo_piece": false,
     "roles": [
-     "removal"
+     "ramp",
+     "tutor"
     ],
-    "cut_score": 0.31
+    "cut_score": 0.294
+   },
+   {
+    "name": "Rampant Growth",
+    "cmc": 2.0,
+    "synergy": 4.44,
+    "cmdr_fit": 1.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.294
+   },
+   {
+    "name": "Sakura-Tribe Elder",
+    "cmc": 2.0,
+    "synergy": 5.44,
+    "cmdr_fit": 1.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.325
    },
    {
     "name": "The Scorpion God",
@@ -9645,7 +9959,7 @@
      "draw",
      "removal"
     ],
-    "cut_score": 0.373
+    "cut_score": 0.341
    },
    {
     "name": "Unnatural Restoration",
@@ -9656,30 +9970,43 @@
     "roles": [
      "card-advantage"
     ],
+    "cut_score": 0.357
+   },
+   {
+    "name": "Village Pillagers",
+    "cmc": 5.0,
+    "synergy": 20.94,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [
+     "board-wipe",
+     "ramp",
+     "removal"
+    ],
     "cut_score": 0.373
    },
    {
     "name": "Devoted Druid",
     "cmc": 2.0,
-    "synergy": 13.0,
-    "cmdr_fit": 3.0,
+    "synergy": 16.44,
+    "cmdr_fit": 4.0,
     "combo_piece": false,
     "roles": [
      "mana-dork",
      "ramp"
     ],
-    "cut_score": 0.389
+    "cut_score": 0.405
    },
    {
     "name": "Thirsting Roots",
     "cmc": 1.0,
-    "synergy": 9.0,
-    "cmdr_fit": 1.5,
+    "synergy": 12.44,
+    "cmdr_fit": 2.5,
     "combo_piece": false,
     "roles": [
      "tutor"
     ],
-    "cut_score": 0.397
+    "cut_score": 0.413
    },
    {
     "name": "Black Sun's Zenith",
@@ -9692,6 +10019,17 @@
      "removal"
     ],
     "cut_score": 0.421
+   },
+   {
+    "name": "Grim Poppet",
+    "cmc": 7.0,
+    "synergy": 67.0,
+    "cmdr_fit": 6.0,
+    "combo_piece": false,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.452
    },
    {
     "name": "Carnifex Demon",
@@ -9717,17 +10055,6 @@
     "cut_score": 0.452
    },
    {
-    "name": "Grim Poppet",
-    "cmc": 7.0,
-    "synergy": 67.0,
-    "cmdr_fit": 6.0,
-    "combo_piece": false,
-    "roles": [
-     "removal"
-    ],
-    "cut_score": 0.468
-   },
-   {
     "name": "Shadow Urchin",
     "cmc": 3.0,
     "synergy": 17.5,
@@ -9739,6 +10066,17 @@
     "cut_score": 0.484
    },
    {
+    "name": "Flourishing Defenses",
+    "cmc": 5.0,
+    "synergy": 69.0,
+    "cmdr_fit": 3.0,
+    "combo_piece": true,
+    "roles": [
+     "combo piece"
+    ],
+    "cut_score": 0.563
+   },
+   {
     "name": "Wickerbough Elder",
     "cmc": 4.0,
     "synergy": 66.0,
@@ -9748,17 +10086,6 @@
      "removal"
     ],
     "cut_score": 0.563
-   },
-   {
-    "name": "Flourishing Defenses",
-    "cmc": 5.0,
-    "synergy": 69.0,
-    "cmdr_fit": 3.0,
-    "combo_piece": true,
-    "roles": [
-     "combo piece"
-    ],
-    "cut_score": 0.579
    },
    {
     "name": "Oft-Nabbed Goat",
@@ -9773,28 +10100,6 @@
     "cut_score": 0.611
    },
    {
-    "name": "Scuzzback Scrounger",
-    "cmc": 2.0,
-    "synergy": 17.5,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": 0.611
-   },
-   {
-    "name": "Dread Tiller",
-    "cmc": 3.0,
-    "synergy": 21.0,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": 0.643
-   },
-   {
     "name": "Blowfly Infestation",
     "cmc": 3.0,
     "synergy": 23.5,
@@ -9804,13 +10109,24 @@
      "removal",
      "combo piece"
     ],
-    "cut_score": 0.659
+    "cut_score": 0.643
+   },
+   {
+    "name": "Dread Tiller",
+    "cmc": 3.0,
+    "synergy": 24.44,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.675
    },
    {
     "name": "Wickersmith's Tools",
     "cmc": 3.0,
-    "synergy": 61.0,
-    "cmdr_fit": 3.0,
+    "synergy": 64.44,
+    "cmdr_fit": 4.0,
     "combo_piece": false,
     "roles": [
      "ramp"
@@ -9827,7 +10143,18 @@
      "removal",
      "combo piece"
     ],
-    "cut_score": 0.754
+    "cut_score": 0.722
+   },
+   {
+    "name": "Scuzzback Scrounger",
+    "cmc": 2.0,
+    "synergy": 20.94,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.738
    },
    {
     "name": "Gristle Glutton",
@@ -9839,7 +10166,7 @@
      "card-advantage",
      "draw"
     ],
-    "cut_score": 0.802
+    "cut_score": 0.786
    },
    {
     "name": "Dusk Urchins",
@@ -9867,14 +10194,14 @@
    {
     "name": "Channeler Initiate",
     "cmc": 2.0,
-    "synergy": 66.0,
-    "cmdr_fit": 6.0,
+    "synergy": 69.44,
+    "cmdr_fit": 7.0,
     "combo_piece": false,
     "roles": [
      "mana-dork",
      "ramp"
     ],
-    "cut_score": 0.865
+    "cut_score": 0.944
    }
   ]
  }

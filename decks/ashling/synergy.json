@@ -109,6 +109,7 @@
    "partners": 50,
    "best_partner": "Ashling's Command",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "sacrifice": 1.0,
@@ -121,6 +122,7 @@
    "partners": 11,
    "best_partner": "Crib Swap",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Shapeshifter": 4.0,
     "go_wide": 2.25,
@@ -134,36 +136,44 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Arcane Signet": {
-   "total": 0.0,
+   "total": 15.41,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 15.41,
+   "themes": {
+    "ramp": 15.41
+   }
   },
   "Ashling, Rekindled": {
-   "total": 37.95,
+   "total": 53.36,
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
     "type:Elemental": 30.0,
+    "ramp": 15.41,
     "graveyard": 6.0,
     "etb": 0.45
    }
   },
   "Ashling's Command": {
-   "total": 94.5,
+   "total": 109.91,
    "cmdr_fit": 6.0,
    "partners": 46,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
-    "type:Elemental": 91.5
+    "type:Elemental": 91.5,
+    "ramp": 15.41
    }
   },
   "Avenger of Zendikar": {
@@ -172,6 +182,7 @@
    "partners": 31,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "landfall": 4.0,
@@ -187,6 +198,7 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
@@ -198,6 +210,7 @@
    "partners": 31,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "type:Shapeshifter": 4.0,
@@ -213,16 +226,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Cavalier of Thorns": {
-   "total": 38.95,
+   "total": 54.36,
    "cmdr_fit": 3.0,
    "partners": 28,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
     "type:Elemental": 30.0,
+    "ramp": 15.41,
     "big_power": 2.25,
     "landfall": 2.0,
     "fodder": 1.0,
@@ -237,6 +253,7 @@
    "partners": 50,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "big_power": 2.25,
@@ -249,6 +266,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Command Tower": {
@@ -257,6 +275,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Crib Swap": {
@@ -265,6 +284,7 @@
    "partners": 26,
    "best_partner": "Eclipsed Realms",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "type:Shapeshifter": 5.0,
@@ -274,12 +294,14 @@
    }
   },
   "Cultivate": {
-   "total": 2.0,
+   "total": 17.41,
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Avenger of Zendikar",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
+    "ramp": 15.41,
     "landfall": 2.0
    }
   },
@@ -289,6 +311,7 @@
    "partners": 8,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "fodder": 7.0,
     "sacrifice": 1.0
@@ -300,6 +323,7 @@
    "partners": 49,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "etb": 0.45
@@ -311,6 +335,7 @@
    "partners": 45,
    "best_partner": "Crib Swap",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 64.5,
     "type:Elf": 5.0,
@@ -323,6 +348,7 @@
    "partners": 24,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "graveyard": 0.75,
@@ -335,36 +361,44 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Faeburrow Elder": {
-   "total": 1.45,
+   "total": 16.86,
    "cmdr_fit": 0.0,
    "partners": 4,
    "best_partner": "Eclipsed Realms",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
+    "ramp": 15.41,
     "type:Treefolk": 1.0,
     "etb": 0.45
    }
   },
   "Farseek": {
-   "total": 2.0,
+   "total": 17.41,
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Avenger of Zendikar",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
+    "ramp": 15.41,
     "landfall": 2.0
    }
   },
   "Fellwar Stone": {
-   "total": 0.0,
+   "total": 15.41,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 15.41,
+   "themes": {
+    "ramp": 15.41
+   }
   },
   "Flock Impostor": {
    "total": 38.95,
@@ -372,6 +406,7 @@
    "partners": 27,
    "best_partner": "Eclipsed Realms",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "type:Shapeshifter": 3.0,
@@ -382,13 +417,15 @@
    }
   },
   "Flamebraider": {
-   "total": 94.95,
+   "total": 110.36,
    "cmdr_fit": 6.0,
    "partners": 49,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
     "type:Elemental": 91.5,
+    "ramp": 15.41,
     "etb": 0.45
    }
   },
@@ -398,6 +435,7 @@
    "partners": 43,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 64.5
    }
@@ -408,6 +446,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Foundation Breaker": {
@@ -416,6 +455,7 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
@@ -427,6 +467,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Fury": {
@@ -435,6 +476,7 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
@@ -446,6 +488,7 @@
    "partners": 45,
    "best_partner": "Avenger of Zendikar",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "big_power": 12.0,
     "etb": 8.85,
@@ -458,6 +501,7 @@
    "partners": 25,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "big_power": 2.25,
@@ -471,6 +515,7 @@
    "partners": 27,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "big_power": 2.25,
@@ -486,6 +531,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Harmonized Crescendo": {
@@ -494,6 +540,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Haunting Voyage": {
@@ -502,6 +549,7 @@
    "partners": 4,
    "best_partner": "Ashling, Rekindled",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "etb": 1.5,
     "graveyard": 0.75
@@ -513,6 +561,7 @@
    "partners": 50,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "big_power": 2.25,
@@ -526,6 +575,7 @@
    "partners": 25,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "big_power": 2.25,
@@ -539,6 +589,7 @@
    "partners": 50,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "go_wide": 3.75,
@@ -551,6 +602,7 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
@@ -562,6 +614,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Jubilation": {
@@ -570,6 +623,7 @@
    "partners": 28,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "go_wide": 3.75,
@@ -583,6 +637,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Kindred Summons": {
@@ -591,6 +646,7 @@
    "partners": 5,
    "best_partner": "Abundant Countryside",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "go_wide": 3.75
    }
@@ -601,6 +657,7 @@
    "partners": 49,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "etb": 0.45
@@ -612,6 +669,7 @@
    "partners": 25,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "big_power": 2.25,
@@ -625,6 +683,7 @@
    "partners": 24,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "big_power": 2.25,
@@ -637,6 +696,7 @@
    "partners": 24,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "big_power": 2.25,
@@ -649,6 +709,7 @@
    "partners": 50,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "big_power": 2.25,
@@ -661,6 +722,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Brighthearth Banneret": {
@@ -669,6 +731,7 @@
    "partners": 49,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "type:Warrior": 6.0,
@@ -681,6 +744,7 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
@@ -692,6 +756,7 @@
    "partners": 52,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "landfall": 4.0,
@@ -704,6 +769,7 @@
    "partners": 27,
    "best_partner": "Eclipsed Realms",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "type:Shapeshifter": 3.0,
@@ -719,6 +785,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Path of Ancestry": {
@@ -727,15 +794,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Path to Exile": {
-   "total": 0.0,
+   "total": 15.41,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 15.41,
+   "themes": {
+    "ramp": 15.41
+   }
   },
   "Plains": {
    "total": 0.0,
@@ -743,6 +814,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Primal Beyond": {
@@ -751,6 +823,7 @@
    "partners": 43,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 64.5
    }
@@ -761,6 +834,7 @@
    "partners": 43,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 64.5
    }
@@ -771,15 +845,18 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Rampant Growth": {
-   "total": 2.0,
+   "total": 17.41,
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Avenger of Zendikar",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
+    "ramp": 15.41,
     "landfall": 2.0
    }
   },
@@ -789,6 +866,7 @@
    "partners": 27,
    "best_partner": "Eclipsed Realms",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "type:Shapeshifter": 3.0,
@@ -804,16 +882,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Risen Reef": {
-   "total": 94.95,
+   "total": 110.36,
    "cmdr_fit": 6.0,
    "partners": 49,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
     "type:Elemental": 91.5,
+    "ramp": 15.41,
     "etb": 0.45
    }
   },
@@ -823,6 +904,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Sandsteppe Citadel": {
@@ -831,6 +913,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Savage Lands": {
@@ -839,6 +922,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Seaside Citadel": {
@@ -847,6 +931,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Secluded Courtyard": {
@@ -855,15 +940,18 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Selvala, Heart of the Wilds": {
-   "total": 23.15,
+   "total": 38.56,
    "cmdr_fit": 0.3,
    "partners": 47,
    "best_partner": "Avenger of Zendikar",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
+    "ramp": 15.41,
     "big_power": 12.0,
     "etb": 9.0,
     "type:Elf": 1.0,
@@ -876,6 +964,7 @@
    "partners": 16,
    "best_partner": "Avenger of Zendikar",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "big_power": 12.0
    }
@@ -886,6 +975,7 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
@@ -897,6 +987,7 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
@@ -908,19 +999,22 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
    }
   },
   "Smokebraider": {
-   "total": 94.95,
+   "total": 110.36,
    "cmdr_fit": 6.0,
    "partners": 49,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 15.41,
    "themes": {
     "type:Elemental": 91.5,
+    "ramp": 15.41,
     "etb": 0.45
    }
   },
@@ -930,15 +1024,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Sol Ring": {
-   "total": 0.0,
+   "total": 15.41,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 15.41,
+   "themes": {
+    "ramp": 15.41
+   }
   },
   "Kindred Discovery": {
    "total": 10.0,
@@ -946,6 +1044,7 @@
    "partners": 45,
    "best_partner": "Yarok, the Desecrated",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "etb": 8.85,
     "trigger_etb": 1.0
@@ -957,6 +1056,7 @@
    "partners": 23,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "etb": 0.45
@@ -968,6 +1068,7 @@
    "partners": 50,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "big_power": 2.25,
@@ -980,6 +1081,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Patriarch's Bidding": {
@@ -988,6 +1090,7 @@
    "partners": 1,
    "best_partner": "Ashling, Rekindled",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "graveyard": 0.75
    }
@@ -998,6 +1101,7 @@
    "partners": 32,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "type:Warrior": 6.0,
@@ -1013,6 +1117,7 @@
    "partners": 49,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "etb": 0.45
@@ -1024,6 +1129,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Vernal Sovereign": {
@@ -1032,6 +1138,7 @@
    "partners": 52,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 91.5,
     "go_wide": 2.25,
@@ -1046,6 +1153,7 @@
    "partners": 25,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Elemental": 30.0,
     "trigger_etb": 3.0,
@@ -1055,6 +1163,63 @@
   }
  },
  "combos": [],
+ "ramp": {
+  "avg_mv": 4.43,
+  "commander_mv": 3.0,
+  "expensive": [
+   "Ashling's Command",
+   "Avenger of Zendikar",
+   "Bane of Progress",
+   "Belonging",
+   "Blasphemous Act",
+   "Cavalier of Thorns",
+   "Fury",
+   "Grave Sifter",
+   "Greenwarden of Murasa",
+   "Harmonized Crescendo",
+   "Haunting Voyage",
+   "Horde of Notions",
+   "Impulsivity",
+   "Ingot Chewer",
+   "Jubilation",
+   "Kindred Discovery",
+   "Kindred Summons",
+   "Kulrath Zealot",
+   "Lamentation",
+   "Maelstrom Wanderer",
+   "Mass of Mysteries",
+   "Mulldrifter",
+   "Omni-Changeling",
+   "Patriarch's Bidding",
+   "Reflections of Littjara",
+   "Shinestriker",
+   "Shriekmaw",
+   "Subterfuge",
+   "Sunderflock",
+   "Titan of Industry",
+   "Vernal Sovereign",
+   "Yarok, the Desecrated"
+  ],
+  "commander_weight": 0.0,
+  "curve_bonus": 15.41,
+  "cards": [
+   "Arcane Signet",
+   "Ashling's Command",
+   "Ashling, Rekindled",
+   "Cavalier of Thorns",
+   "Cultivate",
+   "Faeburrow Elder",
+   "Farseek",
+   "Fellwar Stone",
+   "Flamebraider",
+   "Path to Exile",
+   "Rampant Growth",
+   "Risen Reef",
+   "Selvala, Heart of the Wilds",
+   "Smokebraider",
+   "Sol Ring"
+  ]
+ },
  "unmatched": [
   {
    "card": "Abundant Countryside",
@@ -14615,18 +14780,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Shapeshifter",
@@ -14765,67 +14930,11 @@
     "evidence": "is an instant/sorcery"
    },
    {
-    "tag": "type:Shapeshifter",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shapeshifter"
-   },
-   {
-    "tag": "type:Horror",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Horror"
-   },
-   {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Beast",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Beast"
-   },
-   {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
    },
    {
     "tag": "type:Elk",
@@ -14835,18 +14944,32 @@
     "evidence": "is a Elk"
    },
    {
-    "tag": "type:Sorcerer",
+    "tag": "type:Shapeshifter",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Sorcerer"
+    "evidence": "is a Shapeshifter"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Incarnation",
@@ -14856,13 +14979,6 @@
     "evidence": "is a Incarnation"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
@@ -14870,11 +14986,60 @@
     "evidence": "is a Elemental"
    },
    {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Sorcerer",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Sorcerer"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    },
    {
     "tag": "type:Shapeshifter",
@@ -14946,18 +15111,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Elemental",
@@ -14969,6 +15134,13 @@
   ],
   "Eclipsed Realms": [
    {
+    "tag": "type:Elemental",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "as ~ enters, choose elemental, elf, faerie, giant, goblin, kithkin, merfolk, or…"
+   },
+   {
     "tag": "type:Elf",
     "side": "C",
     "scope": "yours",
@@ -14977,13 +15149,6 @@
    },
    {
     "tag": "type:Treefolk",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "as ~ enters, choose elemental, elf, faerie, giant, goblin, kithkin, merfolk, or…"
-   },
-   {
-    "tag": "type:Elemental",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -15006,18 +15171,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "graveyard",
@@ -15044,18 +15209,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Farseek": [
@@ -15106,67 +15271,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shapeshifter",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shapeshifter"
-   },
-   {
-    "tag": "type:Horror",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Horror"
-   },
-   {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Beast",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Beast"
-   },
-   {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
    },
    {
     "tag": "type:Elk",
@@ -15176,18 +15285,32 @@
     "evidence": "is a Elk"
    },
    {
-    "tag": "type:Sorcerer",
+    "tag": "type:Shapeshifter",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Sorcerer"
+    "evidence": "is a Shapeshifter"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Incarnation",
@@ -15197,13 +15320,6 @@
     "evidence": "is a Incarnation"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
@@ -15211,11 +15327,60 @@
     "evidence": "is a Elemental"
    },
    {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Sorcerer",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Sorcerer"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Flamebraider": [
@@ -15227,18 +15392,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
    },
    {
     "tag": "type:Elemental",
@@ -15291,18 +15456,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Garruk's Uprising": [
@@ -15486,6 +15651,13 @@
     "evidence": "you may play target elemental card from your graveyard without paying its mana …"
    },
    {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
+   },
+   {
     "tag": "kw:Haste",
     "side": "P",
     "scope": "self",
@@ -15498,13 +15670,6 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Vigilance"
-   },
-   {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -15558,18 +15723,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Incandescent Soulstoke": [
@@ -15588,18 +15753,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elemental",
@@ -15649,18 +15814,18 @@
     "evidence": "power 5"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Jungle Shrine": [],
@@ -15689,18 +15854,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elemental",
@@ -15763,18 +15928,18 @@
     "evidence": "power 5"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Maelstrom Wanderer": [
@@ -15802,11 +15967,11 @@
   ],
   "Mass of Mysteries": [
    {
-    "tag": "kw:Vigilance",
+    "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Vigilance"
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "kw:First strike",
@@ -15816,11 +15981,11 @@
     "evidence": "keyword: First strike"
    },
    {
-    "tag": "kw:Trample",
+    "tag": "kw:Vigilance",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Trample"
+    "evidence": "keyword: Vigilance"
    },
    {
     "tag": "etb",
@@ -15972,67 +16137,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shapeshifter",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shapeshifter"
-   },
-   {
-    "tag": "type:Horror",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Horror"
-   },
-   {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Beast",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Beast"
-   },
-   {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
    },
    {
     "tag": "type:Elk",
@@ -16042,18 +16151,32 @@
     "evidence": "is a Elk"
    },
    {
-    "tag": "type:Sorcerer",
+    "tag": "type:Shapeshifter",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Sorcerer"
+    "evidence": "is a Shapeshifter"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Incarnation",
@@ -16063,13 +16186,6 @@
     "evidence": "is a Incarnation"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
@@ -16077,11 +16193,60 @@
     "evidence": "is a Elemental"
    },
    {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Sorcerer",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Sorcerer"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Opulent Palace": [],
@@ -16140,67 +16305,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shapeshifter",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shapeshifter"
-   },
-   {
-    "tag": "type:Horror",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Horror"
-   },
-   {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Beast",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Beast"
-   },
-   {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
    },
    {
     "tag": "type:Elk",
@@ -16210,18 +16319,32 @@
     "evidence": "is a Elk"
    },
    {
-    "tag": "type:Sorcerer",
+    "tag": "type:Shapeshifter",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Sorcerer"
+    "evidence": "is a Shapeshifter"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Incarnation",
@@ -16231,13 +16354,6 @@
     "evidence": "is a Incarnation"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
@@ -16245,11 +16361,60 @@
     "evidence": "is a Elemental"
    },
    {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Sorcerer",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Sorcerer"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Reflections of Littjara": [
@@ -16448,18 +16613,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elemental",
@@ -16532,18 +16697,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Sunderflock": [
@@ -16630,18 +16795,18 @@
     "evidence": "• create a 4/4 green rhino warrior creature token."
    },
    {
-    "tag": "kw:Reach",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Reach"
-   },
-   {
     "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Reach"
    },
    {
     "tag": "etb",
@@ -16761,18 +16926,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Elk",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elk"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Elemental",
@@ -16798,13 +16963,6 @@
     "evidence": "if a permanent entering causes a triggered ability of a permanent you control t…"
    },
    {
-    "tag": "kw:Deathtouch",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Deathtouch"
-   },
-   {
     "tag": "lifegain",
     "side": "P",
     "scope": "yours",
@@ -16817,6 +16975,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Lifelink"
+   },
+   {
+    "tag": "kw:Deathtouch",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Deathtouch"
    },
    {
     "tag": "etb",
@@ -16844,6 +17009,15 @@
  "cuts": {
   "candidates": [
    {
+    "name": "Haunting Voyage",
+    "cmc": 6.0,
+    "synergy": 2.25,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": -0.292
+   },
+   {
     "name": "Reflections of Littjara",
     "cmc": 5.0,
     "synergy": 0.0,
@@ -16853,22 +17027,13 @@
     "cut_score": -0.242
    },
    {
-    "name": "Haunting Voyage",
-    "cmc": 6.0,
-    "synergy": 2.25,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": -0.158
-   },
-   {
     "name": "Patriarch's Bidding",
     "cmc": 5.0,
     "synergy": 0.75,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": -0.125
+    "cut_score": -0.192
    },
    {
     "name": "Impulsivity",
@@ -16877,7 +17042,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.067
+    "cut_score": 0.05
    },
    {
     "name": "Jubilation",
@@ -16886,7 +17051,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.242
+    "cut_score": 0.225
    },
    {
     "name": "Avenger of Zendikar",
@@ -16895,7 +17060,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.267
+    "cut_score": 0.233
    },
    {
     "name": "Yarok, the Desecrated",
@@ -16904,7 +17069,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.325
+    "cut_score": 0.308
    },
    {
     "name": "Belonging",
@@ -16913,7 +17078,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.358
+    "cut_score": 0.325
    },
    {
     "name": "Omni-Changeling",
@@ -16922,7 +17087,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.392
+    "cut_score": 0.375
    },
    {
     "name": "Flock Impostor",
@@ -16931,13 +17096,22 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.542
+    "cut_score": 0.525
    },
    {
-    "name": "Ashling, Rekindled",
-    "cmc": 2.0,
-    "synergy": 37.95,
-    "cmdr_fit": 3.0,
+    "name": "Vernal Sovereign",
+    "cmc": 6.0,
+    "synergy": 101.5,
+    "cmdr_fit": 6.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.575
+   },
+   {
+    "name": "Mass of Mysteries",
+    "cmc": 5.0,
+    "synergy": 97.2,
+    "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
     "cut_score": 0.575
@@ -16949,25 +17123,7 @@
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.6
-   },
-   {
-    "name": "Vernal Sovereign",
-    "cmc": 6.0,
-    "synergy": 101.5,
-    "cmdr_fit": 6.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.642
-   },
-   {
-    "name": "Mass of Mysteries",
-    "cmc": 5.0,
-    "synergy": 97.2,
-    "cmdr_fit": 6.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.642
+    "cut_score": 0.583
    },
    {
     "name": "Horde of Notions",
@@ -16976,7 +17132,7 @@
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.692
+    "cut_score": 0.625
    },
    {
     "name": "Champion of the Path",
@@ -16985,7 +17141,16 @@
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.7
+    "cut_score": 0.633
+   },
+   {
+    "name": "Ashling, Rekindled",
+    "cmc": 2.0,
+    "synergy": 53.36,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.708
    },
    {
     "name": "Incandescent Soulstoke",
@@ -16994,7 +17159,7 @@
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.858
+    "cut_score": 0.792
    },
    {
     "name": "Brighthearth Banneret",
@@ -17003,7 +17168,7 @@
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.958
+    "cut_score": 0.892
    }
   ],
   "role_cards": [
@@ -17020,6 +17185,17 @@
     "cut_score": -0.492
    },
    {
+    "name": "Kindred Summons",
+    "cmc": 7.0,
+    "synergy": 3.75,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": -0.367
+   },
+   {
     "name": "Harmonized Crescendo",
     "cmc": 6.0,
     "synergy": 0.0,
@@ -17032,15 +17208,27 @@
     "cut_score": -0.358
    },
    {
-    "name": "Kindred Summons",
-    "cmc": 7.0,
-    "synergy": 3.75,
-    "cmdr_fit": 0.0,
+    "name": "Kindred Discovery",
+    "cmc": 5.0,
+    "synergy": 10.0,
+    "cmdr_fit": 0.3,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": -0.125
+   },
+   {
+    "name": "Descendants' Fury",
+    "cmc": 4.0,
+    "synergy": 9.0,
+    "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
-    "cut_score": -0.233
+    "cut_score": -0.083
    },
    {
     "name": "Bane of Progress",
@@ -17052,7 +17240,7 @@
      "board-wipe",
      "removal"
     ],
-    "cut_score": -0.042
+    "cut_score": -0.058
    },
    {
     "name": "Shinestriker",
@@ -17064,168 +17252,7 @@
      "card-advantage",
      "draw"
     ],
-    "cut_score": -0.042
-   },
-   {
-    "name": "Arcane Signet",
-    "cmc": 2.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": -0.025
-   },
-   {
-    "name": "Fellwar Stone",
-    "cmc": 2.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": -0.025
-   },
-   {
-    "name": "Maelstrom Wanderer",
-    "cmc": 8.0,
-    "synergy": 34.2,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.0
-   },
-   {
-    "name": "Path to Exile",
-    "cmc": 1.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "removal",
-     "tutor"
-    ],
-    "cut_score": 0.0
-   },
-   {
-    "name": "Sol Ring",
-    "cmc": 1.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": 0.0
-   },
-   {
-    "name": "Kindred Discovery",
-    "cmc": 5.0,
-    "synergy": 10.0,
-    "cmdr_fit": 0.3,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.008
-   },
-   {
-    "name": "Faeburrow Elder",
-    "cmc": 3.0,
-    "synergy": 1.45,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "mana-dork",
-     "ramp"
-    ],
-    "cut_score": 0.042
-   },
-   {
-    "name": "Descendants' Fury",
-    "cmc": 4.0,
-    "synergy": 9.0,
-    "cmdr_fit": 2.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.05
-   },
-   {
-    "name": "Cultivate",
-    "cmc": 3.0,
-    "synergy": 2.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": 0.058
-   },
-   {
-    "name": "Fury",
-    "cmc": 5.0,
-    "synergy": 31.95,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "removal"
-    ],
-    "cut_score": 0.075
-   },
-   {
-    "name": "Ingot Chewer",
-    "cmc": 5.0,
-    "synergy": 31.95,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "removal"
-    ],
-    "cut_score": 0.075
-   },
-   {
-    "name": "Mulldrifter",
-    "cmc": 5.0,
-    "synergy": 31.95,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.075
-   },
-   {
-    "name": "Shriekmaw",
-    "cmc": 5.0,
-    "synergy": 31.95,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "removal"
-    ],
-    "cut_score": 0.075
-   },
-   {
-    "name": "Subterfuge",
-    "cmc": 5.0,
-    "synergy": 31.95,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.075
+    "cut_score": -0.058
    },
    {
     "name": "Shatter the Sky",
@@ -17239,7 +17266,75 @@
      "draw",
      "removal"
     ],
-    "cut_score": 0.083
+    "cut_score": -0.05
+   },
+   {
+    "name": "Maelstrom Wanderer",
+    "cmc": 8.0,
+    "synergy": 34.2,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": -0.017
+   },
+   {
+    "name": "Fury",
+    "cmc": 5.0,
+    "synergy": 31.95,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.058
+   },
+   {
+    "name": "Ingot Chewer",
+    "cmc": 5.0,
+    "synergy": 31.95,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.058
+   },
+   {
+    "name": "Mulldrifter",
+    "cmc": 5.0,
+    "synergy": 31.95,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.058
+   },
+   {
+    "name": "Shriekmaw",
+    "cmc": 5.0,
+    "synergy": 31.95,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.058
+   },
+   {
+    "name": "Subterfuge",
+    "cmc": 5.0,
+    "synergy": 31.95,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.058
    },
    {
     "name": "Lamentation",
@@ -17250,31 +17345,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.125
-   },
-   {
-    "name": "Farseek",
-    "cmc": 2.0,
-    "synergy": 2.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": 0.125
-   },
-   {
-    "name": "Rampant Growth",
-    "cmc": 2.0,
-    "synergy": 2.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": 0.125
+    "cut_score": 0.108
    },
    {
     "name": "Foundation Breaker",
@@ -17285,7 +17356,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.133
+    "cut_score": 0.117
    },
    {
     "name": "Slithermuse",
@@ -17297,7 +17368,41 @@
      "card-advantage",
      "draw"
     ],
-    "cut_score": 0.133
+    "cut_score": 0.117
+   },
+   {
+    "name": "Faeburrow Elder",
+    "cmc": 3.0,
+    "synergy": 16.86,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.125
+   },
+   {
+    "name": "Arcane Signet",
+    "cmc": 2.0,
+    "synergy": 15.41,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.125
+   },
+   {
+    "name": "Fellwar Stone",
+    "cmc": 2.0,
+    "synergy": 15.41,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.125
    },
    {
     "name": "Grave Sifter",
@@ -17308,7 +17413,43 @@
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.158
+    "cut_score": 0.142
+   },
+   {
+    "name": "Cultivate",
+    "cmc": 3.0,
+    "synergy": 17.41,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.142
+   },
+   {
+    "name": "Path to Exile",
+    "cmc": 1.0,
+    "synergy": 15.41,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "removal",
+     "tutor"
+    ],
+    "cut_score": 0.15
+   },
+   {
+    "name": "Sol Ring",
+    "cmc": 1.0,
+    "synergy": 15.41,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.15
    },
    {
     "name": "Kulrath Zealot",
@@ -17319,6 +17460,17 @@
     "roles": [
      "card-advantage",
      "tutor"
+    ],
+    "cut_score": 0.175
+   },
+   {
+    "name": "Greenwarden of Murasa",
+    "cmc": 6.0,
+    "synergy": 36.95,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
     ],
     "cut_score": 0.192
    },
@@ -17335,27 +17487,26 @@
     "cut_score": 0.192
    },
    {
-    "name": "Greenwarden of Murasa",
-    "cmc": 6.0,
-    "synergy": 36.95,
-    "cmdr_fit": 3.0,
+    "name": "Farseek",
+    "cmc": 2.0,
+    "synergy": 17.41,
+    "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage"
+     "ramp",
+     "tutor"
     ],
     "cut_score": 0.208
    },
    {
-    "name": "Selvala, Heart of the Wilds",
-    "cmc": 3.0,
-    "synergy": 23.15,
-    "cmdr_fit": 0.3,
+    "name": "Rampant Growth",
+    "cmc": 2.0,
+    "synergy": 17.41,
+    "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage",
-     "draw",
-     "mana-dork",
-     "ramp"
+     "ramp",
+     "tutor"
     ],
     "cut_score": 0.208
    },
@@ -17368,18 +17519,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.3
-   },
-   {
-    "name": "Endurance",
-    "cmc": 3.0,
-    "synergy": 32.7,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "graveyard-hate"
-    ],
-    "cut_score": 0.375
+    "cut_score": 0.267
    },
    {
     "name": "Sunderflock",
@@ -17391,34 +17531,44 @@
      "board-wipe",
      "removal"
     ],
-    "cut_score": 0.392
+    "cut_score": 0.325
+   },
+   {
+    "name": "Endurance",
+    "cmc": 3.0,
+    "synergy": 32.7,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "graveyard-hate"
+    ],
+    "cut_score": 0.358
    },
    {
     "name": "Cavalier of Thorns",
     "cmc": 5.0,
-    "synergy": 38.95,
+    "synergy": 54.36,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
      "card-advantage",
      "ramp"
     ],
-    "cut_score": 0.392
+    "cut_score": 0.508
    },
    {
-    "name": "Ashling's Command",
-    "cmc": 5.0,
-    "synergy": 94.5,
-    "cmdr_fit": 6.0,
+    "name": "Selvala, Heart of the Wilds",
+    "cmc": 3.0,
+    "synergy": 38.56,
+    "cmdr_fit": 0.3,
     "combo_piece": false,
     "roles": [
-     "board-wipe",
      "card-advantage",
      "draw",
-     "ramp",
-     "removal"
+     "mana-dork",
+     "ramp"
     ],
-    "cut_score": 0.525
+    "cut_score": 0.508
    },
    {
     "name": "Realmwalker",
@@ -17429,7 +17579,7 @@
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.542
+    "cut_score": 0.525
    },
    {
     "name": "Crib Swap",
@@ -17440,7 +17590,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.608
+    "cut_score": 0.575
    },
    {
     "name": "Eclipsed Flamekin",
@@ -17451,43 +17601,22 @@
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.692
+    "cut_score": 0.675
    },
    {
-    "name": "Risen Reef",
-    "cmc": 3.0,
-    "synergy": 94.95,
+    "name": "Ashling's Command",
+    "cmc": 5.0,
+    "synergy": 109.91,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [
+     "board-wipe",
      "card-advantage",
-     "ramp"
+     "draw",
+     "ramp",
+     "removal"
     ],
-    "cut_score": 0.692
-   },
-   {
-    "name": "Flamebraider",
-    "cmc": 2.0,
-    "synergy": 94.95,
-    "cmdr_fit": 6.0,
-    "combo_piece": false,
-    "roles": [
-     "mana-dork",
-     "ramp"
-    ],
-    "cut_score": 0.758
-   },
-   {
-    "name": "Smokebraider",
-    "cmc": 2.0,
-    "synergy": 94.95,
-    "cmdr_fit": 6.0,
-    "combo_piece": false,
-    "roles": [
-     "mana-dork",
-     "ramp"
-    ],
-    "cut_score": 0.758
+    "cut_score": 0.708
    },
    {
     "name": "Omnath, Locus of the Roil",
@@ -17500,7 +17629,7 @@
      "draw",
      "removal"
     ],
-    "cut_score": 0.783
+    "cut_score": 0.717
    },
    {
     "name": "Flamekin Harbinger",
@@ -17511,7 +17640,43 @@
     "roles": [
      "tutor"
     ],
-    "cut_score": 0.783
+    "cut_score": 0.767
+   },
+   {
+    "name": "Risen Reef",
+    "cmc": 3.0,
+    "synergy": 110.36,
+    "cmdr_fit": 6.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "ramp"
+    ],
+    "cut_score": 0.875
+   },
+   {
+    "name": "Flamebraider",
+    "cmc": 2.0,
+    "synergy": 110.36,
+    "cmdr_fit": 6.0,
+    "combo_piece": false,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.942
+   },
+   {
+    "name": "Smokebraider",
+    "cmc": 2.0,
+    "synergy": 110.36,
+    "cmdr_fit": 6.0,
+    "combo_piece": false,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.942
    }
   ]
  }

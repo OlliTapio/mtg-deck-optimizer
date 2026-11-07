@@ -253,6 +253,40 @@ class TestCombos:
         assert not r['cards']['Vigor']['combo_piece']
 
 
+class TestRamp:
+    DORK = _card('Llanowar Elves', 'Creature — Elf Druid', '{T}: Add {G}.', power=1, cmc=1)
+    ROCK = _card('Mind Stone', 'Artifact', '{T}: Add {C}.', cmc=2)
+
+    @staticmethod
+    def _cmdr(cmc):
+        return _card('Big Boss', 'Legendary Creature — Giant', '', power=6, cmc=cmc)
+
+    @staticmethod
+    def _spells(cmc, n=6):
+        return [_card(f'Spell {cmc}-{i}', 'Sorcery', 'Target player sacrifices a land.', cmc=cmc) for i in range(n)]
+
+    def test_detects_ramp_not_lands(self):
+        from synergy import is_ramp
+        land = _card('Forest Thing', 'Land', '{T}: Add {G}.', cmc=0)
+        assert is_ramp(self.DORK) and is_ramp(self.ROCK) and not is_ramp(land)
+
+    def test_expensive_commander_values_ramp_more(self):
+        cheap = compute_synergy([self._cmdr(3), self.DORK], 'Big Boss')
+        pricey = compute_synergy([self._cmdr(7), self.DORK], 'Big Boss')
+        assert cheap['cards']['Llanowar Elves']['cmdr_fit'] == 0
+        assert pricey['cards']['Llanowar Elves']['cmdr_fit'] > 0
+
+    def test_high_curve_values_ramp_more(self):
+        low = compute_synergy([self._cmdr(3), self.DORK, self.ROCK] + self._spells(2), 'Big Boss')
+        high = compute_synergy([self._cmdr(3), self.DORK, self.ROCK] + self._spells(6), 'Big Boss')
+        assert high['cards']['Mind Stone']['total'] > low['cards']['Mind Stone']['total']
+        assert low['cards']['Mind Stone']['ramp_bonus'] == 0
+
+    def test_ramp_is_not_a_combo_piece(self):
+        r = compute_synergy([self._cmdr(7), self.DORK], 'Big Boss')
+        assert not r['cards']['Llanowar Elves']['combo_piece']
+
+
 class TestCuts:
     def test_low_synergy_high_cmc_first_and_roles_apart(self):
         filler = _card('Big Vanilla', 'Creature — Beast', '', power=5, cmc=7)

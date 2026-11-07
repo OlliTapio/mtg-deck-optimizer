@@ -129,13 +129,22 @@ def fetch_combos(card_names, commanders=(), refresh=False):
 # ==================== Bracket check ====================
 
 def deck_bracket(decklist):
-    """Read 'Bracket: N' from the deck's CLAUDE.md, or None."""
-    path = os.path.join(os.path.dirname(os.path.abspath(decklist)), 'CLAUDE.md')
-    if not os.path.exists(path):
-        return None
-    with open(path) as f:
-        m = re.search(r'bracket\W{0,4}\s*(\d)', f.read(), re.IGNORECASE)
-    return int(m.group(1)) if m else None
+    """Target bracket: 'Bracket: N' in the deck's CLAUDE.md, else the bracket set on
+    Archidekt (source.json from archidekt.py), else None."""
+    folder = os.path.dirname(os.path.abspath(decklist))
+    path = os.path.join(folder, 'CLAUDE.md')
+    if os.path.exists(path):
+        with open(path) as f:
+            m = re.search(r'bracket\W{0,4}\s*(\d)', f.read(), re.IGNORECASE)
+        if m:
+            return int(m.group(1))
+    src = os.path.join(folder, 'source.json')
+    if os.path.exists(src):
+        with open(src) as f:
+            b = json.load(f).get('bracket')
+        if isinstance(b, int) and 1 <= b <= 5:
+            return min(b, 4)
+    return None
 
 
 def bracket_flag(combo, bracket):

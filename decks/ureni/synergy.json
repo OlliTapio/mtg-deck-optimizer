@@ -62,13 +62,15 @@
  ],
  "cards": {
   "Ureni of the Unwritten": {
-   "total": 155.0,
+   "total": 222.5,
    "cmdr_fit": 0.0,
-   "partners": 44,
-   "best_partner": "Deceptive Frostkite",
+   "partners": 53,
+   "best_partner": "Bloomvine Regent // Claim Territory",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
+    "ramp": 36.0,
     "big_power": 5.25,
     "kw:Flying": 1.5,
     "type:Spirit": 1.0,
@@ -81,6 +83,7 @@
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -94,6 +97,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Blasphemous Act": {
@@ -102,16 +106,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Bloomvine Regent // Claim Territory": {
-   "total": 79.5,
-   "cmdr_fit": 6.0,
+   "total": 93.51,
+   "cmdr_fit": 8.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
     "type:Dragon": 69.0,
+    "ramp": 14.01,
     "big_power": 5.25,
     "kw:Flying": 1.5,
     "etb": 0.75
@@ -123,6 +130,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Brainstorm": {
@@ -131,29 +139,34 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Broodcaller Scourge": {
-   "total": 79.5,
-   "cmdr_fit": 6.0,
+   "total": 93.51,
+   "cmdr_fit": 8.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
     "type:Dragon": 69.0,
+    "ramp": 14.01,
     "big_power": 5.25,
     "kw:Flying": 1.5,
     "etb": 0.75
    }
   },
   "Carnelian Orb of Dragonkind": {
-   "total": 42.0,
-   "cmdr_fit": 3.0,
+   "total": 58.01,
+   "cmdr_fit": 7.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
-    "type:Dragon": 40.5
+    "type:Dragon": 40.5,
+    "ramp": 14.01
    }
   },
   "Chaos Warp": {
@@ -162,6 +175,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Cinder Glade": {
@@ -170,6 +184,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Command Tower": {
@@ -178,6 +193,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Counterspell": {
@@ -186,15 +202,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Cultivate": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 16.01,
+   "cmdr_fit": 4.0,
+   "partners": 1,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 12.006,
+   "themes": {
+    "ramp": 14.01
+   }
   },
   "Deceptive Frostkite": {
    "total": 93.75,
@@ -202,6 +222,7 @@
    "partners": 39,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 18.75,
@@ -215,6 +236,7 @@
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 40.5,
     "kw:Flying": 18.0,
@@ -222,13 +244,15 @@
    }
   },
   "Dragon's Hoard": {
-   "total": 42.0,
-   "cmdr_fit": 3.0,
+   "total": 58.01,
+   "cmdr_fit": 7.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
-    "type:Dragon": 40.5
+    "type:Dragon": 40.5,
+    "ramp": 14.01
    }
   },
   "Dragonlord Atarka": {
@@ -237,6 +261,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -250,6 +275,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -263,6 +289,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -275,18 +302,21 @@
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "etb": 5.05
    }
   },
   "Encroaching Dragonstorm": {
-   "total": 42.0,
-   "cmdr_fit": 3.0,
+   "total": 58.01,
+   "cmdr_fit": 7.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
-    "type:Dragon": 40.5
+    "type:Dragon": 40.5,
+    "ramp": 14.01
    }
   },
   "Essence Flux": {
@@ -295,6 +325,7 @@
    "partners": 3,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Spirit": 3.0
    }
@@ -305,6 +336,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Exotic Orchard": {
@@ -313,15 +345,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Farseek": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 16.01,
+   "cmdr_fit": 4.0,
+   "partners": 1,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 12.006,
+   "themes": {
+    "ramp": 14.01
+   }
   },
   "Flooded Grove": {
    "total": 0.0,
@@ -329,6 +365,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Forest": {
@@ -337,6 +374,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Frontier Bivouac": {
@@ -345,17 +383,20 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Frontier Siege": {
-   "total": 60.75,
-   "cmdr_fit": 4.5,
+   "total": 76.26,
+   "cmdr_fit": 8.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
     "type:Dragon": 40.5,
-    "kw:Flying": 18.0
+    "kw:Flying": 18.0,
+    "ramp": 14.01
    }
   },
   "Frostcliff Siege": {
@@ -364,6 +405,7 @@
    "partners": 2,
    "best_partner": "Lathliss, Dragon Queen",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "go_wide": 1.5
    }
@@ -374,6 +416,7 @@
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "big_power": 18.75,
     "etb": 5.05
@@ -385,6 +428,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -398,6 +442,7 @@
    "partners": 28,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 40.5,
     "graveyard": 1.5
@@ -409,6 +454,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -422,6 +468,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -430,13 +477,15 @@
    }
   },
   "Herd Heirloom": {
-   "total": 19.5,
-   "cmdr_fit": 1.5,
+   "total": 35.51,
+   "cmdr_fit": 5.5,
    "partners": 25,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
-    "big_power": 18.75
+    "big_power": 18.75,
+    "ramp": 14.01
    }
   },
   "Hinterland Harbor": {
@@ -445,6 +494,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Incinerator of the Guilty": {
@@ -453,6 +503,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -466,16 +517,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Jade Orb of Dragonkind": {
-   "total": 42.0,
-   "cmdr_fit": 3.0,
+   "total": 58.01,
+   "cmdr_fit": 7.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
-    "type:Dragon": 40.5
+    "type:Dragon": 40.5,
+    "ramp": 14.01
    }
   },
   "Karplusan Forest": {
@@ -484,25 +538,31 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Kiora, Behemoth Beckoner": {
-   "total": 5.2,
-   "cmdr_fit": 0.3,
+   "total": 21.21,
+   "cmdr_fit": 4.3,
    "partners": 29,
-   "best_partner": "Lathliss, Dragon Queen",
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
+    "ramp": 14.01,
     "etb": 5.05
    }
   },
   "Kodama's Reach": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 16.01,
+   "cmdr_fit": 4.0,
+   "partners": 1,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 12.006,
+   "themes": {
+    "ramp": 14.01
+   }
   },
   "Last Night Together": {
    "total": 0.0,
@@ -510,6 +570,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Lathliss, Dragon Queen": {
@@ -518,6 +579,7 @@
    "partners": 44,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -533,6 +595,7 @@
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -546,6 +609,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Marang River Regent // Coil and Catch": {
@@ -554,6 +618,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -563,12 +628,15 @@
    }
   },
   "Migration Path": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 16.01,
+   "cmdr_fit": 4.0,
+   "partners": 1,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 12.006,
+   "themes": {
+    "ramp": 14.01
+   }
   },
   "Miirym, Sentinel Wyrm": {
    "total": 82.5,
@@ -576,6 +644,7 @@
    "partners": 44,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -591,6 +660,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Mosswort Bridge": {
@@ -599,6 +669,7 @@
    "partners": 25,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "big_power": 18.75
    }
@@ -609,15 +680,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Nature's Lore": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 16.01,
+   "cmdr_fit": 4.0,
+   "partners": 1,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 12.006,
+   "themes": {
+    "ramp": 14.01
+   }
   },
   "Negate": {
    "total": 0.0,
@@ -625,6 +700,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Parapet Thrasher": {
@@ -633,6 +709,7 @@
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -646,15 +723,19 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Rampant Growth": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 16.01,
+   "cmdr_fit": 4.0,
+   "partners": 1,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 12.006,
+   "themes": {
+    "ramp": 14.01
+   }
   },
   "Return of the Wildspeaker": {
    "total": 21.0,
@@ -662,6 +743,7 @@
    "partners": 25,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "big_power": 18.75,
     "go_wide": 1.5
@@ -673,6 +755,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Rootbound Crag": {
@@ -681,15 +764,18 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Sakura-Tribe Elder": {
-   "total": 0.75,
-   "cmdr_fit": 0.0,
-   "partners": 5,
-   "best_partner": "Dragon Tempest",
+   "total": 16.76,
+   "cmdr_fit": 4.0,
+   "partners": 6,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 12.006,
    "themes": {
+    "ramp": 14.01,
     "etb": 0.75
    }
   },
@@ -699,6 +785,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -712,6 +799,7 @@
    "partners": 32,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 40.5,
     "etb": 0.75
@@ -723,6 +811,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -731,12 +820,15 @@
    }
   },
   "Selvala's Stampede": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 16.01,
+   "cmdr_fit": 4.0,
+   "partners": 1,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 12.006,
+   "themes": {
+    "ramp": 14.01
+   }
   },
   "Sheltered Thicket": {
    "total": 0.0,
@@ -744,6 +836,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Shivan Reef": {
@@ -752,6 +845,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Smuggler's Surprise": {
@@ -760,18 +854,22 @@
    "partners": 26,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "big_power": 18.75,
     "graveyard": 0.75
    }
   },
   "Sol Ring": {
-   "total": 0.0,
-   "cmdr_fit": 0.0,
-   "partners": 0,
-   "best_partner": null,
+   "total": 16.01,
+   "cmdr_fit": 4.0,
+   "partners": 1,
+   "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
-   "themes": {}
+   "ramp_bonus": 12.006,
+   "themes": {
+    "ramp": 14.01
+   }
   },
   "Spire Garden": {
    "total": 0.0,
@@ -779,6 +877,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Storm's Wrath": {
@@ -787,6 +886,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Sulfur Falls": {
@@ -795,6 +895,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Sword Coast Serpent // Capsizing Wave": {
@@ -803,6 +904,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -815,6 +917,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Temple of Abandon": {
@@ -823,6 +926,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Temple of Mystery": {
@@ -831,6 +935,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Temple of the Dragon Queen": {
@@ -839,6 +944,7 @@
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 40.5
    }
@@ -849,6 +955,7 @@
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "etb": 5.05
    }
@@ -859,6 +966,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -872,6 +980,7 @@
    "partners": 39,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "etb": 0.75
@@ -883,6 +992,7 @@
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -896,6 +1006,7 @@
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 22.5,
@@ -909,6 +1020,7 @@
    "partners": 31,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -923,6 +1035,7 @@
    "partners": 44,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -938,6 +1051,7 @@
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -951,6 +1065,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Cascade Bluffs": {
@@ -959,6 +1074,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Spinerock Knoll": {
@@ -967,6 +1083,7 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   },
   "Steam Vents": {
@@ -975,10 +1092,66 @@
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
+   "ramp_bonus": 0.0,
    "themes": {}
   }
  },
  "combos": [],
+ "ramp": {
+  "avg_mv": 4.28,
+  "commander_mv": 7.0,
+  "expensive": [
+   "Atarka, World Render",
+   "Blasphemous Act",
+   "Bloomvine Regent // Claim Territory",
+   "Broodcaller Scourge",
+   "Dragonlord Atarka",
+   "Drakuseth, Maw of Flames",
+   "Dread Linnorm // Scale Deflection",
+   "Hammerhead Tyrant",
+   "Hellkite Courser",
+   "Hellkite Tyrant",
+   "Incinerator of the Guilty",
+   "Last Night Together",
+   "Lathliss, Dragon Queen",
+   "Lozhan, Dragons' Legacy",
+   "Marang River Regent // Coil and Catch",
+   "Miirym, Sentinel Wyrm",
+   "Return of the Wildspeaker",
+   "Sapphire Dragon // Psionic Pulse",
+   "Scourge of the Throne",
+   "Selvala's Stampede",
+   "Sword Coast Serpent // Capsizing Wave",
+   "Terror of Mount Velus",
+   "Thrakkus the Butcher",
+   "Thunder Dragon",
+   "Ureni, the Song Unending",
+   "Utvara Hellkite",
+   "Whirlwing Stormbrood // Dynamic Soar"
+  ],
+  "commander_weight": 2.0,
+  "curve_bonus": 12.006,
+  "cards": [
+   "Bloomvine Regent // Claim Territory",
+   "Broodcaller Scourge",
+   "Carnelian Orb of Dragonkind",
+   "Cultivate",
+   "Dragon's Hoard",
+   "Encroaching Dragonstorm",
+   "Farseek",
+   "Frontier Siege",
+   "Herd Heirloom",
+   "Jade Orb of Dragonkind",
+   "Kiora, Behemoth Beckoner",
+   "Kodama's Reach",
+   "Migration Path",
+   "Nature's Lore",
+   "Rampant Growth",
+   "Sakura-Tribe Elder",
+   "Selvala's Stampede",
+   "Sol Ring"
+  ]
+ },
  "unmatched": [
   {
    "card": "Bloomvine Regent // Claim Territory",
@@ -1200,6 +1373,81 @@
  "bracket": 3,
  "pairs": [
   {
+   "a": "Bloomvine Regent // Claim Territory",
+   "b": "Ureni of the Unwritten",
+   "score": 8.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Bloomvine Regent // Claim Territory",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Bloomvine Regent // Claim Territory",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Bloomvine Regent // Claim Territory",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Broodcaller Scourge",
+   "b": "Ureni of the Unwritten",
+   "score": 8.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Broodcaller Scourge",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Broodcaller Scourge",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Broodcaller Scourge",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Frontier Siege",
+   "b": "Ureni of the Unwritten",
+   "score": 8.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Frontier Siege",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Frontier Siege",
+     "weight": 1.5
+    },
+    {
+     "tag": "kw:Flying",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Frontier Siege",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
    "a": "Deceptive Frostkite",
    "b": "Ureni of the Unwritten",
    "score": 7.5,
@@ -1225,6 +1473,82 @@
    ]
   },
   {
+   "a": "Carnelian Orb of Dragonkind",
+   "b": "Ureni of the Unwritten",
+   "score": 7.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Carnelian Orb of Dragonkind",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Carnelian Orb of Dragonkind",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dragon's Hoard",
+   "b": "Ureni of the Unwritten",
+   "score": 7.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Dragon's Hoard",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Dragon's Hoard",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Encroaching Dragonstorm",
+   "b": "Ureni of the Unwritten",
+   "score": 7.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Encroaching Dragonstorm",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Encroaching Dragonstorm",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Jade Orb of Dragonkind",
+   "b": "Ureni of the Unwritten",
+   "score": 7.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Jade Orb of Dragonkind",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    },
+    {
+     "tag": "type:Dragon",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Jade Orb of Dragonkind",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
    "a": "Atarka, World Render",
    "b": "Ureni of the Unwritten",
    "score": 6.0,
@@ -1239,44 +1563,6 @@
      "tag": "type:Dragon",
      "producer": "Ureni of the Unwritten",
      "payoff": "Atarka, World Render",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Bloomvine Regent // Claim Territory",
-   "b": "Ureni of the Unwritten",
-   "score": 6.0,
-   "reasons": [
-    {
-     "tag": "type:Dragon",
-     "producer": "Bloomvine Regent // Claim Territory",
-     "payoff": "Ureni of the Unwritten",
-     "weight": 1.5
-    },
-    {
-     "tag": "type:Dragon",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Bloomvine Regent // Claim Territory",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Broodcaller Scourge",
-   "b": "Ureni of the Unwritten",
-   "score": 6.0,
-   "reasons": [
-    {
-     "tag": "type:Dragon",
-     "producer": "Broodcaller Scourge",
-     "payoff": "Ureni of the Unwritten",
-     "weight": 1.5
-    },
-    {
-     "tag": "type:Dragon",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Broodcaller Scourge",
      "weight": 1.5
     }
    ]
@@ -1415,6 +1701,25 @@
    ]
   },
   {
+   "a": "Herd Heirloom",
+   "b": "Ureni of the Unwritten",
+   "score": 5.5,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Herd Heirloom",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    },
+    {
+     "tag": "big_power",
+     "producer": "Ureni of the Unwritten",
+     "payoff": "Herd Heirloom",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
    "a": "Dragon Tempest",
    "b": "Ureni of the Unwritten",
    "score": 4.8,
@@ -1459,21 +1764,21 @@
    ]
   },
   {
-   "a": "Frontier Siege",
+   "a": "Kiora, Behemoth Beckoner",
    "b": "Ureni of the Unwritten",
-   "score": 4.5,
+   "score": 4.3,
    "reasons": [
     {
-     "tag": "type:Dragon",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Frontier Siege",
-     "weight": 1.5
+     "tag": "ramp",
+     "producer": "Kiora, Behemoth Beckoner",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
     },
     {
-     "tag": "kw:Flying",
+     "tag": "etb",
      "producer": "Ureni of the Unwritten",
-     "payoff": "Frontier Siege",
-     "weight": 0.75
+     "payoff": "Kiora, Behemoth Beckoner",
+     "weight": 0.15
     }
    ]
   },
@@ -1549,6 +1854,123 @@
      "producer": "Utvara Hellkite",
      "payoff": "Miirym, Sentinel Wyrm",
      "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Cultivate",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Cultivate",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    }
+   ]
+  },
+  {
+   "a": "Farseek",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Farseek",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    }
+   ]
+  },
+  {
+   "a": "Kodama's Reach",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Kodama's Reach",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    }
+   ]
+  },
+  {
+   "a": "Migration Path",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Migration Path",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    }
+   ]
+  },
+  {
+   "a": "Nature's Lore",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Nature's Lore",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    }
+   ]
+  },
+  {
+   "a": "Rampant Growth",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Rampant Growth",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    }
+   ]
+  },
+  {
+   "a": "Sakura-Tribe Elder",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Sakura-Tribe Elder",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    }
+   ]
+  },
+  {
+   "a": "Selvala's Stampede",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Selvala's Stampede",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
+    }
+   ]
+  },
+  {
+   "a": "Sol Ring",
+   "b": "Ureni of the Unwritten",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Sol Ring",
+     "payoff": "Ureni of the Unwritten",
+     "weight": 2.0
     }
    ]
   },
@@ -2416,19 +2838,6 @@
    ]
   },
   {
-   "a": "Carnelian Orb of Dragonkind",
-   "b": "Ureni of the Unwritten",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "type:Dragon",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Carnelian Orb of Dragonkind",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
    "a": "Deceptive Frostkite",
    "b": "Thrakkus the Butcher",
    "score": 3.0,
@@ -2448,32 +2857,6 @@
    ]
   },
   {
-   "a": "Dragon's Hoard",
-   "b": "Ureni of the Unwritten",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "type:Dragon",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Dragon's Hoard",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Encroaching Dragonstorm",
-   "b": "Ureni of the Unwritten",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "type:Dragon",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Encroaching Dragonstorm",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
    "a": "Haven of the Spirit Dragon",
    "b": "Ureni of the Unwritten",
    "score": 3.0,
@@ -2482,19 +2865,6 @@
      "tag": "type:Dragon",
      "producer": "Ureni of the Unwritten",
      "payoff": "Haven of the Spirit Dragon",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Jade Orb of Dragonkind",
-   "b": "Ureni of the Unwritten",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "type:Dragon",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Jade Orb of Dragonkind",
      "weight": 1.5
     }
    ]
@@ -8669,19 +9039,6 @@
    ]
   },
   {
-   "a": "Herd Heirloom",
-   "b": "Ureni of the Unwritten",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Herd Heirloom",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Mosswort Bridge",
    "b": "Ureni of the Unwritten",
    "score": 1.5,
@@ -10775,19 +11132,6 @@
    ]
   },
   {
-   "a": "Kiora, Behemoth Beckoner",
-   "b": "Ureni of the Unwritten",
-   "score": 0.3,
-   "reasons": [
-    {
-     "tag": "etb",
-     "producer": "Ureni of the Unwritten",
-     "payoff": "Kiora, Behemoth Beckoner",
-     "weight": 0.15
-    }
-   ]
-  },
-  {
    "a": "Temur Ascendancy",
    "b": "Ureni of the Unwritten",
    "score": 0.3,
@@ -11924,18 +12268,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -12037,18 +12381,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    },
    {
     "tag": "type:Dragon",
@@ -12320,18 +12664,18 @@
     "evidence": "power 8"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Elder",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elder"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Drakuseth, Maw of Flames": [
@@ -12387,18 +12731,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Elemental Bond": [
@@ -13068,18 +13412,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    }
   ],
   "Migration Path": [
@@ -13135,18 +13479,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -13569,18 +13913,18 @@
   ],
   "Terror of Mount Velus": [
    {
-    "tag": "kw:Double strike",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Double strike"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Double strike",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Double strike"
    },
    {
     "tag": "etb",
@@ -13620,18 +13964,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Peasant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Peasant"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Peasant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Peasant"
    },
    {
     "tag": "type:Dragon",
@@ -13731,18 +14075,18 @@
     "evidence": "power 10"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Utvara Hellkite": [
@@ -13840,18 +14184,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    },
    {
     "tag": "type:Dragon",
@@ -13938,7 +14282,7 @@
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.333
+    "cut_score": 0.183
    },
    {
     "name": "Atarka, World Render",
@@ -13956,7 +14300,7 @@
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.483
+    "cut_score": 0.45
    },
    {
     "name": "Thrakkus the Butcher",
@@ -13965,7 +14309,7 @@
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.55
+    "cut_score": 0.533
    },
    {
     "name": "Whirlwing Stormbrood // Dynamic Soar",
@@ -13977,13 +14321,22 @@
     "cut_score": 0.567
    },
    {
+    "name": "Sarkhan, Soul Aflame",
+    "cmc": 3.0,
+    "synergy": 42.75,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.575
+   },
+   {
     "name": "Miirym, Sentinel Wyrm",
     "cmc": 6.0,
     "synergy": 82.5,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.617
+    "cut_score": 0.583
    },
    {
     "name": "Lathliss, Dragon Queen",
@@ -13992,16 +14345,7 @@
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.633
-   },
-   {
-    "name": "Sarkhan, Soul Aflame",
-    "cmc": 3.0,
-    "synergy": 42.75,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.642
+    "cut_score": 0.6
    },
    {
     "name": "Deceptive Frostkite",
@@ -14025,32 +14369,6 @@
      "removal"
     ],
     "cut_score": -0.5
-   },
-   {
-    "name": "Selvala's Stampede",
-    "cmc": 6.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "ramp"
-    ],
-    "cut_score": -0.333
-   },
-   {
-    "name": "Migration Path",
-    "cmc": 4.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw",
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": -0.233
    },
    {
     "name": "Storm's Wrath",
@@ -14087,28 +14405,16 @@
     "cut_score": -0.125
    },
    {
-    "name": "Cultivate",
-    "cmc": 3.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
+    "name": "Selvala's Stampede",
+    "cmc": 6.0,
+    "synergy": 16.01,
+    "cmdr_fit": 4.0,
     "combo_piece": false,
     "roles": [
-     "ramp",
-     "tutor"
+     "card-advantage",
+     "ramp"
     ],
-    "cut_score": -0.125
-   },
-   {
-    "name": "Kodama's Reach",
-    "cmc": 3.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": -0.125
+    "cut_score": -0.1
    },
    {
     "name": "Counterspell",
@@ -14118,18 +14424,6 @@
     "combo_piece": false,
     "roles": [
      "counterspell"
-    ],
-    "cut_score": -0.033
-   },
-   {
-    "name": "Farseek",
-    "cmc": 2.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
     ],
     "cut_score": -0.033
    },
@@ -14146,18 +14440,6 @@
     "cut_score": -0.033
    },
    {
-    "name": "Nature's Lore",
-    "cmc": 2.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": -0.033
-   },
-   {
     "name": "Negate",
     "cmc": 2.0,
     "synergy": 0.0,
@@ -14169,16 +14451,18 @@
     "cut_score": -0.033
    },
    {
-    "name": "Rampant Growth",
-    "cmc": 2.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
+    "name": "Migration Path",
+    "cmc": 4.0,
+    "synergy": 16.01,
+    "cmdr_fit": 4.0,
     "combo_piece": false,
     "roles": [
+     "card-advantage",
+     "draw",
      "ramp",
      "tutor"
     ],
-    "cut_score": -0.033
+    "cut_score": 0.0
    },
    {
     "name": "Brainstorm",
@@ -14193,15 +14477,16 @@
     "cut_score": 0.0
    },
    {
-    "name": "Sol Ring",
-    "cmc": 1.0,
-    "synergy": 0.0,
+    "name": "Frostcliff Siege",
+    "cmc": 3.0,
+    "synergy": 1.5,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
-     "ramp"
+     "card-advantage",
+     "draw"
     ],
-    "cut_score": 0.0
+    "cut_score": 0.042
    },
    {
     "name": "Sword Coast Serpent // Capsizing Wave",
@@ -14213,6 +14498,30 @@
      "removal"
     ],
     "cut_score": 0.058
+   },
+   {
+    "name": "Elemental Bond",
+    "cmc": 3.0,
+    "synergy": 5.2,
+    "cmdr_fit": 0.3,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.075
+   },
+   {
+    "name": "Temur Ascendancy",
+    "cmc": 3.0,
+    "synergy": 5.2,
+    "cmdr_fit": 0.3,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.075
    },
    {
     "name": "Dragonlord Atarka",
@@ -14260,6 +14569,30 @@
     "cut_score": 0.092
    },
    {
+    "name": "Cultivate",
+    "cmc": 3.0,
+    "synergy": 16.01,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.108
+   },
+   {
+    "name": "Kodama's Reach",
+    "cmc": 3.0,
+    "synergy": 16.01,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.108
+   },
+   {
     "name": "Return of the Wildspeaker",
     "cmc": 5.0,
     "synergy": 21.0,
@@ -14269,7 +14602,7 @@
      "card-advantage",
      "draw"
     ],
-    "cut_score": 0.15
+    "cut_score": 0.117
    },
    {
     "name": "Hammerhead Tyrant",
@@ -14295,18 +14628,6 @@
     "cut_score": 0.167
    },
    {
-    "name": "Frostcliff Siege",
-    "cmc": 3.0,
-    "synergy": 1.5,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.192
-   },
-   {
     "name": "Ureni, the Song Unending",
     "cmc": 8.0,
     "synergy": 41.5,
@@ -14318,53 +14639,64 @@
     "cut_score": 0.2
    },
    {
-    "name": "Elemental Bond",
-    "cmc": 3.0,
-    "synergy": 5.2,
-    "cmdr_fit": 0.3,
+    "name": "Farseek",
+    "cmc": 2.0,
+    "synergy": 16.01,
+    "cmdr_fit": 4.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage",
-     "draw"
+     "ramp",
+     "tutor"
     ],
-    "cut_score": 0.225
+    "cut_score": 0.2
+   },
+   {
+    "name": "Nature's Lore",
+    "cmc": 2.0,
+    "synergy": 16.01,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.2
+   },
+   {
+    "name": "Rampant Growth",
+    "cmc": 2.0,
+    "synergy": 16.01,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.2
+   },
+   {
+    "name": "Sol Ring",
+    "cmc": 1.0,
+    "synergy": 16.01,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.233
    },
    {
     "name": "Kiora, Behemoth Beckoner",
     "cmc": 3.0,
-    "synergy": 5.2,
-    "cmdr_fit": 0.3,
+    "synergy": 21.21,
+    "cmdr_fit": 4.3,
     "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
      "ramp"
     ],
-    "cut_score": 0.225
-   },
-   {
-    "name": "Temur Ascendancy",
-    "cmc": 3.0,
-    "synergy": 5.2,
-    "cmdr_fit": 0.3,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.225
-   },
-   {
-    "name": "Sakura-Tribe Elder",
-    "cmc": 2.0,
-    "synergy": 0.75,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": 0.267
+    "cut_score": 0.292
    },
    {
     "name": "Garruk's Uprising",
@@ -14376,7 +14708,7 @@
      "card-advantage",
      "draw"
     ],
-    "cut_score": 0.325
+    "cut_score": 0.308
    },
    {
     "name": "Marang River Regent // Coil and Catch",
@@ -14392,17 +14724,16 @@
     "cut_score": 0.333
    },
    {
-    "name": "Herd Heirloom",
+    "name": "Sakura-Tribe Elder",
     "cmc": 2.0,
-    "synergy": 19.5,
-    "cmdr_fit": 1.5,
+    "synergy": 16.76,
+    "cmdr_fit": 4.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage",
-     "draw",
-     "ramp"
+     "ramp",
+     "tutor"
     ],
-    "cut_score": 0.367
+    "cut_score": 0.333
    },
    {
     "name": "Smuggler's Surprise",
@@ -14413,30 +14744,32 @@
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.417
+    "cut_score": 0.383
    },
    {
-    "name": "Broodcaller Scourge",
-    "cmc": 7.0,
-    "synergy": 79.5,
-    "cmdr_fit": 6.0,
+    "name": "Herd Heirloom",
+    "cmc": 2.0,
+    "synergy": 35.51,
+    "cmdr_fit": 5.5,
     "combo_piece": false,
     "roles": [
+     "card-advantage",
+     "draw",
      "ramp"
     ],
-    "cut_score": 0.442
+    "cut_score": 0.417
    },
    {
     "name": "Encroaching Dragonstorm",
     "cmc": 4.0,
-    "synergy": 42.0,
-    "cmdr_fit": 3.0,
+    "synergy": 58.01,
+    "cmdr_fit": 7.0,
     "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.467
+    "cut_score": 0.483
    },
    {
     "name": "Thundermane Dragon",
@@ -14450,16 +14783,15 @@
     "cut_score": 0.55
    },
    {
-    "name": "Bloomvine Regent // Claim Territory",
-    "cmc": 5.0,
-    "synergy": 79.5,
-    "cmdr_fit": 6.0,
+    "name": "Broodcaller Scourge",
+    "cmc": 7.0,
+    "synergy": 93.51,
+    "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
-     "ramp",
-     "tutor"
+     "ramp"
     ],
-    "cut_score": 0.567
+    "cut_score": 0.558
    },
    {
     "name": "Lozhan, Dragons' Legacy",
@@ -14473,51 +14805,51 @@
     "cut_score": 0.567
    },
    {
-    "name": "Frontier Siege",
-    "cmc": 4.0,
-    "synergy": 60.75,
-    "cmdr_fit": 4.5,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "removal"
-    ],
-    "cut_score": 0.567
-   },
-   {
     "name": "Carnelian Orb of Dragonkind",
     "cmc": 3.0,
-    "synergy": 42.0,
-    "cmdr_fit": 3.0,
+    "synergy": 58.01,
+    "cmdr_fit": 7.0,
     "combo_piece": false,
     "roles": [
      "ramp"
     ],
-    "cut_score": 0.575
+    "cut_score": 0.592
    },
    {
     "name": "Dragon's Hoard",
     "cmc": 3.0,
-    "synergy": 42.0,
-    "cmdr_fit": 3.0,
+    "synergy": 58.01,
+    "cmdr_fit": 7.0,
     "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
      "ramp"
     ],
-    "cut_score": 0.575
+    "cut_score": 0.592
    },
    {
     "name": "Jade Orb of Dragonkind",
     "cmc": 3.0,
-    "synergy": 42.0,
-    "cmdr_fit": 3.0,
+    "synergy": 58.01,
+    "cmdr_fit": 7.0,
     "combo_piece": false,
     "roles": [
      "ramp"
     ],
-    "cut_score": 0.575
+    "cut_score": 0.592
+   },
+   {
+    "name": "Frontier Siege",
+    "cmc": 4.0,
+    "synergy": 76.26,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "removal"
+    ],
+    "cut_score": 0.6
    },
    {
     "name": "Parapet Thrasher",
@@ -14532,6 +14864,18 @@
     "cut_score": 0.617
    },
    {
+    "name": "Bloomvine Regent // Claim Territory",
+    "cmc": 5.0,
+    "synergy": 93.51,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.683
+   },
+   {
     "name": "Dragon Tempest",
     "cmc": 2.0,
     "synergy": 65.95,
@@ -14540,7 +14884,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.783
+    "cut_score": 0.767
    }
   ]
  }
