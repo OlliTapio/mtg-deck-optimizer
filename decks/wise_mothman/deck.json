@@ -22,7 +22,7 @@
       "mill",
       "evasion"
     ],
-    "price_eur": null,
+    "price_eur": "11.05",
     "set": "pip",
     "number": "4",
     "foil": true,
@@ -49,7 +49,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "6.99",
+      "price_eur": "5.72",
       "set": "pip",
       "number": "89",
       "foil": false,
@@ -79,7 +79,7 @@
         "removal",
         "evasion"
       ],
-      "price_eur": "0.85",
+      "price_eur": "2.98",
       "set": "pip",
       "number": "91",
       "foil": false,
@@ -110,7 +110,7 @@
         "ramp",
         "mana-dork"
       ],
-      "price_eur": "3.30",
+      "price_eur": "3.69",
       "set": "mom",
       "number": "177",
       "foil": false,
@@ -135,7 +135,7 @@
       "otags": [
         "removal"
       ],
-      "price_eur": "0.12",
+      "price_eur": "1.66",
       "set": "acr",
       "number": "95",
       "foil": false,
@@ -162,7 +162,7 @@
       "otags": [
         "removal"
       ],
-      "price_eur": "13.40",
+      "price_eur": "11.62",
       "set": "pip",
       "number": "94",
       "foil": false,
@@ -196,7 +196,7 @@
         "mana-dork",
         "evasion"
       ],
-      "price_eur": "10.63",
+      "price_eur": "8.23",
       "set": "rvr",
       "number": "133",
       "foil": false,
@@ -223,7 +223,7 @@
         "removal",
         "tutor"
       ],
-      "price_eur": "0.20",
+      "price_eur": "0.14",
       "set": "khm",
       "number": "206",
       "foil": false,
@@ -249,7 +249,7 @@
         "G"
       ],
       "otags": [],
-      "price_eur": "2.40",
+      "price_eur": "2.59",
       "set": "otj",
       "number": "266",
       "foil": false,
@@ -271,7 +271,7 @@
       "keywords": [],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "3.28",
+      "price_eur": "6.78",
       "set": "pip",
       "number": "195",
       "foil": false,
@@ -297,7 +297,7 @@
       "otags": [
         "removal"
       ],
-      "price_eur": "0.24",
+      "price_eur": "0.36",
       "set": "one",
       "number": "161",
       "foil": false,
@@ -324,7 +324,7 @@
         "draw",
         "card-advantage"
       ],
-      "price_eur": "0.19",
+      "price_eur": "0.21",
       "set": "nph",
       "number": "26",
       "foil": false,
@@ -350,7 +350,7 @@
         "W"
       ],
       "otags": [],
-      "price_eur": "0.19",
+      "price_eur": "0.20",
       "set": "pip",
       "number": "259",
       "foil": false,
@@ -377,7 +377,7 @@
       "otags": [
         "removal"
       ],
-      "price_eur": "5.12",
+      "price_eur": "11.17",
       "set": "pip",
       "number": "82",
       "foil": false,
@@ -400,7 +400,7 @@
       "keywords": [],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "0.65",
+      "price_eur": "0.78",
       "set": "pip",
       "number": "214",
       "foil": false,
@@ -425,7 +425,7 @@
       "otags": [
         "counterspell"
       ],
-      "price_eur": "0.29",
+      "price_eur": "0.91",
       "set": "dmu",
       "number": "180",
       "foil": false,
@@ -451,7 +451,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.21",
+      "price_eur": "0.26",
       "set": "pip",
       "number": "260",
       "foil": false,
@@ -482,7 +482,7 @@
         "ramp",
         "mana-dork"
       ],
-      "price_eur": "1.65",
+      "price_eur": "3.25",
       "set": "fdn",
       "number": "148",
       "foil": false,
@@ -508,7 +508,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "1.73",
+      "price_eur": null,
       "set": "pip",
       "number": "262",
       "foil": false,
@@ -533,7 +533,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "2.08",
+      "price_eur": "2.64",
       "set": "lcc",
       "number": "240",
       "foil": false,
@@ -559,7 +559,7 @@
       "otags": [
         "graveyard-hate"
       ],
-      "price_eur": "1.26",
+      "price_eur": "2.03",
       "set": "pip",
       "number": "256",
       "foil": false,
@@ -585,7 +585,7 @@
         "W"
       ],
       "otags": [],
-      "price_eur": "0.14",
+      "price_eur": null,
       "set": "pip",
       "number": "264",
       "foil": false,
@@ -610,7 +610,7 @@
         "ramp",
         "tutor"
       ],
-      "price_eur": "0.90",
+      "price_eur": "0.70",
       "set": "pip",
       "number": "197",
       "foil": false,
@@ -666,7 +666,7 @@
         "recursion",
         "card-advantage"
       ],
-      "price_eur": "0.16",
+      "price_eur": "0.32",
       "set": "pip",
       "number": "216",
       "foil": false,
@@ -690,7 +690,7 @@
         "G"
       ],
       "otags": [],
-      "price_eur": "0.10",
+      "price_eur": null,
       "set": "pip",
       "number": "325",
       "foil": false,
@@ -724,7 +724,7 @@
         "card-advantage",
         "graveyard-hate"
       ],
-      "price_eur": "0.15",
+      "price_eur": "0.14",
       "set": "dsk",
       "number": "225",
       "foil": false,
@@ -749,7 +749,7 @@
         "draw",
         "card-advantage"
       ],
-      "price_eur": "11.85",
+      "price_eur": null,
       "set": "pip",
       "number": "199",
       "foil": false,
@@ -771,7 +771,7 @@
       "keywords": [],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "1.98",
+      "price_eur": "2.24",
       "set": "pip",
       "number": "200",
       "foil": false,
@@ -792,8 +792,10 @@
       ],
       "keywords": [],
       "produced_mana": [],
-      "otags": [],
-      "price_eur": "5.16",
+      "otags": [
+        "evasion"
+      ],
+      "price_eur": "8.54",
       "set": "lcc",
       "number": "158",
       "foil": false,
@@ -820,7 +822,7 @@
         "recursion",
         "card-advantage"
       ],
-      "price_eur": "0.19",
+      "price_eur": "0.20",
       "set": "mh3",
       "number": "151",
       "foil": false,
@@ -846,7 +848,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.14",
+      "price_eur": null,
       "set": "pip",
       "number": "267",
       "foil": false,
@@ -879,7 +881,7 @@
         "ramp",
         "mana-dork"
       ],
-      "price_eur": "1.45",
+      "price_eur": "1.67",
       "set": "moc",
       "number": "302",
       "foil": false,
@@ -903,7 +905,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "2.29",
+      "price_eur": "2.67",
       "set": "dmu",
       "number": "167",
       "foil": false,
@@ -929,7 +931,7 @@
       "otags": [
         "removal"
       ],
-      "price_eur": "2.09",
+      "price_eur": "1.40",
       "set": "mh3",
       "number": "153",
       "foil": false,
@@ -954,7 +956,7 @@
         "draw",
         "card-advantage"
       ],
-      "price_eur": "0.23",
+      "price_eur": "0.67",
       "set": "pip",
       "number": "203",
       "foil": false,
@@ -978,7 +980,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.11",
+      "price_eur": null,
       "set": "pip",
       "number": "319",
       "foil": false,
@@ -1000,7 +1002,7 @@
       "keywords": [],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "0.17",
+      "price_eur": "0.25",
       "set": "mh2",
       "number": "156",
       "foil": false,
@@ -1027,7 +1029,7 @@
         "draw",
         "card-advantage"
       ],
-      "price_eur": "0.45",
+      "price_eur": "0.48",
       "set": "sos",
       "number": "63",
       "foil": false,
@@ -1053,7 +1055,7 @@
         "mill",
         "card-advantage"
       ],
-      "price_eur": "0.24",
+      "price_eur": "0.28",
       "set": "pip",
       "number": "151",
       "foil": false,
@@ -1076,7 +1078,7 @@
       "keywords": [],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "0.76",
+      "price_eur": "0.95",
       "set": "clu",
       "number": "200",
       "foil": false,
@@ -1104,7 +1106,7 @@
         "mill",
         "card-advantage"
       ],
-      "price_eur": "0.23",
+      "price_eur": "0.52",
       "set": "pip",
       "number": "33",
       "foil": false,
@@ -1130,7 +1132,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "21.19",
+      "price_eur": "15.00",
       "set": "clb",
       "number": "357",
       "foil": false,
@@ -1155,7 +1157,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "9.95",
+      "price_eur": "9.32",
       "set": "pip",
       "number": "111",
       "foil": false,
@@ -1180,7 +1182,7 @@
         "ramp",
         "tutor"
       ],
-      "price_eur": "0.51",
+      "price_eur": "0.60",
       "set": "pip",
       "number": "204",
       "foil": false,
@@ -1204,7 +1206,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "1.90",
+      "price_eur": "2.71",
       "set": "war",
       "number": "46",
       "foil": false,
@@ -1230,7 +1232,7 @@
         "removal",
         "board-wipe"
       ],
-      "price_eur": "0.49",
+      "price_eur": "0.47",
       "set": "sos",
       "number": "241",
       "foil": false,
@@ -1256,7 +1258,7 @@
         "board-wipe",
         "mill"
       ],
-      "price_eur": "1.64",
+      "price_eur": "2.56",
       "set": "pip",
       "number": "47",
       "foil": false,
@@ -1284,7 +1286,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.17",
+      "price_eur": "0.20",
       "set": "pip",
       "number": "278",
       "foil": false,
@@ -1310,7 +1312,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.21",
+      "price_eur": "0.18",
       "set": "pip",
       "number": "152",
       "foil": false,
@@ -1338,7 +1340,7 @@
         "W"
       ],
       "otags": [],
-      "price_eur": "0.09",
+      "price_eur": null,
       "set": "pip",
       "number": "279",
       "foil": false,
@@ -1364,7 +1366,7 @@
       "otags": [
         "mill"
       ],
-      "price_eur": "3.37",
+      "price_eur": "3.50",
       "set": "plst",
       "number": "M19-68",
       "foil": false,
@@ -1392,7 +1394,7 @@
         "board-wipe",
         "evasion"
       ],
-      "price_eur": "0.23",
+      "price_eur": "0.29",
       "set": "war",
       "number": "99",
       "foil": false,
@@ -1452,39 +1454,39 @@
         "mana-dork",
         "card-advantage"
       ],
-      "price_eur": "1.13",
+      "price_eur": "0.99",
       "set": "fin",
       "number": "171",
       "foil": false,
       "buy": false
     },
     {
-      "name": "World Shaper",
+      "name": "Mole Man, Moloid Master",
       "count": 1,
-      "mana_cost": "{3}{G}",
-      "cmc": 4.0,
-      "type_line": "Creature \u2014 Merfolk Shaman",
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Human Villain",
       "types": [
         "Creature"
       ],
-      "oracle_text": "Whenever this creature attacks, you may mill three cards.\nWhen this creature dies, return all land cards from your graveyard to the battlefield tapped.",
+      "oracle_text": "You may play lands from your graveyard.\nLandfall \u2014 Whenever a land you control enters, create a 1/1 green Minion creature token named Moloid with \"Whenever this token attacks, you may mill a card.\"",
       "color_identity": [
         "G"
       ],
       "keywords": [
-        "Mill"
+        "Mill",
+        "Landfall"
       ],
       "produced_mana": [],
       "otags": [
-        "ramp",
         "mill",
         "recursion"
       ],
-      "price_eur": "6.47",
-      "set": "rix",
-      "number": "151",
+      "price_eur": "2.92",
+      "set": "msh",
+      "number": "177",
       "foil": false,
-      "buy": false
+      "buy": true
     },
     {
       "name": "Ray Fillet, Wave Warrior",
@@ -1509,7 +1511,7 @@
         "card-advantage",
         "evasion"
       ],
-      "price_eur": "0.02",
+      "price_eur": "0.38",
       "set": "tmc",
       "number": "14",
       "foil": false,
@@ -1533,7 +1535,7 @@
       "otags": [
         "recursion"
       ],
-      "price_eur": "7.75",
+      "price_eur": "8.91",
       "set": "tmp",
       "number": "151",
       "foil": false,
@@ -1557,7 +1559,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "3.00",
+      "price_eur": "4.46",
       "set": "lcc",
       "number": "77",
       "foil": false,
@@ -1582,7 +1584,7 @@
         "ramp",
         "tutor"
       ],
-      "price_eur": "0.43",
+      "price_eur": "0.54",
       "set": "tdc",
       "number": "266",
       "foil": false,
@@ -1607,7 +1609,7 @@
         "removal",
         "board-wipe"
       ],
-      "price_eur": "0.45",
+      "price_eur": "1.04",
       "set": "otc",
       "number": "24",
       "foil": false,
@@ -1633,7 +1635,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.47",
+      "price_eur": null,
       "set": "tmc",
       "number": "74",
       "foil": false,
@@ -1665,7 +1667,7 @@
         "mana-dork",
         "graveyard-hate"
       ],
-      "price_eur": "0.20",
+      "price_eur": "0.28",
       "set": "one",
       "number": "158",
       "foil": false,
@@ -1691,7 +1693,7 @@
       "otags": [
         "removal"
       ],
-      "price_eur": "1.62",
+      "price_eur": "1.54",
       "set": "blb",
       "number": "52",
       "foil": false,
@@ -1717,7 +1719,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.17",
+      "price_eur": null,
       "set": "pip",
       "number": "296",
       "foil": false,
@@ -1741,7 +1743,7 @@
         "B"
       ],
       "otags": [],
-      "price_eur": "0.10",
+      "price_eur": null,
       "set": "pip",
       "number": "321",
       "foil": false,
@@ -1763,7 +1765,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "2.05",
+      "price_eur": "2.50",
       "set": "fdn",
       "number": "258",
       "foil": false,
@@ -1789,7 +1791,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "1.01",
+      "price_eur": "0.92",
       "set": "sos",
       "number": "254",
       "foil": false,
@@ -1815,7 +1817,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "5.96",
+      "price_eur": "5.80",
       "set": "soc",
       "number": "107",
       "foil": false,
@@ -1830,7 +1832,7 @@
       "types": [
         "Creature"
       ],
-      "oracle_text": "Landfall \u2014 Whenever a land you control enters, you may get two rad counters.\n{T}: Put target land card in a graveyard that was milled this turn onto the battlefield under your control tapped.",
+      "oracle_text": "Landfall \u2014 Whenever a land you control enters, you may get two rad counters.\n{T}: Put target land card in a graveyard that was milled this turn onto the battlefield tapped under your control.",
       "color_identity": [
         "G"
       ],
@@ -1843,14 +1845,14 @@
         "mill",
         "recursion"
       ],
-      "price_eur": "0.41",
+      "price_eur": "0.47",
       "set": "pip",
       "number": "86",
       "foil": false,
       "buy": false
     },
     {
-      "name": "Fetid Pools",
+      "name": "Turbulent Wetlands",
       "count": 1,
       "mana_cost": "",
       "cmc": 0.0,
@@ -1858,27 +1860,22 @@
       "types": [
         "Land"
       ],
-      "oracle_text": "({T}: Add {U} or {B}.)\nThis land enters tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "oracle_text": "({T}: Add {U} or {B}.)\nThis land enters tapped unless your opponents control eight or more lands.",
       "color_identity": [
         "B",
         "U"
       ],
-      "keywords": [
-        "Cycling"
-      ],
+      "keywords": [],
       "produced_mana": [
         "B",
         "U"
       ],
-      "otags": [
-        "draw",
-        "card-advantage"
-      ],
-      "price_eur": "0.21",
-      "set": "akh",
-      "number": "243",
+      "otags": [],
+      "price_eur": "3.06",
+      "set": "frc",
+      "number": "18",
       "foil": false,
-      "buy": false
+      "buy": true
     },
     {
       "name": "Deathcap Glade",
@@ -1900,7 +1897,7 @@
         "G"
       ],
       "otags": [],
-      "price_eur": "1.77",
+      "price_eur": "2.52",
       "set": "sos",
       "number": "253",
       "foil": false,
@@ -1927,7 +1924,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.34",
+      "price_eur": "0.39",
       "set": "shm",
       "number": "273",
       "foil": false,
@@ -1951,7 +1948,7 @@
         "U"
       ],
       "otags": [],
-      "price_eur": "0.11",
+      "price_eur": null,
       "set": "pip",
       "number": "320",
       "foil": false,
@@ -1979,7 +1976,7 @@
         "counterspell",
         "evasion"
       ],
-      "price_eur": "0.85",
+      "price_eur": "0.76",
       "set": "blb",
       "number": "45",
       "foil": false,
@@ -2006,7 +2003,7 @@
       "otags": [
         "evasion"
       ],
-      "price_eur": "0.13",
+      "price_eur": "0.17",
       "set": "cmm",
       "number": "858",
       "foil": false,
@@ -2055,7 +2052,7 @@
       "otags": [
         "counterspell"
       ],
-      "price_eur": "3.15",
+      "price_eur": "3.14",
       "set": "ktk",
       "number": "56",
       "foil": false,
@@ -2082,7 +2079,7 @@
         "recursion",
         "card-advantage"
       ],
-      "price_eur": "0.43",
+      "price_eur": "0.59",
       "set": "one",
       "number": "191",
       "foil": false,
@@ -2106,7 +2103,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "0.68",
+      "price_eur": "0.49",
       "set": "fin",
       "number": "192",
       "foil": false,
@@ -2131,7 +2128,7 @@
       ],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "4.07",
+      "price_eur": "3.45",
       "set": "mh3",
       "number": "49",
       "foil": false,
@@ -2157,7 +2154,7 @@
         "G"
       ],
       "otags": [],
-      "price_eur": "0.33",
+      "price_eur": "0.66",
       "set": "tmc",
       "number": "81",
       "foil": false,
@@ -2185,7 +2182,7 @@
         "mill",
         "evasion"
       ],
-      "price_eur": "0.24",
+      "price_eur": "0.27",
       "set": "pip",
       "number": "41",
       "foil": false,
@@ -2211,7 +2208,7 @@
       "otags": [
         "recursion"
       ],
-      "price_eur": "10.97",
+      "price_eur": "5.70",
       "set": "tmc",
       "number": "53",
       "foil": false,
@@ -2237,7 +2234,7 @@
         "G"
       ],
       "otags": [],
-      "price_eur": "0.20",
+      "price_eur": "0.32",
       "set": "pip",
       "number": "154",
       "foil": false,
@@ -2261,7 +2258,7 @@
       "otags": [
         "lifegain"
       ],
-      "price_eur": "23.25",
+      "price_eur": "23.23",
       "set": "thb",
       "number": "236",
       "foil": false,
@@ -2284,7 +2281,7 @@
       "keywords": [],
       "produced_mana": [],
       "otags": [],
-      "price_eur": "0.25",
+      "price_eur": "0.36",
       "set": "pip",
       "number": "223",
       "foil": false,
@@ -2310,7 +2307,7 @@
         "G"
       ],
       "otags": [],
-      "price_eur": "0.66",
+      "price_eur": "1.26",
       "set": "pip",
       "number": "316",
       "foil": false,
@@ -2337,7 +2334,7 @@
       "otags": [
         "graveyard-hate"
       ],
-      "price_eur": "1.83",
+      "price_eur": "1.60",
       "set": "mh3",
       "number": "243",
       "foil": false,
@@ -2364,7 +2361,7 @@
         "G"
       ],
       "otags": [],
-      "price_eur": "1.42",
+      "price_eur": "1.34",
       "set": "mh3",
       "number": "256",
       "foil": false,
@@ -2393,7 +2390,7 @@
       "otags": [
         "removal"
       ],
-      "price_eur": "0.96",
+      "price_eur": "1.00",
       "set": "mh3",
       "number": "249",
       "foil": false,

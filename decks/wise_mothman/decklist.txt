@@ -67,7 +67,7 @@
 1x Dreamroot Cascade (sos) 254 [Land]
 1x Turbulent Wilderness (soc) 107 [Land]
 1x Tato Farmer (pip) 86 [Ramp,Creature]
-1x Fetid Pools (akh) 243 [Land]
+1x Turbulent Wetlands (frc) 18 [Land,Buy]
 1x Deathcap Glade (sos) 253 [Land,Buy]
 1x Flooded Grove (shm) 273 [Land,Buy]
 1x Island (pip) 320 [Land]

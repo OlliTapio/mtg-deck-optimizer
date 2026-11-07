@@ -75,3 +75,9 @@
 1x World Shaper (rix) 151 -> Mole Man, Moloid Master (msh, buy EUR2.86)
    Landfall Moloid tokens pair with Evolution Sage (landfall proliferate) and the token
    attack-mill feeds Mirelurk Queen's draw-on-mill trigger. Also recurs lands from GY.
+
+## 2026-11-07
+1x Fetid Pools (akh) 243 [Land] -> Turbulent Wetlands (frc, buy EUR3.06)
+   Same UB colours and Island Swamp types (still fetchable by Farseek), but enters untapped once
+   opponents control 8+ lands (about turn 3 in a 4-player game) instead of always tapped.
+   Loses Fetid Pools' cycling {2}. Considered Witch's Cottage too: skipped, needs 3 other Swamps.

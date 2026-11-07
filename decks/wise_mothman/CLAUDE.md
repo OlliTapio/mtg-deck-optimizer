@@ -41,7 +41,7 @@ Rad counters are **incidental** — chip damage and mill disruption, NOT the pri
 - Wave Goodbye chosen specifically because this deck's creatures always have +1/+1 counters (functionally one-sided)
 - Tainted Isle/Wood cut (Round 7): they produced only colorless without a Swamp in play — too fragile. Replaced with GU/BG slow + bond lands for unconditional fixing. This also relaxed the old "keep Swamp count high" constraint, since the only remaining Swamp-dependent lands (Drowned Catacomb, Woodland Cemetery) each have a Forest/Island fallback.
 - Manabase deliberately GU-skewed: green (48 pips, primary) and blue (24 pips, double-pip on Pensive/Wave Goodbye) were under-sourced vs black. Land color sources rebalanced to ~G22/U19/B20 to match pip share. GU duals are also the cheapest side of every land cycle.
-- Only 4 always-tapped lands kept, each for ETB value/fixing (Bojuka Bog, Opulent Palace, Path of Ancestry, Fetid Pools). (Mortuary Mire was the 5th, cut in Round 8 for a spell//land MDFC.) Pure-filler taplands (Haunted Mire, Tangled Islet) were cut for untapped/conditional lands.
+- Only 3 always-tapped lands kept, each for ETB value/fixing (Bojuka Bog, Opulent Palace, Path of Ancestry). Fetid Pools was the 4th, replaced by Turbulent Wetlands (2026-11-07). (Mortuary Mire was the 5th, cut in Round 8 for a spell//land MDFC.) Pure-filler taplands (Haunted Mire, Tangled Islet) were cut for untapped/conditional lands.
 - Stubborn Denial over more expensive counterspells — Ferocious is reliably online in this deck
 - Conduit of Worlds over Raul — keeps mana open for instant-speed interaction
 - Undead Alchemist was cut despite being on-theme — replacing combat damage with mill is anti-synergy with the counter beatdown plan
