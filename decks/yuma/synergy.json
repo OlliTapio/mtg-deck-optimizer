@@ -1848,6 +1848,36 @@
    "evidence": "+ {1} — put a +1/+1 counter on each creature target player controls."
   },
   {
+   "card": "Avenger of Zendikar",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "landfall — whenever a land you control enters, you may put a +1/+1 counter on e…"
+  },
+  {
+   "card": "Felidar Retreat",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "• put a +1/+1 counter on each creature you control."
+  },
+  {
+   "card": "Phylath, World Sculptor",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "landfall — whenever a land you control enters, put four +1/+1 counters on targe…"
+  },
+  {
+   "card": "Pyrrhic Strike",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "keyword: Blight"
+  },
+  {
+   "card": "Requisition Raid",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "+ {1} — put a +1/+1 counter on each creature target player controls."
+  },
+  {
    "card": "Bitter Reunion",
    "side": "produces",
    "tag": "discard",
@@ -3240,6 +3270,25 @@
    ]
   },
   {
+   "a": "Cactusfolk Sureshot",
+   "b": "Yuma, Proud Protector",
+   "score": 3.5,
+   "reasons": [
+    {
+     "tag": "type:Plant",
+     "producer": "Cactusfolk Sureshot",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 1.0
+    },
+    {
+     "tag": "big_power",
+     "producer": "Yuma, Proud Protector",
+     "payoff": "Cactusfolk Sureshot",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
    "a": "Hour of Promise",
    "b": "Shefet Dunes",
    "score": 3.5,
@@ -3285,25 +3334,6 @@
      "tag": "go_wide",
      "producer": "Dunes of the Dead",
      "payoff": "Shefet Dunes",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Cactusfolk Sureshot",
-   "b": "Yuma, Proud Protector",
-   "score": 3.5,
-   "reasons": [
-    {
-     "tag": "type:Plant",
-     "producer": "Cactusfolk Sureshot",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 1.0
-    },
-    {
-     "tag": "big_power",
-     "producer": "Yuma, Proud Protector",
-     "payoff": "Cactusfolk Sureshot",
      "weight": 0.75
     }
    ]
@@ -9229,32 +9259,6 @@
    ]
   },
   {
-   "a": "Avenger of Zendikar",
-   "b": "Dune Chanter",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Plant",
-     "producer": "Dune Chanter",
-     "payoff": "Avenger of Zendikar",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Dune Chanter",
-   "b": "Phylath, World Sculptor",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Plant",
-     "producer": "Dune Chanter",
-     "payoff": "Phylath, World Sculptor",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Hazezon, Shaper of Sand",
    "b": "Sand Scout",
    "score": 1.0,
@@ -9276,6 +9280,32 @@
      "tag": "type:Warrior",
      "producer": "Hazezon, Shaper of Sand",
      "payoff": "Desert Warfare",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Avenger of Zendikar",
+   "b": "Dune Chanter",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Plant",
+     "producer": "Dune Chanter",
+     "payoff": "Avenger of Zendikar",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Dune Chanter",
+   "b": "Phylath, World Sculptor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Plant",
+     "producer": "Dune Chanter",
+     "payoff": "Phylath, World Sculptor",
      "weight": 1.0
     }
    ]
@@ -12915,7 +12945,7 @@
     "evidence": "is a Ranger"
    },
    {
-    "tag": "type:Desert",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -12929,7 +12959,7 @@
     "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -13017,18 +13047,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Detective",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Detective"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Ancient Greenwarden": [
@@ -13212,6 +13242,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "when ~ enters, create a 0/1 green plant creature token for each land you contro…"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.25,
+    "evidence": "landfall — whenever a land you control enters, you may put a +1/+1 counter on e…"
    }
   ],
   "Bitter Reunion": [
@@ -13324,18 +13361,18 @@
     "evidence": "other creatures you control with power 4 or greater gain trample and haste unti…"
    },
    {
-    "tag": "kw:Reach",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Reach"
-   },
-   {
     "tag": "kw:Ward",
     "side": "P",
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Ward"
+   },
+   {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Reach"
    },
    {
     "tag": "etb",
@@ -13570,18 +13607,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Nymph",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Nymph"
-   },
-   {
     "tag": "type:Dryad",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dryad"
+   },
+   {
+    "tag": "type:Nymph",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Nymph"
    }
   ],
   "Dune Chanter": [
@@ -13607,13 +13644,6 @@
     "evidence": "mill two cards. you gain 1 life for each land card milled this way."
    },
    {
-    "tag": "kw:Reach",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Reach"
-   },
-   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -13626,6 +13656,13 @@
     "scope": "any",
     "strength": 1.25,
     "evidence": "keyword: Mill"
+   },
+   {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Reach"
    },
    {
     "tag": "etb",
@@ -13709,18 +13746,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Insect",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Insect"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    }
   ],
   "Embrace the Unknown": [
@@ -13848,6 +13885,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is an enchantment"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.25,
+    "evidence": "• put a +1/+1 counter on each creature you control."
    }
   ],
   "Forest": [],
@@ -14035,18 +14079,18 @@
     "evidence": "is a Warrior"
    },
    {
-    "tag": "type:Desert",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "desertwalk"
-   },
-   {
     "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever a desert you control enters, create two 1/1 red, green, and white sand…"
+   },
+   {
+    "tag": "type:Desert",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "desertwalk"
    }
   ],
   "Hour of Promise": [
@@ -14428,18 +14472,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Overwhelming Stampede": [
@@ -14546,6 +14590,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "when ~ enters, create a 0/1 green plant creature token for each basic land you …"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.25,
+    "evidence": "landfall — whenever a land you control enters, put four +1/+1 counters on targe…"
    }
   ],
   "Plains": [],
@@ -14614,6 +14665,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is an instant/sorcery"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
    }
   ],
   "Ramunap Excavator": [
@@ -14646,18 +14704,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Cleric",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Cleric"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Ramunap Ruins": [
@@ -14711,6 +14769,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is an instant/sorcery"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "+ {1} — put a +1/+1 counter on each creature target player controls."
    }
   ],
   "Return of the Wildspeaker": [
@@ -14794,18 +14859,18 @@
     "evidence": "is a Scout"
    },
    {
-    "tag": "type:Desert",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "when ~ enters, if an opponent controls more lands than you, search your library…"
-   },
-   {
     "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever one or more land cards are put into your graveyard from anywhere, crea…"
+   },
+   {
+    "tag": "type:Desert",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "when ~ enters, if an opponent controls more lands than you, search your library…"
    }
   ],
   "Satyr Wayfinder": [
@@ -15077,13 +15142,6 @@
     "evidence": "during your turn, nonland permanent cards in your graveyard have retrace."
    },
    {
-    "tag": "kw:Reach",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Reach"
-   },
-   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -15096,6 +15154,13 @@
     "scope": "any",
     "strength": 1.25,
     "evidence": "keyword: Mill"
+   },
+   {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Reach"
    },
    {
     "tag": "etb",
@@ -15172,18 +15237,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    },
    {
     "tag": "sacrifice",
@@ -15313,6 +15378,13 @@
     "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
    },
    {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Landfall"
+   },
+   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -15325,13 +15397,6 @@
     "scope": "any",
     "strength": 1.25,
     "evidence": "keyword: Mill"
-   },
-   {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
    },
    {
     "tag": "etb",
@@ -15485,18 +15550,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Desert",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever you sacrifice a desert and whenever a desert card is put into your gra…"
-   },
-   {
     "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "at the beginning of combat on your turn, if you control five or more deserts, c…"
+   },
+   {
+    "tag": "type:Desert",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever you sacrifice a desert and whenever a desert card is put into your gra…"
    },
    {
     "tag": "graveyard",
@@ -15721,18 +15786,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Insect",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Insect"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "sacrifice",

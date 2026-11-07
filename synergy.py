@@ -105,7 +105,7 @@ WINCON_PATTERN = re.compile(
     r"|lifeloss|life loss|infinite combat phases|infinite turns|infinite mill(?! of your)|opponents? mills?", re.I)
 
 TAG_WEIGHTS = {
-    'counters_p1p1': 1.0, 'counters_m1m1': 1.0, 'rad': 1.0, 'counters_any': 0.75, 'proliferate': 1.0,
+    'counters_p1p1': 1.0, 'counters_m1m1': 1.0, 'rad': 1.0, 'counters_present': 0.5, 'counters_any': 0.75, 'proliferate': 1.0,
     'token_creature': 1.0, 'token_artifact': 0.75, 'go_wide': 0.75,
     'sacrifice': 1.0, 'dies': 1.0, 'fodder': 1.0,
     'mill': 1.0, 'graveyard': 0.75, 'land_gy': 1.0, 'discard': 0.75,
@@ -117,7 +117,7 @@ TAG_WEIGHTS = {
 PREFIX_WEIGHTS = {'kw:': 0.75, 'type:': 1.0}
 
 TAG_LABELS = {
-    'counters_p1p1': '+1/+1 counters', 'counters_m1m1': '-1/-1 counters', 'rad': 'rad counters', 'counters_any': 'counters (any kind)',
+    'counters_p1p1': '+1/+1 counters', 'counters_present': 'counters to proliferate', 'counters_m1m1': '-1/-1 counters', 'rad': 'rad counters', 'counters_any': 'counters (any kind)',
     'proliferate': 'proliferate', 'token_creature': 'creature tokens', 'token_artifact': 'artifact tokens',
     'go_wide': 'go wide', 'sacrifice': 'sacrifice', 'dies': 'creatures dying', 'fodder': 'sacrifice fodder',
     'mill': 'mill', 'graveyard': 'graveyard', 'land_gy': 'lands in graveyard', 'discard': 'discard',
@@ -380,6 +380,7 @@ KEYWORD_FEATURES = {
 # more other producers of that counter, then full strength.
 PROLIFERATE_FEEDS = [('counters_p1p1', 0.5), ('counters_m1m1', 0.5), ('rad', 0.5), ('counters_any', 1.0)]
 PROLIFERATE_DENSE = 8
+COUNTER_AXES = ('counters_p1p1', 'counters_m1m1', 'rad')
 
 # Repeatable producers are worth more than one-shots:
 #   one-shot (instant/sorcery, "when ~ enters/dies", sacrifice ~)        x1.0
@@ -777,6 +778,20 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
                 features[n] = [f._replace(strength=round(f.strength * 2, 3))
                                if f.tag == axis and f.evidence == 'proliferate' else f for f in fs]
 
+    # Proliferate needs counters already on the board: every card that puts counters down
+    # (any axis, not proliferate itself) feeds every proliferate card.
+    for n, fs in list(features.items()):
+        extra = []
+        prolif = [f for f in fs if f.tag == 'proliferate' and f.side == 'P']
+        if prolif:
+            extra.append(Feature('counters_present', 'C', 'any', 'proliferate needs counters on the board',
+                                 max(f.strength for f in prolif)))
+        placed = [f for f in fs if f.side == 'P' and f.tag in COUNTER_AXES and f.evidence != 'proliferate']
+        if placed:
+            best = max(placed, key=lambda f: f.strength)
+            extra.append(Feature('counters_present', 'P', best.scope, best.evidence, best.strength))
+        features[n] = fs + extra
+
     # Commander-damage plan: counters that grow the commander pay off through it
     if commander_name in features and 'commander_damage' in plans:
         features[commander_name] = features[commander_name] + [Feature(
@@ -804,13 +819,17 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
     # Themes: total synergy per tag. Only tags with both sides present exist here.
     theme_mass = defaultdict(float)
     for m in matches.values():
-        theme_mass[m['tag']] += m['weight']
+        if m['tag'] != 'counters_present':  # part of the counter themes, not a theme of its own
+            theme_mass[m['tag']] += m['weight']
     ranked = sorted(theme_mass.items(), key=lambda kv: -kv[1])
     main_theme = ranked[0][0] if ranked else None
     subtheme = None
     if len(ranked) > 1 and ranked[1][1] >= SUBTHEME_MIN_SHARE * ranked[0][1]:
         subtheme = ranked[1][0]
     bonus = {main_theme: MAIN_THEME_BONUS, subtheme: SUBTHEME_BONUS}
+    bonus.pop(None, None)
+    # Counters placed for proliferate share the bonus of the deck's counter theme
+    bonus['counters_present'] = max([bonus.get(a, 1.0) for a in COUNTER_AXES])
 
     combo_matches = _combo_matches(views, combos, bracket)
     ramp = ramp_context(views, commander_name, bracket)

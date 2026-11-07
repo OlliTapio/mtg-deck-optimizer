@@ -1582,6 +1582,42 @@
    "evidence": "put three +1/+1 counters on target creature you control."
   },
   {
+   "card": "Dread Linnorm // Scale Deflection",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "put two +1/+1 counters on target creature and untap it."
+  },
+  {
+   "card": "Essence Flux",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "if it's a spirit, put a +1/+1 counter on it."
+  },
+  {
+   "card": "Jade Orb of Dragonkind",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "add {g}. when you spend this mana to cast a dragon creature spell, it enters wi…"
+  },
+  {
+   "card": "Last Night Together",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "put two +1/+1 counters on each of them."
+  },
+  {
+   "card": "Teferi's Time Twist",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "if it enters as a creature, it enters with an additional +1/+1 counter on it."
+  },
+  {
+   "card": "Whirlwing Stormbrood // Dynamic Soar",
+   "side": "produces",
+   "tag": "counters_present",
+   "evidence": "put three +1/+1 counters on target creature you control."
+  },
+  {
    "card": "Lathliss, Dragon Queen",
    "side": "produces",
    "tag": "fodder",
@@ -12541,18 +12577,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Spirit",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Spirit"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Spirit",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Spirit"
    },
    {
     "tag": "type:Dragon",
@@ -12654,18 +12690,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    },
    {
     "tag": "type:Dragon",
@@ -13004,6 +13040,13 @@
     "evidence": "power 7"
    },
    {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
+   },
+   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
@@ -13011,11 +13054,11 @@
     "evidence": "is a Snake"
    },
    {
-    "tag": "type:Dragon",
+    "tag": "counters_present",
     "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
+    "scope": "yours",
+    "strength": 1.25,
+    "evidence": "put two +1/+1 counters on target creature and untap it."
    }
   ],
   "Elemental Bond": [
@@ -13106,6 +13149,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "exile target creature you control, then return that card to the battlefield und…"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "if it's a spirit, put a +1/+1 counter on it."
    }
   ],
   "Evolving Wilds": [
@@ -13444,6 +13494,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "{t}: add {g}. when you spend this mana to cast a dragon creature spell, it ente…"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.25,
+    "evidence": "add {g}. when you spend this mana to cast a dragon creature spell, it enters wi…"
    }
   ],
   "Karplusan Forest": [],
@@ -13514,6 +13571,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is an instant/sorcery"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put two +1/+1 counters on each of them."
    }
   ],
   "Lathliss, Dragon Queen": [
@@ -13611,18 +13675,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Dragon",
@@ -13685,18 +13749,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    }
   ],
   "Migration Path": [
@@ -13752,18 +13816,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Spirit",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Spirit"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Spirit",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Spirit"
    },
    {
     "tag": "type:Dragon",
@@ -13911,18 +13975,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Sapphire Dragon // Psionic Pulse": [
@@ -14134,6 +14198,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is an instant/sorcery"
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "if it enters as a creature, it enters with an additional +1/+1 counter on it."
    }
   ],
   "Temple of Abandon": [],
@@ -14186,18 +14257,18 @@
   ],
   "Terror of Mount Velus": [
    {
-    "tag": "kw:Double strike",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Double strike"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Double strike",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Double strike"
    },
    {
     "tag": "etb",
@@ -14237,18 +14308,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Peasant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Peasant"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Peasant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Peasant"
    },
    {
     "tag": "type:Dragon",
@@ -14348,18 +14419,18 @@
     "evidence": "power 10"
    },
    {
-    "tag": "type:Spirit",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Spirit"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Spirit",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Spirit"
    }
   ],
   "Utvara Hellkite": [
@@ -14457,6 +14528,13 @@
     "evidence": "power 4"
    },
    {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
+   },
+   {
     "tag": "type:Omen",
     "side": "P",
     "scope": "self",
@@ -14465,17 +14543,17 @@
    },
    {
     "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
-    "tag": "type:Dragon",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "you may cast sorcery spells and dragon spells as though they had flash."
+   },
+   {
+    "tag": "counters_present",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.25,
+    "evidence": "put three +1/+1 counters on target creature you control."
    }
   ],
   "Yavimaya Coast": [],

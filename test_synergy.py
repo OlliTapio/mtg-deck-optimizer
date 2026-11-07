@@ -418,6 +418,20 @@ class TestRepeatAndProliferate:
         assert (_pair(dense, 'Dreamtide Whale', 'Hardened Scales')['score']
                 > _pair(sparse, 'Dreamtide Whale', 'Hardened Scales')['score'])
 
+    def test_proliferate_pairs_with_counter_producers(self):
+        growers = self._counter_deck(3)
+        r = compute_synergy([self.WHALE] + growers)
+        p = _pair(r, 'Dreamtide Whale', 'Grower 0')
+        assert p and any(x['tag'] == 'counters_present' for x in p['reasons'])
+        rad = _card('Rad Maker', 'Creature — Mutant', 'When this creature enters, target player gets two rad counters.',
+                    power=1)
+        assert _pair(compute_synergy([self.WHALE, rad]), 'Dreamtide Whale', 'Rad Maker')
+
+    def test_two_proliferators_do_not_pair_on_counters(self):
+        r = compute_synergy([self.WHALE, self.SORCERY_PROLIF])
+        p = _pair(r, 'Dreamtide Whale', "Tezzeret's Gambit")
+        assert p is None or all(x['tag'] != 'counters_present' for x in p['reasons'])
+
     def test_commander_damage_plan_pairs_counters_with_commander(self):
         views = [MOTHMAN, self.WHALE]
         plain = compute_synergy(views, 'The Wise Mothman')
