@@ -1188,7 +1188,7 @@
    },
    "ramp_kind": "land"
   },
-  "Fetid Pools": {
+  "Turbulent Wetlands": {
    "total": 0.0,
    "cmdr_fit": 0.0,
    "partners": 0,
@@ -1503,120 +1503,120 @@
    "notes": "Combo B in the deck's CLAUDE.md. Stops when a mill hits only lands; each draw is optional (Fathom Mage says 'may')."
   },
   {
-   "bracket_tag": "E",
+   "id": "1495-2265-4120",
+   "url": "https://commanderspellbook.com/combo/1495-2265-4120/",
    "cards": [
     "Vigor",
     "Triskelion",
     "Hardened Scales"
    ],
-   "id": "1495-2265-4120",
-   "identity": "G",
-   "infinite": true,
-   "mana_needed": "",
    "missing": [],
-   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
-   "popularity": 1143,
-   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "requires": [],
    "produces": [
     "Infinite damage",
     "Infinite +1/+1 counters on creatures you control"
    ],
-   "requires": [],
+   "infinite": true,
+   "bracket_tag": "E",
+   "identity": "G",
+   "popularity": 1145,
+   "mana_needed": "",
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
-   "url": "https://commanderspellbook.com/combo/1495-2265-4120/"
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor."
   },
   {
-   "bracket_tag": "E",
+   "id": "81-1495-4120",
+   "url": "https://commanderspellbook.com/combo/81-1495-4120/",
    "cards": [
     "Vigor",
     "Kami of Whispered Hopes",
     "Triskelion"
    ],
-   "id": "81-1495-4120",
-   "identity": "G",
-   "infinite": true,
-   "mana_needed": "",
    "missing": [],
-   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
-   "popularity": 888,
-   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "requires": [],
    "produces": [
     "Infinite colored mana",
     "Infinite damage",
     "Infinite +1/+1 counters on creatures you control"
    ],
-   "requires": [],
+   "infinite": true,
+   "bracket_tag": "E",
+   "identity": "G",
+   "popularity": 889,
+   "mana_needed": "",
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
-   "url": "https://commanderspellbook.com/combo/81-1495-4120/"
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor."
   },
   {
-   "bracket_tag": "E",
+   "id": "1495-2445-4120",
+   "url": "https://commanderspellbook.com/combo/1495-2445-4120/",
    "cards": [
     "Vigor",
     "Triskelion",
     "Branching Evolution"
    ],
-   "id": "1495-2445-4120",
-   "identity": "G",
-   "infinite": true,
-   "mana_needed": "",
    "missing": [],
-   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
-   "popularity": 840,
-   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "requires": [],
    "produces": [
     "Infinite damage",
     "Infinite +1/+1 counters on creatures you control"
    ],
-   "requires": [],
+   "infinite": true,
+   "bracket_tag": "E",
+   "identity": "G",
+   "popularity": 842,
+   "mana_needed": "",
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
-   "url": "https://commanderspellbook.com/combo/1495-2445-4120/"
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor."
   },
   {
-   "bracket_tag": "E",
+   "id": "855-1495-4120",
+   "url": "https://commanderspellbook.com/combo/855-1495-4120/",
    "cards": [
     "Vigor",
     "Corpsejack Menace",
     "Triskelion"
    ],
-   "id": "855-1495-4120",
-   "identity": "BG",
-   "infinite": true,
-   "mana_needed": "",
    "missing": [],
-   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
-   "popularity": 294,
-   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "requires": [],
    "produces": [
     "Infinite damage",
     "Infinite +1/+1 counters on creatures you control"
    ],
-   "requires": [],
+   "infinite": true,
+   "bracket_tag": "E",
+   "identity": "BG",
+   "popularity": 296,
+   "mana_needed": "",
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
-   "url": "https://commanderspellbook.com/combo/855-1495-4120/"
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor."
   },
   {
-   "bracket_tag": "E",
+   "id": "1495-3921-4120",
+   "url": "https://commanderspellbook.com/combo/1495-3921-4120/",
    "cards": [
     "Vigor",
     "Triskelion",
     "Winding Constrictor"
    ],
-   "id": "1495-3921-4120",
-   "identity": "BG",
-   "infinite": true,
-   "mana_needed": "",
    "missing": [],
-   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
-   "popularity": 178,
-   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "requires": [],
    "produces": [
     "Infinite damage",
     "Infinite +1/+1 counters on creatures you control"
    ],
-   "requires": [],
+   "infinite": true,
+   "bracket_tag": "E",
+   "identity": "BG",
+   "popularity": 180,
+   "mana_needed": "",
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
-   "url": "https://commanderspellbook.com/combo/1495-3921-4120/"
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor."
   }
  ],
  "ramp": {
@@ -14890,18 +14890,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Insect",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Insect"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Insect",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Insect"
    },
    {
     "tag": "counters_present",
@@ -14927,18 +14927,18 @@
   ],
   "Agent Frank Horrigan": [
    {
-    "tag": "proliferate",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.25,
-    "evidence": "keyword: Proliferate"
-   },
-   {
     "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.25,
+    "evidence": "keyword: Proliferate"
    },
    {
     "tag": "counters_p1p1",
@@ -15336,18 +15336,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Fungus",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Fungus"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "mill",
@@ -15446,18 +15446,18 @@
     "evidence": "~ enters with x +1/+1 counters on it."
    },
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Vigilance",
     "side": "P",
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Vigilance"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -15617,18 +15617,18 @@
   "Drowned Catacomb": [],
   "Evolution Sage": [
    {
-    "tag": "proliferate",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.25,
-    "evidence": "keyword: Proliferate"
-   },
-   {
     "tag": "landfall",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Landfall"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.25,
+    "evidence": "keyword: Proliferate"
    },
    {
     "tag": "counters_p1p1",
@@ -15666,18 +15666,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "mill",
@@ -15977,18 +15977,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Merfolk",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Merfolk"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    }
   ],
   "Evolution Witness": [
@@ -16021,6 +16021,13 @@
     "evidence": "is a creature"
    },
    {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
@@ -16033,13 +16040,6 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
    },
    {
     "tag": "counters_present",
@@ -16073,18 +16073,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "counters_present",
@@ -16138,18 +16138,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Wurm",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Wurm"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "counters_present",
@@ -16340,18 +16340,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
    },
    {
     "tag": "type:Mutant",
@@ -16970,18 +16970,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Fish",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Fish"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Fish",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Fish"
    },
    {
     "tag": "counters_present",
@@ -17081,18 +17081,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    },
    {
     "tag": "color:Green:permanent",
@@ -17229,11 +17229,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Zombie",
+    "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Zombie"
+    "evidence": "is a Mutant"
    },
    {
     "tag": "type:Peasant",
@@ -17243,11 +17243,11 @@
     "evidence": "is a Peasant"
    },
    {
-    "tag": "type:Mutant",
+    "tag": "type:Zombie",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Mutant"
+    "evidence": "is a Zombie"
    },
    {
     "tag": "graveyard",
@@ -17271,7 +17271,7 @@
     "evidence": "is a green permanent"
    }
   ],
-  "Fetid Pools": [],
+  "Turbulent Wetlands": [],
   "Deathcap Glade": [],
   "Flooded Grove": [],
   "Glen Elendra Guardian": [
@@ -17383,13 +17383,6 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Horror",
     "side": "P",
     "scope": "self",
@@ -17402,6 +17395,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Bird"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "mill",
@@ -17594,18 +17594,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Advisor",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Advisor"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Advisor",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Advisor"
    },
    {
     "tag": "mill",
@@ -17774,18 +17774,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Mutant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Mutant"
-   },
-   {
     "tag": "type:Bird",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Bird"
+   },
+   {
+    "tag": "type:Mutant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Mutant"
    },
    {
     "tag": "mill",
@@ -17839,18 +17839,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "graveyard",

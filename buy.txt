@@ -23,7 +23,6 @@
 1 Evolution Sage
 1 Evolution Witness
 1 Fathom Mage
-1 Fetid Pools
 1 Flotsam // Jetsam
 1 Flux Channeler
 1 Glen Elendra Guardian
@@ -45,6 +44,7 @@
 1 Tezzeret's Gambit
 1 Triskelion
 1 Tromell, Seymour's Butler
+1 Turbulent Wetlands
 1 Unnatural Restoration
 1 Vernal Fen
 1 Vicious Rivalry

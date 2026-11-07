@@ -180334,5 +180334,142 @@
       "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=771075&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
       "cardhoarder": "https://www.cardhoarder.com/cards/126307?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
     }
+  },
+  "turbulent wetlands": {
+    "object": "card",
+    "id": "8d86f7f8-492d-4e19-8b61-39084c6299ac",
+    "oracle_id": "b51c8659-ec4f-4213-beb1-49a7acd7366c",
+    "multiverse_ids": [],
+    "resource_id": "6CA4DE390D4F4EAFF548E90BC0803CEBC8CD508A0F4930C4DFC60E7D45342C63",
+    "mtgo_id": 156432,
+    "tcgplayer_id": 717732,
+    "cardmarket_id": 909811,
+    "name": "Turbulent Wetlands",
+    "lang": "en",
+    "released_at": "2026-10-02",
+    "uri": "https://api.scryfall.com/cards/8d86f7f8-492d-4e19-8b61-39084c6299ac",
+    "scryfall_uri": "https://scryfall.com/card/frc/18/turbulent-wetlands?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_status": "highres_scan",
+    "image_updated_at": "2026-09-17T11:22:59Z",
+    "image_uris": {
+      "small": "https://cards.scryfall.io/small/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.jpg?1789644179",
+      "normal": "https://cards.scryfall.io/normal/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.jpg?1789644179",
+      "large": "https://cards.scryfall.io/large/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.jpg?1789644179",
+      "png": "https://cards.scryfall.io/png/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.png?1789644179",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.jpg?1789644179",
+      "border_crop": "https://cards.scryfall.io/border_crop/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.jpg?1789644179",
+      "thumb": "https://cards.scryfall.io/thumb/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.webp?1789644179",
+      "grid": "https://cards.scryfall.io/grid/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.webp?1789644179",
+      "display": "https://cards.scryfall.io/display/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.webp?1789644179",
+      "art": "https://cards.scryfall.io/art/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.webp?1789644179",
+      "crop": "https://cards.scryfall.io/crop/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.webp?1789644179",
+      "jpeg": "https://cards.scryfall.io/normal/front/8/d/8d86f7f8-492d-4e19-8b61-39084c6299ac.jpg?1789644179"
+    },
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land — Island Swamp",
+    "oracle_text": "({T}: Add {U} or {B}.)\nThis land enters tapped unless your opponents control eight or more lands.",
+    "colors": [],
+    "color_identity": [
+      "B",
+      "U"
+    ],
+    "keywords": [],
+    "produced_mana": [
+      "B",
+      "U"
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "timeless": "not_legal",
+      "gladiator": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "not_legal",
+      "commander": "legal",
+      "oathbreaker": "legal",
+      "standardbrawl": "not_legal",
+      "brawl": "not_legal",
+      "competitivebrawl": "not_legal",
+      "alchemy": "not_legal",
+      "paupercommander": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal",
+      "premodern": "not_legal",
+      "predh": "not_legal",
+      "tlr": "legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "game_changer": false,
+    "foil": false,
+    "nonfoil": true,
+    "finishes": [
+      "nonfoil"
+    ],
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set_id": "cfd10490-7397-4143-bda7-d388b877636f",
+    "set": "frc",
+    "set_name": "Reality Fracture Commander",
+    "set_type": "commander",
+    "set_uri": "https://api.scryfall.com/sets/cfd10490-7397-4143-bda7-d388b877636f",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Afrc&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/frc?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/8d86f7f8-492d-4e19-8b61-39084c6299ac/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ab51c8659-ec4f-4213-beb1-49a7acd7366c&unique=prints",
+    "collector_number": "18",
+    "digital": false,
+    "rarity": "rare",
+    "flavor_text": "\"There is a deep sadness here . . . one I had not thought possible in this reality. Is it my understanding that's flawed or the Theorist's?\"\n—-Tam, field notes",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Piotr Dura",
+    "artist_ids": [
+      "aff176e8-1d15-432e-ad1d-207a474decba"
+    ],
+    "illustration_id": "02ab9d63-267b-4ffa-b373-4b5ad19a3fa8",
+    "border_color": "black",
+    "frame": "2015",
+    "security_stamp": "oval",
+    "full_art": false,
+    "textless": false,
+    "booster": false,
+    "story_spotlight": false,
+    "edhrec_rank": 6188,
+    "preview": {
+      "source": "Wizards of the Coast",
+      "source_uri": "https://youtu.be/mvTyHbTbfBo",
+      "previewed_at": "2026-09-16"
+    },
+    "prices": {
+      "usd": "3.06",
+      "usd_foil": null,
+      "usd_etched": null,
+      "eur": "3.06",
+      "eur_foil": null,
+      "tix": "1.21"
+    },
+    "related_uris": {
+      "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DTurbulent%2BWetlands",
+      "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DTurbulent%2BWetlands",
+      "edhrec": "https://edhrec.com/route/?cc=Turbulent+Wetlands"
+    },
+    "purchase_uris": {
+      "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F717732%3Fpage%3D1",
+      "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=909811&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+      "cardhoarder": "https://www.cardhoarder.com/cards/156432?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+    }
   }
 }
