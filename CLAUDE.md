@@ -5,6 +5,12 @@ Tools for Claude to analyze and improve Commander/EDH decks during conversations
 ## Commands
 
 ```bash
+# Pull a public deck from Archidekt into decks/<deck>/decklist.txt (+ source.json), optionally score it
+python3 archidekt.py pull https://archidekt.com/decks/<id>/<slug> [--deck <folder>] [--synergy]
+python3 archidekt.py pull decks/<deck>          # re-pull a deck that has a source.json
+python3 archidekt.py pull --all                 # re-pull every deck with a source.json
+python3 archidekt.py search "Deck name"         # find public decks
+
 # Full deck analysis (types, curve, otag categories, template check)
 python3 deck_analyzer.py decks/<deck>/decklist.txt
 
@@ -14,11 +20,21 @@ python3 deck_analyzer.py decks/<deck>/decklist.txt --oracle
 # Instant vs sorcery speed interaction breakdown
 python3 deck_analyzer.py decks/<deck>/decklist.txt --speed
 
-# Cut candidates sorted by CMC, flagging cards with no otags
+# Cut candidates: low synergy + high mana value first, role cards (removal, ramp, draw) listed apart
 python3 deck_analyzer.py decks/<deck>/decklist.txt --cuts
 
 # Search oracle text across all cards
 python3 deck_analyzer.py decks/<deck>/decklist.txt --search "rad counter"
+
+# Synergy: themes, best pairs, commander fit, per-card totals, with the card text behind every score
+python3 synergy.py decks/<deck>/decklist.txt
+python3 synergy.py decks/<deck>/decklist.txt --card "Card Name"   # one card's partners (judge a swap)
+python3 synergy.py decks/<deck>/decklist.txt --cuts               # cut candidates by synergy + mana value
+python3 synergy.py decks/<deck>/decklist.txt --features           # what was read from each card
+python3 synergy.py decks/<deck>/decklist.txt --save               # write decks/<deck>/synergy.json
+
+# Known combos (Commander Spellbook): combos in the deck, near-misses, bracket flags
+python3 combos.py decks/<deck>/decklist.txt [--almost 30] [--prices] [--json] [--refresh]
 
 # Simulate opening hands
 python3 hand_simulator.py decks/<deck>/decklist.txt [n_hands]
@@ -136,11 +152,40 @@ Each deck specifies its bracket in its CLAUDE.md. Never suggest cards that viola
 - **Multicolor:** Grand Arbiter Augustin IV, Aura Shards, Coalition Victory
 - **Colorless/Land:** Ancient Tomb, Chrome Mox, The One Ring, The Tabernacle at Pendrell Vale, Grim Monolith, Lion's Eye Diamond, Mox Diamond, Mana Vault, Glacial Chasm, Mishra's Workshop, Field of the Dead, Panoptic Mirror, Farewell, Biorhythm, Gifts Ungiven
 
+## Synergy calculator (`synergy.py`)
+Reads keywords, types and triggers, tags each card with what it **produces** and what it **cares about**, and scores pairs where one feeds the other.
+- A theme counts only when the deck has both a producer and a payoff (ten foretell cards with no cast-from-exile payoff score 0). Denser themes score more.
+- Main theme x1.5, subtheme x1.25, pairs with the commander x2.
+- Counter axes are separate: +1/+1, -1/-1, rad. Rad counters also count as mill. Proliferate feeds all of them.
+- Regex reading of rules text misses unusual wording. Check surprising scores with `--card` / `--features` and the oracle text before trusting them.
+- Known combos from Commander Spellbook add a pair bonus between every two pieces (2.0). Combos that win the game (damage, life loss, opponent mill, extra turns, "win the game") get an extra bonus that drops fast with the deck's target bracket: +6.0 in bracket 4, +2.1 in 3, +0.74 in 2, +0.26 in 1. Combo pieces are never cut candidates.
+- Ramp scoring (spell // land MDFCs are land drops, not ramp):
+  - Commander pair: base 1.0 for a 4-MV commander (+0.5 per MV above, max 2.5, 0 at MV 3 or less), x1.0 if the ramp costs <= commander MV - 2 (commander a turn early), x0.5 at MV - 1, 0 otherwise. Creature ramp x1.5. Then the x2 commander bonus.
+  - Curve: 0.25 x (average MV - 2.5, capped 0..2) x number of 5+ MV spells, per ramp card.
+  - Land ramp (lands onto the battlefield survive board wipes): +0.25 per expected turn above 5. Expected game length by bracket: 1 = 10 turns, 2 = 9, 3 = 7, 4 = 5.
+- Protection (grants hexproof/shroud/indestructible/protection, phasing) pairs with the commander for 1.0 x commander dependence, then x2. Dependence = (commander's synergy / average card's synergy - 1) / 3, capped 0..1, +0.75 when the deck's CLAUDE.md names a commander-damage or voltron plan. Each protection card also gets 0.5 x dependence x the median card's synergy, so it competes with cards whose totals come from many pairs. Name the plan in the deck's CLAUDE.md win conditions so it is picked up.
+- Repeatable producers weigh more: one-shots (instants/sorceries, "when ~ enters/dies", sacrifice ~, "enters with") x1.0; your-turn triggers, activated and static abilities x1.25; triggers that can fire on any player's turn x1.5. `--card` shows the factor.
+- Proliferate is weak (x0.5) on a counter axis unless the deck has 8+ other producers of that counter (3+ for rad: rad sits on players and survives wipes), then full strength. With any rad producer in the deck, proliferate also counts as mill, since rad counters mill their holder.
+- Proliferate also needs counters on the board: every card that puts down +1/+1, -1/-1 or rad counters pairs with every proliferate card (weight 0.5, sharing the counter theme's bonus). Proliferate cards don't pair with each other this way.
+- A commander-damage plan makes the commander care about +1/+1 counters on itself, so counter producers pair with it.
+- Colour matters ("whenever you cast a green permanent spell") pairs with every card of that colour and kind (weak, 0.5 each).
+- Counters on each creature you control weigh x1.5 compared with one creature.
+- Self-mill ("you mill", "mill N cards") also puts lands into your graveyard, at half weight (0.5). Rad counters on each player or you do too, but only a little (0.1).
+- Card draw and selection get a base bonus scaled to the deck: draw (draws cards, impulse draw, card-advantage otag) 0.25 x median card synergy; selection only (scry, surveil, looting, look at the top) half that. Draw triggers and opponents drawing don't count.
+- Reactive cards (noncreature targeted removal and counterspells, plus protection; not board wipes) lose 0.5 synergy each per card over 12 (14 for commander-damage decks).
+- Never claim two cards synergise without running `synergy.py --card`, or reading both cards' oracle text.
+
+## Combos (`combos.py`)
+Asks Commander Spellbook's free API (backend.commanderspellbook.com) which combos the deck contains and which it almost contains.
+- Every combo is flagged against the deck's bracket from its CLAUDE.md: two-card infinites are banned in brackets 1-2 and only allowed late in bracket 3.
+- Combos Commander Spellbook doesn't list go in `decks/<deck>/combos.json` (`cards`, `produces`, optional `steps`, `prerequisites`, `notes`, `bracket_tag`). They are merged in everywhere (combo bonus, cut protection, bracket flags) and work offline.
+- Near-misses are leads, not suggestions: check theme, bracket and the €10 budget before proposing one.
+
 ## Key Rules
 - **Always run the tools** — never manually count card types, lands, or categories from decklist.txt. Use `deck_analyzer.py` for type breakdowns and `otag_fetcher.py` for functional categories. The decklist file is an Archidekt export; only the tools parse it correctly against Scryfall data.
 - Always use Scryfall data and otags for card categorization — never trust manual tags in decklist files
 - Parser tags are only reliable for deck membership status (Buy, noDeck, Maybeboard)
-- Caches: `cache/cards.json` (Scryfall card data), `cache/otags.json` (Scryfall otags)
+- Caches are committed to the repo so cloud sessions start warm: `cache/cards.json` (Scryfall card data), `cache/otags.json` (Scryfall otags), `cache/combos.json` (Commander Spellbook, keyed by the exact card list). Commit cache changes along with deck changes. Cached prices go stale: run `price_check.py` for current prices
 - Respect Scryfall rate limits: 100ms between requests (10 req/s max)
 - Budget: no single card over €10
 - No goodstuff — suggestions must synergize with the specific deck's theme
@@ -160,5 +205,8 @@ Each deck specifies its bracket in its CLAUDE.md. Never suggest cards that viola
 Each deck lives in `decks/<name>/` with:
 - `decklist.txt` — Archidekt export format (source of truth for what's in the deck)
 - `deck.json` — Generated full deck data with Scryfall data + otags
+- `source.json` — Written by `archidekt.py pull`: Archidekt deck id, URL, owner, bracket set on Archidekt (used when CLAUDE.md names no bracket)
+- `combos.json` — Optional: combos for this deck that Commander Spellbook doesn't list
+- `synergy.json` — Generated by `synergy.py --save`: themes, pairs with reasons, per-card totals, cut ranking
 - `CLAUDE.md` — Design decisions that can't be derived from the cards/tools
 - `cuts.txt` — Cards removed and why (tracks owned cards for future reference)

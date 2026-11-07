@@ -1,0 +1,3628 @@
+{
+  "AEther Figment": [],
+  "Aberrant Return": [
+    "recursion"
+  ],
+  "Abrade": [
+    "removal"
+  ],
+  "Abraded Bluffs": [],
+  "Abundant Countryside": [],
+  "Accelerate": [
+    "draw",
+    "card-advantage"
+  ],
+  "Acidic Slime": [
+    "removal"
+  ],
+  "Aerith, Last Ancient": [
+    "recursion",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Aether Syphon": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Aetherize": [
+    "removal",
+    "board-wipe"
+  ],
+  "Aetherspouts": [
+    "removal",
+    "board-wipe"
+  ],
+  "Aftermath Analyst": [
+    "ramp",
+    "mill",
+    "recursion"
+  ],
+  "Agent Frank Horrigan": [],
+  "Aggravated Assault": [],
+  "Ajani, Sleeper Agent": [
+    "card-advantage"
+  ],
+  "Akki Ronin": [
+    "draw",
+    "card-advantage"
+  ],
+  "Akroan Crusader": [],
+  "Alesha, Who Smiles at Death": [
+    "recursion"
+  ],
+  "Alisaie Leveilleur": [
+    "tutor"
+  ],
+  "Alpha Deathclaw": [
+    "removal",
+    "evasion"
+  ],
+  "Alphinaud Leveilleur": [
+    "draw",
+    "tutor",
+    "card-advantage"
+  ],
+  "Altar of Dementia": [
+    "mill",
+    "sacrifice-outlet"
+  ],
+  "Altar of the Goyf": [],
+  "Altar's Reap": [
+    "draw",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Ammit Eternal": [],
+  "An Offer You Can't Refuse": [
+    "counterspell"
+  ],
+  "Ancient Greenwarden": [
+    "recursion"
+  ],
+  "Ancient Stone Idol": [],
+  "Ancient Ziggurat": [],
+  "Angelic Exaltation": [],
+  "Angrath's Marauders": [],
+  "Animal Attendant": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Ankh of Mishra": [],
+  "Annie Joins Up": [
+    "removal"
+  ],
+  "Anzrag, the Quake-Mole": [],
+  "Arcane Denial": [
+    "draw",
+    "counterspell",
+    "card-advantage"
+  ],
+  "Arcane Sanctum": [],
+  "Arcane Signet": [
+    "ramp"
+  ],
+  "Archaeomancer's Map": [
+    "ramp",
+    "tutor"
+  ],
+  "Archetype of Aggression": [],
+  "Archmage Emeritus": [
+    "draw",
+    "card-advantage"
+  ],
+  "Archon of Emeria": [
+    "evasion"
+  ],
+  "Archon of Justice": [
+    "removal",
+    "evasion"
+  ],
+  "Ardbert, Warrior of Darkness": [
+    "evasion"
+  ],
+  "Arid Archway": [
+    "mill"
+  ],
+  "Arm with Aether": [
+    "removal"
+  ],
+  "Armored Scrapgorger": [
+    "ramp",
+    "mana-dork",
+    "graveyard-hate"
+  ],
+  "Armory Automaton": [],
+  "Arms Dealer": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Asari Captain": [],
+  "Ash Barrens": [
+    "tutor"
+  ],
+  "Ashen Rider": [
+    "removal",
+    "evasion"
+  ],
+  "Ashling's Command": [
+    "ramp",
+    "removal",
+    "draw",
+    "board-wipe",
+    "card-advantage"
+  ],
+  "Ashling, Rekindled": [],
+  "Ashling, the Limitless": [],
+  "Ashnod's Altar": [
+    "ramp",
+    "sacrifice-outlet"
+  ],
+  "Assassin's Trophy": [
+    "removal"
+  ],
+  "Astral Cornucopia": [
+    "ramp"
+  ],
+  "Astrologian's Planisphere": [],
+  "Atarka, World Render": [
+    "evasion"
+  ],
+  "Atomize": [
+    "removal"
+  ],
+  "Atraxa, Praetors' Voice": [
+    "evasion",
+    "lifegain"
+  ],
+  "Audacious Thief": [
+    "draw",
+    "card-advantage"
+  ],
+  "Auntie Ool, Cursewretch": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Austere Command": [
+    "removal",
+    "board-wipe"
+  ],
+  "Authority of the Consuls": [
+    "lifegain"
+  ],
+  "Avalanche of Sector 7": [
+    "evasion"
+  ],
+  "Aven Mindcensor": [
+    "evasion"
+  ],
+  "Aven Squire": [
+    "evasion"
+  ],
+  "Avenger of Zendikar": [],
+  "Azra Smokeshaper": [],
+  "Balduvian Rage": [
+    "draw",
+    "card-advantage"
+  ],
+  "Balefire Dragon": [
+    "removal",
+    "board-wipe",
+    "evasion"
+  ],
+  "Baleful Strix": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Bane of Progress": [
+    "removal",
+    "board-wipe"
+  ],
+  "Barbflare Gremlin": [
+    "ramp"
+  ],
+  "Barret Wallace": [],
+  "Barret, Avalanche Leader": [],
+  "Basilisk Collar": [
+    "lifegain"
+  ],
+  "Basking Broodscale": [
+    "ramp"
+  ],
+  "Bastion Protector": [],
+  "Bastion of Remembrance": [
+    "lifegain"
+  ],
+  "Battle Hymn": [
+    "ramp"
+  ],
+  "Battlefield Forge": [],
+  "Battlegrace Angel": [
+    "evasion",
+    "lifegain"
+  ],
+  "Beacon Bolt": [
+    "removal"
+  ],
+  "Beast Whisperer": [
+    "draw",
+    "card-advantage"
+  ],
+  "Beast Within": [
+    "removal"
+  ],
+  "Bedevil": [
+    "removal"
+  ],
+  "Beetleback Chief": [],
+  "Behemoth Sledge": [
+    "lifegain"
+  ],
+  "Belonging": [],
+  "Bident of Thassa": [
+    "draw",
+    "card-advantage"
+  ],
+  "Binding the Old Gods": [
+    "ramp",
+    "removal",
+    "tutor"
+  ],
+  "Birds of Paradise": [
+    "ramp",
+    "mana-dork",
+    "evasion"
+  ],
+  "Bitter Reunion": [
+    "draw",
+    "card-advantage"
+  ],
+  "Black Sun's Zenith": [
+    "removal",
+    "board-wipe"
+  ],
+  "Blackblade Reforged": [],
+  "Blackcleave Cliffs": [],
+  "Blade Historian": [],
+  "Blasphemous Act": [
+    "removal",
+    "board-wipe"
+  ],
+  "Blight Rot": [
+    "removal"
+  ],
+  "Blightbelly Rat": [],
+  "Blighted Agent": [
+    "evasion"
+  ],
+  "Blighted Gorge": [
+    "removal"
+  ],
+  "Blighted Woodland": [
+    "ramp",
+    "tutor"
+  ],
+  "Bloated Contaminator": [],
+  "Bloatfly Swarm": [
+    "mill",
+    "evasion"
+  ],
+  "Blood Artist": [
+    "lifegain"
+  ],
+  "Blood Crypt": [],
+  "Blood Pact": [
+    "draw",
+    "card-advantage"
+  ],
+  "Blood Reckoning": [],
+  "Blood Seeker": [],
+  "Bloodfell Caves": [
+    "lifegain"
+  ],
+  "Bloodthirster": [
+    "evasion"
+  ],
+  "Blooming Marsh": [],
+  "Bloomvine Regent // Claim Territory": [
+    "ramp",
+    "tutor",
+    "evasion",
+    "lifegain"
+  ],
+  "Blowfly Infestation": [
+    "removal"
+  ],
+  "Blue Mage's Cane": [
+    "recursion",
+    "graveyard-hate"
+  ],
+  "Body Double": [
+    "recursion"
+  ],
+  "Boggart Shenanigans": [
+    "removal"
+  ],
+  "Boggart Trawler": [],
+  "Boggart Trawler // Boggart Bog": [
+    "graveyard-hate"
+  ],
+  "Bojuka Bog": [
+    "graveyard-hate"
+  ],
+  "Bomat Courier": [
+    "draw",
+    "card-advantage"
+  ],
+  "Bonders' Enclave": [
+    "draw",
+    "card-advantage"
+  ],
+  "Boros Charm": [
+    "removal"
+  ],
+  "Boros Garrison": [],
+  "Boros Guildgate": [],
+  "Boros Signet": [
+    "ramp"
+  ],
+  "Bountiful Landscape": [
+    "draw",
+    "tutor",
+    "card-advantage"
+  ],
+  "Bovine Intervention": [
+    "removal"
+  ],
+  "Braids, Arisen Nightmare": [
+    "removal",
+    "draw",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Brainstorm": [
+    "draw",
+    "card-advantage"
+  ],
+  "Branching Evolution": [],
+  "Brash Taunter": [
+    "removal"
+  ],
+  "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Breeding Pool": [],
+  "Bridgeworks Battle // Tanglespan Bridgeworks": [
+    "removal"
+  ],
+  "Brighthearth Banneret": [],
+  "Brightstone Ritual": [
+    "ramp"
+  ],
+  "Bristling Backwoods": [],
+  "Brittle Effigy": [
+    "removal"
+  ],
+  "Brokers Ascendancy": [],
+  "Bronze Guardian": [],
+  "Broodcaller Scourge": [
+    "ramp",
+    "evasion"
+  ],
+  "Brushland": [],
+  "Brute Force": [],
+  "Brute Strength": [],
+  "Bugenhagen, Wise Elder": [
+    "ramp",
+    "draw",
+    "mana-dork",
+    "card-advantage"
+  ],
+  "Buried Alive": [
+    "tutor"
+  ],
+  "Burn at the Stake": [
+    "removal"
+  ],
+  "Burning Curiosity": [
+    "card-advantage"
+  ],
+  "Burnished Hart": [
+    "ramp",
+    "tutor"
+  ],
+  "Butcher of Malakir": [
+    "removal",
+    "evasion"
+  ],
+  "Cackling Counterpart": [],
+  "Cactus Preserve": [],
+  "Cactusfolk Sureshot": [],
+  "Cait Sith, Fortune Teller": [
+    "card-advantage"
+  ],
+  "Cancel": [
+    "counterspell"
+  ],
+  "Cankerbloom": [
+    "removal"
+  ],
+  "Canopy Vista": [],
+  "Canyon Slough": [
+    "draw",
+    "card-advantage"
+  ],
+  "Carnelian Orb of Dragonkind": [
+    "ramp"
+  ],
+  "Carnifex Demon": [
+    "removal",
+    "board-wipe",
+    "evasion"
+  ],
+  "Carrier Thrall": [
+    "ramp"
+  ],
+  "Carrion Feeder": [
+    "sacrifice-outlet"
+  ],
+  "Cascade Bluffs": [],
+  "Catalyst Elemental": [
+    "ramp"
+  ],
+  "Catharsis": [],
+  "Cathedral of War": [],
+  "Caustic Caterpillar": [
+    "removal"
+  ],
+  "Cavalier of Thorns": [
+    "ramp",
+    "mill",
+    "recursion",
+    "card-advantage"
+  ],
+  "Caves of Koilos": [],
+  "Cephalid Pathmage": [
+    "evasion"
+  ],
+  "Chain Reaction": [
+    "removal",
+    "board-wipe"
+  ],
+  "Champion of the Path": [],
+  "Champion's Helm": [],
+  "Champions from Beyond": [
+    "draw",
+    "card-advantage"
+  ],
+  "Chancellor of the Forge": [],
+  "Chandra's Ignition": [
+    "removal",
+    "board-wipe"
+  ],
+  "Changeling Outcast": [
+    "evasion"
+  ],
+  "Channeler Initiate": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Chaos Warp": [
+    "removal"
+  ],
+  "Chaotic Strike": [
+    "draw",
+    "card-advantage"
+  ],
+  "Charmbreaker Devils": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Chimil, the Inner Sun": [
+    "card-advantage"
+  ],
+  "Choked Estuary": [],
+  "Chromatic Lantern": [
+    "ramp"
+  ],
+  "Cid, Freeflier Pilot": [
+    "recursion",
+    "card-advantage",
+    "evasion"
+  ],
+  "Cinder Glade": [],
+  "Circle of Flame": [
+    "removal"
+  ],
+  "Circle of Power": [
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Cleansing Nova": [
+    "removal",
+    "board-wipe"
+  ],
+  "Clear the Mind": [
+    "draw",
+    "recursion",
+    "card-advantage",
+    "graveyard-hate"
+  ],
+  "Clever Concealment": [],
+  "Clifftop Retreat": [],
+  "Clone": [],
+  "Cloud Sprite": [
+    "evasion"
+  ],
+  "Cloud's Limit Break": [
+    "removal",
+    "board-wipe"
+  ],
+  "Cloud, Ex-SOLDIER": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Cloudfin Raptor": [
+    "evasion"
+  ],
+  "Coastal Piracy": [
+    "draw",
+    "card-advantage"
+  ],
+  "Coastline Marauders": [],
+  "Collective Resistance": [
+    "removal"
+  ],
+  "Colossal Rattlewurm": [
+    "ramp",
+    "tutor"
+  ],
+  "Colossal Whale": [
+    "removal",
+    "evasion"
+  ],
+  "Colossus Hammer": [],
+  "Combat Calligrapher": [
+    "evasion"
+  ],
+  "Combat Celebrant": [],
+  "Combustible Gearhulk": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Command Tower": [],
+  "Commander's Sphere": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Conduit Pylons": [
+    "mill"
+  ],
+  "Conduit of Worlds": [
+    "recursion"
+  ],
+  "Conformer Shuriken": [],
+  "Connive // Concoct": [
+    "mill",
+    "recursion"
+  ],
+  "Conqueror's Flail": [],
+  "Consider": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Contagion Engine": [
+    "removal",
+    "board-wipe"
+  ],
+  "Contaminant Grafter": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Contaminated Aquifer": [],
+  "Contaminated Drink": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Contentious Plan": [
+    "draw",
+    "card-advantage"
+  ],
+  "Corpse Augur": [
+    "draw",
+    "card-advantage"
+  ],
+  "Corpsejack Menace": [],
+  "Counterspell": [
+    "counterspell"
+  ],
+  "Court of Cunning": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Coveted Jewel": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Crackling Drake": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Cragcrown Pathway": [],
+  "Crashing Drawbridge": [],
+  "Creosote Heath": [],
+  "Crib Swap": [
+    "removal"
+  ],
+  "Crimson Wisps": [
+    "draw",
+    "card-advantage"
+  ],
+  "Crux of Fate": [
+    "removal",
+    "board-wipe"
+  ],
+  "Cryptoplasm": [],
+  "Cultivate": [
+    "ramp",
+    "tutor"
+  ],
+  "Curiosity": [
+    "draw",
+    "card-advantage"
+  ],
+  "Cut a Deal": [
+    "draw",
+    "card-advantage"
+  ],
+  "Cyclonic Rift": [
+    "removal",
+    "board-wipe"
+  ],
+  "Dancer's Chakrams": [
+    "lifegain"
+  ],
+  "Dark Privilege": [
+    "sacrifice-outlet"
+  ],
+  "Dark Prophecy": [
+    "draw",
+    "card-advantage"
+  ],
+  "Darkness Descends": [
+    "removal",
+    "board-wipe"
+  ],
+  "Darksteel Plate": [],
+  "Darkwater Catacombs": [],
+  "Dawnhand Dissident": [
+    "mill",
+    "recursion",
+    "graveyard-hate"
+  ],
+  "Dawntreader Elk": [
+    "ramp",
+    "tutor"
+  ],
+  "Deadly Brew": [
+    "removal",
+    "recursion",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Deafening Silence": [],
+  "Deathcap Glade": [],
+  "Deathreap Ritual": [
+    "draw",
+    "card-advantage"
+  ],
+  "Debtors' Transport": [],
+  "Decaying Time Loop": [
+    "draw",
+    "card-advantage"
+  ],
+  "Deceptive Frostkite": [
+    "evasion"
+  ],
+  "Decimate": [
+    "removal"
+  ],
+  "Decree of Pain": [
+    "removal",
+    "draw",
+    "board-wipe",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Deepglow Skate": [],
+  "Defiler of Vigor": [],
+  "Deflecting Swat": [],
+  "Demolition Field": [
+    "removal",
+    "tutor"
+  ],
+  "Demon's Disciple": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Descendants' Fury": [
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Desert Warfare": [
+    "ramp",
+    "recursion"
+  ],
+  "Desert of the Fervent": [
+    "draw",
+    "card-advantage"
+  ],
+  "Desert of the Indomitable": [
+    "draw",
+    "card-advantage"
+  ],
+  "Desert of the True": [
+    "draw",
+    "card-advantage"
+  ],
+  "Desolate Mire": [],
+  "Despark": [
+    "removal"
+  ],
+  "Desperate Ritual": [
+    "ramp"
+  ],
+  "Devoted Druid": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Dictate of Erebos": [
+    "removal"
+  ],
+  "Dig Through Time": [
+    "card-advantage"
+  ],
+  "Dimir Guildgate": [],
+  "Dimir Keyrune": [
+    "ramp",
+    "evasion"
+  ],
+  "Dimir Signet": [
+    "ramp"
+  ],
+  "Dire Tactics": [
+    "removal"
+  ],
+  "Discovery // Dispersal": [
+    "removal",
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Dispatch": [
+    "removal"
+  ],
+  "Dispel": [
+    "counterspell"
+  ],
+  "Disrupt Decorum": [],
+  "Divination": [
+    "draw",
+    "card-advantage"
+  ],
+  "Domri, Anarch of Bolas": [
+    "ramp",
+    "removal"
+  ],
+  "Doom Blade": [
+    "removal"
+  ],
+  "Doomed Dissenter": [],
+  "Doomed Traveler": [
+    "evasion"
+  ],
+  "Doubling Season": [],
+  "Downhill Charge": [
+    "sacrifice-outlet"
+  ],
+  "Dragon Fodder": [],
+  "Dragon Tempest": [
+    "removal"
+  ],
+  "Dragon's Hoard": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Dragonborn Champion": [
+    "draw",
+    "card-advantage"
+  ],
+  "Dragonlord Atarka": [
+    "removal",
+    "evasion"
+  ],
+  "Dragonrage": [
+    "ramp"
+  ],
+  "Dragonskull Summit": [],
+  "Drakuseth, Maw of Flames": [
+    "removal",
+    "evasion"
+  ],
+  "Drannith Magistrate": [],
+  "Dread Linnorm // Scale Deflection": [
+    "evasion"
+  ],
+  "Dread Tiller": [
+    "ramp",
+    "recursion"
+  ],
+  "Dream Thrush": [
+    "evasion"
+  ],
+  "Dreamborn Muse": [
+    "mill"
+  ],
+  "Dreamroot Cascade": [],
+  "Dreamtide Whale": [],
+  "Drown in Ichor": [
+    "removal"
+  ],
+  "Drowned Catacomb": [],
+  "Druid of Purification": [
+    "removal"
+  ],
+  "Dryad of the Ilysian Grove": [
+    "ramp"
+  ],
+  "Dualcaster Mage": [],
+  "Duelist's Heritage": [],
+  "Dune Chanter": [
+    "mill",
+    "lifegain"
+  ],
+  "Dunes of the Dead": [],
+  "Dusk Urchins": [
+    "draw",
+    "card-advantage"
+  ],
+  "Duskshell Crawler": [],
+  "Dutiful Attendant": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Duty-Bound Dead": [],
+  "Dwarven Mine": [],
+  "Echoing Truth": [
+    "removal"
+  ],
+  "Eclipsed Flamekin": [
+    "card-advantage"
+  ],
+  "Eclipsed Realms": [],
+  "Edric, Spymaster of Trest": [
+    "draw",
+    "card-advantage"
+  ],
+  "Eiganjo Exemplar": [],
+  "Eiganjo, Seat of the Empire": [
+    "removal"
+  ],
+  "Elder Gargaroth": [
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Electrostatic Field": [],
+  "Elegant Parlor": [
+    "mill"
+  ],
+  "Elemental Bond": [
+    "draw",
+    "card-advantage"
+  ],
+  "Elena, Turk Recruit": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Elenda, the Dusk Rose": [
+    "lifegain"
+  ],
+  "Elusive Krasis": [
+    "evasion"
+  ],
+  "Elvish Mystic": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Ember Hauler": [
+    "removal"
+  ],
+  "Emberwilde Captain": [
+    "draw",
+    "card-advantage"
+  ],
+  "Embrace the Unknown": [
+    "card-advantage"
+  ],
+  "Emet-Selch, of the Third Seat": [],
+  "Empty the Warrens": [],
+  "Emrakul's Hatcher": [
+    "ramp"
+  ],
+  "Enchanter's Bane": [
+    "removal"
+  ],
+  "Encroaching Dragonstorm": [
+    "ramp",
+    "tutor"
+  ],
+  "Endurance": [
+    "recursion",
+    "graveyard-hate"
+  ],
+  "Entish Restoration": [
+    "ramp",
+    "tutor",
+    "sacrifice-outlet"
+  ],
+  "Erebor Flamesmith": [],
+  "Escape Artist": [
+    "evasion"
+  ],
+  "Essence Flux": [],
+  "Estinien Varlineau": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Etali, Primal Conqueror": [],
+  "Etali, Primal Storm": [
+    "mill",
+    "card-advantage"
+  ],
+  "Eternal Witness": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Ethersworn Canonist": [],
+  "Evendo Brushrazer": [
+    "ramp",
+    "mana-dork",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Eventide's Shadow": [
+    "draw",
+    "card-advantage"
+  ],
+  "Ever After": [
+    "recursion"
+  ],
+  "Everflowing Chalice": [
+    "ramp"
+  ],
+  "Everlasting Torment": [],
+  "Evolution Sage": [],
+  "Evolution Witness": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Evolutionary Leap": [
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Evolving Wilds": [
+    "tutor"
+  ],
+  "Exotic Orchard": [],
+  "Expedite": [
+    "draw",
+    "card-advantage"
+  ],
+  "Experimental Augury": [
+    "card-advantage"
+  ],
+  "Explore": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Explorer's Scope": [
+    "ramp"
+  ],
+  "Exsanguinate": [
+    "lifegain"
+  ],
+  "Extract from Darkness": [
+    "mill",
+    "recursion"
+  ],
+  "Eye Collector": [
+    "mill",
+    "evasion"
+  ],
+  "Eye of Nidhogg": [
+    "recursion"
+  ],
+  "Ezuri, Stalker of Spheres": [
+    "draw",
+    "card-advantage"
+  ],
+  "Fact or Fiction": [
+    "mill",
+    "card-advantage"
+  ],
+  "Faeburrow Elder": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Faerie Conclave": [
+    "evasion"
+  ],
+  "Faithless Looting": [
+    "draw",
+    "card-advantage"
+  ],
+  "Falkenrath Noble": [
+    "evasion",
+    "lifegain"
+  ],
+  "Fallen Shinobi": [
+    "mill",
+    "card-advantage"
+  ],
+  "Fanatic of Rhonas": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Fanatical Devotion": [
+    "sacrifice-outlet"
+  ],
+  "Fandaniel, Telophoroi Ascian": [
+    "removal",
+    "mill"
+  ],
+  "Far // Away": [
+    "removal"
+  ],
+  "Farseek": [
+    "ramp",
+    "tutor"
+  ],
+  "Fatal Push": [
+    "removal"
+  ],
+  "Fate Unraveler": [],
+  "Fated Infatuation": [],
+  "Fathom Mage": [
+    "draw",
+    "card-advantage"
+  ],
+  "Fear of Burning Alive": [
+    "removal"
+  ],
+  "Feed the Swarm": [
+    "removal"
+  ],
+  "Felidar Guardian": [],
+  "Felidar Retreat": [],
+  "Fellwar Stone": [
+    "ramp"
+  ],
+  "Feral Ghoul": [
+    "mill",
+    "evasion"
+  ],
+  "Festering Thicket": [
+    "draw",
+    "card-advantage"
+  ],
+  "Fetid Heath": [],
+  "Fetid Pools": [
+    "draw",
+    "card-advantage"
+  ],
+  "Field of Souls": [
+    "evasion"
+  ],
+  "Fiery Inscription": [],
+  "Final Judgment": [
+    "removal",
+    "board-wipe"
+  ],
+  "Final Parting": [
+    "tutor"
+  ],
+  "Find // Finality": [
+    "removal",
+    "board-wipe",
+    "recursion",
+    "card-advantage"
+  ],
+  "Fire Diamond": [
+    "ramp"
+  ],
+  "Fire-Lit Thicket": [],
+  "Firebrand Archer": [],
+  "Firemind's Research": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Fists of the Demigod": [],
+  "Flamebraider": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Flamekin Harbinger": [
+    "tutor"
+  ],
+  "Flamekin Village": [],
+  "Flesh Carver": [
+    "evasion",
+    "sacrifice-outlet"
+  ],
+  "Fleshbag Marauder": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Flitterstep Eidolon": [
+    "evasion"
+  ],
+  "Flock Impostor": [
+    "evasion"
+  ],
+  "Flooded Grove": [],
+  "Flooded Strand": [
+    "tutor"
+  ],
+  "Florian, Voldaren Scion": [
+    "card-advantage"
+  ],
+  "Flotsam // Jetsam": [
+    "draw",
+    "mill",
+    "recursion",
+    "card-advantage",
+    "graveyard-hate"
+  ],
+  "Flourishing Defenses": [],
+  "Flux Channeler": [],
+  "Folio of Fancies": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Foreboding Landscape": [
+    "draw",
+    "tutor",
+    "card-advantage"
+  ],
+  "Foreboding Ruins": [],
+  "Forgotten Cave": [
+    "draw",
+    "card-advantage"
+  ],
+  "Forsaken Sanctuary": [],
+  "Fortified Village": [],
+  "Foul Orchard": [],
+  "Foundation Breaker": [
+    "removal"
+  ],
+  "Foundry Street Denizen": [],
+  "Fracture": [
+    "removal"
+  ],
+  "Fractured Powerstone": [
+    "ramp"
+  ],
+  "Frantic Search": [
+    "draw",
+    "card-advantage"
+  ],
+  "Fraying Sanity": [
+    "mill"
+  ],
+  "Frontier Bivouac": [],
+  "Frontier Siege": [
+    "ramp",
+    "removal"
+  ],
+  "Frostboil Snarl": [],
+  "Frostcliff Siege": [
+    "draw",
+    "card-advantage"
+  ],
+  "Furious Rise": [
+    "card-advantage"
+  ],
+  "Fury": [
+    "removal"
+  ],
+  "Fury Charm": [
+    "removal"
+  ],
+  "Furycalm Snarl": [],
+  "Fyndhorn Elves": [
+    "ramp",
+    "mana-dork"
+  ],
+  "G'raha Tia, Scion Reborn": [
+    "lifegain"
+  ],
+  "Game Trail": [],
+  "Garruk's Uprising": [
+    "draw",
+    "card-advantage"
+  ],
+  "Gempalm Incinerator": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Generous Patron": [
+    "draw",
+    "card-advantage"
+  ],
+  "Geothermal Bog": [],
+  "Ghalta, Primal Hunger": [],
+  "Ghoulcaller's Bell": [
+    "mill"
+  ],
+  "Giant Cindermaw": [],
+  "Gift of Doom": [
+    "sacrifice-outlet"
+  ],
+  "Gingerbrute": [
+    "evasion",
+    "lifegain"
+  ],
+  "Giver of Runes": [],
+  "Glacial Fortress": [],
+  "Gleeful Arsonist": [],
+  "Glen Elendra Guardian": [
+    "counterspell",
+    "evasion"
+  ],
+  "Glissa Sunslayer": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Glistening Sphere": [
+    "ramp"
+  ],
+  "Glorious End": [
+    "counterspell"
+  ],
+  "Glowing One": [
+    "mill",
+    "lifegain"
+  ],
+  "Goblin Anarchomancer": [],
+  "Goblin Assassin": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Goblin Bombardment": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Goblin Bushwhacker": [],
+  "Goblin Champion": [],
+  "Goblin Chieftain": [],
+  "Goblin Chirurgeon": [
+    "sacrifice-outlet"
+  ],
+  "Goblin Dark-Dwellers": [
+    "recursion",
+    "evasion"
+  ],
+  "Goblin Diplomats": [],
+  "Goblin Electromancer": [],
+  "Goblin King": [],
+  "Goblin Matron": [
+    "tutor"
+  ],
+  "Goblin Rabblemaster": [],
+  "Goblin Rally": [],
+  "Goblin Razerunners": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Goblin Recruiter": [
+    "tutor"
+  ],
+  "Goblin Ringleader": [
+    "card-advantage"
+  ],
+  "Goblin Sharpshooter": [
+    "removal"
+  ],
+  "Goblin Sledder": [
+    "sacrifice-outlet"
+  ],
+  "Goblin Spymaster": [],
+  "Goblin Warchief": [],
+  "Goblin Wardriver": [],
+  "Godless Shrine": [],
+  "Golgari Charm": [
+    "removal",
+    "board-wipe"
+  ],
+  "Golgari Findbroker": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Golgari Guildgate": [],
+  "Golgari Rot Farm": [],
+  "Golgari Signet": [
+    "ramp"
+  ],
+  "Goreclaw, Terror of Qal Sisma": [],
+  "Grab the Prize": [
+    "draw",
+    "card-advantage"
+  ],
+  "Grand Abolisher": [],
+  "Grave Sifter": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Grave Venerations": [
+    "draw",
+    "recursion",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Gravebreaker Lamia": [
+    "tutor",
+    "lifegain"
+  ],
+  "Graven Cairns": [],
+  "Graveshifter": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Gray Merchant of Asphodel": [
+    "lifegain"
+  ],
+  "Greater Good": [
+    "draw",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Greenwarden of Murasa": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Grenzo's Ruffians": [],
+  "Grenzo, Havoc Raiser": [
+    "mill",
+    "card-advantage"
+  ],
+  "Grim Affliction": [
+    "removal"
+  ],
+  "Grim Backwoods": [
+    "draw",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Grim Haruspex": [
+    "draw",
+    "card-advantage"
+  ],
+  "Grim Poppet": [
+    "removal"
+  ],
+  "Grisly Salvage": [
+    "mill",
+    "card-advantage"
+  ],
+  "Gristle Glutton": [
+    "draw",
+    "card-advantage"
+  ],
+  "Gruul Signet": [
+    "ramp"
+  ],
+  "Gruul Turf": [],
+  "Guardian Idol": [
+    "ramp"
+  ],
+  "Guardian Project": [
+    "draw",
+    "card-advantage"
+  ],
+  "Guttersnipe": [],
+  "Halimar Depths": [],
+  "Hallowed Fountain": [],
+  "Hallowed Spiritkeeper": [
+    "evasion"
+  ],
+  "Hammerhead Tyrant": [
+    "removal",
+    "evasion"
+  ],
+  "Hangarback Walker": [
+    "evasion"
+  ],
+  "Hanweir Garrison": [],
+  "Hapatra, Vizier of Poisons": [
+    "removal"
+  ],
+  "Hardened Scales": [],
+  "Harmonize": [
+    "draw",
+    "card-advantage"
+  ],
+  "Harmonized Crescendo": [
+    "draw",
+    "card-advantage"
+  ],
+  "Harold and Bob, First Numens": [
+    "ramp",
+    "mill"
+  ],
+  "Harrow": [
+    "ramp",
+    "tutor",
+    "sacrifice-outlet"
+  ],
+  "Harsh Mentor": [],
+  "Harvester of Souls": [
+    "draw",
+    "card-advantage"
+  ],
+  "Hashep Oasis": [
+    "sacrifice-outlet"
+  ],
+  "Haunting Voyage": [
+    "recursion"
+  ],
+  "Haven of the Spirit Dragon": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Hazezon, Shaper of Sand": [
+    "recursion",
+    "evasion"
+  ],
+  "Heat Shimmer": [],
+  "Hedge Shredder": [
+    "ramp",
+    "mill",
+    "recursion"
+  ],
+  "Heidegger, Shinra Executive": [],
+  "Heiko Yamazaki, the General": [
+    "recursion"
+  ],
+  "Helitrooper": [
+    "evasion"
+  ],
+  "Hellkite Courser": [
+    "evasion"
+  ],
+  "Hellkite Tyrant": [
+    "evasion"
+  ],
+  "Hellrider": [
+    "removal"
+  ],
+  "Herald of Secret Streams": [
+    "evasion"
+  ],
+  "Herd Heirloom": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Hermes, Overseer of Elpis": [
+    "evasion"
+  ],
+  "Hero's Blade": [],
+  "Hero's Heirloom": [],
+  "Heroic Intervention": [],
+  "Hidden Stockpile": [
+    "sacrifice-outlet"
+  ],
+  "High Noon": [
+    "removal"
+  ],
+  "Hildibrand Manderville": [],
+  "Hinterland Harbor": [],
+  "Hissing Miasma": [],
+  "Hollowmurk Siege": [
+    "draw",
+    "card-advantage"
+  ],
+  "Horde of Notions": [
+    "recursion"
+  ],
+  "Hordeling Outburst": [],
+  "Horizon Chimera": [
+    "evasion",
+    "lifegain"
+  ],
+  "Horizon Explorer": [
+    "ramp",
+    "tutor"
+  ],
+  "Hour of Promise": [
+    "ramp",
+    "tutor"
+  ],
+  "Hraesvelgr, of the First Brood": [],
+  "Hunted Witness": [
+    "lifegain"
+  ],
+  "Hunter's Insight": [
+    "draw",
+    "card-advantage"
+  ],
+  "Hydra Omnivore": [],
+  "Hypnotic Sprite": [],
+  "Ichor Rats": [],
+  "Idyllic Beachfront": [],
+  "Ifnir Deadlands": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Ignoble Hierarch": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Ilharg, the Raze-Boar": [
+    "recursion"
+  ],
+  "Illusionist's Gambit": [],
+  "Impact Tremors": [],
+  "Imperious Oligarch": [
+    "evasion"
+  ],
+  "Impulsivity": [
+    "recursion"
+  ],
+  "Incandescent Soulstoke": [],
+  "Incinerator of the Guilty": [
+    "removal",
+    "board-wipe",
+    "evasion"
+  ],
+  "Incubation Druid": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Indatha Triome": [
+    "draw",
+    "card-advantage"
+  ],
+  "Inexorable Tide": [],
+  "Infectious Bite": [
+    "removal"
+  ],
+  "Infectious Inquiry": [
+    "draw",
+    "card-advantage"
+  ],
+  "Infernal Grasp": [
+    "removal"
+  ],
+  "Infesting Radroach": [
+    "mill",
+    "recursion",
+    "evasion"
+  ],
+  "Infinite Reflection": [],
+  "Ingenious Infiltrator": [
+    "draw",
+    "card-advantage"
+  ],
+  "Ingot Chewer": [
+    "removal"
+  ],
+  "Innkeeper's Talent": [],
+  "Inquisitor's Flail": [],
+  "Insidious Will": [
+    "counterspell"
+  ],
+  "Inspiring Call": [
+    "draw",
+    "card-advantage"
+  ],
+  "Inspiring Statuary": [
+    "ramp"
+  ],
+  "Inspiring Vantage": [],
+  "Insult // Injury": [
+    "removal"
+  ],
+  "Into the Flood Maw": [
+    "removal"
+  ],
+  "Into the Story": [
+    "draw",
+    "card-advantage"
+  ],
+  "Invasion of Amonkhet // Lazotep Convert": [
+    "draw",
+    "mill",
+    "recursion",
+    "card-advantage"
+  ],
+  "Invigorated Rampage": [],
+  "Ionize": [
+    "counterspell"
+  ],
+  "Iron Myr": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Isolated Chapel": [],
+  "Isshin, Two Heavens as One": [],
+  "Ixhel, Scion of Atraxa": [
+    "mill",
+    "card-advantage",
+    "evasion"
+  ],
+  "Izoni, Thousand-Eyed": [
+    "draw",
+    "card-advantage",
+    "lifegain",
+    "sacrifice-outlet"
+  ],
+  "Izzet Boilerworks": [],
+  "Izzet Charm": [
+    "removal",
+    "draw",
+    "counterspell",
+    "card-advantage"
+  ],
+  "Izzet Guildgate": [],
+  "Izzet Locket": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Izzet Signet": [
+    "ramp"
+  ],
+  "Jade Orb of Dragonkind": [
+    "ramp"
+  ],
+  "Jarad's Orders": [
+    "tutor"
+  ],
+  "Jarad, Golgari Lich Lord": [
+    "recursion",
+    "sacrifice-outlet"
+  ],
+  "Jhessian Infiltrator": [
+    "evasion"
+  ],
+  "Journey of Discovery": [
+    "ramp",
+    "tutor"
+  ],
+  "Jubilation": [],
+  "Jungle Hollow": [
+    "lifegain"
+  ],
+  "Jungle Shrine": [],
+  "Jwar Isle Refuge": [
+    "lifegain"
+  ],
+  "Kaervek the Merciless": [
+    "removal"
+  ],
+  "Kami of Whispered Hopes": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Kardur, Doomscourge": [
+    "lifegain"
+  ],
+  "Kari Zev's Expertise": [],
+  "Karlach, Fury of Avernus": [],
+  "Karn's Bastion": [],
+  "Karplusan Forest": [],
+  "Kederekt Parasite": [],
+  "Kessig Wolf Run": [],
+  "Key to the City": [
+    "draw",
+    "card-advantage"
+  ],
+  "Kiki-Jiki, Mirror Breaker": [],
+  "Kindred Discovery": [
+    "draw",
+    "card-advantage"
+  ],
+  "Kindred Summons": [
+    "card-advantage"
+  ],
+  "Kiora, Behemoth Beckoner": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Kitsune's Technique": [
+    "mill"
+  ],
+  "Kodama's Reach": [
+    "ramp",
+    "tutor"
+  ],
+  "Kokusho, the Evening Star": [
+    "evasion",
+    "lifegain"
+  ],
+  "Krav, the Unredeemed": [
+    "draw",
+    "tutor",
+    "card-advantage",
+    "lifegain",
+    "sacrifice-outlet"
+  ],
+  "Krenko's Command": [],
+  "Krenko, Mob Boss": [],
+  "Krile Baldesion": [
+    "recursion",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Krosan Verge": [
+    "ramp",
+    "tutor"
+  ],
+  "Kulrath Knight": [
+    "evasion"
+  ],
+  "Kulrath Zealot": [
+    "tutor",
+    "card-advantage"
+  ],
+  "Kyren Negotiations": [
+    "removal"
+  ],
+  "Lamentation": [
+    "removal",
+    "lifegain"
+  ],
+  "Last Night Together": [],
+  "Latch Seeker": [
+    "evasion"
+  ],
+  "Lathliss, Dragon Queen": [
+    "evasion"
+  ],
+  "Leechridden Swamp": [],
+  "Legion Warboss": [],
+  "Lena, Selfless Champion": [],
+  "Lethal Scheme": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Levitation": [],
+  "Life from the Loam": [
+    "mill",
+    "recursion",
+    "card-advantage"
+  ],
+  "Lifeline": [],
+  "Lifestream's Blessing": [
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Light Up the Stage": [
+    "card-advantage"
+  ],
+  "Lightning Bolt": [
+    "removal"
+  ],
+  "Lightning Coils": [],
+  "Lightning Greaves": [],
+  "Lingering Souls": [
+    "evasion"
+  ],
+  "Llanowar Elves": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Llanowar Wastes": [],
+  "Looming Spires": [],
+  "Looter il-Kor": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Lotus Cobra": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Loxodon Warhammer": [
+    "lifegain"
+  ],
+  "Loyal Apprentice": [
+    "evasion"
+  ],
+  "Lozhan, Dragons' Legacy": [
+    "removal",
+    "evasion"
+  ],
+  "Lyse Hext": [],
+  "Maelstrom Wanderer": [
+    "card-advantage"
+  ],
+  "Magmaquake": [
+    "removal",
+    "board-wipe"
+  ],
+  "Magmatic Insight": [
+    "draw",
+    "card-advantage"
+  ],
+  "Malignus": [],
+  "Manabarbs": [],
+  "Manic Scribe": [
+    "mill"
+  ],
+  "Map the Frontier": [
+    "ramp",
+    "tutor"
+  ],
+  "Marang River Prowler": [
+    "recursion",
+    "evasion"
+  ],
+  "Marang River Regent // Coil and Catch": [
+    "removal",
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Marble Diamond": [
+    "ramp"
+  ],
+  "Mardu Ascendancy": [],
+  "Mardu Strike Leader": [],
+  "Mariposa Military Base": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Marsh Flats": [
+    "tutor"
+  ],
+  "Martyr's Cause": [
+    "sacrifice-outlet"
+  ],
+  "Mask of Griselbrand": [
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Mask of Memory": [
+    "draw",
+    "card-advantage"
+  ],
+  "Mass of Mysteries": [],
+  "Massacre Girl": [
+    "removal",
+    "board-wipe",
+    "evasion"
+  ],
+  "Massacre Girl, Known Killer": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Massacre Wurm": [
+    "removal",
+    "board-wipe"
+  ],
+  "Master Biomancer": [],
+  "Mayhem Devil": [
+    "removal"
+  ],
+  "Memory Plunder": [
+    "recursion",
+    "graveyard-hate"
+  ],
+  "Merciless Executioner": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Mercurial Pretender": [],
+  "Meren of Clan Nel Toth": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Metastatic Evangel": [],
+  "Metathran Soldier": [
+    "evasion"
+  ],
+  "Midnight Banshee": [
+    "removal",
+    "board-wipe"
+  ],
+  "Midnight Reaper": [
+    "draw",
+    "card-advantage"
+  ],
+  "Midnight Tilling": [
+    "mill",
+    "card-advantage"
+  ],
+  "Migration Path": [
+    "ramp",
+    "draw",
+    "tutor",
+    "card-advantage"
+  ],
+  "Miirym, Sentinel Wyrm": [
+    "evasion"
+  ],
+  "Military Intelligence": [
+    "draw",
+    "card-advantage"
+  ],
+  "Mind Stone": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Mindcrank": [
+    "mill"
+  ],
+  "Mirage Mesa": [],
+  "Mirelurk Queen": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Mirrorwing Dragon": [
+    "evasion"
+  ],
+  "Mist-Cloaked Herald": [
+    "evasion"
+  ],
+  "Mist-Syndicate Naga": [],
+  "Mistblade Shinobi": [
+    "removal"
+  ],
+  "Misty Rainforest": [
+    "tutor"
+  ],
+  "Mizzium Mortars": [
+    "removal",
+    "board-wipe"
+  ],
+  "Mocking Sprite": [
+    "evasion"
+  ],
+  "Mogg War Marshal": [],
+  "Mogis, God of Slaughter": [
+    "removal"
+  ],
+  "Moldervine Reclamation": [
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Mole Man, Moloid Master": [
+    "mill",
+    "recursion"
+  ],
+  "Molten Gatekeeper": [
+    "recursion"
+  ],
+  "Moonblade Shinobi": [
+    "evasion"
+  ],
+  "Moonglove Changeling": [],
+  "Moonsilver Spear": [
+    "evasion"
+  ],
+  "Moraug, Fury of Akoum": [],
+  "Morbid Opportunist": [
+    "draw",
+    "card-advantage"
+  ],
+  "Morphic Pool": [],
+  "Mortify": [
+    "removal"
+  ],
+  "Mossfire Valley": [],
+  "Mosswort Bridge": [],
+  "Mothdust Changeling": [
+    "evasion"
+  ],
+  "Mother of Runes": [
+    "evasion"
+  ],
+  "Mulch": [
+    "mill",
+    "card-advantage"
+  ],
+  "Mulldrifter": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Murder": [
+    "removal"
+  ],
+  "Murderous Cut": [
+    "removal"
+  ],
+  "Murderous Rider": [],
+  "Murmuring Mystic": [
+    "evasion"
+  ],
+  "Mutational Advantage": [],
+  "Mycoloth": [
+    "sacrifice-outlet"
+  ],
+  "Myr Battlesphere": [
+    "removal"
+  ],
+  "Myr Convert": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Myrel, Shield of Argive": [],
+  "Myriad Landscape": [
+    "ramp",
+    "tutor"
+  ],
+  "Mythos of Snapdax": [
+    "removal",
+    "board-wipe"
+  ],
+  "Nahiri's Lithoforming": [
+    "ramp",
+    "draw",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Narset, Parter of Veils": [
+    "card-advantage"
+  ],
+  "Nature's Lore": [
+    "ramp",
+    "tutor"
+  ],
+  "Necroskitter": [
+    "recursion"
+  ],
+  "Needleverge Pathway": [],
+  "Negate": [
+    "counterspell"
+  ],
+  "Nest of Scarabs": [],
+  "Nesting Grounds": [],
+  "Neurok Invisimancer": [
+    "evasion"
+  ],
+  "Nightshade Harvester": [],
+  "Ninja of the Deep Hours": [
+    "draw",
+    "card-advantage"
+  ],
+  "Ninja of the New Moon": [],
+  "Niv-Mizzet, Parun": [
+    "removal",
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Niv-Mizzet, the Firemind": [
+    "removal",
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Nomad Outpost": [],
+  "Norika Yamazaki, the Poet": [
+    "recursion"
+  ],
+  "Norn's Decree": [
+    "draw",
+    "card-advantage"
+  ],
+  "Nuclear Fallout": [
+    "removal",
+    "board-wipe",
+    "mill"
+  ],
+  "Obelisk Spider": [
+    "removal",
+    "lifegain"
+  ],
+  "Observed Stasis": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Oft-Nabbed Goat": [
+    "draw",
+    "card-advantage"
+  ],
+  "Ogre Slumlord": [],
+  "Ojer Kaslem, Deepest Growth": [],
+  "Okiba-Gang Shinobi": [],
+  "Oko, Thief of Crowns": [
+    "removal",
+    "lifegain"
+  ],
+  "Old Gnawbone": [
+    "ramp",
+    "evasion"
+  ],
+  "Omnath, Locus of Rage": [
+    "removal"
+  ],
+  "Omnath, Locus of the Roil": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Omni-Changeling": [],
+  "One with Nature": [
+    "ramp",
+    "tutor"
+  ],
+  "Open the Graves": [],
+  "Opt": [
+    "draw",
+    "card-advantage"
+  ],
+  "Opulent Palace": [],
+  "Oracle of Mul Daya": [
+    "ramp",
+    "card-advantage"
+  ],
+  "Ornithopter": [
+    "evasion"
+  ],
+  "Orzhov Basilica": [],
+  "Orzhov Enforcer": [
+    "evasion"
+  ],
+  "Orzhov Guildgate": [],
+  "Orzhov Racketeers": [],
+  "Orzhov Signet": [
+    "ramp"
+  ],
+  "Otherworldly Outburst": [],
+  "Outpost Siege": [
+    "removal",
+    "card-advantage"
+  ],
+  "Overflowing Basin": [],
+  "Overgrown Tomb": [],
+  "Overwhelmed Apprentice": [
+    "mill"
+  ],
+  "Overwhelming Instinct": [
+    "draw",
+    "card-advantage"
+  ],
+  "Overwhelming Stampede": [],
+  "Painful Truths": [
+    "draw",
+    "card-advantage"
+  ],
+  "Painted Bluffs": [],
+  "Papalymo Totolymo": [
+    "removal",
+    "lifegain"
+  ],
+  "Parapet Thrasher": [
+    "removal",
+    "card-advantage",
+    "evasion"
+  ],
+  "Parhelion II": [
+    "evasion"
+  ],
+  "Past in Flames": [
+    "recursion"
+  ],
+  "Path of Ancestry": [],
+  "Path to Exile": [
+    "ramp",
+    "removal",
+    "tutor"
+  ],
+  "Pathbreaker Ibex": [],
+  "Patriarch's Bidding": [
+    "recursion"
+  ],
+  "Pawn of Ulamog": [
+    "ramp"
+  ],
+  "Peerless Samurai": [
+    "evasion"
+  ],
+  "Pensive Professor": [
+    "draw",
+    "card-advantage"
+  ],
+  "Persist": [
+    "recursion"
+  ],
+  "Persistent Constrictor": [
+    "removal"
+  ],
+  "Phantom Ninja": [
+    "evasion"
+  ],
+  "Phantom Warrior": [
+    "evasion"
+  ],
+  "Phylath, World Sculptor": [],
+  "Phyresis Outbreak": [
+    "removal",
+    "board-wipe"
+  ],
+  "Phyrexian Swarmlord": [],
+  "Pia and Kiran Nalaar": [
+    "removal",
+    "evasion",
+    "sacrifice-outlet"
+  ],
+  "Plague Stinger": [
+    "evasion"
+  ],
+  "Plaguecrafter": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Plaza of Heroes": [],
+  "Poison-Tip Archer": [],
+  "Polluted Delta": [
+    "tutor"
+  ],
+  "Ponder": [
+    "draw",
+    "card-advantage"
+  ],
+  "Port Town": [],
+  "Prairie Stream": [],
+  "Preordain": [
+    "draw",
+    "card-advantage"
+  ],
+  "Price of Progress": [],
+  "Primal Beyond": [],
+  "Primal Growth": [
+    "ramp",
+    "tutor",
+    "sacrifice-outlet"
+  ],
+  "Prismatic Lens": [
+    "ramp"
+  ],
+  "Prismatic Undercurrents": [
+    "ramp",
+    "tutor"
+  ],
+  "Professional Face-Breaker": [
+    "ramp",
+    "card-advantage",
+    "evasion",
+    "sacrifice-outlet"
+  ],
+  "Professor Hojo": [
+    "draw",
+    "card-advantage"
+  ],
+  "Prologue to Phyresis": [
+    "draw",
+    "card-advantage"
+  ],
+  "Propaganda": [],
+  "Psychic Corrosion": [
+    "mill"
+  ],
+  "Psychosis Crawler": [],
+  "Puca's Covenant": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Puresteel Paladin": [
+    "draw",
+    "card-advantage"
+  ],
+  "Putrefy": [
+    "removal"
+  ],
+  "Pyretic Ritual": [
+    "ramp"
+  ],
+  "Pyrrhic Strike": [
+    "removal"
+  ],
+  "Quartzwood Crasher": [],
+  "Quest for the Goblin Lord": [],
+  "Quick Study": [
+    "draw",
+    "card-advantage"
+  ],
+  "Quicksilver Gargantuan": [],
+  "Radiant Grove": [],
+  "Raffine's Tower": [
+    "draw",
+    "card-advantage"
+  ],
+  "Ragavan, Nimble Pilferer": [
+    "ramp",
+    "mill",
+    "card-advantage"
+  ],
+  "Raging Ravine": [],
+  "Rain-Slicked Copse": [
+    "draw",
+    "card-advantage"
+  ],
+  "Raiyuu, Storm's Edge": [],
+  "Rakdos Carnarium": [],
+  "Rakdos Charm": [
+    "removal",
+    "graveyard-hate"
+  ],
+  "Rakdos Signet": [
+    "ramp"
+  ],
+  "Rakdos, Lord of Riots": [
+    "evasion"
+  ],
+  "Ral, Storm Conduit": [
+    "removal"
+  ],
+  "Rally the Ancestors": [
+    "recursion"
+  ],
+  "Ram Through": [
+    "removal"
+  ],
+  "Rampaging Ferocidon": [
+    "evasion"
+  ],
+  "Rampaging Yao Guai": [
+    "removal"
+  ],
+  "Rampant Growth": [
+    "ramp",
+    "tutor"
+  ],
+  "Ramunap Excavator": [
+    "recursion"
+  ],
+  "Ramunap Ruins": [
+    "sacrifice-outlet"
+  ],
+  "Rapacious One": [
+    "ramp"
+  ],
+  "Raucous Carnival": [],
+  "Raul, Trouble Shooter": [
+    "mill",
+    "recursion",
+    "card-advantage"
+  ],
+  "Ravenous Chupacabra": [
+    "removal"
+  ],
+  "Ray Fillet, Wave Warrior": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Read the Bones": [
+    "draw",
+    "card-advantage"
+  ],
+  "Realmwalker": [
+    "card-advantage"
+  ],
+  "Reanimate": [
+    "recursion"
+  ],
+  "Reaper's Scythe": [],
+  "Reckless Bushwhacker": [],
+  "Reckless Charge": [],
+  "Reclamation Sage": [
+    "removal"
+  ],
+  "Red Elemental Blast": [
+    "removal",
+    "counterspell"
+  ],
+  "Red XIII, Proud Warrior": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Reflections of Littjara": [],
+  "Refute": [
+    "draw",
+    "counterspell",
+    "card-advantage"
+  ],
+  "Regna, the Redeemer": [
+    "tutor",
+    "evasion"
+  ],
+  "Relentless Assault": [],
+  "Relic of Legends": [
+    "ramp"
+  ],
+  "Reliquary Tower": [],
+  "Renegade Doppelganger": [],
+  "Renegade Tactics": [
+    "draw",
+    "card-advantage"
+  ],
+  "Reprieve": [
+    "draw",
+    "counterspell",
+    "card-advantage"
+  ],
+  "Repulsive Mutation": [
+    "counterspell"
+  ],
+  "Requiem Angel": [
+    "evasion"
+  ],
+  "Requisition Raid": [
+    "removal"
+  ],
+  "Response // Resurgence": [
+    "removal"
+  ],
+  "Restless Bivouac": [],
+  "Return of the Wildspeaker": [
+    "draw",
+    "card-advantage"
+  ],
+  "Reveillark": [
+    "recursion",
+    "evasion"
+  ],
+  "Revenge of Ravens": [
+    "lifegain"
+  ],
+  "Revitalizing Repast // Old-Growth Grove": [],
+  "Rewind": [
+    "counterspell"
+  ],
+  "Rhystic Study": [
+    "draw",
+    "card-advantage"
+  ],
+  "Rhythm of the Wild": [],
+  "Righteous Cause": [
+    "lifegain"
+  ],
+  "Rile": [
+    "draw",
+    "card-advantage"
+  ],
+  "Rionya, Fire Dancer": [],
+  "Ripples of Potential": [],
+  "Risen Reef": [
+    "ramp",
+    "card-advantage"
+  ],
+  "Rishkar's Expertise": [
+    "draw",
+    "card-advantage"
+  ],
+  "Rite of Replication": [],
+  "Riverchurn Monument": [
+    "mill"
+  ],
+  "Rockfall Vale": [],
+  "Rogue's Passage": [],
+  "Rootbound Crag": [],
+  "Rouse the Mob": [],
+  "Rugged Prairie": [],
+  "Ruin Crab": [
+    "mill"
+  ],
+  "Rule of Law": [],
+  "Rush of Adrenaline": [],
+  "SOLDIER Military Program": [],
+  "Sacred Peaks": [],
+  "Sadistic Shell Game": [
+    "removal"
+  ],
+  "Sage's Nouliths": [],
+  "Sakura-Tribe Elder": [
+    "ramp",
+    "tutor"
+  ],
+  "Sakura-Tribe Scout": [
+    "ramp"
+  ],
+  "Sanctum Prelate": [],
+  "Sand Scout": [
+    "ramp",
+    "tutor"
+  ],
+  "Sandsteppe Citadel": [],
+  "Sapphire Dragon // Psionic Pulse": [
+    "counterspell",
+    "evasion"
+  ],
+  "Sarkhan, Soul Aflame": [],
+  "Satyr Wayfinder": [
+    "mill",
+    "card-advantage"
+  ],
+  "Savage Lands": [],
+  "Savage Ventmaw": [
+    "ramp",
+    "evasion"
+  ],
+  "Scattered Groves": [
+    "draw",
+    "card-advantage"
+  ],
+  "Scavenger Grounds": [
+    "graveyard-hate",
+    "sacrifice-outlet"
+  ],
+  "Scavenging Ooze": [
+    "lifegain",
+    "graveyard-hate"
+  ],
+  "Scoured Barrens": [
+    "lifegain"
+  ],
+  "Scourge of Fleets": [
+    "removal",
+    "board-wipe"
+  ],
+  "Scourge of the Nobilis": [
+    "lifegain"
+  ],
+  "Scourge of the Throne": [
+    "evasion"
+  ],
+  "Screeching Scorchbeast": [
+    "mill",
+    "evasion"
+  ],
+  "Scute Swarm": [],
+  "Scuzzback Scrounger": [
+    "ramp"
+  ],
+  "Seance Board": [],
+  "Search the Premises": [
+    "draw",
+    "card-advantage"
+  ],
+  "Seaside Citadel": [],
+  "Secluded Courtyard": [],
+  "Secret Rendezvous": [
+    "draw",
+    "card-advantage"
+  ],
+  "Seething Song": [
+    "ramp"
+  ],
+  "Seize the Day": [],
+  "Selfless Samurai": [
+    "lifegain"
+  ],
+  "Selvala's Stampede": [
+    "ramp",
+    "card-advantage"
+  ],
+  "Selvala, Heart of the Wilds": [
+    "ramp",
+    "draw",
+    "mana-dork",
+    "card-advantage"
+  ],
+  "Sephiroth, Fallen Hero": [
+    "recursion",
+    "sacrifice-outlet"
+  ],
+  "Seraphic Greatsword": [
+    "evasion"
+  ],
+  "Serum Visions": [
+    "draw",
+    "card-advantage"
+  ],
+  "Shadow Kin": [
+    "mill"
+  ],
+  "Shadow Urchin": [
+    "card-advantage"
+  ],
+  "Shadowblood Ridge": [],
+  "Shadowmage Infiltrator": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Shadowspear": [
+    "lifegain"
+  ],
+  "Shamanic Revelation": [
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Shatter the Sky": [
+    "removal",
+    "draw",
+    "board-wipe",
+    "card-advantage"
+  ],
+  "Shatterskull Smashing": [],
+  "Shefet Dunes": [
+    "sacrifice-outlet"
+  ],
+  "Sheltered Thicket": [
+    "draw",
+    "card-advantage"
+  ],
+  "Sheltering Landscape": [
+    "draw",
+    "tutor",
+    "card-advantage"
+  ],
+  "Shineshadow Snarl": [],
+  "Shinestriker": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Shiny Impetus": [
+    "ramp"
+  ],
+  "Shipbreaker Kraken": [
+    "removal"
+  ],
+  "Shipwreck Marsh": [],
+  "Shire Terrace": [
+    "tutor"
+  ],
+  "Shivan Gorge": [],
+  "Shivan Reef": [],
+  "Shock": [
+    "removal"
+  ],
+  "Shriekmaw": [
+    "removal",
+    "evasion"
+  ],
+  "Siege-Gang Commander": [
+    "removal",
+    "sacrifice-outlet"
+  ],
+  "Sifter of Skulls": [
+    "ramp"
+  ],
+  "Sigil of Sleep": [
+    "removal"
+  ],
+  "Sigil of Valor": [],
+  "Sigiled Sword of Valeron": [],
+  "Sign in Blood": [
+    "draw",
+    "card-advantage"
+  ],
+  "Silent Arbiter": [],
+  "Silent-Blade Oni": [],
+  "Simic Guildgate": [],
+  "Sinister Gnarlbark": [
+    "draw",
+    "card-advantage"
+  ],
+  "Siren of the Silent Song": [
+    "mill",
+    "evasion"
+  ],
+  "Six": [
+    "mill",
+    "recursion",
+    "card-advantage"
+  ],
+  "Skarrg, the Rage Pits": [],
+  "Skeletal Changeling": [],
+  "Skinrender": [
+    "removal"
+  ],
+  "Skirk Drill Sergeant": [
+    "mill"
+  ],
+  "Skirk Fire Marshal": [
+    "removal",
+    "board-wipe",
+    "evasion"
+  ],
+  "Skirk Prospector": [
+    "ramp",
+    "mana-dork",
+    "sacrifice-outlet"
+  ],
+  "Skithiryx, the Blight Dragon": [
+    "evasion"
+  ],
+  "Skrelv, Defector Mite": [
+    "evasion"
+  ],
+  "Skull Prophet": [
+    "ramp",
+    "mill",
+    "mana-dork"
+  ],
+  "Skullclamp": [
+    "draw",
+    "card-advantage"
+  ],
+  "Skullsnatcher": [
+    "graveyard-hate"
+  ],
+  "Sky Diamond": [
+    "ramp"
+  ],
+  "Skycloud Expanse": [],
+  "Skyshroud Ranger": [
+    "ramp"
+  ],
+  "Slayers' Stronghold": [],
+  "Slithermuse": [
+    "draw",
+    "card-advantage"
+  ],
+  "Smoke Shroud": [
+    "recursion"
+  ],
+  "Smokebraider": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Smoldering Crater": [
+    "draw",
+    "card-advantage"
+  ],
+  "Smoldering Marsh": [],
+  "Smothering Abomination": [
+    "draw",
+    "card-advantage",
+    "evasion",
+    "sacrifice-outlet"
+  ],
+  "Smothering Tithe": [
+    "ramp"
+  ],
+  "Smuggler's Surprise": [
+    "mill",
+    "card-advantage"
+  ],
+  "Snake Umbra": [
+    "draw",
+    "card-advantage"
+  ],
+  "Snuff Out": [
+    "removal"
+  ],
+  "Sodden Verdure": [],
+  "Sokenzan, Crucible of Defiance": [],
+  "Sol Ring": [
+    "ramp"
+  ],
+  "Solar Transformer": [
+    "ramp"
+  ],
+  "Solemn Simulacrum": [
+    "ramp",
+    "draw",
+    "tutor",
+    "card-advantage"
+  ],
+  "Somberwald Sage": [
+    "ramp",
+    "mana-dork"
+  ],
+  "Soul Immolation": [
+    "removal",
+    "board-wipe"
+  ],
+  "Soul Snuffers": [
+    "removal",
+    "board-wipe"
+  ],
+  "Soulless Jailer": [
+    "graveyard-hate"
+  ],
+  "Spara's Headquarters": [
+    "draw",
+    "card-advantage"
+  ],
+  "Spectator Seating": [],
+  "Spell Pierce": [
+    "counterspell"
+  ],
+  "Spellbook": [],
+  "Spelunking": [
+    "ramp",
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Spiked Corridor // Torture Pit": [
+    "removal"
+  ],
+  "Spinerock Knoll": [],
+  "Spire Garden": [],
+  "Spire Tracer": [
+    "evasion"
+  ],
+  "Spire of Industry": [],
+  "Spirit Bonds": [
+    "evasion",
+    "sacrifice-outlet"
+  ],
+  "Spite // Malice": [
+    "removal",
+    "counterspell"
+  ],
+  "Spiteful Visions": [
+    "draw",
+    "card-advantage"
+  ],
+  "Spore Frog": [],
+  "Springbloom Druid": [
+    "ramp",
+    "tutor",
+    "sacrifice-outlet"
+  ],
+  "Stalwart Successor": [
+    "evasion"
+  ],
+  "Star Athlete": [
+    "removal",
+    "evasion"
+  ],
+  "Star Compass": [
+    "ramp"
+  ],
+  "Steam Vents": [],
+  "Stitch Together": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Stolen Identity": [],
+  "Stomping Ground": [],
+  "Storm's Wrath": [
+    "removal",
+    "board-wipe"
+  ],
+  "Storm-Kiln Artist": [
+    "ramp"
+  ],
+  "Stormcatch Mentor": [],
+  "Stormfist Crusader": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Stormtide Leviathan": [
+    "evasion"
+  ],
+  "Stroke of Midnight": [
+    "removal"
+  ],
+  "Strong, the Brutish Thespian": [
+    "mill",
+    "lifegain"
+  ],
+  "Struggle for Project Purity": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "Stubborn Denial": [
+    "counterspell"
+  ],
+  "Stun": [
+    "draw",
+    "card-advantage"
+  ],
+  "Sturmgeist": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Sublime Archangel": [
+    "evasion"
+  ],
+  "Sublime Epiphany": [
+    "removal",
+    "draw",
+    "counterspell",
+    "card-advantage"
+  ],
+  "Subterfuge": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Sulfur Falls": [],
+  "Sulfuric Vortex": [],
+  "Sulfurous Springs": [],
+  "Sultai Emissary": [],
+  "Summon: Good King Mog XII": [
+    "evasion",
+    "lifegain"
+  ],
+  "Summon: Kujata": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Summoning Materia": [
+    "ramp",
+    "card-advantage"
+  ],
+  "Sun Titan": [
+    "ramp",
+    "recursion"
+  ],
+  "Sunbaked Canyon": [
+    "draw",
+    "card-advantage"
+  ],
+  "Sunbillow Verge": [],
+  "Sunderflock": [
+    "removal",
+    "board-wipe",
+    "evasion"
+  ],
+  "Sundering Eruption": [],
+  "Sundering Eruption // Volcanic Fissure": [
+    "removal",
+    "tutor"
+  ],
+  "Sundown Pass": [],
+  "Sungrass Prairie": [],
+  "Sunhome, Fortress of the Legion": [],
+  "Sunken Hollow": [],
+  "Sunken Ruins": [],
+  "Sunlit Marsh": [],
+  "Sunpetal Grove": [],
+  "Sunscorched Divide": [],
+  "Sunstar Expansionist": [
+    "ramp",
+    "tutor"
+  ],
+  "Sure Strike": [],
+  "Suspended Sentence": [
+    "removal"
+  ],
+  "Swiftfoot Boots": [],
+  "Swiftwater Cliffs": [
+    "lifegain"
+  ],
+  "Sword Coast Serpent // Capsizing Wave": [
+    "removal",
+    "evasion"
+  ],
+  "Sword of Body and Mind": [
+    "mill"
+  ],
+  "Sword of Vengeance": [],
+  "Sword of the Animist": [
+    "ramp",
+    "tutor"
+  ],
+  "Sword of the Paruns": [],
+  "Swords to Plowshares": [
+    "removal",
+    "lifegain"
+  ],
+  "Syphon Mind": [
+    "draw",
+    "card-advantage"
+  ],
+  "Syr Konrad, the Grim": [
+    "mill"
+  ],
+  "Tainted Field": [],
+  "Tainted Isle": [],
+  "Tainted Observer": [
+    "evasion"
+  ],
+  "Tainted Peak": [],
+  "Tainted Wood": [],
+  "Talent of the Telepath": [
+    "mill"
+  ],
+  "Talisman of Conviction": [
+    "ramp"
+  ],
+  "Talisman of Creativity": [
+    "ramp"
+  ],
+  "Talisman of Curiosity": [
+    "ramp"
+  ],
+  "Talisman of Dominance": [
+    "ramp"
+  ],
+  "Talisman of Hierarchy": [
+    "ramp"
+  ],
+  "Talisman of Indulgence": [
+    "ramp"
+  ],
+  "Talisman of Progress": [
+    "ramp"
+  ],
+  "Talisman of Resilience": [
+    "ramp"
+  ],
+  "Talrand, Sky Summoner": [
+    "evasion"
+  ],
+  "Tamiyo, Field Researcher": [
+    "draw",
+    "card-advantage"
+  ],
+  "Tandem Lookout": [
+    "draw",
+    "card-advantage"
+  ],
+  "Tataru Taru": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
+  "Tato Farmer": [
+    "ramp",
+    "mill",
+    "recursion"
+  ],
+  "Tectonic Giant": [
+    "card-advantage"
+  ],
+  "Teferi's Protection": [],
+  "Teferi's Time Twist": [],
+  "Teferi, Master of Time": [
+    "draw",
+    "card-advantage"
+  ],
+  "Tekuthal, Inquiry Dominus": [
+    "evasion"
+  ],
+  "Tempered in Solitude": [
+    "card-advantage"
+  ],
+  "Temple Garden": [],
+  "Temple of Abandon": [],
+  "Temple of Epiphany": [],
+  "Temple of Malady": [],
+  "Temple of Malice": [],
+  "Temple of Mystery": [],
+  "Temple of Silence": [],
+  "Temple of Triumph": [],
+  "Temple of the Dragon Queen": [],
+  "Temple of the False God": [
+    "ramp"
+  ],
+  "Tempt with Reflections": [],
+  "Temur Ascendancy": [
+    "draw",
+    "card-advantage"
+  ],
+  "Temur Battle Rage": [],
+  "Terastodon": [
+    "removal"
+  ],
+  "Terramorphic Expanse": [
+    "tutor"
+  ],
+  "Terrasymbiosis": [
+    "draw",
+    "card-advantage"
+  ],
+  "Terror of Mount Velus": [
+    "evasion"
+  ],
+  "Tetsuko Umezawa, Fugitive": [
+    "evasion"
+  ],
+  "Teysa Karlov": [
+    "lifegain"
+  ],
+  "Teysa, Orzhov Scion": [
+    "removal",
+    "evasion",
+    "sacrifice-outlet"
+  ],
+  "Tezzeret's Gambit": [
+    "draw",
+    "card-advantage"
+  ],
+  "Thalakos Dreamsower": [
+    "removal",
+    "evasion"
+  ],
+  "Thalakos Seer": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Thalakos Sentry": [
+    "evasion"
+  ],
+  "Thalia, Guardian of Thraben": [],
+  "Thalia, Heretic Cathar": [],
+  "Thancred Waters": [],
+  "The Great Henge": [
+    "ramp",
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "The Lord of Pain": [
+    "evasion"
+  ],
+  "The Master of Lake-town": [
+    "draw",
+    "mill",
+    "card-advantage"
+  ],
+  "The Mindskinner": [
+    "mill",
+    "evasion"
+  ],
+  "The Reaper, King No More": [
+    "removal",
+    "recursion"
+  ],
+  "The Scorpion God": [
+    "removal",
+    "draw",
+    "recursion",
+    "card-advantage"
+  ],
+  "The Wise Mothman": [
+    "mill",
+    "evasion"
+  ],
+  "The World Tree": [
+    "tutor"
+  ],
+  "Theater of Horrors": [
+    "removal",
+    "card-advantage"
+  ],
+  "Thermo-Alchemist": [],
+  "Thirsting Roots": [
+    "tutor"
+  ],
+  "Thornbite Staff": [
+    "removal"
+  ],
+  "Thorough Investigation": [
+    "draw",
+    "card-advantage"
+  ],
+  "Thought Vessel": [
+    "ramp"
+  ],
+  "Thousand-Year Storm": [],
+  "Thrakkus the Butcher": [],
+  "Three Visits": [
+    "ramp",
+    "tutor"
+  ],
+  "Thrill of Possibility": [
+    "draw",
+    "card-advantage"
+  ],
+  "Throatseeker": [
+    "lifegain"
+  ],
+  "Throne of the God-Pharaoh": [],
+  "Thrummingbird": [
+    "evasion"
+  ],
+  "Thunder Dragon": [
+    "removal",
+    "board-wipe",
+    "evasion"
+  ],
+  "Thundermane Dragon": [
+    "card-advantage",
+    "evasion"
+  ],
+  "Tifa, Martial Artist": [],
+  "Titan of Industry": [
+    "removal",
+    "lifegain"
+  ],
+  "Titan's Strength": [],
+  "Titania, Protector of Argoth": [
+    "ramp",
+    "recursion"
+  ],
+  "Tome of Legends": [
+    "draw",
+    "card-advantage"
+  ],
+  "Tormenting Voice": [
+    "draw",
+    "card-advantage"
+  ],
+  "Torrential Gearhulk": [
+    "recursion"
+  ],
+  "Trailblazer's Boots": [],
+  "Transpose": [
+    "draw",
+    "card-advantage"
+  ],
+  "Treasonous Ogre": [
+    "ramp"
+  ],
+  "Treasure Cruise": [
+    "draw",
+    "card-advantage"
+  ],
+  "Treetop Scout": [
+    "evasion"
+  ],
+  "Trepanation Blade": [
+    "mill"
+  ],
+  "Triskelion": [
+    "removal"
+  ],
+  "Triton Shorestalker": [
+    "evasion"
+  ],
+  "Tromell, Seymour's Butler": [],
+  "Tromokratis": [
+    "evasion"
+  ],
+  "Tuktuk Scrapper": [
+    "removal"
+  ],
+  "Turbulent Wilderness": [],
+  "Twilight Drover": [
+    "evasion"
+  ],
+  "Twilight Mire": [],
+  "Twinflame": [],
+  "Twinflame Travelers": [
+    "evasion"
+  ],
+  "Ultimate Magic: Holy": [],
+  "Ultimate Magic: Meteor": [
+    "removal",
+    "board-wipe"
+  ],
+  "Uncaged Fury": [],
+  "Unclaimed Territory": [],
+  "Underground River": [],
+  "Unfinished Business": [
+    "recursion"
+  ],
+  "Unnatural Growth": [],
+  "Unnatural Restoration": [
+    "recursion",
+    "card-advantage"
+  ],
+  "Unwind": [
+    "counterspell"
+  ],
+  "Up the Beanstalk": [
+    "draw",
+    "card-advantage"
+  ],
+  "Ureni of the Unwritten": [
+    "card-advantage",
+    "evasion"
+  ],
+  "Ureni, the Song Unending": [
+    "removal",
+    "evasion"
+  ],
+  "Urianger Augurelt": [
+    "lifegain"
+  ],
+  "Utvara Hellkite": [
+    "evasion"
+  ],
+  "Valgavoth, Harrower of Souls": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
+  "Vance's Blasting Cannons": [],
+  "Vandalblast": [
+    "removal",
+    "board-wipe"
+  ],
+  "Vanquish the Horde": [
+    "removal",
+    "board-wipe"
+  ],
+  "Vanquisher's Banner": [
+    "draw",
+    "card-advantage"
+  ],
+  "Venerated Rotpriest": [],
+  "Venomous Changeling": [],
+  "Verdant Catacombs": [
+    "tutor"
+  ],
+  "Vernal Fen": [],
+  "Vernal Sovereign": [],
+  "Vexing Radgull": [
+    "mill",
+    "evasion"
+  ],
+  "Vial Smasher the Fierce": [
+    "removal"
+  ],
+  "Vibrance": [
+    "removal",
+    "tutor",
+    "lifegain"
+  ],
+  "Vicious Rivalry": [
+    "removal",
+    "board-wipe"
+  ],
+  "Vicious Shadows": [],
+  "Victimize": [
+    "recursion",
+    "sacrifice-outlet"
+  ],
+  "Vigor": [
+    "recursion"
+  ],
+  "Village Bell-Ringer": [],
+  "Village Pillagers": [
+    "ramp",
+    "removal",
+    "board-wipe"
+  ],
+  "Village Rites": [
+    "draw",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Vincent, Vengeful Atoner": [
+    "evasion"
+  ],
+  "Vindicate": [
+    "removal"
+  ],
+  "Vindictive Vampire": [
+    "lifegain"
+  ],
+  "Viridescent Bog": [],
+  "Viridian Emissary": [
+    "ramp",
+    "tutor"
+  ],
+  "Viridian Zealot": [
+    "removal"
+  ],
+  "Viscera Seer": [
+    "sacrifice-outlet"
+  ],
+  "Vivid Creek": [],
+  "Vivid Grove": [],
+  "Vivid Marsh": [],
+  "Vivid Meadow": [],
+  "Vizier of Many Faces": [],
+  "Voice of Victory": [],
+  "Void Rend": [
+    "removal"
+  ],
+  "Voidwing Hybrid": [
+    "recursion",
+    "evasion"
+  ],
+  "Voracious Dragon": [
+    "removal",
+    "evasion",
+    "sacrifice-outlet"
+  ],
+  "Vorinclex, Monstrous Raider": [],
+  "Vraska's Fall": [
+    "removal"
+  ],
+  "Vraska, Betrayal's Sting": [
+    "ramp",
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Vryn Wingmare": [
+    "evasion"
+  ],
+  "Walker of Secret Ways": [],
+  "Walking Atlas": [
+    "ramp"
+  ],
+  "Wall of Blossoms": [
+    "draw",
+    "card-advantage"
+  ],
+  "Warped Landscape": [
+    "tutor"
+  ],
+  "Warping Wail": [
+    "ramp",
+    "removal",
+    "counterspell"
+  ],
+  "Warren Instigator": [],
+  "Warren Torchmaster": [],
+  "Watery Grave": [],
+  "Wave Goodbye": [
+    "removal",
+    "board-wipe"
+  ],
+  "Whirlwing Stormbrood // Dynamic Soar": [
+    "evasion"
+  ],
+  "Whispering Madness": [
+    "draw",
+    "card-advantage"
+  ],
+  "White Auracite": [
+    "ramp",
+    "removal"
+  ],
+  "Wickerbough Elder": [
+    "removal"
+  ],
+  "Wickersmith's Tools": [
+    "ramp"
+  ],
+  "Wild Growth": [
+    "ramp"
+  ],
+  "Wild Ricochet": [],
+  "Wily Goblin": [
+    "ramp"
+  ],
+  "Wind-Scarred Crag": [
+    "lifegain"
+  ],
+  "Winding Constrictor": [],
+  "Winding Way": [
+    "mill",
+    "card-advantage"
+  ],
+  "Windswept Heath": [
+    "tutor"
+  ],
+  "Wingcrafter": [
+    "evasion"
+  ],
+  "Winota, Joiner of Forces": [
+    "card-advantage"
+  ],
+  "Witch's Clinic": [
+    "lifegain"
+  ],
+  "Woe Strider": [
+    "recursion",
+    "sacrifice-outlet"
+  ],
+  "Wonder": [
+    "evasion"
+  ],
+  "Wood Elves": [
+    "ramp",
+    "tutor"
+  ],
+  "Wooded Foothills": [
+    "tutor"
+  ],
+  "Wooded Ridgeline": [],
+  "Woodland Cemetery": [],
+  "Worldly Tutor": [
+    "tutor"
+  ],
+  "Worldsoul's Rage": [
+    "ramp",
+    "removal",
+    "recursion"
+  ],
+  "Wreck and Rebuild": [
+    "ramp",
+    "removal",
+    "mill",
+    "recursion"
+  ],
+  "Wrecking Ball Arm": [],
+  "Xenagos, God of Revels": [],
+  "Y'shtola, Night's Blessed": [
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
+  "Yahenni, Undying Partisan": [
+    "sacrifice-outlet"
+  ],
+  "Yarok, the Desecrated": [
+    "lifegain"
+  ],
+  "Yavimaya Coast": [],
+  "Yosei, the Morning Star": [
+    "evasion"
+  ],
+  "Young Pyromancer": [],
+  "Yuffie, Materia Hunter": [],
+  "Yuma, Proud Protector": [
+    "draw",
+    "card-advantage",
+    "sacrifice-outlet"
+  ],
+  "Yuriko, the Tiger's Shadow": [
+    "card-advantage"
+  ],
+  "Zack Fair": [],
+  "Zada, Hedron Grinder": [],
+  "Zagoth Triome": [
+    "draw",
+    "card-advantage"
+  ],
+  "Zap": [
+    "removal",
+    "draw",
+    "card-advantage"
+  ],
+  "Zealous Conscripts": [],
+  "Zephyr Sprite": [
+    "evasion"
+  ],
+  "Zo-Zu the Punisher": [],
+  "Zopandrel, Hunger Dominus": [
+    "sacrifice-outlet"
+  ],
+  "Zulaport Cutthroat": [
+    "lifegain"
+  ],
+  "Zuran Orb": [
+    "lifegain",
+    "sacrifice-outlet"
+  ]
+}

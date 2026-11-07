@@ -5,7 +5,7 @@ Usage:
     python3 deck_analyzer.py decks/<deck>/decklist.txt              # Full analysis
     python3 deck_analyzer.py decks/<deck>/decklist.txt --oracle     # Full oracle text dump
     python3 deck_analyzer.py decks/<deck>/decklist.txt --speed      # Instant vs sorcery breakdown
-    python3 deck_analyzer.py decks/<deck>/decklist.txt --cuts       # Cut candidates sorted by impact
+    python3 deck_analyzer.py decks/<deck>/decklist.txt --cuts       # Cut candidates: low synergy + high mana value
     python3 deck_analyzer.py decks/<deck>/decklist.txt --search rad # Grep oracle text
 """
 import argparse
@@ -385,56 +385,58 @@ def mode_speed(all_cards, cmdr_name):
     print(f"  Count: {len(sorcery_protection)}")
 
 
-def mode_cuts(all_cards, cmdr_name):
-    """List potential cut candidates sorted by CMC (high to low), with otags and price."""
+def mode_cuts(all_cards, cmdr_name, decklist=None):
+    """List cut candidates: low synergy and high mana value first (see synergy.py)."""
     print(f"=== Cut Candidates: {cmdr_name} ===\n")
 
     from otag_fetcher import fetch_otags_for_cards, BASICS
+    from synergy import card_view, compute_synergy, rank_cuts, tag_label, load_combos
     card_names = sorted(set(c['name'] for c in all_cards if c['name'] not in BASICS))
     otags_by_card = fetch_otags_for_cards(card_names)
 
-    nonland = []
+    views, seen = [], set()
     for c in all_cards:
-        sf = c['scryfall']
-        types = classify_type(get_type_line(sf))
-        if 'Land' in types:
+        if c['name'] in seen:
             continue
-        if any('Commander' in t for t in c.get('tags', [])):
-            continue
+        seen.add(c['name'])
+        sf = dict(c['scryfall'], name=c['name'])
+        views.append(card_view(sf, otags_by_card.get(c['name'], [])))
+    cmdr = cmdr_name if cmdr_name != "Unknown" else None
+    from combos import deck_bracket
+    bracket = deck_bracket(decklist) if decklist else None
+    from synergy import deck_plan
+    plans = deck_plan(decklist) if decklist else set()
+    result = compute_synergy(views, cmdr, load_combos(views, cmdr, decklist), bracket, plans)
+    candidates, role_cards = rank_cuts(result, views, cmdr)
+    by_name = {c['name']: c for c in all_cards}
 
-        cmc = get_cmc(sf)
-        tags = otags_by_card.get(c['name'], [])
+    def row(r):
+        sf = by_name[r['name']]['scryfall']
+        tags = otags_by_card.get(r['name'], [])
         price = get_price_eur(sf)
         price_str = f"€{price:.2f}" if price else "N/A"
-        type_line = get_type_line(sf)
+        tags_str = ', '.join(tags) if tags else '(none)'
+        combo = '  [COMBO PIECE]' if r.get('combo_piece') else ''
+        print(f"{r['cut_score']:6.2f}  {r['cmc']:3.0f}  {r['synergy']:6.2f}  {r['name']:<35s}  "
+              f"{get_mana_cost(sf):<12s}  {price_str:>6s}  {tags_str}{combo}")
 
-        nonland.append({
-            'name': c['name'],
-            'cmc': cmc,
-            'cost': get_mana_cost(sf),
-            'type': type_line,
-            'tags': tags,
-            'price': price_str,
-            'oracle_preview': get_oracle_text(sf)[:80],
-        })
+    label = lambda t: tag_label(t) if t else '-'
+    print(f"Main theme: {label(result['main_theme'])}   Subtheme: {label(result['subtheme'])}")
+    print("Cut score = synergy percentile - 0.5 x mana value percentile (lowest = cut first).\n")
+    header = f"{'Score':>6s}  {'CMC':>3s}  {'Syn':>6s}  {'Card':<35s}  {'Cost':<12s}  {'Price':>6s}  Otags"
+    print(header)
+    print("-" * 100)
+    for r in candidates:
+        row(r)
 
-    # Sort by CMC descending, then name
-    nonland.sort(key=lambda x: (-x['cmc'], x['name']))
+    if role_cards:
+        print(f"\n--- Role cards ({len(role_cards)}): removal, ramp, draw, combo pieces — judge against the template and combos, not synergy ---")
+        print(header)
+        print("-" * 100)
+        for r in role_cards:
+            row(r)
 
-    print(f"{'CMC':>3s}  {'Card':<35s}  {'Cost':<12s}  {'Price':>6s}  Otags")
-    print("-" * 90)
-    for c in nonland:
-        tags_str = ', '.join(c['tags']) if c['tags'] else '(none)'
-        print(f"{c['cmc']:3.0f}  {c['name']:<35s}  {c['cost']:<12s}  {c['price']:>6s}  {tags_str}")
-
-    # Flag cards with no otags (potentially low-impact)
-    no_tags = [c for c in nonland if not c['tags']]
-    if no_tags:
-        print(f"\n--- Cards with NO otags ({len(no_tags)}) — potential cut candidates ---")
-        for c in sorted(no_tags, key=lambda x: (-x['cmc'], x['name'])):
-            print(f"  CMC {c['cmc']:.0f}  {c['name']}  {c['cost']}")
-            print(f"    {c['oracle_preview']}")
-            print()
+    print("\nWhy a card scores what it does: python3 synergy.py <decklist> --card \"Name\"")
 
 
 def mode_search(all_cards, keyword):
@@ -475,7 +477,7 @@ if __name__ == '__main__':
     ap.add_argument('decklist', help='Path to decklist file')
     ap.add_argument('--oracle', action='store_true', help='Dump full oracle text for all cards')
     ap.add_argument('--speed', action='store_true', help='Instant vs sorcery speed interaction breakdown')
-    ap.add_argument('--cuts', action='store_true', help='List cut candidates sorted by CMC')
+    ap.add_argument('--cuts', action='store_true', help='List cut candidates by synergy and mana value')
     ap.add_argument('--search', type=str, help='Search oracle texts for a keyword')
     args = ap.parse_args()
 
@@ -487,7 +489,7 @@ if __name__ == '__main__':
     elif args.speed:
         mode_speed(all_cards, cmdr_name)
     elif args.cuts:
-        mode_cuts(all_cards, cmdr_name)
+        mode_cuts(all_cards, cmdr_name, args.decklist)
     elif args.search:
         mode_search(all_cards, args.search)
     else:
