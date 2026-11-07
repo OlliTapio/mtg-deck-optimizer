@@ -99,6 +99,14 @@ DRAW_PATTERN = re.compile(
 SELECTION_PATTERN = re.compile(
     r"\bscry \d|\bscry x|\bsurveil\b|look at the top|reveal the top|\bexplores?\b|\bconnives?\b"
     r"|draw [^.]*, then discard|discard [^.]*, then draw")
+# Trigger doublers ("if a triggered ability of a legendary creature you control triggers, that
+# ability triggers an additional time"): each matching card is worth a base plus a share of its own
+# synergy, scaled by how much of that synergy comes from triggered abilities. Capped like any pair.
+DOUBLER_BASE = 0.5
+DOUBLER_SHARE = 0.1
+DOUBLER_PATTERN = re.compile(
+    r"triggered ability of (?:a |an |another )?(legendary )?(creature|permanent|artifact|enchantment)s? you control"
+    r" triggers, (?:that ability|it) triggers an additional time")
 DEFAULT_BRACKET = 3           # when the deck's CLAUDE.md names no bracket
 WINCON_PATTERN = re.compile(
     r"win the game|loses? the game|\binfinite (?:combat )?damage(?! to creatures)|near-infinite damage(?! to creatures)"
@@ -126,6 +134,7 @@ TAG_LABELS = {
     'cast_noncreature': 'noncreature spells', 'cast_exile': 'casting from exile',
     'etb': 'creatures entering', 'big_power': 'power 4+',
     'trigger_dies': 'death-trigger doubling', 'trigger_etb': 'ETB-trigger doubling',
+    'trigger_double': 'trigger doubling', 'triggers': 'triggered abilities',
     'ramp': 'ramp', 'protection': 'protects the commander', 'combo': 'known combo', 'combo_win': 'known combo (wins the game)',
 }
 
@@ -142,6 +151,8 @@ def tag_label(tag):
         return f'{tag[3:]} matters'
     if tag.startswith('type:'):
         return f'{tag[5:]} matters'
+    if tag.startswith('trigger_double:'):
+        return f'{tag.split(":", 1)[1]} trigger doubling'
     if tag.startswith('color:'):
         _, color, kind = tag.split(':')
         return f'{color.lower()} {kind} spells'
@@ -186,6 +197,7 @@ def card_view(d, otags=None):
         'name': d['name'],
         'oracle': oracle or '',
         'front_types': {t for t in MAIN_TYPES if t in front},
+        'legendary': 'Legendary' in front,
         'back_land': bool(d.get('card_faces')) and any('Land' in tl for tl in type_lines[1:]),
         'subtypes': subtypes,
         'keywords': set(d.get('keywords') or []),
@@ -232,10 +244,19 @@ def split_abilities(text):
             cost, body = m.group(1), m.group(2)
             out.append(('activated', cost, body))
             continue
+        # Ability words ("landfall — whenever ...") label a trigger without changing it
+        aw = re.match(r"^[a-z][\w ,'-]* — ((?:when|whenever|at)\b.*)$", body)
+        if aw:
+            body = aw.group(1)
+        trigger_cond = None
         for sent in re.split(r'(?<=\.)\s+', body):
             tm = re.match(r'^(when|whenever|at the beginning of)\b([^,]*),\s*(.*)$', sent)
             if tm:
-                out.append(('trigger', tm.group(2).strip(), tm.group(3)))
+                trigger_cond = tm.group(2).strip()
+                out.append(('trigger', trigger_cond, tm.group(3)))
+            elif trigger_cond is not None:
+                # The rest of a triggered ability's paragraph ("If you do, draw a card.") is part of it
+                out.append(('trigger', trigger_cond, sent))
             else:
                 out.append(('static', '', sent))
     return out
@@ -320,6 +341,10 @@ EFFECT_RULES = [
     (r'sacrifice ~: search|sacrifice (?:a|an) land\b', 'land_gy', 'P', 1.0),
     # Self-mill puts some of your lands into your graveyard
     (r'each player mills?|\byou mill\b|^mill (?:a|one|two|three|four|five|x|\d+) cards?', 'land_gy', 'P', 0.5),
+    # "Reveal the top four cards ... put the rest into your graveyard" is self-mill too
+    (r'(?:the rest|all other cards revealed this way|the other cards?) (?:in|into) your graveyard', 'mill', 'P', 1.0),
+    (r'(?:the rest|all other cards revealed this way|the other cards?) (?:in|into) your graveyard', 'graveyard', 'P', 1.0),
+    (r'(?:the rest|all other cards revealed this way|the other cards?) (?:in|into) your graveyard', 'land_gy', 'P', 0.5),
     # Rad counters on you mill only a little (one card per counter, half of them lands at best): small bonus
     (r'(?:each player|\byou) gets? [^.]*rad counters?', 'land_gy', 'P', RAD_LAND_GY),
     # card draw / lifegain
@@ -457,8 +482,11 @@ def extract_features(view, deck_subtypes=frozenset()):
 
     is_permanent = bool(types) and not (types & {'Instant', 'Sorcery'})
     card_repeat = REPEAT_ONE_SHOT
+    trigger_feats, first_trigger = 0, None
     for kind, cond, body in split_abilities(text):
         start = len(feats)
+        if kind == 'trigger' and first_trigger is None:
+            first_trigger = f'{cond}, {body}'
         factor = ability_repeat(kind, cond, is_permanent, body)
         if kind != 'static' or re.search(r'\bwould\b', body):
             card_repeat = max(card_repeat, factor)
@@ -515,6 +543,16 @@ def extract_features(view, deck_subtypes=frozenset()):
                     add(tag, 'C', scope, seg, strength)
 
         _repeat_since(feats, *_apply_after)
+        if kind == 'trigger':
+            trigger_feats += len(feats) - start
+
+    # Share of this card's own hooks that come from triggered abilities (what a doubler copies)
+    if is_permanent and first_trigger is not None:
+        share = trigger_feats / max(1, len(feats)) if feats else 1.0
+        add('triggers', 'P', 'self', 'when ' + first_trigger, round(max(share, 0.25), 3))
+    dm = DOUBLER_PATTERN.search(text)
+    if dm:
+        add(f"trigger_double:{'legendary ' if dm.group(1) else ''}{dm.group(2)}", 'C', 'yours', dm.group(0))
 
     # Colour matters: "whenever you cast a green permanent spell" (producers added per deck)
     for m in re.finditer(r'cast (?:a|an|your first) (white|blue|black|red|green) (?:(permanent|creature|instant or sorcery) )?spell', text):
@@ -778,6 +816,37 @@ def commander_dependence(commander_name, names, raw_matches, plans=frozenset()):
     return round(dep, 3), round(ratio, 2)
 
 
+def _doubler_matches(views, features, pairs):
+    """Pair each trigger doubler with every card whose triggers it copies. Weight: (DOUBLER_BASE +
+    DOUBLER_SHARE x the card's synergy so far) x the share of its hooks that come from triggers."""
+    totals = defaultdict(float)
+    for (a, b), p in pairs.items():
+        totals[a] += p['score']
+        totals[b] += p['score']
+    by_name = {v['name']: v for v in views}
+    out = []
+    for dn, fs in features.items():
+        for df in fs:
+            if df.side != 'C' or not df.tag.startswith('trigger_double:'):
+                continue
+            want = df.tag.split(':', 1)[1]
+            legendary = want.startswith('legendary ')
+            kind = want.split()[-1].capitalize()
+            for tn, tfs in features.items():
+                tv = by_name[tn]
+                trig = next((f for f in tfs if f.tag == 'triggers'), None)
+                if tn == dn or trig is None or (legendary and not tv['legendary']):
+                    continue
+                if kind != 'Permanent' and kind not in tv['front_types']:
+                    continue
+                w = round(min(PAIR_CAP, (DOUBLER_BASE + DOUBLER_SHARE * totals[tn]) * trig.strength), 3)
+                if w > 0:
+                    out.append({'tag': 'trigger_double', 'producer': tn, 'payoff': dn, 'weight': w,
+                                'producer_evidence': trig.evidence,
+                                'payoff_evidence': df.evidence})
+    return out
+
+
 def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans=frozenset()):
     """Score every card pair. `views` is a list of card_view dicts. `combos` is the
     'included' list from combos.fetch_combos: each pair of pieces gets a bonus reason,
@@ -914,14 +983,23 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
         w = m['weight'] * bonus.get(m['tag'], 1.0)
         m = dict(m, weight=round(w, 3))
         pairs[(a, b)]['reasons'].append(m)
-    for key, p in pairs.items():
-        # The cap limits text synergy only; known combos add on top of it.
-        text = sum(r['weight'] for r in p['reasons'] if not r['tag'].startswith('combo'))
-        combo = sum(r['weight'] for r in p['reasons'] if r['tag'].startswith('combo'))
-        p['score'] = round(min(PAIR_CAP, text) + combo, 3)
-        if commander_name in key:
-            p['score'] = round(p['score'] * COMMANDER_BONUS, 3)
-        p['reasons'].sort(key=lambda r: -r['weight'])
+    def score_pairs():
+        for key, p in pairs.items():
+            # The cap limits text synergy only; known combos add on top of it.
+            text = sum(r['weight'] for r in p['reasons'] if not r['tag'].startswith('combo'))
+            combo = sum(r['weight'] for r in p['reasons'] if r['tag'].startswith('combo'))
+            p['score'] = round(min(PAIR_CAP, text) + combo, 3)
+            if commander_name in key:
+                p['score'] = round(p['score'] * COMMANDER_BONUS, 3)
+            p['reasons'].sort(key=lambda r: -r['weight'])
+    score_pairs()
+
+    # Trigger doublers copy what a card's triggers do: worth a share of that card's synergy
+    doubler_matches = _doubler_matches(views, features, pairs)
+    for m in doubler_matches:
+        pairs[tuple(sorted((m['producer'], m['payoff'])))]['reasons'].append(m)
+    if doubler_matches:
+        score_pairs()
 
     # Per-card totals
     cards = {}
@@ -978,10 +1056,12 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
     unmatched = []
     for tag, cs in payoffs.items():
         for cn, cf in cs:
+            if tag.startswith('trigger_double:') and any(m['payoff'] == cn for m in doubler_matches):
+                continue
             if not any(m['payoff'] == cn and m['tag'] == tag for m in matches.values()):
                 unmatched.append({'card': cn, 'side': 'cares', 'tag': tag, 'evidence': cf.evidence})
     for tag, ps in producers.items():
-        if tag in payoffs or tag.startswith(('type:', 'kw:')) or tag in ('etb', 'cast_noncreature', 'big_power'):
+        if tag in payoffs or tag.startswith(('type:', 'kw:')) or tag in ('etb', 'cast_noncreature', 'big_power', 'triggers'):
             continue
         for pn, pf in ps:
             if pf.strength >= 1.0:

@@ -480,6 +480,58 @@ class TestColorMassAndSelfMill:
         p = _pair(r, 'Mole Man, Moloid Master', 'Psychic Corrosion')
         assert p is None or all(x['tag'] != 'land_gy' for x in p['reasons'])
 
+    def test_reveal_rest_into_graveyard_is_self_mill(self):
+        satyr = _card('Satyr Wayfinder', 'Creature — Satyr',
+                      'When this creature enters, reveal the top four cards of your library. You may put a land card '
+                      'from among them into your hand. Put the rest into your graveyard.', power=1, cmc=2)
+        feats = _feats(satyr)
+        assert ('mill', 'P', 'yours') in feats
+        assert ('land_gy', 'P', 'yours') in feats
+
+
+class TestTriggers:
+    ANNIE = _card('Annie Joins Up', 'Legendary Enchantment',
+                  'When Annie Joins Up enters, it deals 5 damage to target creature or planeswalker an opponent '
+                  'controls.\nIf a triggered ability of a legendary creature you control triggers, that ability '
+                  'triggers an additional time.', cmc=4)
+    YUMA = _card('Yuma, Proud Protector', 'Legendary Creature — Human Ranger',
+                 'This spell costs {1} less to cast for each land card in your graveyard.\n'
+                 'Whenever Yuma enters or attacks, you may sacrifice a land. If you do, draw a card.\n'
+                 'Whenever a Desert card is put into your graveyard from anywhere, create a 4/2 green Plant Warrior '
+                 'creature token with reach.', power=6, cmc=8)
+    OMNATH = _card('Omnath, Locus of Rage', 'Legendary Creature — Elemental',
+                   'Landfall — Whenever a land you control enters, create a 5/5 red and green Elemental creature '
+                   'token.', power=5, cmc=7)
+    LOAM = _card('Life from the Loam', 'Sorcery', 'Return up to three target land cards from your graveyard to '
+                 'your hand.', cmc=2)
+    DESERT = _card('Desert of the True', 'Land — Desert', 'This land enters tapped.\n{T}: Add {W}.')
+
+    def test_ability_word_is_a_trigger(self):
+        from synergy import split_abilities, normalize_text
+        kinds = [k for k, _, _ in split_abilities(normalize_text(self.OMNATH))]
+        assert kinds == ['trigger']
+
+    def test_rest_of_trigger_paragraph_stays_in_trigger(self):
+        from synergy import split_abilities, normalize_text
+        abilities = split_abilities(normalize_text(self.YUMA))
+        assert ('trigger', '~ enters or attacks', 'if you do, draw a card.') in abilities
+
+    def test_doubler_pairs_with_legendary_triggers_only(self):
+        plain = _card('Scute Swarm', 'Creature — Insect', 'Landfall — Whenever a land you control enters, create '
+                      'a 1/1 green Insect creature token.', power=1)
+        r = compute_synergy([self.ANNIE, self.YUMA, self.OMNATH, plain, self.LOAM, self.DESERT],
+                            commander_name='Yuma, Proud Protector')
+        for legend in ('Yuma, Proud Protector', 'Omnath, Locus of Rage'):
+            assert any(x['tag'] == 'trigger_double' for x in _pair(r, 'Annie Joins Up', legend)['reasons'])
+        p = _pair(r, 'Annie Joins Up', 'Scute Swarm')
+        assert p is None or all(x['tag'] != 'trigger_double' for x in p['reasons'])
+
+    def test_doubler_scales_with_target_synergy(self):
+        r = compute_synergy([self.ANNIE, self.YUMA, self.OMNATH, self.LOAM, self.DESERT])
+        yuma = _pair(r, 'Annie Joins Up', 'Yuma, Proud Protector')['score']
+        omnath = _pair(r, 'Annie Joins Up', 'Omnath, Locus of Rage')['score']
+        assert yuma > omnath > 0
+
 
 class TestCuts:
     def test_low_synergy_high_cmc_first_and_roles_apart(self):

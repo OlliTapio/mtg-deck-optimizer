@@ -32,6 +32,13 @@
    "payoffs": 3
   },
   {
+   "tag": "graveyard",
+   "label": "graveyard",
+   "score": 12.75,
+   "producers": 2,
+   "payoffs": 8
+  },
+  {
    "tag": "type:Shapeshifter",
    "label": "Shapeshifter matters",
    "score": 11.0,
@@ -48,7 +55,7 @@
   {
    "tag": "landfall",
    "label": "landfall",
-   "score": 8.5,
+   "score": 8.0,
    "producers": 4,
    "payoffs": 2
   },
@@ -58,13 +65,6 @@
    "score": 7.75,
    "producers": 7,
    "payoffs": 1
-  },
-  {
-   "tag": "graveyard",
-   "label": "graveyard",
-   "score": 7.5,
-   "producers": 1,
-   "payoffs": 8
   },
   {
    "tag": "type:Elf",
@@ -192,7 +192,7 @@
    "ramp_kind": "other"
   },
   "Avenger of Zendikar": {
-   "total": 42.75,
+   "total": 42.5,
    "cmdr_fit": 3.0,
    "partners": 31,
    "best_partner": "Ashling, the Limitless",
@@ -201,7 +201,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 30.0,
-    "landfall": 4.25,
+    "landfall": 4.0,
     "go_wide": 2.25,
     "big_power": 2.25,
     "etb": 1.5,
@@ -249,9 +249,9 @@
    "themes": {}
   },
   "Cavalier of Thorns": {
-   "total": 64.1,
+   "total": 68.85,
    "cmdr_fit": 3.0,
-   "partners": 28,
+   "partners": 34,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
    "ramp_bonus": 15.91,
@@ -260,11 +260,11 @@
     "type:Elemental": 30.0,
     "ramp": 15.91,
     "card draw": 8.55,
-    "landfall": 2.5,
+    "graveyard": 6.19,
     "big_power": 2.25,
+    "landfall": 2.0,
     "fodder": 1.0,
     "trigger_dies": 1.0,
-    "graveyard": 0.94,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
@@ -382,16 +382,16 @@
    }
   },
   "Endurance": {
-   "total": 32.89,
+   "total": 33.64,
    "cmdr_fit": 3.0,
-   "partners": 24,
+   "partners": 25,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 30.0,
-    "graveyard": 0.94,
+    "graveyard": 1.69,
     "etb": 0.45
    }
   },
@@ -555,9 +555,9 @@
    "draw_kind": "draw"
   },
   "Grave Sifter": {
-   "total": 43.69,
+   "total": 44.44,
    "cmdr_fit": 3.0,
-   "partners": 25,
+   "partners": 26,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
    "ramp_bonus": 0.0,
@@ -566,16 +566,16 @@
     "type:Elemental": 30.0,
     "card draw": 8.55,
     "big_power": 2.25,
-    "graveyard": 0.94,
+    "graveyard": 1.69,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
    "draw_kind": "draw"
   },
   "Greenwarden of Murasa": {
-   "total": 45.69,
+   "total": 46.44,
    "cmdr_fit": 3.0,
-   "partners": 27,
+   "partners": 28,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
    "ramp_bonus": 0.0,
@@ -584,9 +584,9 @@
     "type:Elemental": 30.0,
     "card draw": 8.55,
     "big_power": 2.25,
+    "graveyard": 1.69,
     "fodder": 1.0,
     "trigger_dies": 1.0,
-    "graveyard": 0.94,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
@@ -617,20 +617,20 @@
    "draw_kind": "draw"
   },
   "Haunting Voyage": {
-   "total": 2.44,
+   "total": 3.19,
    "cmdr_fit": 0.0,
-   "partners": 4,
+   "partners": 5,
    "best_partner": "Ashling, Rekindled",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "etb": 1.5,
-    "graveyard": 0.94
+    "graveyard": 1.69,
+    "etb": 1.5
    }
   },
   "Horde of Notions": {
-   "total": 98.14,
+   "total": 98.89,
    "cmdr_fit": 6.0,
    "partners": 50,
    "best_partner": "Ashling, the Limitless",
@@ -640,14 +640,14 @@
    "themes": {
     "type:Elemental": 91.5,
     "big_power": 2.25,
-    "graveyard": 0.94,
+    "graveyard": 1.69,
     "etb": 0.45
    }
   },
   "Impulsivity": {
-   "total": 35.14,
+   "total": 35.89,
    "cmdr_fit": 3.0,
-   "partners": 25,
+   "partners": 26,
    "best_partner": "Ashling, the Limitless",
    "combo_piece": false,
    "ramp_bonus": 0.0,
@@ -655,7 +655,7 @@
    "themes": {
     "type:Elemental": 30.0,
     "big_power": 2.25,
-    "graveyard": 0.94,
+    "graveyard": 1.69,
     "etb": 0.45
    }
   },
@@ -853,7 +853,7 @@
    "draw_kind": "draw"
   },
   "Omnath, Locus of the Roil": {
-   "total": 107.75,
+   "total": 107.5,
    "cmdr_fit": 6.0,
    "partners": 52,
    "best_partner": "Ashling, the Limitless",
@@ -863,7 +863,7 @@
    "themes": {
     "type:Elemental": 91.5,
     "card draw": 8.55,
-    "landfall": 4.25,
+    "landfall": 4.0,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
@@ -1250,15 +1250,15 @@
    "themes": {}
   },
   "Patriarch's Bidding": {
-   "total": 0.94,
+   "total": 1.69,
    "cmdr_fit": 0.0,
-   "partners": 1,
+   "partners": 2,
    "best_partner": "Ashling, Rekindled",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "graveyard": 0.94
+    "graveyard": 1.69
    }
   },
   "Titan of Industry": {
@@ -1412,10 +1412,10 @@
  },
  "plans": [],
  "commander_dependence": {
-  "score": 0.609,
-  "synergy_vs_average_card": 2.83,
-  "protection_weight": 0.609,
-  "protection_bonus": 10.414,
+  "score": 0.605,
+  "synergy_vs_average_card": 2.81,
+  "protection_weight": 0.605,
+  "protection_bonus": 10.345,
   "protection_cards": []
  },
  "draw": {
@@ -1549,7 +1549,7 @@
    "card": "Shinestriker",
    "side": "produces",
    "tag": "draw",
-   "evidence": "vivid — when ~ enters, draw cards equal to the number of colors among permanent…"
+   "evidence": "draw cards equal to the number of colors among permanents you control."
   },
   {
    "card": "Slithermuse",
@@ -1567,7 +1567,7 @@
    "card": "Avenger of Zendikar",
    "side": "produces",
    "tag": "counters_p1p1",
-   "evidence": "landfall — whenever a land you control enters, you may put a +1/+1 counter on e…"
+   "evidence": "you may put a +1/+1 counter on each plant creature you control."
   },
   {
    "card": "Bane of Progress",
@@ -1579,13 +1579,13 @@
    "card": "Omnath, Locus of the Roil",
    "side": "produces",
    "tag": "counters_p1p1",
-   "evidence": "landfall — whenever a land you control enters, put a +1/+1 counter on target el…"
+   "evidence": "put a +1/+1 counter on target elemental you control."
   },
   {
    "card": "Avenger of Zendikar",
    "side": "produces",
    "tag": "counters_present",
-   "evidence": "landfall — whenever a land you control enters, you may put a +1/+1 counter on e…"
+   "evidence": "you may put a +1/+1 counter on each plant creature you control."
   },
   {
    "card": "Bane of Progress",
@@ -1597,13 +1597,13 @@
    "card": "Omnath, Locus of the Roil",
    "side": "produces",
    "tag": "counters_present",
-   "evidence": "landfall — whenever a land you control enters, put a +1/+1 counter on target el…"
+   "evidence": "put a +1/+1 counter on target elemental you control."
   },
   {
    "card": "Cavalier of Thorns",
    "side": "produces",
    "tag": "mill",
-   "evidence": "otag: mill"
+   "evidence": "put a land card from among them onto the battlefield and the rest into your gra…"
   },
   {
    "card": "Descendants' Fury",
@@ -4428,25 +4428,6 @@
    ]
   },
   {
-   "a": "Cavalier of Thorns",
-   "b": "Omnath, Locus of the Roil",
-   "score": 2.75,
-   "reasons": [
-    {
-     "tag": "type:Elemental",
-     "producer": "Cavalier of Thorns",
-     "payoff": "Omnath, Locus of the Roil",
-     "weight": 1.5
-    },
-    {
-     "tag": "landfall",
-     "producer": "Cavalier of Thorns",
-     "payoff": "Omnath, Locus of the Roil",
-     "weight": 1.25
-    }
-   ]
-  },
-  {
    "a": "Brighthearth Banneret",
    "b": "Crib Swap",
    "score": 2.5,
@@ -4561,6 +4542,25 @@
    ]
   },
   {
+   "a": "Cavalier of Thorns",
+   "b": "Omnath, Locus of the Roil",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "type:Elemental",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Omnath, Locus of the Roil",
+     "weight": 1.5
+    },
+    {
+     "tag": "landfall",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Omnath, Locus of the Roil",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
    "a": "Ashling, Rekindled",
    "b": "Horde of Notions",
    "score": 2.438,
@@ -4614,6 +4614,25 @@
      "producer": "Vernal Sovereign",
      "payoff": "Jubilation",
      "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Cavalier of Thorns",
+   "b": "Horde of Notions",
+   "score": 2.25,
+   "reasons": [
+    {
+     "tag": "type:Elemental",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Horde of Notions",
+     "weight": 1.5
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Horde of Notions",
+     "weight": 0.75
     }
    ]
   },
@@ -7146,19 +7165,6 @@
     {
      "tag": "type:Elemental",
      "producer": "Belonging",
-     "payoff": "Horde of Notions",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Cavalier of Thorns",
-   "b": "Horde of Notions",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "type:Elemental",
-     "producer": "Cavalier of Thorns",
      "payoff": "Horde of Notions",
      "weight": 1.5
     }
@@ -12043,19 +12049,6 @@
    ]
   },
   {
-   "a": "Avenger of Zendikar",
-   "b": "Cavalier of Thorns",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "landfall",
-     "producer": "Cavalier of Thorns",
-     "payoff": "Avenger of Zendikar",
-     "weight": 1.25
-    }
-   ]
-  },
-  {
    "a": "Abundant Countryside",
    "b": "Descendants' Fury",
    "score": 1.25,
@@ -12309,6 +12302,19 @@
      "tag": "type:Shapeshifter",
      "producer": "Realmwalker",
      "payoff": "Crib Swap",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Avenger of Zendikar",
+   "b": "Cavalier of Thorns",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Avenger of Zendikar",
      "weight": 1.0
     }
    ]
@@ -13182,6 +13188,84 @@
      "producer": "Sunderflock",
      "payoff": "Selvala, Heart of the Wilds",
      "weight": 0.15
+    }
+   ]
+  },
+  {
+   "a": "Cavalier of Thorns",
+   "b": "Endurance",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Endurance",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Cavalier of Thorns",
+   "b": "Grave Sifter",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Grave Sifter",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Cavalier of Thorns",
+   "b": "Greenwarden of Murasa",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Greenwarden of Murasa",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Cavalier of Thorns",
+   "b": "Haunting Voyage",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Haunting Voyage",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Cavalier of Thorns",
+   "b": "Impulsivity",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Impulsivity",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Cavalier of Thorns",
+   "b": "Patriarch's Bidding",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Patriarch's Bidding",
+     "weight": 0.75
     }
    ]
   },
@@ -14743,6 +14827,13 @@
     "evidence": "you sacrifice a nontoken elemental, create a token that's a copy of it."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you sacrifice a nontoken elemental, create a token that's a copy of it."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -14750,18 +14841,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Sorcerer",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Sorcerer"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Elemental",
@@ -14848,6 +14939,13 @@
     "evidence": "if you do, draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters or transforms into ~, you may discard a card."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -14855,11 +14953,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Sorcerer",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
+    "evidence": "is a Sorcerer"
    },
    {
     "tag": "type:Elemental",
@@ -14869,11 +14967,11 @@
     "evidence": "is a Elemental"
    },
    {
-    "tag": "type:Sorcerer",
+    "tag": "type:Wizard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Sorcerer"
+    "evidence": "is a Wizard"
    }
   ],
   "Ashling's Command": [
@@ -14936,18 +15034,25 @@
     "evidence": "create a 0/1 green plant creature token for each land you control."
    },
    {
-    "tag": "counters_p1p1",
-    "side": "P",
-    "scope": "yours",
-    "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, you may put a +1/+1 counter on e…"
-   },
-   {
     "tag": "landfall",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
-    "evidence": "keyword: Landfall"
+    "evidence": "a land you control enters, you may put a +1/+1 counter on each plant creature y…"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.25,
+    "evidence": "you may put a +1/+1 counter on each plant creature you control."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, create a 0/1 green plant creature token for each land you contro…"
    },
    {
     "tag": "etb",
@@ -14975,7 +15080,7 @@
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, you may put a +1/+1 counter on e…"
+    "evidence": "you may put a +1/+1 counter on each plant creature you control."
    }
   ],
   "Bane of Progress": [
@@ -14983,8 +15088,15 @@
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "yours",
-    "strength": 1.25,
+    "strength": 1.0,
     "evidence": "put a +1/+1 counter on ~ for each permanent destroyed this way."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, destroy all artifacts and enchantments."
    },
    {
     "tag": "etb",
@@ -15004,7 +15116,7 @@
     "tag": "counters_present",
     "side": "P",
     "scope": "yours",
-    "strength": 1.25,
+    "strength": 1.0,
     "evidence": "put a +1/+1 counter on ~ for each permanent destroyed this way."
    }
   ],
@@ -15036,6 +15148,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "create three 1/1 colorless shapeshifter creature tokens with changeling."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, create three 1/1 colorless shapeshifter creature tokens with cha…"
    },
    {
     "tag": "etb",
@@ -15084,10 +15203,31 @@
   ],
   "Cavalier of Thorns": [
    {
+    "tag": "mill",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a land card from among them onto the battlefield and the rest into your gra…"
+   },
+   {
+    "tag": "graveyard",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a land card from among them onto the battlefield and the rest into your gra…"
+   },
+   {
+    "tag": "land_gy",
+    "side": "P",
+    "scope": "yours",
+    "strength": 0.5,
+    "evidence": "put a land card from among them onto the battlefield and the rest into your gra…"
+   },
+   {
     "tag": "landfall",
     "side": "P",
     "scope": "yours",
-    "strength": 1.25,
+    "strength": 1.0,
     "evidence": "put a land card from among them onto the battlefield and the rest into your gra…"
    },
    {
@@ -15110,6 +15250,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "if you do, put another target card from your graveyard on top of your library."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, reveal the top five cards of your library."
    },
    {
     "tag": "kw:Reach",
@@ -15145,16 +15292,16 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
-   },
-   {
-    "tag": "mill",
-    "side": "P",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "otag: mill"
    }
   ],
   "Champion of the Path": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when another elemental you control enters, it deals damage equal to its power t…"
+   },
    {
     "tag": "etb",
     "side": "P",
@@ -15170,18 +15317,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Sorcerer",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Sorcerer"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Elemental",
@@ -15202,102 +15349,11 @@
     "evidence": "is an instant/sorcery"
    },
    {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Sorcerer",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Sorcerer"
-   },
-   {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
-    "tag": "type:Shapeshifter",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shapeshifter"
-   },
-   {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
    },
    {
     "tag": "type:Elk",
@@ -15307,11 +15363,102 @@
     "evidence": "is a Elk"
    },
    {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
+   },
+   {
     "tag": "type:Horror",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Shapeshifter",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shapeshifter"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    },
    {
     "tag": "type:Shapeshifter",
@@ -15338,6 +15485,13 @@
    }
   ],
   "Descendants' Fury": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when one or more creatures you control deal combat damage to a player, you may …"
+   },
    {
     "tag": "cast_noncreature",
     "side": "P",
@@ -15376,6 +15530,13 @@
   ],
   "Eclipsed Flamekin": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, look at the top four cards of your library."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -15383,18 +15544,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    },
    {
     "tag": "type:Elemental",
@@ -15428,6 +15589,13 @@
    }
   ],
   "Endurance": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, up to one target player puts all the cards from their graveyard …"
+   },
    {
     "tag": "kw:Reach",
     "side": "P",
@@ -15529,6 +15697,13 @@
   ],
   "Flock Impostor": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, return up to one other target creature you control to its owner'…"
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -15543,102 +15718,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Sorcerer",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Sorcerer"
-   },
-   {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
-    "tag": "type:Shapeshifter",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shapeshifter"
-   },
-   {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
    },
    {
     "tag": "type:Elk",
@@ -15648,11 +15732,102 @@
     "evidence": "is a Elk"
    },
    {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
+   },
+   {
     "tag": "type:Horror",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Shapeshifter",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shapeshifter"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Flamebraider": [
@@ -15664,18 +15839,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
    },
    {
     "tag": "type:Elemental",
@@ -15697,6 +15872,13 @@
   "Forest": [],
   "Foundation Breaker": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, you may destroy target artifact or enchantment."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -15713,6 +15895,13 @@
   ],
   "The World Tree": [],
   "Fury": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, it deals 4 damage divided as you choose among any number of targ…"
+   },
    {
     "tag": "kw:Double strike",
     "side": "P",
@@ -15772,6 +15961,13 @@
     "evidence": "a creature you control with power 4 or greater enters, draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, if you control a creature with power 4 or greater, draw a card."
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -15788,6 +15984,13 @@
   ],
   "Grave Sifter": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, each player chooses a creature type and returns any number of ca…"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -15802,18 +16005,18 @@
     "evidence": "power 5"
    },
    {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
    },
    {
     "tag": "graveyard",
@@ -15844,6 +16047,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "~ dies, you may exile it."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, you may return target card from your graveyard to your hand."
    },
    {
     "tag": "etb",
@@ -15923,13 +16133,6 @@
     "evidence": "you may play target elemental card from your graveyard without paying its mana …"
    },
    {
-    "tag": "kw:Haste",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Haste"
-   },
-   {
     "tag": "kw:Vigilance",
     "side": "P",
     "scope": "self",
@@ -15942,6 +16145,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Haste",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Haste"
    },
    {
     "tag": "etb",
@@ -15979,6 +16189,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "you may cast target instant or sorcery card from a graveyard without paying its…"
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, you may cast target instant or sorcery card from a graveyard wit…"
    },
    {
     "tag": "etb",
@@ -16025,18 +16242,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elemental",
@@ -16047,6 +16264,13 @@
    }
   ],
   "Ingot Chewer": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, destroy target artifact."
+   },
    {
     "tag": "etb",
     "side": "P",
@@ -16070,6 +16294,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "creatures you control get +2/+2 and gain trample until end of turn."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, creatures you control get +2/+2 and gain trample until end of tu…"
    },
    {
     "tag": "etb",
@@ -16119,11 +16350,25 @@
   ],
   "Flamekin Harbinger": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, you may search your library for an elemental card, reveal it, th…"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
     "strength": 0.3,
     "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Shaman",
@@ -16134,13 +16379,6 @@
    },
    {
     "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Elemental",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -16148,6 +16386,13 @@
    }
   ],
   "Kulrath Zealot": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, exile the top card of your library."
+   },
    {
     "tag": "etb",
     "side": "P",
@@ -16182,8 +16427,15 @@
     "tag": "lifegain",
     "side": "P",
     "scope": "yours",
-    "strength": 1.25,
+    "strength": 1.0,
     "evidence": "you gain 3 life."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, destroy target creature an opponent controls."
    },
    {
     "tag": "etb",
@@ -16239,11 +16491,18 @@
   ],
   "Mass of Mysteries": [
    {
-    "tag": "kw:Trample",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Trample"
+    "evidence": "when combat on your turn, another target elemental you control gains myriad unt…"
+   },
+   {
+    "tag": "kw:Vigilance",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Vigilance"
    },
    {
     "tag": "kw:First strike",
@@ -16253,11 +16512,11 @@
     "evidence": "keyword: First strike"
    },
    {
-    "tag": "kw:Vigilance",
+    "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Vigilance"
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -16335,6 +16594,13 @@
     "evidence": "draw two cards."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, draw two cards."
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -16358,11 +16624,18 @@
   ],
   "Omnath, Locus of the Roil": [
    {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "a land you control enters, put a +1/+1 counter on target elemental you control."
+   },
+   {
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, put a +1/+1 counter on target el…"
+    "evidence": "put a +1/+1 counter on target elemental you control."
    },
    {
     "tag": "draw",
@@ -16372,11 +16645,11 @@
     "evidence": "if you control eight or more lands, draw a card."
    },
    {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Landfall"
+    "evidence": "when ~ enters, it deals damage to any target equal to the number of elementals …"
    },
    {
     "tag": "etb",
@@ -16404,7 +16677,7 @@
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, put a +1/+1 counter on target el…"
+    "evidence": "put a +1/+1 counter on target elemental you control."
    }
   ],
   "Omni-Changeling": [
@@ -16416,102 +16689,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Sorcerer",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Sorcerer"
-   },
-   {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
-    "tag": "type:Shapeshifter",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shapeshifter"
-   },
-   {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
    },
    {
     "tag": "type:Elk",
@@ -16521,11 +16703,102 @@
     "evidence": "is a Elk"
    },
    {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
+   },
+   {
     "tag": "type:Horror",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Shapeshifter",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shapeshifter"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Opulent Palace": [],
@@ -16584,102 +16857,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Sorcerer",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Sorcerer"
-   },
-   {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
-    "tag": "type:Shapeshifter",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shapeshifter"
-   },
-   {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
-   },
-   {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
    },
    {
     "tag": "type:Elk",
@@ -16689,14 +16871,112 @@
     "evidence": "is a Elk"
    },
    {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
+   },
+   {
     "tag": "type:Horror",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Shapeshifter",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shapeshifter"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Reflections of Littjara": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you cast a spell of the chosen type, copy that spell."
+   },
    {
     "tag": "cast_noncreature",
     "side": "P",
@@ -16713,6 +16993,13 @@
    }
   ],
   "Risen Reef": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ or another elemental you control enters, look at the top card of your li…"
+   },
    {
     "tag": "etb",
     "side": "P",
@@ -16770,6 +17057,13 @@
     "evidence": "add x mana in any combination of colors, where x is the greatest power among cr…"
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.75,
+    "evidence": "when another creature enters, its controller may draw a card if its power is gr…"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -16777,18 +17071,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    }
   ],
   "Shatter the Sky": [
@@ -16819,8 +17113,15 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.25,
-    "evidence": "vivid — when ~ enters, draw cards equal to the number of colors among permanent…"
+    "strength": 1.0,
+    "evidence": "draw cards equal to the number of colors among permanents you control."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, draw cards equal to the number of colors among permanents you co…"
    },
    {
     "tag": "kw:Flying",
@@ -16846,6 +17147,13 @@
   ],
   "Shriekmaw": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, destroy target nonartifact, nonblack creature."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -16865,8 +17173,15 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.25,
+    "strength": 1.5,
     "evidence": "if that player has more cards in hand than you, draw cards equal to the differe…"
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ leaves the battlefield, choose an opponent."
    },
    {
     "tag": "etb",
@@ -16892,18 +17207,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elemental",
@@ -16953,6 +17268,13 @@
     "evidence": "draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature you control of the chosen type enters or attacks, draw a card."
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -16968,6 +17290,13 @@
    }
   ],
   "Subterfuge": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, target creature gains flying and until end of turn."
+   },
    {
     "tag": "etb",
     "side": "P",
@@ -16991,6 +17320,13 @@
    }
   ],
   "Sunderflock": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, if you cast it, return all non-elemental creatures to their owne…"
+   },
    {
     "tag": "kw:Flying",
     "side": "P",
@@ -17074,6 +17410,13 @@
     "evidence": "• create a 4/4 green rhino warrior creature token."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.25,
+    "evidence": "when ~ enters, choose two —"
+   },
+   {
     "tag": "kw:Reach",
     "side": "P",
     "scope": "self",
@@ -17139,18 +17482,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Sorcerer",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Sorcerer"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Elemental",
@@ -17191,6 +17534,13 @@
     "evidence": "create a green and white elemental creature token with"
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters or attacks, create a green and white elemental creature token with"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -17205,18 +17555,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Elk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elk"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Elk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elk"
    },
    {
     "tag": "type:Elemental",
@@ -17242,6 +17592,13 @@
     "evidence": "if a permanent entering causes a triggered ability of a permanent you control t…"
    },
    {
+    "tag": "kw:Deathtouch",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Deathtouch"
+   },
+   {
     "tag": "lifegain",
     "side": "P",
     "scope": "yours",
@@ -17256,13 +17613,6 @@
     "evidence": "keyword: Lifelink"
    },
    {
-    "tag": "kw:Deathtouch",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Deathtouch"
-   },
-   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -17270,18 +17620,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Horror",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ]
  },
@@ -17290,7 +17640,7 @@
    {
     "name": "Haunting Voyage",
     "cmc": 6.0,
-    "synergy": 2.44,
+    "synergy": 3.19,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
@@ -17308,7 +17658,7 @@
    {
     "name": "Patriarch's Bidding",
     "cmc": 5.0,
-    "synergy": 0.94,
+    "synergy": 1.69,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
@@ -17317,7 +17667,7 @@
    {
     "name": "Impulsivity",
     "cmc": 7.0,
-    "synergy": 35.14,
+    "synergy": 35.89,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
@@ -17335,11 +17685,11 @@
    {
     "name": "Avenger of Zendikar",
     "cmc": 7.0,
-    "synergy": 42.75,
+    "synergy": 42.5,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.15
+    "cut_score": 0.133
    },
    {
     "name": "Yarok, the Desecrated",
@@ -17407,7 +17757,7 @@
    {
     "name": "Horde of Notions",
     "cmc": 5.0,
-    "synergy": 98.14,
+    "synergy": 98.89,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
@@ -17650,17 +18000,6 @@
     "cut_score": 0.1
    },
    {
-    "name": "Maelstrom Wanderer",
-    "cmc": 8.0,
-    "synergy": 42.75,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.117
-   },
-   {
     "name": "Foundation Breaker",
     "cmc": 4.0,
     "synergy": 31.95,
@@ -17670,6 +18009,17 @@
      "removal"
     ],
     "cut_score": 0.117
+   },
+   {
+    "name": "Maelstrom Wanderer",
+    "cmc": 8.0,
+    "synergy": 42.75,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.133
    },
    {
     "name": "Shinestriker",
@@ -17757,7 +18107,7 @@
    {
     "name": "Grave Sifter",
     "cmc": 6.0,
-    "synergy": 43.69,
+    "synergy": 44.44,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
@@ -17780,7 +18130,7 @@
    {
     "name": "Endurance",
     "cmc": 3.0,
-    "synergy": 32.89,
+    "synergy": 33.64,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
@@ -17801,17 +18151,6 @@
     "cut_score": 0.308
    },
    {
-    "name": "Greenwarden of Murasa",
-    "cmc": 6.0,
-    "synergy": 45.69,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.308
-   },
-   {
     "name": "Slithermuse",
     "cmc": 4.0,
     "synergy": 40.5,
@@ -17822,6 +18161,17 @@
      "draw"
     ],
     "cut_score": 0.317
+   },
+   {
+    "name": "Greenwarden of Murasa",
+    "cmc": 6.0,
+    "synergy": 46.44,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.325
    },
    {
     "name": "Crib Swap",
@@ -17837,7 +18187,7 @@
    {
     "name": "Cavalier of Thorns",
     "cmc": 5.0,
-    "synergy": 64.1,
+    "synergy": 68.85,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
@@ -17889,7 +18239,7 @@
    {
     "name": "Omnath, Locus of the Roil",
     "cmc": 4.0,
-    "synergy": 107.75,
+    "synergy": 107.5,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [

@@ -6,7 +6,7 @@
   {
    "tag": "counters_m1m1",
    "label": "-1/-1 counters",
-   "score": 483.12,
+   "score": 485.62,
    "producers": 39,
    "payoffs": 10
   },
@@ -39,17 +39,17 @@
    "payoffs": 1
   },
   {
+   "tag": "counters_any",
+   "label": "counters (any kind)",
+   "score": 5.06,
+   "producers": 6,
+   "payoffs": 1
+  },
+  {
    "tag": "type:Elf",
    "label": "Elf matters",
    "score": 5.0,
    "producers": 5,
-   "payoffs": 1
-  },
-  {
-   "tag": "counters_any",
-   "label": "counters (any kind)",
-   "score": 4.88,
-   "producers": 6,
    "payoffs": 1
   },
   {
@@ -76,7 +76,7 @@
  ],
  "cards": {
   "Auntie Ool, Cursewretch": {
-   "total": 226.69,
+   "total": 227.44,
    "cmdr_fit": 0.0,
    "partners": 48,
    "best_partner": "Carnifex Demon",
@@ -84,7 +84,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 93.56,
+    "counters_m1m1": 93.94,
     "ramp": 15.25,
     "counters_present": 7.59
    }
@@ -208,7 +208,7 @@
    "themes": {}
   },
   "Carnifex Demon": {
-   "total": 103.17,
+   "total": 103.54,
    "cmdr_fit": 8.0,
    "partners": 40,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -216,7 +216,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 92.43,
+    "counters_m1m1": 92.81,
     "counters_present": 9.49
    }
   },
@@ -245,7 +245,7 @@
    "themes": {}
   },
   "Channeler Initiate": {
-   "total": 93.38,
+   "total": 93.75,
    "cmdr_fit": 8.0,
    "partners": 40,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -253,7 +253,7 @@
    "ramp_bonus": 2.438,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 81.94,
+    "counters_m1m1": 82.31,
     "counters_present": 5.06,
     "ramp": 3.94
    },
@@ -370,7 +370,7 @@
    "ramp_kind": "land"
   },
   "Dusk Urchins": {
-   "total": 107.69,
+   "total": 108.07,
    "cmdr_fit": 8.0,
    "partners": 41,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -378,7 +378,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 90.56,
+    "counters_m1m1": 90.94,
     "card draw": 6.74,
     "counters_present": 6.33,
     "fodder": 1.0
@@ -411,8 +411,8 @@
    "themes": {}
   },
   "Evolution Sage": {
-   "total": 71.21,
-   "cmdr_fit": 5.812,
+   "total": 75.52,
+   "cmdr_fit": 6.562,
    "partners": 44,
    "best_partner": "Auntie Ool, Cursewretch",
    "combo_piece": false,
@@ -420,10 +420,10 @@
    "reactive_penalty": 0.0,
    "themes": {
     "counters_present": 46.06,
-    "counters_m1m1": 15.0,
+    "counters_m1m1": 18.75,
     "landfall": 5.5,
     "type:Elf": 1.0,
-    "counters_any": 0.75
+    "counters_any": 0.94
    }
   },
   "Blood Crypt": {
@@ -471,7 +471,7 @@
    "themes": {}
   },
   "Flourishing Defenses": {
-   "total": 90.31,
+   "total": 90.69,
    "cmdr_fit": 4.5,
    "partners": 42,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -479,7 +479,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 75.56,
+    "counters_m1m1": 75.94,
     "type:Elf": 5.0,
     "type:Warrior": 4.0,
     "combo": 2.0,
@@ -538,7 +538,7 @@
    "draw_kind": "draw"
   },
   "Grim Poppet": {
-   "total": 95.45,
+   "total": 95.83,
    "cmdr_fit": 8.0,
    "partners": 40,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -546,7 +546,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 84.94,
+    "counters_m1m1": 85.31,
     "counters_present": 6.33,
     "type:Scarecrow": 1.0
    }
@@ -817,7 +817,7 @@
    "themes": {}
   },
   "Persist": {
-   "total": 79.69,
+   "total": 80.06,
    "cmdr_fit": 4.5,
    "partners": 39,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -825,7 +825,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 75.56,
+    "counters_m1m1": 75.94,
     "graveyard": 1.88
    }
   },
@@ -1044,7 +1044,7 @@
    }
   },
   "Stalwart Successor": {
-   "total": 13.47,
+   "total": 13.66,
    "cmdr_fit": 0.0,
    "partners": 7,
    "best_partner": "Contagion Engine",
@@ -1053,7 +1053,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "counters_present": 7.59,
-    "counters_any": 4.88,
+    "counters_any": 5.06,
     "type:Warrior": 1.0
    }
   },
@@ -1196,7 +1196,7 @@
    }
   },
   "Ammit Eternal": {
-   "total": 97.78,
+   "total": 98.16,
    "cmdr_fit": 8.0,
    "partners": 41,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -1204,7 +1204,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 86.81,
+    "counters_m1m1": 87.19,
     "counters_present": 7.59
    }
   },
@@ -1219,7 +1219,7 @@
    "themes": {}
   },
   "Wickerbough Elder": {
-   "total": 91.88,
+   "total": 92.25,
    "cmdr_fit": 7.5,
    "partners": 41,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -1227,12 +1227,12 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 83.06,
+    "counters_m1m1": 83.44,
     "counters_present": 5.06
    }
   },
   "Wickersmith's Tools": {
-   "total": 85.25,
+   "total": 85.62,
    "cmdr_fit": 5.5,
    "partners": 39,
    "best_partner": "Auntie Ool, Cursewretch",
@@ -1240,7 +1240,7 @@
    "ramp_bonus": 2.438,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_m1m1": 75.56,
+    "counters_m1m1": 75.94,
     "type:Scarecrow": 3.0,
     "ramp": 2.94,
     "fodder": 1.0
@@ -1389,7 +1389,7 @@
  "plans": [],
  "commander_dependence": {
   "score": 1.0,
-  "synergy_vs_average_card": 5.14,
+  "synergy_vs_average_card": 5.13,
   "protection_weight": 1.0,
   "protection_bonus": 13.477,
   "protection_cards": []
@@ -1938,6 +1938,25 @@
   },
   {
    "a": "Auntie Ool, Cursewretch",
+   "b": "Evolution Sage",
+   "score": 6.562,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Evolution Sage",
+     "weight": 1.406
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
    "b": "Karn's Bastion",
    "score": 6.562,
    "reasons": [
@@ -1951,25 +1970,6 @@
      "tag": "counters_present",
      "producer": "Auntie Ool, Cursewretch",
      "payoff": "Karn's Bastion",
-     "weight": 1.406
-    }
-   ]
-  },
-  {
-   "a": "Auntie Ool, Cursewretch",
-   "b": "Evolution Sage",
-   "score": 5.812,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Auntie Ool, Cursewretch",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Auntie Ool, Cursewretch",
-     "payoff": "Evolution Sage",
      "weight": 1.406
     }
    ]
@@ -2496,6 +2496,25 @@
   },
   {
    "a": "Carnifex Demon",
+   "b": "Evolution Sage",
+   "score": 3.633,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Carnifex Demon",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Carnifex Demon",
+     "payoff": "Evolution Sage",
+     "weight": 1.758
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
    "b": "Karn's Bastion",
    "score": 3.633,
    "reasons": [
@@ -2629,6 +2648,25 @@
   },
   {
    "a": "Ammit Eternal",
+   "b": "Evolution Sage",
+   "score": 3.281,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Ammit Eternal",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Ammit Eternal",
+     "payoff": "Evolution Sage",
+     "weight": 1.406
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
    "b": "Karn's Bastion",
    "score": 3.281,
    "reasons": [
@@ -2643,25 +2681,6 @@
      "producer": "Ammit Eternal",
      "payoff": "Karn's Bastion",
      "weight": 1.406
-    }
-   ]
-  },
-  {
-   "a": "Carnifex Demon",
-   "b": "Evolution Sage",
-   "score": 3.258,
-   "reasons": [
-    {
-     "tag": "counters_present",
-     "producer": "Carnifex Demon",
-     "payoff": "Evolution Sage",
-     "weight": 1.758
-    },
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Carnifex Demon",
-     "weight": 1.5
     }
    ]
   },
@@ -2781,6 +2800,25 @@
   },
   {
    "a": "Dusk Urchins",
+   "b": "Evolution Sage",
+   "score": 3.047,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Dusk Urchins",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Dusk Urchins",
+     "payoff": "Evolution Sage",
+     "weight": 1.172
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
    "b": "Karn's Bastion",
    "score": 3.047,
    "reasons": [
@@ -2794,6 +2832,25 @@
      "tag": "counters_present",
      "producer": "Dusk Urchins",
      "payoff": "Karn's Bastion",
+     "weight": 1.172
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Grim Poppet",
+   "score": 3.047,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Grim Poppet",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Grim Poppet",
+     "payoff": "Evolution Sage",
      "weight": 1.172
     }
    ]
@@ -2966,25 +3023,6 @@
    ]
   },
   {
-   "a": "Ammit Eternal",
-   "b": "Evolution Sage",
-   "score": 2.906,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Ammit Eternal",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Ammit Eternal",
-     "payoff": "Evolution Sage",
-     "weight": 1.406
-    }
-   ]
-  },
-  {
    "a": "Dusk Urchins",
    "b": "Ifnir Deadlands",
    "score": 2.875,
@@ -3042,6 +3080,25 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Flourishing Defenses",
+   "score": 2.875,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.875
+    },
+    {
+     "tag": "type:Elf",
+     "producer": "Evolution Sage",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
    "a": "Grim Poppet",
    "b": "Wickersmith's Tools",
    "score": 2.875,
@@ -3076,6 +3133,25 @@
      "producer": "Wickersmith's Tools",
      "payoff": "Ifnir Deadlands",
      "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Evolution Sage",
+   "score": 2.813,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Channeler Initiate",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Channeler Initiate",
+     "payoff": "Evolution Sage",
+     "weight": 0.938
     }
    ]
   },
@@ -3132,6 +3208,25 @@
      "tag": "graveyard",
      "producer": "Gristle Glutton",
      "payoff": "Persist",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Wickerbough Elder",
+   "score": 2.813,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Wickerbough Elder",
+     "payoff": "Evolution Sage",
      "weight": 0.938
     }
    ]
@@ -3221,44 +3316,6 @@
    ]
   },
   {
-   "a": "Dusk Urchins",
-   "b": "Evolution Sage",
-   "score": 2.672,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Dusk Urchins",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Dusk Urchins",
-     "payoff": "Evolution Sage",
-     "weight": 1.172
-    }
-   ]
-  },
-  {
-   "a": "Evolution Sage",
-   "b": "Grim Poppet",
-   "score": 2.672,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Grim Poppet",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Grim Poppet",
-     "payoff": "Evolution Sage",
-     "weight": 1.172
-    }
-   ]
-  },
-  {
    "a": "Ammit Eternal",
    "b": "Grim Affliction",
    "score": 2.625,
@@ -3316,25 +3373,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Flourishing Defenses",
-   "score": 2.5,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Flourishing Defenses",
-     "weight": 1.5
-    },
-    {
-     "tag": "type:Elf",
-     "producer": "Evolution Sage",
-     "payoff": "Flourishing Defenses",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Dread Tiller",
    "b": "Wickersmith's Tools",
    "score": 2.5,
@@ -3350,25 +3388,6 @@
      "producer": "Dread Tiller",
      "payoff": "Wickersmith's Tools",
      "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Channeler Initiate",
-   "b": "Evolution Sage",
-   "score": 2.438,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Channeler Initiate",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Channeler Initiate",
-     "payoff": "Evolution Sage",
-     "weight": 0.938
     }
    ]
   },
@@ -3487,25 +3506,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Wickerbough Elder",
-   "score": 2.438,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Wickerbough Elder",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Wickerbough Elder",
-     "payoff": "Evolution Sage",
-     "weight": 0.938
-    }
-   ]
-  },
-  {
    "a": "Dread Tiller",
    "b": "Evolution Sage",
    "score": 2.438,
@@ -3538,6 +3538,25 @@
     {
      "tag": "counters_any",
      "producer": "Contagion Engine",
+     "payoff": "Stalwart Successor",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Stalwart Successor",
+   "score": 2.344,
+   "reasons": [
+    {
+     "tag": "counters_present",
+     "producer": "Stalwart Successor",
+     "payoff": "Evolution Sage",
+     "weight": 1.406
+    },
+    {
+     "tag": "counters_any",
+     "producer": "Evolution Sage",
      "payoff": "Stalwart Successor",
      "weight": 0.938
     }
@@ -5094,25 +5113,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Stalwart Successor",
-   "score": 2.156,
-   "reasons": [
-    {
-     "tag": "counters_present",
-     "producer": "Stalwart Successor",
-     "payoff": "Evolution Sage",
-     "weight": 1.406
-    },
-    {
-     "tag": "counters_any",
-     "producer": "Evolution Sage",
-     "payoff": "Stalwart Successor",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Contagion Engine",
    "b": "Grim Affliction",
    "score": 2.063,
@@ -5826,6 +5826,19 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Persist",
+   "score": 1.875,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Persist",
+     "weight": 1.875
+    }
+   ]
+  },
+  {
    "a": "Grim Poppet",
    "b": "Persist",
    "score": 1.875,
@@ -6223,6 +6236,19 @@
     {
      "tag": "counters_m1m1",
      "producer": "Dusk Urchins",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.875
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Wickersmith's Tools",
+   "score": 1.875,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
      "payoff": "Wickersmith's Tools",
      "weight": 1.875
     }
@@ -6832,19 +6858,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Persist",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
-     "payoff": "Persist",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
    "a": "Blight Rot",
    "b": "Persist",
    "score": 1.5,
@@ -7112,19 +7125,6 @@
     {
      "tag": "counters_m1m1",
      "producer": "Channeler Initiate",
-     "payoff": "Wickersmith's Tools",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Evolution Sage",
-   "b": "Wickersmith's Tools",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
      "payoff": "Wickersmith's Tools",
      "weight": 1.5
     }
@@ -8757,6 +8757,19 @@
   },
   {
    "a": "Flourishing Defenses",
+   "b": "Stalwart Successor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Warrior",
+     "producer": "Stalwart Successor",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
    "b": "Glissa Sunslayer",
    "score": 1.0,
    "reasons": [
@@ -8776,19 +8789,6 @@
     {
      "tag": "type:Elf",
      "producer": "Generous Patron",
-     "payoff": "Flourishing Defenses",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Flourishing Defenses",
-   "b": "Stalwart Successor",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Warrior",
-     "producer": "Stalwart Successor",
      "payoff": "Flourishing Defenses",
      "weight": 1.0
     }
@@ -9787,11 +9787,11 @@
     "evidence": "draw a card if you control that creature."
    },
    {
-    "tag": "kw:Ward",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.5,
-    "evidence": "keyword: Ward"
+    "strength": 1.0,
+    "evidence": "when one or more -1/-1 counters are put on a creature, draw a card if you contr…"
    },
    {
     "tag": "counters_m1m1",
@@ -9799,6 +9799,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "kw:Ward",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.5,
+    "evidence": "keyword: Ward"
    },
    {
     "tag": "etb",
@@ -9889,6 +9896,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "put a -1/-1 counter on each creature target player controls."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, put a -1/-1 counter on each creature target player controls."
    },
    {
     "tag": "proliferate",
@@ -10025,6 +10039,13 @@
     "evidence": "if it had a -1/-1 counter on it, put a -1/-1 counter on target creature."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature dies, if it had a -1/-1 counter on it, put a -1/-1 counter on t…"
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -10114,18 +10135,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Demon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Demon"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "counters_present",
@@ -10225,6 +10246,13 @@
     "evidence": "{t}, remove a -1/-1 counter from ~"
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.5,
+    "evidence": "when ~ enters, put three -1/-1 counters on target creature you control."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -10247,6 +10275,13 @@
    }
   ],
   "Chimil, the Inner Sun": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when your end step, discover 5."
+   },
    {
     "tag": "cast_noncreature",
     "side": "P",
@@ -10413,6 +10448,13 @@
     "evidence": "you may put a land card from your hand or graveyard onto the battlefield tapped."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, put a -1/-1 counter on target creature."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -10485,6 +10527,13 @@
     "evidence": "draw a card for each -1/-1 counter on it."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ attacks or blocks, put a -1/-1 counter on it."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -10544,7 +10593,14 @@
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
-    "evidence": "keyword: Landfall"
+    "evidence": "a land you control enters, proliferate."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a land you control enters, proliferate."
    },
    {
     "tag": "proliferate",
@@ -10557,28 +10613,28 @@
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "any",
-    "strength": 0.5,
+    "strength": 0.625,
     "evidence": "proliferate"
    },
    {
     "tag": "counters_m1m1",
     "side": "P",
     "scope": "any",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "proliferate"
    },
    {
     "tag": "rad",
     "side": "P",
     "scope": "any",
-    "strength": 0.5,
+    "strength": 0.625,
     "evidence": "proliferate"
    },
    {
     "tag": "counters_any",
     "side": "P",
     "scope": "any",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "proliferate"
    },
    {
@@ -10666,6 +10722,13 @@
     "evidence": "you may create a 1/1 green elf warrior creature token."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a -1/-1 counter is put on a creature, you may create a 1/1 green elf warri…"
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -10680,14 +10743,14 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever a -1/-1 counter is put on a creature, you may create a 1/1 green elf w…"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Elf",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -10702,6 +10765,13 @@
     "scope": "yours",
     "strength": 1.25,
     "evidence": "• you draw a card and lose 1 life."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.25,
+    "evidence": "when ~ deals combat damage to a player, choose one —"
    },
    {
     "tag": "kw:Deathtouch",
@@ -10732,18 +10802,18 @@
     "evidence": "is a Elf"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Zombie",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Zombie"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    }
   ],
   "Twilight Mire": [],
@@ -10775,6 +10845,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "each opponent loses 1 life and you gain 1 life."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, you become the monarch."
    },
    {
     "tag": "cast_noncreature",
@@ -10886,18 +10963,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    },
    {
     "tag": "counters_present",
@@ -10943,6 +11020,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "create a 1/1 green snake creature token with deathtouch."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ deals combat damage to a player, you may put a -1/-1 counter on target c…"
    },
    {
     "tag": "etb",
@@ -11001,6 +11085,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "create that many 1/1 black insect creature tokens."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you put one or more -1/-1 counters on a creature, create that many 1/1 bla…"
    },
    {
     "tag": "cast_noncreature",
@@ -11077,18 +11168,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Blight Rot": [
@@ -11116,18 +11207,18 @@
   ],
   "Kulrath Knight": [
    {
-    "tag": "counters_m1m1",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.25,
-    "evidence": "keyword: Wither"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.25,
+    "evidence": "keyword: Wither"
    },
    {
     "tag": "etb",
@@ -11165,6 +11256,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "draw a card."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, support 2."
    },
    {
     "tag": "counters_p1p1",
@@ -11225,6 +11323,13 @@
     "evidence": "if its toughness was less than 1, draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature an opponent controls dies, if its toughness was less than 1, dr…"
+   },
+   {
     "tag": "kw:Menace",
     "side": "P",
     "scope": "self",
@@ -11260,6 +11365,13 @@
     "scope": "yours",
     "strength": 1.25,
     "evidence": "put a -1/-1 counter on each nonblack creature."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when your upkeep, put a -1/-1 counter on each nonblack creature."
    },
    {
     "tag": "counters_m1m1",
@@ -11339,6 +11451,13 @@
     "scope": "opp",
     "strength": 1.0,
     "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may return…"
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature an opponent controls with a -1/-1 counter on it dies, you may r…"
    },
    {
     "tag": "counters_m1m1",
@@ -11458,6 +11577,13 @@
     "evidence": "~ dies, if it had one or more -1/-1 counters on it, its owner draws that many c…"
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.6,
+    "evidence": "when ~ dies, if it had one or more -1/-1 counters on it, its owner draws that m…"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -11533,6 +11659,13 @@
     "evidence": "you may return another target permanent card with mana value less than or equal…"
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature you control with a counter on it dies, you may return another t…"
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -11570,6 +11703,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "each opponent loses 1 life and you gain 1 life."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ deals combat damage to a creature, put a -1/-1 counter on that creature."
    },
    {
     "tag": "kw:Reach",
@@ -11678,18 +11818,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Savage Lands": [],
@@ -11707,6 +11847,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "a creature you control with one or more counters on it dies, exile that many ca…"
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ attacks, blight 1."
    },
    {
     "tag": "counters_m1m1",
@@ -11747,6 +11894,13 @@
     "evidence": "draw a card and blight 1."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when your end step, draw a card and blight 1."
+   },
+   {
     "tag": "counters_m1m1",
     "side": "P",
     "scope": "yours",
@@ -11761,18 +11915,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warlock",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warlock"
-   },
-   {
     "tag": "type:Treefolk",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Treefolk"
+   },
+   {
+    "tag": "type:Warlock",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warlock"
    },
    {
     "tag": "counters_present",
@@ -11791,6 +11945,13 @@
     "evidence": "put three -1/-1 counters on target creature."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, put three -1/-1 counters on target creature."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -11798,18 +11959,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Zombie",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Zombie"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "counters_present",
@@ -11861,6 +12022,13 @@
     "evidence": "put a -1/-1 counter on each creature."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, put a -1/-1 counter on each creature."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -11905,6 +12073,13 @@
     "evidence": "if it's the first time counters have been put on that creature this turn, put a…"
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when one or more counters are put on a creature you control, if it's the first …"
+   },
+   {
     "tag": "kw:Menace",
     "side": "P",
     "scope": "self",
@@ -11935,6 +12110,13 @@
   ],
   "Boggart Trawler": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, exile target player's graveyard."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -11954,15 +12136,22 @@
     "tag": "token_artifact",
     "side": "P",
     "scope": "yours",
-    "strength": 1.25,
+    "strength": 1.5,
     "evidence": "if you do, create a treasure token."
    },
    {
     "tag": "type:Artifact",
     "side": "P",
     "scope": "yours",
-    "strength": 1.25,
+    "strength": 1.5,
     "evidence": "if you do, create a treasure token."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when your first main phase, you may blight 1."
    },
    {
     "tag": "counters_m1m1",
@@ -12083,6 +12272,13 @@
     "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may put th…"
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, put a -1/-1 counter on each of up to two target creatures."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -12155,6 +12351,13 @@
     "evidence": "~ dies, return it to its owner's hand at the beginning of the next end step."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.833,
+    "evidence": "when a creature with a -1/-1 counter on it dies, draw a card."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -12221,6 +12424,13 @@
     "evidence": "you create a tapped treasure token."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, it deals 1 damage to each creature your opponents control."
+   },
+   {
     "tag": "counters_m1m1",
     "side": "P",
     "scope": "any",
@@ -12264,6 +12474,13 @@
    }
   ],
   "Warren Torchmaster": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when combat on your turn, you may blight 1."
+   },
    {
     "tag": "counters_m1m1",
     "side": "P",
@@ -12316,6 +12533,13 @@
     "evidence": "remove all -1/-1 counters from it."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when an opponent casts a spell, put a -1/-1 counter on ~."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -12330,11 +12554,11 @@
     "evidence": "power 5"
    },
    {
-    "tag": "type:Zombie",
+    "tag": "type:Crocodile",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Zombie"
+    "evidence": "is a Crocodile"
    },
    {
     "tag": "type:Demon",
@@ -12344,11 +12568,11 @@
     "evidence": "is a Demon"
    },
    {
-    "tag": "type:Crocodile",
+    "tag": "type:Zombie",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Crocodile"
+    "evidence": "is a Zombie"
    },
    {
     "tag": "counters_present",
@@ -12359,6 +12583,13 @@
    }
   ],
   "Druid of Purification": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, starting with you, each player may choose an artifact or enchant…"
+   },
    {
     "tag": "etb",
     "side": "P",
@@ -12411,18 +12642,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Treefolk",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Treefolk"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "counters_present",
@@ -12467,6 +12698,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "create x tapped 2/2 colorless scarecrow artifact creature tokens, where x is th…"
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.25,
+    "evidence": "when one or more -1/-1 counters are put on a creature, put a charge counter on …"
    },
    {
     "tag": "cast_noncreature",
@@ -12533,7 +12771,7 @@
    {
     "name": "Stalwart Successor",
     "cmc": 3.0,
-    "synergy": 13.47,
+    "synergy": 13.66,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
@@ -12560,8 +12798,8 @@
    {
     "name": "Evolution Sage",
     "cmc": 3.0,
-    "synergy": 71.21,
-    "cmdr_fit": 5.812,
+    "synergy": 75.52,
+    "cmdr_fit": 6.562,
     "combo_piece": false,
     "roles": [],
     "cut_score": 0.675
@@ -12569,7 +12807,7 @@
    {
     "name": "Ammit Eternal",
     "cmc": 3.0,
-    "synergy": 97.78,
+    "synergy": 98.16,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [],
@@ -12578,7 +12816,7 @@
    {
     "name": "Persist",
     "cmc": 2.0,
-    "synergy": 79.69,
+    "synergy": 80.06,
     "cmdr_fit": 4.5,
     "combo_piece": false,
     "roles": [],
@@ -13012,7 +13250,7 @@
    {
     "name": "Grim Poppet",
     "cmc": 7.0,
-    "synergy": 95.45,
+    "synergy": 95.83,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -13035,7 +13273,7 @@
    {
     "name": "Flourishing Defenses",
     "cmc": 5.0,
-    "synergy": 90.31,
+    "synergy": 90.69,
     "cmdr_fit": 4.5,
     "combo_piece": true,
     "roles": [
@@ -13046,7 +13284,7 @@
    {
     "name": "Carnifex Demon",
     "cmc": 6.0,
-    "synergy": 103.17,
+    "synergy": 103.54,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -13070,7 +13308,7 @@
    {
     "name": "Wickerbough Elder",
     "cmc": 4.0,
-    "synergy": 91.88,
+    "synergy": 92.25,
     "cmdr_fit": 7.5,
     "combo_piece": false,
     "roles": [
@@ -13138,7 +13376,7 @@
    {
     "name": "Wickersmith's Tools",
     "cmc": 3.0,
-    "synergy": 85.25,
+    "synergy": 85.62,
     "cmdr_fit": 5.5,
     "combo_piece": false,
     "roles": [
@@ -13194,7 +13432,7 @@
    {
     "name": "Dusk Urchins",
     "cmc": 3.0,
-    "synergy": 107.69,
+    "synergy": 108.07,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -13206,7 +13444,7 @@
    {
     "name": "Channeler Initiate",
     "cmc": 2.0,
-    "synergy": 93.38,
+    "synergy": 93.75,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [

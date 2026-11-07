@@ -12549,11 +12549,11 @@
  "features": {
   "Ureni of the Unwritten": [
    {
-    "tag": "kw:Flying",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Flying"
+    "evidence": "when ureni enters or attacks, look at the top eight cards of your library."
    },
    {
     "tag": "kw:Trample",
@@ -12561,6 +12561,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -12600,11 +12607,11 @@
   ],
   "Atarka, World Render": [
    {
-    "tag": "kw:Flying",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Flying"
+    "evidence": "when a dragon you control attacks, it gains double strike until end of turn."
    },
    {
     "tag": "kw:Trample",
@@ -12612,6 +12619,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -12669,6 +12683,13 @@
     "evidence": "you gain 3 life."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ or another dragon you control enters, you gain 3 life."
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -12690,18 +12711,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    },
    {
     "tag": "type:Dragon",
@@ -12737,6 +12758,13 @@
    }
   ],
   "Broodcaller Scourge": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when one or more dragons you control deal combat damage to a player, you may pu…"
+   },
    {
     "tag": "kw:Flying",
     "side": "P",
@@ -12885,6 +12913,13 @@
     "evidence": "a creature you control with flying enters, it gains haste until end of turn."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature you control with flying enters, it gains haste until end of tur…"
+   },
+   {
     "tag": "kw:Flying",
     "side": "C",
     "scope": "yours",
@@ -12922,6 +12957,13 @@
     "evidence": "draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.25,
+    "evidence": "when a dragon you control enters, put a gold counter on ~."
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -12945,11 +12987,11 @@
   ],
   "Dragonlord Atarka": [
    {
-    "tag": "kw:Flying",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Flying"
+    "evidence": "when ~ enters, it deals 5 damage divided as you choose among any number of targ…"
    },
    {
     "tag": "kw:Trample",
@@ -12957,6 +12999,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -12988,6 +13037,13 @@
    }
   ],
   "Drakuseth, Maw of Flames": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ attacks, ~ deals 4 damage to any target and 3 damage to each of up to tw…"
+   },
    {
     "tag": "kw:Flying",
     "side": "P",
@@ -13084,6 +13140,13 @@
     "evidence": "draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature you control with power 3 or greater enters, draw a card."
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -13105,6 +13168,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "search your library for up to two basic land cards, put them onto the battlefie…"
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, search your library for up to two basic land cards, put them ont…"
    },
    {
     "tag": "cast_noncreature",
@@ -13277,6 +13347,13 @@
     "evidence": "a creature you control with power 4 or greater enters, draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, if you control a creature with power 4 or greater, draw a card."
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -13292,6 +13369,13 @@
    }
   ],
   "Hammerhead Tyrant": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you cast a spell, return up to one target nonland permanent an opponent co…"
+   },
    {
     "tag": "kw:Flying",
     "side": "P",
@@ -13339,6 +13423,13 @@
   ],
   "Hellkite Courser": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, you may put a commander you own from the command zone onto the b…"
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -13369,11 +13460,11 @@
   ],
   "Hellkite Tyrant": [
    {
-    "tag": "kw:Flying",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Flying"
+    "evidence": "when ~ deals combat damage to a player, gain control of all artifacts that play…"
    },
    {
     "tag": "kw:Trample",
@@ -13381,6 +13472,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -13430,11 +13528,11 @@
   "Hinterland Harbor": [],
   "Incinerator of the Guilty": [
    {
-    "tag": "kw:Flying",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Flying"
+    "evidence": "when ~ deals combat damage to a player, you may collect evidence x."
    },
    {
     "tag": "kw:Trample",
@@ -13442,6 +13540,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -13525,6 +13630,13 @@
     "scope": "yours",
     "strength": 1.25,
     "evidence": "draw a card."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature you control with power 4 or greater enters, draw a card."
    },
    {
     "tag": "cast_noncreature",
@@ -13617,6 +13729,13 @@
     "evidence": "create a 5/5 red dragon creature token with flying."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when another nontoken dragon you control enters, create a 5/5 red dragon creatu…"
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -13653,6 +13772,13 @@
    }
   ],
   "Lozhan, Dragons' Legacy": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you cast an adventure or dragon spell, ~ deals damage equal to that spell'…"
+   },
    {
     "tag": "kw:Flying",
     "side": "P",
@@ -13728,6 +13854,13 @@
     "evidence": "draw three cards, then discard a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.25,
+    "evidence": "when ~ enters, return up to two other target nonland permanents to their owners…"
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -13749,18 +13882,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    }
   ],
   "Migration Path": [
@@ -13788,11 +13921,11 @@
     "evidence": "another nontoken dragon you control enters, create a token that's a copy of it,…"
    },
    {
-    "tag": "kw:Flying",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Flying"
+    "evidence": "when another nontoken dragon you control enters, create a token that's a copy o…"
    },
    {
     "tag": "kw:Ward",
@@ -13800,6 +13933,13 @@
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Ward"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -13873,6 +14013,13 @@
     "scope": "yours",
     "strength": 1.25,
     "evidence": "you may play it this turn."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.25,
+    "evidence": "when one or more dragons you control deal combat damage to an opponent, choose …"
    },
    {
     "tag": "kw:Flying",
@@ -13975,21 +14122,28 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Sapphire Dragon // Psionic Pulse": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ attacks or blocks, scry 2."
+   },
    {
     "tag": "kw:Flying",
     "side": "P",
@@ -14021,6 +14175,13 @@
   ],
   "Sarkhan, Soul Aflame": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a dragon you control enters, you may have ~ become a copy of it until end …"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -14043,6 +14204,13 @@
    }
   ],
   "Scourge of the Throne": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ attacks for the first time each turn, if it's attacking the player with …"
+   },
    {
     "tag": "kw:Flying",
     "side": "P",
@@ -14170,18 +14338,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Serpent",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Serpent"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Teferi's Time Twist": [
@@ -14207,8 +14375,24 @@
     "evidence": "if it enters as a creature, it enters with an additional +1/+1 counter on it."
    }
   ],
-  "Temple of Abandon": [],
-  "Temple of Mystery": [],
+  "Temple of Abandon": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, scry 1."
+   }
+  ],
+  "Temple of Mystery": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, scry 1."
+   }
+  ],
   "Temple of the Dragon Queen": [
    {
     "tag": "type:Dragon",
@@ -14241,6 +14425,13 @@
     "evidence": "you may draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a creature you control with power 4 or greater enters, you may draw a card."
+   },
+   {
     "tag": "cast_noncreature",
     "side": "P",
     "scope": "self",
@@ -14257,11 +14448,11 @@
   ],
   "Terror of Mount Velus": [
    {
-    "tag": "kw:Flying",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Flying"
+    "evidence": "when ~ enters, creatures you control gain double strike until end of turn."
    },
    {
     "tag": "kw:Double strike",
@@ -14269,6 +14460,13 @@
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Double strike"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -14294,6 +14492,13 @@
   ],
   "Thrakkus the Butcher": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when thrakkus attacks, double the power of each dragon you control until end of…"
+   },
+   {
     "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
@@ -14308,18 +14513,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Peasant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Peasant"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Peasant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Peasant"
    },
    {
     "tag": "type:Dragon",
@@ -14330,6 +14535,13 @@
    }
   ],
   "Thunder Dragon": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, it deals 3 damage to each creature without flying."
+   },
    {
     "tag": "kw:Flying",
     "side": "P",
@@ -14398,6 +14610,13 @@
   ],
   "Ureni, the Song Unending": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, it deals x damage divided as you choose among any number of targ…"
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -14461,6 +14680,13 @@
     "scope": "yours",
     "strength": 1.25,
     "evidence": "create a 6/6 red dragon creature token with flying."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a dragon you control attacks, create a 6/6 red dragon creature token with …"
    },
    {
     "tag": "kw:Flying",
@@ -14528,18 +14754,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    },
    {
     "tag": "type:Dragon",

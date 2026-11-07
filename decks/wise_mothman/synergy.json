@@ -6,14 +6,14 @@
   {
    "tag": "counters_p1p1",
    "label": "+1/+1 counters",
-   "score": 569.75,
+   "score": 573.25,
    "producers": 36,
    "payoffs": 14
   },
   {
    "tag": "mill",
    "label": "mill",
-   "score": 47.25,
+   "score": 47.75,
    "producers": 21,
    "payoffs": 2
   },
@@ -27,14 +27,14 @@
   {
    "tag": "counters_any",
    "label": "counters (any kind)",
-   "score": 23.06,
+   "score": 23.44,
    "producers": 14,
    "payoffs": 2
   },
   {
    "tag": "rad",
    "label": "rad counters",
-   "score": 19.75,
+   "score": 20.0,
    "producers": 18,
    "payoffs": 1
   },
@@ -90,7 +90,7 @@
   {
    "tag": "counters_m1m1",
    "label": "-1/-1 counters",
-   "score": 7.62,
+   "score": 7.75,
    "producers": 14,
    "payoffs": 1
   },
@@ -133,9 +133,9 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 92.44,
+    "counters_p1p1": 92.81,
     "counters_present": 26.58,
-    "mill": 24.75,
+    "mill": 25.0,
     "ramp": 12.5,
     "protection": 10.5,
     "combo_win": 8.2,
@@ -185,7 +185,7 @@
    }
   },
   "Kami of Whispered Hopes": {
-   "total": 117.61,
+   "total": 117.98,
    "cmdr_fit": 8.0,
    "partners": 39,
    "best_partner": "The Wise Mothman",
@@ -193,7 +193,7 @@
    "ramp_bonus": 1.301,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 90.19,
+    "counters_p1p1": 90.56,
     "counters_present": 14.77,
     "combo_win": 8.2,
     "ramp": 2.05,
@@ -273,7 +273,7 @@
    "themes": {}
   },
   "Branching Evolution": {
-   "total": 116.38,
+   "total": 116.76,
    "cmdr_fit": 8.0,
    "partners": 39,
    "best_partner": "The Wise Mothman",
@@ -281,7 +281,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 90.19,
+    "counters_p1p1": 90.56,
     "counters_present": 14.77,
     "combo_win": 8.2,
     "color:Green:permanent": 0.5,
@@ -356,7 +356,7 @@
    }
   },
   "Corpsejack Menace": {
-   "total": 118.56,
+   "total": 118.93,
    "cmdr_fit": 8.0,
    "partners": 41,
    "best_partner": "The Wise Mothman",
@@ -364,7 +364,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 90.19,
+    "counters_p1p1": 90.56,
     "counters_present": 14.77,
     "combo_win": 8.2,
     "big_power": 2.25,
@@ -425,7 +425,7 @@
    "themes": {}
   },
   "Evolution Sage": {
-   "total": 70.5,
+   "total": 76.38,
    "cmdr_fit": 8.0,
    "partners": 38,
    "best_partner": "The Wise Mothman",
@@ -434,13 +434,13 @@
    "reactive_penalty": 0.0,
    "themes": {
     "counters_present": 34.81,
-    "counters_p1p1": 21.0,
+    "counters_p1p1": 26.25,
     "landfall": 5.5,
-    "mill": 2.0,
-    "counters_any": 1.5,
-    "rad": 1.0,
+    "mill": 2.5,
+    "counters_any": 1.88,
+    "rad": 1.25,
+    "counters_m1m1": 0.62,
     "color:Green:permanent": 0.5,
-    "counters_m1m1": 0.5,
     "etb": 0.3
    }
   },
@@ -480,7 +480,7 @@
    "ramp_kind": "land"
   },
   "Fathom Mage": {
-   "total": 123.72,
+   "total": 124.09,
    "cmdr_fit": 15.25,
    "partners": 49,
    "best_partner": "The Wise Mothman",
@@ -488,7 +488,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 72.19,
+    "counters_p1p1": 72.56,
     "counters_present": 17.72,
     "card draw": 11.67,
     "combo_win": 8.2,
@@ -565,7 +565,7 @@
    "draw_kind": "draw"
   },
   "Hardened Scales": {
-   "total": 116.38,
+   "total": 116.76,
    "cmdr_fit": 8.0,
    "partners": 39,
    "best_partner": "The Wise Mothman",
@@ -573,7 +573,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 90.19,
+    "counters_p1p1": 90.56,
     "counters_present": 14.77,
     "combo_win": 8.2,
     "color:Green:permanent": 0.5,
@@ -581,7 +581,7 @@
    }
   },
   "Herald of Secret Streams": {
-   "total": 71.36,
+   "total": 71.74,
    "cmdr_fit": 6.75,
    "partners": 36,
    "best_partner": "The Wise Mothman",
@@ -589,12 +589,12 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 67.69,
+    "counters_p1p1": 68.06,
     "etb": 0.3
    }
   },
   "Evolution Witness": {
-   "total": 108.94,
+   "total": 109.32,
    "cmdr_fit": 6.75,
    "partners": 36,
    "best_partner": "The Wise Mothman",
@@ -602,7 +602,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 72.19,
+    "counters_p1p1": 72.56,
     "counters_present": 17.72,
     "card draw": 11.67,
     "graveyard": 2.81,
@@ -671,7 +671,7 @@
    "protection_bonus": 40.856
   },
   "Inspiring Call": {
-   "total": 127.28,
+   "total": 127.65,
    "cmdr_fit": 8.0,
    "partners": 38,
    "best_partner": "The Wise Mothman",
@@ -679,7 +679,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 67.69,
+    "counters_p1p1": 68.06,
     "protection": 42.61,
     "card draw": 11.67,
     "go_wide": 0.94,
@@ -701,7 +701,7 @@
    "themes": {}
   },
   "Duskshell Crawler": {
-   "total": 101.43,
+   "total": 101.8,
    "cmdr_fit": 8.0,
    "partners": 39,
    "best_partner": "The Wise Mothman",
@@ -709,14 +709,14 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 85.69,
+    "counters_p1p1": 86.06,
     "counters_present": 11.81,
     "color:Green:permanent": 0.5,
     "etb": 0.3
    }
   },
   "Pensive Professor": {
-   "total": 68.41,
+   "total": 68.78,
    "cmdr_fit": 6.75,
    "partners": 31,
    "best_partner": "The Wise Mothman",
@@ -724,7 +724,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 51.94,
+    "counters_p1p1": 52.31,
     "card draw": 11.67,
     "draw": 1.12,
     "etb": 0.3
@@ -733,7 +733,7 @@
    "draw_kind": "draw"
   },
   "Mariposa Military Base": {
-   "total": 40.58,
+   "total": 40.83,
    "cmdr_fit": 5.0,
    "partners": 19,
    "best_partner": "The Wise Mothman",
@@ -741,7 +741,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "rad": 19.75,
+    "rad": 20.0,
     "counters_present": 14.77,
     "mill": 2.5,
     "draw": 0.94,
@@ -765,7 +765,7 @@
    }
   },
   "Mirelurk Queen": {
-   "total": 82.32,
+   "total": 82.57,
    "cmdr_fit": 4.5,
    "partners": 35,
    "best_partner": "The Wise Mothman",
@@ -773,7 +773,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "mill": 24.75,
+    "mill": 25.0,
     "counters_p1p1": 20.25,
     "counters_present": 17.72,
     "card draw": 11.67,
@@ -797,7 +797,7 @@
    "themes": {}
   },
   "Mutational Advantage": {
-   "total": 110.02,
+   "total": 110.21,
    "cmdr_fit": 8.0,
    "partners": 43,
    "best_partner": "The Wise Mothman",
@@ -808,7 +808,7 @@
     "protection": 42.61,
     "counters_present": 27.85,
     "counters_p1p1": 21.0,
-    "counters_any": 12.38,
+    "counters_any": 12.56,
     "mill": 2.0,
     "rad": 1.0,
     "cast_noncreature": 0.75,
@@ -1062,7 +1062,7 @@
    "ramp_kind": "land"
   },
   "Wave Goodbye": {
-   "total": 71.81,
+   "total": 72.19,
    "cmdr_fit": 6.75,
    "partners": 36,
    "best_partner": "The Wise Mothman",
@@ -1070,7 +1070,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 67.69,
+    "counters_p1p1": 68.06,
     "cast_noncreature": 0.75
    }
   },
@@ -1219,7 +1219,7 @@
    "themes": {}
   },
   "Glen Elendra Guardian": {
-   "total": 20.68,
+   "total": 20.8,
    "cmdr_fit": 0.0,
    "partners": 16,
    "best_partner": "Thrummingbird",
@@ -1228,7 +1228,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "counters_present": 11.81,
-    "counters_m1m1": 7.62,
+    "counters_m1m1": 7.75,
     "draw": 0.94,
     "etb": 0.3
    }
@@ -1252,7 +1252,7 @@
    }
   },
   "Triskelion": {
-   "total": 105.53,
+   "total": 105.9,
    "cmdr_fit": 6.75,
    "partners": 33,
    "best_partner": "Kami of Whispered Hopes",
@@ -1260,7 +1260,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 65.44,
+    "counters_p1p1": 65.81,
     "combo_win": 24.6,
     "counters_present": 11.81,
     "etb": 0.3
@@ -1409,7 +1409,7 @@
    }
   },
   "Winding Constrictor": {
-   "total": 126.21,
+   "total": 126.78,
    "cmdr_fit": 8.0,
    "partners": 39,
    "best_partner": "The Wise Mothman",
@@ -1417,9 +1417,9 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "counters_p1p1": 90.19,
+    "counters_p1p1": 90.56,
     "counters_present": 14.77,
-    "counters_any": 12.38,
+    "counters_any": 12.56,
     "combo_win": 8.2,
     "color:Green:permanent": 0.5,
     "etb": 0.3
@@ -1837,7 +1837,7 @@
    "card": "Mole Man, Moloid Master",
    "side": "produces",
    "tag": "fodder",
-   "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
+   "evidence": "create a 1/1 green minion creature token named moloid with"
   }
  ],
  "bracket": 3,
@@ -2001,13 +2001,13 @@
      "tag": "counters_p1p1",
      "producer": "Evolution Sage",
      "payoff": "The Wise Mothman",
-     "weight": 1.5
+     "weight": 1.875
     },
     {
      "tag": "mill",
      "producer": "Evolution Sage",
      "payoff": "The Wise Mothman",
-     "weight": 1.0
+     "weight": 1.25
     }
    ]
   },
@@ -3233,6 +3233,31 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Winding Constrictor",
+   "score": 3.985,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Winding Constrictor",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Winding Constrictor",
+     "payoff": "Evolution Sage",
+     "weight": 1.172
+    },
+    {
+     "tag": "counters_any",
+     "producer": "Evolution Sage",
+     "payoff": "Winding Constrictor",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
    "a": "Flux Channeler",
    "b": "Winding Constrictor",
    "score": 3.985,
@@ -3929,6 +3954,31 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Fathom Mage",
+   "score": 3.431,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Fathom Mage",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Fathom Mage",
+     "payoff": "Evolution Sage",
+     "weight": 1.406
+    },
+    {
+     "tag": "etb",
+     "producer": "Evolution Sage",
+     "payoff": "Fathom Mage",
+     "weight": 0.15
+    }
+   ]
+  },
+  {
    "a": "Fathom Mage",
    "b": "Flux Channeler",
    "score": 3.431,
@@ -3998,31 +4048,6 @@
     {
      "tag": "counters_any",
      "producer": "Cankerbloom",
-     "payoff": "Winding Constrictor",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Evolution Sage",
-   "b": "Winding Constrictor",
-   "score": 3.422,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Winding Constrictor",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Winding Constrictor",
-     "payoff": "Evolution Sage",
-     "weight": 1.172
-    },
-    {
-     "tag": "counters_any",
-     "producer": "Evolution Sage",
      "payoff": "Winding Constrictor",
      "weight": 0.75
     }
@@ -4390,6 +4415,25 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Evolution Witness",
+   "score": 3.281,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Evolution Witness",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Evolution Witness",
+     "payoff": "Evolution Sage",
+     "weight": 1.406
+    }
+   ]
+  },
+  {
    "a": "Evolution Witness",
    "b": "Flux Channeler",
    "score": 3.281,
@@ -4660,31 +4704,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Fathom Mage",
-   "score": 3.056,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Fathom Mage",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Fathom Mage",
-     "payoff": "Evolution Sage",
-     "weight": 1.406
-    },
-    {
-     "tag": "etb",
-     "producer": "Evolution Sage",
-     "payoff": "Fathom Mage",
-     "weight": 0.15
-    }
-   ]
-  },
-  {
    "a": "Agent Frank Horrigan",
    "b": "Kami of Whispered Hopes",
    "score": 3.047,
@@ -4699,6 +4718,25 @@
      "tag": "counters_present",
      "producer": "Kami of Whispered Hopes",
      "payoff": "Agent Frank Horrigan",
+     "weight": 1.172
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Kami of Whispered Hopes",
+   "score": 3.047,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Kami of Whispered Hopes",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Kami of Whispered Hopes",
+     "payoff": "Evolution Sage",
      "weight": 1.172
     }
    ]
@@ -4762,6 +4800,25 @@
   },
   {
    "a": "Branching Evolution",
+   "b": "Evolution Sage",
+   "score": 3.047,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Branching Evolution",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Branching Evolution",
+     "payoff": "Evolution Sage",
+     "weight": 1.172
+    }
+   ]
+  },
+  {
+   "a": "Branching Evolution",
    "b": "Tromell, Seymour's Butler",
    "score": 3.047,
    "reasons": [
@@ -4794,6 +4851,25 @@
      "tag": "counters_present",
      "producer": "Corpsejack Menace",
      "payoff": "Agent Frank Horrigan",
+     "weight": 1.172
+    }
+   ]
+  },
+  {
+   "a": "Corpsejack Menace",
+   "b": "Evolution Sage",
+   "score": 3.047,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Corpsejack Menace",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Corpsejack Menace",
+     "payoff": "Evolution Sage",
      "weight": 1.172
     }
    ]
@@ -4851,6 +4927,25 @@
      "tag": "counters_present",
      "producer": "Hardened Scales",
      "payoff": "Agent Frank Horrigan",
+     "weight": 1.172
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Hardened Scales",
+   "score": 3.047,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Hardened Scales",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Hardened Scales",
+     "payoff": "Evolution Sage",
      "weight": 1.172
     }
    ]
@@ -5004,25 +5099,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Evolution Witness",
-   "score": 2.906,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Evolution Witness",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Evolution Witness",
-     "payoff": "Evolution Sage",
-     "weight": 1.406
-    }
-   ]
-  },
-  {
    "a": "Mariposa Military Base",
    "b": "Thrummingbird",
    "score": 2.906,
@@ -5119,6 +5195,25 @@
   },
   {
    "a": "Duskshell Crawler",
+   "b": "Evolution Sage",
+   "score": 2.813,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Duskshell Crawler",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Duskshell Crawler",
+     "payoff": "Evolution Sage",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Duskshell Crawler",
    "b": "Flux Channeler",
    "score": 2.813,
    "reasons": [
@@ -5170,6 +5265,25 @@
      "tag": "counters_present",
      "producer": "Triskelion",
      "payoff": "Agent Frank Horrigan",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Triskelion",
+   "score": 2.813,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Triskelion",
+     "weight": 1.875
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Triskelion",
+     "payoff": "Evolution Sage",
      "weight": 0.938
     }
    ]
@@ -5335,25 +5449,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Kami of Whispered Hopes",
-   "score": 2.672,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Kami of Whispered Hopes",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Kami of Whispered Hopes",
-     "payoff": "Evolution Sage",
-     "weight": 1.172
-    }
-   ]
-  },
-  {
    "a": "Branching Evolution",
    "b": "Cankerbloom",
    "score": 2.672,
@@ -5368,25 +5463,6 @@
      "tag": "counters_present",
      "producer": "Branching Evolution",
      "payoff": "Cankerbloom",
-     "weight": 1.172
-    }
-   ]
-  },
-  {
-   "a": "Branching Evolution",
-   "b": "Evolution Sage",
-   "score": 2.672,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Branching Evolution",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Branching Evolution",
-     "payoff": "Evolution Sage",
      "weight": 1.172
     }
    ]
@@ -5411,25 +5487,6 @@
    ]
   },
   {
-   "a": "Corpsejack Menace",
-   "b": "Evolution Sage",
-   "score": 2.672,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Corpsejack Menace",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Corpsejack Menace",
-     "payoff": "Evolution Sage",
-     "weight": 1.172
-    }
-   ]
-  },
-  {
    "a": "Cankerbloom",
    "b": "Hardened Scales",
    "score": 2.672,
@@ -5449,25 +5506,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Hardened Scales",
-   "score": 2.672,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Hardened Scales",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Hardened Scales",
-     "payoff": "Evolution Sage",
-     "weight": 1.172
-    }
-   ]
-  },
-  {
    "a": "Agent Frank Horrigan",
    "b": "Mirelurk Queen",
    "score": 2.656,
@@ -5481,6 +5519,25 @@
     {
      "tag": "mill",
      "producer": "Agent Frank Horrigan",
+     "payoff": "Mirelurk Queen",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Mirelurk Queen",
+   "score": 2.656,
+   "reasons": [
+    {
+     "tag": "counters_present",
+     "producer": "Mirelurk Queen",
+     "payoff": "Evolution Sage",
+     "weight": 1.406
+    },
+    {
+     "tag": "mill",
+     "producer": "Evolution Sage",
      "payoff": "Mirelurk Queen",
      "weight": 1.25
     }
@@ -6171,25 +6228,6 @@
    ]
   },
   {
-   "a": "Duskshell Crawler",
-   "b": "Evolution Sage",
-   "score": 2.438,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Duskshell Crawler",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Duskshell Crawler",
-     "payoff": "Evolution Sage",
-     "weight": 0.938
-    }
-   ]
-  },
-  {
    "a": "Cankerbloom",
    "b": "Triskelion",
    "score": 2.438,
@@ -6209,25 +6247,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Triskelion",
-   "score": 2.438,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Triskelion",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_present",
-     "producer": "Triskelion",
-     "payoff": "Evolution Sage",
-     "weight": 0.938
-    }
-   ]
-  },
-  {
    "a": "Agent Frank Horrigan",
    "b": "Mariposa Military Base",
    "score": 2.422,
@@ -6242,6 +6261,25 @@
      "tag": "counters_present",
      "producer": "Mariposa Military Base",
      "payoff": "Agent Frank Horrigan",
+     "weight": 1.172
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Mariposa Military Base",
+   "score": 2.422,
+   "reasons": [
+    {
+     "tag": "rad",
+     "producer": "Evolution Sage",
+     "payoff": "Mariposa Military Base",
+     "weight": 1.25
+    },
+    {
+     "tag": "counters_present",
+     "producer": "Mariposa Military Base",
+     "payoff": "Evolution Sage",
      "weight": 1.172
     }
    ]
@@ -6317,25 +6355,6 @@
     {
      "tag": "mill",
      "producer": "Cankerbloom",
-     "payoff": "Mirelurk Queen",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Evolution Sage",
-   "b": "Mirelurk Queen",
-   "score": 2.406,
-   "reasons": [
-    {
-     "tag": "counters_present",
-     "producer": "Mirelurk Queen",
-     "payoff": "Evolution Sage",
-     "weight": 1.406
-    },
-    {
-     "tag": "mill",
-     "producer": "Evolution Sage",
      "payoff": "Mirelurk Queen",
      "weight": 1.0
     }
@@ -7270,25 +7289,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Mariposa Military Base",
-   "score": 2.172,
-   "reasons": [
-    {
-     "tag": "counters_present",
-     "producer": "Mariposa Military Base",
-     "payoff": "Evolution Sage",
-     "weight": 1.172
-    },
-    {
-     "tag": "rad",
-     "producer": "Evolution Sage",
-     "payoff": "Mariposa Military Base",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Atomize",
    "b": "Mirelurk Queen",
    "score": 2.125,
@@ -8022,6 +8022,19 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Herald of Secret Streams",
+   "score": 1.875,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Herald of Secret Streams",
+     "weight": 1.875
+    }
+   ]
+  },
+  {
    "a": "Hardened Scales",
    "b": "Herald of Secret Streams",
    "score": 1.875,
@@ -8237,6 +8250,19 @@
     {
      "tag": "counters_p1p1",
      "producer": "Animal Attendant",
+     "payoff": "Inspiring Call",
+     "weight": 1.875
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Inspiring Call",
+   "score": 1.875,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
      "payoff": "Inspiring Call",
      "weight": 1.875
     }
@@ -8477,6 +8503,19 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Pensive Professor",
+   "score": 1.875,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
+     "payoff": "Pensive Professor",
+     "weight": 1.875
+    }
+   ]
+  },
+  {
    "a": "Hardened Scales",
    "b": "Pensive Professor",
    "score": 1.875,
@@ -8640,6 +8679,19 @@
     {
      "tag": "counters_p1p1",
      "producer": "Animal Attendant",
+     "payoff": "Wave Goodbye",
+     "weight": 1.875
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Wave Goodbye",
+   "score": 1.875,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "Evolution Sage",
      "payoff": "Wave Goodbye",
      "weight": 1.875
     }
@@ -9146,6 +9198,25 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Glen Elendra Guardian",
+   "score": 1.563,
+   "reasons": [
+    {
+     "tag": "counters_present",
+     "producer": "Glen Elendra Guardian",
+     "payoff": "Evolution Sage",
+     "weight": 0.938
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Glen Elendra Guardian",
+     "weight": 0.625
+    }
+   ]
+  },
+  {
    "a": "Flux Channeler",
    "b": "Glen Elendra Guardian",
    "score": 1.563,
@@ -9578,19 +9649,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Herald of Secret Streams",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Herald of Secret Streams",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
    "a": "Find // Finality",
    "b": "Herald of Secret Streams",
    "score": 1.5,
@@ -9786,19 +9844,6 @@
    ]
   },
   {
-   "a": "Evolution Sage",
-   "b": "Inspiring Call",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
-     "payoff": "Inspiring Call",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
    "a": "Find // Finality",
    "b": "Inspiring Call",
    "score": 1.5,
@@ -9988,19 +10033,6 @@
     {
      "tag": "counters_p1p1",
      "producer": "Repulsive Mutation",
-     "payoff": "Pensive Professor",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Evolution Sage",
-   "b": "Pensive Professor",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
      "payoff": "Pensive Professor",
      "weight": 1.5
     }
@@ -10144,19 +10176,6 @@
     {
      "tag": "counters_p1p1",
      "producer": "Repulsive Mutation",
-     "payoff": "Wave Goodbye",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Evolution Sage",
-   "b": "Wave Goodbye",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Evolution Sage",
      "payoff": "Wave Goodbye",
      "weight": 1.5
     }
@@ -10358,25 +10377,6 @@
     {
      "tag": "counters_m1m1",
      "producer": "Cankerbloom",
-     "payoff": "Glen Elendra Guardian",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Evolution Sage",
-   "b": "Glen Elendra Guardian",
-   "score": 1.438,
-   "reasons": [
-    {
-     "tag": "counters_present",
-     "producer": "Glen Elendra Guardian",
-     "payoff": "Evolution Sage",
-     "weight": 0.938
-    },
-    {
-     "tag": "counters_m1m1",
-     "producer": "Evolution Sage",
      "payoff": "Glen Elendra Guardian",
      "weight": 0.5
     }
@@ -13038,6 +13038,19 @@
    ]
   },
   {
+   "a": "Evolution Sage",
+   "b": "Mutational Advantage",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "counters_any",
+     "producer": "Evolution Sage",
+     "payoff": "Mutational Advantage",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
    "a": "Mariposa Military Base",
    "b": "Psychic Corrosion",
    "score": 0.938,
@@ -13812,19 +13825,6 @@
     {
      "tag": "counters_any",
      "producer": "Tezzeret's Gambit",
-     "payoff": "Mutational Advantage",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Evolution Sage",
-   "b": "Mutational Advantage",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "counters_any",
-     "producer": "Evolution Sage",
      "payoff": "Mutational Advantage",
      "weight": 0.75
     }
@@ -14876,6 +14876,13 @@
     "evidence": "put a +1/+1 counter on each of up to x target creatures, where x is the number …"
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters or attacks, each player gets a rad counter."
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -14890,18 +14897,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Insect",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Insect"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Insect",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Insect"
    },
    {
     "tag": "counters_present",
@@ -14926,6 +14933,13 @@
    }
   ],
   "Agent Frank Horrigan": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters or attacks, proliferate twice."
+   },
    {
     "tag": "proliferate",
     "side": "P",
@@ -14983,18 +14997,18 @@
     "evidence": "power 8"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "mill",
@@ -15020,11 +15034,18 @@
   ],
   "Alpha Deathclaw": [
    {
-    "tag": "kw:Trample",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Trample"
+    "evidence": "when ~ enters or becomes monstrous, destroy target permanent."
+   },
+   {
+    "tag": "kw:Menace",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Menace"
    },
    {
     "tag": "counters_p1p1",
@@ -15034,11 +15055,11 @@
     "evidence": "keyword: Monstrosity"
    },
    {
-    "tag": "kw:Menace",
+    "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Menace"
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -15055,18 +15076,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Lizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Lizard"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Lizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Lizard"
    },
    {
     "tag": "counters_present",
@@ -15446,11 +15467,11 @@
     "evidence": "~ enters with x +1/+1 counters on it."
    },
    {
-    "tag": "kw:Trample",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
+    "strength": 0.25,
+    "evidence": "when ~ enters, destroy any number of target artifacts and/or enchantments with …"
    },
    {
     "tag": "kw:Vigilance",
@@ -15460,6 +15481,13 @@
     "evidence": "keyword: Vigilance"
    },
    {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -15467,18 +15495,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bear",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bear"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Bear",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bear"
    },
    {
     "tag": "counters_present",
@@ -15617,6 +15645,20 @@
   "Drowned Catacomb": [],
   "Evolution Sage": [
    {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "a land you control enters, proliferate."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a land you control enters, proliferate."
+   },
+   {
     "tag": "proliferate",
     "side": "P",
     "scope": "any",
@@ -15624,38 +15666,31 @@
     "evidence": "keyword: Proliferate"
    },
    {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
-   },
-   {
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "any",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "proliferate"
    },
    {
     "tag": "counters_m1m1",
     "side": "P",
     "scope": "any",
-    "strength": 0.5,
+    "strength": 0.625,
     "evidence": "proliferate"
    },
    {
     "tag": "rad",
     "side": "P",
     "scope": "any",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "proliferate"
    },
    {
     "tag": "counters_any",
     "side": "P",
     "scope": "any",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "proliferate"
    },
    {
@@ -15683,7 +15718,7 @@
     "tag": "mill",
     "side": "P",
     "scope": "any",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "proliferate on rad counters (rad mills)"
    },
    {
@@ -15701,7 +15736,15 @@
     "evidence": "is a green permanent"
    }
   ],
-  "Bojuka Bog": [],
+  "Bojuka Bog": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, exile target player's graveyard."
+   }
+  ],
   "Exotic Orchard": [],
   "Farseek": [
    {
@@ -15733,6 +15776,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "you may draw a card."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a +1/+1 counter is put on ~, you may draw a card."
    },
    {
     "tag": "counters_p1p1",
@@ -15838,6 +15888,13 @@
     "evidence": "each opponent mills three cards, then you may cast a spell from each opponent's…"
    },
    {
+    "tag": "graveyard",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Mill"
+   },
+   {
     "tag": "token_artifact",
     "side": "P",
     "scope": "yours",
@@ -15850,13 +15907,6 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Investigate"
-   },
-   {
-    "tag": "graveyard",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Mill"
    },
    {
     "tag": "cast_noncreature",
@@ -15894,6 +15944,13 @@
     "scope": "yours",
     "strength": 1.25,
     "evidence": "if it doesn't have the same name as another creature you control or a creature …"
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a nontoken creature you control enters, if it doesn't have the same name a…"
    },
    {
     "tag": "cast_noncreature",
@@ -15977,18 +16034,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Merfolk",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Merfolk"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    }
   ],
   "Evolution Witness": [
@@ -16007,6 +16064,13 @@
     "evidence": "return target permanent card from your graveyard to your hand."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when one or more +1/+1 counters are put on ~, return target permanent card from…"
+   },
+   {
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "self",
@@ -16021,18 +16085,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elf",
@@ -16110,6 +16174,13 @@
     "evidence": "put a +1/+1 counter on each creature you control."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you cast a green permanent spell, put a +1/+1 counter on each creature you…"
+   },
+   {
     "tag": "color:Green:permanent",
     "side": "C",
     "scope": "yours",
@@ -16138,18 +16209,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Wurm",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Wurm"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "counters_present",
@@ -16222,6 +16293,13 @@
     "evidence": "each creature you control with a +1/+1 counter on it has trample."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.5,
+    "evidence": "when ~ enters, put a +1/+1 counter on target creature."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -16264,6 +16342,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "draw a card."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when one or more +1/+1 counters are put on ~, draw a card."
    },
    {
     "tag": "etb",
@@ -16340,18 +16425,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
    },
    {
     "tag": "type:Mutant",
@@ -16410,6 +16495,13 @@
     "scope": "self",
     "strength": 1.5,
     "evidence": "draw a card, then put a +1/+1 counter on ~."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, target player gets two rad counters."
    },
    {
     "tag": "kw:Vigilance",
@@ -16543,6 +16635,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "you cast a noncreature spell, proliferate."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you cast a noncreature spell, proliferate."
    },
    {
     "tag": "proliferate",
@@ -16680,6 +16779,13 @@
     "evidence": "each opponent mills two cards."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you draw a card, each opponent mills two cards."
+   },
+   {
     "tag": "graveyard",
     "side": "P",
     "scope": "any",
@@ -16715,6 +16821,13 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "a creature dies this turn, each creature other than ~ gets -1/-1 until end of t…"
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, each other creature gets -1/-1 until end of turn."
    },
    {
     "tag": "kw:Menace",
@@ -16812,6 +16925,13 @@
     "evidence": "if you control a creature with power 7 or greater, draw a card."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when your upkeep, if you control a creature with power 7 or greater, draw a car…"
+   },
+   {
     "tag": "kw:Reach",
     "side": "P",
     "scope": "self",
@@ -16863,39 +16983,46 @@
     "evidence": "you may play lands from your graveyard."
    },
    {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "a land you control enters, create a 1/1 green minion creature token named moloi…"
+   },
+   {
     "tag": "token_creature",
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
+    "evidence": "create a 1/1 green minion creature token named moloid with"
    },
    {
     "tag": "go_wide",
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
+    "evidence": "create a 1/1 green minion creature token named moloid with"
    },
    {
     "tag": "fodder",
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
+    "evidence": "create a 1/1 green minion creature token named moloid with"
    },
    {
     "tag": "etb",
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
+    "evidence": "create a 1/1 green minion creature token named moloid with"
    },
    {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.625,
+    "evidence": "when a land you control enters, create a 1/1 green minion creature token named …"
    },
    {
     "tag": "mill",
@@ -16942,11 +17069,11 @@
     "evidence": "draw a card."
    },
    {
-    "tag": "kw:Flying",
+    "tag": "triggers",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "keyword: Flying"
+    "evidence": "when a creature you control with a counter on it deals combat damage to a playe…"
    },
    {
     "tag": "counters_p1p1",
@@ -16963,6 +17090,13 @@
     "evidence": "keyword: Evolve"
    },
    {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -16970,18 +17104,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Fish",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Fish"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Fish",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Fish"
    },
    {
     "tag": "counters_present",
@@ -17081,18 +17215,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    },
    {
     "tag": "color:Green:permanent",
@@ -17128,6 +17262,13 @@
     "evidence": "exile target card from a graveyard and put an oil counter on ~."
    },
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ becomes tapped, exile target card from a graveyard and put an oil counte…"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -17135,18 +17276,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
    },
    {
     "tag": "color:Green:permanent",
@@ -17194,18 +17335,25 @@
   "Turbulent Wilderness": [],
   "Tato Farmer": [
    {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "a land you control enters, you may get two rad counters."
+   },
+   {
     "tag": "rad",
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, you may get two rad counters."
+    "evidence": "you may get two rad counters."
    },
    {
     "tag": "mill",
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, you may get two rad counters."
+    "evidence": "you may get two rad counters."
    },
    {
     "tag": "landfall",
@@ -17215,11 +17363,11 @@
     "evidence": "put target land card in a graveyard that was milled this turn onto the battlefi…"
    },
    {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.75,
+    "evidence": "when a land you control enters, you may get two rad counters."
    },
    {
     "tag": "etb",
@@ -17229,11 +17377,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Zombie",
+    "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Zombie"
+    "evidence": "is a Mutant"
    },
    {
     "tag": "type:Peasant",
@@ -17243,11 +17391,11 @@
     "evidence": "is a Peasant"
    },
    {
-    "tag": "type:Mutant",
+    "tag": "type:Zombie",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Mutant"
+    "evidence": "is a Zombie"
    },
    {
     "tag": "graveyard",
@@ -17261,7 +17409,7 @@
     "side": "P",
     "scope": "yours",
     "strength": 1.25,
-    "evidence": "landfall — whenever a land you control enters, you may get two rad counters."
+    "evidence": "you may get two rad counters."
    },
    {
     "tag": "color:Green:permanent",
@@ -17311,18 +17459,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
     "tag": "type:Faerie",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Faerie"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
    },
    {
     "tag": "counters_present",
@@ -17333,6 +17481,13 @@
    }
   ],
   "Thrummingbird": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ deals combat damage to a player, proliferate."
+   },
    {
     "tag": "proliferate",
     "side": "P",
@@ -17383,6 +17538,13 @@
     "evidence": "is a creature"
    },
    {
+    "tag": "type:Bird",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bird"
+   },
+   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
@@ -17395,13 +17557,6 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Horror"
-   },
-   {
-    "tag": "type:Bird",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bird"
    },
    {
     "tag": "mill",
@@ -17594,18 +17749,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Advisor",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Advisor"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Advisor",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Advisor"
    },
    {
     "tag": "mill",
@@ -17637,6 +17792,13 @@
    }
   ],
   "Dreamtide Whale": [
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a player casts their second spell each turn, proliferate."
+   },
    {
     "tag": "proliferate",
     "side": "P",
@@ -17723,6 +17885,13 @@
     "scope": "yours",
     "strength": 1.5,
     "evidence": "that player gets two rad counters if they don't have any rad counters."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ deals combat damage to a player, that player gets two rad counters if th…"
    },
    {
     "tag": "proliferate",
@@ -17816,6 +17985,13 @@
     "scope": "yours",
     "strength": 1.25,
     "evidence": "put a +1/+1 counter on that creature for each 1 damage prevented this way."
+   },
+   {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.25,
+    "evidence": "when ~ is put into a graveyard from anywhere, shuffle it into its owner's libra…"
    },
    {
     "tag": "kw:Trample",
@@ -17959,6 +18135,13 @@
   "Woodland Cemetery": [],
   "Boggart Trawler // Boggart Bog": [
    {
+    "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters, exile target player's graveyard."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -18051,16 +18234,16 @@
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.198
+    "cut_score": 0.183
    },
    {
     "name": "Herald of Secret Streams",
     "cmc": 4.0,
-    "synergy": 71.36,
+    "synergy": 71.74,
     "cmdr_fit": 6.75,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.262
+    "cut_score": 0.246
    },
    {
     "name": "Defiler of Vigor",
@@ -18072,15 +18255,6 @@
     "cut_score": 0.278
    },
    {
-    "name": "Evolution Sage",
-    "cmc": 3.0,
-    "synergy": 70.5,
-    "cmdr_fit": 8.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.373
-   },
-   {
     "name": "Swiftfoot Boots",
     "cmc": 2.0,
     "synergy": 44.58,
@@ -18088,6 +18262,15 @@
     "combo_piece": false,
     "roles": [],
     "cut_score": 0.373
+   },
+   {
+    "name": "Evolution Sage",
+    "cmc": 3.0,
+    "synergy": 76.38,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.468
    },
    {
     "name": "Tromell, Seymour's Butler",
@@ -18119,7 +18302,7 @@
    {
     "name": "Mutational Advantage",
     "cmc": 3.0,
-    "synergy": 110.02,
+    "synergy": 110.21,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [],
@@ -18164,7 +18347,7 @@
    {
     "name": "Duskshell Crawler",
     "cmc": 2.0,
-    "synergy": 101.43,
+    "synergy": 101.8,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [],
@@ -18294,7 +18477,7 @@
    {
     "name": "Glen Elendra Guardian",
     "cmc": 3.0,
-    "synergy": 20.68,
+    "synergy": 20.8,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
@@ -18450,7 +18633,19 @@
     "roles": [
      "combo piece"
     ],
-    "cut_score": 0.206
+    "cut_score": 0.19
+   },
+   {
+    "name": "Tezzeret's Gambit",
+    "cmc": 4.0,
+    "synergy": 70.84,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.23
    },
    {
     "name": "Bugenhagen, Wise Elder",
@@ -18467,33 +18662,21 @@
     "cut_score": 0.23
    },
    {
-    "name": "Tezzeret's Gambit",
-    "cmc": 4.0,
-    "synergy": 70.84,
-    "cmdr_fit": 8.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.246
-   },
-   {
     "name": "Wave Goodbye",
     "cmc": 4.0,
-    "synergy": 71.81,
+    "synergy": 72.19,
     "cmdr_fit": 6.75,
     "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
     ],
-    "cut_score": 0.278
+    "cut_score": 0.262
    },
    {
     "name": "Mirelurk Queen",
     "cmc": 5.0,
-    "synergy": 82.32,
+    "synergy": 82.57,
     "cmdr_fit": 4.5,
     "combo_piece": false,
     "roles": [
@@ -18529,7 +18712,7 @@
    {
     "name": "Pensive Professor",
     "cmc": 3.0,
-    "synergy": 68.41,
+    "synergy": 68.78,
     "cmdr_fit": 6.75,
     "combo_piece": false,
     "roles": [
@@ -18563,7 +18746,7 @@
    {
     "name": "Triskelion",
     "cmc": 6.0,
-    "synergy": 105.53,
+    "synergy": 105.9,
     "cmdr_fit": 6.75,
     "combo_piece": true,
     "roles": [
@@ -18607,17 +18790,6 @@
     "cut_score": 0.5
    },
    {
-    "name": "Corpsejack Menace",
-    "cmc": 4.0,
-    "synergy": 118.56,
-    "cmdr_fit": 8.0,
-    "combo_piece": true,
-    "roles": [
-     "combo piece"
-    ],
-    "cut_score": 0.595
-   },
-   {
     "name": "Unnatural Restoration",
     "cmc": 2.0,
     "synergy": 72.9,
@@ -18626,12 +18798,23 @@
     "roles": [
      "card-advantage"
     ],
+    "cut_score": 0.579
+   },
+   {
+    "name": "Corpsejack Menace",
+    "cmc": 4.0,
+    "synergy": 118.93,
+    "cmdr_fit": 8.0,
+    "combo_piece": true,
+    "roles": [
+     "combo piece"
+    ],
     "cut_score": 0.595
    },
    {
     "name": "Fathom Mage",
     "cmc": 4.0,
-    "synergy": 123.72,
+    "synergy": 124.09,
     "cmdr_fit": 15.25,
     "combo_piece": true,
     "roles": [
@@ -18644,7 +18827,7 @@
    {
     "name": "Evolution Witness",
     "cmc": 3.0,
-    "synergy": 108.94,
+    "synergy": 109.32,
     "cmdr_fit": 6.75,
     "combo_piece": false,
     "roles": [
@@ -18655,7 +18838,7 @@
    {
     "name": "Branching Evolution",
     "cmc": 3.0,
-    "synergy": 116.38,
+    "synergy": 116.76,
     "cmdr_fit": 8.0,
     "combo_piece": true,
     "roles": [
@@ -18666,7 +18849,7 @@
    {
     "name": "Kami of Whispered Hopes",
     "cmc": 3.0,
-    "synergy": 117.61,
+    "synergy": 117.98,
     "cmdr_fit": 8.0,
     "combo_piece": true,
     "roles": [
@@ -18679,7 +18862,7 @@
    {
     "name": "Inspiring Call",
     "cmc": 3.0,
-    "synergy": 127.28,
+    "synergy": 127.65,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -18691,7 +18874,7 @@
    {
     "name": "Hardened Scales",
     "cmc": 1.0,
-    "synergy": 116.38,
+    "synergy": 116.76,
     "cmdr_fit": 8.0,
     "combo_piece": true,
     "roles": [
@@ -18702,7 +18885,7 @@
    {
     "name": "Winding Constrictor",
     "cmc": 2.0,
-    "synergy": 126.21,
+    "synergy": 126.78,
     "cmdr_fit": 8.0,
     "combo_piece": true,
     "roles": [
