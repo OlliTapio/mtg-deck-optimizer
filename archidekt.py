@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Pull decklists from Archidekt (public decks, no login).
 
-Writes decks/<deck>/decklist.txt in Archidekt's own export format, so every tool
-reads it unchanged, and decks/<deck>/source.json with the deck's Archidekt id,
-name and bracket so the deck can be pulled again later.
+Writes, in Archidekt's own export format so every tool reads them unchanged:
+  decks/<deck>/decklist.txt   the deck itself (commander + every card counted in the deck)
+  decks/<deck>/maybelist.txt  the maybeboard and other categories left out of the deck
+and decks/<deck>/source.json with the deck's Archidekt id, name and bracket so the
+deck can be pulled again later. decks/<deck>/swaps.txt (proposed swaps) is never touched.
 
 Usage:
     python3 archidekt.py pull https://archidekt.com/decks/25455075/the_wise_mothman
@@ -93,18 +95,36 @@ def card_line(entry, categories):
     return f"{qty}x {name} ({edition}) {number}{foil} [{','.join(tags)}]"
 
 
-def to_decklist(deck):
-    """Archidekt deck JSON -> decklist.txt text, commander first, then by category and name."""
+def split_deck(deck):
+    """Archidekt deck JSON -> (decklist text, maybelist text).
+
+    The decklist holds the commander and every card counted in the deck; the
+    maybelist holds the maybeboard and any other category left out of the deck.
+    Each is sorted commander first, then by category and name.
+    """
     categories = {c['name']: c for c in deck.get('categories', [])}
     entries = [e for e in deck.get('cards', []) if not e.get('deletedAt')]
 
-    def order(e):
-        cats = e.get('categories') or []
-        is_cmdr = any(categories.get(c, {}).get('isPremier') or c == 'Commander' for c in cats)
-        in_deck = all(categories.get(c, {}).get('includedInDeck', True) for c in cats)
-        return (not is_cmdr, not in_deck, (cats or [''])[0], e['card']['oracleCard']['name'])
+    def is_cmdr(e):
+        return any(categories.get(c, {}).get('isPremier') or c == 'Commander'
+                   for c in e.get('categories') or [])
 
-    return '\n'.join(card_line(e, categories) for e in sorted(entries, key=order)) + '\n'
+    def in_deck(e):
+        return is_cmdr(e) or all(categories.get(c, {}).get('includedInDeck', True)
+                                 for c in e.get('categories') or [])
+
+    def order(e):
+        return (not is_cmdr(e), ((e.get('categories') or ['']))[0], e['card']['oracleCard']['name'])
+
+    def text(es):
+        return ''.join(card_line(e, categories) + '\n' for e in sorted(es, key=order))
+
+    return text([e for e in entries if in_deck(e)]), text([e for e in entries if not in_deck(e)])
+
+
+def to_decklist(deck):
+    """Archidekt deck JSON -> decklist.txt text (cards in the deck only)."""
+    return split_deck(deck)[0]
 
 
 def slugify(name):
@@ -142,11 +162,17 @@ def pull(ref, deck_name=None, out_dir=None):
     os.makedirs(out_dir, exist_ok=True)
 
     path = os.path.join(out_dir, 'decklist.txt')
-    new_text = to_decklist(deck)
+    new_text, maybe_text = split_deck(deck)
     old_text = open(path).read() if os.path.exists(path) else ''
     added, removed = summarize_changes(old_text, new_text)
     with open(path, 'w') as f:
         f.write(new_text)
+    maybe_path = os.path.join(out_dir, 'maybelist.txt')
+    if maybe_text:
+        with open(maybe_path, 'w') as f:
+            f.write(maybe_text)
+    elif os.path.exists(maybe_path):
+        os.remove(maybe_path)
 
     source = {
         'archidekt_id': deck_id,

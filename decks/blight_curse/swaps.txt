@@ -1,0 +1,49 @@
+# Proposed swaps, not yet made on Archidekt. Archidekt (decklist.txt) is the source of truth.
+# Format: Out -> In  # reason   |   - Out  (cut only)   |   + In  (add only)
+# archidekt-version: 2026-03-24T18:17:03.769460Z
+
+# Paired in cuts.txt
+
+# From the local list (no pairing recorded in cuts.txt)
+- Archfiend of Ifnir
+- Cathartic Pyre
+- Chain Reaction
+- Evolving Wilds
+- Forest
+- Golgari Rot Farm
+- Gruul Turf
+- Harmonize
+- Infernal Grasp
+- Lasting Tarfire
+- 3x Mountain
+- Night's Whisper
+- Puppeteer Clique
+- Rakdos Carnarium
+- Riveteers Overlook
+- Sol Ring
+- Swamp
+- Terminate
+- Terramorphic Expanse
+- Vraska, Betrayal's Sting
++ Ammit Eternal
++ Birds of Paradise
++ Blight Rot
++ Blood Crypt
++ Boggart Trawler
++ Contagion Engine
++ Demolition Field
++ Druid of Purification
++ Fire-Lit Thicket
++ Generous Patron
++ Graven Cairns
++ Grim Affliction
++ Karn's Bastion
++ Nest of Scarabs
++ Obelisk Spider
++ Reliquary Tower
++ Scuzzback Scrounger
++ Sundering Eruption // Volcanic Fissure
++ Thirsting Roots
++ Twilight Mire
++ Unnatural Restoration
++ Vandalblast

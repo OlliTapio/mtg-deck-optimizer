@@ -129,4 +129,3 @@
 1x Rampant Growth (tdc) 265 [Ramp]
 1x Sol Ring (tdc) 106 [Ramp]
 1x Temur Battlecrier (tdm) 228 [Ramp]
-1x Frostcliff Siege (tdm) 187 [Draw,Maybeboard{noDeck}{noPrice}]

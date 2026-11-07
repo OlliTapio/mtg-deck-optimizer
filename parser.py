@@ -35,7 +35,7 @@ def parse_decklist(filepath):
             # Tags are the last [...] group on the line; matching them
             # non-greedily keeps a duplicated printing suffix out of the tags.
             m = re.match(
-                r'^(\d+)x\s+(.+?)\s+\((\w+)\)\s+(\S+)\s*(\*F\*)?\s*\[([^\]]*)\]$',
+                r'^(\d+)x\s+(.+?)\s+\((\w*)\)\s+(\S+)\s*(\*F\*)?\s*\[([^\]]*)\]$',
                 line
             )
             if not m:

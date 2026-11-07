@@ -1,0 +1,6 @@
+1x Ashling's Command (ecl) 205 [Maybeboard{noDeck}{noPrice}]
+1x Blood Crypt (ecl) 262 [Maybeboard{noDeck}{noPrice}]
+1x Cinder Glade (tmc) 61 [Maybeboard{noDeck}{noPrice}]
+1x Hallowed Fountain (ecl) 265 [Maybeboard{noDeck}{noPrice}]
+1x Kulrath Zealot (ecl) 148 [Maybeboard{noDeck}{noPrice}]
+1x Rootbound Crag (tmc) 72 [Maybeboard{noDeck}{noPrice}]

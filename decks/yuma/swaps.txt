@@ -1,0 +1,26 @@
+# Proposed swaps, not yet made on Archidekt. Archidekt (decklist.txt) is the source of truth.
+# Format: Out -> In  # reason   |   - Out  (cut only)   |   + In  (add only)
+# archidekt-version: 2026-03-17T21:17:41.771263Z
+
+# Paired in cuts.txt
+The Mending of Dominaria -> Mole Man, Moloid Master  # msh, buy EUR2.86
+
+# From the local list (no pairing recorded in cuts.txt)
+- Elvish Rejuvenator
+- 2x Forest
+- Knight of the White Orchid
+- Mountain
+- Nature's Lore
+- Oblivion Ring
+- Sevinne's Reclamation
+- Terramorphic Expanse
+- Vengeful Regrowth
++ Arid Archway
++ Colossal Rattlewurm
++ Desert Warfare
++ Evendo Brushrazer
++ Gruul Turf
++ Hedge Shredder
++ Horizon Explorer
++ 2x Plains
++ Rampant Growth

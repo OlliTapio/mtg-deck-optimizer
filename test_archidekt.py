@@ -1,7 +1,7 @@
 """Tests for archidekt.py: deck JSON -> decklist.txt conversion (no network)."""
 import pytest
 
-from archidekt import parse_deck_id, summarize_changes, to_decklist
+from archidekt import parse_deck_id, split_deck, summarize_changes, to_decklist
 from parser import parse_decklist
 
 
@@ -33,7 +33,7 @@ def test_round_trip_through_parser(tmp_path):
     path.write_text(to_decklist(DECK))
     lines = path.read_text().splitlines()
     assert lines[0] == '1x The Wise Mothman (pip) 4 *F* [Commander]'
-    assert '1x Hardened Scales (ktk) 133 [Maybeboard{noDeck}{noPrice}]' in lines
+    assert not any('Hardened Scales' in l for l in lines)
     parsed = parse_decklist(str(path))
     assert parsed['commander']['name'] == 'The Wise Mothman'
     names = [c['name'] for c in parsed['deck']]
@@ -58,3 +58,10 @@ def test_change_summary_ignores_maybeboard():
     new = '1x A (s) 1 [Ramp]\n1x C (s) 3 [Ramp]\n1x D (s) 4 [Maybeboard{noDeck}{noPrice}]\n'
     added, removed = summarize_changes(old, new)
     assert added == [('C', 1)] and removed == [('B', 1)]
+
+
+def test_maybeboard_goes_to_maybelist():
+    deck_text, maybe_text = split_deck(DECK)
+    assert 'Hardened Scales' not in deck_text
+    assert maybe_text == '1x Hardened Scales (ktk) 133 [Maybeboard{noDeck}{noPrice}]\n'
+    assert deck_text.splitlines()[0].startswith('1x The Wise Mothman')

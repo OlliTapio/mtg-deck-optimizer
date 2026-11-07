@@ -1,0 +1,31 @@
+# Proposed swaps, not yet made on Archidekt. Archidekt (decklist.txt) is the source of truth.
+# Format: Out -> In  # reason   |   - Out  (cut only)   |   + In  (add only)
+# archidekt-version: 2026-03-17T20:17:54.125806Z
+
+# Paired in cuts.txt
+Thriving Isle -> Hallowed Fountain
+Thriving Grove -> Cinder Glade
+Thriving Bluff -> Rootbound Crag
+Thriving Heath -> Flamekin Harbinger
+Timeless Lotus -> Brighthearth Banneret
+Fertile Ground -> Kulrath Zealot
+
+# From the local list (no pairing recorded in cuts.txt)
+- Collective Inferno
+- Frontier Bivouac
+- Kodama's Reach
+- Muldrotha, the Gravetide
+- Omnath, Locus of Rage
+- Opal Palace
+- Return of the Wildspeaker
+- Shimmercreep
+- Springleaf Parade
++ Ashling's Command
++ Ashling, Rekindled
++ Flock Impostor
++ Grave Sifter
++ Haunting Voyage
++ Kindred Discovery
++ Patriarch's Bidding
++ Shinestriker
++ The World Tree
