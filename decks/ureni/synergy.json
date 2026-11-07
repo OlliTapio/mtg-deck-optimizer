@@ -66,6 +66,7 @@
    "cmdr_fit": 0.0,
    "partners": 44,
    "best_partner": "Deceptive Frostkite",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -79,6 +80,7 @@
    "cmdr_fit": 6.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -91,6 +93,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Blasphemous Act": {
@@ -98,6 +101,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Bloomvine Regent // Claim Territory": {
@@ -105,6 +109,7 @@
    "cmdr_fit": 6.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -117,6 +122,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Brainstorm": {
@@ -124,6 +130,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Broodcaller Scourge": {
@@ -131,6 +138,7 @@
    "cmdr_fit": 6.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -143,6 +151,7 @@
    "cmdr_fit": 3.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5
    }
@@ -152,6 +161,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Cinder Glade": {
@@ -159,6 +169,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Command Tower": {
@@ -166,6 +177,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Counterspell": {
@@ -173,6 +185,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Cultivate": {
@@ -180,6 +193,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Deceptive Frostkite": {
@@ -187,6 +201,7 @@
    "cmdr_fit": 7.5,
    "partners": 39,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 18.75,
@@ -199,6 +214,7 @@
    "cmdr_fit": 4.8,
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5,
     "kw:Flying": 18.0,
@@ -210,6 +226,7 @@
    "cmdr_fit": 3.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5
    }
@@ -219,6 +236,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -231,6 +249,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -243,6 +262,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -254,6 +274,7 @@
    "cmdr_fit": 0.3,
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
+   "combo_piece": false,
    "themes": {
     "etb": 5.05
    }
@@ -263,6 +284,7 @@
    "cmdr_fit": 3.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5
    }
@@ -272,6 +294,7 @@
    "cmdr_fit": 2.0,
    "partners": 3,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Spirit": 3.0
    }
@@ -281,6 +304,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Exotic Orchard": {
@@ -288,6 +312,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Farseek": {
@@ -295,6 +320,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Flooded Grove": {
@@ -302,6 +328,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Forest": {
@@ -309,6 +336,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Frontier Bivouac": {
@@ -316,6 +344,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Frontier Siege": {
@@ -323,6 +352,7 @@
    "cmdr_fit": 4.5,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5,
     "kw:Flying": 18.0
@@ -333,6 +363,7 @@
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Lathliss, Dragon Queen",
+   "combo_piece": false,
    "themes": {
     "go_wide": 1.5
    }
@@ -342,6 +373,7 @@
    "cmdr_fit": 1.8,
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "big_power": 18.75,
     "etb": 5.05
@@ -352,6 +384,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -364,6 +397,7 @@
    "cmdr_fit": 3.0,
    "partners": 28,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5,
     "graveyard": 1.5
@@ -374,6 +408,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -386,6 +421,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -398,6 +434,7 @@
    "cmdr_fit": 1.5,
    "partners": 25,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "big_power": 18.75
    }
@@ -407,6 +444,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Incinerator of the Guilty": {
@@ -414,6 +452,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -426,6 +465,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Jade Orb of Dragonkind": {
@@ -433,6 +473,7 @@
    "cmdr_fit": 3.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5
    }
@@ -442,6 +483,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Kiora, Behemoth Beckoner": {
@@ -449,6 +491,7 @@
    "cmdr_fit": 0.3,
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
+   "combo_piece": false,
    "themes": {
     "etb": 5.05
    }
@@ -458,6 +501,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Last Night Together": {
@@ -465,6 +509,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Lathliss, Dragon Queen": {
@@ -472,6 +517,7 @@
    "cmdr_fit": 6.0,
    "partners": 44,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -486,6 +532,7 @@
    "cmdr_fit": 6.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -498,6 +545,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Marang River Regent // Coil and Catch": {
@@ -505,6 +553,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -518,6 +567,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Miirym, Sentinel Wyrm": {
@@ -525,6 +575,7 @@
    "cmdr_fit": 6.0,
    "partners": 44,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -539,6 +590,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Mosswort Bridge": {
@@ -546,6 +598,7 @@
    "cmdr_fit": 1.5,
    "partners": 25,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "big_power": 18.75
    }
@@ -555,6 +608,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Nature's Lore": {
@@ -562,6 +616,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Negate": {
@@ -569,6 +624,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Parapet Thrasher": {
@@ -576,6 +632,7 @@
    "cmdr_fit": 6.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -588,6 +645,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Rampant Growth": {
@@ -595,6 +653,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Return of the Wildspeaker": {
@@ -602,6 +661,7 @@
    "cmdr_fit": 1.5,
    "partners": 25,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "big_power": 18.75,
     "go_wide": 1.5
@@ -612,6 +672,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Rootbound Crag": {
@@ -619,6 +680,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Sakura-Tribe Elder": {
@@ -626,6 +688,7 @@
    "cmdr_fit": 0.0,
    "partners": 5,
    "best_partner": "Dragon Tempest",
+   "combo_piece": false,
    "themes": {
     "etb": 0.75
    }
@@ -635,6 +698,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -647,6 +711,7 @@
    "cmdr_fit": 3.0,
    "partners": 32,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5,
     "etb": 0.75
@@ -657,6 +722,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -669,6 +735,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Sheltered Thicket": {
@@ -676,6 +743,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Shivan Reef": {
@@ -683,6 +751,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Smuggler's Surprise": {
@@ -690,6 +759,7 @@
    "cmdr_fit": 1.5,
    "partners": 26,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "big_power": 18.75,
     "graveyard": 0.75
@@ -700,6 +770,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Spire Garden": {
@@ -707,6 +778,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Storm's Wrath": {
@@ -714,6 +786,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Sulfur Falls": {
@@ -721,6 +794,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Sword Coast Serpent // Capsizing Wave": {
@@ -728,6 +802,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -739,6 +814,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Temple of Abandon": {
@@ -746,6 +822,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Temple of Mystery": {
@@ -753,6 +830,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Temple of the Dragon Queen": {
@@ -760,6 +838,7 @@
    "cmdr_fit": 3.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 40.5
    }
@@ -769,6 +848,7 @@
    "cmdr_fit": 0.3,
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
+   "combo_piece": false,
    "themes": {
     "etb": 5.05
    }
@@ -778,6 +858,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -790,6 +871,7 @@
    "cmdr_fit": 6.0,
    "partners": 39,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "etb": 0.75
@@ -800,6 +882,7 @@
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -812,6 +895,7 @@
    "cmdr_fit": 4.5,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 22.5,
@@ -824,6 +908,7 @@
    "cmdr_fit": 3.0,
    "partners": 31,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
@@ -837,6 +922,7 @@
    "cmdr_fit": 6.0,
    "partners": 44,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -851,6 +937,7 @@
    "cmdr_fit": 6.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
+   "combo_piece": false,
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
@@ -863,6 +950,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Cascade Bluffs": {
@@ -870,6 +958,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Spinerock Knoll": {
@@ -877,6 +966,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Steam Vents": {
@@ -884,9 +974,11 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   }
  },
+ "combos": [],
  "unmatched": [
   {
    "card": "Bloomvine Regent // Claim Territory",
@@ -11803,18 +11895,18 @@
  "features": {
   "Ureni of the Unwritten": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -11831,18 +11923,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -11854,18 +11946,18 @@
   ],
   "Atarka, World Render": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -11944,18 +12036,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    },
    {
     "tag": "type:Dragon",
@@ -12199,18 +12291,18 @@
   ],
   "Dragonlord Atarka": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -12609,18 +12701,18 @@
   ],
   "Hellkite Tyrant": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -12670,18 +12762,18 @@
   "Hinterland Harbor": [],
   "Incinerator of the Guilty": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -12975,18 +13067,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    }
   ],
   "Migration Path": [
@@ -13014,18 +13106,18 @@
     "evidence": "another nontoken dragon you control enters, create a token that's a copy of it,…"
    },
    {
-    "tag": "kw:Ward",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Ward"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Ward",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Ward"
    },
    {
     "tag": "etb",
@@ -13042,18 +13134,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -13527,18 +13619,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Peasant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Peasant"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Peasant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Peasant"
    },
    {
     "tag": "type:Dragon",
@@ -13638,18 +13730,18 @@
     "evidence": "power 10"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Utvara Hellkite": [
@@ -13747,18 +13839,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Omen",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Omen"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Omen",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Omen"
    },
    {
     "tag": "type:Dragon",
@@ -13780,6 +13872,7 @@
     "cmc": 5.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": -0.283
    },
@@ -13788,6 +13881,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": -0.033
    },
@@ -13796,6 +13890,7 @@
     "cmc": 7.0,
     "synergy": 39.0,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.058
    },
@@ -13804,6 +13899,7 @@
     "cmc": 7.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.092
    },
@@ -13812,6 +13908,7 @@
     "cmc": 6.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.167
    },
@@ -13820,6 +13917,7 @@
     "cmc": 6.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.167
    },
@@ -13828,6 +13926,7 @@
     "cmc": 6.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.167
    },
@@ -13836,6 +13935,7 @@
     "cmc": 1.0,
     "synergy": 4.0,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.333
    },
@@ -13844,6 +13944,7 @@
     "cmc": 7.0,
     "synergy": 79.5,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.442
    },
@@ -13852,6 +13953,7 @@
     "cmc": 8.0,
     "synergy": 84.75,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.483
    },
@@ -13860,6 +13962,7 @@
     "cmc": 5.0,
     "synergy": 72.75,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.55
    },
@@ -13868,6 +13971,7 @@
     "cmc": 5.0,
     "synergy": 79.5,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.567
    },
@@ -13876,6 +13980,7 @@
     "cmc": 6.0,
     "synergy": 82.5,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.617
    },
@@ -13884,6 +13989,7 @@
     "cmc": 6.0,
     "synergy": 84.75,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.633
    },
@@ -13892,6 +13998,7 @@
     "cmc": 3.0,
     "synergy": 42.75,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.642
    },
@@ -13900,6 +14007,7 @@
     "cmc": 2.0,
     "synergy": 93.75,
     "cmdr_fit": 7.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.967
    }
@@ -13910,6 +14018,7 @@
     "cmc": 9.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -13921,6 +14030,7 @@
     "cmc": 6.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "ramp"
@@ -13932,6 +14042,7 @@
     "cmc": 4.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -13945,6 +14056,7 @@
     "cmc": 4.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -13956,6 +14068,7 @@
     "cmc": 3.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -13966,6 +14079,7 @@
     "cmc": 3.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -13976,6 +14090,7 @@
     "cmc": 3.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -13987,6 +14102,7 @@
     "cmc": 3.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -13998,6 +14114,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "counterspell"
     ],
@@ -14008,6 +14125,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -14019,6 +14137,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -14030,6 +14149,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -14041,6 +14161,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "counterspell"
     ],
@@ -14051,6 +14172,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -14062,6 +14184,7 @@
     "cmc": 1.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -14073,6 +14196,7 @@
     "cmc": 1.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -14083,6 +14207,7 @@
     "cmc": 7.0,
     "synergy": 39.0,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -14093,6 +14218,7 @@
     "cmc": 7.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -14103,6 +14229,7 @@
     "cmc": 7.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -14113,6 +14240,7 @@
     "cmc": 7.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "counterspell"
     ],
@@ -14123,6 +14251,7 @@
     "cmc": 7.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -14134,6 +14263,7 @@
     "cmc": 5.0,
     "synergy": 21.0,
     "cmdr_fit": 1.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -14145,6 +14275,7 @@
     "cmc": 6.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -14155,6 +14286,7 @@
     "cmc": 6.0,
     "synergy": 40.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -14166,6 +14298,7 @@
     "cmc": 3.0,
     "synergy": 1.5,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -14177,6 +14310,7 @@
     "cmc": 8.0,
     "synergy": 41.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -14187,6 +14321,7 @@
     "cmc": 3.0,
     "synergy": 5.2,
     "cmdr_fit": 0.3,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -14198,6 +14333,7 @@
     "cmc": 3.0,
     "synergy": 5.2,
     "cmdr_fit": 0.3,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -14210,6 +14346,7 @@
     "cmc": 3.0,
     "synergy": 5.2,
     "cmdr_fit": 0.3,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -14221,6 +14358,7 @@
     "cmc": 2.0,
     "synergy": 0.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -14232,6 +14370,7 @@
     "cmc": 3.0,
     "synergy": 24.7,
     "cmdr_fit": 1.8,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -14243,6 +14382,7 @@
     "cmc": 6.0,
     "synergy": 41.25,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -14255,6 +14395,7 @@
     "cmc": 2.0,
     "synergy": 19.5,
     "cmdr_fit": 1.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -14267,6 +14408,7 @@
     "cmc": 1.0,
     "synergy": 20.25,
     "cmdr_fit": 1.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
@@ -14277,6 +14419,7 @@
     "cmc": 7.0,
     "synergy": 79.5,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -14287,6 +14430,7 @@
     "cmc": 4.0,
     "synergy": 42.0,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -14298,6 +14442,7 @@
     "cmc": 4.0,
     "synergy": 58.5,
     "cmdr_fit": 4.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
@@ -14308,6 +14453,7 @@
     "cmc": 5.0,
     "synergy": 79.5,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -14319,6 +14465,7 @@
     "cmc": 5.0,
     "synergy": 79.5,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -14329,6 +14476,7 @@
     "cmc": 4.0,
     "synergy": 60.75,
     "cmdr_fit": 4.5,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "removal"
@@ -14340,6 +14488,7 @@
     "cmc": 3.0,
     "synergy": 42.0,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -14350,6 +14499,7 @@
     "cmc": 3.0,
     "synergy": 42.0,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -14362,6 +14512,7 @@
     "cmc": 3.0,
     "synergy": 42.0,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -14372,6 +14523,7 @@
     "cmc": 4.0,
     "synergy": 79.5,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "removal"
@@ -14383,6 +14535,7 @@
     "cmc": 2.0,
     "synergy": 65.95,
     "cmdr_fit": 4.8,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],

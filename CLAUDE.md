@@ -27,6 +27,9 @@ python3 synergy.py decks/<deck>/decklist.txt --cuts               # cut candidat
 python3 synergy.py decks/<deck>/decklist.txt --features           # what was read from each card
 python3 synergy.py decks/<deck>/decklist.txt --save               # write decks/<deck>/synergy.json
 
+# Known combos (Commander Spellbook): combos in the deck, near-misses, bracket flags
+python3 combos.py decks/<deck>/decklist.txt [--almost 30] [--prices] [--json] [--refresh]
+
 # Simulate opening hands
 python3 hand_simulator.py decks/<deck>/decklist.txt [n_hands]
 
@@ -149,13 +152,19 @@ Reads keywords, types and triggers, tags each card with what it **produces** and
 - Main theme x1.5, subtheme x1.25, pairs with the commander x2.
 - Counter axes are separate: +1/+1, -1/-1, rad. Rad counters also count as mill. Proliferate feeds all of them.
 - Regex reading of rules text misses unusual wording. Check surprising scores with `--card` / `--features` and the oracle text before trusting them.
+- Known combos from Commander Spellbook add a pair bonus between every two pieces. Combo pieces are never cut candidates.
 - Never claim two cards synergise without running `synergy.py --card`, or reading both cards' oracle text.
+
+## Combos (`combos.py`)
+Asks Commander Spellbook's free API (backend.commanderspellbook.com) which combos the deck contains and which it almost contains.
+- Every combo is flagged against the deck's bracket from its CLAUDE.md: two-card infinites are banned in brackets 1-2 and only allowed late in bracket 3.
+- Near-misses are leads, not suggestions: check theme, bracket and the €10 budget before proposing one.
 
 ## Key Rules
 - **Always run the tools** — never manually count card types, lands, or categories from decklist.txt. Use `deck_analyzer.py` for type breakdowns and `otag_fetcher.py` for functional categories. The decklist file is an Archidekt export; only the tools parse it correctly against Scryfall data.
 - Always use Scryfall data and otags for card categorization — never trust manual tags in decklist files
 - Parser tags are only reliable for deck membership status (Buy, noDeck, Maybeboard)
-- Caches: `cache/cards.json` (Scryfall card data), `cache/otags.json` (Scryfall otags)
+- Caches are committed to the repo so cloud sessions start warm: `cache/cards.json` (Scryfall card data), `cache/otags.json` (Scryfall otags), `cache/combos.json` (Commander Spellbook, keyed by the exact card list). Commit cache changes along with deck changes. Cached prices go stale: run `price_check.py` for current prices
 - Respect Scryfall rate limits: 100ms between requests (10 req/s max)
 - Budget: no single card over €10
 - No goodstuff — suggestions must synergize with the specific deck's theme

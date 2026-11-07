@@ -41,6 +41,7 @@ COMMANDER_BONUS = 2.0
 WEAK = 0.3                    # type-derived producers ("every creature enters")
 PAIR_CAP = 4.0                # max score for one pair of cards
 CUT_CMC_WEIGHT = 0.5          # how much mana value pushes a card up the cut list
+COMBO_WEIGHT = 2.0            # per pair of pieces in a known combo (Commander Spellbook)
 
 TAG_WEIGHTS = {
     'counters_p1p1': 1.0, 'counters_m1m1': 1.0, 'rad': 1.0, 'counters_any': 0.75, 'proliferate': 1.0,
@@ -63,6 +64,7 @@ TAG_LABELS = {
     'cast_noncreature': 'noncreature spells', 'cast_exile': 'casting from exile',
     'etb': 'creatures entering', 'big_power': 'power 4+',
     'trigger_dies': 'death-trigger doubling', 'trigger_etb': 'ETB-trigger doubling',
+    'combo': 'known combo',
 }
 
 
@@ -475,8 +477,32 @@ def _compatible(p, c):
     return True
 
 
-def compute_synergy(views, commander_name=None):
-    """Score every card pair. `views` is a list of card_view dicts."""
+def _combo_matches(views, combos):
+    """Pair reasons for every two pieces of each known combo the deck contains."""
+    by_lower = {}
+    for v in views:
+        by_lower[v['name'].lower()] = v['name']
+        by_lower.setdefault(v['name'].split(' // ')[0].lower(), v['name'])
+    out = {}
+    for combo in combos or []:
+        pieces = [by_lower.get(c.lower()) for c in combo['cards']]
+        if None in pieces:
+            continue
+        what = ', '.join(combo.get('produces', [])[:2])
+        for i, a in enumerate(pieces):
+            for b in pieces[i + 1:]:
+                key = (a, b, 'combo')
+                if key in out:
+                    continue
+                out[key] = {'tag': 'combo', 'producer': a, 'payoff': b, 'weight': COMBO_WEIGHT,
+                            'producer_evidence': ' + '.join(combo['cards']),
+                            'payoff_evidence': f"{what} ({combo.get('url', '')})"}
+    return out
+
+
+def compute_synergy(views, commander_name=None, combos=None):
+    """Score every card pair. `views` is a list of card_view dicts. `combos` is the
+    'included' list from combos.fetch_combos: each pair of pieces gets a bonus reason."""
     deck_subtypes = set()
     for v in views:
         deck_subtypes |= v['subtypes']
@@ -513,9 +539,12 @@ def compute_synergy(views, commander_name=None):
         subtheme = ranked[1][0]
     bonus = {main_theme: MAIN_THEME_BONUS, subtheme: SUBTHEME_BONUS}
 
+    combo_matches = _combo_matches(views, combos)
+    combo_pieces = {n for m in combo_matches.values() for n in (m['producer'], m['payoff'])}
+
     # Pair scores
     pairs = defaultdict(lambda: {'score': 0.0, 'reasons': []})
-    for m in matches.values():
+    for m in list(matches.values()) + list(combo_matches.values()):
         a, b = sorted((m['producer'], m['payoff']))
         w = m['weight'] * bonus.get(m['tag'], 1.0)
         m = dict(m, weight=round(w, 3))
@@ -531,7 +560,7 @@ def compute_synergy(views, commander_name=None):
     cards = {}
     for n in names:
         cards[n] = {'total': 0.0, 'cmdr_fit': 0.0, 'partners': 0, 'best_partner': None,
-                    'themes': defaultdict(float)}
+                    'combo_piece': n in combo_pieces, 'themes': defaultdict(float)}
     for (a, b), p in pairs.items():
         for me, other in ((a, b), (b, a)):
             c = cards[me]
@@ -571,6 +600,7 @@ def compute_synergy(views, commander_name=None):
         'pairs': [{'a': a, 'b': b, 'score': p['score'], 'reasons': p['reasons']}
                   for (a, b), p in sorted(pairs.items(), key=lambda kv: -kv[1]['score'])],
         'cards': cards,
+        'combos': list(combos or []),
         'unmatched': unmatched,
     }
 
@@ -592,16 +622,17 @@ def _percentiles(values):
 
 def rank_cuts(result, views, commander_name=None):
     """Rank nonland, non-commander cards for cutting: low synergy and high mana
-    value first. Cards with a template role (removal, ramp, draw...) are returned
-    separately, since they are expected to have low synergy."""
+    value first. Cards with a template role (removal, ramp, draw...) and pieces of
+    known combos are returned separately: synergy alone shouldn't cut them."""
     rows = []
     for v in views:
         if v['name'] == commander_name or 'Land' in v['front_types']:
             continue
         c = result['cards'].get(v['name'], {})
         rows.append({'name': v['name'], 'cmc': v['cmc'], 'synergy': c.get('total', 0.0),
-                     'cmdr_fit': c.get('cmdr_fit', 0.0),
-                     'roles': sorted(set(v['otags']) & set(ROLE_OTAGS))})
+                     'cmdr_fit': c.get('cmdr_fit', 0.0), 'combo_piece': c.get('combo_piece', False),
+                     'roles': sorted(set(v['otags']) & set(ROLE_OTAGS))
+                     + (['combo piece'] if c.get('combo_piece') else [])})
     syn_pct = _percentiles([r['synergy'] for r in rows])
     cmc_pct = _percentiles([r['cmc'] for r in rows])
     for r in rows:
@@ -646,6 +677,17 @@ def views_from_deck_json(path):
         seen.add(e['name'])
         views.append(card_view(e))
     return views, (d['commander']['name'] if d.get('commander') else None)
+
+
+def load_combos(views, commander_name):
+    """Known combos in the deck from Commander Spellbook (cached), or None if unreachable."""
+    try:
+        from combos import fetch_combos
+        names = [v['name'] for v in views]
+        return fetch_combos(names, [commander_name] if commander_name else [])['included']
+    except Exception as e:  # network down, host not allowed: synergy still works without
+        print(f"  (combo lookup skipped: {e})", file=sys.stderr)
+        return None
 
 
 # ==================== Output ====================
@@ -735,9 +777,10 @@ def print_cuts(candidates, role_cards, n=15):
     print(f"=== Cut candidates: low synergy + high mana value (lowest score first) ===\n")
     print(f"  {'Score':>6s} {'CMC':>3s} {'Syn':>6s} {'Cmdr':>5s}  Card")
     for r in candidates[:n]:
-        print(f"  {r['cut_score']:6.2f} {r['cmc']:3.0f} {r['synergy']:6.2f} {r['cmdr_fit']:5.2f}  {r['name']}")
+        combo = '  [COMBO PIECE]' if r['combo_piece'] else ''
+        print(f"  {r['cut_score']:6.2f} {r['cmc']:3.0f} {r['synergy']:6.2f} {r['cmdr_fit']:5.2f}  {r['name']}{combo}")
     if role_cards:
-        print("\n--- Low-synergy role cards (template slots, not cut candidates by synergy alone) ---")
+        print("\n--- Role cards and combo pieces (not cut candidates by synergy alone) ---")
         for r in role_cards[:n]:
             print(f"  {r['cut_score']:6.2f} {r['cmc']:3.0f} {r['synergy']:6.2f} {r['cmdr_fit']:5.2f}  "
                   f"{r['name']}  [{', '.join(r['roles'])}]")
@@ -776,6 +819,7 @@ def main():
     ap.add_argument('--json', action='store_true', help='Print the full result as JSON')
     ap.add_argument('--save', nargs='?', const='', help='Write JSON to decks/<deck>/synergy.json (or a path)')
     ap.add_argument('--no-otags', action='store_true', help='Skip Scryfall otags (no extra network calls)')
+    ap.add_argument('--no-combos', action='store_true', help='Skip Commander Spellbook combo lookup')
     args = ap.parse_args()
 
     print(f"Loading deck from {args.decklist}...", file=sys.stderr)
@@ -783,7 +827,8 @@ def main():
         views, cmdr = views_from_deck_json(args.decklist)
     else:
         views, cmdr = load_views(args.decklist, use_otags=not args.no_otags)
-    result = compute_synergy(views, cmdr)
+    combos = None if args.no_combos else load_combos(views, cmdr)
+    result = compute_synergy(views, cmdr, combos)
     candidates, role_cards = rank_cuts(result, views, cmdr)
 
     if args.save is not None:

@@ -115,6 +115,7 @@
    "cmdr_fit": 0.0,
    "partners": 23,
    "best_partner": "Mariposa Military Base",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "mill": 9.0,
@@ -128,6 +129,7 @@
    "cmdr_fit": 0.0,
    "partners": 21,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "big_power": 2.25,
@@ -143,6 +145,7 @@
    "cmdr_fit": 0.0,
    "partners": 15,
    "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 13.5,
     "big_power": 2.25,
@@ -151,12 +154,14 @@
    }
   },
   "Kami of Whispered Hopes": {
-   "total": 63.3,
+   "total": 66.3,
    "cmdr_fit": 3.0,
    "partners": 39,
-   "best_partner": "Fathom Mage",
+   "best_partner": "Triskelion",
+   "combo_piece": true,
    "themes": {
     "counters_p1p1": 61.5,
+    "combo": 4.0,
     "etb": 0.3
    }
   },
@@ -165,6 +170,7 @@
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Flux Channeler",
+   "combo_piece": false,
    "themes": {
     "cast_noncreature": 0.75
    }
@@ -174,6 +180,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "counters_any": 1.5,
@@ -187,6 +194,7 @@
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Fathom Mage",
+   "combo_piece": false,
    "themes": {
     "etb": 0.3
    }
@@ -196,6 +204,7 @@
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Flux Channeler",
+   "combo_piece": false,
    "themes": {
     "cast_noncreature": 0.23
    }
@@ -205,15 +214,18 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Branching Evolution": {
-   "total": 63.23,
+   "total": 66.22,
    "cmdr_fit": 3.0,
    "partners": 39,
-   "best_partner": "Kami of Whispered Hopes",
+   "best_partner": "Triskelion",
+   "combo_piece": true,
    "themes": {
     "counters_p1p1": 61.5,
+    "combo": 4.0,
     "cast_noncreature": 0.23
    }
   },
@@ -222,6 +234,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "counters_any": 1.5,
@@ -235,6 +248,7 @@
    "cmdr_fit": 0.0,
    "partners": 18,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "counters_any": 1.5,
@@ -249,6 +263,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Rampaging Yao Guai": {
@@ -256,6 +271,7 @@
    "cmdr_fit": 0.0,
    "partners": 12,
    "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 13.5,
     "type:Mutant": 1.0,
@@ -263,12 +279,14 @@
    }
   },
   "Corpsejack Menace": {
-   "total": 65.55,
+   "total": 68.55,
    "cmdr_fit": 3.0,
    "partners": 41,
-   "best_partner": "Fathom Mage",
+   "best_partner": "Triskelion",
+   "combo_piece": true,
    "themes": {
     "counters_p1p1": 61.5,
+    "combo": 4.0,
     "big_power": 2.25,
     "etb": 0.3
    }
@@ -278,6 +296,7 @@
    "cmdr_fit": 0.0,
    "partners": 21,
    "best_partner": "Corpsejack Menace",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "big_power": 6.0,
@@ -289,6 +308,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Animal Attendant": {
@@ -296,6 +316,7 @@
    "cmdr_fit": 0.0,
    "partners": 14,
    "best_partner": "Fathom Mage",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "etb": 0.3
@@ -306,6 +327,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Evolution Sage": {
@@ -313,6 +335,7 @@
    "cmdr_fit": 0.0,
    "partners": 22,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "landfall": 5.0,
@@ -327,6 +350,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Exotic Orchard": {
@@ -334,6 +358,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Farseek": {
@@ -341,6 +366,7 @@
    "cmdr_fit": 0.0,
    "partners": 4,
    "best_partner": "Evolution Sage",
+   "combo_piece": false,
    "themes": {
     "landfall": 3.0,
     "cast_noncreature": 0.75
@@ -351,6 +377,7 @@
    "cmdr_fit": 3.3,
    "partners": 49,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 46.5,
     "etb": 5.9,
@@ -362,6 +389,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "graveyard": 2.25,
@@ -373,6 +401,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Flotsam // Jetsam": {
@@ -380,6 +409,7 @@
    "cmdr_fit": 2.0,
    "partners": 14,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "graveyard": 9.0,
     "mill": 2.0,
@@ -391,6 +421,7 @@
    "cmdr_fit": 0.0,
    "partners": 4,
    "best_partner": "Mole Man, Moloid Master",
+   "combo_piece": false,
    "themes": {
     "graveyard": 2.25,
     "token_creature": 1.0,
@@ -399,12 +430,14 @@
    }
   },
   "Hardened Scales": {
-   "total": 63.23,
+   "total": 66.22,
    "cmdr_fit": 3.0,
    "partners": 39,
-   "best_partner": "Kami of Whispered Hopes",
+   "best_partner": "Triskelion",
+   "combo_piece": true,
    "themes": {
     "counters_p1p1": 61.5,
+    "combo": 4.0,
     "cast_noncreature": 0.23
    }
   },
@@ -413,6 +446,7 @@
    "cmdr_fit": 3.0,
    "partners": 36,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 45.0,
     "etb": 0.3
@@ -423,6 +457,7 @@
    "cmdr_fit": 3.0,
    "partners": 36,
    "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 46.5,
     "graveyard": 2.25,
@@ -435,6 +470,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Incubation Druid": {
@@ -442,6 +478,7 @@
    "cmdr_fit": 0.0,
    "partners": 11,
    "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 13.5,
     "etb": 0.3
@@ -452,6 +489,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Fathom Mage",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "big_power": 2.25,
@@ -463,6 +501,7 @@
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Flux Channeler",
+   "combo_piece": false,
    "themes": {
     "cast_noncreature": 0.75
    }
@@ -472,6 +511,7 @@
    "cmdr_fit": 3.0,
    "partners": 38,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 45.0,
     "cast_noncreature": 0.75,
@@ -484,6 +524,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Duskshell Crawler": {
@@ -491,6 +532,7 @@
    "cmdr_fit": 3.0,
    "partners": 39,
    "best_partner": "Fathom Mage",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 61.5,
     "etb": 0.3
@@ -501,6 +543,7 @@
    "cmdr_fit": 3.0,
    "partners": 31,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 33.0,
     "draw": 0.75,
@@ -512,6 +555,7 @@
    "cmdr_fit": 4.0,
    "partners": 18,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "rad": 11.0,
     "mill": 2.0,
@@ -523,6 +567,7 @@
    "cmdr_fit": 2.0,
    "partners": 21,
    "best_partner": "Evolution Witness",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "type:Mutant": 9.0,
@@ -534,6 +579,7 @@
    "cmdr_fit": 4.0,
    "partners": 23,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 13.5,
     "mill": 9.0,
@@ -549,6 +595,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Mutational Advantage": {
@@ -556,6 +603,7 @@
    "cmdr_fit": 0.0,
    "partners": 27,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_any": 10.5,
     "counters_p1p1": 9.75,
@@ -569,6 +617,7 @@
    "cmdr_fit": 0.0,
    "partners": 4,
    "best_partner": "Evolution Sage",
+   "combo_piece": false,
    "themes": {
     "landfall": 3.0,
     "cast_noncreature": 0.75
@@ -579,6 +628,7 @@
    "cmdr_fit": 0.0,
    "partners": 40,
    "best_partner": "Inspiring Call",
+   "combo_piece": false,
    "themes": {
     "cast_noncreature": 17.32,
     "counters_p1p1": 9.75,
@@ -593,6 +643,7 @@
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Flux Channeler",
+   "combo_piece": false,
    "themes": {
     "cast_noncreature": 0.75
    }
@@ -602,6 +653,7 @@
    "cmdr_fit": 2.0,
    "partners": 4,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "mill": 2.0,
     "rad": 1.0,
@@ -613,6 +665,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Overflowing Basin": {
@@ -620,6 +673,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Path of Ancestry": {
@@ -627,6 +681,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Psychic Corrosion": {
@@ -634,6 +689,7 @@
    "cmdr_fit": 2.0,
    "partners": 22,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "graveyard": 8.25,
     "draw": 7.5,
@@ -646,6 +702,7 @@
    "cmdr_fit": 0.0,
    "partners": 5,
    "best_partner": "Repulsive Mutation",
+   "combo_piece": false,
    "themes": {
     "big_power": 2.25,
     "etb": 0.3
@@ -656,6 +713,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Fathom Mage",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "graveyard": 2.25,
@@ -667,6 +725,7 @@
    "cmdr_fit": 0.0,
    "partners": 11,
    "best_partner": "Agent Frank Horrigan",
+   "combo_piece": false,
    "themes": {
     "big_power": 6.0,
     "draw": 0.75,
@@ -678,6 +737,7 @@
    "cmdr_fit": 2.0,
    "partners": 20,
    "best_partner": "Tato Farmer",
+   "combo_piece": false,
    "themes": {
     "graveyard": 9.0,
     "landfall": 6.0,
@@ -692,6 +752,7 @@
    "cmdr_fit": 0.3,
    "partners": 42,
    "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 13.5,
     "etb": 5.9,
@@ -705,6 +766,7 @@
    "cmdr_fit": 0.0,
    "partners": 4,
    "best_partner": "Flotsam // Jetsam",
+   "combo_piece": false,
    "themes": {
     "graveyard": 2.25,
     "cast_noncreature": 0.75
@@ -715,6 +777,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "counters_any": 1.5,
@@ -728,6 +791,7 @@
    "cmdr_fit": 0.0,
    "partners": 5,
    "best_partner": "Evolution Sage",
+   "combo_piece": false,
    "themes": {
     "landfall": 3.0,
     "etb": 0.3
@@ -738,6 +802,7 @@
    "cmdr_fit": 3.0,
    "partners": 36,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 45.0,
     "cast_noncreature": 0.75
@@ -748,6 +813,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Armored Scrapgorger": {
@@ -755,6 +821,7 @@
    "cmdr_fit": 0.0,
    "partners": 5,
    "best_partner": "Flotsam // Jetsam",
+   "combo_piece": false,
    "themes": {
     "graveyard": 2.25,
     "etb": 0.3
@@ -765,6 +832,7 @@
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Ray Fillet, Wave Warrior",
+   "combo_piece": false,
    "themes": {
     "type:Fish": 1.0,
     "cast_noncreature": 0.75
@@ -775,6 +843,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Swamp": {
@@ -782,6 +851,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Swiftfoot Boots": {
@@ -789,6 +859,7 @@
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Flux Channeler",
+   "combo_piece": false,
    "themes": {
     "cast_noncreature": 0.23
    }
@@ -798,6 +869,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Turbulent Wilderness": {
@@ -805,6 +877,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Tato Farmer": {
@@ -812,6 +885,7 @@
    "cmdr_fit": 2.0,
    "partners": 13,
    "best_partner": "Mole Man, Moloid Master",
+   "combo_piece": false,
    "themes": {
     "landfall": 6.0,
     "graveyard": 2.25,
@@ -826,6 +900,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Deathcap Glade": {
@@ -833,6 +908,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Flooded Grove": {
@@ -840,6 +916,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Glen Elendra Guardian": {
@@ -847,6 +924,7 @@
    "cmdr_fit": 0.0,
    "partners": 16,
    "best_partner": "Psychic Corrosion",
+   "combo_piece": false,
    "themes": {
     "counters_m1m1": 6.5,
     "draw": 0.75,
@@ -858,6 +936,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "counters_any": 1.5,
@@ -867,12 +946,14 @@
    }
   },
   "Triskelion": {
-   "total": 48.3,
+   "total": 55.3,
    "cmdr_fit": 3.0,
    "partners": 33,
    "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": true,
    "themes": {
     "counters_p1p1": 46.5,
+    "combo": 12.0,
     "etb": 0.3
    }
   },
@@ -881,6 +962,7 @@
    "cmdr_fit": 0.0,
    "partners": 9,
    "best_partner": "Agent Frank Horrigan",
+   "combo_piece": false,
    "themes": {
     "big_power": 6.0,
     "cast_noncreature": 0.75
@@ -891,6 +973,7 @@
    "cmdr_fit": 0.0,
    "partners": 20,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "graveyard": 2.25,
@@ -905,6 +988,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "counters_any": 1.5,
@@ -918,6 +1002,7 @@
    "cmdr_fit": 0.0,
    "partners": 20,
    "best_partner": "Winding Constrictor",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "big_power": 2.25,
@@ -932,6 +1017,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Vexing Radgull": {
@@ -939,6 +1025,7 @@
    "cmdr_fit": 2.0,
    "partners": 20,
    "best_partner": "The Wise Mothman",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 9.75,
     "mill": 2.0,
@@ -950,12 +1037,14 @@
    }
   },
   "Vigor": {
-   "total": 24.3,
+   "total": 36.3,
    "cmdr_fit": 0.0,
    "partners": 20,
-   "best_partner": "Fathom Mage",
+   "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": true,
    "themes": {
     "counters_p1p1": 19.5,
+    "combo": 12.0,
     "big_power": 2.25,
     "graveyard": 2.25,
     "etb": 0.3
@@ -966,6 +1055,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Shadowspear": {
@@ -973,18 +1063,21 @@
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Flux Channeler",
+   "combo_piece": false,
    "themes": {
     "cast_noncreature": 0.23
    }
   },
   "Winding Constrictor": {
-   "total": 73.8,
+   "total": 76.8,
    "cmdr_fit": 3.0,
    "partners": 39,
-   "best_partner": "Fathom Mage",
+   "best_partner": "Triskelion",
+   "combo_piece": true,
    "themes": {
     "counters_p1p1": 61.5,
     "counters_any": 10.5,
+    "combo": 4.0,
     "etb": 0.3
    }
   },
@@ -993,6 +1086,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Boggart Trawler // Boggart Bog": {
@@ -1000,6 +1094,7 @@
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Fathom Mage",
+   "combo_piece": false,
    "themes": {
     "etb": 0.3
    }
@@ -1009,6 +1104,7 @@
    "cmdr_fit": 0.0,
    "partners": 14,
    "best_partner": "Kami of Whispered Hopes",
+   "combo_piece": false,
    "themes": {
     "counters_p1p1": 19.5,
     "cast_noncreature": 0.75
@@ -1019,11 +1115,130 @@
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Flux Channeler",
+   "combo_piece": false,
    "themes": {
     "cast_noncreature": 0.75
    }
   }
  },
+ "combos": [
+  {
+   "bracket_tag": "E",
+   "cards": [
+    "Vigor",
+    "Triskelion",
+    "Hardened Scales"
+   ],
+   "id": "1495-2265-4120",
+   "identity": "G",
+   "infinite": true,
+   "mana_needed": "",
+   "missing": [],
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+   "popularity": 1143,
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "produces": [
+    "Infinite damage",
+    "Infinite +1/+1 counters on creatures you control"
+   ],
+   "requires": [],
+   "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+   "url": "https://commanderspellbook.com/combo/1495-2265-4120/"
+  },
+  {
+   "bracket_tag": "E",
+   "cards": [
+    "Vigor",
+    "Kami of Whispered Hopes",
+    "Triskelion"
+   ],
+   "id": "81-1495-4120",
+   "identity": "G",
+   "infinite": true,
+   "mana_needed": "",
+   "missing": [],
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+   "popularity": 888,
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "produces": [
+    "Infinite colored mana",
+    "Infinite damage",
+    "Infinite +1/+1 counters on creatures you control"
+   ],
+   "requires": [],
+   "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+   "url": "https://commanderspellbook.com/combo/81-1495-4120/"
+  },
+  {
+   "bracket_tag": "E",
+   "cards": [
+    "Vigor",
+    "Triskelion",
+    "Branching Evolution"
+   ],
+   "id": "1495-2445-4120",
+   "identity": "G",
+   "infinite": true,
+   "mana_needed": "",
+   "missing": [],
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+   "popularity": 840,
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "produces": [
+    "Infinite damage",
+    "Infinite +1/+1 counters on creatures you control"
+   ],
+   "requires": [],
+   "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+   "url": "https://commanderspellbook.com/combo/1495-2445-4120/"
+  },
+  {
+   "bracket_tag": "E",
+   "cards": [
+    "Vigor",
+    "Corpsejack Menace",
+    "Triskelion"
+   ],
+   "id": "855-1495-4120",
+   "identity": "BG",
+   "infinite": true,
+   "mana_needed": "",
+   "missing": [],
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+   "popularity": 294,
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "produces": [
+    "Infinite damage",
+    "Infinite +1/+1 counters on creatures you control"
+   ],
+   "requires": [],
+   "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+   "url": "https://commanderspellbook.com/combo/855-1495-4120/"
+  },
+  {
+   "bracket_tag": "E",
+   "cards": [
+    "Vigor",
+    "Triskelion",
+    "Winding Constrictor"
+   ],
+   "id": "1495-3921-4120",
+   "identity": "BG",
+   "infinite": true,
+   "mana_needed": "",
+   "missing": [],
+   "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+   "popularity": 178,
+   "prerequisites": "Triskelion has a +1/+1 counter on it.",
+   "produces": [
+    "Infinite damage",
+    "Infinite +1/+1 counters on creatures you control"
+   ],
+   "requires": [],
+   "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+   "url": "https://commanderspellbook.com/combo/1495-3921-4120/"
+  }
+ ],
  "unmatched": [
   {
    "card": "Massacre Girl",
@@ -1182,6 +1397,245 @@
      "producer": "The Wise Mothman",
      "payoff": "Mirelurk Queen",
      "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Kami of Whispered Hopes",
+   "b": "Triskelion",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Kami of Whispered Hopes",
+     "payoff": "Triskelion",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Triskelion",
+     "payoff": "Kami of Whispered Hopes",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Kami of Whispered Hopes",
+     "payoff": "Triskelion",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Branching Evolution",
+   "b": "Triskelion",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Triskelion",
+     "payoff": "Branching Evolution",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Triskelion",
+     "payoff": "Branching Evolution",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Branching Evolution",
+     "payoff": "Triskelion",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Corpsejack Menace",
+   "b": "Triskelion",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Corpsejack Menace",
+     "payoff": "Triskelion",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Triskelion",
+     "payoff": "Corpsejack Menace",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Corpsejack Menace",
+     "payoff": "Triskelion",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Hardened Scales",
+   "b": "Triskelion",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Triskelion",
+     "payoff": "Hardened Scales",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Triskelion",
+     "payoff": "Hardened Scales",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Hardened Scales",
+     "payoff": "Triskelion",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Triskelion",
+   "b": "Winding Constrictor",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Triskelion",
+     "payoff": "Winding Constrictor",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Winding Constrictor",
+     "payoff": "Triskelion",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Triskelion",
+     "payoff": "Winding Constrictor",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Kami of Whispered Hopes",
+   "b": "Vigor",
+   "score": 3.5,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Vigor",
+     "payoff": "Kami of Whispered Hopes",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Vigor",
+     "payoff": "Kami of Whispered Hopes",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Branching Evolution",
+   "b": "Vigor",
+   "score": 3.5,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Vigor",
+     "payoff": "Branching Evolution",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Vigor",
+     "payoff": "Branching Evolution",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Corpsejack Menace",
+   "b": "Vigor",
+   "score": 3.5,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Vigor",
+     "payoff": "Corpsejack Menace",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Vigor",
+     "payoff": "Corpsejack Menace",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Hardened Scales",
+   "b": "Vigor",
+   "score": 3.5,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Vigor",
+     "payoff": "Hardened Scales",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Vigor",
+     "payoff": "Hardened Scales",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Triskelion",
+   "b": "Vigor",
+   "score": 3.5,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Vigor",
+     "payoff": "Triskelion",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Vigor",
+     "payoff": "Triskelion",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Vigor",
+   "b": "Winding Constrictor",
+   "score": 3.5,
+   "reasons": [
+    {
+     "tag": "combo",
+     "producer": "Vigor",
+     "payoff": "Winding Constrictor",
+     "weight": 2.0
+    },
+    {
+     "tag": "counters_p1p1",
+     "producer": "Vigor",
+     "payoff": "Winding Constrictor",
+     "weight": 1.5
     }
    ]
   },
@@ -1414,25 +1868,6 @@
   },
   {
    "a": "Kami of Whispered Hopes",
-   "b": "Triskelion",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Triskelion",
-     "payoff": "Kami of Whispered Hopes",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_p1p1",
-     "producer": "Kami of Whispered Hopes",
-     "payoff": "Triskelion",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Kami of Whispered Hopes",
    "b": "Winding Constrictor",
    "score": 3.0,
    "reasons": [
@@ -1560,25 +1995,6 @@
   },
   {
    "a": "Branching Evolution",
-   "b": "Triskelion",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Triskelion",
-     "payoff": "Branching Evolution",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_p1p1",
-     "producer": "Branching Evolution",
-     "payoff": "Triskelion",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Branching Evolution",
    "b": "Winding Constrictor",
    "score": 3.0,
    "reasons": [
@@ -1668,25 +2084,6 @@
   },
   {
    "a": "Corpsejack Menace",
-   "b": "Triskelion",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Triskelion",
-     "payoff": "Corpsejack Menace",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_p1p1",
-     "producer": "Corpsejack Menace",
-     "payoff": "Triskelion",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Corpsejack Menace",
    "b": "Winding Constrictor",
    "score": 3.0,
    "reasons": [
@@ -1770,25 +2167,6 @@
      "tag": "counters_p1p1",
      "producer": "Hardened Scales",
      "payoff": "Duskshell Crawler",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Hardened Scales",
-   "b": "Triskelion",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Triskelion",
-     "payoff": "Hardened Scales",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_p1p1",
-     "producer": "Hardened Scales",
-     "payoff": "Triskelion",
      "weight": 1.5
     }
    ]
@@ -1975,25 +2353,6 @@
      "tag": "counters_p1p1",
      "producer": "The Wise Mothman",
      "payoff": "Triskelion",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Triskelion",
-   "b": "Winding Constrictor",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Winding Constrictor",
-     "payoff": "Triskelion",
-     "weight": 1.5
-    },
-    {
-     "tag": "counters_p1p1",
-     "producer": "Triskelion",
-     "payoff": "Winding Constrictor",
      "weight": 1.5
     }
    ]
@@ -2639,19 +2998,6 @@
   },
   {
    "a": "Kami of Whispered Hopes",
-   "b": "Vigor",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Vigor",
-     "payoff": "Kami of Whispered Hopes",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Kami of Whispered Hopes",
    "b": "Revitalizing Repast // Old-Growth Grove",
    "score": 1.5,
    "reasons": [
@@ -2821,19 +3167,6 @@
   },
   {
    "a": "Branching Evolution",
-   "b": "Vigor",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Vigor",
-     "payoff": "Branching Evolution",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Branching Evolution",
    "b": "Revitalizing Repast // Old-Growth Grove",
    "score": 1.5,
    "reasons": [
@@ -2970,19 +3303,6 @@
     {
      "tag": "counters_p1p1",
      "producer": "Tromell, Seymour's Butler",
-     "payoff": "Corpsejack Menace",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Corpsejack Menace",
-   "b": "Vigor",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Vigor",
      "payoff": "Corpsejack Menace",
      "weight": 1.5
     }
@@ -3191,19 +3511,6 @@
     {
      "tag": "counters_p1p1",
      "producer": "Tromell, Seymour's Butler",
-     "payoff": "Hardened Scales",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
-   "a": "Hardened Scales",
-   "b": "Vigor",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Vigor",
      "payoff": "Hardened Scales",
      "weight": 1.5
     }
@@ -4691,19 +4998,6 @@
    ]
   },
   {
-   "a": "Triskelion",
-   "b": "Vigor",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Vigor",
-     "payoff": "Triskelion",
-     "weight": 1.5
-    }
-   ]
-  },
-  {
    "a": "Revitalizing Repast // Old-Growth Grove",
    "b": "Triskelion",
    "score": 1.5,
@@ -5052,19 +5346,6 @@
      "producer": "Vexing Radgull",
      "payoff": "Winding Constrictor",
      "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Vigor",
-   "b": "Winding Constrictor",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "counters_p1p1",
-     "producer": "Vigor",
-     "payoff": "Winding Constrictor",
-     "weight": 1.5
     }
    ]
   },
@@ -9661,18 +9942,18 @@
     "evidence": "keyword: Menace"
    },
    {
-    "tag": "counters_p1p1",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Monstrosity"
-   },
-   {
     "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Monstrosity"
    },
    {
     "tag": "etb",
@@ -9689,18 +9970,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Lizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Lizard"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Lizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Lizard"
    }
   ],
   "Kami of Whispered Hopes": [
@@ -9900,18 +10181,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Fungus",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Fungus"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    }
   ],
   "Tezzeret's Gambit": [
@@ -9975,18 +10256,18 @@
     "evidence": "~ enters with x +1/+1 counters on it."
    },
    {
-    "tag": "kw:Vigilance",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Vigilance"
-   },
-   {
     "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Vigilance",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Vigilance"
    },
    {
     "tag": "etb",
@@ -9996,18 +10277,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bear",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bear"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Bear",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bear"
    }
   ],
   "Corpsejack Menace": [
@@ -10097,18 +10378,18 @@
   "Drowned Catacomb": [],
   "Evolution Sage": [
    {
-    "tag": "proliferate",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Proliferate"
-   },
-   {
     "tag": "landfall",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Landfall"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
    },
    {
     "tag": "counters_p1p1",
@@ -10269,6 +10550,13 @@
     "evidence": "each opponent mills three cards, then you may cast a spell from each opponent's…"
    },
    {
+    "tag": "graveyard",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Mill"
+   },
+   {
     "tag": "token_artifact",
     "side": "P",
     "scope": "yours",
@@ -10281,13 +10569,6 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Investigate"
-   },
-   {
-    "tag": "graveyard",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Mill"
    },
    {
     "tag": "cast_noncreature",
@@ -10387,18 +10668,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Merfolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Merfolk"
-   },
-   {
     "tag": "type:Warrior",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warrior"
+   },
+   {
+    "tag": "type:Merfolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Merfolk"
    }
   ],
   "Evolution Witness": [
@@ -10431,13 +10712,6 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
@@ -10450,6 +10724,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Hinterland Harbor": [],
@@ -10513,18 +10794,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Wurm",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Wurm"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    }
   ],
   "Collective Resistance": [
@@ -10752,18 +11033,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Crab",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Crab"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Crab",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Crab"
    }
   ],
   "Morphic Pool": [],
@@ -11140,6 +11421,13 @@
     "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
    },
    {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Landfall"
+   },
+   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -11152,13 +11440,6 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
-   },
-   {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
    },
    {
     "tag": "etb",
@@ -11184,6 +11465,13 @@
     "evidence": "draw a card."
    },
    {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
+   },
+   {
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "self",
@@ -11196,13 +11484,6 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Evolve"
-   },
-   {
-    "tag": "kw:Flying",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -11302,18 +11583,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Wave Goodbye": [
@@ -11349,18 +11630,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Beast",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    }
   ],
   "Into the Flood Maw": [
@@ -11436,13 +11717,6 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Zombie",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Zombie"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
@@ -11455,6 +11729,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Peasant"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
    },
    {
     "tag": "graveyard",
@@ -11520,18 +11801,18 @@
   ],
   "Thrummingbird": [
    {
-    "tag": "proliferate",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Proliferate"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
    },
    {
     "tag": "counters_p1p1",
@@ -11569,13 +11850,6 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Horror",
     "side": "P",
     "scope": "self",
@@ -11588,6 +11862,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Bird"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    }
   ],
   "Triskelion": [
@@ -11834,18 +12115,18 @@
     "evidence": "that player gets two rad counters if they don't have any rad counters."
    },
    {
-    "tag": "proliferate",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Proliferate"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
    },
    {
     "tag": "counters_p1p1",
@@ -11927,18 +12208,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
    },
    {
     "tag": "graveyard",
@@ -12066,6 +12347,7 @@
     "cmc": 2.0,
     "synergy": 0.23,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": -0.056
    },
@@ -12074,6 +12356,7 @@
     "cmc": 1.0,
     "synergy": 0.23,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.0
    },
@@ -12082,6 +12365,7 @@
     "cmc": 7.0,
     "synergy": 15.8,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.024
    },
@@ -12090,6 +12374,7 @@
     "cmc": 1.0,
     "synergy": 3.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.19
    },
@@ -12098,6 +12383,7 @@
     "cmc": 5.0,
     "synergy": 22.05,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.214
    },
@@ -12106,22 +12392,16 @@
     "cmc": 3.0,
     "synergy": 14.8,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.246
-   },
-   {
-    "name": "Vigor",
-    "cmc": 6.0,
-    "synergy": 24.3,
-    "cmdr_fit": 0.0,
-    "roles": [],
-    "cut_score": 0.27
    },
    {
     "name": "Thrummingbird",
     "cmc": 2.0,
     "synergy": 12.55,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.278
    },
@@ -12130,6 +12410,7 @@
     "cmc": 2.0,
     "synergy": 13.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.325
    },
@@ -12138,6 +12419,7 @@
     "cmc": 3.0,
     "synergy": 17.55,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.341
    },
@@ -12146,6 +12428,7 @@
     "cmc": 3.0,
     "synergy": 18.98,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.357
    },
@@ -12154,14 +12437,16 @@
     "cmc": 4.0,
     "synergy": 29.8,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [],
-    "cut_score": 0.405
+    "cut_score": 0.389
    },
    {
     "name": "Mole Man, Moloid Master",
     "cmc": 3.0,
     "synergy": 20.75,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.405
    },
@@ -12170,6 +12455,7 @@
     "cmc": 3.0,
     "synergy": 22.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.421
    },
@@ -12178,6 +12464,7 @@
     "cmc": 4.0,
     "synergy": 46.8,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.468
    },
@@ -12186,6 +12473,7 @@
     "cmc": 3.0,
     "synergy": 22.3,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.468
    },
@@ -12194,6 +12482,7 @@
     "cmc": 2.0,
     "synergy": 17.05,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.468
    },
@@ -12202,56 +12491,27 @@
     "cmc": 3.0,
     "synergy": 29.88,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
-    "cut_score": 0.579
+    "cut_score": 0.563
    },
    {
     "name": "Revitalizing Repast // Old-Growth Grove",
     "cmc": 1.0,
     "synergy": 20.25,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.603
-   },
-   {
-    "name": "Corpsejack Menace",
-    "cmc": 4.0,
-    "synergy": 65.55,
-    "cmdr_fit": 3.0,
-    "roles": [],
-    "cut_score": 0.627
-   },
-   {
-    "name": "Branching Evolution",
-    "cmc": 3.0,
-    "synergy": 63.23,
-    "cmdr_fit": 3.0,
-    "roles": [],
-    "cut_score": 0.706
    },
    {
     "name": "Duskshell Crawler",
     "cmc": 2.0,
     "synergy": 63.3,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [],
-    "cut_score": 0.897
-   },
-   {
-    "name": "Hardened Scales",
-    "cmc": 1.0,
-    "synergy": 63.23,
-    "cmdr_fit": 3.0,
-    "roles": [],
-    "cut_score": 0.921
-   },
-   {
-    "name": "Winding Constrictor",
-    "cmc": 2.0,
-    "synergy": 73.8,
-    "cmdr_fit": 3.0,
-    "roles": [],
-    "cut_score": 0.944
+    "cut_score": 0.865
    }
   ],
   "role_cards": [
@@ -12260,6 +12520,7 @@
     "cmc": 4.0,
     "synergy": 0.23,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "removal",
@@ -12272,6 +12533,7 @@
     "cmc": 5.0,
     "synergy": 2.55,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -12283,6 +12545,7 @@
     "cmc": 4.0,
     "synergy": 0.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -12294,6 +12557,7 @@
     "cmc": 3.0,
     "synergy": 0.3,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "graveyard-hate"
     ],
@@ -12304,6 +12568,7 @@
     "cmc": 3.0,
     "synergy": 0.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -12314,6 +12579,7 @@
     "cmc": 8.0,
     "synergy": 12.75,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -12326,6 +12592,7 @@
     "cmc": 4.0,
     "synergy": 4.22,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -12337,6 +12604,7 @@
     "cmc": 4.0,
     "synergy": 13.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -12347,6 +12615,7 @@
     "cmc": 2.0,
     "synergy": 0.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -12357,6 +12626,7 @@
     "cmc": 2.0,
     "synergy": 0.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -12367,6 +12637,7 @@
     "cmc": 1.0,
     "synergy": 0.3,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "mana-dork",
      "ramp"
@@ -12378,6 +12649,7 @@
     "cmc": 6.0,
     "synergy": 17.05,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -12388,6 +12660,7 @@
     "cmc": 4.0,
     "synergy": 13.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -12399,6 +12672,7 @@
     "cmc": 3.0,
     "synergy": 7.55,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "counterspell"
     ],
@@ -12409,6 +12683,7 @@
     "cmc": 2.0,
     "synergy": 2.55,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "graveyard-hate",
      "mana-dork",
@@ -12421,6 +12696,7 @@
     "cmc": 1.0,
     "synergy": 1.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -12431,6 +12707,7 @@
     "cmc": 2.0,
     "synergy": 3.3,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -12442,6 +12719,7 @@
     "cmc": 2.0,
     "synergy": 3.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -12453,6 +12731,7 @@
     "cmc": 2.0,
     "synergy": 3.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -12464,6 +12743,7 @@
     "cmc": 3.0,
     "synergy": 13.55,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -12474,6 +12754,7 @@
     "cmc": 2.0,
     "synergy": 4.75,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -12485,6 +12766,7 @@
     "cmc": 8.0,
     "synergy": 22.5,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "card-advantage",
@@ -12497,6 +12779,7 @@
     "cmc": 3.0,
     "synergy": 14.8,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -12507,6 +12790,7 @@
     "cmc": 2.0,
     "synergy": 7.05,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -12520,6 +12804,7 @@
     "cmc": 2.0,
     "synergy": 12.55,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -12530,6 +12815,7 @@
     "cmc": 1.0,
     "synergy": 6.75,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "counterspell"
     ],
@@ -12540,17 +12826,30 @@
     "cmc": 5.0,
     "synergy": 29.8,
     "cmdr_fit": 4.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
     ],
-    "cut_score": 0.325
+    "cut_score": 0.31
+   },
+   {
+    "name": "Vigor",
+    "cmc": 6.0,
+    "synergy": 36.3,
+    "cmdr_fit": 0.0,
+    "combo_piece": true,
+    "roles": [
+     "combo piece"
+    ],
+    "cut_score": 0.349
    },
    {
     "name": "Incubation Druid",
     "cmc": 2.0,
     "synergy": 13.8,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "mana-dork",
      "ramp"
@@ -12558,30 +12857,34 @@
     "cut_score": 0.389
    },
    {
-    "name": "Triskelion",
-    "cmc": 6.0,
-    "synergy": 48.3,
-    "cmdr_fit": 3.0,
-    "roles": [
-     "removal"
-    ],
-    "cut_score": 0.397
-   },
-   {
     "name": "Unnatural Restoration",
     "cmc": 2.0,
     "synergy": 15.25,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
     "cut_score": 0.437
    },
    {
+    "name": "Triskelion",
+    "cmc": 6.0,
+    "synergy": 55.3,
+    "cmdr_fit": 3.0,
+    "combo_piece": true,
+    "roles": [
+     "removal",
+     "combo piece"
+    ],
+    "cut_score": 0.444
+   },
+   {
     "name": "Ray Fillet, Wave Warrior",
     "cmc": 3.0,
     "synergy": 22.3,
     "cmdr_fit": 0.3,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -12593,6 +12896,7 @@
     "cmc": 4.0,
     "synergy": 47.25,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "board-wipe",
      "removal"
@@ -12600,10 +12904,23 @@
     "cut_score": 0.484
    },
    {
+    "name": "Fathom Mage",
+    "cmc": 4.0,
+    "synergy": 54.8,
+    "cmdr_fit": 3.3,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.532
+   },
+   {
     "name": "Animal Attendant",
     "cmc": 2.0,
     "synergy": 19.8,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "mana-dork",
      "ramp"
@@ -12611,78 +12928,118 @@
     "cut_score": 0.532
    },
    {
-    "name": "Fathom Mage",
-    "cmc": 4.0,
-    "synergy": 54.8,
-    "cmdr_fit": 3.3,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.548
-   },
-   {
     "name": "Pensive Professor",
     "cmc": 3.0,
     "synergy": 35.55,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
     ],
-    "cut_score": 0.595
+    "cut_score": 0.579
    },
    {
     "name": "Scavenging Ooze",
     "cmc": 2.0,
     "synergy": 22.05,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "graveyard-hate"
     ],
     "cut_score": 0.595
    },
    {
+    "name": "Corpsejack Menace",
+    "cmc": 4.0,
+    "synergy": 68.55,
+    "cmdr_fit": 3.0,
+    "combo_piece": true,
+    "roles": [
+     "combo piece"
+    ],
+    "cut_score": 0.627
+   },
+   {
     "name": "Inspiring Call",
     "cmc": 3.0,
     "synergy": 48.75,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
     ],
-    "cut_score": 0.659
+    "cut_score": 0.643
    },
    {
     "name": "Evolution Witness",
     "cmc": 3.0,
     "synergy": 51.55,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.675
+    "cut_score": 0.659
    },
    {
     "name": "Repulsive Mutation",
     "cmc": 2.0,
     "synergy": 26.25,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "counterspell"
     ],
-    "cut_score": 0.69
+    "cut_score": 0.675
+   },
+   {
+    "name": "Branching Evolution",
+    "cmc": 3.0,
+    "synergy": 66.22,
+    "cmdr_fit": 3.0,
+    "combo_piece": true,
+    "roles": [
+     "combo piece"
+    ],
+    "cut_score": 0.722
    },
    {
     "name": "Kami of Whispered Hopes",
     "cmc": 3.0,
-    "synergy": 63.3,
+    "synergy": 66.3,
     "cmdr_fit": 3.0,
+    "combo_piece": true,
     "roles": [
      "mana-dork",
-     "ramp"
+     "ramp",
+     "combo piece"
     ],
-    "cut_score": 0.738
+    "cut_score": 0.754
+   },
+   {
+    "name": "Hardened Scales",
+    "cmc": 1.0,
+    "synergy": 66.22,
+    "cmdr_fit": 3.0,
+    "combo_piece": true,
+    "roles": [
+     "combo piece"
+    ],
+    "cut_score": 0.937
+   },
+   {
+    "name": "Winding Constrictor",
+    "cmc": 2.0,
+    "synergy": 76.8,
+    "cmdr_fit": 3.0,
+    "combo_piece": true,
+    "roles": [
+     "combo piece"
+    ],
+    "cut_score": 0.944
    }
   ]
  }

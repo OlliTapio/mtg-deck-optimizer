@@ -390,7 +390,7 @@ def mode_cuts(all_cards, cmdr_name):
     print(f"=== Cut Candidates: {cmdr_name} ===\n")
 
     from otag_fetcher import fetch_otags_for_cards, BASICS
-    from synergy import card_view, compute_synergy, rank_cuts, tag_label
+    from synergy import card_view, compute_synergy, rank_cuts, tag_label, load_combos
     card_names = sorted(set(c['name'] for c in all_cards if c['name'] not in BASICS))
     otags_by_card = fetch_otags_for_cards(card_names)
 
@@ -402,7 +402,7 @@ def mode_cuts(all_cards, cmdr_name):
         sf = dict(c['scryfall'], name=c['name'])
         views.append(card_view(sf, otags_by_card.get(c['name'], [])))
     cmdr = cmdr_name if cmdr_name != "Unknown" else None
-    result = compute_synergy(views, cmdr)
+    result = compute_synergy(views, cmdr, load_combos(views, cmdr))
     candidates, role_cards = rank_cuts(result, views, cmdr)
     by_name = {c['name']: c for c in all_cards}
 
@@ -412,8 +412,9 @@ def mode_cuts(all_cards, cmdr_name):
         price = get_price_eur(sf)
         price_str = f"€{price:.2f}" if price else "N/A"
         tags_str = ', '.join(tags) if tags else '(none)'
+        combo = '  [COMBO PIECE]' if r.get('combo_piece') else ''
         print(f"{r['cut_score']:6.2f}  {r['cmc']:3.0f}  {r['synergy']:6.2f}  {r['name']:<35s}  "
-              f"{get_mana_cost(sf):<12s}  {price_str:>6s}  {tags_str}")
+              f"{get_mana_cost(sf):<12s}  {price_str:>6s}  {tags_str}{combo}")
 
     label = lambda t: tag_label(t) if t else '-'
     print(f"Main theme: {label(result['main_theme'])}   Subtheme: {label(result['subtheme'])}")
@@ -425,7 +426,7 @@ def mode_cuts(all_cards, cmdr_name):
         row(r)
 
     if role_cards:
-        print(f"\n--- Role cards ({len(role_cards)}): removal, ramp, draw etc. — judge against the template, not synergy ---")
+        print(f"\n--- Role cards ({len(role_cards)}): removal, ramp, draw, combo pieces — judge against the template and combos, not synergy ---")
         print(header)
         print("-" * 100)
         for r in role_cards:

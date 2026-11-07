@@ -129,6 +129,7 @@
    "cmdr_fit": 0.0,
    "partners": 51,
    "best_partner": "Evendo Brushrazer",
+   "combo_piece": false,
    "themes": {
     "fodder": 28.75,
     "type:Desert": 24.0,
@@ -148,6 +149,7 @@
    "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0
    }
@@ -157,6 +159,7 @@
    "cmdr_fit": 3.5,
    "partners": 27,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 19.5,
     "land_gy": 6.0,
@@ -168,6 +171,7 @@
    "cmdr_fit": 2.0,
    "partners": 32,
    "best_partner": "Omnath, Locus of Rage",
+   "combo_piece": false,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0,
@@ -185,6 +189,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Arid Archway": {
@@ -192,6 +197,7 @@
    "cmdr_fit": 4.5,
    "partners": 34,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 39.0,
     "graveyard": 12.75
@@ -202,6 +208,7 @@
    "cmdr_fit": 2.5,
    "partners": 35,
    "best_partner": "Entish Restoration",
+   "combo_piece": false,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -217,6 +224,7 @@
    "cmdr_fit": 1.5,
    "partners": 17,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 12.75
    }
@@ -226,6 +234,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift": {
@@ -233,6 +242,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Bristling Backwoods": {
@@ -240,6 +250,7 @@
    "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0
    }
@@ -249,6 +260,7 @@
    "cmdr_fit": 3.0,
    "partners": 16,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0,
     "kw:Reach": 3.0,
@@ -260,6 +272,7 @@
    "cmdr_fit": 3.5,
    "partners": 16,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "big_power": 11.25,
     "type:Plant": 4.0,
@@ -272,6 +285,7 @@
    "cmdr_fit": 4.0,
    "partners": 26,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "fodder": 13.75,
     "go_wide": 12.0,
@@ -284,6 +298,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Command Tower": {
@@ -291,6 +306,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Conduit of Worlds": {
@@ -298,6 +314,7 @@
    "cmdr_fit": 2.0,
    "partners": 23,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0,
@@ -309,6 +326,7 @@
    "cmdr_fit": 4.5,
    "partners": 24,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0,
     "graveyard": 12.75
@@ -319,6 +337,7 @@
    "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0
    }
@@ -328,6 +347,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Decimate": {
@@ -335,6 +355,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Desert of the Fervent": {
@@ -342,6 +363,7 @@
    "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0
    }
@@ -351,6 +373,7 @@
    "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0
    }
@@ -360,6 +383,7 @@
    "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0
    }
@@ -369,6 +393,7 @@
    "cmdr_fit": 0.0,
    "partners": 8,
    "best_partner": "Avenger of Zendikar",
+   "combo_piece": false,
    "themes": {
     "landfall": 7.0,
     "etb": 0.15
@@ -379,6 +404,7 @@
    "cmdr_fit": 3.5,
    "partners": 21,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 12.75,
     "type:Plant": 4.0,
@@ -391,6 +417,7 @@
    "cmdr_fit": 5.5,
    "partners": 23,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0,
     "fodder": 13.75,
@@ -404,6 +431,7 @@
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Scute Swarm",
+   "combo_piece": false,
    "themes": {
     "type:Insect": 1.0,
     "etb": 0.15
@@ -414,6 +442,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Entish Restoration": {
@@ -421,6 +450,7 @@
    "cmdr_fit": 6.0,
    "partners": 26,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
@@ -435,6 +465,7 @@
    "cmdr_fit": 0.0,
    "partners": 7,
    "best_partner": "Avenger of Zendikar",
+   "combo_piece": false,
    "themes": {
     "landfall": 7.0
    }
@@ -444,6 +475,7 @@
    "cmdr_fit": 2.5,
    "partners": 29,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -456,6 +488,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Gruul Turf": {
@@ -463,6 +496,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Garruk's Uprising": {
@@ -470,6 +504,7 @@
    "cmdr_fit": 2.5,
    "partners": 30,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "etb": 9.75,
     "big_power": 7.5,
@@ -481,6 +516,7 @@
    "cmdr_fit": 4.5,
    "partners": 22,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
@@ -494,6 +530,7 @@
    "cmdr_fit": 5.5,
    "partners": 31,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 39.0,
     "fodder": 17.5,
@@ -506,6 +543,7 @@
    "cmdr_fit": 6.5,
    "partners": 38,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
@@ -521,6 +559,7 @@
    "cmdr_fit": 2.5,
    "partners": 34,
    "best_partner": "Shefet Dunes",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
@@ -534,6 +573,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Prismatic Undercurrents": {
@@ -541,6 +581,7 @@
    "cmdr_fit": 0.0,
    "partners": 7,
    "best_partner": "Avenger of Zendikar",
+   "combo_piece": false,
    "themes": {
     "landfall": 7.0
    }
@@ -550,6 +591,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Life from the Loam": {
@@ -557,6 +599,7 @@
    "cmdr_fit": 3.5,
    "partners": 26,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 19.5,
     "land_gy": 6.0
@@ -567,6 +610,7 @@
    "cmdr_fit": 0.0,
    "partners": 18,
    "best_partner": "Ancient Greenwarden",
+   "combo_piece": false,
    "themes": {
     "landfall": 17.0,
     "etb": 0.15
@@ -577,6 +621,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Map the Frontier": {
@@ -584,6 +629,7 @@
    "cmdr_fit": 0.0,
    "partners": 23,
    "best_partner": "Abraded Bluffs",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 24.0,
     "landfall": 7.0
@@ -594,6 +640,7 @@
    "cmdr_fit": 1.5,
    "partners": 17,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 12.75
    }
@@ -603,6 +650,7 @@
    "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0
    }
@@ -612,6 +660,7 @@
    "cmdr_fit": 1.5,
    "partners": 10,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "big_power": 7.5
    }
@@ -621,6 +670,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Nahiri's Lithoforming": {
@@ -628,6 +678,7 @@
    "cmdr_fit": 2.5,
    "partners": 15,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "fodder": 17.5,
     "dies": 2.0,
@@ -639,6 +690,7 @@
    "cmdr_fit": 0.0,
    "partners": 7,
    "best_partner": "Avenger of Zendikar",
+   "combo_piece": false,
    "themes": {
     "landfall": 7.0
    }
@@ -648,6 +700,7 @@
    "cmdr_fit": 4.5,
    "partners": 36,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -664,6 +717,7 @@
    "cmdr_fit": 0.0,
    "partners": 8,
    "best_partner": "Avenger of Zendikar",
+   "combo_piece": false,
    "themes": {
     "landfall": 7.0,
     "etb": 0.15
@@ -674,6 +728,7 @@
    "cmdr_fit": 1.5,
    "partners": 10,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "big_power": 7.5
    }
@@ -683,6 +738,7 @@
    "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 18.0
    }
@@ -692,6 +748,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Phylath, World Sculptor": {
@@ -699,6 +756,7 @@
    "cmdr_fit": 2.5,
    "partners": 35,
    "best_partner": "Entish Restoration",
+   "combo_piece": false,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -714,6 +772,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Hedge Shredder": {
@@ -721,6 +780,7 @@
    "cmdr_fit": 1.5,
    "partners": 21,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 19.5
    }
@@ -730,6 +790,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Ramunap Excavator": {
@@ -737,6 +798,7 @@
    "cmdr_fit": 2.0,
    "partners": 24,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0,
@@ -749,6 +811,7 @@
    "cmdr_fit": 5.5,
    "partners": 31,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 39.0,
     "fodder": 17.5,
@@ -761,6 +824,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Return of the Wildspeaker": {
@@ -768,6 +832,7 @@
    "cmdr_fit": 3.0,
    "partners": 19,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "go_wide": 10.5,
     "big_power": 7.5
@@ -778,6 +843,7 @@
    "cmdr_fit": 2.5,
    "partners": 37,
    "best_partner": "Shefet Dunes",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
@@ -792,6 +858,7 @@
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Garruk's Uprising",
+   "combo_piece": false,
    "themes": {
     "etb": 0.15
    }
@@ -801,6 +868,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Scavenger Grounds": {
@@ -808,6 +876,7 @@
    "cmdr_fit": 5.5,
    "partners": 31,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 39.0,
     "fodder": 17.5,
@@ -820,6 +889,7 @@
    "cmdr_fit": 2.5,
    "partners": 30,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -833,6 +903,7 @@
    "cmdr_fit": 0.0,
    "partners": 32,
    "best_partner": "Arid Archway",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 24.0,
     "graveyard": 8.25,
@@ -845,6 +916,7 @@
    "cmdr_fit": 3.0,
    "partners": 19,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "go_wide": 10.5,
     "big_power": 7.5
@@ -855,6 +927,7 @@
    "cmdr_fit": 7.0,
    "partners": 31,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 39.0,
     "fodder": 17.5,
@@ -868,6 +941,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Sheltering Landscape": {
@@ -875,6 +949,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Six": {
@@ -882,6 +957,7 @@
    "cmdr_fit": 1.5,
    "partners": 23,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 19.5,
     "kw:Reach": 0.75,
@@ -893,6 +969,7 @@
    "cmdr_fit": 0.0,
    "partners": 7,
    "best_partner": "Avenger of Zendikar",
+   "combo_piece": false,
    "themes": {
     "landfall": 7.0
    }
@@ -902,6 +979,7 @@
    "cmdr_fit": 4.5,
    "partners": 23,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
@@ -916,6 +994,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Stroke of Midnight": {
@@ -923,6 +1002,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Sun Titan": {
@@ -930,6 +1010,7 @@
    "cmdr_fit": 0.0,
    "partners": 18,
    "best_partner": "Garruk's Uprising",
+   "combo_piece": false,
    "themes": {
     "graveyard": 8.25,
     "big_power": 5.25,
@@ -941,6 +1022,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Mole Man, Moloid Master": {
@@ -948,6 +1030,7 @@
    "cmdr_fit": 6.0,
    "partners": 49,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "landfall": 22.0,
     "graveyard": 19.5,
@@ -962,6 +1045,7 @@
    "cmdr_fit": 6.5,
    "partners": 34,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "fodder": 13.75,
     "dies": 11.0,
@@ -979,6 +1063,7 @@
    "cmdr_fit": 4.5,
    "partners": 37,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
@@ -994,6 +1079,7 @@
    "cmdr_fit": 0.0,
    "partners": 9,
    "best_partner": "Omnath, Locus of Rage",
+   "combo_piece": false,
    "themes": {
     "big_power": 5.25,
     "type:Elemental": 2.0,
@@ -1005,6 +1091,7 @@
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
+   "combo_piece": false,
    "themes": {}
   },
   "Worldsoul's Rage": {
@@ -1012,6 +1099,7 @@
    "cmdr_fit": 0.0,
    "partners": 17,
    "best_partner": "Mole Man, Moloid Master",
+   "combo_piece": false,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0
@@ -1022,6 +1110,7 @@
    "cmdr_fit": 3.5,
    "partners": 32,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "graveyard": 19.5,
     "landfall": 7.0,
@@ -1033,6 +1122,7 @@
    "cmdr_fit": 4.5,
    "partners": 21,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
@@ -1045,6 +1135,7 @@
    "cmdr_fit": 8.0,
    "partners": 30,
    "best_partner": "Yuma, Proud Protector",
+   "combo_piece": false,
    "themes": {
     "fodder": 17.5,
     "sacrifice": 11.0,
@@ -1056,6 +1147,7 @@
    }
   }
  },
+ "combos": [],
  "unmatched": [
   {
    "card": "Yuma, Proud Protector",
@@ -7706,32 +7798,6 @@
    ]
   },
   {
-   "a": "Avenger of Zendikar",
-   "b": "Dune Chanter",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Plant",
-     "producer": "Dune Chanter",
-     "payoff": "Avenger of Zendikar",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Dune Chanter",
-   "b": "Phylath, World Sculptor",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Plant",
-     "producer": "Dune Chanter",
-     "payoff": "Phylath, World Sculptor",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Hazezon, Shaper of Sand",
    "b": "Sand Scout",
    "score": 1.0,
@@ -7753,6 +7819,32 @@
      "tag": "type:Warrior",
      "producer": "Hazezon, Shaper of Sand",
      "payoff": "Desert Warfare",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Avenger of Zendikar",
+   "b": "Dune Chanter",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Plant",
+     "producer": "Dune Chanter",
+     "payoff": "Avenger of Zendikar",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Dune Chanter",
+   "b": "Phylath, World Sculptor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Plant",
+     "producer": "Dune Chanter",
+     "payoff": "Phylath, World Sculptor",
      "weight": 1.0
     }
    ]
@@ -12146,14 +12238,14 @@
     "evidence": "is a Ranger"
    },
    {
-    "tag": "type:Plant",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Plant",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -12555,18 +12647,18 @@
     "evidence": "other creatures you control with power 4 or greater gain trample and haste unti…"
    },
    {
-    "tag": "kw:Ward",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Ward"
-   },
-   {
     "tag": "kw:Reach",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Reach"
+   },
+   {
+    "tag": "kw:Ward",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Ward"
    },
    {
     "tag": "etb",
@@ -12583,18 +12675,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Mercenary",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Mercenary"
-   },
-   {
     "tag": "type:Plant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Plant"
+   },
+   {
+    "tag": "type:Mercenary",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Mercenary"
    }
   ],
   "Catharsis": [
@@ -12641,18 +12733,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Cinder Glade": [],
@@ -12801,18 +12893,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Nymph",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Nymph"
-   },
-   {
     "tag": "type:Dryad",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dryad"
+   },
+   {
+    "tag": "type:Nymph",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Nymph"
    }
   ],
   "Dune Chanter": [
@@ -12866,18 +12958,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Plant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Plant"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    }
   ],
   "Dunes of the Dead": [
@@ -12940,18 +13032,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Insect",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Insect"
-   },
-   {
     "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Insect",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Insect"
    }
   ],
   "Embrace the Unknown": [
@@ -13659,18 +13751,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Overwhelming Stampede": [
@@ -14403,18 +14495,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "sacrifice",
@@ -14760,18 +14852,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Winding Way": [
@@ -14850,13 +14942,6 @@
     "evidence": "• mill five cards, then you may put a land card from your graveyard onto the ba…"
    },
    {
-    "tag": "graveyard",
-    "side": "C",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flashback"
-   },
-   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -14869,6 +14954,13 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flashback"
    },
    {
     "tag": "cast_noncreature",
@@ -14952,18 +15044,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Insect",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Insect"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "sacrifice",
@@ -14995,6 +15087,7 @@
     "cmc": 5.0,
     "synergy": 8.25,
     "cmdr_fit": 1.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": -0.06
    },
@@ -15003,6 +15096,7 @@
     "cmc": 4.0,
     "synergy": 17.9,
     "cmdr_fit": 3.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.147
    },
@@ -15011,6 +15105,7 @@
     "cmc": 6.0,
     "synergy": 30.25,
     "cmdr_fit": 4.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.198
    },
@@ -15019,6 +15114,7 @@
     "cmc": 6.0,
     "synergy": 34.4,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.267
    },
@@ -15027,6 +15123,7 @@
     "cmc": 4.0,
     "synergy": 22.25,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.267
    },
@@ -15035,6 +15132,7 @@
     "cmc": 3.0,
     "synergy": 19.4,
     "cmdr_fit": 3.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.328
    },
@@ -15043,6 +15141,7 @@
     "cmc": 7.0,
     "synergy": 44.75,
     "cmdr_fit": 2.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.336
    },
@@ -15051,6 +15150,7 @@
     "cmc": 6.0,
     "synergy": 44.75,
     "cmdr_fit": 2.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.371
    },
@@ -15059,6 +15159,7 @@
     "cmc": 4.0,
     "synergy": 35.5,
     "cmdr_fit": 2.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.44
    },
@@ -15067,6 +15168,7 @@
     "cmc": 3.0,
     "synergy": 22.4,
     "cmdr_fit": 2.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.448
    },
@@ -15075,6 +15177,7 @@
     "cmc": 3.0,
     "synergy": 37.5,
     "cmdr_fit": 2.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.621
    },
@@ -15083,6 +15186,7 @@
     "cmc": 0,
     "synergy": 33.75,
     "cmdr_fit": 4.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.69
    },
@@ -15091,6 +15195,7 @@
     "cmc": 3.0,
     "synergy": 62.75,
     "cmdr_fit": 6.5,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.828
    },
@@ -15099,6 +15204,7 @@
     "cmc": 3.0,
     "synergy": 67.75,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [],
     "cut_score": 0.862
    }
@@ -15109,6 +15215,7 @@
     "cmc": 4.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -15119,6 +15226,7 @@
     "cmc": 4.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -15130,6 +15238,7 @@
     "cmc": 4.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -15140,6 +15249,7 @@
     "cmc": 3.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -15152,6 +15262,7 @@
     "cmc": 3.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
@@ -15162,6 +15273,7 @@
     "cmc": 3.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -15172,6 +15284,7 @@
     "cmc": 3.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -15182,6 +15295,7 @@
     "cmc": 5.0,
     "synergy": 7.4,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal",
      "tutor"
@@ -15193,6 +15307,7 @@
     "cmc": 6.0,
     "synergy": 14.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -15203,6 +15318,7 @@
     "cmc": 4.0,
     "synergy": 7.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15214,6 +15330,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -15224,6 +15341,7 @@
     "cmc": 2.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
@@ -15234,6 +15352,7 @@
     "cmc": 4.0,
     "synergy": 7.15,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "ramp"
@@ -15245,6 +15364,7 @@
     "cmc": 1.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -15256,6 +15376,7 @@
     "cmc": 1.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "removal",
@@ -15268,6 +15389,7 @@
     "cmc": 1.0,
     "synergy": 0.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -15278,6 +15400,7 @@
     "cmc": 5.0,
     "synergy": 19.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -15289,6 +15412,7 @@
     "cmc": 5.0,
     "synergy": 19.5,
     "cmdr_fit": 3.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -15300,6 +15424,7 @@
     "cmc": 3.0,
     "synergy": 1.15,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15311,6 +15436,7 @@
     "cmc": 3.0,
     "synergy": 7.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -15323,6 +15449,7 @@
     "cmc": 3.0,
     "synergy": 7.15,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -15333,6 +15460,7 @@
     "cmc": 2.0,
     "synergy": 0.15,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
@@ -15343,6 +15471,7 @@
     "cmc": 2.0,
     "synergy": 7.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15354,6 +15483,7 @@
     "cmc": 4.0,
     "synergy": 20.25,
     "cmdr_fit": 1.5,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -15364,6 +15494,7 @@
     "cmc": 2.0,
     "synergy": 13.5,
     "cmdr_fit": 1.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -15375,6 +15506,7 @@
     "cmc": 2.0,
     "synergy": 13.5,
     "cmdr_fit": 1.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
@@ -15385,6 +15517,7 @@
     "cmc": 3.0,
     "synergy": 19.5,
     "cmdr_fit": 2.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
@@ -15396,6 +15529,7 @@
     "cmc": 4.0,
     "synergy": 31.0,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15407,6 +15541,7 @@
     "cmc": 2.0,
     "synergy": 15.25,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "removal"
@@ -15418,6 +15553,7 @@
     "cmc": 2.0,
     "synergy": 17.15,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "mana-dork",
      "ramp"
@@ -15429,6 +15565,7 @@
     "cmc": 3.0,
     "synergy": 21.15,
     "cmdr_fit": 1.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
@@ -15439,6 +15576,7 @@
     "cmc": 7.0,
     "synergy": 60.75,
     "cmdr_fit": 4.5,
+    "combo_piece": false,
     "roles": [
      "removal"
     ],
@@ -15449,6 +15587,7 @@
     "cmc": 4.0,
     "synergy": 37.65,
     "cmdr_fit": 0.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15460,6 +15599,7 @@
     "cmc": 5.0,
     "synergy": 49.5,
     "cmdr_fit": 2.5,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15471,6 +15611,7 @@
     "cmc": 5.0,
     "synergy": 59.0,
     "cmdr_fit": 6.5,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -15481,6 +15622,7 @@
     "cmc": 3.0,
     "synergy": 34.25,
     "cmdr_fit": 3.5,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "removal"
@@ -15492,6 +15634,7 @@
     "cmc": 2.0,
     "synergy": 22.75,
     "cmdr_fit": 2.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
@@ -15504,6 +15647,7 @@
     "cmc": 2.0,
     "synergy": 27.25,
     "cmdr_fit": 3.5,
+    "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
@@ -15514,6 +15658,7 @@
     "cmc": 2.0,
     "synergy": 27.4,
     "cmdr_fit": 3.5,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -15524,6 +15669,7 @@
     "cmc": 3.0,
     "synergy": 40.75,
     "cmdr_fit": 4.5,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15535,6 +15681,7 @@
     "cmc": 3.0,
     "synergy": 40.9,
     "cmdr_fit": 4.5,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15546,6 +15693,7 @@
     "cmc": 4.0,
     "synergy": 64.25,
     "cmdr_fit": 4.5,
+    "combo_piece": false,
     "roles": [
      "ramp"
     ],
@@ -15556,6 +15704,7 @@
     "cmc": 3.0,
     "synergy": 49.0,
     "cmdr_fit": 6.0,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
@@ -15567,6 +15716,7 @@
     "cmc": 3.0,
     "synergy": 49.4,
     "cmdr_fit": 8.0,
+    "combo_piece": false,
     "roles": [
      "card-advantage",
      "mana-dork",
@@ -15579,6 +15729,7 @@
     "cmc": 2.0,
     "synergy": 52.75,
     "cmdr_fit": 2.5,
+    "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"

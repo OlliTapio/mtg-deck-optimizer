@@ -206,6 +206,31 @@ class TestScoring:
             assert p['score'] > 0 and p['reasons']
 
 
+class TestCombos:
+    COMBO = {'cards': ['Vigor', 'Triskelion', 'Hardened Scales'], 'produces': ['Infinite damage'],
+             'url': 'https://commanderspellbook.com/combo/x/'}
+    VIGOR = _card('Vigor', 'Creature — Elemental Incarnation',
+                  'Trample\nIf damage would be dealt to another creature you control, prevent that damage. '
+                  'Put a +1/+1 counter on that creature for each 1 damage prevented this way.',
+                  keywords=['Trample'], power=6, cmc=6)
+
+    def test_combo_pieces_get_bonus_and_flag(self):
+        views = [self.VIGOR, TRISKELION, HARDENED_SCALES]
+        plain = compute_synergy(views)
+        with_combo = compute_synergy(views, combos=[self.COMBO])
+        assert _pair(with_combo, 'Vigor', 'Hardened Scales')['score'] > _pair(plain, 'Vigor', 'Hardened Scales')['score']
+        assert any(r['tag'] == 'combo' for r in _pair(with_combo, 'Vigor', 'Triskelion')['reasons'])
+        assert with_combo['cards']['Vigor']['combo_piece']
+        assert all(t['tag'] != 'combo' for t in with_combo['themes'])
+        candidates, protected = rank_cuts(with_combo, views)
+        assert 'Vigor' not in [x['name'] for x in candidates]
+        assert 'combo piece' in next(x for x in protected if x['name'] == 'Vigor')['roles']
+
+    def test_combo_needs_every_piece_in_deck(self):
+        r = compute_synergy([self.VIGOR, TRISKELION], combos=[self.COMBO])
+        assert not r['cards']['Vigor']['combo_piece']
+
+
 class TestCuts:
     def test_low_synergy_high_cmc_first_and_roles_apart(self):
         filler = _card('Big Vanilla', 'Creature — Beast', '', power=5, cmc=7)
