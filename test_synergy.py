@@ -446,6 +446,41 @@ class TestRepeatAndProliferate:
         assert plan['cards']['Dreamtide Whale']['cmdr_fit'] > plain['cards']['Dreamtide Whale']['cmdr_fit']
 
 
+class TestColorMassAndSelfMill:
+    DEFILER = _card('Defiler of Vigor', 'Creature — Phyrexian Wurm',
+                    'Trample\nWhenever you cast a green permanent spell, put a +1/+1 counter on each creature you control.',
+                    keywords=['Trample'], power=6, cmc=5)
+
+    def _green(self, name, type_line='Creature — Elf', power=1):
+        v = _card(name, type_line, '', power=power)
+        v['colors'] = {'G'}
+        return v
+
+    def test_color_matters_pairs_with_that_colour(self):
+        green, blue = self._green('Elf'), _card('Merfolk', 'Creature — Merfolk', '', power=1)
+        blue['colors'] = {'U'}
+        green_sorcery = self._green('Growth', 'Sorcery')
+        r = compute_synergy([self.DEFILER, green, blue, green_sorcery])
+        assert any(x['tag'].startswith('color:') for x in _pair(r, 'Defiler of Vigor', 'Elf')['reasons'])
+        assert _pair(r, 'Defiler of Vigor', 'Merfolk') is None
+        assert _pair(r, 'Defiler of Vigor', 'Growth') is None
+
+    def test_mass_counters_weigh_more(self):
+        single = _card('Single', 'Sorcery', 'Put a +1/+1 counter on target creature you control.')
+        mass = _card('Mass', 'Sorcery', 'Put a +1/+1 counter on each creature you control.')
+        r = compute_synergy([single, mass, HARDENED_SCALES])
+        assert _pair(r, 'Mass', 'Hardened Scales')['score'] > _pair(r, 'Single', 'Hardened Scales')['score']
+
+    def test_self_mill_feeds_lands_in_graveyard(self):
+        mole = _card('Mole Man, Moloid Master', 'Legendary Creature — Human Villain',
+                     'You may play lands from your graveyard.', power=1)
+        r = compute_synergy([mole, MOTHMAN, PSYCHIC_CORROSION])
+        assert any(x['tag'] == 'land_gy' for x in _pair(r, 'Mole Man, Moloid Master', 'The Wise Mothman')['reasons'])
+        # Psychic Corrosion only mills opponents: no lands in your graveyard
+        p = _pair(r, 'Mole Man, Moloid Master', 'Psychic Corrosion')
+        assert p is None or all(x['tag'] != 'land_gy' for x in p['reasons'])
+
+
 class TestCuts:
     def test_low_synergy_high_cmc_first_and_roles_apart(self):
         filler = _card('Big Vanilla', 'Creature — Beast', '', power=5, cmc=7)

@@ -173,9 +173,56 @@ def load_deck_names(decklist):
     return names, commanders
 
 
+def local_combos(decklist):
+    """Combos written down for one deck in decks/<deck>/combos.json, for loops Commander
+    Spellbook doesn't list. Each entry: {"cards": [...], "produces": [...], "steps": "...",
+    "prerequisites": "...", "bracket_tag": "E"}; only "cards" and "produces" are required."""
+    path = os.path.join(os.path.dirname(os.path.abspath(decklist)), 'combos.json')
+    if not os.path.exists(path):
+        return []
+    with open(path) as f:
+        entries = json.load(f)
+    out = []
+    for e in entries:
+        produces = e.get('produces', [])
+        out.append({
+            'id': 'local:' + '+'.join(e['cards']), 'url': 'deck combos.json', 'source': 'deck combos.json',
+            'cards': e['cards'], 'missing': [], 'requires': e.get('requires', []), 'produces': produces,
+            'infinite': any(re.search(r'infinite', p, re.I) for p in produces),
+            'bracket_tag': e.get('bracket_tag'), 'identity': None, 'popularity': 0,
+            'mana_needed': e.get('mana_needed', ''), 'prerequisites': e.get('prerequisites', ''),
+            'steps': e.get('steps', ''), 'notes': e.get('notes', ''),
+        })
+    return out
+
+
+def merge_local(result, local, deck_names):
+    """Add local combos: into 'included' when every card is in the deck, else 'almost'."""
+    if not local:
+        return result
+    lower = {n.lower() for n in deck_names} | {n.split(' // ')[0].lower() for n in deck_names}
+    seen = {tuple(sorted(c['cards'])) for c in result['included']}
+    merged = dict(result, included=list(result['included']), almost=list(result['almost']))
+    for c in local:
+        if tuple(sorted(c['cards'])) in seen:
+            continue
+        missing = [x for x in c['cards'] if x.lower() not in lower]
+        c = dict(c, missing=missing)
+        (merged['almost'] if missing else merged['included']).insert(0, c)
+    return merged
+
+
 def combos_for_deck(decklist, refresh=False):
     names, commanders = load_deck_names(decklist)
-    return fetch_combos(names, commanders, refresh=refresh)
+    local = local_combos(decklist)
+    try:
+        result = fetch_combos(names, commanders, refresh=refresh)
+    except (urllib.error.URLError, OSError) as e:
+        if not local:
+            raise
+        print(f"  (Commander Spellbook unreachable: {e}; using deck combos.json only)", file=sys.stderr)
+        result = {'commanders': commanders, 'included': [], 'almost': []}
+    return merge_local(result, local, names + commanders)
 
 
 # ==================== Output ====================
@@ -194,7 +241,10 @@ def print_combo(c, bracket, show_steps=True):
     tag = BRACKET_TAGS.get(c['bracket_tag'], c['bracket_tag'] or '-')
     print(f"  {' + '.join(c['cards'])}")
     print(f"    produces: {', '.join(c['produces'][:4])}")
-    print(f"    Spellbook tag: {tag} | popularity {c['popularity']} | {c['url']}")
+    if c.get('source'):
+        print(f"    source: {c['source']} (not on Commander Spellbook)")
+    else:
+        print(f"    Spellbook tag: {tag} | popularity {c['popularity']} | {c['url']}")
     if c['requires']:
         print(f"    also needs: {', '.join(c['requires'])}")
     if c['prerequisites']:

@@ -14855,18 +14855,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Sorcerer",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Sorcerer"
-   },
-   {
     "tag": "type:Wizard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Sorcerer",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Sorcerer"
    },
    {
     "tag": "type:Elemental",
@@ -15202,53 +15202,18 @@
     "evidence": "is an instant/sorcery"
    },
    {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
-    "tag": "type:Horror",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Horror"
-   },
-   {
     "tag": "type:Warrior",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warrior"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "type:Knight",
@@ -15258,25 +15223,11 @@
     "evidence": "is a Knight"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Elk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elk"
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Shapeshifter",
@@ -15293,11 +15244,25 @@
     "evidence": "is a Sorcerer"
    },
    {
-    "tag": "type:Druid",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Druid"
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
    },
    {
     "tag": "type:Treefolk",
@@ -15307,11 +15272,46 @@
     "evidence": "is a Treefolk"
    },
    {
-    "tag": "type:Bard",
+    "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Bard"
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Elk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elk"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Shapeshifter",
@@ -15383,18 +15383,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Elemental",
@@ -15406,14 +15406,14 @@
   ],
   "Eclipsed Realms": [
    {
-    "tag": "type:Elf",
+    "tag": "type:Elemental",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "as ~ enters, choose elemental, elf, faerie, giant, goblin, kithkin, merfolk, or…"
    },
    {
-    "tag": "type:Elemental",
+    "tag": "type:Elf",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -15481,18 +15481,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Treefolk",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Treefolk"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    }
   ],
   "Farseek": [
@@ -15543,53 +15543,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
-    "tag": "type:Horror",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Horror"
-   },
-   {
     "tag": "type:Warrior",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warrior"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "type:Knight",
@@ -15599,25 +15564,11 @@
     "evidence": "is a Knight"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Elk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elk"
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Shapeshifter",
@@ -15634,11 +15585,25 @@
     "evidence": "is a Sorcerer"
    },
    {
-    "tag": "type:Druid",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Druid"
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
    },
    {
     "tag": "type:Treefolk",
@@ -15648,11 +15613,46 @@
     "evidence": "is a Treefolk"
    },
    {
-    "tag": "type:Bard",
+    "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Bard"
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Elk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elk"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Flamebraider": [
@@ -15923,18 +15923,18 @@
     "evidence": "you may play target elemental card from your graveyard without paying its mana …"
    },
    {
-    "tag": "kw:Haste",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Haste"
-   },
-   {
     "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Trample"
+   },
+   {
+    "tag": "kw:Haste",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Haste"
    },
    {
     "tag": "kw:Vigilance",
@@ -16246,18 +16246,18 @@
     "evidence": "keyword: Trample"
    },
    {
-    "tag": "kw:First strike",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: First strike"
-   },
-   {
     "tag": "kw:Vigilance",
     "side": "P",
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Vigilance"
+   },
+   {
+    "tag": "kw:First strike",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: First strike"
    },
    {
     "tag": "etb",
@@ -16312,14 +16312,14 @@
     "evidence": "is a Elemental"
    },
    {
-    "tag": "type:Elemental",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "elemental spells and warrior spells you cast cost {1} less to cast."
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Elemental",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -16416,53 +16416,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
-    "tag": "type:Horror",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Horror"
-   },
-   {
     "tag": "type:Warrior",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warrior"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "type:Knight",
@@ -16472,25 +16437,11 @@
     "evidence": "is a Knight"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Elk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elk"
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Shapeshifter",
@@ -16507,11 +16458,25 @@
     "evidence": "is a Sorcerer"
    },
    {
-    "tag": "type:Druid",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Druid"
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
    },
    {
     "tag": "type:Treefolk",
@@ -16521,11 +16486,46 @@
     "evidence": "is a Treefolk"
    },
    {
-    "tag": "type:Bard",
+    "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Bard"
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Elk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elk"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Opulent Palace": [],
@@ -16584,53 +16584,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Beast",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Beast"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
-    "tag": "type:Horror",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Horror"
-   },
-   {
     "tag": "type:Warrior",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warrior"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "type:Knight",
@@ -16640,25 +16605,11 @@
     "evidence": "is a Knight"
    },
    {
-    "tag": "type:Wizard",
+    "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
-    "tag": "type:Elk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elk"
+    "evidence": "is a Elemental"
    },
    {
     "tag": "type:Shapeshifter",
@@ -16675,11 +16626,25 @@
     "evidence": "is a Sorcerer"
    },
    {
-    "tag": "type:Druid",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Druid"
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
+   },
+   {
+    "tag": "type:Bard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bard"
    },
    {
     "tag": "type:Treefolk",
@@ -16689,11 +16654,46 @@
     "evidence": "is a Treefolk"
    },
    {
-    "tag": "type:Bard",
+    "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Bard"
+    "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Beast",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Elk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elk"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Reflections of Littjara": [
@@ -16777,18 +16777,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Shatter the Sky": [
@@ -17242,6 +17242,13 @@
     "evidence": "if a permanent entering causes a triggered ability of a permanent you control t…"
    },
    {
+    "tag": "kw:Deathtouch",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Deathtouch"
+   },
+   {
     "tag": "lifegain",
     "side": "P",
     "scope": "yours",
@@ -17254,13 +17261,6 @@
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Lifelink"
-   },
-   {
-    "tag": "kw:Deathtouch",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Deathtouch"
    },
    {
     "tag": "etb",

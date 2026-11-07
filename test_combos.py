@@ -1,5 +1,7 @@
 """Tests for combos.py: parsing Commander Spellbook results and bracket flags (no network)."""
-from combos import _compact, bracket_flag, deck_key
+import json
+
+from combos import _compact, bracket_flag, deck_key, local_combos, merge_local
 
 
 def _variant(cards, produces, tag='E'):
@@ -36,3 +38,19 @@ def test_bracket_flags():
 def test_deck_key_ignores_order():
     assert deck_key(['A', 'B'], ['C']) == deck_key(['B', 'A'], ['C'])
     assert deck_key(['A', 'B'], ['C']) != deck_key(['A', 'B', 'D'], ['C'])
+
+
+def test_local_combos_merge(tmp_path):
+    (tmp_path / 'combos.json').write_text(json.dumps([
+        {'cards': ['A', 'B', 'C'], 'produces': ['Near-infinite mill']},
+        {'cards': ['A', 'Z'], 'produces': ['Infinite damage']},
+    ]))
+    local = local_combos(str(tmp_path / 'decklist.txt'))
+    assert local[0]['infinite'] and local[0]['source'] == 'deck combos.json'
+    merged = merge_local({'included': [], 'almost': []}, local, ['A', 'B', 'C'])
+    assert [c['cards'] for c in merged['included']] == [['A', 'B', 'C']]
+    assert merged['almost'][0]['missing'] == ['Z']
+
+
+def test_no_local_combos_file(tmp_path):
+    assert local_combos(str(tmp_path / 'decklist.txt')) == []

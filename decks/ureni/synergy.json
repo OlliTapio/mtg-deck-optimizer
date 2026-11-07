@@ -12690,18 +12690,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Omen",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Omen"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -12973,18 +12973,18 @@
     "evidence": "power 8"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Elder",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elder"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Drakuseth, Maw of Flames": [
@@ -13675,18 +13675,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -13749,18 +13749,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Omen",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Omen"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Migration Path": [
@@ -13788,18 +13788,18 @@
     "evidence": "another nontoken dragon you control enters, create a token that's a copy of it,…"
    },
    {
-    "tag": "kw:Flying",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flying"
-   },
-   {
     "tag": "kw:Ward",
     "side": "P",
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Ward"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -13816,18 +13816,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -14257,18 +14257,18 @@
   ],
   "Terror of Mount Velus": [
    {
-    "tag": "kw:Flying",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flying"
-   },
-   {
     "tag": "kw:Double strike",
     "side": "P",
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Double strike"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -14528,18 +14528,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Omen",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Omen"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",

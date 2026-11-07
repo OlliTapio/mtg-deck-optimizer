@@ -1,0 +1,9 @@
+[
+ {
+  "cards": ["The Wise Mothman", "Fathom Mage", "Psychic Corrosion"],
+  "produces": ["Near-infinite mill", "Near-infinite card draw", "Near-infinite +1/+1 counters on creatures you control"],
+  "prerequisites": "All three on the battlefield. Opponents' libraries have nonland cards.",
+  "steps": "One or more nonland cards are milled: Mothman puts a +1/+1 counter on Fathom Mage.\nFathom Mage draws a card.\nPsychic Corrosion makes each opponent mill two cards.\nRepeat while the milled cards include a nonland card.",
+  "notes": "Combo B in the deck's CLAUDE.md. Stops when a mill hits only lands; each draw is optional (Fathom Mage says 'may')."
+ }
+]

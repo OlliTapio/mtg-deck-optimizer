@@ -114,7 +114,7 @@ TAG_WEIGHTS = {
     'etb': 0.5, 'big_power': 0.75,
     'trigger_dies': 1.0, 'trigger_etb': 1.0,
 }
-PREFIX_WEIGHTS = {'kw:': 0.75, 'type:': 1.0}
+PREFIX_WEIGHTS = {'kw:': 0.75, 'type:': 1.0, 'color:': 1.0}
 
 TAG_LABELS = {
     'counters_p1p1': '+1/+1 counters', 'counters_present': 'counters to proliferate', 'counters_m1m1': '-1/-1 counters', 'rad': 'rad counters', 'counters_any': 'counters (any kind)',
@@ -141,6 +141,9 @@ def tag_label(tag):
         return f'{tag[3:]} matters'
     if tag.startswith('type:'):
         return f'{tag[5:]} matters'
+    if tag.startswith('color:'):
+        _, color, kind = tag.split(':')
+        return f'{color.lower()} {kind} spells'
     return TAG_LABELS.get(tag, tag)
 
 
@@ -188,6 +191,7 @@ def card_view(d, otags=None):
         'power': power,
         'cmc': d.get('cmc') or 0,
         'otags': set(otags if otags is not None else d.get('otags') or []),
+        'colors': set(d.get('colors') or faces[0].get('colors') or d.get('color_identity') or []),
     }
 
 
@@ -313,6 +317,9 @@ EFFECT_RULES = [
     (r'(?:card|cards) (?:in|from) your graveyard|from your graveyard|cards in graveyards|graveyard to the battlefield|from a graveyard', 'graveyard', 'C', 1.0),
     (r'land cards? (?:in|from) your graveyard|lands? from your graveyard', 'land_gy', 'C', 1.0),
     (r'sacrifice ~: search|sacrifice (?:a|an) land\b', 'land_gy', 'P', 1.0),
+    # Self-mill (incl. rad counters on you) puts some of your lands into your graveyard
+    (r'each player (?:gets? [^.]*rad counters?|mills?)|\byou (?:get [^.]*rad counters?|mill)\b|^mill (?:a|one|two|three|four|five|x|\d+) cards?',
+     'land_gy', 'P', 0.5),
     # card draw / lifegain
     (r'draws? ' + NUM + r' (?:additional )?cards?|draw cards equal', 'draw', 'P', 1.0),
     (r'you gain ' + NUM + r' life|you gain life equal|gain that much life', 'lifegain', 'P', 1.0),
@@ -380,6 +387,7 @@ KEYWORD_FEATURES = {
 # more other producers of that counter, then full strength.
 PROLIFERATE_FEEDS = [('counters_p1p1', 0.5), ('counters_m1m1', 0.5), ('rad', 0.5), ('counters_any', 1.0)]
 PROLIFERATE_DENSE = 8
+MASS_COUNTERS = 1.5   # counters on each creature you control vs one creature
 # Rad counters sit on players and survive board wipes, so a few producers are enough.
 PROLIFERATE_DENSE_BY_AXIS = {'rad': 3}
 COUNTER_AXES = ('counters_p1p1', 'counters_m1m1', 'rad')
@@ -488,6 +496,9 @@ def extract_features(view, deck_subtypes=frozenset()):
                 m = re.search(pattern, seg)
                 if not m:
                     continue
+                if 'P' in side and tag in ('counters_p1p1', 'counters_m1m1') and re.search(
+                        r'on each (?:other )?creature|on each of up to|on (?:all )?creatures you control', seg):
+                    strength *= MASS_COUNTERS
                 if 'P' in side:
                     scope = 'self' if re.search(r'on ~|~ enters with|~ gets', seg) and not re.search(r'target|each|another|other', seg) else 'yours'
                     if tag in ('mill', 'rad') and re.search(r'each player|each opponent|target player|target opponent', seg):
@@ -502,6 +513,10 @@ def extract_features(view, deck_subtypes=frozenset()):
                     add(tag, 'C', scope, seg, strength)
 
         _repeat_since(feats, *_apply_after)
+
+    # Colour matters: "whenever you cast a green permanent spell" (producers added per deck)
+    for m in re.finditer(r'cast (?:a|an|your first) (white|blue|black|red|green) (?:(permanent|creature|instant or sorcery) )?spell', text):
+        add(f"color:{m.group(1).capitalize()}:{m.group(2) or 'any'}", 'C', 'yours', m.group(0))
 
     # Keywords
     keyword_start = len(feats)
@@ -801,6 +816,23 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
             extra.append(Feature('counters_present', 'P', best.scope, best.evidence, best.strength))
         features[n] = fs + extra
 
+    # Colour-matters payoffs: every permanent/creature/spell of that colour is a producer
+    color_tags = {f.tag for fs in features.values() for f in fs if f.side == 'C' and f.tag.startswith('color:')}
+    COLOR_CODES = {'White': 'W', 'Blue': 'U', 'Black': 'B', 'Red': 'R', 'Green': 'G'}
+    for v in views:
+        if 'Land' in v['front_types']:
+            continue
+        for tag in color_tags:
+            _, color, kind = tag.split(':')
+            if COLOR_CODES[color] not in v['colors']:
+                continue
+            is_perm = not (v['front_types'] & {'Instant', 'Sorcery'})
+            ok = {'any': True, 'permanent': is_perm, 'creature': 'Creature' in v['front_types'],
+                  'instant or sorcery': not is_perm}[kind]
+            if ok:
+                features[v['name']] = features[v['name']] + [
+                    Feature(tag, 'P', 'self', f"is a {color.lower()} {kind if kind != 'any' else 'spell'}", 0.5)]
+
     # Commander-damage plan: counters that grow the commander pay off through it
     if commander_name in features and 'commander_damage' in plans:
         features[commander_name] = features[commander_name] + [Feature(
@@ -1051,15 +1083,21 @@ def views_from_deck_json(path):
     return views, (d['commander']['name'] if d.get('commander') else None)
 
 
-def load_combos(views, commander_name):
-    """Known combos in the deck from Commander Spellbook (cached), or None if unreachable."""
+def load_combos(views, commander_name, decklist=None):
+    """Known combos in the deck: Commander Spellbook (cached) plus the deck's own combos.json.
+    Returns None only if neither is available."""
+    from combos import fetch_combos, local_combos, merge_local
+    names = [v['name'] for v in views]
+    commanders = [commander_name] if commander_name else []
+    local = local_combos(decklist) if decklist else []
     try:
-        from combos import fetch_combos
-        names = [v['name'] for v in views]
-        return fetch_combos(names, [commander_name] if commander_name else [])['included']
+        result = fetch_combos(names, commanders)
     except Exception as e:  # network down, host not allowed: synergy still works without
-        print(f"  (combo lookup skipped: {e})", file=sys.stderr)
-        return None
+        print(f"  (Commander Spellbook lookup skipped: {e})", file=sys.stderr)
+        if not local:
+            return None
+        result = {'included': [], 'almost': []}
+    return merge_local(result, local, names)['included']
 
 
 # ==================== Output ====================
@@ -1225,7 +1263,7 @@ def main():
         views, cmdr = views_from_deck_json(args.decklist)
     else:
         views, cmdr = load_views(args.decklist, use_otags=not args.no_otags)
-    combos = None if args.no_combos else load_combos(views, cmdr)
+    combos = None if args.no_combos else load_combos(views, cmdr, args.decklist)
     from combos import deck_bracket
     bracket = deck_bracket(args.decklist)
     result = compute_synergy(views, cmdr, combos, bracket, deck_plan(args.decklist))
