@@ -201,9 +201,14 @@ Asks Commander Spellbook's free API (backend.commanderspellbook.com) which combo
 - **Synergy over power** — cards should synergize with the specific commander's abilities and the deck's stated theme, not just be generically strong. A card that's powerful but off-theme is worse than a slightly weaker card that enables the deck's core game plan.
 - **Flag bracket drift** — if accumulated swaps are pushing a deck toward a higher bracket (more tutors, more efficient combos, stronger individual cards), warn about bracket creep even if no single card violates the rules.
 
+## Archidekt is the source of truth
+- The deck on Archidekt is what the owner actually plays. `decklist.txt` is a copy of it, pulled with `archidekt.py pull`.
+- Swaps made here are proposals until the owner makes them on Archidekt. Record them in `cuts.txt` / the deck's CLAUDE.md so they can be applied there.
+- When Archidekt and the local list differ, Archidekt wins: re-pull (`archidekt.py pull --all`) rather than keeping local edits.
+
 ## Deck folder structure
 Each deck lives in `decks/<name>/` with:
-- `decklist.txt` — Archidekt export format (source of truth for what's in the deck)
+- `decklist.txt` — Archidekt export format, a local copy of the deck on Archidekt
 - `deck.json` — Generated full deck data with Scryfall data + otags
 - `source.json` — Written by `archidekt.py pull`: Archidekt deck id, URL, owner, bracket set on Archidekt (used when CLAUDE.md names no bracket)
 - `combos.json` — Optional: combos for this deck that Commander Spellbook doesn't list
