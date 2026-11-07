@@ -5,22 +5,26 @@ import threading
 import urllib.request
 import urllib.error
 
+import pytest
+
+from game_http_server import ThreadingHTTPServer, GameHandler
+
 BASE = "http://127.0.0.1:8080"
 
 
-def post(endpoint, data=None):
+def post(endpoint, data=None, timeout=10):
     """POST JSON to server, return parsed response."""
     body = json.dumps(data or {}).encode('utf-8')
     req = urllib.request.Request(f"{BASE}/{endpoint}", data=body,
                                  headers={'Content-Type': 'application/json'})
     try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read())
     except urllib.error.URLError as e:
         return {'error': str(e)}
 
 
-def test_create_game():
+def check_create_game():
     """Test game creation with 4 players."""
     r = post('create', {
         'decklists': [
@@ -30,7 +34,7 @@ def test_create_game():
             'decks/test_valgavoth/decklist.txt',
         ],
         'seed': 11111
-    })
+    }, timeout=900)  # cold card cache: one Scryfall request per card
     assert 'game_id' in r, f"No game_id: {r}"
     assert len(r['players']) == 4
     assert r['phase'] == 'mulligan' or r['phase'] == 'playing'
@@ -40,7 +44,7 @@ def test_create_game():
     return r['game_id']
 
 
-def test_hand(gid):
+def check_hand(gid):
     """Test viewing a hand."""
     r = post('hand', {'game_id': gid, 'player': 'Mothman'})
     assert 'hand' in r, f"No hand: {r}"
@@ -53,7 +57,7 @@ def test_hand(gid):
     return r
 
 
-def test_mulligan(gid):
+def check_mulligan(gid):
     """Test mulligan (free first)."""
     r = post('mulligan', {'game_id': gid, 'player': 'Mothman'})
     assert r['mulligan_number'] == 1
@@ -64,7 +68,7 @@ def test_mulligan(gid):
     return r
 
 
-def test_keep(gid):
+def check_keep(gid):
     """Test keeping hand."""
     r = post('keep', {'game_id': gid, 'player': 'Mothman'})
     assert r['kept'] is True
@@ -74,7 +78,7 @@ def test_keep(gid):
     return r
 
 
-def test_all_keep(gid):
+def check_all_keep(gid):
     """All players keep — transitions to playing."""
     for name in ['Edric', 'Teysa', 'Valgavoth']:
         post('keep', {'game_id': gid, 'player': name})
@@ -86,7 +90,7 @@ def test_all_keep(gid):
     return r['active_player']
 
 
-def test_begin_turn(gid, player):
+def check_begin_turn(gid, player):
     """Test beginning a turn — draws a card."""
     r = post('begin', {'game_id': gid, 'player': player})
     assert 'error' not in r, f"Begin error: {r}"
@@ -96,14 +100,14 @@ def test_begin_turn(gid, player):
     return r
 
 
-def test_wrong_player_begin(gid, wrong_player):
+def check_wrong_player_begin(gid, wrong_player):
     """Test that wrong player can't begin turn."""
     r = post('begin', {'game_id': gid, 'player': wrong_player})
     assert 'error' in r, f"Should have errored: {r}"
     print(f"  wrong_begin: OK (blocked: {r['error'][:50]})")
 
 
-def test_valid_actions(gid, player):
+def check_valid_actions(gid, player):
     """Test getting valid actions."""
     r = post('valid', {'game_id': gid, 'player': player})
     assert 'actions' in r
@@ -113,7 +117,7 @@ def test_valid_actions(gid, player):
     return r['actions']
 
 
-def test_play_land(gid, player, actions):
+def check_play_land(gid, player, actions):
     """Test playing a land."""
     land_action = next((a for a in actions if 'play' in a), None)
     if not land_action:
@@ -125,7 +129,7 @@ def test_play_land(gid, player, actions):
     return r
 
 
-def test_end_turn(gid, player):
+def check_end_turn(gid, player):
     """Test ending turn."""
     r = post('end', {'game_id': gid, 'player': player})
     assert 'error' not in r, f"End error: {r}"
@@ -134,14 +138,14 @@ def test_end_turn(gid, player):
     return r
 
 
-def test_wrong_player_end(gid, wrong_player):
+def check_wrong_player_end(gid, wrong_player):
     """Test that wrong player can't end turn."""
     r = post('end', {'game_id': gid, 'player': wrong_player})
     assert 'error' in r
     print(f"  wrong_end: OK (blocked)")
 
 
-def test_state(gid, player):
+def check_state(gid, player):
     """Test viewing game state."""
     r = post('state', {'game_id': gid, 'player': player})
     assert 'state' in r
@@ -149,21 +153,21 @@ def test_state(gid, player):
     print(f"  state: OK ({len(r['state'])} chars)")
 
 
-def test_wait_returns_immediately_for_active(gid, player):
+def check_wait_returns_immediately_for_active(gid, player):
     """Test that wait returns immediately when it's your turn."""
     r = post('wait', {'game_id': gid, 'player': player, 'timeout': 5})
     assert r.get('status') in ('your_turn', 'mulligan'), f"Wait status: {r}"
     print(f"  wait_active: OK (status={r['status']})")
 
 
-def test_wait_blocks_for_inactive(gid, inactive_player):
+def check_wait_blocks_for_inactive(gid, inactive_player):
     """Test that wait blocks for non-active player (with short timeout)."""
     r = post('wait', {'game_id': gid, 'player': inactive_player, 'timeout': 3})
     assert r.get('status') == 'timeout', f"Should timeout: {r}"
     print(f"  wait_inactive: OK (timed out as expected)")
 
 
-def test_concurrent_waits(gid):
+def check_concurrent_waits(gid):
     """Test that multiple wait calls don't deadlock."""
     results = [None, None]
 
@@ -185,15 +189,13 @@ def test_concurrent_waits(gid):
     t2.join(timeout=10)
 
 
-def test_full_turn_cycle(gid):
+def check_full_turn_cycle(gid):
     """Test a full 4-player turn cycle."""
     for i in range(4):
         pr = post('priority', {'game_id': gid})
         active = pr['active_player']
         bt = post('begin', {'game_id': gid, 'player': active})
-        if 'error' in bt:
-            print(f"  turn_cycle: FAIL at player {i}: {bt['error']}")
-            return
+        assert 'error' not in bt, f"turn_cycle failed at player {i}: {bt['error']}"
         va = post('valid', {'game_id': gid, 'player': active})
         # Play a land if possible
         land = next((a for a in va['actions'] if 'play' in a), None)
@@ -203,6 +205,55 @@ def test_full_turn_cycle(gid):
 
     pr = post('priority', {'game_id': gid})
     print(f"  turn_cycle: OK (completed 4 turns, now T{pr['turn']})")
+
+
+def run_flow():
+    """Run every step in order; each step depends on the game state left by the previous one."""
+    gid = check_create_game()
+    check_hand(gid)
+    check_mulligan(gid)
+    check_keep(gid)
+    active = check_all_keep(gid)
+    check_begin_turn(gid, active)
+    check_wrong_player_begin(gid, 'Edric')
+    check_valid_actions(gid, active)
+    actions = post('valid', {'game_id': gid, 'player': active})['actions']
+    check_play_land(gid, active, actions)
+    check_state(gid, active)
+    check_wrong_player_end(gid, 'Edric')
+    check_end_turn(gid, active)
+
+    # Test wait
+    pr = post('priority', {'game_id': gid})
+    check_wait_returns_immediately_for_active(gid, pr['active_player'])
+    check_wait_blocks_for_inactive(gid, 'Mothman' if 'Moth' not in pr['active_player'] else 'Edric')
+    check_concurrent_waits(gid)
+
+    # Full turn cycle
+    # Need to begin the current player's turn first
+    post('begin', {'game_id': gid, 'player': pr['active_player']})
+    post('end', {'game_id': gid, 'player': pr['active_player']})
+    check_full_turn_cycle(gid)
+
+
+@pytest.fixture(scope='module')
+def server():
+    """Start the HTTP game server in-process on a free port."""
+    global BASE
+    httpd = ThreadingHTTPServer(('127.0.0.1', 0), GameHandler)
+    thread = threading.Thread(target=httpd.serve_forever, daemon=True)
+    thread.start()
+    old_base = BASE
+    BASE = f"http://127.0.0.1:{httpd.server_address[1]}"
+    yield BASE
+    BASE = old_base
+    httpd.shutdown()
+    httpd.server_close()
+
+
+def test_game_server_flow(server):
+    """Full game flow against a live server: create, mulligan, keep, turns, wait."""
+    run_flow()
 
 
 if __name__ == '__main__':
@@ -215,30 +266,5 @@ if __name__ == '__main__':
         print("ERROR: Server not running. Start with: python3 game_http_server.py")
         exit(1)
 
-    gid = test_create_game()
-    test_hand(gid)
-    test_mulligan(gid)
-    test_keep(gid)
-    active = test_all_keep(gid)
-    test_begin_turn(gid, active)
-    test_wrong_player_begin(gid, 'Edric')
-    test_valid_actions(gid, active)
-    actions = post('valid', {'game_id': gid, 'player': active})['actions']
-    test_play_land(gid, active, actions)
-    test_state(gid, active)
-    test_wrong_player_end(gid, 'Edric')
-    test_end_turn(gid, active)
-
-    # Test wait
-    pr = post('priority', {'game_id': gid})
-    test_wait_returns_immediately_for_active(gid, pr['active_player'])
-    test_wait_blocks_for_inactive(gid, 'Mothman' if 'Moth' not in pr['active_player'] else 'Edric')
-    test_concurrent_waits(gid)
-
-    # Full turn cycle
-    # Need to begin the current player's turn first
-    post('begin', {'game_id': gid, 'player': pr['active_player']})
-    post('end', {'game_id': gid, 'player': pr['active_player']})
-    test_full_turn_cycle(gid)
-
+    run_flow()
     print("\n=== All tests passed! ===")

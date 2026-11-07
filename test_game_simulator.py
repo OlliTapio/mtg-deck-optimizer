@@ -107,7 +107,7 @@ class TestDeckLoading:
 class TestDraw:
     def test_draw_moves_card_to_hand(self):
         p = _make_player(library=[_forest(), _mountain()])
-        top = p.library[-1]
+        top = p.library[0]  # index 0 = top of library
         p.draw()
         assert top in p.hand
         assert top not in p.library
