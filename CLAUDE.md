@@ -170,7 +170,7 @@ Reads keywords, types and triggers, tags each card with what it **produces** and
 - A commander-damage plan makes the commander care about +1/+1 counters on itself, so counter producers pair with it.
 - Colour matters ("whenever you cast a green permanent spell") pairs with every card of that colour and kind (weak, 0.5 each).
 - Counters on each creature you control weigh x1.5 compared with one creature.
-- Self-mill ("you mill", "mill N cards", rad counters on each player or you) also puts lands into your graveyard, at half weight.
+- Self-mill ("you mill", "mill N cards") also puts lands into your graveyard, at half weight (0.5). Rad counters on each player or you do too, but only a little (0.1).
 - Card draw and selection get a base bonus scaled to the deck: draw (draws cards, impulse draw, card-advantage otag) 0.25 x median card synergy; selection only (scry, surveil, looting, look at the top) half that. Draw triggers and opponents drawing don't count.
 - Reactive cards (noncreature targeted removal and counterspells, plus protection; not board wipes) lose 0.5 synergy each per card over 12 (14 for commander-damage decks).
 - Never claim two cards synergise without running `synergy.py --card`, or reading both cards' oracle text.

@@ -8757,19 +8757,6 @@
   },
   {
    "a": "Flourishing Defenses",
-   "b": "Stalwart Successor",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Warrior",
-     "producer": "Stalwart Successor",
-     "payoff": "Flourishing Defenses",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Flourishing Defenses",
    "b": "Glissa Sunslayer",
    "score": 1.0,
    "reasons": [
@@ -8789,6 +8776,19 @@
     {
      "tag": "type:Elf",
      "producer": "Generous Patron",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Stalwart Successor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Warrior",
+     "producer": "Stalwart Successor",
      "payoff": "Flourishing Defenses",
      "weight": 1.0
     }
@@ -9787,18 +9787,18 @@
     "evidence": "draw a card if you control that creature."
    },
    {
-    "tag": "counters_m1m1",
-    "side": "P",
-    "scope": "yours",
-    "strength": 1.5,
-    "evidence": "keyword: Blight"
-   },
-   {
     "tag": "kw:Ward",
     "side": "P",
     "scope": "self",
     "strength": 1.5,
     "evidence": "keyword: Ward"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.5,
+    "evidence": "keyword: Blight"
    },
    {
     "tag": "etb",
@@ -10540,18 +10540,18 @@
   ],
   "Evolution Sage": [
    {
-    "tag": "proliferate",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.25,
-    "evidence": "keyword: Proliferate"
-   },
-   {
     "tag": "landfall",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Landfall"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.25,
+    "evidence": "keyword: Proliferate"
    },
    {
     "tag": "counters_p1p1",
@@ -10680,14 +10680,14 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Elf",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever a -1/-1 counter is put on a creature, you may create a 1/1 green elf w…"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -10725,6 +10725,13 @@
     "evidence": "is a creature"
    },
    {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
@@ -10737,13 +10744,6 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Zombie"
-   },
-   {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
    }
   ],
   "Twilight Mire": [],
@@ -10886,18 +10886,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Goblin",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Goblin"
-   },
-   {
     "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
    },
    {
     "tag": "counters_present",
@@ -11077,18 +11077,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Goblin",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Goblin"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
    }
   ],
   "Blight Rot": [
@@ -11678,18 +11678,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Savage Lands": [],
@@ -11761,18 +11761,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
     "tag": "type:Warlock",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warlock"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    },
    {
     "tag": "counters_present",
@@ -11979,18 +11979,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "counters_present",
@@ -12242,18 +12242,18 @@
     "evidence": "power 5"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "counters_present",
@@ -12279,18 +12279,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "counters_present",
@@ -12411,18 +12411,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    },
    {
     "tag": "counters_present",

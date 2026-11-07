@@ -114,6 +114,7 @@ TAG_WEIGHTS = {
     'etb': 0.5, 'big_power': 0.75,
     'trigger_dies': 1.0, 'trigger_etb': 1.0,
 }
+RAD_LAND_GY = 0.1     # rad counters on you -> lands in your graveyard (small: rad mills a little)
 PREFIX_WEIGHTS = {'kw:': 0.75, 'type:': 1.0, 'color:': 1.0}
 
 TAG_LABELS = {
@@ -317,9 +318,10 @@ EFFECT_RULES = [
     (r'(?:card|cards) (?:in|from) your graveyard|from your graveyard|cards in graveyards|graveyard to the battlefield|from a graveyard', 'graveyard', 'C', 1.0),
     (r'land cards? (?:in|from) your graveyard|lands? from your graveyard', 'land_gy', 'C', 1.0),
     (r'sacrifice ~: search|sacrifice (?:a|an) land\b', 'land_gy', 'P', 1.0),
-    # Self-mill (incl. rad counters on you) puts some of your lands into your graveyard
-    (r'each player (?:gets? [^.]*rad counters?|mills?)|\byou (?:get [^.]*rad counters?|mill)\b|^mill (?:a|one|two|three|four|five|x|\d+) cards?',
-     'land_gy', 'P', 0.5),
+    # Self-mill puts some of your lands into your graveyard
+    (r'each player mills?|\byou mill\b|^mill (?:a|one|two|three|four|five|x|\d+) cards?', 'land_gy', 'P', 0.5),
+    # Rad counters on you mill only a little (one card per counter, half of them lands at best): small bonus
+    (r'(?:each player|\byou) gets? [^.]*rad counters?', 'land_gy', 'P', RAD_LAND_GY),
     # card draw / lifegain
     (r'draws? ' + NUM + r' (?:additional )?cards?|draw cards equal', 'draw', 'P', 1.0),
     (r'you gain ' + NUM + r' life|you gain life equal|gain that much life', 'lifegain', 'P', 1.0),

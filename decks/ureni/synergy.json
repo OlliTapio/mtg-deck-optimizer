@@ -12577,18 +12577,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Spirit",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Spirit"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Spirit",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Spirit"
    },
    {
     "tag": "type:Dragon",
@@ -12973,18 +12973,18 @@
     "evidence": "power 8"
    },
    {
-    "tag": "type:Elder",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elder"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Elder",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elder"
    }
   ],
   "Drakuseth, Maw of Flames": [
@@ -13675,18 +13675,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Dragon",
@@ -13788,18 +13788,18 @@
     "evidence": "another nontoken dragon you control enters, create a token that's a copy of it,…"
    },
    {
-    "tag": "kw:Ward",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Ward"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Ward",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Ward"
    },
    {
     "tag": "etb",
@@ -13816,18 +13816,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Spirit",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Spirit"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Spirit",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Spirit"
    },
    {
     "tag": "type:Dragon",
@@ -13975,18 +13975,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Sapphire Dragon // Psionic Pulse": [
@@ -14170,18 +14170,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Serpent",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Serpent"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Serpent",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Serpent"
    }
   ],
   "Teferi's Time Twist": [
@@ -14257,18 +14257,18 @@
   ],
   "Terror of Mount Velus": [
    {
-    "tag": "kw:Double strike",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Double strike"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Double strike",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Double strike"
    },
    {
     "tag": "etb",
@@ -14308,18 +14308,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Peasant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Peasant"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -14419,18 +14419,18 @@
     "evidence": "power 10"
    },
    {
-    "tag": "type:Spirit",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Spirit"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Spirit",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Spirit"
    }
   ],
   "Utvara Hellkite": [

@@ -13291,18 +13291,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Detective",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Detective"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Detective",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Detective"
    }
   ],
   "Ancient Greenwarden": [
@@ -13633,18 +13633,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Mercenary",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Mercenary"
-   },
-   {
     "tag": "type:Plant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Plant"
+   },
+   {
+    "tag": "type:Mercenary",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Mercenary"
    }
   ],
   "Catharsis": [
@@ -13923,18 +13923,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Plant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Plant"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    }
   ],
   "Dunes of the Dead": [
@@ -14730,18 +14730,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Overwhelming Stampede": [
@@ -14962,18 +14962,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Cleric",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Cleric"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Cleric",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Cleric"
    }
   ],
   "Ramunap Ruins": [
@@ -15502,18 +15502,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "sacrifice",
@@ -15643,6 +15643,13 @@
     "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
    },
    {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Landfall"
+   },
+   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -15655,13 +15662,6 @@
     "scope": "any",
     "strength": 1.25,
     "evidence": "keyword: Mill"
-   },
-   {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
    },
    {
     "tag": "etb",
@@ -15949,13 +15949,6 @@
     "evidence": "• mill five cards, then you may put a land card from your graveyard onto the ba…"
    },
    {
-    "tag": "graveyard",
-    "side": "C",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flashback"
-   },
-   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -15968,6 +15961,13 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flashback"
    },
    {
     "tag": "cast_noncreature",
