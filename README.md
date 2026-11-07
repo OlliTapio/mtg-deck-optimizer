@@ -11,6 +11,9 @@ It calls tools that compute the evidence and reasons from that:
   card, cached locally
 - **Deck analysis:** card types, mana curve, cut candidates, instant- vs sorcery-speed
   interaction, and search across the deck's rules text
+- **Synergy:** keywords, types and triggers are read from every card to score which cards feed
+  each other, with the card text behind every score. Cut candidates combine low synergy with
+  high mana value
 - **Simulation:** opening hands, games against simulated opponents, and multiplayer games
   between real decks played by a rule-based autopilot
 - **LLM vs LLM (deprecated):** a game server (HTTP and MCP) where agents each pilot a deck against
@@ -21,6 +24,8 @@ It calls tools that compute the evidence and reasons from that:
 ```bash
 python3 deck_analyzer.py decks/<deck>/decklist.txt            # full analysis
 python3 deck_analyzer.py decks/<deck>/decklist.txt --cuts     # cut candidates
+python3 synergy.py decks/<deck>/decklist.txt                  # synergy report
+python3 synergy.py decks/<deck>/decklist.txt --card "Hardened Scales"
 python3 deck_analyzer.py decks/<deck>/decklist.txt --search "proliferate"
 python3 hand_simulator.py decks/<deck>/decklist.txt 1000      # opening hands
 python3 game_simulator.py decks/<deck>/decklist.txt --opponents aggro,midrange,control

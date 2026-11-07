@@ -1,0 +1,9613 @@
+{
+ "commander": "Auntie Ool, Cursewretch",
+ "main_theme": "counters_m1m1",
+ "subtheme": null,
+ "themes": [
+  {
+   "tag": "counters_m1m1",
+   "label": "-1/-1 counters",
+   "score": 354.0,
+   "producers": 39,
+   "payoffs": 10
+  },
+  {
+   "tag": "graveyard",
+   "label": "graveyard",
+   "score": 14.25,
+   "producers": 2,
+   "payoffs": 10
+  },
+  {
+   "tag": "fodder",
+   "label": "sacrifice fodder",
+   "score": 7.0,
+   "producers": 7,
+   "payoffs": 1
+  },
+  {
+   "tag": "dies",
+   "label": "creatures dying",
+   "score": 6.0,
+   "producers": 1,
+   "payoffs": 10
+  },
+  {
+   "tag": "landfall",
+   "label": "landfall",
+   "score": 5.0,
+   "producers": 5,
+   "payoffs": 1
+  },
+  {
+   "tag": "type:Elf",
+   "label": "Elf matters",
+   "score": 5.0,
+   "producers": 5,
+   "payoffs": 1
+  },
+  {
+   "tag": "counters_any",
+   "label": "counters (any kind)",
+   "score": 4.5,
+   "producers": 6,
+   "payoffs": 1
+  },
+  {
+   "tag": "type:Warrior",
+   "label": "Warrior matters",
+   "score": 4.0,
+   "producers": 4,
+   "payoffs": 1
+  },
+  {
+   "tag": "type:Scarecrow",
+   "label": "Scarecrow matters",
+   "score": 3.0,
+   "producers": 3,
+   "payoffs": 1
+  },
+  {
+   "tag": "type:Snake",
+   "label": "Snake matters",
+   "score": 1.0,
+   "producers": 1,
+   "payoffs": 1
+  }
+ ],
+ "cards": {
+  "Auntie Ool, Cursewretch": {
+   "total": 135.0,
+   "cmdr_fit": 0.0,
+   "partners": 41,
+   "best_partner": "Carnifex Demon",
+   "themes": {
+    "counters_m1m1": 67.5
+   }
+  },
+  "Aberrant Return": {
+   "total": 18.0,
+   "cmdr_fit": 3.0,
+   "partners": 12,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "graveyard": 1.5
+   }
+  },
+  "Arcane Signet": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Contagion Engine": {
+   "total": 17.25,
+   "cmdr_fit": 3.0,
+   "partners": 11,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "counters_any": 0.75
+   }
+  },
+  "Assassin's Trophy": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Binding the Old Gods": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Black Sun's Zenith": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Blowfly Infestation": {
+   "total": 17.5,
+   "cmdr_fit": 3.0,
+   "partners": 11,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "dies": 1.0
+   }
+  },
+  "Burning Curiosity": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Canyon Slough": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Carnifex Demon": {
+   "total": 66.0,
+   "cmdr_fit": 6.0,
+   "partners": 40,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 63.0
+   }
+  },
+  "Grim Affliction": {
+   "total": 17.25,
+   "cmdr_fit": 3.0,
+   "partners": 11,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "counters_any": 0.75
+   }
+  },
+  "Vandalblast": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Channeler Initiate": {
+   "total": 66.0,
+   "cmdr_fit": 6.0,
+   "partners": 40,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 63.0
+   }
+  },
+  "Chimil, the Inner Sun": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Cinder Glade": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Command Tower": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Darkness Descends": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Dawnhand Dissident": {
+   "total": 25.0,
+   "cmdr_fit": 3.0,
+   "partners": 19,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "graveyard": 7.5,
+    "type:Elf": 1.0
+   }
+  },
+  "Devoted Druid": {
+   "total": 13.0,
+   "cmdr_fit": 3.0,
+   "partners": 7,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 10.5,
+    "type:Elf": 1.0
+   }
+  },
+  "Dragonskull Summit": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Dread Tiller": {
+   "total": 21.0,
+   "cmdr_fit": 3.0,
+   "partners": 14,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "graveyard": 1.5,
+    "type:Scarecrow": 1.0,
+    "dies": 1.0,
+    "landfall": 1.0
+   }
+  },
+  "Dusk Urchins": {
+   "total": 71.5,
+   "cmdr_fit": 6.0,
+   "partners": 41,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 67.5,
+    "fodder": 1.0
+   }
+  },
+  "Eventide's Shadow": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Everlasting Torment": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Evolution Sage": {
+   "total": 15.0,
+   "cmdr_fit": 1.5,
+   "partners": 16,
+   "best_partner": "Flourishing Defenses",
+   "themes": {
+    "counters_m1m1": 7.5,
+    "landfall": 5.0,
+    "type:Elf": 1.0,
+    "counters_any": 0.75
+   }
+  },
+  "Blood Crypt": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Exotic Orchard": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Farseek": {
+   "total": 1.0,
+   "cmdr_fit": 0.0,
+   "partners": 1,
+   "best_partner": "Evolution Sage",
+   "themes": {
+    "landfall": 1.0
+   }
+  },
+  "Festering Thicket": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Flourishing Defenses": {
+   "total": 67.0,
+   "cmdr_fit": 3.0,
+   "partners": 42,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 55.5,
+    "type:Elf": 5.0,
+    "type:Warrior": 4.0,
+    "fodder": 1.0
+   }
+  },
+  "Forest": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Glissa Sunslayer": {
+   "total": 1.0,
+   "cmdr_fit": 0.0,
+   "partners": 1,
+   "best_partner": "Flourishing Defenses",
+   "themes": {
+    "type:Elf": 1.0
+   }
+  },
+  "Twilight Mire": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Grave Venerations": {
+   "total": 2.5,
+   "cmdr_fit": 0.0,
+   "partners": 3,
+   "best_partner": "Ifnir Deadlands",
+   "themes": {
+    "graveyard": 1.5,
+    "dies": 1.0
+   }
+  },
+  "Grim Poppet": {
+   "total": 67.0,
+   "cmdr_fit": 6.0,
+   "partners": 40,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 63.0,
+    "type:Scarecrow": 1.0
+   }
+  },
+  "Gristle Glutton": {
+   "total": 24.0,
+   "cmdr_fit": 3.0,
+   "partners": 19,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "graveyard": 7.5
+   }
+  },
+  "Fire-Lit Thicket": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Hapatra, Vizier of Poisons": {
+   "total": 18.5,
+   "cmdr_fit": 3.0,
+   "partners": 12,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "type:Snake": 1.0,
+    "fodder": 1.0
+   }
+  },
+  "Nest of Scarabs": {
+   "total": 1.0,
+   "cmdr_fit": 0.0,
+   "partners": 1,
+   "best_partner": "Ifnir Deadlands",
+   "themes": {
+    "fodder": 1.0
+   }
+  },
+  "Ifnir Deadlands": {
+   "total": 29.5,
+   "cmdr_fit": 3.0,
+   "partners": 19,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "fodder": 7.0,
+    "dies": 6.0
+   }
+  },
+  "Ignoble Hierarch": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Blight Rot": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Kulrath Knight": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Generous Patron": {
+   "total": 1.0,
+   "cmdr_fit": 0.0,
+   "partners": 1,
+   "best_partner": "Flourishing Defenses",
+   "themes": {
+    "type:Elf": 1.0
+   }
+  },
+  "Massacre Girl, Known Killer": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Midnight Banshee": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Mountain": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Sundering Eruption // Volcanic Fissure": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Demolition Field": {
+   "total": 1.0,
+   "cmdr_fit": 0.0,
+   "partners": 1,
+   "best_partner": "Evolution Sage",
+   "themes": {
+    "landfall": 1.0
+   }
+  },
+  "Nature's Lore": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Necroskitter": {
+   "total": 18.0,
+   "cmdr_fit": 3.0,
+   "partners": 12,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "graveyard": 1.5
+   }
+  },
+  "Nesting Grounds": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Thirsting Roots": {
+   "total": 9.0,
+   "cmdr_fit": 1.5,
+   "partners": 11,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 7.5,
+    "counters_any": 0.75
+   }
+  },
+  "Oft-Nabbed Goat": {
+   "total": 17.5,
+   "cmdr_fit": 3.0,
+   "partners": 11,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "fodder": 1.0
+   }
+  },
+  "Path of Ancestry": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Persist": {
+   "total": 58.5,
+   "cmdr_fit": 3.0,
+   "partners": 39,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 55.5,
+    "graveyard": 1.5
+   }
+  },
+  "Puca's Covenant": {
+   "total": 2.5,
+   "cmdr_fit": 0.0,
+   "partners": 3,
+   "best_partner": "Ifnir Deadlands",
+   "themes": {
+    "graveyard": 1.5,
+    "dies": 1.0
+   }
+  },
+  "Putrefy": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Obelisk Spider": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Graven Cairns": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Rampant Growth": {
+   "total": 1.0,
+   "cmdr_fit": 0.0,
+   "partners": 1,
+   "best_partner": "Evolution Sage",
+   "themes": {
+    "landfall": 1.0
+   }
+  },
+  "Karn's Bastion": {
+   "total": 9.0,
+   "cmdr_fit": 1.5,
+   "partners": 11,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 7.5,
+    "counters_any": 0.75
+   }
+  },
+  "Rootbound Crag": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Sakura-Tribe Elder": {
+   "total": 2.0,
+   "cmdr_fit": 0.0,
+   "partners": 2,
+   "best_partner": "Evolution Sage",
+   "themes": {
+    "landfall": 1.0,
+    "type:Snake": 1.0
+   }
+  },
+  "Savage Lands": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Shadow Urchin": {
+   "total": 17.5,
+   "cmdr_fit": 3.0,
+   "partners": 11,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "dies": 1.0
+   }
+  },
+  "Sheltered Thicket": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Sinister Gnarlbark": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Skinrender": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Smoldering Marsh": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Birds of Paradise": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Soul Immolation": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Soul Snuffers": {
+   "total": 16.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0
+   }
+  },
+  "Stalwart Successor": {
+   "total": 5.5,
+   "cmdr_fit": 0.0,
+   "partners": 7,
+   "best_partner": "Flourishing Defenses",
+   "themes": {
+    "counters_any": 4.5,
+    "type:Warrior": 1.0
+   }
+  },
+  "Boggart Trawler": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Scuzzback Scrounger": {
+   "total": 17.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "type:Warrior": 1.0
+   }
+  },
+  "Swamp": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Unnatural Restoration": {
+   "total": 10.5,
+   "cmdr_fit": 1.5,
+   "partners": 13,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 7.5,
+    "graveyard": 1.5,
+    "counters_any": 0.75
+   }
+  },
+  "Reliquary Tower": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "The Reaper, King No More": {
+   "total": 19.0,
+   "cmdr_fit": 3.0,
+   "partners": 12,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "graveyard": 1.5,
+    "type:Scarecrow": 1.0
+   }
+  },
+  "The Scorpion God": {
+   "total": 20.0,
+   "cmdr_fit": 3.0,
+   "partners": 13,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "graveyard": 1.5,
+    "dies": 1.0,
+    "fodder": 1.0
+   }
+  },
+  "Vernal Fen": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Village Pillagers": {
+   "total": 17.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "type:Warrior": 1.0
+   }
+  },
+  "Warren Torchmaster": {
+   "total": 17.5,
+   "cmdr_fit": 3.0,
+   "partners": 10,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 15.0,
+    "type:Warrior": 1.0
+   }
+  },
+  "Ammit Eternal": {
+   "total": 66.0,
+   "cmdr_fit": 6.0,
+   "partners": 41,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 63.0
+   }
+  },
+  "Druid of Purification": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  },
+  "Wickerbough Elder": {
+   "total": 66.0,
+   "cmdr_fit": 6.0,
+   "partners": 41,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 63.0
+   }
+  },
+  "Wickersmith's Tools": {
+   "total": 61.0,
+   "cmdr_fit": 3.0,
+   "partners": 39,
+   "best_partner": "Auntie Ool, Cursewretch",
+   "themes": {
+    "counters_m1m1": 55.5,
+    "type:Scarecrow": 3.0,
+    "fodder": 1.0
+   }
+  },
+  "Woodland Cemetery": {
+   "total": 0.0,
+   "cmdr_fit": 0.0,
+   "partners": 0,
+   "best_partner": null,
+   "themes": {}
+  }
+ },
+ "unmatched": [
+  {
+   "card": "Massacre Girl, Known Killer",
+   "side": "cares",
+   "tag": "dies",
+   "evidence": "a creature an opponent controls dies, if its toughness was less than 1, draw a …"
+  },
+  {
+   "card": "Necroskitter",
+   "side": "cares",
+   "tag": "dies",
+   "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may return…"
+  },
+  {
+   "card": "The Reaper, King No More",
+   "side": "cares",
+   "tag": "dies",
+   "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may put th…"
+  },
+  {
+   "card": "Village Pillagers",
+   "side": "cares",
+   "tag": "dies",
+   "evidence": "a creature an opponent controls with a counter on it dies, you create a tapped …"
+  },
+  {
+   "card": "Ifnir Deadlands",
+   "side": "cares",
+   "tag": "type:Desert",
+   "evidence": "{2}{b}{b}, {t}, sacrifice a desert: put two -1/-1 counters on target creature a…"
+  },
+  {
+   "card": "Auntie Ool, Cursewretch",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "draw a card if you control that creature."
+  },
+  {
+   "card": "Dusk Urchins",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "draw a card for each -1/-1 counter on it."
+  },
+  {
+   "card": "Glissa Sunslayer",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "• you draw a card and lose 1 life."
+  },
+  {
+   "card": "Gristle Glutton",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "discard a card. if you do, draw a card."
+  },
+  {
+   "card": "Generous Patron",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "draw a card."
+  },
+  {
+   "card": "Massacre Girl, Known Killer",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "if its toughness was less than 1, draw a card."
+  },
+  {
+   "card": "Oft-Nabbed Goat",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "draw a card. gain control of ~ and put a -1/-1 counter on it. only your opponen…"
+  },
+  {
+   "card": "Sinister Gnarlbark",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "draw a card and blight 1."
+  },
+  {
+   "card": "The Scorpion God",
+   "side": "produces",
+   "tag": "draw",
+   "evidence": "draw a card."
+  },
+  {
+   "card": "Contagion Engine",
+   "side": "produces",
+   "tag": "proliferate",
+   "evidence": "keyword: Proliferate"
+  },
+  {
+   "card": "Grim Affliction",
+   "side": "produces",
+   "tag": "proliferate",
+   "evidence": "keyword: Proliferate"
+  },
+  {
+   "card": "Evolution Sage",
+   "side": "produces",
+   "tag": "proliferate",
+   "evidence": "keyword: Proliferate"
+  },
+  {
+   "card": "Thirsting Roots",
+   "side": "produces",
+   "tag": "proliferate",
+   "evidence": "keyword: Proliferate"
+  },
+  {
+   "card": "Karn's Bastion",
+   "side": "produces",
+   "tag": "proliferate",
+   "evidence": "keyword: Proliferate"
+  },
+  {
+   "card": "Unnatural Restoration",
+   "side": "produces",
+   "tag": "proliferate",
+   "evidence": "keyword: Proliferate"
+  },
+  {
+   "card": "Generous Patron",
+   "side": "produces",
+   "tag": "counters_p1p1",
+   "evidence": "keyword: Support"
+  },
+  {
+   "card": "Stalwart Successor",
+   "side": "produces",
+   "tag": "counters_p1p1",
+   "evidence": "if it's the first time counters have been put on that creature this turn, put a…"
+  },
+  {
+   "card": "Blowfly Infestation",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature dies, if it had a -1/-1 counter on it, put a -1/-1 counter on target…"
+  },
+  {
+   "card": "Dread Tiller",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature with a -1/-1 counter on it dies, you may put a land card from your h…"
+  },
+  {
+   "card": "Dusk Urchins",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "~ dies, draw a card for each -1/-1 counter on it."
+  },
+  {
+   "card": "Grave Venerations",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature you control dies, each opponent loses 1 life and you gain 1 life."
+  },
+  {
+   "card": "Massacre Girl, Known Killer",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature an opponent controls dies, if its toughness was less than 1, draw a …"
+  },
+  {
+   "card": "Necroskitter",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may return…"
+  },
+  {
+   "card": "Oft-Nabbed Goat",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "~ dies, if it had one or more -1/-1 counters on it, its owner draws that many c…"
+  },
+  {
+   "card": "Puca's Covenant",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature you control with a counter on it dies, you may return another target…"
+  },
+  {
+   "card": "Shadow Urchin",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature you control with one or more counters on it dies, exile that many ca…"
+  },
+  {
+   "card": "The Reaper, King No More",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may put th…"
+  },
+  {
+   "card": "The Scorpion God",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature with a -1/-1 counter on it dies, draw a card."
+  },
+  {
+   "card": "Village Pillagers",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a creature an opponent controls with a counter on it dies, you create a tapped …"
+  },
+  {
+   "card": "Dawnhand Dissident",
+   "side": "produces",
+   "tag": "mill",
+   "evidence": "otag: mill"
+  },
+  {
+   "card": "Flourishing Defenses",
+   "side": "produces",
+   "tag": "token_creature",
+   "evidence": "you may create a 1/1 green elf warrior creature token."
+  },
+  {
+   "card": "Hapatra, Vizier of Poisons",
+   "side": "produces",
+   "tag": "token_creature",
+   "evidence": "create a 1/1 green snake creature token with deathtouch."
+  },
+  {
+   "card": "Nest of Scarabs",
+   "side": "produces",
+   "tag": "token_creature",
+   "evidence": "create that many 1/1 black insect creature tokens."
+  },
+  {
+   "card": "Wickersmith's Tools",
+   "side": "produces",
+   "tag": "token_creature",
+   "evidence": "create x tapped 2/2 colorless scarecrow artifact creature tokens, where x is th…"
+  },
+  {
+   "card": "Flourishing Defenses",
+   "side": "produces",
+   "tag": "go_wide",
+   "evidence": "you may create a 1/1 green elf warrior creature token."
+  },
+  {
+   "card": "Hapatra, Vizier of Poisons",
+   "side": "produces",
+   "tag": "go_wide",
+   "evidence": "create a 1/1 green snake creature token with deathtouch."
+  },
+  {
+   "card": "Nest of Scarabs",
+   "side": "produces",
+   "tag": "go_wide",
+   "evidence": "create that many 1/1 black insect creature tokens."
+  },
+  {
+   "card": "Wickersmith's Tools",
+   "side": "produces",
+   "tag": "go_wide",
+   "evidence": "create x tapped 2/2 colorless scarecrow artifact creature tokens, where x is th…"
+  },
+  {
+   "card": "Grave Venerations",
+   "side": "produces",
+   "tag": "lifegain",
+   "evidence": "each opponent loses 1 life and you gain 1 life."
+  },
+  {
+   "card": "Obelisk Spider",
+   "side": "produces",
+   "tag": "lifegain",
+   "evidence": "each opponent loses 1 life and you gain 1 life."
+  },
+  {
+   "card": "Gristle Glutton",
+   "side": "produces",
+   "tag": "discard",
+   "evidence": "discard a card. if you do, draw a card."
+  },
+  {
+   "card": "Ifnir Deadlands",
+   "side": "produces",
+   "tag": "sacrifice",
+   "evidence": "otag: sacrifice-outlet"
+  },
+  {
+   "card": "Scuzzback Scrounger",
+   "side": "produces",
+   "tag": "token_artifact",
+   "evidence": "if you do, create a treasure token."
+  },
+  {
+   "card": "Village Pillagers",
+   "side": "produces",
+   "tag": "token_artifact",
+   "evidence": "you create a tapped treasure token."
+  }
+ ],
+ "pairs": [
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Carnifex Demon",
+   "score": 6.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Channeler Initiate",
+   "score": 6.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Dusk Urchins",
+   "score": 6.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Grim Poppet",
+   "score": 6.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Auntie Ool, Cursewretch",
+   "score": 6.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ammit Eternal",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Wickerbough Elder",
+   "score": 6.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Wickerbough Elder",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Auntie Ool, Cursewretch",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Contagion Engine",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Black Sun's Zenith",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Blowfly Infestation",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Burning Curiosity",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Grim Affliction",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Darkness Descends",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Dawnhand Dissident",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Devoted Druid",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Devoted Druid",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Dread Tiller",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Gristle Glutton",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Hapatra, Vizier of Poisons",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Ifnir Deadlands",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Blight Rot",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Kulrath Knight",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Midnight Banshee",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Necroskitter",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Oft-Nabbed Goat",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Obelisk Spider",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Shadow Urchin",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Sinister Gnarlbark",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Skinrender",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Soul Snuffers",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Scuzzback Scrounger",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "The Reaper, King No More",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "The Scorpion God",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Village Pillagers",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Warren Torchmaster",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Channeler Initiate",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Dusk Urchins",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Grim Poppet",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Dusk Urchins",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Grim Poppet",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Grim Poppet",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Dusk Urchins",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ammit Eternal",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Wickerbough Elder",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Wickerbough Elder",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Flourishing Defenses",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Persist",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Wickerbough Elder",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Wickerbough Elder",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ammit Eternal",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Wickersmith's Tools",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Auntie Ool, Cursewretch",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Ifnir Deadlands",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    },
+    {
+     "tag": "fodder",
+     "producer": "Dusk Urchins",
+     "payoff": "Ifnir Deadlands",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Flourishing Defenses",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Elf",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Devoted Druid",
+   "b": "Flourishing Defenses",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Devoted Druid",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Elf",
+     "producer": "Devoted Druid",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Ifnir Deadlands",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    },
+    {
+     "tag": "fodder",
+     "producer": "Flourishing Defenses",
+     "payoff": "Ifnir Deadlands",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Scuzzback Scrounger",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Warrior",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Village Pillagers",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Warrior",
+     "producer": "Village Pillagers",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Warren Torchmaster",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Warrior",
+     "producer": "Warren Torchmaster",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Wickersmith's Tools",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Scarecrow",
+     "producer": "Dread Tiller",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Wickersmith's Tools",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Scarecrow",
+     "producer": "Grim Poppet",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Ifnir Deadlands",
+   "b": "Wickersmith's Tools",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    },
+    {
+     "tag": "fodder",
+     "producer": "Wickersmith's Tools",
+     "payoff": "Ifnir Deadlands",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "The Reaper, King No More",
+   "b": "Wickersmith's Tools",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Scarecrow",
+     "producer": "The Reaper, King No More",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Persist",
+   "score": 2.25,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Persist",
+     "weight": 1.5
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Persist",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Gristle Glutton",
+   "b": "Persist",
+   "score": 2.25,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Persist",
+     "weight": 1.5
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "Persist",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Ifnir Deadlands",
+   "b": "The Scorpion God",
+   "score": 2.0,
+   "reasons": [
+    {
+     "tag": "dies",
+     "producer": "Ifnir Deadlands",
+     "payoff": "The Scorpion God",
+     "weight": 1.0
+    },
+    {
+     "tag": "fodder",
+     "producer": "The Scorpion God",
+     "payoff": "Ifnir Deadlands",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Flourishing Defenses",
+   "score": 1.75,
+   "reasons": [
+    {
+     "tag": "type:Elf",
+     "producer": "Evolution Sage",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    },
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Flourishing Defenses",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Evolution Sage",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Thirsting Roots",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Karn's Bastion",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Auntie Ool, Cursewretch",
+   "b": "Unnatural Restoration",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Auntie Ool, Cursewretch",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Carnifex Demon",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Contagion Engine",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Black Sun's Zenith",
+   "b": "Carnifex Demon",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Carnifex Demon",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Burning Curiosity",
+   "b": "Carnifex Demon",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Grim Affliction",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Darkness Descends",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Dawnhand Dissident",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Dread Tiller",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Gristle Glutton",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Hapatra, Vizier of Poisons",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Ifnir Deadlands",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blight Rot",
+   "b": "Carnifex Demon",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Kulrath Knight",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Midnight Banshee",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Necroskitter",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Oft-Nabbed Goat",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Obelisk Spider",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Shadow Urchin",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Sinister Gnarlbark",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Skinrender",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Soul Snuffers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Scuzzback Scrounger",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "The Reaper, King No More",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "The Scorpion God",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Village Pillagers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Warren Torchmaster",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Carnifex Demon",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Channeler Initiate",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Contagion Engine",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Black Sun's Zenith",
+   "b": "Channeler Initiate",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Channeler Initiate",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Burning Curiosity",
+   "b": "Channeler Initiate",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Grim Affliction",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Darkness Descends",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Dawnhand Dissident",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Dread Tiller",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Gristle Glutton",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Hapatra, Vizier of Poisons",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Ifnir Deadlands",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blight Rot",
+   "b": "Channeler Initiate",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Kulrath Knight",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Midnight Banshee",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Necroskitter",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Oft-Nabbed Goat",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Obelisk Spider",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Shadow Urchin",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Sinister Gnarlbark",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Skinrender",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Soul Snuffers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Scuzzback Scrounger",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "The Reaper, King No More",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "The Scorpion God",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Village Pillagers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Warren Torchmaster",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Channeler Initiate",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Contagion Engine",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Black Sun's Zenith",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Burning Curiosity",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Grim Affliction",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Darkness Descends",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Devoted Druid",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Devoted Druid",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Gristle Glutton",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Hapatra, Vizier of Poisons",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blight Rot",
+   "b": "Dusk Urchins",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Kulrath Knight",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Midnight Banshee",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Necroskitter",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Oft-Nabbed Goat",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Obelisk Spider",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Shadow Urchin",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Sinister Gnarlbark",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Skinrender",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Soul Snuffers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Scuzzback Scrounger",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "The Reaper, King No More",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "The Scorpion God",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Village Pillagers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Warren Torchmaster",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Dusk Urchins",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Contagion Engine",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Black Sun's Zenith",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Burning Curiosity",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Grim Affliction",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Darkness Descends",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Gristle Glutton",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Hapatra, Vizier of Poisons",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blight Rot",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Kulrath Knight",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Midnight Banshee",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Necroskitter",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Oft-Nabbed Goat",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Obelisk Spider",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Shadow Urchin",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Sinister Gnarlbark",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Skinrender",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Soul Snuffers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "The Reaper, King No More",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "The Scorpion God",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Flourishing Defenses",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ammit Eternal",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Wickerbough Elder",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Contagion Engine",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Black Sun's Zenith",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Burning Curiosity",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Affliction",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Darkness Descends",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Gristle Glutton",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Hapatra, Vizier of Poisons",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Ifnir Deadlands",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blight Rot",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Kulrath Knight",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Midnight Banshee",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Necroskitter",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Oft-Nabbed Goat",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Obelisk Spider",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Shadow Urchin",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Sinister Gnarlbark",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Skinrender",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Soul Snuffers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Scuzzback Scrounger",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "The Reaper, King No More",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "The Scorpion God",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Village Pillagers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Warren Torchmaster",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Grim Poppet",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Contagion Engine",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Black Sun's Zenith",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Burning Curiosity",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Affliction",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Darkness Descends",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Devoted Druid",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Devoted Druid",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Hapatra, Vizier of Poisons",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ifnir Deadlands",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blight Rot",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Kulrath Knight",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Midnight Banshee",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Necroskitter",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Oft-Nabbed Goat",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Obelisk Spider",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Shadow Urchin",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Sinister Gnarlbark",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Skinrender",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Soul Snuffers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Scuzzback Scrounger",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "The Reaper, King No More",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "The Scorpion God",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Village Pillagers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Warren Torchmaster",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Persist",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ammit Eternal",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Wickerbough Elder",
+     "payoff": "Persist",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Ammit Eternal",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Contagion Engine",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Black Sun's Zenith",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Blowfly Infestation",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Burning Curiosity",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Carnifex Demon",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Grim Affliction",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Channeler Initiate",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Darkness Descends",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Dawnhand Dissident",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Devoted Druid",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Devoted Druid",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Dread Tiller",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Grim Poppet",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Gristle Glutton",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Hapatra, Vizier of Poisons",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Ifnir Deadlands",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Blight Rot",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Kulrath Knight",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Midnight Banshee",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Necroskitter",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Oft-Nabbed Goat",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Obelisk Spider",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Shadow Urchin",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Sinister Gnarlbark",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Skinrender",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Soul Snuffers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Scuzzback Scrounger",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "The Reaper, King No More",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "The Scorpion God",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Village Pillagers",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Warren Torchmaster",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Ammit Eternal",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Contagion Engine",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Black Sun's Zenith",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Burning Curiosity",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Affliction",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Darkness Descends",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Devoted Druid",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Devoted Druid",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dread Tiller",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Poppet",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Gristle Glutton",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Hapatra, Vizier of Poisons",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ifnir Deadlands",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blight Rot",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Kulrath Knight",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Midnight Banshee",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Necroskitter",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Oft-Nabbed Goat",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Obelisk Spider",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Shadow Urchin",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Sinister Gnarlbark",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Skinrender",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Soul Snuffers",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Scuzzback Scrounger",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "The Reaper, King No More",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Reaper, King No More",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "The Scorpion God",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Village Pillagers",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Warren Torchmaster",
+   "b": "Wickerbough Elder",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Wickerbough Elder",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Aberrant Return",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Contagion Engine",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Contagion Engine",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Black Sun's Zenith",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Black Sun's Zenith",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blowfly Infestation",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Burning Curiosity",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Burning Curiosity",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Carnifex Demon",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Grim Affliction",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Grim Affliction",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Channeler Initiate",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Darkness Descends",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Darkness Descends",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Devoted Druid",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Devoted Druid",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Dusk Urchins",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Gristle Glutton",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Gristle Glutton",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Hapatra, Vizier of Poisons",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blight Rot",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Blight Rot",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Kulrath Knight",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Kulrath Knight",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Midnight Banshee",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Midnight Banshee",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Necroskitter",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Necroskitter",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Oft-Nabbed Goat",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Obelisk Spider",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Obelisk Spider",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Shadow Urchin",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Shadow Urchin",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Sinister Gnarlbark",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Sinister Gnarlbark",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Skinrender",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Skinrender",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Soul Snuffers",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Soul Snuffers",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Scuzzback Scrounger",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Scuzzback Scrounger",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "The Scorpion God",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "The Scorpion God",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Village Pillagers",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Village Pillagers",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Warren Torchmaster",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Warren Torchmaster",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Ammit Eternal",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Wickerbough Elder",
+   "b": "Wickersmith's Tools",
+   "score": 1.5,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Wickerbough Elder",
+     "payoff": "Wickersmith's Tools",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Blowfly Infestation",
+   "b": "Ifnir Deadlands",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "dies",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Blowfly Infestation",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Ifnir Deadlands",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "dies",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Dread Tiller",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Grave Venerations",
+   "b": "Ifnir Deadlands",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "dies",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Grave Venerations",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Ifnir Deadlands",
+   "b": "Puca's Covenant",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "dies",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Puca's Covenant",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Ifnir Deadlands",
+   "b": "Shadow Urchin",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "dies",
+     "producer": "Ifnir Deadlands",
+     "payoff": "Shadow Urchin",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Evolution Sage",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Dread Tiller",
+     "payoff": "Evolution Sage",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Farseek",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Farseek",
+     "payoff": "Evolution Sage",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Demolition Field",
+   "b": "Evolution Sage",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Demolition Field",
+     "payoff": "Evolution Sage",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Rampant Growth",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Rampant Growth",
+     "payoff": "Evolution Sage",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Sakura-Tribe Elder",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Sakura-Tribe Elder",
+     "payoff": "Evolution Sage",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Stalwart Successor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Warrior",
+     "producer": "Stalwart Successor",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Glissa Sunslayer",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Elf",
+     "producer": "Glissa Sunslayer",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Generous Patron",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Elf",
+     "producer": "Generous Patron",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Hapatra, Vizier of Poisons",
+   "b": "Sakura-Tribe Elder",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Snake",
+     "producer": "Sakura-Tribe Elder",
+     "payoff": "Hapatra, Vizier of Poisons",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Hapatra, Vizier of Poisons",
+   "b": "Ifnir Deadlands",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "fodder",
+     "producer": "Hapatra, Vizier of Poisons",
+     "payoff": "Ifnir Deadlands",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Ifnir Deadlands",
+   "b": "Nest of Scarabs",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "fodder",
+     "producer": "Nest of Scarabs",
+     "payoff": "Ifnir Deadlands",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Ifnir Deadlands",
+   "b": "Oft-Nabbed Goat",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "fodder",
+     "producer": "Oft-Nabbed Goat",
+     "payoff": "Ifnir Deadlands",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Evolution Sage",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Carnifex Demon",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Thirsting Roots",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Carnifex Demon",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Karn's Bastion",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Carnifex Demon",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Carnifex Demon",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Carnifex Demon",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Evolution Sage",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Channeler Initiate",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Thirsting Roots",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Channeler Initiate",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Karn's Bastion",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Channeler Initiate",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Channeler Initiate",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Channeler Initiate",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Evolution Sage",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Dusk Urchins",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Thirsting Roots",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Dusk Urchins",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Karn's Bastion",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Dusk Urchins",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dusk Urchins",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Dusk Urchins",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Thirsting Roots",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Flourishing Defenses",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Karn's Bastion",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Flourishing Defenses",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Flourishing Defenses",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Grim Poppet",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Grim Poppet",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Thirsting Roots",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Grim Poppet",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Karn's Bastion",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Grim Poppet",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Grim Poppet",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Grim Poppet",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Persist",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Persist",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Thirsting Roots",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Persist",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Karn's Bastion",
+   "b": "Persist",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Persist",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Persist",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Persist",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Evolution Sage",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Ammit Eternal",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Thirsting Roots",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Ammit Eternal",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Karn's Bastion",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Ammit Eternal",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Ammit Eternal",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Ammit Eternal",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Wickerbough Elder",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Wickerbough Elder",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Thirsting Roots",
+   "b": "Wickerbough Elder",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Wickerbough Elder",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Karn's Bastion",
+   "b": "Wickerbough Elder",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Wickerbough Elder",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Unnatural Restoration",
+   "b": "Wickerbough Elder",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Wickerbough Elder",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Wickersmith's Tools",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Evolution Sage",
+     "payoff": "Wickersmith's Tools",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Thirsting Roots",
+   "b": "Wickersmith's Tools",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Thirsting Roots",
+     "payoff": "Wickersmith's Tools",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Karn's Bastion",
+   "b": "Wickersmith's Tools",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Karn's Bastion",
+     "payoff": "Wickersmith's Tools",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Unnatural Restoration",
+   "b": "Wickersmith's Tools",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_m1m1",
+     "producer": "Unnatural Restoration",
+     "payoff": "Wickersmith's Tools",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Dawnhand Dissident",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Aberrant Return",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Aberrant Return",
+   "b": "Gristle Glutton",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "Aberrant Return",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Gristle Glutton",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "Dawnhand Dissident",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Dread Tiller",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Dread Tiller",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dread Tiller",
+   "b": "Gristle Glutton",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "Dread Tiller",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Grave Venerations",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Grave Venerations",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Grave Venerations",
+   "b": "Gristle Glutton",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "Grave Venerations",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Necroskitter",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Necroskitter",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Gristle Glutton",
+   "b": "Necroskitter",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "Necroskitter",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Puca's Covenant",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Puca's Covenant",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Gristle Glutton",
+   "b": "Puca's Covenant",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "Puca's Covenant",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "Unnatural Restoration",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Gristle Glutton",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "Unnatural Restoration",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "The Reaper, King No More",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "The Reaper, King No More",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Gristle Glutton",
+   "b": "The Reaper, King No More",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "The Reaper, King No More",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Dawnhand Dissident",
+   "b": "The Scorpion God",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Dawnhand Dissident",
+     "payoff": "The Scorpion God",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Gristle Glutton",
+   "b": "The Scorpion God",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Gristle Glutton",
+     "payoff": "The Scorpion God",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Contagion Engine",
+   "b": "Stalwart Successor",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_any",
+     "producer": "Contagion Engine",
+     "payoff": "Stalwart Successor",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Grim Affliction",
+   "b": "Stalwart Successor",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_any",
+     "producer": "Grim Affliction",
+     "payoff": "Stalwart Successor",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Evolution Sage",
+   "b": "Stalwart Successor",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_any",
+     "producer": "Evolution Sage",
+     "payoff": "Stalwart Successor",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Stalwart Successor",
+   "b": "Thirsting Roots",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_any",
+     "producer": "Thirsting Roots",
+     "payoff": "Stalwart Successor",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Karn's Bastion",
+   "b": "Stalwart Successor",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_any",
+     "producer": "Karn's Bastion",
+     "payoff": "Stalwart Successor",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Stalwart Successor",
+   "b": "Unnatural Restoration",
+   "score": 0.75,
+   "reasons": [
+    {
+     "tag": "counters_any",
+     "producer": "Unnatural Restoration",
+     "payoff": "Stalwart Successor",
+     "weight": 0.75
+    }
+   ]
+  }
+ ],
+ "features": {
+  "Auntie Ool, Cursewretch": [
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "one or more -1/-1 counters are put on a creature, draw a card if you control th…"
+   },
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "draw a card if you control that creature."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "kw:Ward",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Ward"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 4"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warlock",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warlock"
+   }
+  ],
+  "Aberrant Return": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "each of them enters with an additional -1/-1 counter on it."
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: recursion"
+   }
+  ],
+  "Arcane Signet": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an artifact"
+   }
+  ],
+  "Contagion Engine": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on each creature target player controls."
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "rad",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_any",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an artifact"
+   }
+  ],
+  "Assassin's Trophy": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Binding the Old Gods": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Enchantment",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an enchantment"
+   }
+  ],
+  "Black Sun's Zenith": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put x -1/-1 counters on each creature."
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Blowfly Infestation": [
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature dies, if it had a -1/-1 counter on it, put a -1/-1 counter on target…"
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "a creature dies, if it had a -1/-1 counter on it, put a -1/-1 counter on target…"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "if it had a -1/-1 counter on it, put a -1/-1 counter on target creature."
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Enchantment",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an enchantment"
+   }
+  ],
+  "Burning Curiosity": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Canyon Slough": [],
+  "Carnifex Demon": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "~ enters with two -1/-1 counters on it."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "{b}, remove a -1/-1 counter from ~"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on each other creature."
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 6"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Demon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Demon"
+   }
+  ],
+  "Grim Affliction": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on target creature, then proliferate."
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "rad",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_any",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Vandalblast": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Channeler Initiate": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put three -1/-1 counters on target creature you control."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "{t}, remove a -1/-1 counter from ~"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
+   }
+  ],
+  "Chimil, the Inner Sun": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an artifact"
+   }
+  ],
+  "Cinder Glade": [],
+  "Command Tower": [],
+  "Darkness Descends": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put two -1/-1 counters on each creature."
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Dawnhand Dissident": [
+   {
+    "tag": "graveyard",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "surveil 1."
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "exile target card from a graveyard."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Warlock",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warlock"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "mill",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: mill"
+   }
+  ],
+  "Devoted Druid": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on ~"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   }
+  ],
+  "Dragonskull Summit": [],
+  "Dread Tiller": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on target creature."
+   },
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature with a -1/-1 counter on it dies, you may put a land card from your h…"
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "a creature with a -1/-1 counter on it dies, you may put a land card from your h…"
+   },
+   {
+    "tag": "landfall",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you may put a land card from your hand or graveyard onto the battlefield tapped."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an artifact"
+   },
+   {
+    "tag": "type:Scarecrow",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scarecrow"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: recursion"
+   }
+  ],
+  "Dusk Urchins": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on it."
+   },
+   {
+    "tag": "fodder",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "~ dies, draw a card for each -1/-1 counter on it."
+   },
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "~ dies, draw a card for each -1/-1 counter on it."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "draw a card for each -1/-1 counter on it."
+   },
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "draw a card for each -1/-1 counter on it."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 4"
+   },
+   {
+    "tag": "type:Ouphe",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Ouphe"
+   }
+  ],
+  "Eventide's Shadow": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Everlasting Torment": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Enchantment",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an enchantment"
+   }
+  ],
+  "Evolution Sage": [
+   {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Landfall"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "rad",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_any",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   }
+  ],
+  "Blood Crypt": [],
+  "Exotic Orchard": [],
+  "Farseek": [
+   {
+    "tag": "landfall",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "search your library for a plains, island, swamp, or mountain card, put it onto …"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Festering Thicket": [],
+  "Flourishing Defenses": [
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "a -1/-1 counter is put on a creature, you may create a 1/1 green elf warrior cr…"
+   },
+   {
+    "tag": "token_creature",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you may create a 1/1 green elf warrior creature token."
+   },
+   {
+    "tag": "go_wide",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you may create a 1/1 green elf warrior creature token."
+   },
+   {
+    "tag": "fodder",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you may create a 1/1 green elf warrior creature token."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you may create a 1/1 green elf warrior creature token."
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Enchantment",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an enchantment"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever a -1/-1 counter is put on a creature, you may create a 1/1 green elf w…"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever a -1/-1 counter is put on a creature, you may create a 1/1 green elf w…"
+   }
+  ],
+  "Forest": [],
+  "Glissa Sunslayer": [
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "• you draw a card and lose 1 life."
+   },
+   {
+    "tag": "kw:First strike",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: First strike"
+   },
+   {
+    "tag": "kw:Deathtouch",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Deathtouch"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   }
+  ],
+  "Twilight Mire": [],
+  "Grave Venerations": [
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "if you're the monarch, return up to one target creature card from your graveyar…"
+   },
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature you control dies, each opponent loses 1 life and you gain 1 life."
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "a creature you control dies, each opponent loses 1 life and you gain 1 life."
+   },
+   {
+    "tag": "lifegain",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "each opponent loses 1 life and you gain 1 life."
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Enchantment",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an enchantment"
+   }
+  ],
+  "Grim Poppet": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "~ enters with three -1/-1 counters on it."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "remove a -1/-1 counter from ~"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on another target creature."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 4"
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an artifact"
+   },
+   {
+    "tag": "type:Scarecrow",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scarecrow"
+   }
+  ],
+  "Gristle Glutton": [
+   {
+    "tag": "discard",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "discard a card. if you do, draw a card."
+   },
+   {
+    "tag": "graveyard",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "discard a card. if you do, draw a card."
+   },
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "discard a card. if you do, draw a card."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
+   }
+  ],
+  "Fire-Lit Thicket": [],
+  "Hapatra, Vizier of Poisons": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you may put a -1/-1 counter on target creature."
+   },
+   {
+    "tag": "token_creature",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "create a 1/1 green snake creature token with deathtouch."
+   },
+   {
+    "tag": "go_wide",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "create a 1/1 green snake creature token with deathtouch."
+   },
+   {
+    "tag": "fodder",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "create a 1/1 green snake creature token with deathtouch."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "create a 1/1 green snake creature token with deathtouch."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Cleric",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Cleric"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever you put one or more -1/-1 counters on a creature, create a 1/1 green s…"
+   }
+  ],
+  "Nest of Scarabs": [
+   {
+    "tag": "token_creature",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "create that many 1/1 black insect creature tokens."
+   },
+   {
+    "tag": "go_wide",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "create that many 1/1 black insect creature tokens."
+   },
+   {
+    "tag": "fodder",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "create that many 1/1 black insect creature tokens."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "create that many 1/1 black insect creature tokens."
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Enchantment",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an enchantment"
+   }
+  ],
+  "Ifnir Deadlands": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put two -1/-1 counters on target creature an opponent controls. activate only a…"
+   },
+   {
+    "tag": "type:Desert",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Desert"
+   },
+   {
+    "tag": "type:Desert",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "{2}{b}{b}, {t}, sacrifice a desert: put two -1/-1 counters on target creature a…"
+   },
+   {
+    "tag": "sacrifice",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: sacrifice-outlet"
+   },
+   {
+    "tag": "dies",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: sacrifice-outlet"
+   },
+   {
+    "tag": "fodder",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: sacrifice-outlet"
+   }
+  ],
+  "Ignoble Hierarch": [
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   }
+  ],
+  "Blight Rot": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put four -1/-1 counters on target creature."
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Kulrath Knight": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Wither"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   }
+  ],
+  "Generous Patron": [
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "draw a card."
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Support"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Advisor",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Advisor"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
+   }
+  ],
+  "Massacre Girl, Known Killer": [
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature an opponent controls dies, if its toughness was less than 1, draw a …"
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "opp",
+    "strength": 1.0,
+    "evidence": "a creature an opponent controls dies, if its toughness was less than 1, draw a …"
+   },
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "if its toughness was less than 1, draw a card."
+   },
+   {
+    "tag": "kw:Menace",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Menace"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 4"
+   },
+   {
+    "tag": "type:Assassin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Assassin"
+   }
+  ],
+  "Midnight Banshee": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on each nonblack creature."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Wither"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 5"
+   },
+   {
+    "tag": "type:Spirit",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Spirit"
+   }
+  ],
+  "Mountain": [],
+  "Sundering Eruption // Volcanic Fissure": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Demolition Field": [
+   {
+    "tag": "landfall",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "destroy target nonbasic land an opponent controls. that land's controller may s…"
+   }
+  ],
+  "Nature's Lore": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Necroskitter": [
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may return…"
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "opp",
+    "strength": 1.0,
+    "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may return…"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Wither"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: recursion"
+   }
+  ],
+  "Nesting Grounds": [],
+  "Thirsting Roots": [
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "rad",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_any",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Oft-Nabbed Goat": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "draw a card. gain control of ~ and put a -1/-1 counter on it. only your opponen…"
+   },
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "draw a card. gain control of ~ and put a -1/-1 counter on it. only your opponen…"
+   },
+   {
+    "tag": "fodder",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "~ dies, if it had one or more -1/-1 counters on it, its owner draws that many c…"
+   },
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "~ dies, if it had one or more -1/-1 counters on it, its owner draws that many c…"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Goat",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goat"
+   }
+  ],
+  "Path of Ancestry": [],
+  "Persist": [
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "return target nonlegendary creature card from your graveyard to the battlefield…"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "return target nonlegendary creature card from your graveyard to the battlefield…"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "return target nonlegendary creature card from your graveyard to the battlefield…"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Puca's Covenant": [
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature you control with a counter on it dies, you may return another target…"
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "a creature you control with a counter on it dies, you may return another target…"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you may return another target permanent card with mana value less than or equal…"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Enchantment",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an enchantment"
+   }
+  ],
+  "Putrefy": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Obelisk Spider": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on that creature."
+   },
+   {
+    "tag": "lifegain",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "each opponent loses 1 life and you gain 1 life."
+   },
+   {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Reach"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Spider",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Spider"
+   }
+  ],
+  "Graven Cairns": [],
+  "Rampant Growth": [
+   {
+    "tag": "landfall",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "search your library for a basic land card, put that card onto the battlefield t…"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Karn's Bastion": [
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "rad",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_any",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "proliferate"
+   }
+  ],
+  "Rootbound Crag": [],
+  "Sakura-Tribe Elder": [
+   {
+    "tag": "landfall",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "search your library for a basic land card, put that card onto the battlefield t…"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
+   }
+  ],
+  "Savage Lands": [],
+  "Shadow Urchin": [
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature you control with one or more counters on it dies, exile that many ca…"
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "a creature you control with one or more counters on it dies, exile that many ca…"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Ouphe",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Ouphe"
+   }
+  ],
+  "Sheltered Thicket": [],
+  "Sinister Gnarlbark": [
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "draw a card and blight 1."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Warlock",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warlock"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
+   }
+  ],
+  "Skinrender": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put three -1/-1 counters on target creature."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
+   }
+  ],
+  "Smoldering Marsh": [],
+  "Birds of Paradise": [
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Bird",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bird"
+   }
+  ],
+  "Soul Immolation": [
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Soul Snuffers": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on each creature."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   }
+  ],
+  "Stalwart Successor": [
+   {
+    "tag": "counters_any",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "one or more counters are put on a creature you control, if it's the first time …"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "if it's the first time counters have been put on that creature this turn, put a…"
+   },
+   {
+    "tag": "kw:Menace",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Menace"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
+   }
+  ],
+  "Boggart Trawler": [
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
+   }
+  ],
+  "Scuzzback Scrounger": [
+   {
+    "tag": "token_artifact",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "if you do, create a treasure token."
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "if you do, create a treasure token."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
+   }
+  ],
+  "Swamp": [],
+  "Unnatural Restoration": [
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "return target permanent card from your graveyard to your hand."
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
+   },
+   {
+    "tag": "counters_p1p1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "rad",
+    "side": "P",
+    "scope": "any",
+    "strength": 0.5,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "counters_any",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "proliferate"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an instant/sorcery"
+   }
+  ],
+  "Reliquary Tower": [],
+  "The Reaper, King No More": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on each of up to two target creatures."
+   },
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may put th…"
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "opp",
+    "strength": 1.0,
+    "evidence": "a creature an opponent controls with a -1/-1 counter on it dies, you may put th…"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an artifact"
+   },
+   {
+    "tag": "type:Scarecrow",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scarecrow"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: recursion"
+   }
+  ],
+  "The Scorpion God": [
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature with a -1/-1 counter on it dies, draw a card."
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "a creature with a -1/-1 counter on it dies, draw a card."
+   },
+   {
+    "tag": "draw",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "draw a card."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on another target creature."
+   },
+   {
+    "tag": "fodder",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "~ dies, return it to its owner's hand at the beginning of the next end step."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 6"
+   },
+   {
+    "tag": "type:God",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a God"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "otag: recursion"
+   }
+  ],
+  "Vernal Fen": [],
+  "Village Pillagers": [
+   {
+    "tag": "trigger_dies",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "a creature an opponent controls with a counter on it dies, you create a tapped …"
+   },
+   {
+    "tag": "dies",
+    "side": "C",
+    "scope": "opp",
+    "strength": 1.0,
+    "evidence": "a creature an opponent controls with a counter on it dies, you create a tapped …"
+   },
+   {
+    "tag": "token_artifact",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you create a tapped treasure token."
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "you create a tapped treasure token."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Wither"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 5"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
+   }
+  ],
+  "Warren Torchmaster": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
+   }
+  ],
+  "Ammit Eternal": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "put a -1/-1 counter on ~."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "remove all -1/-1 counters from it."
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 5"
+   },
+   {
+    "tag": "type:Demon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Demon"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
+   },
+   {
+    "tag": "type:Crocodile",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Crocodile"
+   }
+  ],
+  "Druid of Purification": [
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
+   }
+  ],
+  "Wickerbough Elder": [
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "~ enters with a -1/-1 counter on it."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "~ enters with a -1/-1 counter on it."
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "{g}, remove a -1/-1 counter from ~"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a creature"
+   },
+   {
+    "tag": "big_power",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "power 4"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
+   }
+  ],
+  "Wickersmith's Tools": [
+   {
+    "tag": "counters_m1m1",
+    "side": "C",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "one or more -1/-1 counters are put on a creature, put a charge counter on ~."
+   },
+   {
+    "tag": "token_creature",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "create x tapped 2/2 colorless scarecrow artifact creature tokens, where x is th…"
+   },
+   {
+    "tag": "go_wide",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "create x tapped 2/2 colorless scarecrow artifact creature tokens, where x is th…"
+   },
+   {
+    "tag": "fodder",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "create x tapped 2/2 colorless scarecrow artifact creature tokens, where x is th…"
+   },
+   {
+    "tag": "etb",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "create x tapped 2/2 colorless scarecrow artifact creature tokens, where x is th…"
+   },
+   {
+    "tag": "cast_noncreature",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.3,
+    "evidence": "is a noncreature spell"
+   },
+   {
+    "tag": "type:Artifact",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is an artifact"
+   },
+   {
+    "tag": "type:Scarecrow",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "{5}, {t}, sacrifice ~: create x tapped 2/2 colorless scarecrow artifact creatur…"
+   }
+  ],
+  "Woodland Cemetery": []
+ },
+ "cuts": {
+  "candidates": [
+   {
+    "name": "Boggart Trawler",
+    "cmc": 3.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [],
+    "cut_score": -0.167
+   },
+   {
+    "name": "Everlasting Torment",
+    "cmc": 3.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [],
+    "cut_score": -0.167
+   },
+   {
+    "name": "Kulrath Knight",
+    "cmc": 5.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [],
+    "cut_score": 0.056
+   },
+   {
+    "name": "Nest of Scarabs",
+    "cmc": 3.0,
+    "synergy": 1.0,
+    "cmdr_fit": 0.0,
+    "roles": [],
+    "cut_score": 0.087
+   },
+   {
+    "name": "Stalwart Successor",
+    "cmc": 3.0,
+    "synergy": 5.5,
+    "cmdr_fit": 0.0,
+    "roles": [],
+    "cut_score": 0.214
+   },
+   {
+    "name": "Evolution Sage",
+    "cmc": 3.0,
+    "synergy": 15.0,
+    "cmdr_fit": 1.5,
+    "roles": [],
+    "cut_score": 0.278
+   },
+   {
+    "name": "Aberrant Return",
+    "cmc": 6.0,
+    "synergy": 18.0,
+    "cmdr_fit": 3.0,
+    "roles": [],
+    "cut_score": 0.294
+   },
+   {
+    "name": "Flourishing Defenses",
+    "cmc": 5.0,
+    "synergy": 67.0,
+    "cmdr_fit": 3.0,
+    "roles": [],
+    "cut_score": 0.563
+   },
+   {
+    "name": "Necroskitter",
+    "cmc": 3.0,
+    "synergy": 18.0,
+    "cmdr_fit": 3.0,
+    "roles": [],
+    "cut_score": 0.579
+   },
+   {
+    "name": "Warren Torchmaster",
+    "cmc": 2.0,
+    "synergy": 17.5,
+    "cmdr_fit": 3.0,
+    "roles": [],
+    "cut_score": 0.611
+   },
+   {
+    "name": "Ammit Eternal",
+    "cmc": 3.0,
+    "synergy": 66.0,
+    "cmdr_fit": 6.0,
+    "roles": [],
+    "cut_score": 0.738
+   },
+   {
+    "name": "Persist",
+    "cmc": 2.0,
+    "synergy": 58.5,
+    "cmdr_fit": 3.0,
+    "roles": [],
+    "cut_score": 0.833
+   }
+  ],
+  "role_cards": [
+   {
+    "name": "Chimil, the Inner Sun",
+    "cmc": 6.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": -0.452
+   },
+   {
+    "name": "Eventide's Shadow",
+    "cmc": 5.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": -0.405
+   },
+   {
+    "name": "Soul Immolation",
+    "cmc": 5.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": -0.405
+   },
+   {
+    "name": "Binding the Old Gods",
+    "cmc": 4.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "ramp",
+     "removal",
+     "tutor"
+    ],
+    "cut_score": -0.341
+   },
+   {
+    "name": "Druid of Purification",
+    "cmc": 4.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": -0.341
+   },
+   {
+    "name": "Massacre Girl, Known Killer",
+    "cmc": 4.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": -0.341
+   },
+   {
+    "name": "Putrefy",
+    "cmc": 3.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": -0.167
+   },
+   {
+    "name": "Sundering Eruption // Volcanic Fissure",
+    "cmc": 3.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "removal",
+     "tutor"
+    ],
+    "cut_score": -0.167
+   },
+   {
+    "name": "Arcane Signet",
+    "cmc": 2.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": -0.04
+   },
+   {
+    "name": "Assassin's Trophy",
+    "cmc": 2.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": -0.04
+   },
+   {
+    "name": "Nature's Lore",
+    "cmc": 2.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": -0.04
+   },
+   {
+    "name": "Birds of Paradise",
+    "cmc": 1.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.0
+   },
+   {
+    "name": "Ignoble Hierarch",
+    "cmc": 1.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.0
+   },
+   {
+    "name": "Vandalblast",
+    "cmc": 1.0,
+    "synergy": 0.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": 0.0
+   },
+   {
+    "name": "Midnight Banshee",
+    "cmc": 6.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": 0.008
+   },
+   {
+    "name": "Grave Venerations",
+    "cmc": 4.0,
+    "synergy": 2.5,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.008
+   },
+   {
+    "name": "Generous Patron",
+    "cmc": 3.0,
+    "synergy": 1.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.087
+   },
+   {
+    "name": "Glissa Sunslayer",
+    "cmc": 3.0,
+    "synergy": 1.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "card-advantage",
+     "draw",
+     "removal"
+    ],
+    "cut_score": 0.087
+   },
+   {
+    "name": "Darkness Descends",
+    "cmc": 4.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": 0.119
+   },
+   {
+    "name": "Skinrender",
+    "cmc": 4.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.119
+   },
+   {
+    "name": "Soul Snuffers",
+    "cmc": 4.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": 0.119
+   },
+   {
+    "name": "Contagion Engine",
+    "cmc": 6.0,
+    "synergy": 17.25,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": 0.167
+   },
+   {
+    "name": "Puca's Covenant",
+    "cmc": 3.0,
+    "synergy": 2.5,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.183
+   },
+   {
+    "name": "Farseek",
+    "cmc": 2.0,
+    "synergy": 1.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.214
+   },
+   {
+    "name": "Rampant Growth",
+    "cmc": 2.0,
+    "synergy": 1.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.214
+   },
+   {
+    "name": "Village Pillagers",
+    "cmc": 5.0,
+    "synergy": 17.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "board-wipe",
+     "ramp",
+     "removal"
+    ],
+    "cut_score": 0.246
+   },
+   {
+    "name": "Blight Rot",
+    "cmc": 3.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.294
+   },
+   {
+    "name": "Burning Curiosity",
+    "cmc": 3.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.294
+   },
+   {
+    "name": "Obelisk Spider",
+    "cmc": 3.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.294
+   },
+   {
+    "name": "Sinister Gnarlbark",
+    "cmc": 3.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.294
+   },
+   {
+    "name": "Sakura-Tribe Elder",
+    "cmc": 2.0,
+    "synergy": 2.0,
+    "cmdr_fit": 0.0,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.294
+   },
+   {
+    "name": "The Reaper, King No More",
+    "cmc": 6.0,
+    "synergy": 19.0,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.341
+   },
+   {
+    "name": "Unnatural Restoration",
+    "cmc": 2.0,
+    "synergy": 10.5,
+    "cmdr_fit": 1.5,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.373
+   },
+   {
+    "name": "Devoted Druid",
+    "cmc": 2.0,
+    "synergy": 13.0,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.389
+   },
+   {
+    "name": "Thirsting Roots",
+    "cmc": 1.0,
+    "synergy": 9.0,
+    "cmdr_fit": 1.5,
+    "roles": [
+     "tutor"
+    ],
+    "cut_score": 0.397
+   },
+   {
+    "name": "The Scorpion God",
+    "cmc": 5.0,
+    "synergy": 20.0,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "card-advantage",
+     "draw",
+     "removal"
+    ],
+    "cut_score": 0.405
+   },
+   {
+    "name": "Black Sun's Zenith",
+    "cmc": 2.0,
+    "synergy": 16.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": 0.421
+   },
+   {
+    "name": "Carnifex Demon",
+    "cmc": 6.0,
+    "synergy": 66.0,
+    "cmdr_fit": 6.0,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": 0.452
+   },
+   {
+    "name": "Grim Affliction",
+    "cmc": 3.0,
+    "synergy": 17.25,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.452
+   },
+   {
+    "name": "Grim Poppet",
+    "cmc": 7.0,
+    "synergy": 67.0,
+    "cmdr_fit": 6.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.468
+   },
+   {
+    "name": "Blowfly Infestation",
+    "cmc": 3.0,
+    "synergy": 17.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.484
+   },
+   {
+    "name": "Shadow Urchin",
+    "cmc": 3.0,
+    "synergy": 17.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.484
+   },
+   {
+    "name": "Wickerbough Elder",
+    "cmc": 4.0,
+    "synergy": 66.0,
+    "cmdr_fit": 6.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.563
+   },
+   {
+    "name": "Oft-Nabbed Goat",
+    "cmc": 2.0,
+    "synergy": 17.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.611
+   },
+   {
+    "name": "Scuzzback Scrounger",
+    "cmc": 2.0,
+    "synergy": 17.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.611
+   },
+   {
+    "name": "Dread Tiller",
+    "cmc": 3.0,
+    "synergy": 21.0,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.659
+   },
+   {
+    "name": "Wickersmith's Tools",
+    "cmc": 3.0,
+    "synergy": 61.0,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.722
+   },
+   {
+    "name": "Hapatra, Vizier of Poisons",
+    "cmc": 2.0,
+    "synergy": 18.5,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.738
+   },
+   {
+    "name": "Gristle Glutton",
+    "cmc": 2.0,
+    "synergy": 24.0,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.802
+   },
+   {
+    "name": "Dusk Urchins",
+    "cmc": 3.0,
+    "synergy": 71.5,
+    "cmdr_fit": 6.0,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.833
+   },
+   {
+    "name": "Dawnhand Dissident",
+    "cmc": 1.0,
+    "synergy": 25.0,
+    "cmdr_fit": 3.0,
+    "roles": [
+     "graveyard-hate"
+    ],
+    "cut_score": 0.857
+   },
+   {
+    "name": "Channeler Initiate",
+    "cmc": 2.0,
+    "synergy": 66.0,
+    "cmdr_fit": 6.0,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.865
+   }
+  ]
+ }
+}
