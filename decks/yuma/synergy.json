@@ -125,14 +125,14 @@
  ],
  "cards": {
   "Yuma, Proud Protector": {
-   "total": 277.0,
+   "total": 314.0,
    "cmdr_fit": 0.0,
    "partners": 65,
-   "best_partner": "Entish Restoration",
+   "best_partner": "Aftermath Analyst",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "themes": {
-    "ramp": 52.0,
+    "ramp": 80.0,
     "fodder": 28.75,
     "type:Desert": 24.0,
     "land_gy": 14.0,
@@ -158,18 +158,19 @@
    }
   },
   "Aftermath Analyst": {
-   "total": 34.07,
-   "cmdr_fit": 7.5,
+   "total": 35.57,
+   "cmdr_fit": 8.0,
    "partners": 27,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "graveyard": 19.5,
+    "ramp": 7.42,
     "land_gy": 6.0,
-    "ramp": 4.67,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "land"
   },
   "Ancient Greenwarden": {
    "total": 34.4,
@@ -249,15 +250,16 @@
    "themes": {}
   },
   "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift": {
-   "total": 6.67,
-   "cmdr_fit": 4.0,
+   "total": 7.67,
+   "cmdr_fit": 5.0,
    "partners": 1,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "themes": {
-    "ramp": 4.67
-   }
+    "ramp": 5.17
+   },
+   "ramp_kind": "artifact"
   },
   "Bristling Backwoods": {
    "total": 19.5,
@@ -417,17 +419,18 @@
    }
   },
   "Dryad of the Ilysian Grove": {
-   "total": 13.82,
-   "cmdr_fit": 4.0,
+   "total": 18.32,
+   "cmdr_fit": 7.5,
    "partners": 9,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
+    "ramp": 7.42,
     "landfall": 7.0,
-    "ramp": 4.67,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "land"
   },
   "Dune Chanter": {
    "total": 19.4,
@@ -459,17 +462,18 @@
    }
   },
   "Horizon Explorer": {
-   "total": 7.82,
-   "cmdr_fit": 4.0,
+   "total": 11.32,
+   "cmdr_fit": 7.5,
    "partners": 3,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "themes": {
-    "ramp": 4.67,
+    "ramp": 6.42,
     "type:Insect": 1.0,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Embrace the Unknown": {
    "total": 0.0,
@@ -481,21 +485,22 @@
    "themes": {}
   },
   "Entish Restoration": {
-   "total": 53.67,
+   "total": 54.67,
    "cmdr_fit": 8.0,
    "partners": 26,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
     "big_power": 7.5,
     "landfall": 7.0,
-    "ramp": 4.67,
+    "ramp": 6.17,
     "dies": 2.0,
     "sacrifice": 2.0
-   }
+   },
+   "ramp_kind": "land"
   },
   "Evolving Wilds": {
    "total": 7.0,
@@ -554,20 +559,21 @@
    }
   },
   "Harrow": {
-   "total": 46.92,
+   "total": 47.92,
    "cmdr_fit": 8.0,
    "partners": 22,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
     "landfall": 7.0,
-    "ramp": 4.67,
+    "ramp": 6.17,
     "dies": 2.0,
     "sacrifice": 2.0
-   }
+   },
+   "ramp_kind": "land"
   },
   "Hashep Oasis": {
    "total": 63.25,
@@ -601,20 +607,21 @@
    }
   },
   "Hour of Promise": {
-   "total": 56.17,
-   "cmdr_fit": 6.5,
+   "total": 58.17,
+   "cmdr_fit": 7.5,
    "partners": 34,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
     "landfall": 7.0,
-    "ramp": 4.67,
+    "ramp": 6.17,
     "go_wide": 3.0,
     "etb": 0.5
-   }
+   },
+   "ramp_kind": "land"
   },
   "Jungle Shrine": {
    "total": 0.0,
@@ -626,16 +633,17 @@
    "themes": {}
   },
   "Prismatic Undercurrents": {
-   "total": 13.67,
-   "cmdr_fit": 4.0,
+   "total": 15.67,
+   "cmdr_fit": 5.0,
    "partners": 8,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "landfall": 7.0,
-    "ramp": 4.67
-   }
+    "ramp": 6.17
+   },
+   "ramp_kind": "land"
   },
   "Krosan Verge": {
    "total": 0.0,
@@ -659,17 +667,18 @@
    }
   },
   "Lotus Cobra": {
-   "total": 23.82,
-   "cmdr_fit": 4.0,
+   "total": 27.32,
+   "cmdr_fit": 7.5,
    "partners": 19,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "themes": {
     "landfall": 17.0,
-    "ramp": 4.67,
+    "ramp": 6.42,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Magmatic Insight": {
    "total": 0.0,
@@ -681,17 +690,18 @@
    "themes": {}
   },
   "Map the Frontier": {
-   "total": 37.67,
-   "cmdr_fit": 4.0,
+   "total": 39.67,
+   "cmdr_fit": 5.0,
    "partners": 24,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "type:Desert": 24.0,
     "landfall": 7.0,
-    "ramp": 4.67
-   }
+    "ramp": 6.17
+   },
+   "ramp_kind": "land"
   },
   "Midnight Tilling": {
    "total": 13.5,
@@ -736,30 +746,32 @@
    "themes": {}
   },
   "Nahiri's Lithoforming": {
-   "total": 29.42,
-   "cmdr_fit": 6.5,
+   "total": 30.42,
+   "cmdr_fit": 7.5,
    "partners": 15,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "themes": {
     "fodder": 17.5,
-    "ramp": 4.67,
+    "ramp": 5.17,
     "dies": 2.0,
     "sacrifice": 2.0
-   }
+   },
+   "ramp_kind": "other"
   },
   "Rampant Growth": {
-   "total": 13.67,
-   "cmdr_fit": 4.0,
+   "total": 15.67,
+   "cmdr_fit": 5.0,
    "partners": 8,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "landfall": 7.0,
-    "ramp": 4.67
-   }
+    "ramp": 6.17
+   },
+   "ramp_kind": "land"
   },
   "Omnath, Locus of Rage": {
    "total": 60.75,
@@ -780,17 +792,18 @@
    }
   },
   "Oracle of Mul Daya": {
-   "total": 13.82,
-   "cmdr_fit": 4.0,
+   "total": 18.32,
+   "cmdr_fit": 7.5,
    "partners": 9,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
+    "ramp": 7.42,
     "landfall": 7.0,
-    "ramp": 4.67,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "land"
   },
   "Overwhelming Stampede": {
    "total": 8.25,
@@ -815,15 +828,16 @@
    }
   },
   "Path to Exile": {
-   "total": 6.67,
-   "cmdr_fit": 4.0,
+   "total": 7.67,
+   "cmdr_fit": 5.0,
    "partners": 1,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "themes": {
-    "ramp": 4.67
-   }
+    "ramp": 5.17
+   },
+   "ramp_kind": "other"
   },
   "Phylath, World Sculptor": {
    "total": 44.75,
@@ -852,16 +866,17 @@
    "themes": {}
   },
   "Hedge Shredder": {
-   "total": 26.92,
-   "cmdr_fit": 5.5,
+   "total": 27.92,
+   "cmdr_fit": 6.5,
    "partners": 21,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "themes": {
     "graveyard": 19.5,
-    "ramp": 4.67
-   }
+    "ramp": 5.17
+   },
+   "ramp_kind": "artifact"
   },
   "Pyrrhic Strike": {
    "total": 0.0,
@@ -922,8 +937,8 @@
    }
   },
   "Sand Scout": {
-   "total": 59.42,
-   "cmdr_fit": 6.5,
+   "total": 60.92,
+   "cmdr_fit": 8.0,
    "partners": 37,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
@@ -932,11 +947,12 @@
     "type:Desert": 24.0,
     "fodder": 13.75,
     "graveyard": 8.25,
-    "ramp": 4.67,
+    "ramp": 6.42,
     "go_wide": 3.0,
     "type:Warrior": 2.0,
     "etb": 0.5
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Satyr Wayfinder": {
    "total": 0.15,
@@ -988,8 +1004,8 @@
    }
   },
   "Colossal Rattlewurm": {
-   "total": 44.32,
-   "cmdr_fit": 4.0,
+   "total": 47.82,
+   "cmdr_fit": 7.5,
    "partners": 33,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
@@ -997,10 +1013,11 @@
    "themes": {
     "type:Desert": 24.0,
     "graveyard": 8.25,
+    "ramp": 6.42,
     "big_power": 5.25,
-    "ramp": 4.67,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Shamanic Revelation": {
    "total": 19.5,
@@ -1061,33 +1078,35 @@
    }
   },
   "Spelunking": {
-   "total": 13.67,
-   "cmdr_fit": 4.0,
+   "total": 15.67,
+   "cmdr_fit": 5.0,
    "partners": 8,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "landfall": 7.0,
-    "ramp": 4.67
-   }
+    "ramp": 6.17
+   },
+   "ramp_kind": "land"
   },
   "Springbloom Druid": {
-   "total": 47.07,
+   "total": 48.07,
    "cmdr_fit": 8.0,
    "partners": 23,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
+    "ramp": 7.42,
     "landfall": 7.0,
-    "ramp": 4.67,
     "dies": 2.0,
     "sacrifice": 2.0,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "land"
   },
   "Stomping Ground": {
    "total": 0.0,
@@ -1108,18 +1127,19 @@
    "themes": {}
   },
   "Sun Titan": {
-   "total": 20.67,
-   "cmdr_fit": 4.0,
+   "total": 24.17,
+   "cmdr_fit": 7.5,
    "partners": 19,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "themes": {
     "graveyard": 8.25,
+    "ramp": 6.42,
     "big_power": 5.25,
-    "ramp": 4.67,
     "etb": 0.5
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Sunscorched Divide": {
    "total": 0.0,
@@ -1147,24 +1167,25 @@
    }
   },
   "Titania, Protector of Argoth": {
-   "total": 63.17,
+   "total": 64.17,
    "cmdr_fit": 8.0,
    "partners": 34,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "fodder": 13.75,
     "dies": 11.0,
     "graveyard": 8.25,
+    "ramp": 7.42,
     "type:Elemental": 7.0,
     "land_gy": 6.0,
     "big_power": 5.25,
-    "ramp": 4.67,
     "go_wide": 3.0,
     "trigger_dies": 1.0,
     "etb": 0.5
-   }
+   },
+   "ramp_kind": "land"
   },
   "Desert Warfare": {
    "total": 70.42,
@@ -1178,25 +1199,27 @@
     "fodder": 13.75,
     "sacrifice": 11.0,
     "graveyard": 8.25,
-    "ramp": 4.67,
+    "ramp": 5.17,
     "go_wide": 3.0,
     "type:Warrior": 2.0,
     "etb": 0.5
-   }
+   },
+   "ramp_kind": "artifact"
   },
   "Vibrance": {
-   "total": 14.07,
-   "cmdr_fit": 4.0,
+   "total": 17.57,
+   "cmdr_fit": 7.5,
    "partners": 10,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "themes": {
+    "ramp": 6.42,
     "big_power": 5.25,
-    "ramp": 4.67,
     "type:Elemental": 2.0,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Winding Way": {
    "total": 0.0,
@@ -1208,31 +1231,33 @@
    "themes": {}
   },
   "Worldsoul's Rage": {
-   "total": 21.92,
-   "cmdr_fit": 4.0,
+   "total": 23.92,
+   "cmdr_fit": 5.0,
    "partners": 18,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0,
-    "ramp": 4.67
-   }
+    "ramp": 6.17
+   },
+   "ramp_kind": "land"
   },
   "Wreck and Rebuild": {
-   "total": 40.92,
-   "cmdr_fit": 7.5,
+   "total": 42.42,
+   "cmdr_fit": 8.0,
    "partners": 32,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
-   "ramp_bonus": 2.669,
+   "ramp_bonus": 3.669,
    "themes": {
     "graveyard": 19.5,
     "landfall": 7.0,
-    "land_gy": 6.0,
-    "ramp": 4.67
-   }
+    "ramp": 6.17,
+    "land_gy": 6.0
+   },
+   "ramp_kind": "land"
   },
   "Zuran Orb": {
    "total": 33.75,
@@ -1259,12 +1284,13 @@
     "fodder": 17.5,
     "sacrifice": 11.0,
     "land_gy": 10.0,
-    "ramp": 4.67,
+    "ramp": 6.42,
     "type:Warrior": 4.0,
     "dies": 2.0,
     "type:Insect": 1.0,
     "etb": 0.15
-   }
+   },
+   "ramp_kind": "creature"
   }
  },
  "combos": [],
@@ -1285,8 +1311,10 @@
    "Titania, Protector of Argoth",
    "Vibrance"
   ],
-  "commander_weight": 2.0,
+  "commander_base": 2.5,
+  "game_turns": 9,
   "curve_bonus": 2.669,
+  "land_bonus": 1.0,
   "cards": [
    "Aftermath Analyst",
    "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
@@ -1314,7 +1342,35 @@
    "Vibrance",
    "Worldsoul's Rage",
    "Wreck and Rebuild"
-  ]
+  ],
+  "kinds": {
+   "Aftermath Analyst": "land",
+   "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift": "artifact",
+   "Dryad of the Ilysian Grove": "land",
+   "Horizon Explorer": "creature",
+   "Entish Restoration": "land",
+   "Harrow": "land",
+   "Hour of Promise": "land",
+   "Prismatic Undercurrents": "land",
+   "Lotus Cobra": "creature",
+   "Map the Frontier": "land",
+   "Nahiri's Lithoforming": "other",
+   "Rampant Growth": "land",
+   "Oracle of Mul Daya": "land",
+   "Path to Exile": "other",
+   "Hedge Shredder": "artifact",
+   "Sand Scout": "creature",
+   "Colossal Rattlewurm": "creature",
+   "Spelunking": "land",
+   "Springbloom Druid": "land",
+   "Sun Titan": "creature",
+   "Titania, Protector of Argoth": "land",
+   "Desert Warfare": "artifact",
+   "Vibrance": "creature",
+   "Worldsoul's Rage": "land",
+   "Wreck and Rebuild": "land",
+   "Evendo Brushrazer": "creature"
+  }
  },
  "unmatched": [
   {
@@ -1639,6 +1695,56 @@
  "bracket": 2,
  "pairs": [
   {
+   "a": "Aftermath Analyst",
+   "b": "Yuma, Proud Protector",
+   "score": 8.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Aftermath Analyst",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 3.75
+    },
+    {
+     "tag": "land_gy",
+     "producer": "Yuma, Proud Protector",
+     "payoff": "Aftermath Analyst",
+     "weight": 1.0
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Aftermath Analyst",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Wreck and Rebuild",
+   "b": "Yuma, Proud Protector",
+   "score": 8.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Wreck and Rebuild",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
+    },
+    {
+     "tag": "land_gy",
+     "producer": "Yuma, Proud Protector",
+     "payoff": "Wreck and Rebuild",
+     "weight": 1.0
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Wreck and Rebuild",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
    "a": "Entish Restoration",
    "b": "Yuma, Proud Protector",
    "score": 8.0,
@@ -1647,7 +1753,7 @@
      "tag": "ramp",
      "producer": "Entish Restoration",
      "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
+     "weight": 2.5
     },
     {
      "tag": "fodder",
@@ -1678,7 +1784,7 @@
      "tag": "ramp",
      "producer": "Harrow",
      "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
+     "weight": 2.5
     },
     {
      "tag": "fodder",
@@ -1703,7 +1809,7 @@
      "tag": "ramp",
      "producer": "Springbloom Druid",
      "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
+     "weight": 3.75
     },
     {
      "tag": "fodder",
@@ -1728,7 +1834,7 @@
      "tag": "ramp",
      "producer": "Evendo Brushrazer",
      "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
+     "weight": 3.75
     },
     {
      "tag": "fodder",
@@ -1765,7 +1871,7 @@
      "tag": "ramp",
      "producer": "Titania, Protector of Argoth",
      "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
+     "weight": 3.75
     },
     {
      "tag": "fodder",
@@ -1788,6 +1894,25 @@
    ]
   },
   {
+   "a": "Sand Scout",
+   "b": "Yuma, Proud Protector",
+   "score": 8.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Sand Scout",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 3.75
+    },
+    {
+     "tag": "fodder",
+     "producer": "Sand Scout",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
    "a": "Desert Warfare",
    "b": "Yuma, Proud Protector",
    "score": 8.0,
@@ -1796,7 +1921,7 @@
      "tag": "ramp",
      "producer": "Desert Warfare",
      "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
+     "weight": 2.5
     },
     {
      "tag": "fodder",
@@ -1813,52 +1938,131 @@
    ]
   },
   {
-   "a": "Aftermath Analyst",
+   "a": "Hour of Promise",
    "b": "Yuma, Proud Protector",
    "score": 7.5,
    "reasons": [
     {
      "tag": "ramp",
-     "producer": "Aftermath Analyst",
+     "producer": "Hour of Promise",
      "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
+     "weight": 2.5
     },
     {
-     "tag": "land_gy",
-     "producer": "Yuma, Proud Protector",
-     "payoff": "Aftermath Analyst",
-     "weight": 1.0
-    },
-    {
-     "tag": "graveyard",
-     "producer": "Aftermath Analyst",
+     "tag": "fodder",
+     "producer": "Hour of Promise",
      "payoff": "Yuma, Proud Protector",
-     "weight": 0.75
+     "weight": 1.25
     }
    ]
   },
   {
-   "a": "Wreck and Rebuild",
+   "a": "Nahiri's Lithoforming",
    "b": "Yuma, Proud Protector",
    "score": 7.5,
    "reasons": [
     {
      "tag": "ramp",
-     "producer": "Wreck and Rebuild",
+     "producer": "Nahiri's Lithoforming",
      "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
+     "weight": 2.5
     },
     {
-     "tag": "land_gy",
+     "tag": "fodder",
      "producer": "Yuma, Proud Protector",
-     "payoff": "Wreck and Rebuild",
-     "weight": 1.0
-    },
+     "payoff": "Nahiri's Lithoforming",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Dryad of the Ilysian Grove",
+   "b": "Yuma, Proud Protector",
+   "score": 7.5,
+   "reasons": [
     {
-     "tag": "graveyard",
-     "producer": "Wreck and Rebuild",
+     "tag": "ramp",
+     "producer": "Dryad of the Ilysian Grove",
      "payoff": "Yuma, Proud Protector",
-     "weight": 0.75
+     "weight": 3.75
+    }
+   ]
+  },
+  {
+   "a": "Horizon Explorer",
+   "b": "Yuma, Proud Protector",
+   "score": 7.5,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Horizon Explorer",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 3.75
+    }
+   ]
+  },
+  {
+   "a": "Lotus Cobra",
+   "b": "Yuma, Proud Protector",
+   "score": 7.5,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Lotus Cobra",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 3.75
+    }
+   ]
+  },
+  {
+   "a": "Oracle of Mul Daya",
+   "b": "Yuma, Proud Protector",
+   "score": 7.5,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Oracle of Mul Daya",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 3.75
+    }
+   ]
+  },
+  {
+   "a": "Colossal Rattlewurm",
+   "b": "Yuma, Proud Protector",
+   "score": 7.5,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Colossal Rattlewurm",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 3.75
+    }
+   ]
+  },
+  {
+   "a": "Sun Titan",
+   "b": "Yuma, Proud Protector",
+   "score": 7.5,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Sun Titan",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 3.75
+    }
+   ]
+  },
+  {
+   "a": "Vibrance",
+   "b": "Yuma, Proud Protector",
+   "score": 7.5,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Vibrance",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 3.75
     }
    ]
   },
@@ -1883,6 +2087,25 @@
      "tag": "go_wide",
      "producer": "Yuma, Proud Protector",
      "payoff": "Shefet Dunes",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Hedge Shredder",
+   "b": "Yuma, Proud Protector",
+   "score": 6.5,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Hedge Shredder",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Hedge Shredder",
+     "payoff": "Yuma, Proud Protector",
      "weight": 0.75
     }
    ]
@@ -1913,63 +2136,6 @@
    ]
   },
   {
-   "a": "Hour of Promise",
-   "b": "Yuma, Proud Protector",
-   "score": 6.5,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Hour of Promise",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    },
-    {
-     "tag": "fodder",
-     "producer": "Hour of Promise",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 1.25
-    }
-   ]
-  },
-  {
-   "a": "Sand Scout",
-   "b": "Yuma, Proud Protector",
-   "score": 6.5,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Sand Scout",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    },
-    {
-     "tag": "fodder",
-     "producer": "Sand Scout",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 1.25
-    }
-   ]
-  },
-  {
-   "a": "Nahiri's Lithoforming",
-   "b": "Yuma, Proud Protector",
-   "score": 6.5,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Nahiri's Lithoforming",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    },
-    {
-     "tag": "fodder",
-     "producer": "Yuma, Proud Protector",
-     "payoff": "Nahiri's Lithoforming",
-     "weight": 1.25
-    }
-   ]
-  },
-  {
    "a": "Mole Man, Moloid Master",
    "b": "Yuma, Proud Protector",
    "score": 6.0,
@@ -1989,25 +2155,6 @@
     {
      "tag": "graveyard",
      "producer": "Mole Man, Moloid Master",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Hedge Shredder",
-   "b": "Yuma, Proud Protector",
-   "score": 5.5,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Hedge Shredder",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    },
-    {
-     "tag": "graveyard",
-     "producer": "Hedge Shredder",
      "payoff": "Yuma, Proud Protector",
      "weight": 0.75
     }
@@ -2086,6 +2233,97 @@
      "producer": "Yuma, Proud Protector",
      "payoff": "Scavenger Grounds",
      "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
+   "b": "Yuma, Proud Protector",
+   "score": 5.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
+    }
+   ]
+  },
+  {
+   "a": "Prismatic Undercurrents",
+   "b": "Yuma, Proud Protector",
+   "score": 5.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Prismatic Undercurrents",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
+    }
+   ]
+  },
+  {
+   "a": "Map the Frontier",
+   "b": "Yuma, Proud Protector",
+   "score": 5.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Map the Frontier",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
+    }
+   ]
+  },
+  {
+   "a": "Rampant Growth",
+   "b": "Yuma, Proud Protector",
+   "score": 5.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Rampant Growth",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
+    }
+   ]
+  },
+  {
+   "a": "Path to Exile",
+   "b": "Yuma, Proud Protector",
+   "score": 5.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Path to Exile",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
+    }
+   ]
+  },
+  {
+   "a": "Spelunking",
+   "b": "Yuma, Proud Protector",
+   "score": 5.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Spelunking",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
+    }
+   ]
+  },
+  {
+   "a": "Worldsoul's Rage",
+   "b": "Yuma, Proud Protector",
+   "score": 5.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Worldsoul's Rage",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 2.5
     }
    ]
   },
@@ -2274,188 +2512,6 @@
      "producer": "Omnath, Locus of Rage",
      "payoff": "Entish Restoration",
      "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Colossal Rattlewurm",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Colossal Rattlewurm",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Dryad of the Ilysian Grove",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Dryad of the Ilysian Grove",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Horizon Explorer",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Horizon Explorer",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Lotus Cobra",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Lotus Cobra",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Map the Frontier",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Map the Frontier",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Oracle of Mul Daya",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Oracle of Mul Daya",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Path to Exile",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Path to Exile",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Prismatic Undercurrents",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Prismatic Undercurrents",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Rampant Growth",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Rampant Growth",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Spelunking",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Spelunking",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Sun Titan",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Sun Titan",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Vibrance",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Vibrance",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
-    }
-   ]
-  },
-  {
-   "a": "Worldsoul's Rage",
-   "b": "Yuma, Proud Protector",
-   "score": 4.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Worldsoul's Rage",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 2.0
     }
    ]
   },
@@ -8221,32 +8277,6 @@
    ]
   },
   {
-   "a": "Hazezon, Shaper of Sand",
-   "b": "Sand Scout",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Warrior",
-     "producer": "Hazezon, Shaper of Sand",
-     "payoff": "Sand Scout",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Desert Warfare",
-   "b": "Hazezon, Shaper of Sand",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Warrior",
-     "producer": "Hazezon, Shaper of Sand",
-     "payoff": "Desert Warfare",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Avenger of Zendikar",
    "b": "Dune Chanter",
    "score": 1.0,
@@ -8268,6 +8298,32 @@
      "tag": "type:Plant",
      "producer": "Dune Chanter",
      "payoff": "Phylath, World Sculptor",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Hazezon, Shaper of Sand",
+   "b": "Sand Scout",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Warrior",
+     "producer": "Hazezon, Shaper of Sand",
+     "payoff": "Sand Scout",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Desert Warfare",
+   "b": "Hazezon, Shaper of Sand",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Warrior",
+     "producer": "Hazezon, Shaper of Sand",
+     "payoff": "Desert Warfare",
      "weight": 1.0
     }
    ]
@@ -12661,14 +12717,14 @@
     "evidence": "is a Ranger"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Plant",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
    },
    {
-    "tag": "type:Plant",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -13098,18 +13154,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Plant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Plant"
-   },
-   {
     "tag": "type:Mercenary",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mercenary"
+   },
+   {
+    "tag": "type:Plant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Plant"
    }
   ],
   "Catharsis": [
@@ -13156,18 +13212,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
    }
   ],
   "Cinder Glade": [],
@@ -13381,18 +13437,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Plant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Plant"
-   },
-   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Plant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Plant"
    }
   ],
   "Dunes of the Dead": [
@@ -13455,18 +13511,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Insect",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Insect"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    }
   ],
   "Embrace the Unknown": [
@@ -14174,18 +14230,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Overwhelming Stampede": [
@@ -14392,18 +14448,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Cleric",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Cleric"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Ramunap Ruins": [
@@ -15275,18 +15331,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
    }
   ],
   "Winding Way": [
@@ -15467,18 +15523,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Insect",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Insect"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "sacrifice",
@@ -15512,7 +15568,7 @@
     "cmdr_fit": 1.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": -0.164
+    "cut_score": -0.181
    },
    {
     "name": "Cactusfolk Sureshot",
@@ -15521,7 +15577,7 @@
     "cmdr_fit": 3.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.095
+    "cut_score": 0.06
    },
    {
     "name": "Catharsis",
@@ -15530,16 +15586,7 @@
     "cmdr_fit": 4.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.181
-   },
-   {
-    "name": "Ancient Greenwarden",
-    "cmc": 6.0,
-    "synergy": 34.4,
-    "cmdr_fit": 2.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.233
+    "cut_score": 0.164
    },
    {
     "name": "Conduit of Worlds",
@@ -15548,7 +15595,16 @@
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.233
+    "cut_score": 0.198
+   },
+   {
+    "name": "Ancient Greenwarden",
+    "cmc": 6.0,
+    "synergy": 34.4,
+    "cmdr_fit": 2.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.216
    },
    {
     "name": "Dune Chanter",
@@ -15566,7 +15622,7 @@
     "cmdr_fit": 2.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.302
+    "cut_score": 0.284
    },
    {
     "name": "Phylath, World Sculptor",
@@ -15575,16 +15631,7 @@
     "cmdr_fit": 2.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.336
-   },
-   {
-    "name": "Felidar Retreat",
-    "cmc": 4.0,
-    "synergy": 35.5,
-    "cmdr_fit": 2.5,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.405
+    "cut_score": 0.319
    },
    {
     "name": "Ramunap Excavator",
@@ -15593,7 +15640,16 @@
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.414
+    "cut_score": 0.379
+   },
+   {
+    "name": "Felidar Retreat",
+    "cmc": 4.0,
+    "synergy": 35.5,
+    "cmdr_fit": 2.5,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.388
    },
    {
     "name": "Scute Swarm",
@@ -15701,6 +15757,18 @@
     "cut_score": -0.138
    },
    {
+    "name": "Vibrance",
+    "cmc": 5.0,
+    "synergy": 17.57,
+    "cmdr_fit": 7.5,
+    "combo_piece": false,
+    "roles": [
+     "removal",
+     "tutor"
+    ],
+    "cut_score": -0.06
+   },
+   {
     "name": "Bovine Intervention",
     "cmc": 2.0,
     "synergy": 0.0,
@@ -15723,22 +15791,10 @@
     "cut_score": -0.034
    },
    {
-    "name": "Vibrance",
-    "cmc": 5.0,
-    "synergy": 14.07,
-    "cmdr_fit": 4.0,
-    "combo_piece": false,
-    "roles": [
-     "removal",
-     "tutor"
-    ],
-    "cut_score": -0.026
-   },
-   {
     "name": "Prismatic Undercurrents",
     "cmc": 4.0,
-    "synergy": 13.67,
-    "cmdr_fit": 4.0,
+    "synergy": 15.67,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
      "ramp",
@@ -15770,17 +15826,6 @@
     "cut_score": -0.009
    },
    {
-    "name": "Sun Titan",
-    "cmc": 6.0,
-    "synergy": 20.67,
-    "cmdr_fit": 4.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": 0.026
-   },
-   {
     "name": "Return of the Wildspeaker",
     "cmc": 5.0,
     "synergy": 19.5,
@@ -15805,22 +15850,10 @@
     "cut_score": 0.026
    },
    {
-    "name": "Oracle of Mul Daya",
-    "cmc": 4.0,
-    "synergy": 13.82,
-    "cmdr_fit": 4.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "ramp"
-    ],
-    "cut_score": 0.043
-   },
-   {
     "name": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
     "cmc": 3.0,
-    "synergy": 6.67,
-    "cmdr_fit": 4.0,
+    "synergy": 7.67,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
      "card-advantage",
@@ -15830,16 +15863,39 @@
     "cut_score": 0.052
    },
    {
+    "name": "Oracle of Mul Daya",
+    "cmc": 4.0,
+    "synergy": 18.32,
+    "cmdr_fit": 7.5,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "ramp"
+    ],
+    "cut_score": 0.078
+   },
+   {
+    "name": "Sun Titan",
+    "cmc": 6.0,
+    "synergy": 24.17,
+    "cmdr_fit": 7.5,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.095
+   },
+   {
     "name": "Horizon Explorer",
     "cmc": 3.0,
-    "synergy": 7.82,
-    "cmdr_fit": 4.0,
+    "synergy": 11.32,
+    "cmdr_fit": 7.5,
     "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.086
+    "cut_score": 0.103
    },
    {
     "name": "Satyr Wayfinder",
@@ -15855,8 +15911,8 @@
    {
     "name": "Spelunking",
     "cmc": 3.0,
-    "synergy": 13.67,
-    "cmdr_fit": 4.0,
+    "synergy": 15.67,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
      "card-advantage",
@@ -15868,8 +15924,8 @@
    {
     "name": "Path to Exile",
     "cmc": 1.0,
-    "synergy": 6.67,
-    "cmdr_fit": 4.0,
+    "synergy": 7.67,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
      "ramp",
@@ -15877,17 +15933,6 @@
      "tutor"
     ],
     "cut_score": 0.181
-   },
-   {
-    "name": "Dryad of the Ilysian Grove",
-    "cmc": 3.0,
-    "synergy": 13.82,
-    "cmdr_fit": 4.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": 0.207
    },
    {
     "name": "Bitter Reunion",
@@ -15913,27 +15958,27 @@
     "cut_score": 0.224
    },
    {
+    "name": "Dryad of the Ilysian Grove",
+    "cmc": 3.0,
+    "synergy": 18.32,
+    "cmdr_fit": 7.5,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.241
+   },
+   {
     "name": "Rampant Growth",
     "cmc": 2.0,
-    "synergy": 13.67,
-    "cmdr_fit": 4.0,
+    "synergy": 15.67,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
     ],
     "cut_score": 0.259
-   },
-   {
-    "name": "Hedge Shredder",
-    "cmc": 4.0,
-    "synergy": 26.92,
-    "cmdr_fit": 5.5,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": 0.284
    },
    {
     "name": "Garruk's Uprising",
@@ -15948,6 +15993,17 @@
     "cut_score": 0.293
    },
    {
+    "name": "Hedge Shredder",
+    "cmc": 4.0,
+    "synergy": 27.92,
+    "cmdr_fit": 6.5,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.302
+   },
+   {
     "name": "Six",
     "cmc": 3.0,
     "synergy": 21.15,
@@ -15956,7 +16012,7 @@
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.362
+    "cut_score": 0.345
    },
    {
     "name": "Omnath, Locus of Rage",
@@ -15967,13 +16023,13 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.44
+    "cut_score": 0.422
    },
    {
     "name": "Map the Frontier",
     "cmc": 4.0,
-    "synergy": 37.67,
-    "cmdr_fit": 4.0,
+    "synergy": 39.67,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
      "ramp",
@@ -15982,34 +16038,10 @@
     "cut_score": 0.44
    },
    {
-    "name": "Colossal Rattlewurm",
-    "cmc": 4.0,
-    "synergy": 44.32,
-    "cmdr_fit": 4.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": 0.474
-   },
-   {
-    "name": "Worldsoul's Rage",
-    "cmc": 2.0,
-    "synergy": 21.92,
-    "cmdr_fit": 4.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "removal"
-    ],
-    "cut_score": 0.483
-   },
-   {
     "name": "Hour of Promise",
     "cmc": 5.0,
-    "synergy": 56.17,
-    "cmdr_fit": 6.5,
+    "synergy": 58.17,
+    "cmdr_fit": 7.5,
     "combo_piece": false,
     "roles": [
      "ramp",
@@ -16018,27 +16050,28 @@
     "cut_score": 0.491
    },
    {
-    "name": "Lotus Cobra",
+    "name": "Worldsoul's Rage",
     "cmc": 2.0,
-    "synergy": 23.82,
-    "cmdr_fit": 4.0,
+    "synergy": 23.92,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
-     "mana-dork",
-     "ramp"
+     "ramp",
+     "removal"
     ],
-    "cut_score": 0.534
+    "cut_score": 0.5
    },
    {
-    "name": "Titania, Protector of Argoth",
-    "cmc": 5.0,
-    "synergy": 63.17,
-    "cmdr_fit": 8.0,
+    "name": "Colossal Rattlewurm",
+    "cmc": 4.0,
+    "synergy": 47.82,
+    "cmdr_fit": 7.5,
     "combo_piece": false,
     "roles": [
-     "ramp"
+     "ramp",
+     "tutor"
     ],
-    "cut_score": 0.56
+    "cut_score": 0.509
    },
    {
     "name": "Life from the Loam",
@@ -16049,26 +16082,49 @@
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.569
+    "cut_score": 0.534
+   },
+   {
+    "name": "Lotus Cobra",
+    "cmc": 2.0,
+    "synergy": 27.32,
+    "cmdr_fit": 7.5,
+    "combo_piece": false,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.552
+   },
+   {
+    "name": "Titania, Protector of Argoth",
+    "cmc": 5.0,
+    "synergy": 64.17,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.56
    },
    {
     "name": "Nahiri's Lithoforming",
     "cmc": 2.0,
-    "synergy": 29.42,
-    "cmdr_fit": 6.5,
+    "synergy": 30.42,
+    "cmdr_fit": 7.5,
     "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
      "ramp"
     ],
-    "cut_score": 0.586
+    "cut_score": 0.603
    },
    {
     "name": "Wreck and Rebuild",
     "cmc": 3.0,
-    "synergy": 40.92,
-    "cmdr_fit": 7.5,
+    "synergy": 42.42,
+    "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
      "ramp",
@@ -16079,18 +16135,18 @@
    {
     "name": "Aftermath Analyst",
     "cmc": 2.0,
-    "synergy": 34.07,
-    "cmdr_fit": 7.5,
+    "synergy": 35.57,
+    "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
      "ramp"
     ],
-    "cut_score": 0.638
+    "cut_score": 0.672
    },
    {
     "name": "Harrow",
     "cmc": 3.0,
-    "synergy": 46.92,
+    "synergy": 47.92,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -16113,7 +16169,7 @@
    {
     "name": "Springbloom Druid",
     "cmc": 3.0,
-    "synergy": 47.07,
+    "synergy": 48.07,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -16138,7 +16194,7 @@
    {
     "name": "Entish Restoration",
     "cmc": 3.0,
-    "synergy": 53.67,
+    "synergy": 54.67,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -16150,14 +16206,14 @@
    {
     "name": "Sand Scout",
     "cmc": 2.0,
-    "synergy": 59.42,
-    "cmdr_fit": 6.5,
+    "synergy": 60.92,
+    "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.879
+    "cut_score": 0.897
    }
   ]
  }

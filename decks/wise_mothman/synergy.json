@@ -111,16 +111,16 @@
  ],
  "cards": {
   "The Wise Mothman": {
-   "total": 75.6,
+   "total": 86.6,
    "cmdr_fit": 0.0,
-   "partners": 35,
-   "best_partner": "Mariposa Military Base",
+   "partners": 31,
+   "best_partner": "Kami of Whispered Hopes",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "themes": {
     "counters_p1p1": 19.5,
+    "ramp": 12.5,
     "mill": 9.0,
-    "ramp": 7.0,
     "rad": 1.0,
     "type:Mutant": 1.0,
     "etb": 0.3
@@ -158,8 +158,8 @@
    }
   },
   "Kami of Whispered Hopes": {
-   "total": 73.8,
-   "cmdr_fit": 4.0,
+   "total": 74.3,
+   "cmdr_fit": 4.5,
    "partners": 39,
    "best_partner": "Triskelion",
    "combo_piece": true,
@@ -167,9 +167,10 @@
    "themes": {
     "counters_p1p1": 61.5,
     "combo_win": 8.2,
-    "ramp": 1.8,
+    "ramp": 2.05,
     "etb": 0.3
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Assassin's Trophy": {
    "total": 0.75,
@@ -198,28 +199,30 @@
    }
   },
   "Birds of Paradise": {
-   "total": 2.6,
-   "cmdr_fit": 1.0,
+   "total": 4.6,
+   "cmdr_fit": 3.0,
    "partners": 3,
    "best_partner": "The Wise Mothman",
    "combo_piece": false,
    "ramp_bonus": 1.301,
    "themes": {
-    "ramp": 1.8,
+    "ramp": 2.8,
     "etb": 0.3
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Binding the Old Gods": {
-   "total": 2.53,
-   "cmdr_fit": 1.0,
-   "partners": 2,
-   "best_partner": "The Wise Mothman",
+   "total": 2.03,
+   "cmdr_fit": 0.0,
+   "partners": 1,
+   "best_partner": "Flux Channeler",
    "combo_piece": false,
-   "ramp_bonus": 1.301,
+   "ramp_bonus": 1.801,
    "themes": {
     "ramp": 1.8,
     "cast_noncreature": 0.23
-   }
+   },
+   "ramp_kind": "land"
   },
   "Blooming Marsh": {
    "total": 0.0,
@@ -333,17 +336,18 @@
    "themes": {}
   },
   "Animal Attendant": {
-   "total": 22.1,
-   "cmdr_fit": 1.0,
+   "total": 24.1,
+   "cmdr_fit": 3.0,
    "partners": 15,
-   "best_partner": "Fathom Mage",
+   "best_partner": "The Wise Mothman",
    "combo_piece": false,
    "ramp_bonus": 1.301,
    "themes": {
     "counters_p1p1": 19.5,
-    "ramp": 1.8,
+    "ramp": 2.8,
     "etb": 0.3
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Drowned Catacomb": {
    "total": 0.0,
@@ -389,17 +393,18 @@
    "themes": {}
   },
   "Farseek": {
-   "total": 6.05,
-   "cmdr_fit": 1.0,
+   "total": 7.55,
+   "cmdr_fit": 2.0,
    "partners": 5,
-   "best_partner": "Evolution Sage",
+   "best_partner": "The Wise Mothman",
    "combo_piece": false,
-   "ramp_bonus": 1.301,
+   "ramp_bonus": 1.801,
    "themes": {
     "landfall": 3.0,
-    "ramp": 1.8,
+    "ramp": 2.8,
     "cast_noncreature": 0.75
-   }
+   },
+   "ramp_kind": "land"
   },
   "Fathom Mage": {
    "total": 54.8,
@@ -512,17 +517,18 @@
    "themes": {}
   },
   "Incubation Druid": {
-   "total": 16.1,
-   "cmdr_fit": 1.0,
+   "total": 18.1,
+   "cmdr_fit": 3.0,
    "partners": 12,
-   "best_partner": "Kami of Whispered Hopes",
+   "best_partner": "The Wise Mothman",
    "combo_piece": false,
    "ramp_bonus": 1.301,
    "themes": {
     "counters_p1p1": 13.5,
-    "ramp": 1.8,
+    "ramp": 2.8,
     "etb": 0.3
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Defiler of Vigor": {
    "total": 22.05,
@@ -664,17 +670,18 @@
    }
   },
   "Rampant Growth": {
-   "total": 6.05,
-   "cmdr_fit": 1.0,
+   "total": 7.55,
+   "cmdr_fit": 2.0,
    "partners": 5,
-   "best_partner": "Evolution Sage",
+   "best_partner": "The Wise Mothman",
    "combo_piece": false,
-   "ramp_bonus": 1.301,
+   "ramp_bonus": 1.801,
    "themes": {
     "landfall": 3.0,
-    "ramp": 1.8,
+    "ramp": 2.8,
     "cast_noncreature": 0.75
-   }
+   },
+   "ramp_kind": "land"
   },
   "Flux Channeler": {
    "total": 29.88,
@@ -783,18 +790,19 @@
    }
   },
   "Bugenhagen, Wise Elder": {
-   "total": 9.35,
-   "cmdr_fit": 1.0,
+   "total": 11.35,
+   "cmdr_fit": 3.0,
    "partners": 12,
    "best_partner": "The Wise Mothman",
    "combo_piece": false,
    "ramp_bonus": 1.301,
    "themes": {
     "big_power": 6.0,
-    "ramp": 1.8,
+    "ramp": 2.8,
     "draw": 0.75,
     "etb": 0.3
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Mole Man, Moloid Master": {
    "total": 20.75,
@@ -855,17 +863,18 @@
    }
   },
   "Sakura-Tribe Elder": {
-   "total": 5.6,
-   "cmdr_fit": 1.0,
+   "total": 8.1,
+   "cmdr_fit": 3.0,
    "partners": 6,
-   "best_partner": "Evolution Sage",
+   "best_partner": "The Wise Mothman",
    "combo_piece": false,
-   "ramp_bonus": 1.301,
+   "ramp_bonus": 1.801,
    "themes": {
+    "ramp": 3.3,
     "landfall": 3.0,
-    "ramp": 1.8,
     "etb": 0.3
-   }
+   },
+   "ramp_kind": "land"
   },
   "Wave Goodbye": {
    "total": 47.25,
@@ -889,17 +898,18 @@
    "themes": {}
   },
   "Armored Scrapgorger": {
-   "total": 4.85,
-   "cmdr_fit": 1.0,
+   "total": 6.85,
+   "cmdr_fit": 3.0,
    "partners": 6,
    "best_partner": "The Wise Mothman",
    "combo_piece": false,
    "ramp_bonus": 1.301,
    "themes": {
+    "ramp": 2.8,
     "graveyard": 2.25,
-    "ramp": 1.8,
     "etb": 0.3
-   }
+   },
+   "ramp_kind": "creature"
   },
   "Into the Flood Maw": {
    "total": 1.75,
@@ -961,21 +971,22 @@
    "themes": {}
   },
   "Tato Farmer": {
-   "total": 15.85,
-   "cmdr_fit": 3.0,
+   "total": 16.85,
+   "cmdr_fit": 3.5,
    "partners": 13,
    "best_partner": "The Wise Mothman",
    "combo_piece": false,
-   "ramp_bonus": 1.301,
+   "ramp_bonus": 1.801,
    "themes": {
     "landfall": 6.0,
+    "ramp": 2.55,
     "graveyard": 2.25,
     "mill": 2.0,
-    "ramp": 1.8,
     "rad": 1.0,
     "type:Mutant": 1.0,
     "etb": 0.3
-   }
+   },
+   "ramp_kind": "land"
   },
   "Fetid Pools": {
    "total": 0.0,
@@ -1189,39 +1200,36 @@
    "themes": {}
   },
   "Boggart Trawler // Boggart Bog": {
-   "total": 2.6,
-   "cmdr_fit": 1.0,
-   "partners": 3,
-   "best_partner": "The Wise Mothman",
+   "total": 0.3,
+   "cmdr_fit": 0.0,
+   "partners": 2,
+   "best_partner": "Fathom Mage",
    "combo_piece": false,
-   "ramp_bonus": 1.301,
+   "ramp_bonus": 0.0,
    "themes": {
-    "ramp": 1.8,
     "etb": 0.3
    }
   },
   "Revitalizing Repast // Old-Growth Grove": {
-   "total": 22.55,
-   "cmdr_fit": 1.0,
-   "partners": 15,
+   "total": 20.25,
+   "cmdr_fit": 0.0,
+   "partners": 14,
    "best_partner": "Kami of Whispered Hopes",
    "combo_piece": false,
-   "ramp_bonus": 1.301,
+   "ramp_bonus": 0.0,
    "themes": {
     "counters_p1p1": 19.5,
-    "ramp": 1.8,
     "cast_noncreature": 0.75
    }
   },
   "Bridgeworks Battle // Tanglespan Bridgeworks": {
-   "total": 3.05,
-   "cmdr_fit": 1.0,
-   "partners": 2,
-   "best_partner": "The Wise Mothman",
+   "total": 0.75,
+   "cmdr_fit": 0.0,
+   "partners": 1,
+   "best_partner": "Flux Channeler",
    "combo_piece": false,
-   "ramp_bonus": 1.301,
+   "ramp_bonus": 0.0,
    "themes": {
-    "ramp": 1.8,
     "cast_noncreature": 0.75
    }
   }
@@ -1358,24 +1366,36 @@
    "Triskelion",
    "Vigor"
   ],
-  "commander_weight": 0.5,
+  "commander_base": 1.0,
+  "game_turns": 7,
   "curve_bonus": 1.301,
+  "land_bonus": 0.5,
   "cards": [
    "Animal Attendant",
    "Armored Scrapgorger",
    "Binding the Old Gods",
    "Birds of Paradise",
-   "Boggart Trawler // Boggart Bog",
-   "Bridgeworks Battle // Tanglespan Bridgeworks",
    "Bugenhagen, Wise Elder",
    "Farseek",
    "Incubation Druid",
    "Kami of Whispered Hopes",
    "Rampant Growth",
-   "Revitalizing Repast // Old-Growth Grove",
    "Sakura-Tribe Elder",
    "Tato Farmer"
-  ]
+  ],
+  "kinds": {
+   "Kami of Whispered Hopes": "creature",
+   "Birds of Paradise": "creature",
+   "Binding the Old Gods": "land",
+   "Animal Attendant": "creature",
+   "Farseek": "land",
+   "Incubation Druid": "creature",
+   "Rampant Growth": "land",
+   "Bugenhagen, Wise Elder": "creature",
+   "Sakura-Tribe Elder": "land",
+   "Armored Scrapgorger": "creature",
+   "Tato Farmer": "land"
+  }
  },
  "unmatched": [
   {
@@ -1741,6 +1761,25 @@
    ]
   },
   {
+   "a": "Kami of Whispered Hopes",
+   "b": "The Wise Mothman",
+   "score": 4.5,
+   "reasons": [
+    {
+     "tag": "counters_p1p1",
+     "producer": "The Wise Mothman",
+     "payoff": "Kami of Whispered Hopes",
+     "weight": 1.5
+    },
+    {
+     "tag": "ramp",
+     "producer": "Kami of Whispered Hopes",
+     "payoff": "The Wise Mothman",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
    "a": "Mariposa Military Base",
    "b": "The Wise Mothman",
    "score": 4.0,
@@ -1779,21 +1818,21 @@
    ]
   },
   {
-   "a": "Kami of Whispered Hopes",
+   "a": "Tato Farmer",
    "b": "The Wise Mothman",
-   "score": 4.0,
+   "score": 3.5,
    "reasons": [
     {
-     "tag": "counters_p1p1",
-     "producer": "The Wise Mothman",
-     "payoff": "Kami of Whispered Hopes",
-     "weight": 1.5
+     "tag": "mill",
+     "producer": "Tato Farmer",
+     "payoff": "The Wise Mothman",
+     "weight": 1.0
     },
     {
      "tag": "ramp",
-     "producer": "Kami of Whispered Hopes",
+     "producer": "Tato Farmer",
      "payoff": "The Wise Mothman",
-     "weight": 0.5
+     "weight": 0.75
     }
    ]
   },
@@ -1913,25 +1952,6 @@
      "producer": "Winding Constrictor",
      "payoff": "Fathom Mage",
      "weight": 0.15
-    }
-   ]
-  },
-  {
-   "a": "Tato Farmer",
-   "b": "The Wise Mothman",
-   "score": 3.0,
-   "reasons": [
-    {
-     "tag": "mill",
-     "producer": "Tato Farmer",
-     "payoff": "The Wise Mothman",
-     "weight": 1.0
-    },
-    {
-     "tag": "ramp",
-     "producer": "Tato Farmer",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
     }
    ]
   },
@@ -2535,6 +2555,84 @@
    ]
   },
   {
+   "a": "Birds of Paradise",
+   "b": "The Wise Mothman",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Birds of Paradise",
+     "payoff": "The Wise Mothman",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Animal Attendant",
+   "b": "The Wise Mothman",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Animal Attendant",
+     "payoff": "The Wise Mothman",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Incubation Druid",
+   "b": "The Wise Mothman",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Incubation Druid",
+     "payoff": "The Wise Mothman",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Bugenhagen, Wise Elder",
+   "b": "The Wise Mothman",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Bugenhagen, Wise Elder",
+     "payoff": "The Wise Mothman",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Sakura-Tribe Elder",
+   "b": "The Wise Mothman",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Sakura-Tribe Elder",
+     "payoff": "The Wise Mothman",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
+   "a": "Armored Scrapgorger",
+   "b": "The Wise Mothman",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Armored Scrapgorger",
+     "payoff": "The Wise Mothman",
+     "weight": 1.5
+    }
+   ]
+  },
+  {
    "a": "Mole Man, Moloid Master",
    "b": "Tato Farmer",
    "score": 2.75,
@@ -2734,6 +2832,32 @@
      "tag": "type:Mutant",
      "producer": "The Wise Mothman",
      "payoff": "Master Biomancer",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Farseek",
+   "b": "The Wise Mothman",
+   "score": 2.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Farseek",
+     "payoff": "The Wise Mothman",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Rampant Growth",
+   "b": "The Wise Mothman",
+   "score": 2.0,
+   "reasons": [
+    {
+     "tag": "ramp",
+     "producer": "Rampant Growth",
+     "payoff": "The Wise Mothman",
      "weight": 1.0
     }
    ]
@@ -5924,162 +6048,6 @@
      "producer": "Ray Fillet, Wave Warrior",
      "payoff": "Into the Flood Maw",
      "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Animal Attendant",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Animal Attendant",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Armored Scrapgorger",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Armored Scrapgorger",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Binding the Old Gods",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Binding the Old Gods",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Birds of Paradise",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Birds of Paradise",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Boggart Trawler // Boggart Bog",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Boggart Trawler // Boggart Bog",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Bridgeworks Battle // Tanglespan Bridgeworks",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Bridgeworks Battle // Tanglespan Bridgeworks",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Bugenhagen, Wise Elder",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Bugenhagen, Wise Elder",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Farseek",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Farseek",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Incubation Druid",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Incubation Druid",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Rampant Growth",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Rampant Growth",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Revitalizing Repast // Old-Growth Grove",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Revitalizing Repast // Old-Growth Grove",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Sakura-Tribe Elder",
-   "b": "The Wise Mothman",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "ramp",
-     "producer": "Sakura-Tribe Elder",
-     "payoff": "The Wise Mothman",
-     "weight": 0.5
     }
    ]
   },
@@ -10154,18 +10122,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Mutant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Mutant"
-   },
-   {
     "tag": "type:Insect",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Insect"
+   },
+   {
+    "tag": "type:Mutant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Mutant"
    }
   ],
   "Agent Frank Horrigan": [
@@ -10277,18 +10245,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Mutant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Mutant"
-   },
-   {
     "tag": "type:Lizard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Lizard"
+   },
+   {
+    "tag": "type:Mutant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Mutant"
    }
   ],
   "Kami of Whispered Hopes": [
@@ -10488,18 +10456,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Fungus",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Fungus"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Fungus",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Fungus"
    }
   ],
   "Tezzeret's Gambit": [
@@ -10563,18 +10531,18 @@
     "evidence": "~ enters with x +1/+1 counters on it."
    },
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Vigilance",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Vigilance"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -10584,18 +10552,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Mutant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Mutant"
-   },
-   {
     "tag": "type:Bear",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Bear"
+   },
+   {
+    "tag": "type:Mutant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Mutant"
    }
   ],
   "Corpsejack Menace": [
@@ -10685,18 +10653,18 @@
   "Drowned Catacomb": [],
   "Evolution Sage": [
    {
-    "tag": "proliferate",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Proliferate"
-   },
-   {
     "tag": "landfall",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Landfall"
+   },
+   {
+    "tag": "proliferate",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Proliferate"
    },
    {
     "tag": "counters_p1p1",
@@ -10857,13 +10825,6 @@
     "evidence": "each opponent mills three cards, then you may cast a spell from each opponent's…"
    },
    {
-    "tag": "graveyard",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Mill"
-   },
-   {
     "tag": "token_artifact",
     "side": "P",
     "scope": "yours",
@@ -10876,6 +10837,13 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Investigate"
+   },
+   {
+    "tag": "graveyard",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Mill"
    },
    {
     "tag": "cast_noncreature",
@@ -11340,18 +11308,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Crab",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Crab"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Crab",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Crab"
    }
   ],
   "Morphic Pool": [],
@@ -11728,6 +11696,13 @@
     "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
    },
    {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Landfall"
+   },
+   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -11740,13 +11715,6 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
-   },
-   {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
    },
    {
     "tag": "etb",
@@ -11800,18 +11768,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Fish",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Fish"
-   },
-   {
     "tag": "type:Mutant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mutant"
+   },
+   {
+    "tag": "type:Fish",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Fish"
    }
   ],
   "Reanimate": [
@@ -11890,18 +11858,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Wave Goodbye": [
@@ -11937,18 +11905,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Phyrexian",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Phyrexian"
-   },
-   {
     "tag": "type:Beast",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Beast"
+   },
+   {
+    "tag": "type:Phyrexian",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Phyrexian"
    }
   ],
   "Into the Flood Maw": [
@@ -12157,11 +12125,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bird",
+    "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Bird"
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "type:Horror",
@@ -12171,11 +12139,11 @@
     "evidence": "is a Horror"
    },
    {
-    "tag": "type:Phyrexian",
+    "tag": "type:Bird",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Phyrexian"
+    "evidence": "is a Bird"
    }
   ],
   "Triskelion": [
@@ -12515,18 +12483,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
    },
    {
     "tag": "graveyard",
@@ -12692,7 +12660,7 @@
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.183
+    "cut_score": 0.198
    },
    {
     "name": "Dreamtide Whale",
@@ -12713,6 +12681,15 @@
     "cut_score": 0.278
    },
    {
+    "name": "Evolution Sage",
+    "cmc": 3.0,
+    "synergy": 17.55,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.325
+   },
+   {
     "name": "Ripples of Potential",
     "cmc": 2.0,
     "synergy": 13.0,
@@ -12720,15 +12697,6 @@
     "combo_piece": false,
     "roles": [],
     "cut_score": 0.325
-   },
-   {
-    "name": "Evolution Sage",
-    "cmc": 3.0,
-    "synergy": 17.55,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.341
    },
    {
     "name": "Psychic Corrosion",
@@ -12740,18 +12708,18 @@
     "cut_score": 0.357
    },
    {
-    "name": "Mole Man, Moloid Master",
-    "cmc": 3.0,
-    "synergy": 20.75,
-    "cmdr_fit": 2.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.373
-   },
-   {
     "name": "Master Biomancer",
     "cmc": 4.0,
     "synergy": 29.8,
+    "cmdr_fit": 2.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.389
+   },
+   {
+    "name": "Mole Man, Moloid Master",
+    "cmc": 3.0,
+    "synergy": 20.75,
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
@@ -12764,7 +12732,7 @@
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.389
+    "cut_score": 0.405
    },
    {
     "name": "Herald of Secret Streams",
@@ -12791,7 +12759,7 @@
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.468
+    "cut_score": 0.452
    },
    {
     "name": "Flux Channeler",
@@ -12805,11 +12773,11 @@
    {
     "name": "Revitalizing Repast // Old-Growth Grove",
     "cmc": 1.0,
-    "synergy": 22.55,
-    "cmdr_fit": 1.0,
+    "synergy": 20.25,
+    "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.714
+    "cut_score": 0.587
    },
    {
     "name": "Duskshell Crawler",
@@ -12823,18 +12791,6 @@
   ],
   "role_cards": [
    {
-    "name": "Massacre Girl",
-    "cmc": 5.0,
-    "synergy": 2.55,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "board-wipe",
-     "removal"
-    ],
-    "cut_score": -0.325
-   },
-   {
     "name": "Vicious Rivalry",
     "cmc": 4.0,
     "synergy": 0.75,
@@ -12844,20 +12800,32 @@
      "board-wipe",
      "removal"
     ],
-    "cut_score": -0.325
+    "cut_score": -0.31
+   },
+   {
+    "name": "Massacre Girl",
+    "cmc": 5.0,
+    "synergy": 2.55,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "board-wipe",
+     "removal"
+    ],
+    "cut_score": -0.294
    },
    {
     "name": "Binding the Old Gods",
     "cmc": 4.0,
-    "synergy": 2.53,
-    "cmdr_fit": 1.0,
+    "synergy": 2.03,
+    "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
      "ramp",
      "removal",
      "tutor"
     ],
-    "cut_score": -0.262
+    "cut_score": -0.23
    },
    {
     "name": "Guardian Project",
@@ -12868,6 +12836,28 @@
     "roles": [
      "card-advantage",
      "draw"
+    ],
+    "cut_score": -0.183
+   },
+   {
+    "name": "Boggart Trawler // Boggart Bog",
+    "cmc": 3.0,
+    "synergy": 0.3,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "graveyard-hate"
+    ],
+    "cut_score": -0.183
+   },
+   {
+    "name": "Bridgeworks Battle // Tanglespan Bridgeworks",
+    "cmc": 3.0,
+    "synergy": 0.75,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "removal"
     ],
     "cut_score": -0.167
    },
@@ -12885,28 +12875,6 @@
     "cut_score": -0.127
    },
    {
-    "name": "Boggart Trawler // Boggart Bog",
-    "cmc": 3.0,
-    "synergy": 2.6,
-    "cmdr_fit": 1.0,
-    "combo_piece": false,
-    "roles": [
-     "graveyard-hate"
-    ],
-    "cut_score": -0.087
-   },
-   {
-    "name": "Bridgeworks Battle // Tanglespan Bridgeworks",
-    "cmc": 3.0,
-    "synergy": 3.05,
-    "cmdr_fit": 1.0,
-    "combo_piece": false,
-    "roles": [
-     "removal"
-    ],
-    "cut_score": -0.04
-   },
-   {
     "name": "Assassin's Trophy",
     "cmc": 2.0,
     "synergy": 0.75,
@@ -12915,7 +12883,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": -0.024
+    "cut_score": -0.008
    },
    {
     "name": "Collective Resistance",
@@ -12926,7 +12894,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": -0.024
+    "cut_score": -0.008
    },
    {
     "name": "Atomize",
@@ -12938,6 +12906,28 @@
      "removal"
     ],
     "cut_score": 0.024
+   },
+   {
+    "name": "Glen Elendra Guardian",
+    "cmc": 3.0,
+    "synergy": 7.55,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "counterspell"
+    ],
+    "cut_score": 0.04
+   },
+   {
+    "name": "Alpha Deathclaw",
+    "cmc": 6.0,
+    "synergy": 17.05,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.048
    },
    {
     "name": "Tezzeret's Gambit",
@@ -12952,17 +12942,6 @@
     "cut_score": 0.056
    },
    {
-    "name": "Alpha Deathclaw",
-    "cmc": 6.0,
-    "synergy": 17.05,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "removal"
-    ],
-    "cut_score": 0.063
-   },
-   {
     "name": "Into the Flood Maw",
     "cmc": 1.0,
     "synergy": 1.75,
@@ -12971,30 +12950,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.079
-   },
-   {
-    "name": "Glen Elendra Guardian",
-    "cmc": 3.0,
-    "synergy": 7.55,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "counterspell"
-    ],
-    "cut_score": 0.087
-   },
-   {
-    "name": "Birds of Paradise",
-    "cmc": 1.0,
-    "synergy": 2.6,
-    "cmdr_fit": 1.0,
-    "combo_piece": false,
-    "roles": [
-     "mana-dork",
-     "ramp"
-    ],
-    "cut_score": 0.127
+    "cut_score": 0.111
    },
    {
     "name": "Nuclear Fallout",
@@ -13011,33 +12967,33 @@
    {
     "name": "Armored Scrapgorger",
     "cmc": 2.0,
-    "synergy": 4.85,
-    "cmdr_fit": 1.0,
+    "synergy": 6.85,
+    "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
      "graveyard-hate",
      "mana-dork",
      "ramp"
     ],
-    "cut_score": 0.167
+    "cut_score": 0.183
    },
    {
-    "name": "Sakura-Tribe Elder",
-    "cmc": 2.0,
-    "synergy": 5.6,
-    "cmdr_fit": 1.0,
+    "name": "Birds of Paradise",
+    "cmc": 1.0,
+    "synergy": 4.6,
+    "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
-     "ramp",
-     "tutor"
+     "mana-dork",
+     "ramp"
     ],
-    "cut_score": 0.183
+    "cut_score": 0.19
    },
    {
     "name": "Farseek",
     "cmc": 2.0,
-    "synergy": 6.05,
-    "cmdr_fit": 1.0,
+    "synergy": 7.55,
+    "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [
      "ramp",
@@ -13048,8 +13004,8 @@
    {
     "name": "Rampant Growth",
     "cmc": 2.0,
-    "synergy": 6.05,
-    "cmdr_fit": 1.0,
+    "synergy": 7.55,
+    "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [
      "ramp",
@@ -13082,10 +13038,33 @@
     "cut_score": 0.214
    },
    {
+    "name": "Stubborn Denial",
+    "cmc": 1.0,
+    "synergy": 6.75,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "counterspell"
+    ],
+    "cut_score": 0.222
+   },
+   {
+    "name": "Sakura-Tribe Elder",
+    "cmc": 2.0,
+    "synergy": 8.1,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.246
+   },
+   {
     "name": "Bugenhagen, Wise Elder",
     "cmc": 2.0,
-    "synergy": 9.35,
-    "cmdr_fit": 1.0,
+    "synergy": 11.35,
+    "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
      "card-advantage",
@@ -13098,8 +13077,8 @@
    {
     "name": "Tato Farmer",
     "cmc": 3.0,
-    "synergy": 15.85,
-    "cmdr_fit": 3.0,
+    "synergy": 16.85,
+    "cmdr_fit": 3.5,
     "combo_piece": false,
     "roles": [
      "ramp"
@@ -13116,17 +13095,6 @@
      "removal"
     ],
     "cut_score": 0.278
-   },
-   {
-    "name": "Stubborn Denial",
-    "cmc": 1.0,
-    "synergy": 6.75,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "counterspell"
-    ],
-    "cut_score": 0.286
    },
    {
     "name": "Mirelurk Queen",
@@ -13175,18 +13143,6 @@
     "cut_score": 0.452
    },
    {
-    "name": "Incubation Druid",
-    "cmc": 2.0,
-    "synergy": 16.1,
-    "cmdr_fit": 1.0,
-    "combo_piece": false,
-    "roles": [
-     "mana-dork",
-     "ramp"
-    ],
-    "cut_score": 0.452
-   },
-   {
     "name": "Wave Goodbye",
     "cmc": 4.0,
     "synergy": 47.25,
@@ -13211,6 +13167,18 @@
     "cut_score": 0.492
    },
    {
+    "name": "Incubation Druid",
+    "cmc": 2.0,
+    "synergy": 18.1,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.5
+   },
+   {
     "name": "Fathom Mage",
     "cmc": 4.0,
     "synergy": 54.8,
@@ -13221,17 +13189,6 @@
      "draw"
     ],
     "cut_score": 0.532
-   },
-   {
-    "name": "Scavenging Ooze",
-    "cmc": 2.0,
-    "synergy": 22.05,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "graveyard-hate"
-    ],
-    "cut_score": 0.563
    },
    {
     "name": "Pensive Professor",
@@ -13246,16 +13203,15 @@
     "cut_score": 0.579
    },
    {
-    "name": "Animal Attendant",
+    "name": "Scavenging Ooze",
     "cmc": 2.0,
-    "synergy": 22.1,
-    "cmdr_fit": 1.0,
+    "synergy": 22.05,
+    "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
-     "mana-dork",
-     "ramp"
+     "graveyard-hate"
     ],
-    "cut_score": 0.595
+    "cut_score": 0.579
    },
    {
     "name": "Corpsejack Menace",
@@ -13292,6 +13248,18 @@
     "cut_score": 0.659
    },
    {
+    "name": "Animal Attendant",
+    "cmc": 2.0,
+    "synergy": 24.1,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.659
+   },
+   {
     "name": "Repulsive Mutation",
     "cmc": 2.0,
     "synergy": 26.25,
@@ -13316,8 +13284,8 @@
    {
     "name": "Kami of Whispered Hopes",
     "cmc": 3.0,
-    "synergy": 73.8,
-    "cmdr_fit": 4.0,
+    "synergy": 74.3,
+    "cmdr_fit": 4.5,
     "combo_piece": true,
     "roles": [
      "mana-dork",

@@ -282,6 +282,30 @@ class TestRamp:
         assert high['cards']['Mind Stone']['total'] > low['cards']['Mind Stone']['total']
         assert low['cards']['Mind Stone']['ramp_bonus'] == 0
 
+    def test_cheap_ramp_best_on_four_drop_commander(self):
+        two = _card('Two Rock', 'Artifact', '{T}: Add {C}.', cmc=2)
+        three = _card('Three Rock', 'Artifact', '{T}: Add {C}.', cmc=3)
+        four = _card('Four Rock', 'Artifact', '{T}: Add {C}.', cmc=4)
+        r = compute_synergy([self._cmdr(4), two, three, four], 'Big Boss')
+        fit = {n: r['cards'][n]['cmdr_fit'] for n in ('Two Rock', 'Three Rock', 'Four Rock')}
+        assert fit['Two Rock'] > fit['Three Rock'] > fit['Four Rock'] == 0
+
+    def test_creature_ramp_gets_more_commander_synergy(self):
+        r = compute_synergy([self._cmdr(4), self.DORK, _card('One Rock', 'Artifact', '{T}: Add {C}.', cmc=1)],
+                            'Big Boss')
+        assert r['cards']['Llanowar Elves']['cmdr_fit'] > r['cards']['One Rock']['cmdr_fit']
+
+    def test_land_ramp_better_in_longer_games(self):
+        from synergy import ramp_kind
+        growth = _card('Rampant Growth', 'Sorcery', 'Search your library for a basic land card, put that card '
+                       'onto the battlefield tapped, then shuffle.', cmc=2)
+        assert ramp_kind(growth) == 'land' and ramp_kind(self.ROCK) == 'artifact' and ramp_kind(self.DORK) == 'creature'
+        views = [self._cmdr(4), growth, self.ROCK]
+        b1 = compute_synergy(views, 'Big Boss', bracket=1)['cards']
+        b4 = compute_synergy(views, 'Big Boss', bracket=4)['cards']
+        assert b1['Rampant Growth']['ramp_bonus'] > b4['Rampant Growth']['ramp_bonus']
+        assert b1['Mind Stone']['ramp_bonus'] == b4['Mind Stone']['ramp_bonus']
+
     def test_ramp_is_not_a_combo_piece(self):
         r = compute_synergy([self._cmdr(7), self.DORK], 'Big Boss')
         assert not r['cards']['Llanowar Elves']['combo_piece']

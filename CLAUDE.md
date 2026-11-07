@@ -159,7 +159,10 @@ Reads keywords, types and triggers, tags each card with what it **produces** and
 - Counter axes are separate: +1/+1, -1/-1, rad. Rad counters also count as mill. Proliferate feeds all of them.
 - Regex reading of rules text misses unusual wording. Check surprising scores with `--card` / `--features` and the oracle text before trusting them.
 - Known combos from Commander Spellbook add a pair bonus between every two pieces (2.0). Combos that win the game (damage, life loss, opponent mill, extra turns, "win the game") get an extra bonus that drops fast with the deck's target bracket: +6.0 in bracket 4, +2.1 in 3, +0.74 in 2, +0.26 in 1. Combo pieces are never cut candidates.
-- Ramp is worth more with an expensive commander and a high curve: each ramp card pairs with the commander for +0.5 per commander mana value above 3 (max 2, then x2 commander bonus), and gets a curve bonus of 0.25 x (average mana value - 2.5, capped 0..2) x the number of 5+ mana spells.
+- Ramp scoring (spell // land MDFCs are land drops, not ramp):
+  - Commander pair: base 1.0 for a 4-MV commander (+0.5 per MV above, max 2.5, 0 at MV 3 or less), x1.0 if the ramp costs <= commander MV - 2 (commander a turn early), x0.5 at MV - 1, 0 otherwise. Creature ramp x1.5. Then the x2 commander bonus.
+  - Curve: 0.25 x (average MV - 2.5, capped 0..2) x number of 5+ MV spells, per ramp card.
+  - Land ramp (lands onto the battlefield survive board wipes): +0.25 per expected turn above 5. Expected game length by bracket: 1 = 10 turns, 2 = 9, 3 = 7, 4 = 5.
 - Never claim two cards synergise without running `synergy.py --card`, or reading both cards' oracle text.
 
 ## Combos (`combos.py`)

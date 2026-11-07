@@ -48,11 +48,23 @@ COMBO_WEIGHT = 2.0            # per pair of pieces in a known combo (Commander S
 WINCON_BONUS = 6.0
 WINCON_DECAY = 0.35
 # Ramp: worth more with an expensive commander and a high curve.
-#   commander pair = RAMP_CMDR_PER_MV per mana value above 3 (max RAMP_CMDR_MAX), then x2 commander bonus
+#   commander pair = base(commander MV) * timing * creature bonus, then x2 commander bonus
+#     base   = RAMP_CMDR_BASE + RAMP_CMDR_PER_MV per MV above 4 (0 for MV <= 3, max RAMP_CMDR_MAX)
+#     timing = 1.0 if the ramp costs <= commander MV - 2 (commander a turn early), 0.5 at MV - 1, else 0
+#     creature ramp x RAMP_CREATURE_BONUS
 #   curve bonus    = RAMP_CURVE_WEIGHT * (average mana value - 2.5, 0..2) * number of 5+ mana spells
+#   land ramp      = RAMP_LAND_PER_TURN * (expected game length in turns - 5): lands survive board wipes
+RAMP_CMDR_BASE = 1.0
 RAMP_CMDR_PER_MV = 0.5
-RAMP_CMDR_MAX = 2.0
+RAMP_CMDR_MAX = 2.5
+RAMP_CREATURE_BONUS = 1.5
 RAMP_CURVE_WEIGHT = 0.25
+RAMP_LAND_PER_TURN = 0.25
+# Expected game length per bracket (CLAUDE.md: games last 9+, 8+, 6+, 4+ turns)
+GAME_TURNS = {1: 10, 2: 9, 3: 7, 4: 5}
+LAND_RAMP_PATTERN = re.compile(
+    r"search your library for [^.]*\b(?:lands?|forests?|islands?|swamps?|mountains?|plains)\b[^.]*onto the battlefield|put [^.]*\blands? cards?[^.]*onto the battlefield"
+    r"|play an additional land|play (?:lands|land cards) from your graveyard|return [^.]*\blands? cards?[^.]*to the battlefield")
 RAMP_EXPENSIVE_MV = 5
 RAMP_PATTERN = re.compile(
     r"\badd (?:\{|one mana|two mana|three mana|x mana|an amount of|mana)|search your library for [^.]*\blands?\b"
@@ -140,6 +152,7 @@ def card_view(d, otags=None):
         'name': d['name'],
         'oracle': oracle or '',
         'front_types': {t for t in MAIN_TYPES if t in front},
+        'back_land': bool(d.get('card_faces')) and any('Land' in tl for tl in type_lines[1:]),
         'subtypes': subtypes,
         'keywords': set(d.get('keywords') or []),
         'power': power,
@@ -540,21 +553,58 @@ def is_ramp(view):
         return False
     if view['otags'] & {'ramp', 'mana-dork'}:
         return True
+    if view.get('back_land'):
+        return False  # spell // land MDFC: the back face is a land drop, not ramp
     return bool(RAMP_PATTERN.search(normalize_text(view)))
 
 
-def ramp_context(views, commander_name):
-    """How much the deck wants ramp: commander pair weight and per-card curve bonus."""
+def ramp_kind(view):
+    """'land' (puts lands onto the battlefield: survives wipes), 'creature' or 'artifact'
+    (mana from a permanent that a wipe kills), or 'other' (rituals, treasure...)."""
+    text = normalize_text(view)
+    if LAND_RAMP_PATTERN.search(text):
+        return 'land'
+    if 'Creature' in view['front_types']:
+        return 'creature'
+    if view['front_types'] & {'Artifact', 'Enchantment'}:
+        return 'artifact'
+    return 'other'
+
+
+def ramp_timing(ramp_mv, cmdr_mv):
+    """1.0 if this ramp lets the commander come down a turn early, 0.5 if barely, else 0."""
+    if ramp_mv <= cmdr_mv - 2:
+        return 1.0
+    if ramp_mv <= cmdr_mv - 1:
+        return 0.5
+    return 0.0
+
+
+def ramp_context(views, commander_name, bracket=None):
+    """How much the deck wants ramp: commander base weight, curve bonus, land-ramp bonus."""
     spells = [v for v in views if 'Land' not in v['front_types'] and v['name'] != commander_name]
     avg_mv = sum(v['cmc'] for v in spells) / len(spells) if spells else 0.0
     expensive = sorted(v['name'] for v in spells if v['cmc'] >= RAMP_EXPENSIVE_MV)
     cmdr = next((v for v in views if v['name'] == commander_name), None)
     cmdr_mv = cmdr['cmc'] if cmdr else 0
-    cmdr_weight = min(RAMP_CMDR_MAX, RAMP_CMDR_PER_MV * max(0, cmdr_mv - 3)) if cmdr else 0.0
+    base = 0.0
+    if cmdr and cmdr_mv >= 4:
+        base = min(RAMP_CMDR_MAX, RAMP_CMDR_BASE + RAMP_CMDR_PER_MV * (cmdr_mv - 4))
     curve_factor = min(2.0, max(0.0, avg_mv - 2.5))
+    b = min(4, max(1, bracket if bracket is not None else DEFAULT_BRACKET))
+    turns = GAME_TURNS[b]
     return {'avg_mv': round(avg_mv, 2), 'commander_mv': cmdr_mv, 'expensive': expensive,
-            'commander_weight': round(cmdr_weight, 3),
-            'curve_bonus': round(RAMP_CURVE_WEIGHT * curve_factor * len(expensive), 3)}
+            'commander_base': round(base, 3), 'game_turns': turns,
+            'curve_bonus': round(RAMP_CURVE_WEIGHT * curve_factor * len(expensive), 3),
+            'land_bonus': round(RAMP_LAND_PER_TURN * max(0, turns - 5), 3)}
+
+
+def ramp_commander_weight(view, ramp):
+    """Commander-pair weight for one ramp card (before the x2 commander bonus)."""
+    w = ramp['commander_base'] * ramp_timing(view['cmc'], ramp['commander_mv'])
+    if 'Creature' in view['front_types']:
+        w *= RAMP_CREATURE_BONUS
+    return round(w, 3)
 
 
 def compute_synergy(views, commander_name=None, combos=None, bracket=None):
@@ -598,13 +648,18 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None):
     bonus = {main_theme: MAIN_THEME_BONUS, subtheme: SUBTHEME_BONUS}
 
     combo_matches = _combo_matches(views, combos, bracket)
-    ramp = ramp_context(views, commander_name)
-    ramp_cards = sorted(v['name'] for v in views if is_ramp(v) and v['name'] != commander_name)
-    if ramp['commander_weight'] > 0:
-        for rn in ramp_cards:
+    ramp = ramp_context(views, commander_name, bracket)
+    ramp_views = {v['name']: v for v in views if is_ramp(v) and v['name'] != commander_name}
+    ramp_cards = sorted(ramp_views)
+    ramp_kinds = {n: ramp_kind(v) for n, v in ramp_views.items()}
+    for rn, rv in ramp_views.items():
+        w = ramp_commander_weight(rv, ramp)
+        if w > 0:
+            kind = 'creature ramp' if 'Creature' in rv['front_types'] else 'ramp'
             combo_matches[('ramp', rn)] = {
-                'tag': 'ramp', 'producer': rn, 'payoff': commander_name, 'weight': ramp['commander_weight'],
-                'producer_evidence': 'ramp', 'payoff_evidence': f"commander costs {ramp['commander_mv']:g}"}
+                'tag': 'ramp', 'producer': rn, 'payoff': commander_name, 'weight': w,
+                'producer_evidence': f"{kind}, costs {rv['cmc']:g}",
+                'payoff_evidence': f"commander costs {ramp['commander_mv']:g}"}
     combo_pieces = {n for m in combo_matches.values() if m['tag'].startswith('combo')
                     for n in (m['producer'], m['payoff'])}
 
@@ -641,10 +696,12 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None):
             for r in p['reasons']:
                 c['themes'][r['tag']] += r['weight']
     for rn in ramp_cards:
-        cards[rn]['ramp_bonus'] = ramp['curve_bonus']
-        cards[rn]['total'] += ramp['curve_bonus']
-        if ramp['curve_bonus']:
-            cards[rn]['themes']['ramp'] += ramp['curve_bonus']
+        bonus = ramp['curve_bonus'] + (ramp['land_bonus'] if ramp_kinds[rn] == 'land' else 0.0)
+        cards[rn]['ramp_bonus'] = round(bonus, 3)
+        cards[rn]['ramp_kind'] = ramp_kinds[rn]
+        cards[rn]['total'] += bonus
+        if bonus:
+            cards[rn]['themes']['ramp'] += bonus
     for c in cards.values():
         c['total'] = round(c['total'], 2)
         c['themes'] = {t: round(w, 2) for t, w in sorted(c['themes'].items(), key=lambda kv: -kv[1])}
@@ -674,7 +731,7 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None):
                   for (a, b), p in sorted(pairs.items(), key=lambda kv: -kv[1]['score'])],
         'cards': cards,
         'combos': list(combos or []),
-        'ramp': dict(ramp, cards=ramp_cards),
+        'ramp': dict(ramp, cards=ramp_cards, kinds=ramp_kinds),
         'unmatched': unmatched,
     }
 
@@ -777,9 +834,16 @@ def print_report(result, views, top=20):
     b = result.get('bracket')
     print(f"Target bracket: {b if b is not None else f'unknown (scored as {DEFAULT_BRACKET})'}")
     r = result['ramp']
-    print(f"Ramp: {len(r['cards'])} cards | commander MV {r['commander_mv']:g} -> +{r['commander_weight']:g} per ramp card"
-          f" (x{COMMANDER_BONUS:g} commander) | avg MV {r['avg_mv']}, {len(r['expensive'])} spells at MV"
-          f" {RAMP_EXPENSIVE_MV}+ -> curve bonus +{r['curve_bonus']:g} per ramp card\n")
+    kinds = defaultdict(int)
+    for k in r['kinds'].values():
+        kinds[k] += 1
+    print(f"Ramp: {len(r['cards'])} cards ({', '.join(f'{n} {k}' for k, n in sorted(kinds.items()))})")
+    print(f"  commander MV {r['commander_mv']:g}: up to +{r['commander_base']:g} per ramp card costing"
+          f" <= {r['commander_mv'] - 2:g} (half at {r['commander_mv'] - 1:g}), creature ramp x{RAMP_CREATURE_BONUS:g},"
+          f" then x{COMMANDER_BONUS:g} commander")
+    print(f"  curve: avg MV {r['avg_mv']}, {len(r['expensive'])} spells at MV {RAMP_EXPENSIVE_MV}+"
+          f" -> +{r['curve_bonus']:g} per ramp card")
+    print(f"  land ramp: ~{r['game_turns']} turn games -> +{r['land_bonus']:g} per land-ramp card\n")
     print("--- THEMES (producer -> payoff synergy) ---")
     for t in result['themes'][:10]:
         mark = ' [MAIN x%.2g]' % MAIN_THEME_BONUS if t['tag'] == result['main_theme'] else (
