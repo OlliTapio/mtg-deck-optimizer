@@ -3,7 +3,7 @@
 # archidekt-version: 2026-03-17T21:17:41.771263Z
 
 # Paired in cuts.txt
-The Mending of Dominaria -> Mole Man, Moloid Master  # msh, buy EUR2.86
+The Mending of Dominaria -> Mole Man, Moloid Master [buy]  # msh, buy EUR2.86
 
 # From the local list (no pairing recorded in cuts.txt)
 - Elvish Rejuvenator
@@ -17,10 +17,10 @@ The Mending of Dominaria -> Mole Man, Moloid Master  # msh, buy EUR2.86
 - Vengeful Regrowth
 + Arid Archway
 + Colossal Rattlewurm
-+ Desert Warfare
-+ Evendo Brushrazer
++ Desert Warfare [buy]
++ Evendo Brushrazer [buy]
 + Gruul Turf
-+ Hedge Shredder
-+ Horizon Explorer
++ Hedge Shredder [buy]
++ Horizon Explorer [buy]
 + 2x Plains
 + Rampant Growth

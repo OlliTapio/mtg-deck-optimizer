@@ -65,3 +65,21 @@ def test_proposed_text_applies_swaps(tmp_path):
     assert new['Forest'] == 3 and new['Swamp'] == 2
     assert '1x Hardened Scales (ktk) 133 [Proposed]' in text
     assert sum(new.values()) == sum(counts.values())
+
+
+def test_buy_tag_and_stages(tmp_path):
+    from swaps import end_counts, stage
+    counts, _ = _setup(tmp_path)
+    (tmp_path / 'swaps.txt').write_text("# archidekt-version: v1\n"
+                                        "Rampant Growth -> Hardened Scales [buy]  # counters\n"
+                                        "Sol Ring -> Nature's Lore\n")
+    swaps = parse_swaps(str(tmp_path / 'swaps.txt'))
+    assert swaps[0]['buy'] and swaps[0]['in'] == ('Hardened Scales', 1) and swaps[0]['reason'] == 'counters'
+    assert not swaps[1]['buy']
+    assert [stage(s, counts, unchanged=True) for s in swaps] == ['buy', 'ready']
+    end = end_counts(counts, swaps, unchanged=True)
+    assert end['Hardened Scales'] == 1 and end['Rampant Growth'] == 0
+    assert sum(end.values()) == sum(counts.values())
+    counts['Sol Ring'] = 0
+    counts["Nature's Lore"] = 1
+    assert stage(swaps[1], counts) == 'done'

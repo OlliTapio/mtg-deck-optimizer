@@ -12,7 +12,8 @@ python3 archidekt.py pull --all                 # re-pull every deck with a sour
 python3 archidekt.py search "Deck name"         # find public decks
 
 # Proposed swaps (decks/<deck>/swaps.txt) vs the Archidekt list
-python3 swaps.py decks/<deck>                          # pending / done / stale swaps
+python3 swaps.py decks/<deck>                          # physical status vs end status, swaps by stage
+python3 swaps.py --all                                 # overview: every deck with swaps, cards to buy, EUR
 python3 swaps.py decks/<deck> --init                   # start a swaps.txt
 python3 swaps.py decks/<deck> --write                  # decks/<deck>/proposed.txt = Archidekt + open swaps, for the other tools
 python3 swaps.py decks/<deck> --prune                  # after a re-pull: drop swaps done on Archidekt
@@ -213,11 +214,17 @@ Each deck has three lists:
 - **`maybelist.txt`** — the Archidekt maybeboard (and any other category left out of the deck). Also written only by the pull.
 - **`swaps.txt`** — swaps proposed here, waiting for the owner to make them on Archidekt. Every swap we agree on goes here (`Out -> In  # reason`), not into `decklist.txt`.
 
+Design: desired-state reconciliation. Archidekt mirrors the physical deck in the box (**physical status**, only ever read by pulling). Archidekt + every open swap is the **end status**. Each swap waits on the physical world and moves through stages:
+- **to buy** — marked `[buy]` (`Out -> In [buy]  # reason`): the card has to be acquired first. Remove the mark when it arrives.
+- **ready** — card in hand: swap it in the box, then on Archidekt.
+- **done** — detected when a pull shows the change on Archidekt. Never set by hand.
+
 Workflow:
 1. Pull: `archidekt.py pull --all` (or one deck). When Archidekt and a local file differ, Archidekt wins.
-2. Propose: add swaps to `swaps.txt` (`swaps.py decks/<deck> --init` starts one). Prefer cards from `maybelist.txt` when they fit.
+2. Propose: add swaps to `swaps.txt` (`swaps.py decks/<deck> --init` starts one), with `[buy]` on cards not yet owned. Prefer cards from `maybelist.txt` when they fit.
 3. Evaluate: `swaps.py decks/<deck> --write`, then run `deck_analyzer.py`, `synergy.py`, `combos.py` on `decks/<deck>/proposed.txt` (gitignored, regenerate it after editing swaps).
-4. After the owner updates Archidekt: pull, then `swaps.py decks/<deck> --prune` to drop the swaps that are done.
+4. Present: `swaps.py decks/<deck>` shows physical vs end status and what to buy; `swaps.py --all` for every deck.
+5. After the owner swaps cards and updates Archidekt: pull, then `swaps.py decks/<deck> --prune` to drop the swaps that are done.
 
 ## Deck folder structure
 Each deck lives in `decks/<name>/` with:

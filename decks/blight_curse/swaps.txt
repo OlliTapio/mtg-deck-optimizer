@@ -26,24 +26,24 @@
 - Terramorphic Expanse
 - Vraska, Betrayal's Sting
 + Ammit Eternal
-+ Birds of Paradise
-+ Blight Rot
-+ Blood Crypt
-+ Boggart Trawler
-+ Contagion Engine
-+ Demolition Field
-+ Druid of Purification
-+ Fire-Lit Thicket
-+ Generous Patron
-+ Graven Cairns
-+ Grim Affliction
-+ Karn's Bastion
-+ Nest of Scarabs
-+ Obelisk Spider
-+ Reliquary Tower
++ Birds of Paradise [buy]
++ Blight Rot [buy]
++ Blood Crypt [buy]
++ Boggart Trawler [buy]
++ Contagion Engine [buy]
++ Demolition Field [buy]
++ Druid of Purification [buy]
++ Fire-Lit Thicket [buy]
++ Generous Patron [buy]
++ Graven Cairns [buy]
++ Grim Affliction [buy]
++ Karn's Bastion [buy]
++ Nest of Scarabs [buy]
++ Obelisk Spider [buy]
++ Reliquary Tower [buy]
 + Scuzzback Scrounger
-+ Sundering Eruption // Volcanic Fissure
-+ Thirsting Roots
-+ Twilight Mire
-+ Unnatural Restoration
++ Sundering Eruption // Volcanic Fissure [buy]
++ Thirsting Roots [buy]
++ Twilight Mire [buy]
++ Unnatural Restoration [buy]
 + Vandalblast

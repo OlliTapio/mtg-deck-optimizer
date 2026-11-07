@@ -6,8 +6,8 @@
 Thriving Isle -> Hallowed Fountain
 Thriving Grove -> Cinder Glade
 Thriving Bluff -> Rootbound Crag
-Thriving Heath -> Flamekin Harbinger
-Timeless Lotus -> Brighthearth Banneret
+Thriving Heath -> Flamekin Harbinger [buy]
+Timeless Lotus -> Brighthearth Banneret [buy]
 Fertile Ground -> Kulrath Zealot
 
 # From the local list (no pairing recorded in cuts.txt)
@@ -20,12 +20,12 @@ Fertile Ground -> Kulrath Zealot
 - Return of the Wildspeaker
 - Shimmercreep
 - Springleaf Parade
-+ Ashling's Command
-+ Ashling, Rekindled
-+ Flock Impostor
-+ Grave Sifter
++ Ashling's Command [buy]
++ Ashling, Rekindled [buy]
++ Flock Impostor [buy]
++ Grave Sifter [buy]
 + Haunting Voyage
-+ Kindred Discovery
-+ Patriarch's Bidding
-+ Shinestriker
-+ The World Tree
++ Kindred Discovery [buy]
++ Patriarch's Bidding [buy]
++ Shinestriker [buy]
++ The World Tree [buy]
