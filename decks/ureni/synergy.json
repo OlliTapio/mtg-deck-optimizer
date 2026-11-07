@@ -12577,18 +12577,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -13975,18 +13975,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Sapphire Dragon // Psionic Pulse": [
@@ -14170,18 +14170,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Serpent",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Serpent"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Teferi's Time Twist": [
@@ -14419,18 +14419,18 @@
     "evidence": "power 10"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Spirit",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Spirit"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Utvara Hellkite": [

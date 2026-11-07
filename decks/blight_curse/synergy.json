@@ -8393,19 +8393,6 @@
   },
   {
    "a": "Flourishing Defenses",
-   "b": "Stalwart Successor",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Warrior",
-     "producer": "Stalwart Successor",
-     "payoff": "Flourishing Defenses",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Flourishing Defenses",
    "b": "Glissa Sunslayer",
    "score": 1.0,
    "reasons": [
@@ -8425,6 +8412,19 @@
     {
      "tag": "type:Elf",
      "producer": "Generous Patron",
+     "payoff": "Flourishing Defenses",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Flourishing Defenses",
+   "b": "Stalwart Successor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Warrior",
+     "producer": "Stalwart Successor",
      "payoff": "Flourishing Defenses",
      "weight": 1.0
     }
@@ -9815,18 +9815,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Warlock",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warlock"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Warlock",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warlock"
    },
    {
     "tag": "counters_present",
@@ -10317,18 +10317,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warlock",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warlock"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Warlock",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warlock"
    },
    {
     "tag": "mill",
@@ -10361,18 +10361,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "counters_present",
@@ -10540,18 +10540,18 @@
   ],
   "Evolution Sage": [
    {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
-   },
-   {
     "tag": "proliferate",
     "side": "P",
     "scope": "any",
     "strength": 1.25,
     "evidence": "keyword: Proliferate"
+   },
+   {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Landfall"
    },
    {
     "tag": "counters_p1p1",
@@ -10589,18 +10589,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "counters_present",
@@ -10680,14 +10680,14 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Elf",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever a -1/-1 counter is put on a creature, you may create a 1/1 green elf w…"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -10704,13 +10704,6 @@
     "evidence": "• you draw a card and lose 1 life."
    },
    {
-    "tag": "kw:First strike",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.5,
-    "evidence": "keyword: First strike"
-   },
-   {
     "tag": "kw:Deathtouch",
     "side": "P",
     "scope": "self",
@@ -10718,18 +10711,18 @@
     "evidence": "keyword: Deathtouch"
    },
    {
+    "tag": "kw:First strike",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.5,
+    "evidence": "keyword: First strike"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
     "strength": 0.3,
     "evidence": "is a creature"
-   },
-   {
-    "tag": "type:Zombie",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Zombie"
    },
    {
     "tag": "type:Elf",
@@ -10744,6 +10737,13 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
    }
   ],
   "Twilight Mire": [],
@@ -10886,18 +10886,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    },
    {
     "tag": "counters_present",
@@ -11116,18 +11116,18 @@
   ],
   "Kulrath Knight": [
    {
-    "tag": "counters_m1m1",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.25,
-    "evidence": "keyword: Wither"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.25,
+    "evidence": "keyword: Wither"
    },
    {
     "tag": "etb",
@@ -11137,18 +11137,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Knight",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "counters_present",
@@ -11678,18 +11678,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Savage Lands": [],
@@ -11798,18 +11798,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Zombie",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Zombie"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
    },
    {
     "tag": "counters_present",

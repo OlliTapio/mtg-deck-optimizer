@@ -380,6 +380,8 @@ KEYWORD_FEATURES = {
 # more other producers of that counter, then full strength.
 PROLIFERATE_FEEDS = [('counters_p1p1', 0.5), ('counters_m1m1', 0.5), ('rad', 0.5), ('counters_any', 1.0)]
 PROLIFERATE_DENSE = 8
+# Rad counters sit on players and survive board wipes, so a few producers are enough.
+PROLIFERATE_DENSE_BY_AXIS = {'rad': 3}
 COUNTER_AXES = ('counters_p1p1', 'counters_m1m1', 'rad')
 
 # Repeatable producers are worth more than one-shots:
@@ -773,10 +775,17 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
     for axis in ('counters_p1p1', 'counters_m1m1', 'rad'):
         n_prod = len({n for n, fs in features.items()
                       if any(f.tag == axis and f.side == 'P' and f.evidence != 'proliferate' for f in fs)})
-        if n_prod >= PROLIFERATE_DENSE:
+        if n_prod >= PROLIFERATE_DENSE_BY_AXIS.get(axis, PROLIFERATE_DENSE):
             for n, fs in features.items():
                 features[n] = [f._replace(strength=round(f.strength * 2, 3))
                                if f.tag == axis and f.evidence == 'proliferate' else f for f in fs]
+        # Rad counters mill their holder, so proliferating them mills too
+        if axis == 'rad' and n_prod:
+            for n, fs in features.items():
+                rad = [f for f in fs if f.tag == 'rad' and f.side == 'P' and f.evidence == 'proliferate']
+                if rad:
+                    features[n] = fs + [Feature('mill', 'P', 'any', 'proliferate on rad counters (rad mills)',
+                                                rad[0].strength)]
 
     # Proliferate needs counters already on the board: every card that puts counters down
     # (any axis, not proliferate itself) feeds every proliferate card.

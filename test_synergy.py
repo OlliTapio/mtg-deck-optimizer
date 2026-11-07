@@ -427,6 +427,13 @@ class TestRepeatAndProliferate:
                     power=1)
         assert _pair(compute_synergy([self.WHALE, rad]), 'Dreamtide Whale', 'Rad Maker')
 
+    def test_proliferating_rad_feeds_mill_payoffs(self):
+        r = compute_synergy([MOTHMAN, self.WHALE], 'The Wise Mothman')
+        reasons = _pair(r, 'The Wise Mothman', 'Dreamtide Whale')['reasons']
+        assert any(x['tag'] == 'mill' and x['producer'] == 'Dreamtide Whale' for x in reasons)
+        no_rad = compute_synergy([self.WHALE, PSYCHIC_CORROSION])
+        assert not any(f['tag'] == 'mill' for f in no_rad['features']['Dreamtide Whale'])
+
     def test_two_proliferators_do_not_pair_on_counters(self):
         r = compute_synergy([self.WHALE, self.SORCERY_PROLIF])
         p = _pair(r, 'Dreamtide Whale', "Tezzeret's Gambit")

@@ -3270,25 +3270,6 @@
    ]
   },
   {
-   "a": "Cactusfolk Sureshot",
-   "b": "Yuma, Proud Protector",
-   "score": 3.5,
-   "reasons": [
-    {
-     "tag": "type:Plant",
-     "producer": "Cactusfolk Sureshot",
-     "payoff": "Yuma, Proud Protector",
-     "weight": 1.0
-    },
-    {
-     "tag": "big_power",
-     "producer": "Yuma, Proud Protector",
-     "payoff": "Cactusfolk Sureshot",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Hour of Promise",
    "b": "Shefet Dunes",
    "score": 3.5,
@@ -3334,6 +3315,25 @@
      "tag": "go_wide",
      "producer": "Dunes of the Dead",
      "payoff": "Shefet Dunes",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Cactusfolk Sureshot",
+   "b": "Yuma, Proud Protector",
+   "score": 3.5,
+   "reasons": [
+    {
+     "tag": "type:Plant",
+     "producer": "Cactusfolk Sureshot",
+     "payoff": "Yuma, Proud Protector",
+     "weight": 1.0
+    },
+    {
+     "tag": "big_power",
+     "producer": "Yuma, Proud Protector",
+     "payoff": "Cactusfolk Sureshot",
      "weight": 0.75
     }
    ]
@@ -12945,6 +12945,13 @@
     "evidence": "is a Ranger"
    },
    {
+    "tag": "type:Desert",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
+   },
+   {
     "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
@@ -12953,13 +12960,6 @@
    },
    {
     "tag": "type:Plant",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
-   },
-   {
-    "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -13361,18 +13361,18 @@
     "evidence": "other creatures you control with power 4 or greater gain trample and haste unti…"
    },
    {
-    "tag": "kw:Ward",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Ward"
-   },
-   {
     "tag": "kw:Reach",
     "side": "P",
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Reach"
+   },
+   {
+    "tag": "kw:Ward",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Ward"
    },
    {
     "tag": "etb",
@@ -13644,6 +13644,13 @@
     "evidence": "mill two cards. you gain 1 life for each land card milled this way."
    },
    {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Reach"
+   },
+   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -13656,13 +13663,6 @@
     "scope": "any",
     "strength": 1.25,
     "evidence": "keyword: Mill"
-   },
-   {
-    "tag": "kw:Reach",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Reach"
    },
    {
     "tag": "etb",
@@ -13746,18 +13746,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Insect",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Insect"
-   },
-   {
     "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Insect",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Insect"
    }
   ],
   "Embrace the Unknown": [
@@ -14079,18 +14079,18 @@
     "evidence": "is a Warrior"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever a desert you control enters, create two 1/1 red, green, and white sand…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "desertwalk"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever a desert you control enters, create two 1/1 red, green, and white sand…"
    }
   ],
   "Hour of Promise": [
@@ -14704,18 +14704,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Cleric",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Cleric"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Cleric",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Cleric"
    }
   ],
   "Ramunap Ruins": [
@@ -14859,18 +14859,18 @@
     "evidence": "is a Scout"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever one or more land cards are put into your graveyard from anywhere, crea…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "when ~ enters, if an opponent controls more lands than you, search your library…"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever one or more land cards are put into your graveyard from anywhere, crea…"
    }
   ],
   "Satyr Wayfinder": [
@@ -15142,6 +15142,13 @@
     "evidence": "during your turn, nonland permanent cards in your graveyard have retrace."
    },
    {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Reach"
+   },
+   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -15154,13 +15161,6 @@
     "scope": "any",
     "strength": 1.25,
     "evidence": "keyword: Mill"
-   },
-   {
-    "tag": "kw:Reach",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Reach"
    },
    {
     "tag": "etb",
@@ -15550,18 +15550,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "at the beginning of combat on your turn, if you control five or more deserts, c…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever you sacrifice a desert and whenever a desert card is put into your gra…"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "at the beginning of combat on your turn, if you control five or more deserts, c…"
    },
    {
     "tag": "graveyard",
@@ -15684,6 +15684,13 @@
     "evidence": "• mill five cards, then you may put a land card from your graveyard onto the ba…"
    },
    {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flashback"
+   },
+   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -15696,13 +15703,6 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
-   },
-   {
-    "tag": "graveyard",
-    "side": "C",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flashback"
    },
    {
     "tag": "cast_noncreature",
@@ -15786,18 +15786,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Insect",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Insect"
-   },
-   {
     "tag": "type:Warrior",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warrior"
+   },
+   {
+    "tag": "type:Insect",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Insect"
    },
    {
     "tag": "sacrifice",
