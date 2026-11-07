@@ -164,6 +164,9 @@ Reads keywords, types and triggers, tags each card with what it **produces** and
   - Curve: 0.25 x (average MV - 2.5, capped 0..2) x number of 5+ MV spells, per ramp card.
   - Land ramp (lands onto the battlefield survive board wipes): +0.25 per expected turn above 5. Expected game length by bracket: 1 = 10 turns, 2 = 9, 3 = 7, 4 = 5.
 - Protection (grants hexproof/shroud/indestructible/protection, phasing) pairs with the commander for 1.0 x commander dependence, then x2. Dependence = (commander's synergy / average card's synergy - 1) / 3, capped 0..1, +0.75 when the deck's CLAUDE.md names a commander-damage or voltron plan. Each protection card also gets 0.5 x dependence x the median card's synergy, so it competes with cards whose totals come from many pairs. Name the plan in the deck's CLAUDE.md win conditions so it is picked up.
+- Repeatable producers weigh more: one-shots (instants/sorceries, "when ~ enters/dies", sacrifice ~, "enters with") x1.0; your-turn triggers, activated and static abilities x1.25; triggers that can fire on any player's turn x1.5. `--card` shows the factor.
+- Proliferate is weak (x0.5) on a counter axis unless the deck has 8+ other producers of that counter, then full strength.
+- A commander-damage plan makes the commander care about +1/+1 counters on itself, so counter producers pair with it.
 - Card draw and selection get a base bonus scaled to the deck: draw (draws cards, impulse draw, card-advantage otag) 0.25 x median card synergy; selection only (scry, surveil, looting, look at the top) half that. Draw triggers and opponents drawing don't count.
 - Reactive cards (noncreature targeted removal and counterspells, plus protection; not board wipes) lose 0.5 synergy each per card over 12 (14 for commander-damage decks).
 - Never claim two cards synergise without running `synergy.py --card`, or reading both cards' oracle text.

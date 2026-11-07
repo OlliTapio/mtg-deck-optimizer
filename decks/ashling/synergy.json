@@ -20,14 +20,14 @@
   {
    "tag": "etb",
    "label": "creatures entering",
-   "score": 26.4,
+   "score": 27.52,
    "producers": 45,
    "payoffs": 3
   },
   {
    "tag": "go_wide",
    "label": "go wide",
-   "score": 11.25,
+   "score": 12.94,
    "producers": 5,
    "payoffs": 3
   },
@@ -48,30 +48,23 @@
   {
    "tag": "landfall",
    "label": "landfall",
-   "score": 8.0,
+   "score": 8.5,
    "producers": 4,
    "payoffs": 2
   },
   {
    "tag": "fodder",
    "label": "sacrifice fodder",
-   "score": 7.0,
+   "score": 7.75,
    "producers": 7,
    "payoffs": 1
   },
   {
    "tag": "graveyard",
    "label": "graveyard",
-   "score": 6.0,
+   "score": 7.5,
    "producers": 1,
    "payoffs": 8
-  },
-  {
-   "tag": "type:Elf",
-   "label": "Elf matters",
-   "score": 5.0,
-   "producers": 5,
-   "payoffs": 1
   },
   {
    "tag": "type:Treefolk",
@@ -81,9 +74,16 @@
    "payoffs": 1
   },
   {
+   "tag": "type:Elf",
+   "label": "Elf matters",
+   "score": 5.0,
+   "producers": 5,
+   "payoffs": 1
+  },
+  {
    "tag": "trigger_etb",
    "label": "ETB-trigger doubling",
-   "score": 3.0,
+   "score": 3.75,
    "producers": 3,
    "payoffs": 1
   },
@@ -118,18 +118,18 @@
    }
   },
   "Abundant Countryside": {
-   "total": 8.75,
+   "total": 9.94,
    "cmdr_fit": 0.0,
    "partners": 11,
-   "best_partner": "Crib Swap",
+   "best_partner": "Descendants' Fury",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
     "type:Shapeshifter": 4.0,
-    "go_wide": 2.25,
-    "etb": 1.5,
-    "fodder": 1.0
+    "go_wide": 2.81,
+    "etb": 1.88,
+    "fodder": 1.25
    }
   },
   "Ancient Ziggurat": {
@@ -156,7 +156,7 @@
    "ramp_kind": "artifact"
   },
   "Ashling, Rekindled": {
-   "total": 61.91,
+   "total": 63.41,
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ashling, the Limitless",
@@ -167,7 +167,7 @@
     "type:Elemental": 30.0,
     "ramp": 15.41,
     "card draw": 8.55,
-    "graveyard": 6.0,
+    "graveyard": 7.5,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
@@ -192,7 +192,7 @@
    "ramp_kind": "other"
   },
   "Avenger of Zendikar": {
-   "total": 42.5,
+   "total": 42.75,
    "cmdr_fit": 3.0,
    "partners": 31,
    "best_partner": "Ashling, the Limitless",
@@ -201,7 +201,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 30.0,
-    "landfall": 4.0,
+    "landfall": 4.25,
     "go_wide": 2.25,
     "big_power": 2.25,
     "etb": 1.5,
@@ -249,7 +249,7 @@
    "themes": {}
   },
   "Cavalier of Thorns": {
-   "total": 63.41,
+   "total": 64.1,
    "cmdr_fit": 3.0,
    "partners": 28,
    "best_partner": "Ashling, the Limitless",
@@ -260,11 +260,11 @@
     "type:Elemental": 30.0,
     "ramp": 15.91,
     "card draw": 8.55,
+    "landfall": 2.5,
     "big_power": 2.25,
-    "landfall": 2.0,
     "fodder": 1.0,
     "trigger_dies": 1.0,
-    "graveyard": 0.75,
+    "graveyard": 0.94,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
@@ -317,8 +317,8 @@
     "type:Elemental": 30.0,
     "type:Shapeshifter": 5.0,
     "type:Warrior": 2.0,
-    "type:Elf": 1.0,
-    "type:Treefolk": 1.0
+    "type:Treefolk": 1.0,
+    "type:Elf": 1.0
    }
   },
   "Cultivate": {
@@ -336,7 +336,7 @@
    "ramp_kind": "land"
   },
   "Descendants' Fury": {
-   "total": 17.55,
+   "total": 18.3,
    "cmdr_fit": 2.0,
    "partners": 8,
    "best_partner": "Ashling, the Limitless",
@@ -345,7 +345,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "card draw": 8.55,
-    "fodder": 7.0,
+    "fodder": 7.75,
     "sacrifice": 1.0
    },
    "draw_bonus": 8.55,
@@ -377,12 +377,12 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 64.5,
-    "type:Elf": 5.0,
-    "type:Treefolk": 5.0
+    "type:Treefolk": 5.0,
+    "type:Elf": 5.0
    }
   },
   "Endurance": {
-   "total": 32.7,
+   "total": 32.89,
    "cmdr_fit": 3.0,
    "partners": 24,
    "best_partner": "Ashling, the Limitless",
@@ -391,7 +391,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 30.0,
-    "graveyard": 0.75,
+    "graveyard": 0.94,
     "etb": 0.45
    }
   },
@@ -459,8 +459,8 @@
     "type:Elemental": 30.0,
     "type:Shapeshifter": 3.0,
     "type:Warrior": 2.0,
-    "type:Elf": 1.0,
     "type:Treefolk": 1.0,
+    "type:Elf": 1.0,
     "etb": 0.45
    }
   },
@@ -538,24 +538,24 @@
    }
   },
   "Garruk's Uprising": {
-   "total": 30.55,
+   "total": 31.17,
    "cmdr_fit": 0.3,
    "partners": 45,
-   "best_partner": "Avenger of Zendikar",
+   "best_partner": "Yarok, the Desecrated",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
     "big_power": 12.0,
-    "etb": 8.85,
+    "etb": 9.23,
     "card draw": 8.55,
-    "trigger_etb": 1.0
+    "trigger_etb": 1.25
    },
    "draw_bonus": 8.55,
    "draw_kind": "draw"
   },
   "Grave Sifter": {
-   "total": 43.5,
+   "total": 43.69,
    "cmdr_fit": 3.0,
    "partners": 25,
    "best_partner": "Ashling, the Limitless",
@@ -566,14 +566,14 @@
     "type:Elemental": 30.0,
     "card draw": 8.55,
     "big_power": 2.25,
-    "graveyard": 0.75,
+    "graveyard": 0.94,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
    "draw_kind": "draw"
   },
   "Greenwarden of Murasa": {
-   "total": 45.5,
+   "total": 45.69,
    "cmdr_fit": 3.0,
    "partners": 27,
    "best_partner": "Ashling, the Limitless",
@@ -586,7 +586,7 @@
     "big_power": 2.25,
     "fodder": 1.0,
     "trigger_dies": 1.0,
-    "graveyard": 0.75,
+    "graveyard": 0.94,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
@@ -617,7 +617,7 @@
    "draw_kind": "draw"
   },
   "Haunting Voyage": {
-   "total": 2.25,
+   "total": 2.44,
    "cmdr_fit": 0.0,
    "partners": 4,
    "best_partner": "Ashling, Rekindled",
@@ -626,11 +626,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "etb": 1.5,
-    "graveyard": 0.75
+    "graveyard": 0.94
    }
   },
   "Horde of Notions": {
-   "total": 97.95,
+   "total": 98.14,
    "cmdr_fit": 6.0,
    "partners": 50,
    "best_partner": "Ashling, the Limitless",
@@ -640,12 +640,12 @@
    "themes": {
     "type:Elemental": 91.5,
     "big_power": 2.25,
-    "graveyard": 0.75,
+    "graveyard": 0.94,
     "etb": 0.45
    }
   },
   "Impulsivity": {
-   "total": 34.95,
+   "total": 35.14,
    "cmdr_fit": 3.0,
    "partners": 25,
    "best_partner": "Ashling, the Limitless",
@@ -655,12 +655,12 @@
    "themes": {
     "type:Elemental": 30.0,
     "big_power": 2.25,
-    "graveyard": 0.75,
+    "graveyard": 0.94,
     "etb": 0.45
    }
   },
   "Incandescent Soulstoke": {
-   "total": 98.7,
+   "total": 99.26,
    "cmdr_fit": 6.0,
    "partners": 50,
    "best_partner": "Ashling, the Limitless",
@@ -669,7 +669,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 91.5,
-    "go_wide": 3.75,
+    "go_wide": 4.31,
     "etb": 0.45
    }
   },
@@ -697,7 +697,7 @@
    "themes": {}
   },
   "Jubilation": {
-   "total": 37.95,
+   "total": 38.51,
    "cmdr_fit": 3.0,
    "partners": 28,
    "best_partner": "Ashling, the Limitless",
@@ -706,7 +706,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 30.0,
-    "go_wide": 3.75,
+    "go_wide": 4.31,
     "big_power": 2.25,
     "etb": 0.45
    }
@@ -722,7 +722,7 @@
    "themes": {}
   },
   "Kindred Summons": {
-   "total": 12.3,
+   "total": 12.86,
    "cmdr_fit": 0.0,
    "partners": 5,
    "best_partner": "Abundant Countryside",
@@ -731,7 +731,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "card draw": 8.55,
-    "go_wide": 3.75
+    "go_wide": 4.31
    },
    "draw_bonus": 8.55,
    "draw_kind": "draw"
@@ -853,7 +853,7 @@
    "draw_kind": "draw"
   },
   "Omnath, Locus of the Roil": {
-   "total": 107.5,
+   "total": 107.75,
    "cmdr_fit": 6.0,
    "partners": 52,
    "best_partner": "Ashling, the Limitless",
@@ -863,7 +863,7 @@
    "themes": {
     "type:Elemental": 91.5,
     "card draw": 8.55,
-    "landfall": 4.0,
+    "landfall": 4.25,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
@@ -881,8 +881,8 @@
     "type:Elemental": 30.0,
     "type:Shapeshifter": 3.0,
     "type:Warrior": 2.0,
-    "type:Elf": 1.0,
     "type:Treefolk": 1.0,
+    "type:Elf": 1.0,
     "etb": 0.45
    }
   },
@@ -990,8 +990,8 @@
     "card draw": 8.55,
     "type:Shapeshifter": 3.0,
     "type:Warrior": 2.0,
-    "type:Elf": 1.0,
     "type:Treefolk": 1.0,
+    "type:Elf": 1.0,
     "etb": 0.45
    },
    "draw_bonus": 8.55,
@@ -1076,20 +1076,20 @@
    "themes": {}
   },
   "Selvala, Heart of the Wilds": {
-   "total": 47.11,
+   "total": 47.73,
    "cmdr_fit": 0.3,
    "partners": 47,
-   "best_partner": "Avenger of Zendikar",
+   "best_partner": "Yarok, the Desecrated",
    "combo_piece": false,
    "ramp_bonus": 15.41,
    "reactive_penalty": 0.0,
    "themes": {
     "ramp": 15.41,
     "big_power": 12.0,
-    "etb": 9.0,
+    "etb": 9.38,
     "card draw": 8.55,
-    "type:Elf": 1.0,
-    "trigger_etb": 1.0
+    "trigger_etb": 1.25,
+    "type:Elf": 1.0
    },
    "draw_bonus": 8.55,
    "draw_kind": "draw",
@@ -1194,7 +1194,7 @@
    "ramp_kind": "artifact"
   },
   "Kindred Discovery": {
-   "total": 18.55,
+   "total": 19.18,
    "cmdr_fit": 0.3,
    "partners": 45,
    "best_partner": "Yarok, the Desecrated",
@@ -1202,9 +1202,9 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "etb": 8.85,
+    "etb": 9.23,
     "card draw": 8.55,
-    "trigger_etb": 1.0
+    "trigger_etb": 1.25
    },
    "draw_bonus": 8.55,
    "draw_kind": "draw"
@@ -1250,7 +1250,7 @@
    "themes": {}
   },
   "Patriarch's Bidding": {
-   "total": 0.75,
+   "total": 0.94,
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Ashling, Rekindled",
@@ -1258,11 +1258,11 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "graveyard": 0.75
+    "graveyard": 0.94
    }
   },
   "Titan of Industry": {
-   "total": 44.5,
+   "total": 45.69,
    "cmdr_fit": 3.0,
    "partners": 32,
    "best_partner": "Ashling, the Limitless",
@@ -1272,10 +1272,10 @@
    "themes": {
     "type:Elemental": 30.0,
     "type:Warrior": 6.0,
-    "go_wide": 2.25,
+    "go_wide": 2.81,
     "big_power": 2.25,
-    "etb": 1.5,
-    "fodder": 1.0
+    "etb": 1.88,
+    "fodder": 1.25
    }
   },
   "Twinflame Travelers": {
@@ -1302,7 +1302,7 @@
    "themes": {}
   },
   "Vernal Sovereign": {
-   "total": 101.5,
+   "total": 102.69,
    "cmdr_fit": 6.0,
    "partners": 52,
    "best_partner": "Ashling, the Limitless",
@@ -1311,14 +1311,14 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 91.5,
-    "go_wide": 2.25,
+    "go_wide": 2.81,
     "big_power": 2.25,
-    "etb": 1.5,
-    "fodder": 1.0
+    "etb": 1.88,
+    "fodder": 1.25
    }
   },
   "Yarok, the Desecrated": {
-   "total": 36.95,
+   "total": 37.7,
    "cmdr_fit": 3.0,
    "partners": 25,
    "best_partner": "Ashling, the Limitless",
@@ -1327,7 +1327,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Elemental": 30.0,
-    "trigger_etb": 3.0,
+    "trigger_etb": 3.75,
     "trigger_dies": 2.0,
     "etb": 0.45
    }
@@ -1412,10 +1412,10 @@
  },
  "plans": [],
  "commander_dependence": {
-  "score": 0.615,
-  "synergy_vs_average_card": 2.85,
-  "protection_weight": 0.615,
-  "protection_bonus": 10.516,
+  "score": 0.609,
+  "synergy_vs_average_card": 2.83,
+  "protection_weight": 0.609,
+  "protection_bonus": 10.414,
   "protection_cards": []
  },
  "draw": {
@@ -1513,7 +1513,7 @@
    "card": "Garruk's Uprising",
    "side": "produces",
    "tag": "draw",
-   "evidence": "if you control a creature with power 4 or greater, draw a card."
+   "evidence": "draw a card."
   },
   {
    "card": "Harmonized Crescendo",
@@ -1908,7 +1908,7 @@
   {
    "a": "Incandescent Soulstoke",
    "b": "Vernal Sovereign",
-   "score": 3.75,
+   "score": 3.938,
    "reasons": [
     {
      "tag": "type:Elemental",
@@ -1926,7 +1926,7 @@
      "tag": "go_wide",
      "producer": "Vernal Sovereign",
      "payoff": "Incandescent Soulstoke",
-     "weight": 0.75
+     "weight": 0.938
     }
    ]
   },
@@ -1942,13 +1942,13 @@
      "weight": 1.5
     },
     {
-     "tag": "type:Elf",
+     "tag": "type:Treefolk",
      "producer": "Crib Swap",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
     },
     {
-     "tag": "type:Treefolk",
+     "tag": "type:Elf",
      "producer": "Crib Swap",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
@@ -1967,13 +1967,13 @@
      "weight": 1.5
     },
     {
-     "tag": "type:Elf",
+     "tag": "type:Treefolk",
      "producer": "Flock Impostor",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
     },
     {
-     "tag": "type:Treefolk",
+     "tag": "type:Elf",
      "producer": "Flock Impostor",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
@@ -1992,13 +1992,13 @@
      "weight": 1.5
     },
     {
-     "tag": "type:Elf",
+     "tag": "type:Treefolk",
      "producer": "Omni-Changeling",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
     },
     {
-     "tag": "type:Treefolk",
+     "tag": "type:Elf",
      "producer": "Omni-Changeling",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
@@ -2017,13 +2017,13 @@
      "weight": 1.5
     },
     {
-     "tag": "type:Elf",
+     "tag": "type:Treefolk",
      "producer": "Realmwalker",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
     },
     {
-     "tag": "type:Treefolk",
+     "tag": "type:Elf",
      "producer": "Realmwalker",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
@@ -4410,6 +4410,25 @@
    ]
   },
   {
+   "a": "Cavalier of Thorns",
+   "b": "Omnath, Locus of the Roil",
+   "score": 2.75,
+   "reasons": [
+    {
+     "tag": "type:Elemental",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Omnath, Locus of the Roil",
+     "weight": 1.5
+    },
+    {
+     "tag": "landfall",
+     "producer": "Cavalier of Thorns",
+     "payoff": "Omnath, Locus of the Roil",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
    "a": "Brighthearth Banneret",
    "b": "Crib Swap",
    "score": 2.5,
@@ -4524,28 +4543,9 @@
    ]
   },
   {
-   "a": "Cavalier of Thorns",
-   "b": "Omnath, Locus of the Roil",
-   "score": 2.5,
-   "reasons": [
-    {
-     "tag": "type:Elemental",
-     "producer": "Cavalier of Thorns",
-     "payoff": "Omnath, Locus of the Roil",
-     "weight": 1.5
-    },
-    {
-     "tag": "landfall",
-     "producer": "Cavalier of Thorns",
-     "payoff": "Omnath, Locus of the Roil",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Ashling, Rekindled",
    "b": "Horde of Notions",
-   "score": 2.25,
+   "score": 2.438,
    "reasons": [
     {
      "tag": "type:Elemental",
@@ -4557,7 +4557,45 @@
      "tag": "graveyard",
      "producer": "Ashling, Rekindled",
      "payoff": "Horde of Notions",
-     "weight": 0.75
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Incandescent Soulstoke",
+   "b": "Titan of Industry",
+   "score": 2.438,
+   "reasons": [
+    {
+     "tag": "type:Elemental",
+     "producer": "Titan of Industry",
+     "payoff": "Incandescent Soulstoke",
+     "weight": 1.5
+    },
+    {
+     "tag": "go_wide",
+     "producer": "Titan of Industry",
+     "payoff": "Incandescent Soulstoke",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Jubilation",
+   "b": "Vernal Sovereign",
+   "score": 2.438,
+   "reasons": [
+    {
+     "tag": "type:Elemental",
+     "producer": "Jubilation",
+     "payoff": "Vernal Sovereign",
+     "weight": 1.5
+    },
+    {
+     "tag": "go_wide",
+     "producer": "Vernal Sovereign",
+     "payoff": "Jubilation",
+     "weight": 0.938
     }
    ]
   },
@@ -4595,44 +4633,6 @@
      "tag": "go_wide",
      "producer": "Belonging",
      "payoff": "Incandescent Soulstoke",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Incandescent Soulstoke",
-   "b": "Titan of Industry",
-   "score": 2.25,
-   "reasons": [
-    {
-     "tag": "type:Elemental",
-     "producer": "Titan of Industry",
-     "payoff": "Incandescent Soulstoke",
-     "weight": 1.5
-    },
-    {
-     "tag": "go_wide",
-     "producer": "Titan of Industry",
-     "payoff": "Incandescent Soulstoke",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Jubilation",
-   "b": "Vernal Sovereign",
-   "score": 2.25,
-   "reasons": [
-    {
-     "tag": "type:Elemental",
-     "producer": "Jubilation",
-     "payoff": "Vernal Sovereign",
-     "weight": 1.5
-    },
-    {
-     "tag": "go_wide",
-     "producer": "Vernal Sovereign",
-     "payoff": "Jubilation",
      "weight": 0.75
     }
    ]
@@ -11892,167 +11892,15 @@
    ]
   },
   {
-   "a": "Avenger of Zendikar",
-   "b": "Garruk's Uprising",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Avenger of Zendikar",
-     "payoff": "Garruk's Uprising",
-     "weight": 0.75
-    },
-    {
-     "tag": "etb",
-     "producer": "Avenger of Zendikar",
-     "payoff": "Garruk's Uprising",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Belonging",
-   "b": "Garruk's Uprising",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Belonging",
-     "payoff": "Garruk's Uprising",
-     "weight": 0.75
-    },
-    {
-     "tag": "etb",
-     "producer": "Belonging",
-     "payoff": "Garruk's Uprising",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Garruk's Uprising",
-   "b": "Titan of Industry",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Titan of Industry",
-     "payoff": "Garruk's Uprising",
-     "weight": 0.75
-    },
-    {
-     "tag": "etb",
-     "producer": "Titan of Industry",
-     "payoff": "Garruk's Uprising",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Garruk's Uprising",
-   "b": "Vernal Sovereign",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Vernal Sovereign",
-     "payoff": "Garruk's Uprising",
-     "weight": 0.75
-    },
-    {
-     "tag": "etb",
-     "producer": "Vernal Sovereign",
-     "payoff": "Garruk's Uprising",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Avenger of Zendikar",
-   "b": "Selvala, Heart of the Wilds",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Avenger of Zendikar",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.75
-    },
-    {
-     "tag": "etb",
-     "producer": "Avenger of Zendikar",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Belonging",
-   "b": "Selvala, Heart of the Wilds",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Belonging",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.75
-    },
-    {
-     "tag": "etb",
-     "producer": "Belonging",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Selvala, Heart of the Wilds",
-   "b": "Titan of Industry",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Titan of Industry",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.75
-    },
-    {
-     "tag": "etb",
-     "producer": "Titan of Industry",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Selvala, Heart of the Wilds",
-   "b": "Vernal Sovereign",
-   "score": 1.25,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Vernal Sovereign",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.75
-    },
-    {
-     "tag": "etb",
-     "producer": "Vernal Sovereign",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
    "a": "Garruk's Uprising",
    "b": "Yarok, the Desecrated",
-   "score": 1.15,
+   "score": 1.4,
    "reasons": [
     {
      "tag": "trigger_etb",
      "producer": "Garruk's Uprising",
      "payoff": "Yarok, the Desecrated",
-     "weight": 1.0
+     "weight": 1.25
     },
     {
      "tag": "etb",
@@ -12065,13 +11913,13 @@
   {
    "a": "Selvala, Heart of the Wilds",
    "b": "Yarok, the Desecrated",
-   "score": 1.15,
+   "score": 1.4,
    "reasons": [
     {
      "tag": "trigger_etb",
      "producer": "Selvala, Heart of the Wilds",
      "payoff": "Yarok, the Desecrated",
-     "weight": 1.0
+     "weight": 1.25
     },
     {
      "tag": "etb",
@@ -12084,13 +11932,13 @@
   {
    "a": "Kindred Discovery",
    "b": "Yarok, the Desecrated",
-   "score": 1.15,
+   "score": 1.4,
    "reasons": [
     {
      "tag": "trigger_etb",
      "producer": "Kindred Discovery",
      "payoff": "Yarok, the Desecrated",
-     "weight": 1.0
+     "weight": 1.25
     },
     {
      "tag": "etb",
@@ -12101,157 +11949,348 @@
    ]
   },
   {
-   "a": "Abundant Countryside",
-   "b": "Crib Swap",
-   "score": 1.0,
+   "a": "Garruk's Uprising",
+   "b": "Titan of Industry",
+   "score": 1.375,
    "reasons": [
     {
-     "tag": "type:Shapeshifter",
-     "producer": "Crib Swap",
-     "payoff": "Abundant Countryside",
-     "weight": 1.0
+     "tag": "big_power",
+     "producer": "Titan of Industry",
+     "payoff": "Garruk's Uprising",
+     "weight": 0.75
+    },
+    {
+     "tag": "etb",
+     "producer": "Titan of Industry",
+     "payoff": "Garruk's Uprising",
+     "weight": 0.625
     }
    ]
   },
   {
-   "a": "Abundant Countryside",
-   "b": "Flock Impostor",
-   "score": 1.0,
+   "a": "Garruk's Uprising",
+   "b": "Vernal Sovereign",
+   "score": 1.375,
    "reasons": [
     {
-     "tag": "type:Shapeshifter",
-     "producer": "Flock Impostor",
-     "payoff": "Abundant Countryside",
-     "weight": 1.0
+     "tag": "big_power",
+     "producer": "Vernal Sovereign",
+     "payoff": "Garruk's Uprising",
+     "weight": 0.75
+    },
+    {
+     "tag": "etb",
+     "producer": "Vernal Sovereign",
+     "payoff": "Garruk's Uprising",
+     "weight": 0.625
     }
    ]
   },
   {
-   "a": "Abundant Countryside",
-   "b": "Omni-Changeling",
-   "score": 1.0,
+   "a": "Selvala, Heart of the Wilds",
+   "b": "Titan of Industry",
+   "score": 1.375,
    "reasons": [
     {
-     "tag": "type:Shapeshifter",
-     "producer": "Omni-Changeling",
-     "payoff": "Abundant Countryside",
-     "weight": 1.0
+     "tag": "big_power",
+     "producer": "Titan of Industry",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.75
+    },
+    {
+     "tag": "etb",
+     "producer": "Titan of Industry",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.625
     }
    ]
   },
   {
-   "a": "Abundant Countryside",
-   "b": "Realmwalker",
-   "score": 1.0,
+   "a": "Selvala, Heart of the Wilds",
+   "b": "Vernal Sovereign",
+   "score": 1.375,
    "reasons": [
     {
-     "tag": "type:Shapeshifter",
-     "producer": "Realmwalker",
-     "payoff": "Abundant Countryside",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Belonging",
-   "b": "Crib Swap",
-   "score": 1.0,
-   "reasons": [
+     "tag": "big_power",
+     "producer": "Vernal Sovereign",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.75
+    },
     {
-     "tag": "type:Shapeshifter",
-     "producer": "Crib Swap",
-     "payoff": "Belonging",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Belonging",
-   "b": "Flock Impostor",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Shapeshifter",
-     "producer": "Flock Impostor",
-     "payoff": "Belonging",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Belonging",
-   "b": "Omni-Changeling",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Shapeshifter",
-     "producer": "Omni-Changeling",
-     "payoff": "Belonging",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Belonging",
-   "b": "Realmwalker",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Shapeshifter",
-     "producer": "Realmwalker",
-     "payoff": "Belonging",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Crib Swap",
-   "b": "Flock Impostor",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Shapeshifter",
-     "producer": "Flock Impostor",
-     "payoff": "Crib Swap",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Crib Swap",
-   "b": "Omni-Changeling",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Shapeshifter",
-     "producer": "Omni-Changeling",
-     "payoff": "Crib Swap",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Crib Swap",
-   "b": "Realmwalker",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Shapeshifter",
-     "producer": "Realmwalker",
-     "payoff": "Crib Swap",
-     "weight": 1.0
+     "tag": "etb",
+     "producer": "Vernal Sovereign",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.625
     }
    ]
   },
   {
    "a": "Avenger of Zendikar",
    "b": "Cavalier of Thorns",
-   "score": 1.0,
+   "score": 1.25,
    "reasons": [
     {
      "tag": "landfall",
      "producer": "Cavalier of Thorns",
      "payoff": "Avenger of Zendikar",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Descendants' Fury",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "fodder",
+     "producer": "Abundant Countryside",
+     "payoff": "Descendants' Fury",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Descendants' Fury",
+   "b": "Titan of Industry",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "fodder",
+     "producer": "Titan of Industry",
+     "payoff": "Descendants' Fury",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Descendants' Fury",
+   "b": "Vernal Sovereign",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "fodder",
+     "producer": "Vernal Sovereign",
+     "payoff": "Descendants' Fury",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Avenger of Zendikar",
+   "b": "Garruk's Uprising",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "big_power",
+     "producer": "Avenger of Zendikar",
+     "payoff": "Garruk's Uprising",
+     "weight": 0.75
+    },
+    {
+     "tag": "etb",
+     "producer": "Avenger of Zendikar",
+     "payoff": "Garruk's Uprising",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Belonging",
+   "b": "Garruk's Uprising",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "big_power",
+     "producer": "Belonging",
+     "payoff": "Garruk's Uprising",
+     "weight": 0.75
+    },
+    {
+     "tag": "etb",
+     "producer": "Belonging",
+     "payoff": "Garruk's Uprising",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Avenger of Zendikar",
+   "b": "Selvala, Heart of the Wilds",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "big_power",
+     "producer": "Avenger of Zendikar",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.75
+    },
+    {
+     "tag": "etb",
+     "producer": "Avenger of Zendikar",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Belonging",
+   "b": "Selvala, Heart of the Wilds",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "big_power",
+     "producer": "Belonging",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.75
+    },
+    {
+     "tag": "etb",
+     "producer": "Belonging",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.5
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Crib Swap",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Crib Swap",
+     "payoff": "Abundant Countryside",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Flock Impostor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Flock Impostor",
+     "payoff": "Abundant Countryside",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Omni-Changeling",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Omni-Changeling",
+     "payoff": "Abundant Countryside",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Realmwalker",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Realmwalker",
+     "payoff": "Abundant Countryside",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Belonging",
+   "b": "Crib Swap",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Crib Swap",
+     "payoff": "Belonging",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Belonging",
+   "b": "Flock Impostor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Flock Impostor",
+     "payoff": "Belonging",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Belonging",
+   "b": "Omni-Changeling",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Omni-Changeling",
+     "payoff": "Belonging",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Belonging",
+   "b": "Realmwalker",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Realmwalker",
+     "payoff": "Belonging",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Crib Swap",
+   "b": "Flock Impostor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Flock Impostor",
+     "payoff": "Crib Swap",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Crib Swap",
+   "b": "Omni-Changeling",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Omni-Changeling",
+     "payoff": "Crib Swap",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Crib Swap",
+   "b": "Realmwalker",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Shapeshifter",
+     "producer": "Realmwalker",
+     "payoff": "Crib Swap",
      "weight": 1.0
     }
    ]
@@ -12335,19 +12374,6 @@
    ]
   },
   {
-   "a": "Abundant Countryside",
-   "b": "Descendants' Fury",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "fodder",
-     "producer": "Abundant Countryside",
-     "payoff": "Descendants' Fury",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Avenger of Zendikar",
    "b": "Descendants' Fury",
    "score": 1.0,
@@ -12400,27 +12426,14 @@
    ]
   },
   {
-   "a": "Descendants' Fury",
-   "b": "Titan of Industry",
+   "a": "Eclipsed Realms",
+   "b": "Faeburrow Elder",
    "score": 1.0,
    "reasons": [
     {
-     "tag": "fodder",
-     "producer": "Titan of Industry",
-     "payoff": "Descendants' Fury",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Descendants' Fury",
-   "b": "Vernal Sovereign",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "fodder",
-     "producer": "Vernal Sovereign",
-     "payoff": "Descendants' Fury",
+     "tag": "type:Treefolk",
+     "producer": "Faeburrow Elder",
+     "payoff": "Eclipsed Realms",
      "weight": 1.0
     }
    ]
@@ -12433,19 +12446,6 @@
     {
      "tag": "type:Elf",
      "producer": "Selvala, Heart of the Wilds",
-     "payoff": "Eclipsed Realms",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Eclipsed Realms",
-   "b": "Faeburrow Elder",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Treefolk",
-     "producer": "Faeburrow Elder",
      "payoff": "Eclipsed Realms",
      "weight": 1.0
     }
@@ -12539,6 +12539,175 @@
      "producer": "Greenwarden of Murasa",
      "payoff": "Yarok, the Desecrated",
      "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Ashling, Rekindled",
+   "b": "Cavalier of Thorns",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Ashling, Rekindled",
+     "payoff": "Cavalier of Thorns",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Ashling, Rekindled",
+   "b": "Endurance",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Ashling, Rekindled",
+     "payoff": "Endurance",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Ashling, Rekindled",
+   "b": "Grave Sifter",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Ashling, Rekindled",
+     "payoff": "Grave Sifter",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Ashling, Rekindled",
+   "b": "Greenwarden of Murasa",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Ashling, Rekindled",
+     "payoff": "Greenwarden of Murasa",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Ashling, Rekindled",
+   "b": "Haunting Voyage",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Ashling, Rekindled",
+     "payoff": "Haunting Voyage",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Ashling, Rekindled",
+   "b": "Impulsivity",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Ashling, Rekindled",
+     "payoff": "Impulsivity",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Ashling, Rekindled",
+   "b": "Patriarch's Bidding",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Ashling, Rekindled",
+     "payoff": "Patriarch's Bidding",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Incandescent Soulstoke",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Abundant Countryside",
+     "payoff": "Incandescent Soulstoke",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Jubilation",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Abundant Countryside",
+     "payoff": "Jubilation",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Jubilation",
+   "b": "Titan of Industry",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Titan of Industry",
+     "payoff": "Jubilation",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Kindred Summons",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Abundant Countryside",
+     "payoff": "Kindred Summons",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Kindred Summons",
+   "b": "Titan of Industry",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Titan of Industry",
+     "payoff": "Kindred Summons",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Kindred Summons",
+   "b": "Vernal Sovereign",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Vernal Sovereign",
+     "payoff": "Kindred Summons",
+     "weight": 0.938
     }
    ]
   },
@@ -12999,97 +13168,6 @@
    ]
   },
   {
-   "a": "Ashling, Rekindled",
-   "b": "Cavalier of Thorns",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Ashling, Rekindled",
-     "payoff": "Cavalier of Thorns",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Ashling, Rekindled",
-   "b": "Endurance",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Ashling, Rekindled",
-     "payoff": "Endurance",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Ashling, Rekindled",
-   "b": "Grave Sifter",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Ashling, Rekindled",
-     "payoff": "Grave Sifter",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Ashling, Rekindled",
-   "b": "Greenwarden of Murasa",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Ashling, Rekindled",
-     "payoff": "Greenwarden of Murasa",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Ashling, Rekindled",
-   "b": "Haunting Voyage",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Ashling, Rekindled",
-     "payoff": "Haunting Voyage",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Ashling, Rekindled",
-   "b": "Impulsivity",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Ashling, Rekindled",
-     "payoff": "Impulsivity",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Ashling, Rekindled",
-   "b": "Patriarch's Bidding",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Ashling, Rekindled",
-     "payoff": "Patriarch's Bidding",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Avenger of Zendikar",
    "b": "Shatter the Sky",
    "score": 0.75,
@@ -13298,32 +13376,6 @@
    ]
   },
   {
-   "a": "Abundant Countryside",
-   "b": "Incandescent Soulstoke",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "go_wide",
-     "producer": "Abundant Countryside",
-     "payoff": "Incandescent Soulstoke",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Abundant Countryside",
-   "b": "Jubilation",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "go_wide",
-     "producer": "Abundant Countryside",
-     "payoff": "Jubilation",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Avenger of Zendikar",
    "b": "Jubilation",
    "score": 0.75,
@@ -13350,32 +13402,6 @@
    ]
   },
   {
-   "a": "Jubilation",
-   "b": "Titan of Industry",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "go_wide",
-     "producer": "Titan of Industry",
-     "payoff": "Jubilation",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Abundant Countryside",
-   "b": "Kindred Summons",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "go_wide",
-     "producer": "Abundant Countryside",
-     "payoff": "Kindred Summons",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Avenger of Zendikar",
    "b": "Kindred Summons",
    "score": 0.75,
@@ -13396,32 +13422,6 @@
     {
      "tag": "go_wide",
      "producer": "Belonging",
-     "payoff": "Kindred Summons",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Kindred Summons",
-   "b": "Titan of Industry",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "go_wide",
-     "producer": "Titan of Industry",
-     "payoff": "Kindred Summons",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Kindred Summons",
-   "b": "Vernal Sovereign",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "go_wide",
-     "producer": "Vernal Sovereign",
      "payoff": "Kindred Summons",
      "weight": 0.75
     }
@@ -13430,13 +13430,65 @@
   {
    "a": "Abundant Countryside",
    "b": "Garruk's Uprising",
-   "score": 0.5,
+   "score": 0.625,
    "reasons": [
     {
      "tag": "etb",
      "producer": "Abundant Countryside",
      "payoff": "Garruk's Uprising",
-     "weight": 0.5
+     "weight": 0.625
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Selvala, Heart of the Wilds",
+   "score": 0.625,
+   "reasons": [
+    {
+     "tag": "etb",
+     "producer": "Abundant Countryside",
+     "payoff": "Selvala, Heart of the Wilds",
+     "weight": 0.625
+    }
+   ]
+  },
+  {
+   "a": "Abundant Countryside",
+   "b": "Kindred Discovery",
+   "score": 0.625,
+   "reasons": [
+    {
+     "tag": "etb",
+     "producer": "Abundant Countryside",
+     "payoff": "Kindred Discovery",
+     "weight": 0.625
+    }
+   ]
+  },
+  {
+   "a": "Kindred Discovery",
+   "b": "Titan of Industry",
+   "score": 0.625,
+   "reasons": [
+    {
+     "tag": "etb",
+     "producer": "Titan of Industry",
+     "payoff": "Kindred Discovery",
+     "weight": 0.625
+    }
+   ]
+  },
+  {
+   "a": "Kindred Discovery",
+   "b": "Vernal Sovereign",
+   "score": 0.625,
+   "reasons": [
+    {
+     "tag": "etb",
+     "producer": "Vernal Sovereign",
+     "payoff": "Kindred Discovery",
+     "weight": 0.625
     }
    ]
   },
@@ -13454,19 +13506,6 @@
    ]
   },
   {
-   "a": "Abundant Countryside",
-   "b": "Selvala, Heart of the Wilds",
-   "score": 0.5,
-   "reasons": [
-    {
-     "tag": "etb",
-     "producer": "Abundant Countryside",
-     "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
    "a": "Haunting Voyage",
    "b": "Selvala, Heart of the Wilds",
    "score": 0.5,
@@ -13475,19 +13514,6 @@
      "tag": "etb",
      "producer": "Haunting Voyage",
      "payoff": "Selvala, Heart of the Wilds",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Abundant Countryside",
-   "b": "Kindred Discovery",
-   "score": 0.5,
-   "reasons": [
-    {
-     "tag": "etb",
-     "producer": "Abundant Countryside",
-     "payoff": "Kindred Discovery",
      "weight": 0.5
     }
    ]
@@ -13526,32 +13552,6 @@
     {
      "tag": "etb",
      "producer": "Haunting Voyage",
-     "payoff": "Kindred Discovery",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Kindred Discovery",
-   "b": "Titan of Industry",
-   "score": 0.5,
-   "reasons": [
-    {
-     "tag": "etb",
-     "producer": "Titan of Industry",
-     "payoff": "Kindred Discovery",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Kindred Discovery",
-   "b": "Vernal Sovereign",
-   "score": 0.5,
-   "reasons": [
-    {
-     "tag": "etb",
-     "producer": "Vernal Sovereign",
      "payoff": "Kindred Discovery",
      "weight": 0.5
     }
@@ -14758,28 +14758,28 @@
     "tag": "token_creature",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 1/1 colorless shapeshifter creature token with changeling."
    },
    {
     "tag": "go_wide",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 1/1 colorless shapeshifter creature token with changeling."
    },
    {
     "tag": "fodder",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 1/1 colorless shapeshifter creature token with changeling."
    },
    {
     "tag": "etb",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 1/1 colorless shapeshifter creature token with changeling."
    },
    {
@@ -14812,21 +14812,21 @@
     "tag": "discard",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "you may discard a card."
    },
    {
     "tag": "graveyard",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "you may discard a card."
    },
    {
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "if you do, draw a card."
    },
    {
@@ -14837,18 +14837,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Sorcerer",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Sorcerer"
-   },
-   {
     "tag": "type:Wizard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Sorcerer",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Sorcerer"
    },
    {
     "tag": "type:Elemental",
@@ -14921,7 +14921,7 @@
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "landfall — whenever a land you control enters, you may put a +1/+1 counter on e…"
    },
    {
@@ -14958,7 +14958,7 @@
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "put a +1/+1 counter on ~ for each permanent destroyed this way."
    },
    {
@@ -15055,7 +15055,7 @@
     "tag": "landfall",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "put a land card from among them onto the battlefield and the rest into your gra…"
    },
    {
@@ -15083,7 +15083,7 @@
     "tag": "kw:Reach",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Reach"
    },
    {
@@ -15170,46 +15170,11 @@
     "evidence": "is an instant/sorcery"
    },
    {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
    },
    {
     "tag": "type:Beast",
@@ -15219,11 +15184,39 @@
     "evidence": "is a Beast"
    },
    {
-    "tag": "type:Horror",
+    "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Horror"
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Sorcerer",
@@ -15233,11 +15226,18 @@
     "evidence": "is a Sorcerer"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Shapeshifter",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Elf"
+    "evidence": "is a Shapeshifter"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "type:Elk",
@@ -15245,13 +15245,6 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elk"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Treefolk",
@@ -15268,18 +15261,25 @@
     "evidence": "is a Scout"
    },
    {
-    "tag": "type:Shapeshifter",
+    "tag": "type:Bard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Shapeshifter"
+    "evidence": "is a Bard"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Warrior"
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
    },
    {
     "tag": "type:Shapeshifter",
@@ -15381,14 +15381,14 @@
     "evidence": "as ~ enters, choose elemental, elf, faerie, giant, goblin, kithkin, merfolk, or…"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Treefolk",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "as ~ enters, choose elemental, elf, faerie, giant, goblin, kithkin, merfolk, or…"
    },
    {
-    "tag": "type:Treefolk",
+    "tag": "type:Elf",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -15400,7 +15400,7 @@
     "tag": "kw:Reach",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Reach"
    },
    {
@@ -15438,7 +15438,7 @@
     "tag": "kw:Vigilance",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Vigilance"
    },
    {
@@ -15449,18 +15449,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
     "tag": "type:Treefolk",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Treefolk"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    }
   ],
   "Farseek": [
@@ -15511,46 +15511,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
    },
    {
     "tag": "type:Beast",
@@ -15560,11 +15525,39 @@
     "evidence": "is a Beast"
    },
    {
-    "tag": "type:Horror",
+    "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Horror"
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Sorcerer",
@@ -15574,11 +15567,18 @@
     "evidence": "is a Sorcerer"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Shapeshifter",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Elf"
+    "evidence": "is a Shapeshifter"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "type:Elk",
@@ -15586,13 +15586,6 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elk"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Treefolk",
@@ -15609,18 +15602,25 @@
     "evidence": "is a Scout"
    },
    {
-    "tag": "type:Shapeshifter",
+    "tag": "type:Bard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Shapeshifter"
+    "evidence": "is a Bard"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Warrior"
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
    }
   ],
   "Flamebraider": [
@@ -15685,7 +15685,7 @@
     "tag": "kw:Double strike",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Double strike"
    },
    {
@@ -15715,8 +15715,8 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
-    "evidence": "if you control a creature with power 4 or greater, draw a card."
+    "strength": 1.25,
+    "evidence": "draw a card."
    },
    {
     "tag": "big_power",
@@ -15729,7 +15729,7 @@
     "tag": "trigger_etb",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "a creature you control with power 4 or greater enters, draw a card."
    },
    {
@@ -15898,18 +15898,18 @@
     "evidence": "keyword: Trample"
    },
    {
-    "tag": "kw:Vigilance",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Vigilance"
-   },
-   {
     "tag": "kw:Haste",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Haste"
+   },
+   {
+    "tag": "kw:Vigilance",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Vigilance"
    },
    {
     "tag": "etb",
@@ -15993,18 +15993,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elemental",
@@ -16094,18 +16094,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elemental",
@@ -16131,18 +16131,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    }
   ],
   "Lamentation": [
@@ -16150,7 +16150,7 @@
     "tag": "lifegain",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "you gain 3 life."
    },
    {
@@ -16207,13 +16207,6 @@
   ],
   "Mass of Mysteries": [
    {
-    "tag": "kw:First strike",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: First strike"
-   },
-   {
     "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
@@ -16221,10 +16214,17 @@
     "evidence": "keyword: Trample"
    },
    {
+    "tag": "kw:First strike",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: First strike"
+   },
+   {
     "tag": "kw:Vigilance",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Vigilance"
    },
    {
@@ -16266,18 +16266,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Elemental",
@@ -16329,14 +16329,14 @@
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "landfall — whenever a land you control enters, put a +1/+1 counter on target el…"
    },
    {
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "if you control eight or more lands, draw a card."
    },
    {
@@ -16377,46 +16377,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
    },
    {
     "tag": "type:Beast",
@@ -16426,11 +16391,39 @@
     "evidence": "is a Beast"
    },
    {
-    "tag": "type:Horror",
+    "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Horror"
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Sorcerer",
@@ -16440,11 +16433,18 @@
     "evidence": "is a Sorcerer"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Shapeshifter",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Elf"
+    "evidence": "is a Shapeshifter"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "type:Elk",
@@ -16452,13 +16452,6 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elk"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Treefolk",
@@ -16475,18 +16468,25 @@
     "evidence": "is a Scout"
    },
    {
-    "tag": "type:Shapeshifter",
+    "tag": "type:Bard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Shapeshifter"
+    "evidence": "is a Bard"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Warrior"
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
    }
   ],
   "Opulent Palace": [],
@@ -16545,46 +16545,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Wizard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wizard"
-   },
-   {
-    "tag": "type:Druid",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Druid"
-   },
-   {
-    "tag": "type:Incarnation",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Incarnation"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
-   },
-   {
-    "tag": "type:Bard",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bard"
-   },
-   {
-    "tag": "type:Knight",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Knight"
    },
    {
     "tag": "type:Beast",
@@ -16594,11 +16559,39 @@
     "evidence": "is a Beast"
    },
    {
-    "tag": "type:Horror",
+    "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Horror"
+    "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Wizard",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Knight",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Knight"
+   },
+   {
+    "tag": "type:Incarnation",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "type:Sorcerer",
@@ -16608,11 +16601,18 @@
     "evidence": "is a Sorcerer"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Shapeshifter",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Elf"
+    "evidence": "is a Shapeshifter"
+   },
+   {
+    "tag": "type:Druid",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Druid"
    },
    {
     "tag": "type:Elk",
@@ -16620,13 +16620,6 @@
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elk"
-   },
-   {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Treefolk",
@@ -16643,18 +16636,25 @@
     "evidence": "is a Scout"
    },
    {
-    "tag": "type:Shapeshifter",
+    "tag": "type:Bard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Shapeshifter"
+    "evidence": "is a Bard"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Warrior"
+    "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Horror",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Horror"
    }
   ],
   "Reflections of Littjara": [
@@ -16706,7 +16706,7 @@
     "tag": "trigger_etb",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "another creature enters, its controller may draw a card if its power is greater…"
    },
    {
@@ -16720,7 +16720,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "its controller may draw a card if its power is greater than each other creature…"
    },
    {
@@ -16738,18 +16738,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    }
   ],
   "Shatter the Sky": [
@@ -16780,7 +16780,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "vivid — when ~ enters, draw cards equal to the number of colors among permanent…"
    },
    {
@@ -16826,7 +16826,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "if that player has more cards in hand than you, draw cards equal to the differe…"
    },
    {
@@ -16853,18 +16853,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    },
    {
     "tag": "type:Elemental",
@@ -16896,7 +16896,7 @@
     "tag": "trigger_etb",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "a creature you control of the chosen type enters or attacks, draw a card."
    },
    {
@@ -16910,7 +16910,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "draw a card."
    },
    {
@@ -17010,28 +17010,28 @@
     "tag": "token_creature",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "• create a 4/4 green rhino warrior creature token."
    },
    {
     "tag": "go_wide",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "• create a 4/4 green rhino warrior creature token."
    },
    {
     "tag": "fodder",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "• create a 4/4 green rhino warrior creature token."
    },
    {
     "tag": "etb",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "• create a 4/4 green rhino warrior creature token."
    },
    {
@@ -17045,7 +17045,7 @@
     "tag": "kw:Reach",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Reach"
    },
    {
@@ -17127,28 +17127,28 @@
     "tag": "token_creature",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a green and white elemental creature token with"
    },
    {
     "tag": "go_wide",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a green and white elemental creature token with"
    },
    {
     "tag": "fodder",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a green and white elemental creature token with"
    },
    {
     "tag": "etb",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a green and white elemental creature token with"
    },
    {
@@ -17166,18 +17166,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Elk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elk"
-   },
-   {
     "tag": "type:Elemental",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elemental"
+   },
+   {
+    "tag": "type:Elk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elk"
    },
    {
     "tag": "type:Elemental",
@@ -17203,25 +17203,25 @@
     "evidence": "if a permanent entering causes a triggered ability of a permanent you control t…"
    },
    {
-    "tag": "kw:Deathtouch",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Deathtouch"
-   },
-   {
     "tag": "lifegain",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Lifelink"
    },
    {
     "tag": "kw:Lifelink",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Lifelink"
+   },
+   {
+    "tag": "kw:Deathtouch",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Deathtouch"
    },
    {
     "tag": "etb",
@@ -17251,7 +17251,7 @@
    {
     "name": "Haunting Voyage",
     "cmc": 6.0,
-    "synergy": 2.25,
+    "synergy": 2.44,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
@@ -17269,7 +17269,7 @@
    {
     "name": "Patriarch's Bidding",
     "cmc": 5.0,
-    "synergy": 0.75,
+    "synergy": 0.94,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [],
@@ -17278,7 +17278,7 @@
    {
     "name": "Impulsivity",
     "cmc": 7.0,
-    "synergy": 34.95,
+    "synergy": 35.14,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
@@ -17287,7 +17287,7 @@
    {
     "name": "Jubilation",
     "cmc": 6.0,
-    "synergy": 37.95,
+    "synergy": 38.51,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
@@ -17296,16 +17296,16 @@
    {
     "name": "Avenger of Zendikar",
     "cmc": 7.0,
-    "synergy": 42.5,
+    "synergy": 42.75,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.133
+    "cut_score": 0.15
    },
    {
     "name": "Yarok, the Desecrated",
     "cmc": 5.0,
-    "synergy": 36.95,
+    "synergy": 37.7,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
@@ -17341,7 +17341,7 @@
    {
     "name": "Vernal Sovereign",
     "cmc": 6.0,
-    "synergy": 101.5,
+    "synergy": 102.69,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
@@ -17368,7 +17368,7 @@
    {
     "name": "Horde of Notions",
     "cmc": 5.0,
-    "synergy": 97.95,
+    "synergy": 98.14,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
@@ -17386,7 +17386,7 @@
    {
     "name": "Ashling, Rekindled",
     "cmc": 2.0,
-    "synergy": 61.91,
+    "synergy": 63.41,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
@@ -17395,7 +17395,7 @@
    {
     "name": "Incandescent Soulstoke",
     "cmc": 3.0,
-    "synergy": 98.7,
+    "synergy": 99.26,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
@@ -17427,7 +17427,7 @@
    {
     "name": "Kindred Summons",
     "cmc": 7.0,
-    "synergy": 12.3,
+    "synergy": 12.86,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
@@ -17460,20 +17460,9 @@
     "cut_score": -0.058
    },
    {
-    "name": "Descendants' Fury",
-    "cmc": 4.0,
-    "synergy": 17.55,
-    "cmdr_fit": 2.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.0
-   },
-   {
     "name": "Kindred Discovery",
     "cmc": 5.0,
-    "synergy": 18.55,
+    "synergy": 19.18,
     "cmdr_fit": 0.3,
     "combo_piece": false,
     "roles": [
@@ -17492,6 +17481,17 @@
      "removal"
     ],
     "cut_score": 0.042
+   },
+   {
+    "name": "Descendants' Fury",
+    "cmc": 4.0,
+    "synergy": 18.3,
+    "cmdr_fit": 2.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.05
    },
    {
     "name": "Fury",
@@ -17575,6 +17575,18 @@
     "cut_score": 0.083
    },
    {
+    "name": "Cultivate",
+    "cmc": 3.0,
+    "synergy": 17.91,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.092
+   },
+   {
     "name": "Path to Exile",
     "cmc": 1.0,
     "synergy": 15.41,
@@ -17599,16 +17611,15 @@
     "cut_score": 0.1
    },
    {
-    "name": "Cultivate",
-    "cmc": 3.0,
-    "synergy": 17.91,
-    "cmdr_fit": 0.0,
+    "name": "Maelstrom Wanderer",
+    "cmc": 8.0,
+    "synergy": 42.75,
+    "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
-     "ramp",
-     "tutor"
+     "card-advantage"
     ],
-    "cut_score": 0.108
+    "cut_score": 0.117
    },
    {
     "name": "Foundation Breaker",
@@ -17620,17 +17631,6 @@
      "removal"
     ],
     "cut_score": 0.117
-   },
-   {
-    "name": "Maelstrom Wanderer",
-    "cmc": 8.0,
-    "synergy": 42.75,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.133
    },
    {
     "name": "Shinestriker",
@@ -17654,7 +17654,7 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.175
+    "cut_score": 0.158
    },
    {
     "name": "Rampant Growth",
@@ -17666,12 +17666,12 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.175
+    "cut_score": 0.158
    },
    {
     "name": "Garruk's Uprising",
     "cmc": 3.0,
-    "synergy": 30.55,
+    "synergy": 31.17,
     "cmdr_fit": 0.3,
     "combo_piece": false,
     "roles": [
@@ -17683,13 +17683,13 @@
    {
     "name": "Titan of Industry",
     "cmc": 7.0,
-    "synergy": 44.5,
+    "synergy": 45.69,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
      "removal"
     ],
-    "cut_score": 0.2
+    "cut_score": 0.217
    },
    {
     "name": "Mulldrifter",
@@ -17718,7 +17718,7 @@
    {
     "name": "Grave Sifter",
     "cmc": 6.0,
-    "synergy": 43.5,
+    "synergy": 43.69,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
@@ -17727,9 +17727,21 @@
     "cut_score": 0.275
    },
    {
+    "name": "Kulrath Zealot",
+    "cmc": 6.0,
+    "synergy": 44.75,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "tutor"
+    ],
+    "cut_score": 0.292
+   },
+   {
     "name": "Endurance",
     "cmc": 3.0,
-    "synergy": 32.7,
+    "synergy": 32.89,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
@@ -17750,14 +17762,13 @@
     "cut_score": 0.308
    },
    {
-    "name": "Kulrath Zealot",
+    "name": "Greenwarden of Murasa",
     "cmc": 6.0,
-    "synergy": 44.75,
+    "synergy": 45.69,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage",
-     "tutor"
+     "card-advantage"
     ],
     "cut_score": 0.308
    },
@@ -17774,17 +17785,6 @@
     "cut_score": 0.317
    },
    {
-    "name": "Greenwarden of Murasa",
-    "cmc": 6.0,
-    "synergy": 45.5,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.325
-   },
-   {
     "name": "Crib Swap",
     "cmc": 3.0,
     "synergy": 40.5,
@@ -17798,7 +17798,7 @@
    {
     "name": "Cavalier of Thorns",
     "cmc": 5.0,
-    "synergy": 63.41,
+    "synergy": 64.1,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
@@ -17808,20 +17808,6 @@
     "cut_score": 0.508
    },
    {
-    "name": "Selvala, Heart of the Wilds",
-    "cmc": 3.0,
-    "synergy": 47.11,
-    "cmdr_fit": 0.3,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw",
-     "mana-dork",
-     "ramp"
-    ],
-    "cut_score": 0.608
-   },
-   {
     "name": "Realmwalker",
     "cmc": 3.0,
     "synergy": 47.5,
@@ -17829,6 +17815,20 @@
     "combo_piece": false,
     "roles": [
      "card-advantage"
+    ],
+    "cut_score": 0.608
+   },
+   {
+    "name": "Selvala, Heart of the Wilds",
+    "cmc": 3.0,
+    "synergy": 47.73,
+    "cmdr_fit": 0.3,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw",
+     "mana-dork",
+     "ramp"
     ],
     "cut_score": 0.625
    },
@@ -17850,7 +17850,7 @@
    {
     "name": "Omnath, Locus of the Roil",
     "cmc": 4.0,
-    "synergy": 107.5,
+    "synergy": 107.75,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [

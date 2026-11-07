@@ -375,8 +375,34 @@ KEYWORD_FEATURES = {
     'Revolt': [('fodder', 'C', 'yours')],
 }
 
-# Proliferate adds every counter kind already there, so it feeds both counter axes.
+# Proliferate adds every counter kind already there, so it feeds both counter axes. It only
+# multiplies existing counters, so it is weak (x0.5) unless the deck has PROLIFERATE_DENSE or
+# more other producers of that counter, then full strength.
 PROLIFERATE_FEEDS = [('counters_p1p1', 0.5), ('counters_m1m1', 0.5), ('rad', 0.5), ('counters_any', 1.0)]
+PROLIFERATE_DENSE = 8
+
+# Repeatable producers are worth more than one-shots:
+#   one-shot (instant/sorcery, "when ~ enters/dies", sacrifice ~)        x1.0
+#   your turn (attack, "you cast", your upkeep), activated, static         x1.25
+#   any player's turn (a player casts, cards are milled, counters put...)  x1.5
+REPEAT_ONE_SHOT, REPEAT_YOUR_TURN, REPEAT_ANY_TURN = 1.0, 1.25, 1.5
+TYPE_DERIVED = ('is a', 'is an', 'power ', 'keyword: Flying', 'keyword: Trample')
+
+
+def ability_repeat(kind, cond, is_permanent, body=''):
+    """How often an ability can produce its effect (see REPEAT_*)."""
+    if not is_permanent:
+        return REPEAT_ONE_SHOT
+    if kind == 'activated':
+        return REPEAT_ONE_SHOT if re.search(r'(?:sacrifice|exile) ~', cond) else REPEAT_YOUR_TURN
+    if kind == 'static':
+        return REPEAT_ONE_SHOT if re.search(r'~ enters with|\bas ~ enters', body) else REPEAT_YOUR_TURN
+    if re.match(r'^~ (?:enters|dies|is put into)', cond) and ' or ' not in cond:
+        return REPEAT_ONE_SHOT
+    if re.search(r'\byour (?:turn|upkeep|end step|precombat|combat|draw step)|\byou cast|\byou attack|\battacks?\b'
+                 r'|\benters\b', cond):
+        return REPEAT_YOUR_TURN
+    return REPEAT_ANY_TURN
 
 # Irregular plurals for tribal matching.
 PLURALS = {'Elf': 'elves', 'Dwarf': 'dwarves', 'Wolf': 'wolves', 'Werewolf': 'werewolves',
@@ -397,6 +423,16 @@ def _subtype_pattern(sub):
     return re.compile(r'\b(?:%s|%s)\b' % (re.escape(s), re.escape(plural)))
 
 
+def _repeat_since(feats, start, factor):
+    """Scale producer features added since `start` by how often their ability repeats."""
+    if factor == 1.0:
+        return
+    for i in range(start, len(feats)):
+        f = feats[i]
+        if f.side == 'P' and not f.evidence.startswith(TYPE_DERIVED):
+            feats[i] = f._replace(strength=round(f.strength * factor, 3))
+
+
 def extract_features(view, deck_subtypes=frozenset()):
     """Return a list of Features for one card."""
     feats = []
@@ -406,7 +442,14 @@ def extract_features(view, deck_subtypes=frozenset()):
     def add(tag, side, scope, evidence, strength=1.0):
         feats.append(Feature(tag, side, scope, _clip(evidence), strength))
 
+    is_permanent = bool(types) and not (types & {'Instant', 'Sorcery'})
+    card_repeat = REPEAT_ONE_SHOT
     for kind, cond, body in split_abilities(text):
+        start = len(feats)
+        factor = ability_repeat(kind, cond, is_permanent, body)
+        if kind != 'static' or re.search(r'\bwould\b', body):
+            card_repeat = max(card_repeat, factor)
+        _apply_after = (start, factor)
         if kind == 'trigger':
             self_trigger = '~' in cond and not re.search(r'\banother\b|\bother\b', cond)
             for pattern, tag in CONDITION_RULES:
@@ -455,7 +498,10 @@ def extract_features(view, deck_subtypes=frozenset()):
                         scope = 'yours'   # you can only sacrifice your own permanents
                     add(tag, 'C', scope, seg, strength)
 
+        _repeat_since(feats, *_apply_after)
+
     # Keywords
+    keyword_start = len(feats)
     for kw in view['keywords']:
         for tag, side, scope in KEYWORD_FEATURES.get(kw, []):
             add(tag, side, scope, f'keyword: {kw}')
@@ -465,12 +511,17 @@ def extract_features(view, deck_subtypes=frozenset()):
         kw = kw_m.group(1).capitalize()
         add(f'kw:{kw}', 'C', 'yours', kw_m.group(0))
 
+    # Keyword abilities (Evolve, Afterlife...) on permanents repeat like their card's best ability
+    _repeat_since(feats, keyword_start, max(card_repeat, REPEAT_YOUR_TURN) if is_permanent else REPEAT_ONE_SHOT)
+
     # Proliferate feeds every counter axis
     if any(f.tag == 'proliferate' and f.side == 'P' for f in feats) or re.search(r'\bproliferate\b', text):
         if not any(f.tag == 'proliferate' for f in feats):
             add('proliferate', 'P', 'any', 'proliferate')
+        prolif_start = len(feats)
         for tag, strength in PROLIFERATE_FEEDS:
             add(tag, 'P', 'any', 'proliferate', strength)
+        _repeat_since(feats, prolif_start, card_repeat)
 
     # Type-derived (weak) producers
     if 'Creature' in types:
@@ -716,6 +767,20 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
         deck_subtypes |= v['subtypes']
     features = {v['name']: extract_features(v, deck_subtypes) for v in views}
     names = [v['name'] for v in views]
+
+    # Proliferate is full strength on a counter axis the deck is dense in
+    for axis in ('counters_p1p1', 'counters_m1m1', 'rad'):
+        n_prod = len({n for n, fs in features.items()
+                      if any(f.tag == axis and f.side == 'P' and f.evidence != 'proliferate' for f in fs)})
+        if n_prod >= PROLIFERATE_DENSE:
+            for n, fs in features.items():
+                features[n] = [f._replace(strength=round(f.strength * 2, 3))
+                               if f.tag == axis and f.evidence == 'proliferate' else f for f in fs]
+
+    # Commander-damage plan: counters that grow the commander pay off through it
+    if commander_name in features and 'commander_damage' in plans:
+        features[commander_name] = features[commander_name] + [Feature(
+            'counters_p1p1', 'C', 'self', 'commander-damage plan: +1/+1 counters grow the commander', 1.0)]
 
     producers = defaultdict(list)   # tag -> [(name, feature)]
     payoffs = defaultdict(list)
@@ -1059,7 +1124,8 @@ def print_card(result, name):
     print("Features:")
     for f in result['features'][match]:
         side = 'produces' if f['side'] == 'P' else 'cares   '
-        print(f"  {side} {tag_label(f['tag']):<24s} [{f['scope']}{', weak' if f['strength'] < 1 else ''}] \"{f['evidence']}\"")
+        strength = ', weak' if f['strength'] < 1 else (f", x{f['strength']:g}" if f['strength'] > 1 else '')
+        print(f"  {side} {tag_label(f['tag']):<24s} [{f['scope']}{strength}] \"{f['evidence']}\"")
     print("\nPartners:")
     for p in result['pairs']:
         if match in (p['a'], p['b']):

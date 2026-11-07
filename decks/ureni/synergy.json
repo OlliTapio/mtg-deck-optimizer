@@ -27,9 +27,23 @@
   {
    "tag": "etb",
    "label": "creatures entering",
-   "score": 25.25,
+   "score": 26.5,
    "producers": 29,
    "payoffs": 5
+  },
+  {
+   "tag": "go_wide",
+   "label": "go wide",
+   "score": 3.75,
+   "producers": 2,
+   "payoffs": 2
+  },
+  {
+   "tag": "token_creature",
+   "label": "creature tokens",
+   "score": 3.75,
+   "producers": 2,
+   "payoffs": 2
   },
   {
    "tag": "type:Spirit",
@@ -39,23 +53,9 @@
    "payoffs": 1
   },
   {
-   "tag": "go_wide",
-   "label": "go wide",
-   "score": 3.0,
-   "producers": 2,
-   "payoffs": 2
-  },
-  {
-   "tag": "token_creature",
-   "label": "creature tokens",
-   "score": 3.0,
-   "producers": 2,
-   "payoffs": 2
-  },
-  {
    "tag": "graveyard",
    "label": "graveyard",
-   "score": 1.5,
+   "score": 1.69,
    "producers": 2,
    "payoffs": 1
   }
@@ -255,7 +255,7 @@
    }
   },
   "Dragon Tempest": {
-   "total": 65.95,
+   "total": 66.2,
    "cmdr_fit": 4.8,
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
@@ -265,7 +265,7 @@
    "themes": {
     "type:Dragon": 40.5,
     "kw:Flying": 18.0,
-    "etb": 5.05
+    "etb": 5.3
    }
   },
   "Dragon's Hoard": {
@@ -332,7 +332,7 @@
    "protection_bonus": 20.25
   },
   "Elemental Bond": {
-   "total": 15.32,
+   "total": 15.57,
    "cmdr_fit": 0.3,
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
@@ -341,7 +341,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "card draw": 10.12,
-    "etb": 5.05
+    "etb": 5.3
    },
    "draw_bonus": 10.125,
    "draw_kind": "draw"
@@ -451,7 +451,7 @@
    "ramp_kind": "artifact"
   },
   "Frostcliff Siege": {
-   "total": 11.62,
+   "total": 12.0,
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Lathliss, Dragon Queen",
@@ -460,13 +460,13 @@
    "reactive_penalty": 0.0,
    "themes": {
     "card draw": 10.12,
-    "go_wide": 1.5
+    "go_wide": 1.88
    },
    "draw_bonus": 10.125,
    "draw_kind": "draw"
   },
   "Garruk's Uprising": {
-   "total": 34.82,
+   "total": 35.07,
    "cmdr_fit": 1.8,
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
@@ -476,7 +476,7 @@
    "themes": {
     "big_power": 18.75,
     "card draw": 10.12,
-    "etb": 5.05
+    "etb": 5.3
    },
    "draw_bonus": 10.125,
    "draw_kind": "draw"
@@ -497,7 +497,7 @@
    }
   },
   "Haven of the Spirit Dragon": {
-   "total": 43.5,
+   "total": 43.69,
    "cmdr_fit": 3.0,
    "partners": 28,
    "best_partner": "Ureni of the Unwritten",
@@ -506,7 +506,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Dragon": 40.5,
-    "graveyard": 1.5
+    "graveyard": 1.69
    }
   },
   "Hellkite Courser": {
@@ -618,7 +618,7 @@
    "themes": {}
   },
   "Kiora, Behemoth Beckoner": {
-   "total": 32.33,
+   "total": 32.58,
    "cmdr_fit": 5.3,
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
@@ -628,7 +628,7 @@
    "themes": {
     "ramp": 14.51,
     "card draw": 10.12,
-    "etb": 5.05
+    "etb": 5.3
    },
    "draw_bonus": 10.125,
    "draw_kind": "draw",
@@ -661,7 +661,7 @@
    "protection_bonus": 20.25
   },
   "Lathliss, Dragon Queen": {
-   "total": 84.75,
+   "total": 85.75,
    "cmdr_fit": 6.0,
    "partners": 44,
    "best_partner": "Ureni of the Unwritten",
@@ -671,10 +671,10 @@
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
-    "etb": 2.5,
-    "token_creature": 2.0,
-    "kw:Flying": 1.5,
-    "go_wide": 1.5
+    "etb": 3.12,
+    "token_creature": 2.5,
+    "go_wide": 1.88,
+    "kw:Flying": 1.5
    }
   },
   "Lozhan, Dragons' Legacy": {
@@ -703,7 +703,7 @@
    "themes": {}
   },
   "Marang River Regent // Coil and Catch": {
-   "total": 51.37,
+   "total": 51.56,
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
@@ -715,8 +715,8 @@
     "card draw": 10.12,
     "big_power": 5.25,
     "kw:Flying": 1.5,
-    "etb": 0.75,
-    "graveyard": 0.75
+    "graveyard": 0.94,
+    "etb": 0.75
    },
    "draw_bonus": 10.125,
    "draw_kind": "draw"
@@ -748,7 +748,7 @@
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
-    "token_creature": 2.0,
+    "token_creature": 2.5,
     "kw:Flying": 1.5,
     "type:Spirit": 1.0,
     "etb": 0.75
@@ -851,17 +851,17 @@
    "ramp_kind": "land"
   },
   "Return of the Wildspeaker": {
-   "total": 31.12,
+   "total": 31.5,
    "cmdr_fit": 1.5,
    "partners": 25,
-   "best_partner": "Ureni of the Unwritten",
+   "best_partner": "Lathliss, Dragon Queen",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
     "big_power": 18.75,
     "card draw": 10.12,
-    "go_wide": 1.5
+    "go_wide": 1.88
    },
    "draw_bonus": 10.125,
    "draw_kind": "draw"
@@ -1100,7 +1100,7 @@
    }
   },
   "Temur Ascendancy": {
-   "total": 15.32,
+   "total": 15.57,
    "cmdr_fit": 0.3,
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
@@ -1109,7 +1109,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "card draw": 10.12,
-    "etb": 5.05
+    "etb": 5.3
    },
    "draw_bonus": 10.125,
    "draw_kind": "draw"
@@ -1192,7 +1192,7 @@
    }
   },
   "Utvara Hellkite": {
-   "total": 84.75,
+   "total": 85.75,
    "cmdr_fit": 6.0,
    "partners": 44,
    "best_partner": "Ureni of the Unwritten",
@@ -1202,10 +1202,10 @@
    "themes": {
     "type:Dragon": 69.0,
     "big_power": 5.25,
-    "etb": 2.5,
-    "token_creature": 2.0,
-    "kw:Flying": 1.5,
-    "go_wide": 1.5
+    "etb": 3.12,
+    "token_creature": 2.5,
+    "go_wide": 1.88,
+    "kw:Flying": 1.5
    }
   },
   "Whirlwing Stormbrood // Dynamic Soar": {
@@ -1345,7 +1345,7 @@
  "plans": [],
  "commander_dependence": {
   "score": 1.0,
-  "synergy_vs_average_card": 5.58,
+  "synergy_vs_average_card": 5.56,
   "protection_weight": 1.0,
   "protection_bonus": 20.25,
   "protection_cards": [
@@ -1489,7 +1489,7 @@
    "card": "Garruk's Uprising",
    "side": "produces",
    "tag": "draw",
-   "evidence": "if you control a creature with power 4 or greater, draw a card."
+   "evidence": "draw a card."
   },
   {
    "card": "Kiora, Behemoth Beckoner",
@@ -2174,7 +2174,7 @@
      "tag": "token_creature",
      "producer": "Lathliss, Dragon Queen",
      "payoff": "Miirym, Sentinel Wyrm",
-     "weight": 1.0
+     "weight": 1.25
     }
    ]
   },
@@ -2199,7 +2199,7 @@
      "tag": "token_creature",
      "producer": "Utvara Hellkite",
      "payoff": "Lathliss, Dragon Queen",
-     "weight": 1.0
+     "weight": 1.25
     }
    ]
   },
@@ -2224,7 +2224,7 @@
      "tag": "token_creature",
      "producer": "Utvara Hellkite",
      "payoff": "Miirym, Sentinel Wyrm",
-     "weight": 1.0
+     "weight": 1.25
     }
    ]
   },
@@ -3500,7 +3500,7 @@
   {
    "a": "Dragon Tempest",
    "b": "Lathliss, Dragon Queen",
-   "score": 2.75,
+   "score": 2.875,
    "reasons": [
     {
      "tag": "type:Dragon",
@@ -3518,14 +3518,14 @@
      "tag": "etb",
      "producer": "Lathliss, Dragon Queen",
      "payoff": "Dragon Tempest",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
   {
    "a": "Dragon Tempest",
    "b": "Utvara Hellkite",
-   "score": 2.75,
+   "score": 2.875,
    "reasons": [
     {
      "tag": "type:Dragon",
@@ -3543,7 +3543,7 @@
      "tag": "etb",
      "producer": "Utvara Hellkite",
      "payoff": "Dragon Tempest",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
@@ -3557,6 +3557,25 @@
      "producer": "Selvala's Stampede",
      "payoff": "Ureni of the Unwritten",
      "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Haven of the Spirit Dragon",
+   "b": "Marang River Regent // Coil and Catch",
+   "score": 2.438,
+   "reasons": [
+    {
+     "tag": "type:Dragon",
+     "producer": "Marang River Regent // Coil and Catch",
+     "payoff": "Haven of the Spirit Dragon",
+     "weight": 1.5
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Marang River Regent // Coil and Catch",
+     "payoff": "Haven of the Spirit Dragon",
+     "weight": 0.938
     }
    ]
   },
@@ -4865,25 +4884,6 @@
    ]
   },
   {
-   "a": "Haven of the Spirit Dragon",
-   "b": "Marang River Regent // Coil and Catch",
-   "score": 2.25,
-   "reasons": [
-    {
-     "tag": "type:Dragon",
-     "producer": "Marang River Regent // Coil and Catch",
-     "payoff": "Haven of the Spirit Dragon",
-     "weight": 1.5
-    },
-    {
-     "tag": "graveyard",
-     "producer": "Marang River Regent // Coil and Catch",
-     "payoff": "Haven of the Spirit Dragon",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Lathliss, Dragon Queen",
    "b": "Thundermane Dragon",
    "score": 2.25,
@@ -5039,6 +5039,44 @@
      "producer": "Ureni of the Unwritten",
      "payoff": "Garruk's Uprising",
      "weight": 0.15
+    }
+   ]
+  },
+  {
+   "a": "Lathliss, Dragon Queen",
+   "b": "Return of the Wildspeaker",
+   "score": 1.688,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Lathliss, Dragon Queen",
+     "payoff": "Return of the Wildspeaker",
+     "weight": 0.938
+    },
+    {
+     "tag": "big_power",
+     "producer": "Lathliss, Dragon Queen",
+     "payoff": "Return of the Wildspeaker",
+     "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Return of the Wildspeaker",
+   "b": "Utvara Hellkite",
+   "score": 1.688,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Utvara Hellkite",
+     "payoff": "Return of the Wildspeaker",
+     "weight": 0.938
+    },
+    {
+     "tag": "big_power",
+     "producer": "Utvara Hellkite",
+     "payoff": "Return of the Wildspeaker",
+     "weight": 0.75
     }
    ]
   },
@@ -9351,47 +9389,9 @@
    ]
   },
   {
-   "a": "Lathliss, Dragon Queen",
-   "b": "Return of the Wildspeaker",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Lathliss, Dragon Queen",
-     "payoff": "Return of the Wildspeaker",
-     "weight": 0.75
-    },
-    {
-     "tag": "go_wide",
-     "producer": "Lathliss, Dragon Queen",
-     "payoff": "Return of the Wildspeaker",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Return of the Wildspeaker",
-   "b": "Utvara Hellkite",
-   "score": 1.5,
-   "reasons": [
-    {
-     "tag": "big_power",
-     "producer": "Utvara Hellkite",
-     "payoff": "Return of the Wildspeaker",
-     "weight": 0.75
-    },
-    {
-     "tag": "go_wide",
-     "producer": "Utvara Hellkite",
-     "payoff": "Return of the Wildspeaker",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Garruk's Uprising",
    "b": "Lathliss, Dragon Queen",
-   "score": 1.25,
+   "score": 1.375,
    "reasons": [
     {
      "tag": "big_power",
@@ -9403,14 +9403,14 @@
      "tag": "etb",
      "producer": "Lathliss, Dragon Queen",
      "payoff": "Garruk's Uprising",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
   {
    "a": "Garruk's Uprising",
    "b": "Utvara Hellkite",
-   "score": 1.25,
+   "score": 1.375,
    "reasons": [
     {
      "tag": "big_power",
@@ -9422,7 +9422,7 @@
      "tag": "etb",
      "producer": "Utvara Hellkite",
      "payoff": "Garruk's Uprising",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
@@ -9449,6 +9449,32 @@
      "producer": "Ureni, the Song Unending",
      "payoff": "Essence Flux",
      "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Frostcliff Siege",
+   "b": "Lathliss, Dragon Queen",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Lathliss, Dragon Queen",
+     "payoff": "Frostcliff Siege",
+     "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Frostcliff Siege",
+   "b": "Utvara Hellkite",
+   "score": 0.938,
+   "reasons": [
+    {
+     "tag": "go_wide",
+     "producer": "Utvara Hellkite",
+     "payoff": "Frostcliff Siege",
+     "weight": 0.938
     }
    ]
   },
@@ -11275,32 +11301,6 @@
    ]
   },
   {
-   "a": "Frostcliff Siege",
-   "b": "Lathliss, Dragon Queen",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "go_wide",
-     "producer": "Lathliss, Dragon Queen",
-     "payoff": "Frostcliff Siege",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
-   "a": "Frostcliff Siege",
-   "b": "Utvara Hellkite",
-   "score": 0.75,
-   "reasons": [
-    {
-     "tag": "go_wide",
-     "producer": "Utvara Hellkite",
-     "payoff": "Frostcliff Siege",
-     "weight": 0.75
-    }
-   ]
-  },
-  {
    "a": "Haven of the Spirit Dragon",
    "b": "Smuggler's Surprise",
    "score": 0.75,
@@ -11316,78 +11316,78 @@
   {
    "a": "Elemental Bond",
    "b": "Lathliss, Dragon Queen",
-   "score": 0.5,
+   "score": 0.625,
    "reasons": [
     {
      "tag": "etb",
      "producer": "Lathliss, Dragon Queen",
      "payoff": "Elemental Bond",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
   {
    "a": "Elemental Bond",
    "b": "Utvara Hellkite",
-   "score": 0.5,
+   "score": 0.625,
    "reasons": [
     {
      "tag": "etb",
      "producer": "Utvara Hellkite",
      "payoff": "Elemental Bond",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
   {
    "a": "Kiora, Behemoth Beckoner",
    "b": "Lathliss, Dragon Queen",
-   "score": 0.5,
+   "score": 0.625,
    "reasons": [
     {
      "tag": "etb",
      "producer": "Lathliss, Dragon Queen",
      "payoff": "Kiora, Behemoth Beckoner",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
   {
    "a": "Kiora, Behemoth Beckoner",
    "b": "Utvara Hellkite",
-   "score": 0.5,
+   "score": 0.625,
    "reasons": [
     {
      "tag": "etb",
      "producer": "Utvara Hellkite",
      "payoff": "Kiora, Behemoth Beckoner",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
   {
    "a": "Lathliss, Dragon Queen",
    "b": "Temur Ascendancy",
-   "score": 0.5,
+   "score": 0.625,
    "reasons": [
     {
      "tag": "etb",
      "producer": "Lathliss, Dragon Queen",
      "payoff": "Temur Ascendancy",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
   {
    "a": "Temur Ascendancy",
    "b": "Utvara Hellkite",
-   "score": 0.5,
+   "score": 0.625,
    "reasons": [
     {
      "tag": "etb",
      "producer": "Utvara Hellkite",
      "payoff": "Temur Ascendancy",
-     "weight": 0.5
+     "weight": 0.625
     }
    ]
   },
@@ -12629,7 +12629,7 @@
     "tag": "lifegain",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "you gain 3 life."
    },
    {
@@ -12838,7 +12838,7 @@
     "tag": "trigger_etb",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "a creature you control with flying enters, it gains haste until end of turn."
    },
    {
@@ -12882,7 +12882,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "draw a card."
    },
    {
@@ -12937,18 +12937,18 @@
     "evidence": "power 8"
    },
    {
-    "tag": "type:Elder",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elder"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Elder",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elder"
    }
   ],
   "Drakuseth, Maw of Flames": [
@@ -12986,7 +12986,7 @@
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "put two +1/+1 counters on target creature and untap it."
    },
    {
@@ -13004,18 +13004,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Elemental Bond": [
@@ -13023,7 +13023,7 @@
     "tag": "trigger_etb",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "a creature you control with power 3 or greater enters, draw a card."
    },
    {
@@ -13037,7 +13037,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "draw a card."
    },
    {
@@ -13172,7 +13172,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "• jeskai — whenever one or more creatures you control deal combat damage to a p…"
    },
    {
@@ -13202,8 +13202,8 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
-    "evidence": "if you control a creature with power 4 or greater, draw a card."
+    "strength": 1.25,
+    "evidence": "draw a card."
    },
    {
     "tag": "big_power",
@@ -13216,7 +13216,7 @@
     "tag": "trigger_etb",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "a creature you control with power 4 or greater enters, draw a card."
    },
    {
@@ -13421,7 +13421,7 @@
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "add {g}. when you spend this mana to cast a dragon creature spell, it enters wi…"
    },
    {
@@ -13452,7 +13452,7 @@
     "tag": "trigger_etb",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "a creature you control with power 4 or greater enters, draw a card."
    },
    {
@@ -13466,7 +13466,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "draw a card."
    },
    {
@@ -13528,28 +13528,28 @@
     "tag": "token_creature",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 5/5 red dragon creature token with flying."
    },
    {
     "tag": "go_wide",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 5/5 red dragon creature token with flying."
    },
    {
     "tag": "fodder",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 5/5 red dragon creature token with flying."
    },
    {
     "tag": "etb",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 5/5 red dragon creature token with flying."
    },
    {
@@ -13646,21 +13646,21 @@
     "tag": "discard",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "draw three cards, then discard a card."
    },
    {
     "tag": "graveyard",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "draw three cards, then discard a card."
    },
    {
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "draw three cards, then discard a card."
    },
    {
@@ -13734,7 +13734,7 @@
     "tag": "kw:Ward",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "keyword: Ward"
    },
    {
@@ -13807,7 +13807,7 @@
     "tag": "cast_exile",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "you may play it this turn."
    },
    {
@@ -14106,18 +14106,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Serpent",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Serpent"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Serpent",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Serpent"
    }
   ],
   "Teferi's Time Twist": [
@@ -14152,7 +14152,7 @@
     "tag": "trigger_etb",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "a creature you control with power 4 or greater enters, you may draw a card."
    },
    {
@@ -14166,7 +14166,7 @@
     "tag": "draw",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "you may draw a card."
    },
    {
@@ -14186,18 +14186,18 @@
   ],
   "Terror of Mount Velus": [
    {
+    "tag": "kw:Double strike",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Double strike"
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
-   },
-   {
-    "tag": "kw:Double strike",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Double strike"
    },
    {
     "tag": "etb",
@@ -14367,28 +14367,28 @@
     "tag": "token_creature",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 6/6 red dragon creature token with flying."
    },
    {
     "tag": "go_wide",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 6/6 red dragon creature token with flying."
    },
    {
     "tag": "fodder",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 6/6 red dragon creature token with flying."
    },
    {
     "tag": "etb",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "create a 6/6 red dragon creature token with flying."
    },
    {
@@ -14432,7 +14432,7 @@
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "yours",
-    "strength": 1.0,
+    "strength": 1.25,
     "evidence": "put three +1/+1 counters on target creature you control."
    },
    {
@@ -14560,7 +14560,7 @@
    {
     "name": "Utvara Hellkite",
     "cmc": 8.0,
-    "synergy": 84.75,
+    "synergy": 85.75,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
@@ -14614,7 +14614,7 @@
    {
     "name": "Lathliss, Dragon Queen",
     "cmc": 6.0,
-    "synergy": 84.75,
+    "synergy": 85.75,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
@@ -14771,7 +14771,7 @@
    {
     "name": "Frostcliff Siege",
     "cmc": 3.0,
-    "synergy": 11.62,
+    "synergy": 12.0,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
@@ -14783,7 +14783,7 @@
    {
     "name": "Elemental Bond",
     "cmc": 3.0,
-    "synergy": 15.32,
+    "synergy": 15.57,
     "cmdr_fit": 0.3,
     "combo_piece": false,
     "roles": [
@@ -14795,7 +14795,7 @@
    {
     "name": "Temur Ascendancy",
     "cmc": 3.0,
-    "synergy": 15.32,
+    "synergy": 15.57,
     "cmdr_fit": 0.3,
     "combo_piece": false,
     "roles": [
@@ -14807,7 +14807,7 @@
    {
     "name": "Return of the Wildspeaker",
     "cmc": 5.0,
-    "synergy": 31.12,
+    "synergy": 31.5,
     "cmdr_fit": 1.5,
     "combo_piece": false,
     "roles": [
@@ -14961,7 +14961,7 @@
    {
     "name": "Kiora, Behemoth Beckoner",
     "cmc": 3.0,
-    "synergy": 32.33,
+    "synergy": 32.58,
     "cmdr_fit": 5.3,
     "combo_piece": false,
     "roles": [
@@ -14986,7 +14986,7 @@
    {
     "name": "Garruk's Uprising",
     "cmc": 3.0,
-    "synergy": 34.82,
+    "synergy": 35.07,
     "cmdr_fit": 1.8,
     "combo_piece": false,
     "roles": [
@@ -14998,7 +14998,7 @@
    {
     "name": "Marang River Regent // Coil and Catch",
     "cmc": 6.0,
-    "synergy": 51.37,
+    "synergy": 51.56,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
@@ -15151,7 +15151,7 @@
    {
     "name": "Dragon Tempest",
     "cmc": 2.0,
-    "synergy": 65.95,
+    "synergy": 66.2,
     "cmdr_fit": 4.8,
     "combo_piece": false,
     "roles": [

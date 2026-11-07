@@ -190,7 +190,8 @@ class TestScoring:
         r = compute_synergy([HARDENED_SCALES, TRISKELION, FATHOM_MAGE, BLOOD_ARTIST, VISCERA_SEER])
         assert r['main_theme'] == 'counters_p1p1'
         p = _pair(r, 'Triskelion', 'Hardened Scales')
-        assert p['reasons'][0]['weight'] == pytest.approx(1.0 * MAIN_THEME_BONUS)
+        # Hardened Scales is a static (repeating) effect: x1.25 on top of the main-theme bonus
+        assert p['reasons'][0]['weight'] == pytest.approx(1.0 * MAIN_THEME_BONUS * 1.25)
 
     def test_commander_bonus(self):
         plain = compute_synergy([HARDENED_SCALES, TRISKELION])
@@ -384,6 +385,44 @@ class TestDraw:
         r = compute_synergy([BLOOD_ARTIST, VISCERA_SEER, DOOMED_TRAVELER, div, pre])
         assert r['cards']['Divination']['total'] > r['cards']['Preordain']['total'] > 0
         assert r['draw']['bonus']['draw'] == pytest.approx(2 * r['draw']['bonus']['selection'])
+
+
+class TestRepeatAndProliferate:
+    WHALE = _card('Dreamtide Whale', 'Creature — Whale',
+                  'Vanishing 7\nWhenever a player casts their second spell each turn, proliferate.',
+                  keywords=['Vanishing', 'Proliferate'], power=7, cmc=3)
+    SORCERY_PROLIF = _card('Tezzeret\'s Gambit', 'Sorcery', 'Draw two cards, then proliferate.',
+                           keywords=['Proliferate'], cmc=4)
+
+    def _counter_deck(self, n):
+        return [_card(f'Grower {i}', 'Creature — Elf', 'When this creature enters, put a +1/+1 counter on target '
+                      'creature you control.', power=1, cmc=2) for i in range(n)]
+
+    def test_repeat_factors(self):
+        from synergy import ability_repeat
+        assert ability_repeat('trigger', 'a player casts their second spell each turn', True) == 1.5
+        assert ability_repeat('trigger', '~ attacks', True) == 1.25
+        assert ability_repeat('trigger', '~ enters', True) == 1.0
+        assert ability_repeat('static', '', True, '~ enters with three +1/+1 counters on it.') == 1.0
+        assert ability_repeat('trigger', 'you draw a card', False) == 1.0
+
+    def test_repeatable_proliferate_beats_one_shot(self):
+        views = [self.WHALE, self.SORCERY_PROLIF, HARDENED_SCALES]
+        r = compute_synergy(views)
+        assert (_pair(r, 'Dreamtide Whale', 'Hardened Scales')['score']
+                > _pair(r, "Tezzeret's Gambit", 'Hardened Scales')['score'])
+
+    def test_proliferate_full_strength_in_dense_counter_deck(self):
+        sparse = compute_synergy([self.WHALE, HARDENED_SCALES] + self._counter_deck(2))
+        dense = compute_synergy([self.WHALE, HARDENED_SCALES] + self._counter_deck(9))
+        assert (_pair(dense, 'Dreamtide Whale', 'Hardened Scales')['score']
+                > _pair(sparse, 'Dreamtide Whale', 'Hardened Scales')['score'])
+
+    def test_commander_damage_plan_pairs_counters_with_commander(self):
+        views = [MOTHMAN, self.WHALE]
+        plain = compute_synergy(views, 'The Wise Mothman')
+        plan = compute_synergy(views, 'The Wise Mothman', plans={'commander_damage'})
+        assert plan['cards']['Dreamtide Whale']['cmdr_fit'] > plain['cards']['Dreamtide Whale']['cmdr_fit']
 
 
 class TestCuts:
