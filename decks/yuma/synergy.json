@@ -131,6 +131,7 @@
    "best_partner": "Aftermath Analyst",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "ramp": 80.0,
     "fodder": 28.75,
@@ -153,6 +154,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0
    }
@@ -164,6 +166,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 19.5,
     "ramp": 7.42,
@@ -179,6 +182,7 @@
    "best_partner": "Omnath, Locus of Rage",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0,
@@ -198,6 +202,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Arid Archway": {
@@ -207,6 +212,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 39.0,
     "graveyard": 12.75
@@ -219,6 +225,7 @@
    "best_partner": "Entish Restoration",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -236,6 +243,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 12.75
    }
@@ -247,6 +255,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift": {
@@ -256,6 +265,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "ramp": 5.17
    },
@@ -268,6 +278,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0
    }
@@ -279,6 +290,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0,
     "kw:Reach": 3.0,
@@ -292,6 +304,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "big_power": 11.25,
     "type:Plant": 4.0,
@@ -306,6 +319,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "fodder": 13.75,
     "go_wide": 12.0,
@@ -320,6 +334,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Command Tower": {
@@ -329,6 +344,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Conduit of Worlds": {
@@ -338,6 +354,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0,
@@ -351,6 +368,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0,
     "graveyard": 12.75
@@ -363,6 +381,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0
    }
@@ -374,6 +393,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Decimate": {
@@ -383,6 +403,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Desert of the Fervent": {
@@ -392,6 +413,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0
    }
@@ -403,6 +425,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0
    }
@@ -414,6 +437,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0
    }
@@ -425,6 +449,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "ramp": 7.42,
     "landfall": 7.0,
@@ -439,6 +464,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 12.75,
     "type:Plant": 4.0,
@@ -453,6 +479,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0,
     "fodder": 13.75,
@@ -468,6 +495,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "ramp": 6.42,
     "type:Insect": 1.0,
@@ -482,6 +510,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Entish Restoration": {
@@ -491,6 +520,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
@@ -509,6 +539,7 @@
    "best_partner": "Avenger of Zendikar",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 7.0
    }
@@ -520,6 +551,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -534,6 +566,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Gruul Turf": {
@@ -543,6 +576,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Garruk's Uprising": {
@@ -552,6 +586,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "etb": 9.75,
     "big_power": 7.5,
@@ -565,6 +600,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
@@ -582,6 +618,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 39.0,
     "fodder": 17.5,
@@ -596,6 +633,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
@@ -613,6 +651,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
@@ -630,6 +669,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Prismatic Undercurrents": {
@@ -639,6 +679,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 7.0,
     "ramp": 6.17
@@ -652,6 +693,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Life from the Loam": {
@@ -661,6 +703,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 19.5,
     "land_gy": 6.0
@@ -673,6 +716,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 17.0,
     "ramp": 6.42,
@@ -687,6 +731,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Map the Frontier": {
@@ -696,6 +741,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 24.0,
     "landfall": 7.0,
@@ -710,6 +756,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 12.75
    }
@@ -721,6 +768,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0
    }
@@ -732,6 +780,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "big_power": 7.5
    }
@@ -743,6 +792,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Nahiri's Lithoforming": {
@@ -752,6 +802,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "fodder": 17.5,
     "ramp": 5.17,
@@ -767,6 +818,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 7.0,
     "ramp": 6.17
@@ -780,6 +832,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -798,6 +851,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "ramp": 7.42,
     "landfall": 7.0,
@@ -812,6 +866,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "big_power": 7.5
    }
@@ -823,6 +878,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 18.0
    }
@@ -834,6 +890,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "ramp": 5.17
    },
@@ -846,6 +903,7 @@
    "best_partner": "Entish Restoration",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -863,6 +921,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Hedge Shredder": {
@@ -872,6 +931,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 19.5,
     "ramp": 5.17
@@ -885,6 +945,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Ramunap Excavator": {
@@ -894,6 +955,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0,
@@ -908,6 +970,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 39.0,
     "fodder": 17.5,
@@ -922,6 +985,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Return of the Wildspeaker": {
@@ -931,6 +995,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "go_wide": 10.5,
     "big_power": 7.5
@@ -943,6 +1008,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
@@ -961,6 +1027,7 @@
    "best_partner": "Garruk's Uprising",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "etb": 0.15
    }
@@ -972,6 +1039,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Scavenger Grounds": {
@@ -981,6 +1049,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 39.0,
     "fodder": 17.5,
@@ -995,6 +1064,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 17.0,
     "fodder": 13.75,
@@ -1010,6 +1080,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 24.0,
     "graveyard": 8.25,
@@ -1026,6 +1097,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "go_wide": 10.5,
     "big_power": 7.5
@@ -1038,6 +1110,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 39.0,
     "fodder": 17.5,
@@ -1053,6 +1126,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Sheltering Landscape": {
@@ -1062,6 +1136,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Six": {
@@ -1071,6 +1146,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 19.5,
     "kw:Reach": 0.75,
@@ -1084,6 +1160,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 7.0,
     "ramp": 6.17
@@ -1097,6 +1174,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
@@ -1115,6 +1193,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Stroke of Midnight": {
@@ -1124,6 +1203,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Sun Titan": {
@@ -1133,6 +1213,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 8.25,
     "ramp": 6.42,
@@ -1148,6 +1229,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Mole Man, Moloid Master": {
@@ -1157,6 +1239,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "landfall": 22.0,
     "graveyard": 19.5,
@@ -1173,6 +1256,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "fodder": 13.75,
     "dies": 11.0,
@@ -1194,6 +1278,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "type:Desert": 24.0,
     "fodder": 13.75,
@@ -1213,6 +1298,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "ramp": 6.42,
     "big_power": 5.25,
@@ -1228,6 +1314,7 @@
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {}
   },
   "Worldsoul's Rage": {
@@ -1237,6 +1324,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 8.25,
     "landfall": 7.0,
@@ -1251,6 +1339,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 19.5,
     "landfall": 7.0,
@@ -1266,6 +1355,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
+   "reactive_penalty": 0.0,
    "themes": {
     "fodder": 17.5,
     "land_gy": 10.0,
@@ -1280,6 +1370,7 @@
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
+   "reactive_penalty": 0.0,
    "themes": {
     "fodder": 17.5,
     "sacrifice": 11.0,
@@ -1371,6 +1462,29 @@
    "Wreck and Rebuild": "land",
    "Evendo Brushrazer": "creature"
   }
+ },
+ "plans": [],
+ "commander_dependence": {
+  "score": 1.0,
+  "synergy_vs_average_card": 7.86,
+  "protection_weight": 1.0,
+  "protection_bonus": 11.125,
+  "protection_cards": []
+ },
+ "reactive": {
+  "cards": [
+   "Annie Joins Up",
+   "Bovine Intervention",
+   "Decimate",
+   "Path to Exile",
+   "Pyrrhic Strike",
+   "Requisition Raid",
+   "Stroke of Midnight",
+   "Worldsoul's Rage",
+   "Wreck and Rebuild"
+  ],
+  "limit": 12,
+  "penalty_per_card": 0.0
  },
  "unmatched": [
   {
@@ -13212,18 +13326,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Cinder Glade": [],
@@ -13511,18 +13625,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Insect",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Insect"
-   },
-   {
     "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Insect",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Insect"
    }
   ],
   "Embrace the Unknown": [
@@ -14230,18 +14344,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Overwhelming Stampede": [
@@ -15331,18 +15445,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Winding Way": [
@@ -15421,13 +15535,6 @@
     "evidence": "• mill five cards, then you may put a land card from your graveyard onto the ba…"
    },
    {
-    "tag": "graveyard",
-    "side": "C",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flashback"
-   },
-   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -15440,6 +15547,13 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
+   },
+   {
+    "tag": "graveyard",
+    "side": "C",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flashback"
    },
    {
     "tag": "cast_noncreature",
@@ -15523,18 +15637,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Insect",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Insect"
-   },
-   {
     "tag": "type:Warrior",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warrior"
+   },
+   {
+    "tag": "type:Insect",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Insect"
    },
    {
     "tag": "sacrifice",

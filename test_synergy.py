@@ -311,6 +311,59 @@ class TestRamp:
         assert not r['cards']['Llanowar Elves']['combo_piece']
 
 
+class TestProtectionAndReactive:
+    BOOTS = _card('Swiftfoot Boots', 'Artifact — Equipment', 'Equipped creature has hexproof and haste.\nEquip {1}', cmc=2)
+    SELF_ONLY = _card('Agent Frank Horrigan', 'Legendary Creature — Mutant Warrior',
+                      'Trample\nAgent Frank Horrigan has indestructible as long as it attacked this turn.', power=8, cmc=7)
+    RIPPLES = _card('Ripples of Potential', 'Instant', 'Proliferate, then choose any number of permanents you control '
+                    'that had a counter put on them this way. Those permanents phase out.', cmc=2)
+    OPP = _card('Shadowspear', 'Artifact — Equipment', 'Equipped creature gets +1/+1 and has trample and lifelink.\n'
+                '{1}: Permanents your opponents control lose hexproof and indestructible until end of turn.', cmc=1)
+
+    def test_detects_protection(self):
+        from synergy import is_protection
+        assert is_protection(self.BOOTS) and is_protection(self.RIPPLES)
+        assert not is_protection(self.SELF_ONLY) and not is_protection(self.OPP)
+
+    def test_protection_scales_with_commander_dependence(self):
+        payoffs = [_card(f'Payoff {i}', 'Creature — Elf', 'Whenever a +1/+1 counter is put on a creature you control, '
+                         'draw a card.', power=1) for i in range(4)]
+        cmdr = _card('Grower', 'Legendary Creature — Elf', 'Flying\nAt the beginning of combat on your turn, put a '
+                     '+1/+1 counter on target creature you control.', keywords=['Flying'], power=2, cmc=3)
+        views = [cmdr, self.BOOTS] + payoffs
+        base = compute_synergy(views, 'Grower')
+        voltron = compute_synergy(views, 'Grower', plans={'commander_damage'})
+        assert base['commander_dependence']['score'] > 0
+        assert voltron['cards']['Swiftfoot Boots']['cmdr_fit'] > base['cards']['Swiftfoot Boots']['cmdr_fit'] > 0
+
+    def test_no_commander_no_protection_bonus(self):
+        r = compute_synergy([self.BOOTS, TRISKELION])
+        assert r['cards']['Swiftfoot Boots']['total'] == 0
+
+    def test_too_many_reactive_cards_lose_synergy(self):
+        from synergy import REACTIVE_LIMIT, REACTIVE_PENALTY
+        removal = [_card(f'Kill {i}', 'Instant', 'Destroy target creature.', otags=['removal'], cmc=2)
+                   for i in range(REACTIVE_LIMIT + 3)]
+        r = compute_synergy(removal)
+        assert r['reactive']['penalty_per_card'] == 3 * REACTIVE_PENALTY
+        assert r['cards']['Kill 0']['total'] == -3 * REACTIVE_PENALTY
+        ok = compute_synergy(removal[:REACTIVE_LIMIT])
+        assert ok['reactive']['penalty_per_card'] == 0
+
+    def test_wipes_and_creatures_are_not_reactive(self):
+        from synergy import is_reactive
+        wipe = _card('Wrath', 'Sorcery', 'Destroy all creatures.', otags=['removal', 'board-wipe'], cmc=4)
+        body = _card('Ravenous Chupacabra', 'Creature — Beast', 'When this creature enters, destroy target creature an '
+                     'opponent controls.', otags=['removal'], power=2, cmc=4)
+        assert not is_reactive(wipe) and not is_reactive(body)
+
+    def test_deck_plan_from_notes(self, tmp_path):
+        from synergy import deck_plan
+        (tmp_path / 'CLAUDE.md').write_text('## Win Conditions\n1. **Commander damage** with a flying beater.')
+        assert deck_plan(str(tmp_path / 'decklist.txt')) == {'commander_damage'}
+        assert deck_plan(str(tmp_path / 'nothing' / 'decklist.txt')) == set()
+
+
 class TestCuts:
     def test_low_synergy_high_cmc_first_and_roles_apart(self):
         filler = _card('Big Vanilla', 'Creature — Beast', '', power=5, cmc=7)

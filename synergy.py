@@ -69,6 +69,25 @@ RAMP_EXPENSIVE_MV = 5
 RAMP_PATTERN = re.compile(
     r"\badd (?:\{|one mana|two mana|three mana|x mana|an amount of|mana)|search your library for [^.]*\blands?\b"
     r"|put [^.]*\blands? cards?[^.]*onto the battlefield|play an additional land|create [^.]*treasure")
+# Protection: pairs with the commander by how much the deck depends on it.
+#   dependence = (commander's synergy / average card's synergy - 1) / 3, capped 0..1
+#                + PLAN_CMDR_DAMAGE if the deck plans to win with commander damage / voltron
+#   protection pair = PROTECTION_WEIGHT * dependence, then x2 commander bonus
+#   protection card bonus = PROTECTION_SHARE * dependence * median card synergy (scales with the deck,
+#     since one pair can't compete with totals built from dozens of pairs)
+PROTECTION_WEIGHT = 1.0
+PROTECTION_SHARE = 0.5
+PLAN_CMDR_DAMAGE = 0.75
+PROTECTION_PATTERN = re.compile(
+    r"(?<!~ )(?<!~ also )\b(?:gains?|has|have) [^.]*(?:hexproof|shroud|indestructible|protection from)"
+    r"|(?<!opponents control )\bphases? out"
+    r"|counter target (?:spell|ability)[^.]*that targets (?:a|one or more) (?:creature|permanent)s? you control")
+# Reactive cards (removal, counterspells, protection) do nothing on their own. Beyond the
+# template's 12 targeted-disruption slots (+2 for commander-damage decks, which need more
+# protection), every reactive card loses REACTIVE_PENALTY per extra card.
+REACTIVE_LIMIT = 12
+REACTIVE_LIMIT_CMDR_DAMAGE = 14
+REACTIVE_PENALTY = 0.5
 DEFAULT_BRACKET = 3           # when the deck's CLAUDE.md names no bracket
 WINCON_PATTERN = re.compile(
     r"win the game|loses? the game|\binfinite (?:combat )?damage(?! to creatures)|near-infinite damage(?! to creatures)"
@@ -95,7 +114,7 @@ TAG_LABELS = {
     'cast_noncreature': 'noncreature spells', 'cast_exile': 'casting from exile',
     'etb': 'creatures entering', 'big_power': 'power 4+',
     'trigger_dies': 'death-trigger doubling', 'trigger_etb': 'ETB-trigger doubling',
-    'ramp': 'ramp', 'combo': 'known combo', 'combo_win': 'known combo (wins the game)',
+    'ramp': 'ramp', 'protection': 'protects the commander', 'combo': 'known combo', 'combo_win': 'known combo (wins the game)',
 }
 
 
@@ -607,7 +626,58 @@ def ramp_commander_weight(view, ramp):
     return round(w, 3)
 
 
-def compute_synergy(views, commander_name=None, combos=None, bracket=None):
+def is_protection(view):
+    """Protects your own creatures or permanents: hexproof, indestructible, phasing..."""
+    if 'Land' in view['front_types']:
+        return False
+    for sentence in re.split(r'[.\n]', normalize_text(view)):
+        if PROTECTION_PATTERN.search(sentence) and not re.search(r'opponents? controls?|you don\'t control', sentence):
+            return True
+    return False
+
+
+def is_reactive(view):
+    """Interaction that answers something: targeted removal, counterspells, protection."""
+    if 'Land' in view['front_types']:
+        return False
+    if is_protection(view):
+        return True
+    tags = view['otags']
+    # Creatures with removal attached are threats too; board wipes are mass disruption, not reactive slots.
+    return ('Creature' not in view['front_types'] and bool(tags & {'removal', 'counterspell'})
+            and 'board-wipe' not in tags)
+
+
+def deck_plan(decklist):
+    """Plans named in the deck's CLAUDE.md that change scoring: {'commander_damage'}."""
+    path = os.path.join(os.path.dirname(os.path.abspath(decklist)), 'CLAUDE.md')
+    if not os.path.exists(path):
+        return set()
+    with open(path) as f:
+        text = f.read().lower()
+    plans = set()
+    if re.search(r'commander damage|voltron', text):
+        plans.add('commander_damage')
+    return plans
+
+
+def commander_dependence(commander_name, names, raw_matches, plans=frozenset()):
+    """0..1.75: how much of the deck's synergy runs through the commander."""
+    if not commander_name or len(names) < 2:
+        return 0.0, 0.0
+    mass = defaultdict(float)
+    for m in raw_matches:
+        mass[m['producer']] += m['weight']
+        mass[m['payoff']] += m['weight']
+    avg = sum(mass.values()) / len(names)
+    ratio = mass[commander_name] / avg if avg else 0.0
+    dep = min(1.0, max(0.0, (ratio - 1) / 3))
+    if 'commander_damage' in plans:
+        dep += PLAN_CMDR_DAMAGE
+    return round(dep, 3), round(ratio, 2)
+
+
+def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans=frozenset()):
     """Score every card pair. `views` is a list of card_view dicts. `combos` is the
     'included' list from combos.fetch_combos: each pair of pieces gets a bonus reason,
     bigger for game-winning combos and scaled by the deck's target `bracket`."""
@@ -663,6 +733,23 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None):
     combo_pieces = {n for m in combo_matches.values() if m['tag'].startswith('combo')
                     for n in (m['producer'], m['payoff'])}
 
+    # Protection scales with how much the deck depends on its commander
+    dependence, cmdr_ratio = commander_dependence(
+        commander_name, names, list(matches.values()) + list(combo_matches.values()), plans)
+    protection_cards = sorted(v['name'] for v in views if v['name'] != commander_name and is_protection(v))
+    prot_weight = round(PROTECTION_WEIGHT * dependence, 3)
+    if prot_weight > 0:
+        why = f"commander dependence {dependence:g}" + (' (commander-damage plan)' if 'commander_damage' in plans else '')
+        for pn in protection_cards:
+            combo_matches[('protection', pn)] = {
+                'tag': 'protection', 'producer': pn, 'payoff': commander_name, 'weight': prot_weight,
+                'producer_evidence': 'protects your creatures', 'payoff_evidence': why}
+
+    # Too many reactive cards: each loses a little per card over the limit
+    reactive_cards = sorted(v['name'] for v in views if v['name'] != commander_name and is_reactive(v))
+    limit = REACTIVE_LIMIT_CMDR_DAMAGE if 'commander_damage' in plans else REACTIVE_LIMIT
+    reactive_penalty = round(REACTIVE_PENALTY * max(0, len(reactive_cards) - limit), 3)
+
     # Pair scores
     pairs = defaultdict(lambda: {'score': 0.0, 'reasons': []})
     for m in list(matches.values()) + list(combo_matches.values()):
@@ -683,7 +770,8 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None):
     cards = {}
     for n in names:
         cards[n] = {'total': 0.0, 'cmdr_fit': 0.0, 'partners': 0, 'best_partner': None,
-                    'combo_piece': n in combo_pieces, 'ramp_bonus': 0.0, 'themes': defaultdict(float)}
+                    'combo_piece': n in combo_pieces, 'ramp_bonus': 0.0, 'reactive_penalty': 0.0,
+                    'themes': defaultdict(float)}
     for (a, b), p in pairs.items():
         for me, other in ((a, b), (b, a)):
             c = cards[me]
@@ -702,6 +790,18 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None):
         cards[rn]['total'] += bonus
         if bonus:
             cards[rn]['themes']['ramp'] += bonus
+    spell_totals = sorted(cards[v['name']]['total'] for v in views
+                          if 'Land' not in v['front_types'] and v['name'] != commander_name)
+    median_total = spell_totals[len(spell_totals) // 2] if spell_totals else 0.0
+    prot_bonus = round(PROTECTION_SHARE * dependence * median_total, 3)
+    for n in protection_cards:
+        cards[n]['protection_bonus'] = prot_bonus
+        cards[n]['total'] += prot_bonus
+        if prot_bonus:
+            cards[n]['themes']['protection'] += prot_bonus
+    for n in reactive_cards:
+        cards[n]['reactive_penalty'] = reactive_penalty
+        cards[n]['total'] -= reactive_penalty
     for c in cards.values():
         c['total'] = round(c['total'], 2)
         c['themes'] = {t: round(w, 2) for t, w in sorted(c['themes'].items(), key=lambda kv: -kv[1])}
@@ -732,6 +832,11 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None):
         'cards': cards,
         'combos': list(combos or []),
         'ramp': dict(ramp, cards=ramp_cards, kinds=ramp_kinds),
+        'plans': sorted(plans),
+        'commander_dependence': {'score': dependence, 'synergy_vs_average_card': cmdr_ratio,
+                                 'protection_weight': prot_weight, 'protection_bonus': prot_bonus,
+                                 'protection_cards': protection_cards},
+        'reactive': {'cards': reactive_cards, 'limit': limit, 'penalty_per_card': reactive_penalty},
         'unmatched': unmatched,
     }
 
@@ -843,7 +948,15 @@ def print_report(result, views, top=20):
           f" then x{COMMANDER_BONUS:g} commander")
     print(f"  curve: avg MV {r['avg_mv']}, {len(r['expensive'])} spells at MV {RAMP_EXPENSIVE_MV}+"
           f" -> +{r['curve_bonus']:g} per ramp card")
-    print(f"  land ramp: ~{r['game_turns']} turn games -> +{r['land_bonus']:g} per land-ramp card\n")
+    print(f"  land ramp: ~{r['game_turns']} turn games -> +{r['land_bonus']:g} per land-ramp card")
+    d = result['commander_dependence']
+    plan = ', '.join(result['plans']) or 'none in deck CLAUDE.md'
+    print(f"Commander dependence: {d['score']:g} (commander synergy {d['synergy_vs_average_card']:g}x an average card;"
+          f" plans: {plan}) -> +{d['protection_weight']:g} per protection card"
+          f" (x{COMMANDER_BONUS:g} commander) and +{d['protection_bonus']:g} card bonus,"
+          f" {len(d['protection_cards'])} protection cards")
+    rc = result['reactive']
+    print(f"Reactive cards: {len(rc['cards'])} (limit {rc['limit']}) -> -{rc['penalty_per_card']:g} each\n")
     print("--- THEMES (producer -> payoff synergy) ---")
     for t in result['themes'][:10]:
         mark = ' [MAIN x%.2g]' % MAIN_THEME_BONUS if t['tag'] == result['main_theme'] else (
@@ -974,7 +1087,7 @@ def main():
     combos = None if args.no_combos else load_combos(views, cmdr)
     from combos import deck_bracket
     bracket = deck_bracket(args.decklist)
-    result = compute_synergy(views, cmdr, combos, bracket)
+    result = compute_synergy(views, cmdr, combos, bracket, deck_plan(args.decklist))
     result['bracket'] = bracket
     candidates, role_cards = rank_cuts(result, views, cmdr)
 

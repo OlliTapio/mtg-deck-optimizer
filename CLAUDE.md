@@ -163,6 +163,8 @@ Reads keywords, types and triggers, tags each card with what it **produces** and
   - Commander pair: base 1.0 for a 4-MV commander (+0.5 per MV above, max 2.5, 0 at MV 3 or less), x1.0 if the ramp costs <= commander MV - 2 (commander a turn early), x0.5 at MV - 1, 0 otherwise. Creature ramp x1.5. Then the x2 commander bonus.
   - Curve: 0.25 x (average MV - 2.5, capped 0..2) x number of 5+ MV spells, per ramp card.
   - Land ramp (lands onto the battlefield survive board wipes): +0.25 per expected turn above 5. Expected game length by bracket: 1 = 10 turns, 2 = 9, 3 = 7, 4 = 5.
+- Protection (grants hexproof/shroud/indestructible/protection, phasing) pairs with the commander for 1.0 x commander dependence, then x2. Dependence = (commander's synergy / average card's synergy - 1) / 3, capped 0..1, +0.75 when the deck's CLAUDE.md names a commander-damage or voltron plan. Each protection card also gets 0.5 x dependence x the median card's synergy, so it competes with cards whose totals come from many pairs. Name the plan in the deck's CLAUDE.md win conditions so it is picked up.
+- Reactive cards (noncreature targeted removal and counterspells, plus protection; not board wipes) lose 0.5 synergy each per card over 12 (14 for commander-damage decks).
 - Never claim two cards synergise without running `synergy.py --card`, or reading both cards' oracle text.
 
 ## Combos (`combos.py`)

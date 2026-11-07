@@ -404,7 +404,9 @@ def mode_cuts(all_cards, cmdr_name, decklist=None):
     cmdr = cmdr_name if cmdr_name != "Unknown" else None
     from combos import deck_bracket
     bracket = deck_bracket(decklist) if decklist else None
-    result = compute_synergy(views, cmdr, load_combos(views, cmdr), bracket)
+    from synergy import deck_plan
+    plans = deck_plan(decklist) if decklist else set()
+    result = compute_synergy(views, cmdr, load_combos(views, cmdr), bracket, plans)
     candidates, role_cards = rank_cuts(result, views, cmdr)
     by_name = {c['name']: c for c in all_cards}
 
