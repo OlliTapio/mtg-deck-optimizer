@@ -364,6 +364,28 @@ class TestProtectionAndReactive:
         assert deck_plan(str(tmp_path / 'nothing' / 'decklist.txt')) == set()
 
 
+class TestDraw:
+    def test_draw_kinds(self):
+        from synergy import draw_kind
+        assert draw_kind(_card('Divination', 'Sorcery', 'Draw two cards.')) == 'draw'
+        assert draw_kind(_card('Opt', 'Instant', 'Scry 1.\nDraw a card.')) == 'draw'
+        assert draw_kind(_card('Faithless Looting', 'Sorcery', 'Draw two cards, then discard two cards.')) == 'selection'
+        assert draw_kind(_card('Preordain', 'Sorcery', 'Scry 2.')) == 'selection'
+        assert draw_kind(_card('Bear', 'Creature — Bear', '', power=2)) is None
+        assert draw_kind(PSYCHIC_CORROSION) is None
+        assert draw_kind(_card('Glen Elendra Guardian', 'Creature — Faerie Wizard',
+                               '{1}, Remove a -1/-1 counter from this creature: Counter target noncreature spell. '
+                               'Its controller draws a card.', power=3)) is None
+        assert draw_kind(_card('Scry Land', 'Land', 'When this land enters, scry 1.')) is None
+
+    def test_draw_gets_base_bonus_scaled_to_deck(self):
+        div = _card('Divination', 'Sorcery', 'Draw two cards.')
+        pre = _card('Preordain', 'Sorcery', 'Scry 2.')
+        r = compute_synergy([BLOOD_ARTIST, VISCERA_SEER, DOOMED_TRAVELER, div, pre])
+        assert r['cards']['Divination']['total'] > r['cards']['Preordain']['total'] > 0
+        assert r['draw']['bonus']['draw'] == pytest.approx(2 * r['draw']['bonus']['selection'])
+
+
 class TestCuts:
     def test_low_synergy_high_cmc_first_and_roles_apart(self):
         filler = _card('Big Vanilla', 'Creature — Beast', '', power=5, cmc=7)

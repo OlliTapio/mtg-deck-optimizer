@@ -237,7 +237,7 @@
    }
   },
   "Bitter Reunion": {
-   "total": 13.5,
+   "total": 18.79,
    "cmdr_fit": 1.5,
    "partners": 17,
    "best_partner": "Yuma, Proud Protector",
@@ -245,8 +245,11 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "graveyard": 12.75
-   }
+    "graveyard": 12.75,
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Bovine Intervention": {
    "total": 0.0,
@@ -259,7 +262,7 @@
    "themes": {}
   },
   "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift": {
-   "total": 7.67,
+   "total": 12.96,
    "cmdr_fit": 5.0,
    "partners": 1,
    "best_partner": "Yuma, Proud Protector",
@@ -267,8 +270,11 @@
    "ramp_bonus": 2.669,
    "reactive_penalty": 0.0,
    "themes": {
+    "card draw": 5.29,
     "ramp": 5.17
    },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw",
    "ramp_kind": "artifact"
   },
   "Bristling Backwoods": {
@@ -387,14 +393,18 @@
    }
   },
   "Decaying Time Loop": {
-   "total": 0.0,
+   "total": 5.29,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
-   "themes": {}
+   "themes": {
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Decimate": {
    "total": 0.0,
@@ -504,14 +514,18 @@
    "ramp_kind": "creature"
   },
   "Embrace the Unknown": {
-   "total": 0.0,
+   "total": 5.29,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
-   "themes": {}
+   "themes": {
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Entish Restoration": {
    "total": 54.67,
@@ -580,7 +594,7 @@
    "themes": {}
   },
   "Garruk's Uprising": {
-   "total": 19.5,
+   "total": 24.79,
    "cmdr_fit": 2.5,
    "partners": 30,
    "best_partner": "Yuma, Proud Protector",
@@ -590,8 +604,11 @@
    "themes": {
     "etb": 9.75,
     "big_power": 7.5,
+    "card draw": 5.29,
     "trigger_etb": 1.0
-   }
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Harrow": {
    "total": 47.92,
@@ -697,7 +714,7 @@
    "themes": {}
   },
   "Life from the Loam": {
-   "total": 27.25,
+   "total": 32.54,
    "cmdr_fit": 3.5,
    "partners": 26,
    "best_partner": "Yuma, Proud Protector",
@@ -706,8 +723,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 19.5,
-    "land_gy": 6.0
-   }
+    "land_gy": 6.0,
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Lotus Cobra": {
    "total": 27.32,
@@ -725,14 +745,18 @@
    "ramp_kind": "creature"
   },
   "Magmatic Insight": {
-   "total": 0.0,
+   "total": 5.29,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
-   "themes": {}
+   "themes": {
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Map the Frontier": {
    "total": 39.67,
@@ -750,7 +774,7 @@
    "ramp_kind": "land"
   },
   "Midnight Tilling": {
-   "total": 13.5,
+   "total": 18.79,
    "cmdr_fit": 1.5,
    "partners": 17,
    "best_partner": "Yuma, Proud Protector",
@@ -758,8 +782,11 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "graveyard": 12.75
-   }
+    "graveyard": 12.75,
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Mirage Mesa": {
    "total": 19.5,
@@ -796,7 +823,7 @@
    "themes": {}
   },
   "Nahiri's Lithoforming": {
-   "total": 30.42,
+   "total": 35.71,
    "cmdr_fit": 7.5,
    "partners": 15,
    "best_partner": "Yuma, Proud Protector",
@@ -805,10 +832,13 @@
    "reactive_penalty": 0.0,
    "themes": {
     "fodder": 17.5,
+    "card draw": 5.29,
     "ramp": 5.17,
     "dies": 2.0,
     "sacrifice": 2.0
    },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw",
    "ramp_kind": "other"
   },
   "Rampant Growth": {
@@ -845,7 +875,7 @@
    }
   },
   "Oracle of Mul Daya": {
-   "total": 18.32,
+   "total": 23.61,
    "cmdr_fit": 7.5,
    "partners": 9,
    "best_partner": "Yuma, Proud Protector",
@@ -855,8 +885,11 @@
    "themes": {
     "ramp": 7.42,
     "landfall": 7.0,
+    "card draw": 5.29,
     "etb": 0.15
    },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw",
    "ramp_kind": "land"
   },
   "Overwhelming Stampede": {
@@ -989,7 +1022,7 @@
    "themes": {}
   },
   "Return of the Wildspeaker": {
-   "total": 19.5,
+   "total": 24.79,
    "cmdr_fit": 3.0,
    "partners": 19,
    "best_partner": "Yuma, Proud Protector",
@@ -998,8 +1031,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "go_wide": 10.5,
-    "big_power": 7.5
-   }
+    "big_power": 7.5,
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Sand Scout": {
    "total": 60.92,
@@ -1021,7 +1057,7 @@
    "ramp_kind": "creature"
   },
   "Satyr Wayfinder": {
-   "total": 0.15,
+   "total": 5.44,
    "cmdr_fit": 0.0,
    "partners": 1,
    "best_partner": "Garruk's Uprising",
@@ -1029,8 +1065,11 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
+    "card draw": 5.29,
     "etb": 0.15
-   }
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Scattered Groves": {
    "total": 0.0,
@@ -1091,7 +1130,7 @@
    "ramp_kind": "creature"
   },
   "Shamanic Revelation": {
-   "total": 19.5,
+   "total": 24.79,
    "cmdr_fit": 3.0,
    "partners": 19,
    "best_partner": "Yuma, Proud Protector",
@@ -1100,8 +1139,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "go_wide": 10.5,
-    "big_power": 7.5
-   }
+    "big_power": 7.5,
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Shefet Dunes": {
    "total": 74.0,
@@ -1140,7 +1182,7 @@
    "themes": {}
   },
   "Six": {
-   "total": 21.15,
+   "total": 26.44,
    "cmdr_fit": 1.5,
    "partners": 23,
    "best_partner": "Yuma, Proud Protector",
@@ -1149,12 +1191,15 @@
    "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 19.5,
+    "card draw": 5.29,
     "kw:Reach": 0.75,
     "etb": 0.15
-   }
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Spelunking": {
-   "total": 15.67,
+   "total": 20.96,
    "cmdr_fit": 5.0,
    "partners": 8,
    "best_partner": "Yuma, Proud Protector",
@@ -1163,8 +1208,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "landfall": 7.0,
-    "ramp": 6.17
+    "ramp": 6.17,
+    "card draw": 5.29
    },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw",
    "ramp_kind": "land"
   },
   "Springbloom Druid": {
@@ -1308,14 +1356,18 @@
    "ramp_kind": "creature"
   },
   "Winding Way": {
-   "total": 0.0,
+   "total": 5.29,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
-   "themes": {}
+   "themes": {
+    "card draw": 5.29
+   },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw"
   },
   "Worldsoul's Rage": {
    "total": 23.92,
@@ -1364,7 +1416,7 @@
    }
   },
   "Evendo Brushrazer": {
-   "total": 52.07,
+   "total": 57.36,
    "cmdr_fit": 8.0,
    "partners": 30,
    "best_partner": "Yuma, Proud Protector",
@@ -1376,11 +1428,14 @@
     "sacrifice": 11.0,
     "land_gy": 10.0,
     "ramp": 6.42,
+    "card draw": 5.29,
     "type:Warrior": 4.0,
     "dies": 2.0,
     "type:Insect": 1.0,
     "etb": 0.15
    },
+   "draw_bonus": 5.287,
+   "draw_kind": "draw",
    "ramp_kind": "creature"
   }
  },
@@ -1468,8 +1523,37 @@
   "score": 1.0,
   "synergy_vs_average_card": 7.86,
   "protection_weight": 1.0,
-  "protection_bonus": 11.125,
+  "protection_bonus": 10.575,
   "protection_cards": []
+ },
+ "draw": {
+  "median_card_synergy": 21.15,
+  "bonus": {
+   "draw": 5.287,
+   "selection": 2.644
+  },
+  "cards": {
+   "draw": [
+    "Bitter Reunion",
+    "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
+    "Decaying Time Loop",
+    "Embrace the Unknown",
+    "Evendo Brushrazer",
+    "Garruk's Uprising",
+    "Life from the Loam",
+    "Magmatic Insight",
+    "Midnight Tilling",
+    "Nahiri's Lithoforming",
+    "Oracle of Mul Daya",
+    "Return of the Wildspeaker",
+    "Satyr Wayfinder",
+    "Shamanic Revelation",
+    "Six",
+    "Spelunking",
+    "Winding Way"
+   ],
+   "selection": []
+  }
  },
  "reactive": {
   "cards": [
@@ -12838,14 +12922,14 @@
     "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
    },
    {
-    "tag": "type:Desert",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -12933,18 +13017,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Detective",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Detective"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Ancient Greenwarden": [
@@ -13486,18 +13570,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Dryad",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dryad"
-   },
-   {
     "tag": "type:Nymph",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Nymph"
+   },
+   {
+    "tag": "type:Dryad",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dryad"
    }
   ],
   "Dune Chanter": [
@@ -13951,18 +14035,18 @@
     "evidence": "is a Warrior"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever a desert you control enters, create two 1/1 red, green, and white sand…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "desertwalk"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever a desert you control enters, create two 1/1 red, green, and white sand…"
    }
   ],
   "Hour of Promise": [
@@ -14344,18 +14428,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Overwhelming Stampede": [
@@ -14710,18 +14794,18 @@
     "evidence": "is a Scout"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever one or more land cards are put into your graveyard from anywhere, crea…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "when ~ enters, if an opponent controls more lands than you, search your library…"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever one or more land cards are put into your graveyard from anywhere, crea…"
    }
   ],
   "Satyr Wayfinder": [
@@ -15088,18 +15172,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    },
    {
     "tag": "sacrifice",
@@ -15401,18 +15485,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "at the beginning of combat on your turn, if you control five or more deserts, c…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever you sacrifice a desert and whenever a desert card is put into your gra…"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "at the beginning of combat on your turn, if you control five or more deserts, c…"
    },
    {
     "tag": "graveyard",
@@ -15682,7 +15766,7 @@
     "cmdr_fit": 1.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": -0.181
+    "cut_score": -0.198
    },
    {
     "name": "Cactusfolk Sureshot",
@@ -15691,16 +15775,7 @@
     "cmdr_fit": 3.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.06
-   },
-   {
-    "name": "Catharsis",
-    "cmc": 6.0,
-    "synergy": 30.25,
-    "cmdr_fit": 4.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.164
+    "cut_score": 0.009
    },
    {
     "name": "Conduit of Worlds",
@@ -15709,7 +15784,16 @@
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.198
+    "cut_score": 0.112
+   },
+   {
+    "name": "Catharsis",
+    "cmc": 6.0,
+    "synergy": 30.25,
+    "cmdr_fit": 4.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.147
    },
    {
     "name": "Ancient Greenwarden",
@@ -15718,7 +15802,7 @@
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.216
+    "cut_score": 0.198
    },
    {
     "name": "Dune Chanter",
@@ -15727,7 +15811,7 @@
     "cmdr_fit": 3.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.276
+    "cut_score": 0.241
    },
    {
     "name": "Avenger of Zendikar",
@@ -15739,6 +15823,15 @@
     "cut_score": 0.284
    },
    {
+    "name": "Ramunap Excavator",
+    "cmc": 3.0,
+    "synergy": 22.4,
+    "cmdr_fit": 2.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.293
+   },
+   {
     "name": "Phylath, World Sculptor",
     "cmc": 6.0,
     "synergy": 44.75,
@@ -15748,22 +15841,13 @@
     "cut_score": 0.319
    },
    {
-    "name": "Ramunap Excavator",
-    "cmc": 3.0,
-    "synergy": 22.4,
-    "cmdr_fit": 2.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.379
-   },
-   {
     "name": "Felidar Retreat",
     "cmc": 4.0,
     "synergy": 35.5,
     "cmdr_fit": 2.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.388
+    "cut_score": 0.371
    },
    {
     "name": "Scute Swarm",
@@ -15781,7 +15865,7 @@
     "cmdr_fit": 4.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.655
+    "cut_score": 0.638
    },
    {
     "name": "Hazezon, Shaper of Sand",
@@ -15815,18 +15899,6 @@
     "cut_score": -0.302
    },
    {
-    "name": "Decaying Time Loop",
-    "cmc": 4.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": -0.302
-   },
-   {
     "name": "Decimate",
     "cmc": 4.0,
     "synergy": 0.0,
@@ -15838,15 +15910,16 @@
     "cut_score": -0.302
    },
    {
-    "name": "Embrace the Unknown",
-    "cmc": 3.0,
-    "synergy": 0.0,
+    "name": "Decaying Time Loop",
+    "cmc": 4.0,
+    "synergy": 5.29,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
-     "card-advantage"
+     "card-advantage",
+     "draw"
     ],
-    "cut_score": -0.138
+    "cut_score": -0.198
    },
    {
     "name": "Pyrrhic Strike",
@@ -15880,7 +15953,30 @@
      "removal",
      "tutor"
     ],
-    "cut_score": -0.06
+    "cut_score": -0.112
+   },
+   {
+    "name": "Prismatic Undercurrents",
+    "cmc": 4.0,
+    "synergy": 15.67,
+    "cmdr_fit": 5.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": -0.043
+   },
+   {
+    "name": "Embrace the Unknown",
+    "cmc": 3.0,
+    "synergy": 5.29,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": -0.034
    },
    {
     "name": "Bovine Intervention",
@@ -15894,41 +15990,6 @@
     "cut_score": -0.034
    },
    {
-    "name": "Winding Way",
-    "cmc": 2.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": -0.034
-   },
-   {
-    "name": "Prismatic Undercurrents",
-    "cmc": 4.0,
-    "synergy": 15.67,
-    "cmdr_fit": 5.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": -0.009
-   },
-   {
-    "name": "Magmatic Insight",
-    "cmc": 1.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": -0.009
-   },
-   {
     "name": "Requisition Raid",
     "cmc": 1.0,
     "synergy": 0.0,
@@ -15940,55 +16001,6 @@
     "cut_score": -0.009
    },
    {
-    "name": "Return of the Wildspeaker",
-    "cmc": 5.0,
-    "synergy": 19.5,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.026
-   },
-   {
-    "name": "Shamanic Revelation",
-    "cmc": 5.0,
-    "synergy": 19.5,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.026
-   },
-   {
-    "name": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
-    "cmc": 3.0,
-    "synergy": 7.67,
-    "cmdr_fit": 5.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw",
-     "ramp"
-    ],
-    "cut_score": 0.052
-   },
-   {
-    "name": "Oracle of Mul Daya",
-    "cmc": 4.0,
-    "synergy": 18.32,
-    "cmdr_fit": 7.5,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "ramp"
-    ],
-    "cut_score": 0.078
-   },
-   {
     "name": "Sun Titan",
     "cmc": 6.0,
     "synergy": 24.17,
@@ -15997,7 +16009,18 @@
     "roles": [
      "ramp"
     ],
-    "cut_score": 0.095
+    "cut_score": 0.026
+   },
+   {
+    "name": "Winding Way",
+    "cmc": 2.0,
+    "synergy": 5.29,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.069
    },
    {
     "name": "Horizon Explorer",
@@ -16009,12 +16032,61 @@
      "ramp",
      "tutor"
     ],
+    "cut_score": 0.086
+   },
+   {
+    "name": "Return of the Wildspeaker",
+    "cmc": 5.0,
+    "synergy": 24.79,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.095
+   },
+   {
+    "name": "Shamanic Revelation",
+    "cmc": 5.0,
+    "synergy": 24.79,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.095
+   },
+   {
+    "name": "Magmatic Insight",
+    "cmc": 1.0,
+    "synergy": 5.29,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.095
+   },
+   {
+    "name": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
+    "cmc": 3.0,
+    "synergy": 12.96,
+    "cmdr_fit": 5.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw",
+     "ramp"
+    ],
     "cut_score": 0.103
    },
    {
     "name": "Satyr Wayfinder",
     "cmc": 2.0,
-    "synergy": 0.15,
+    "synergy": 5.44,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
@@ -16023,17 +16095,16 @@
     "cut_score": 0.138
    },
    {
-    "name": "Spelunking",
-    "cmc": 3.0,
-    "synergy": 15.67,
-    "cmdr_fit": 5.0,
+    "name": "Oracle of Mul Daya",
+    "cmc": 4.0,
+    "synergy": 23.61,
+    "cmdr_fit": 7.5,
     "combo_piece": false,
     "roles": [
      "card-advantage",
-     "draw",
      "ramp"
     ],
-    "cut_score": 0.155
+    "cut_score": 0.147
    },
    {
     "name": "Path to Exile",
@@ -16049,29 +16120,6 @@
     "cut_score": 0.181
    },
    {
-    "name": "Bitter Reunion",
-    "cmc": 2.0,
-    "synergy": 13.5,
-    "cmdr_fit": 1.5,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.224
-   },
-   {
-    "name": "Midnight Tilling",
-    "cmc": 2.0,
-    "synergy": 13.5,
-    "cmdr_fit": 1.5,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.224
-   },
-   {
     "name": "Dryad of the Ilysian Grove",
     "cmc": 3.0,
     "synergy": 18.32,
@@ -16080,7 +16128,7 @@
     "roles": [
      "ramp"
     ],
-    "cut_score": 0.241
+    "cut_score": 0.19
    },
    {
     "name": "Rampant Growth",
@@ -16092,19 +16140,20 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.259
+    "cut_score": 0.224
    },
    {
-    "name": "Garruk's Uprising",
+    "name": "Spelunking",
     "cmc": 3.0,
-    "synergy": 19.5,
-    "cmdr_fit": 2.5,
+    "synergy": 20.96,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
      "card-advantage",
-     "draw"
+     "draw",
+     "ramp"
     ],
-    "cut_score": 0.293
+    "cut_score": 0.259
    },
    {
     "name": "Hedge Shredder",
@@ -16115,18 +16164,53 @@
     "roles": [
      "ramp"
     ],
-    "cut_score": 0.302
+    "cut_score": 0.284
    },
    {
-    "name": "Six",
-    "cmc": 3.0,
-    "synergy": 21.15,
+    "name": "Bitter Reunion",
+    "cmc": 2.0,
+    "synergy": 18.79,
+    "cmdr_fit": 1.5,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.31
+   },
+   {
+    "name": "Midnight Tilling",
+    "cmc": 2.0,
+    "synergy": 18.79,
     "cmdr_fit": 1.5,
     "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.345
+    "cut_score": 0.31
+   },
+   {
+    "name": "Garruk's Uprising",
+    "cmc": 3.0,
+    "synergy": 24.79,
+    "cmdr_fit": 2.5,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.362
+   },
+   {
+    "name": "Six",
+    "cmc": 3.0,
+    "synergy": 26.44,
+    "cmdr_fit": 1.5,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.414
    },
    {
     "name": "Omnath, Locus of Rage",
@@ -16138,6 +16222,18 @@
      "removal"
     ],
     "cut_score": 0.422
+   },
+   {
+    "name": "Worldsoul's Rage",
+    "cmc": 2.0,
+    "synergy": 23.92,
+    "cmdr_fit": 5.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "removal"
+    ],
+    "cut_score": 0.431
    },
    {
     "name": "Map the Frontier",
@@ -16164,18 +16260,6 @@
     "cut_score": 0.491
    },
    {
-    "name": "Worldsoul's Rage",
-    "cmc": 2.0,
-    "synergy": 23.92,
-    "cmdr_fit": 5.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "removal"
-    ],
-    "cut_score": 0.5
-   },
-   {
     "name": "Colossal Rattlewurm",
     "cmc": 4.0,
     "synergy": 47.82,
@@ -16188,17 +16272,6 @@
     "cut_score": 0.509
    },
    {
-    "name": "Life from the Loam",
-    "cmc": 2.0,
-    "synergy": 27.25,
-    "cmdr_fit": 3.5,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.534
-   },
-   {
     "name": "Lotus Cobra",
     "cmc": 2.0,
     "synergy": 27.32,
@@ -16208,7 +16281,7 @@
      "mana-dork",
      "ramp"
     ],
-    "cut_score": 0.552
+    "cut_score": 0.534
    },
    {
     "name": "Titania, Protector of Argoth",
@@ -16222,17 +16295,15 @@
     "cut_score": 0.56
    },
    {
-    "name": "Nahiri's Lithoforming",
+    "name": "Life from the Loam",
     "cmc": 2.0,
-    "synergy": 30.42,
-    "cmdr_fit": 7.5,
+    "synergy": 32.54,
+    "cmdr_fit": 3.5,
     "combo_piece": false,
     "roles": [
-     "card-advantage",
-     "draw",
-     "ramp"
+     "card-advantage"
     ],
-    "cut_score": 0.603
+    "cut_score": 0.586
    },
    {
     "name": "Wreck and Rebuild",
@@ -16253,6 +16324,19 @@
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.655
+   },
+   {
+    "name": "Nahiri's Lithoforming",
+    "cmc": 2.0,
+    "synergy": 35.71,
+    "cmdr_fit": 7.5,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw",
      "ramp"
     ],
     "cut_score": 0.672
@@ -16293,19 +16377,6 @@
     "cut_score": 0.707
    },
    {
-    "name": "Evendo Brushrazer",
-    "cmc": 3.0,
-    "synergy": 52.07,
-    "cmdr_fit": 8.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "mana-dork",
-     "ramp"
-    ],
-    "cut_score": 0.724
-   },
-   {
     "name": "Entish Restoration",
     "cmc": 3.0,
     "synergy": 54.67,
@@ -16314,6 +16385,19 @@
     "roles": [
      "ramp",
      "tutor"
+    ],
+    "cut_score": 0.724
+   },
+   {
+    "name": "Evendo Brushrazer",
+    "cmc": 3.0,
+    "synergy": 57.36,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "mana-dork",
+     "ramp"
     ],
     "cut_score": 0.741
    },

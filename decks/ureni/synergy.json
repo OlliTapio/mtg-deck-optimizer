@@ -142,14 +142,18 @@
    "themes": {}
   },
   "Brainstorm": {
-   "total": 0.0,
+   "total": 10.12,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
-   "themes": {}
+   "themes": {
+    "card draw": 10.12
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Broodcaller Scourge": {
    "total": 91.51,
@@ -265,7 +269,7 @@
    }
   },
   "Dragon's Hoard": {
-   "total": 59.01,
+   "total": 69.13,
    "cmdr_fit": 8.0,
    "partners": 27,
    "best_partner": "Ureni of the Unwritten",
@@ -274,8 +278,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Dragon": 40.5,
-    "ramp": 14.51
+    "ramp": 14.51,
+    "card draw": 10.12
    },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw",
    "ramp_kind": "artifact"
   },
   "Dragonlord Atarka": {
@@ -325,7 +332,7 @@
    "protection_bonus": 20.25
   },
   "Elemental Bond": {
-   "total": 5.2,
+   "total": 15.32,
    "cmdr_fit": 0.3,
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
@@ -333,8 +340,11 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
+    "card draw": 10.12,
     "etb": 5.05
-   }
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Encroaching Dragonstorm": {
    "total": 59.51,
@@ -441,7 +451,7 @@
    "ramp_kind": "artifact"
   },
   "Frostcliff Siege": {
-   "total": 1.5,
+   "total": 11.62,
    "cmdr_fit": 0.0,
    "partners": 2,
    "best_partner": "Lathliss, Dragon Queen",
@@ -449,11 +459,14 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
+    "card draw": 10.12,
     "go_wide": 1.5
-   }
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Garruk's Uprising": {
-   "total": 24.7,
+   "total": 34.82,
    "cmdr_fit": 1.8,
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
@@ -462,8 +475,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "big_power": 18.75,
+    "card draw": 10.12,
     "etb": 5.05
-   }
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Hammerhead Tyrant": {
    "total": 40.5,
@@ -524,7 +540,7 @@
    }
   },
   "Herd Heirloom": {
-   "total": 36.51,
+   "total": 46.63,
    "cmdr_fit": 6.5,
    "partners": 25,
    "best_partner": "Ureni of the Unwritten",
@@ -533,8 +549,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "big_power": 18.75,
-    "ramp": 14.51
+    "ramp": 14.51,
+    "card draw": 10.12
    },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw",
    "ramp_kind": "artifact"
   },
   "Hinterland Harbor": {
@@ -599,7 +618,7 @@
    "themes": {}
   },
   "Kiora, Behemoth Beckoner": {
-   "total": 22.21,
+   "total": 32.33,
    "cmdr_fit": 5.3,
    "partners": 29,
    "best_partner": "Ureni of the Unwritten",
@@ -608,8 +627,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "ramp": 14.51,
+    "card draw": 10.12,
     "etb": 5.05
    },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw",
    "ramp_kind": "other"
   },
   "Kodama's Reach": {
@@ -681,7 +703,7 @@
    "themes": {}
   },
   "Marang River Regent // Coil and Catch": {
-   "total": 41.25,
+   "total": 51.37,
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
@@ -690,14 +712,17 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Dragon": 31.5,
+    "card draw": 10.12,
     "big_power": 5.25,
     "kw:Flying": 1.5,
     "etb": 0.75,
     "graveyard": 0.75
-   }
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Migration Path": {
-   "total": 17.51,
+   "total": 27.63,
    "cmdr_fit": 5.0,
    "partners": 1,
    "best_partner": "Ureni of the Unwritten",
@@ -705,8 +730,11 @@
    "ramp_bonus": 12.506,
    "reactive_penalty": 0.0,
    "themes": {
-    "ramp": 15.01
+    "ramp": 15.01,
+    "card draw": 10.12
    },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw",
    "ramp_kind": "land"
   },
   "Miirym, Sentinel Wyrm": {
@@ -782,7 +810,7 @@
    "themes": {}
   },
   "Parapet Thrasher": {
-   "total": 79.5,
+   "total": 89.63,
    "cmdr_fit": 6.0,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
@@ -791,10 +819,13 @@
    "reactive_penalty": 0.0,
    "themes": {
     "type:Dragon": 69.0,
+    "card draw": 10.12,
     "big_power": 5.25,
     "kw:Flying": 1.5,
     "etb": 0.75
-   }
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Path of Ancestry": {
    "total": 0.0,
@@ -820,7 +851,7 @@
    "ramp_kind": "land"
   },
   "Return of the Wildspeaker": {
-   "total": 21.0,
+   "total": 31.12,
    "cmdr_fit": 1.5,
    "partners": 25,
    "best_partner": "Ureni of the Unwritten",
@@ -829,8 +860,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "big_power": 18.75,
+    "card draw": 10.12,
     "go_wide": 1.5
-   }
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Rockfall Vale": {
    "total": 0.0,
@@ -867,7 +901,7 @@
    "ramp_kind": "land"
   },
   "Sapphire Dragon // Psionic Pulse": {
-   "total": 40.5,
+   "total": 45.56,
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Ureni of the Unwritten",
@@ -877,9 +911,12 @@
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 5.25,
+    "card selection": 5.06,
     "kw:Flying": 1.5,
     "etb": 0.75
-   }
+   },
+   "draw_bonus": 5.062,
+   "draw_kind": "selection"
   },
   "Sarkhan, Soul Aflame": {
    "total": 42.75,
@@ -910,7 +947,7 @@
    }
   },
   "Selvala's Stampede": {
-   "total": 14.51,
+   "total": 24.63,
    "cmdr_fit": 2.5,
    "partners": 1,
    "best_partner": "Ureni of the Unwritten",
@@ -918,8 +955,11 @@
    "ramp_bonus": 12.006,
    "reactive_penalty": 0.0,
    "themes": {
-    "ramp": 13.26
+    "ramp": 13.26,
+    "card draw": 10.12
    },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw",
    "ramp_kind": "other"
   },
   "Sheltered Thicket": {
@@ -943,7 +983,7 @@
    "themes": {}
   },
   "Smuggler's Surprise": {
-   "total": 42.5,
+   "total": 52.62,
    "cmdr_fit": 3.5,
    "partners": 26,
    "best_partner": "Ureni of the Unwritten",
@@ -953,8 +993,11 @@
    "themes": {
     "protection": 21.25,
     "big_power": 18.75,
+    "card draw": 10.12,
     "graveyard": 0.75
    },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw",
    "protection_bonus": 20.25
   },
   "Sol Ring": {
@@ -1057,7 +1100,7 @@
    }
   },
   "Temur Ascendancy": {
-   "total": 5.2,
+   "total": 15.32,
    "cmdr_fit": 0.3,
    "partners": 29,
    "best_partner": "Lathliss, Dragon Queen",
@@ -1065,8 +1108,11 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
+    "card draw": 10.12,
     "etb": 5.05
-   }
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Terror of Mount Velus": {
    "total": 40.5,
@@ -1112,7 +1158,7 @@
    }
   },
   "Thundermane Dragon": {
-   "total": 58.5,
+   "total": 68.62,
    "cmdr_fit": 4.5,
    "partners": 43,
    "best_partner": "Ureni of the Unwritten",
@@ -1122,9 +1168,12 @@
    "themes": {
     "type:Dragon": 31.5,
     "big_power": 22.5,
+    "card draw": 10.12,
     "kw:Flying": 1.5,
     "etb": 0.75
-   }
+   },
+   "draw_bonus": 10.125,
+   "draw_kind": "draw"
   },
   "Ureni, the Song Unending": {
    "total": 41.5,
@@ -1305,6 +1354,35 @@
    "Last Night Together",
    "Smuggler's Surprise"
   ]
+ },
+ "draw": {
+  "median_card_synergy": 40.49999999999999,
+  "bonus": {
+   "draw": 10.125,
+   "selection": 5.062
+  },
+  "cards": {
+   "draw": [
+    "Brainstorm",
+    "Dragon's Hoard",
+    "Elemental Bond",
+    "Frostcliff Siege",
+    "Garruk's Uprising",
+    "Herd Heirloom",
+    "Kiora, Behemoth Beckoner",
+    "Marang River Regent // Coil and Catch",
+    "Migration Path",
+    "Parapet Thrasher",
+    "Return of the Wildspeaker",
+    "Selvala's Stampede",
+    "Smuggler's Surprise",
+    "Temur Ascendancy",
+    "Thundermane Dragon"
+   ],
+   "selection": [
+    "Sapphire Dragon // Psionic Pulse"
+   ]
+  }
  },
  "reactive": {
   "cards": [
@@ -12435,18 +12513,18 @@
  "features": {
   "Ureni of the Unwritten": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -12486,18 +12564,18 @@
   ],
   "Atarka, World Render": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -12576,18 +12654,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Omen",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Omen"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -12831,18 +12909,18 @@
   ],
   "Dragonlord Atarka": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -12859,18 +12937,18 @@
     "evidence": "power 8"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Elder",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elder"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Drakuseth, Maw of Flames": [
@@ -12926,18 +13004,18 @@
     "evidence": "power 7"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Elemental Bond": [
@@ -13241,18 +13319,18 @@
   ],
   "Hellkite Tyrant": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -13302,18 +13380,18 @@
   "Hinterland Harbor": [],
   "Incinerator of the Guilty": [
    {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -13607,18 +13685,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Omen",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Omen"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Migration Path": [
@@ -14028,18 +14106,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Serpent",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Serpent"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Teferi's Time Twist": [
@@ -14159,18 +14237,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Peasant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Peasant"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -14379,18 +14457,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Omen",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Omen"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    },
    {
     "tag": "type:Dragon",
@@ -14423,7 +14501,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.058
+    "cut_score": 0.042
    },
    {
     "name": "Last Night Together",
@@ -14432,7 +14510,7 @@
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.117
+    "cut_score": 0.05
    },
    {
     "name": "Hellkite Courser",
@@ -14441,7 +14519,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.133
+    "cut_score": 0.117
    },
    {
     "name": "Hellkite Tyrant",
@@ -14450,7 +14528,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.133
+    "cut_score": 0.117
    },
    {
     "name": "Scourge of the Throne",
@@ -14459,7 +14537,7 @@
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.133
+    "cut_score": 0.117
    },
    {
     "name": "Essence Flux",
@@ -14468,7 +14546,7 @@
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.167
+    "cut_score": 0.133
    },
    {
     "name": "Dread Linnorm // Scale Deflection",
@@ -14477,7 +14555,16 @@
     "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.358
+    "cut_score": 0.325
+   },
+   {
+    "name": "Utvara Hellkite",
+    "cmc": 8.0,
+    "synergy": 84.75,
+    "cmdr_fit": 6.0,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.433
    },
    {
     "name": "Atarka, World Render",
@@ -14489,13 +14576,13 @@
     "cut_score": 0.442
    },
    {
-    "name": "Utvara Hellkite",
-    "cmc": 8.0,
-    "synergy": 84.75,
-    "cmdr_fit": 6.0,
+    "name": "Sarkhan, Soul Aflame",
+    "cmc": 3.0,
+    "synergy": 42.75,
+    "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.45
+    "cut_score": 0.492
    },
    {
     "name": "Thrakkus the Butcher",
@@ -14507,13 +14594,13 @@
     "cut_score": 0.517
    },
    {
-    "name": "Sarkhan, Soul Aflame",
-    "cmc": 3.0,
-    "synergy": 42.75,
-    "cmdr_fit": 3.0,
+    "name": "Miirym, Sentinel Wyrm",
+    "cmc": 6.0,
+    "synergy": 82.5,
+    "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.558
+    "cut_score": 0.567
    },
    {
     "name": "Whirlwing Stormbrood // Dynamic Soar",
@@ -14525,22 +14612,13 @@
     "cut_score": 0.567
    },
    {
-    "name": "Miirym, Sentinel Wyrm",
-    "cmc": 6.0,
-    "synergy": 82.5,
-    "cmdr_fit": 6.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.583
-   },
-   {
     "name": "Lathliss, Dragon Queen",
     "cmc": 6.0,
     "synergy": 84.75,
     "cmdr_fit": 6.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.6
+    "cut_score": 0.583
    },
    {
     "name": "Deceptive Frostkite",
@@ -14600,18 +14678,6 @@
     "cut_score": -0.125
    },
    {
-    "name": "Selvala's Stampede",
-    "cmc": 6.0,
-    "synergy": 14.51,
-    "cmdr_fit": 2.5,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "ramp"
-    ],
-    "cut_score": -0.117
-   },
-   {
     "name": "Counterspell",
     "cmc": 2.0,
     "synergy": 0.0,
@@ -14646,42 +14712,16 @@
     "cut_score": -0.033
    },
    {
-    "name": "Brainstorm",
-    "cmc": 1.0,
-    "synergy": 0.0,
-    "cmdr_fit": 0.0,
+    "name": "Selvala's Stampede",
+    "cmc": 6.0,
+    "synergy": 24.63,
+    "cmdr_fit": 2.5,
     "combo_piece": false,
     "roles": [
      "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.0
-   },
-   {
-    "name": "Migration Path",
-    "cmc": 4.0,
-    "synergy": 17.51,
-    "cmdr_fit": 5.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw",
-     "ramp",
-     "tutor"
+     "ramp"
     ],
     "cut_score": 0.017
-   },
-   {
-    "name": "Frostcliff Siege",
-    "cmc": 3.0,
-    "synergy": 1.5,
-    "cmdr_fit": 0.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.025
    },
    {
     "name": "Sword Coast Serpent // Capsizing Wave",
@@ -14692,7 +14732,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.042
+    "cut_score": 0.025
    },
    {
     "name": "Dragonlord Atarka",
@@ -14703,7 +14743,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.058
+    "cut_score": 0.042
    },
    {
     "name": "Drakuseth, Maw of Flames",
@@ -14714,18 +14754,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.058
-   },
-   {
-    "name": "Sapphire Dragon // Psionic Pulse",
-    "cmc": 7.0,
-    "synergy": 40.5,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "counterspell"
-    ],
-    "cut_score": 0.058
+    "cut_score": 0.042
    },
    {
     "name": "Thunder Dragon",
@@ -14737,12 +14766,24 @@
      "board-wipe",
      "removal"
     ],
-    "cut_score": 0.058
+    "cut_score": 0.042
+   },
+   {
+    "name": "Frostcliff Siege",
+    "cmc": 3.0,
+    "synergy": 11.62,
+    "cmdr_fit": 0.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.042
    },
    {
     "name": "Elemental Bond",
     "cmc": 3.0,
-    "synergy": 5.2,
+    "synergy": 15.32,
     "cmdr_fit": 0.3,
     "combo_piece": false,
     "roles": [
@@ -14754,7 +14795,7 @@
    {
     "name": "Temur Ascendancy",
     "cmc": 3.0,
-    "synergy": 5.2,
+    "synergy": 15.32,
     "cmdr_fit": 0.3,
     "combo_piece": false,
     "roles": [
@@ -14766,14 +14807,14 @@
    {
     "name": "Return of the Wildspeaker",
     "cmc": 5.0,
-    "synergy": 21.0,
+    "synergy": 31.12,
     "cmdr_fit": 1.5,
     "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw"
     ],
-    "cut_score": 0.083
+    "cut_score": 0.1
    },
    {
     "name": "Cultivate",
@@ -14785,7 +14826,7 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.125
+    "cut_score": 0.108
    },
    {
     "name": "Kodama's Reach",
@@ -14797,7 +14838,18 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.125
+    "cut_score": 0.108
+   },
+   {
+    "name": "Ureni, the Song Unending",
+    "cmc": 8.0,
+    "synergy": 41.5,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.117
    },
    {
     "name": "Hammerhead Tyrant",
@@ -14808,7 +14860,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.133
+    "cut_score": 0.117
    },
    {
     "name": "Incinerator of the Guilty",
@@ -14820,18 +14872,33 @@
      "board-wipe",
      "removal"
     ],
+    "cut_score": 0.117
+   },
+   {
+    "name": "Migration Path",
+    "cmc": 4.0,
+    "synergy": 27.63,
+    "cmdr_fit": 5.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw",
+     "ramp",
+     "tutor"
+    ],
     "cut_score": 0.133
    },
    {
-    "name": "Ureni, the Song Unending",
-    "cmc": 8.0,
-    "synergy": 41.5,
-    "cmdr_fit": 3.0,
+    "name": "Brainstorm",
+    "cmc": 1.0,
+    "synergy": 10.12,
+    "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
-     "removal"
+     "card-advantage",
+     "draw"
     ],
-    "cut_score": 0.167
+    "cut_score": 0.15
    },
    {
     "name": "Farseek",
@@ -14843,7 +14910,7 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.217
+    "cut_score": 0.2
    },
    {
     "name": "Nature's Lore",
@@ -14855,7 +14922,7 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.217
+    "cut_score": 0.2
    },
    {
     "name": "Rampant Growth",
@@ -14867,7 +14934,7 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.217
+    "cut_score": 0.2
    },
    {
     "name": "Sol Ring",
@@ -14878,12 +14945,23 @@
     "roles": [
      "ramp"
     ],
-    "cut_score": 0.233
+    "cut_score": 0.217
+   },
+   {
+    "name": "Sapphire Dragon // Psionic Pulse",
+    "cmc": 7.0,
+    "synergy": 45.56,
+    "cmdr_fit": 3.0,
+    "combo_piece": false,
+    "roles": [
+     "counterspell"
+    ],
+    "cut_score": 0.225
    },
    {
     "name": "Kiora, Behemoth Beckoner",
     "cmc": 3.0,
-    "synergy": 22.21,
+    "synergy": 32.33,
     "cmdr_fit": 5.3,
     "combo_piece": false,
     "roles": [
@@ -14891,32 +14969,7 @@
      "draw",
      "ramp"
     ],
-    "cut_score": 0.258
-   },
-   {
-    "name": "Garruk's Uprising",
-    "cmc": 3.0,
-    "synergy": 24.7,
-    "cmdr_fit": 1.8,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw"
-    ],
-    "cut_score": 0.292
-   },
-   {
-    "name": "Marang River Regent // Coil and Catch",
-    "cmc": 6.0,
-    "synergy": 41.25,
-    "cmdr_fit": 3.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "draw",
-     "removal"
-    ],
-    "cut_score": 0.3
+    "cut_score": 0.275
    },
    {
     "name": "Sakura-Tribe Elder",
@@ -14928,31 +14981,32 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.317
+    "cut_score": 0.283
    },
    {
-    "name": "Herd Heirloom",
-    "cmc": 2.0,
-    "synergy": 36.51,
-    "cmdr_fit": 6.5,
+    "name": "Garruk's Uprising",
+    "cmc": 3.0,
+    "synergy": 34.82,
+    "cmdr_fit": 1.8,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "draw"
+    ],
+    "cut_score": 0.292
+   },
+   {
+    "name": "Marang River Regent // Coil and Catch",
+    "cmc": 6.0,
+    "synergy": 51.37,
+    "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
      "card-advantage",
      "draw",
-     "ramp"
+     "removal"
     ],
-    "cut_score": 0.4
-   },
-   {
-    "name": "Thundermane Dragon",
-    "cmc": 4.0,
-    "synergy": 58.5,
-    "cmdr_fit": 4.5,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.467
+    "cut_score": 0.333
    },
    {
     "name": "Encroaching Dragonstorm",
@@ -14964,7 +15018,18 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.517
+    "cut_score": 0.483
+   },
+   {
+    "name": "Thundermane Dragon",
+    "cmc": 4.0,
+    "synergy": 68.62,
+    "cmdr_fit": 4.5,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
+    "cut_score": 0.533
    },
    {
     "name": "Broodcaller Scourge",
@@ -14989,6 +15054,17 @@
     "cut_score": 0.567
    },
    {
+    "name": "Carnelian Orb of Dragonkind",
+    "cmc": 3.0,
+    "synergy": 59.01,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.575
+   },
+   {
     "name": "Frontier Siege",
     "cmc": 4.0,
     "synergy": 76.26,
@@ -15001,20 +15077,22 @@
     "cut_score": 0.583
    },
    {
-    "name": "Carnelian Orb of Dragonkind",
-    "cmc": 3.0,
-    "synergy": 59.01,
-    "cmdr_fit": 8.0,
+    "name": "Herd Heirloom",
+    "cmc": 2.0,
+    "synergy": 46.63,
+    "cmdr_fit": 6.5,
     "combo_piece": false,
     "roles": [
+     "card-advantage",
+     "draw",
      "ramp"
     ],
-    "cut_score": 0.592
+    "cut_score": 0.617
    },
    {
     "name": "Dragon's Hoard",
     "cmc": 3.0,
-    "synergy": 59.01,
+    "synergy": 69.13,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -15022,30 +15100,18 @@
      "draw",
      "ramp"
     ],
-    "cut_score": 0.592
-   },
-   {
-    "name": "Parapet Thrasher",
-    "cmc": 4.0,
-    "synergy": 79.5,
-    "cmdr_fit": 6.0,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage",
-     "removal"
-    ],
-    "cut_score": 0.617
+    "cut_score": 0.658
    },
    {
     "name": "Smuggler's Surprise",
     "cmc": 1.0,
-    "synergy": 42.5,
+    "synergy": 52.62,
     "cmdr_fit": 3.5,
     "combo_piece": false,
     "roles": [
      "card-advantage"
     ],
-    "cut_score": 0.667
+    "cut_score": 0.683
    },
    {
     "name": "Jade Orb of Dragonkind",
@@ -15071,6 +15137,18 @@
     "cut_score": 0.717
    },
    {
+    "name": "Parapet Thrasher",
+    "cmc": 4.0,
+    "synergy": 89.63,
+    "cmdr_fit": 6.0,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage",
+     "removal"
+    ],
+    "cut_score": 0.717
+   },
+   {
     "name": "Dragon Tempest",
     "cmc": 2.0,
     "synergy": 65.95,
@@ -15079,7 +15157,7 @@
     "roles": [
      "removal"
     ],
-    "cut_score": 0.75
+    "cut_score": 0.717
    }
   ]
  }

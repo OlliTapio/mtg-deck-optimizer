@@ -88,6 +88,17 @@ PROTECTION_PATTERN = re.compile(
 REACTIVE_LIMIT = 12
 REACTIVE_LIMIT_CMDR_DAMAGE = 14
 REACTIVE_PENALTY = 0.5
+# Card draw and selection are always useful: a base bonus scaled to the deck.
+#   draw      (draws cards, impulse draw, card-advantage otag) = DRAW_SHARE * median card synergy
+#   selection (scry, surveil, looting, look at the top N)      = SELECTION_SHARE * median card synergy
+DRAW_SHARE = 0.25
+SELECTION_SHARE = 0.125
+DRAW_PATTERN = re.compile(
+    r"\bdraws? (?:a|an|one|two|three|four|five|x|that many|\d+|cards equal|\w+) (?:additional )?cards?"
+    r"|exile the top [^.]*(?:you may play|you may cast)")
+SELECTION_PATTERN = re.compile(
+    r"\bscry \d|\bscry x|\bsurveil\b|look at the top|reveal the top|\bexplores?\b|\bconnives?\b"
+    r"|draw [^.]*, then discard|discard [^.]*, then draw")
 DEFAULT_BRACKET = 3           # when the deck's CLAUDE.md names no bracket
 WINCON_PATTERN = re.compile(
     r"win the game|loses? the game|\binfinite (?:combat )?damage(?! to creatures)|near-infinite damage(?! to creatures)"
@@ -648,6 +659,25 @@ def is_reactive(view):
             and 'board-wipe' not in tags)
 
 
+def draw_kind(view):
+    """'draw' (card advantage), 'selection' (filtering only) or None."""
+    if 'Land' in view['front_types']:
+        return None
+    text = normalize_text(view)
+    # Not your draws: draw triggers ("whenever you draw a card") and other players drawing
+    text = re.sub(r"\b(?:when|whenever|if) you draw [^,.]*", '', text)
+    text = re.sub(r"\b(?:its controller|that player|each opponent|target opponent|an opponent|each other player)"
+                  r" (?:may )?draws? [^,.]*", '', text)
+    loots = re.search(r'draw [^.]*, then discard|discard [^.]*, then draw', text)
+    if view['otags'] & {'card-advantage'} or (DRAW_PATTERN.search(text) and not loots):
+        return 'draw'
+    if view['otags'] & {'draw'} and not loots:
+        return 'draw'
+    if loots or SELECTION_PATTERN.search(text):
+        return 'selection'
+    return None
+
+
 def deck_plan(decklist):
     """Plans named in the deck's CLAUDE.md that change scoring: {'commander_damage'}."""
     path = os.path.join(os.path.dirname(os.path.abspath(decklist)), 'CLAUDE.md')
@@ -783,6 +813,20 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
                 c['best_partner'] = other
             for r in p['reasons']:
                 c['themes'][r['tag']] += r['weight']
+    # Deck scale for card-level bonuses: median pair synergy of nonland, non-commander cards
+    spell_totals = sorted(cards[v['name']]['total'] for v in views
+                          if 'Land' not in v['front_types'] and v['name'] != commander_name)
+    median_total = spell_totals[len(spell_totals) // 2] if spell_totals else 0.0
+    draw_kinds = {v['name']: draw_kind(v) for v in views if v['name'] != commander_name}
+    draw_kinds = {n: k for n, k in draw_kinds.items() if k}
+    draw_bonus = {'draw': round(DRAW_SHARE * median_total, 3),
+                  'selection': round(SELECTION_SHARE * median_total, 3)}
+    for n, k in draw_kinds.items():
+        cards[n]['draw_bonus'] = draw_bonus[k]
+        cards[n]['draw_kind'] = k
+        cards[n]['total'] += draw_bonus[k]
+        if draw_bonus[k]:
+            cards[n]['themes']['card draw' if k == 'draw' else 'card selection'] += draw_bonus[k]
     for rn in ramp_cards:
         bonus = ramp['curve_bonus'] + (ramp['land_bonus'] if ramp_kinds[rn] == 'land' else 0.0)
         cards[rn]['ramp_bonus'] = round(bonus, 3)
@@ -790,9 +834,6 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
         cards[rn]['total'] += bonus
         if bonus:
             cards[rn]['themes']['ramp'] += bonus
-    spell_totals = sorted(cards[v['name']]['total'] for v in views
-                          if 'Land' not in v['front_types'] and v['name'] != commander_name)
-    median_total = spell_totals[len(spell_totals) // 2] if spell_totals else 0.0
     prot_bonus = round(PROTECTION_SHARE * dependence * median_total, 3)
     for n in protection_cards:
         cards[n]['protection_bonus'] = prot_bonus
@@ -836,6 +877,8 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
         'commander_dependence': {'score': dependence, 'synergy_vs_average_card': cmdr_ratio,
                                  'protection_weight': prot_weight, 'protection_bonus': prot_bonus,
                                  'protection_cards': protection_cards},
+        'draw': {'median_card_synergy': median_total, 'bonus': draw_bonus,
+                 'cards': {k: sorted(n for n, x in draw_kinds.items() if x == k) for k in ('draw', 'selection')}},
         'reactive': {'cards': reactive_cards, 'limit': limit, 'penalty_per_card': reactive_penalty},
         'unmatched': unmatched,
     }
@@ -955,6 +998,10 @@ def print_report(result, views, top=20):
           f" plans: {plan}) -> +{d['protection_weight']:g} per protection card"
           f" (x{COMMANDER_BONUS:g} commander) and +{d['protection_bonus']:g} card bonus,"
           f" {len(d['protection_cards'])} protection cards")
+    dr = result['draw']
+    print(f"Card draw: {len(dr['cards']['draw'])} cards +{dr['bonus']['draw']:g} each, selection:"
+          f" {len(dr['cards']['selection'])} cards +{dr['bonus']['selection']:g} each"
+          f" (median card synergy {dr['median_card_synergy']:g})")
     rc = result['reactive']
     print(f"Reactive cards: {len(rc['cards'])} (limit {rc['limit']}) -> -{rc['penalty_per_card']:g} each\n")
     print("--- THEMES (producer -> payoff synergy) ---")
