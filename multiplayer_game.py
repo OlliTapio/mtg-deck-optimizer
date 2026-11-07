@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Multiplayer Commander game with LLM-piloted players.
+"""Multiplayer Commander game between real decks.
+
+The --ai llm mode (Claude pilots each player) is DEPRECATED; use --ai auto.
 
 Each player is piloted by a separate Claude invocation. The engine manages
 game state, turn order, stack/priority, and combat. Players communicate via
@@ -654,6 +656,7 @@ def make_ai(ai_type, model="haiku"):
     if ai_type == "auto":
         return auto_ai
     elif ai_type == "llm":
+        print("DEPRECATED: the LLM vs LLM game feature is deprecated and will be removed. Use the heuristic simulators instead (auto_pilot.py, game_simulator.py, multiplayer_game.py --ai auto, game_orchestrator.py --auto).", file=sys.stderr)
         return lambda player, state, prompt: llm_ai(player, state, prompt, model=model)
     else:
         raise ValueError(f"Unknown AI type: {ai_type}")
@@ -717,9 +720,9 @@ def main():
     ap = argparse.ArgumentParser(description='Multiplayer Commander game')
     ap.add_argument('decklists', nargs='+', help='Paths to decklist files (2-4 players)')
     ap.add_argument('--ai', type=str, default='auto', choices=['auto', 'llm'],
-                    help='AI backend for all players')
+                    help='AI backend for all players (llm is deprecated)')
     ap.add_argument('--model', type=str, default='haiku',
-                    help='Claude model for LLM mode')
+                    help='Claude model for LLM mode (deprecated)')
     ap.add_argument('--seed', type=int, default=None)
     ap.add_argument('--max-turns', type=int, default=12)
     args = ap.parse_args()

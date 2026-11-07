@@ -35,11 +35,6 @@ python3 game_orchestrator.py decks/<a>/decklist.txt decks/<b>/decklist.txt decks
 # Multiplayer with N real decks (auto-pilot):
 python3 multiplayer_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt --ai auto --seed 42 --max-turns 12
 
-# LLM vs LLM game: Codex agents pilot each deck independently
-# Start server first, then launch agents:
-python3 game_http_server.py &
-python3 codex_game.py decks/<a>/decklist.txt decks/<b>/decklist.txt decks/<c>/decklist.txt decks/<d>/decklist.txt --seed 42 --max-turns 12
-
 # Check prices for entire deck or specific cards
 python3 price_check.py --deck decks/<deck>/decklist.txt
 python3 price_check.py --cards "Card Name" "Card Name"
@@ -96,71 +91,16 @@ python3 scryfall_search.py --search "t:land o:'{G}' o:'{U}' -t:basic eur<=5" --v
 
 ## Game Simulator Architecture
 
-**Game simulation IS a core feature of this project.** Subagents are expected to pilot decks, make mulligan decisions, play cards, attack opponents, and respond to spells via the game server. This is NOT outside scope — it's what the simulator tools are built for.
-
-### HTTP Game Server (`game_http_server.py`)
-Persistent server on http://127.0.0.1:8080. Agents interact via HTTP POST.
-```bash
-# Start server
-python3 game_http_server.py --port 8080
-
-# Agent endpoints (POST JSON with game_id + player)
-/create   - create a new game
-/hand     - see your cards
-/mulligan - shuffle and redraw
-/keep     - keep your hand
-/draw     - draw N cards (for spell/ability effects) {"count":3}
-/wait     - block until your turn (long-poll)
-/begin    - start your turn (draw)
-/valid    - see legal actions
-/action   - play a card {"action":"play Forest"}
-/end      - end your turn
-/respond  - instant-speed response or "pass"
-/damage   - deal combat damage
-/destroy  - kill a permanent
-/modify   - add/remove counters {"target_player","permanent","counter_type":"+1/+1","amount":3}
-/keyword  - grant keyword {"target_player","permanent","keyword":"trample"}
-/proliferate - proliferate {"targets":[{"player","permanent","counter_type"}]}
-/token    - create token creatures {"name":"Zombie","power":2,"toughness":2,"count":3}
-/scry     - scry N cards, put some on bottom {"count":2,"bottom":["Card Name"]}
-/mill     - mill N cards to graveyard {"count":4}
-/move     - move card between zones {"card_name","from_zone","to_zone"}
-/games    - list all active games
-/judge    - call judge for rules dispute
-/resolve_judge - clear judge call and resume game
-
-# Web viewer (open in browser)
-http://127.0.0.1:8080/
-
-# CLI game watcher
-python3 game_watch.py --list               # list all games
-python3 game_watch.py g123                  # live watch mode
-python3 game_watch.py g123 --once           # scoreboard snapshot
-python3 game_watch.py g123 --events         # event log
-python3 game_watch.py g123 --full           # full board state
-/state    - see the board
-/priority - check whose turn it is
-```
-
-Three layers of game simulation, from simple to full LLM:
+Game simulation is a core feature: use it to test mana bases, curves and matchups. Two layers, from simple to full multiplayer:
 
 ### 1. Auto-pilot (`auto_pilot.py`)
 Heuristic AI plays a single deck vs 3 simulated opponents. Good for testing mana bases and curves. No card abilities or triggers.
 
 ### 2. Multiplayer engine (`multiplayer_game.py`, `game_orchestrator.py`)
-2-4 real decks play against each other with proper turn order, combat, and priority. Auto mode uses heuristics. The orchestrator provides per-player state snapshots with full oracle text and trigger detection.
+2-4 real decks play against each other with proper turn order, combat, and priority. Use auto mode (`--ai auto` / `--auto`), which plays every deck with heuristics.
 
-### 3. LLM multiplayer (subagent-driven)
-Claude subagents pilot each deck. The flow:
-1. Launch one persistent Agent per player — give it the deck's CLAUDE.md and opening hand
-2. The main conversation acts as engine + judge
-3. Each turn: run `game_orchestrator.py` to produce state snapshots, SendMessage each agent with their snapshot
-4. Agent responds with an action (e.g. `cast Cultivate`, `attack all -> Muldrotha`)
-5. Engine resolves the action, detects triggers, updates state
-6. If an agent says `JUDGE: <question>`, the game pauses for the judge to rule on complex interactions
-7. Agents can set auto-skip if they have no instant-speed interaction (hidden from other players)
-
-Key design: **Players propose, Judge validates, Engine executes.** The engine handles zones/mana/combat math. Players see oracle text and propose creative plays. The judge validates against oracle text before the engine commits.
+### Deprecated: LLM vs LLM games
+LLM agents piloting decks against each other is deprecated and will be removed. Do not use or extend it, and do not launch subagents to pilot decks. This covers `codex_game.py`, `game_http_server.py`, `game_mcp_server.py`, `game_server.py`, `game_watch.py`, `game_viewer.html`, `multiplayer_game.py --ai llm` and `game_orchestrator.py` without `--auto`. These print a deprecation warning when run.
 
 ## Commander Bracket Rules (as of February 2026)
 

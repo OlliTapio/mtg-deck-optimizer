@@ -13,7 +13,8 @@ It calls tools that compute the evidence and reasons from that:
   interaction, and search across the deck's rules text
 - **Simulation:** opening hands, games against simulated opponents, and multiplayer games
   between real decks played by a rule-based autopilot
-- **LLM vs LLM:** a game server (HTTP and MCP) where agents each pilot a deck against the others
+- **LLM vs LLM (deprecated):** a game server (HTTP and MCP) where agents each pilot a deck against
+  the others. It will be removed; use the autopilot simulations instead.
 
 ## Usage
 

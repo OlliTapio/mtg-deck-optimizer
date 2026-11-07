@@ -2,7 +2,7 @@
 """Game orchestrator: runs a multiplayer Commander game with state tracking.
 
 Produces turn-by-turn game logs with full state snapshots that can be fed
-to LLM subagents for decisions. Handles auto-resolution of simple actions
+to LLM subagents for decisions (that LLM mode is DEPRECATED; use --auto). Handles auto-resolution of simple actions
 and flags JUDGE calls for complex interactions.
 
 The orchestrator:
@@ -896,7 +896,7 @@ class GameEngine:
 # ==================== CLI ====================
 
 def main():
-    ap = argparse.ArgumentParser(description='Game orchestrator for LLM multiplayer Commander')
+    ap = argparse.ArgumentParser(description='Game orchestrator for multiplayer Commander')
     ap.add_argument('decklists', nargs='+', help='Paths to decklist files')
     ap.add_argument('--seed', type=int, default=None, help='Random seed (default: random)')
     ap.add_argument('--max-turns', type=int, default=12)
@@ -915,6 +915,8 @@ def main():
         cmdr = p.command_zone[0]['name'] if p.command_zone else "none"
         print(f"  {p.name} ({cmdr}) — hand: {len(p.hand)}", file=sys.stderr)
 
+    if not args.auto:
+        print("DEPRECATED: the LLM vs LLM game feature is deprecated and will be removed. Use the heuristic simulators instead (auto_pilot.py, game_simulator.py, multiplayer_game.py --ai auto, game_orchestrator.py --auto).", file=sys.stderr)
     if args.auto:
         from auto_pilot import pick_land_to_play, pick_spells_to_cast
 

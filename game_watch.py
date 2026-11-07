@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Watch a live Commander game — polls the server and shows updates.
+"""DEPRECATED: part of the LLM vs LLM game feature, which is deprecated and will be removed.
+
+Watch a live Commander game — polls the server and shows updates.
 
 Usage:
     python3 game_watch.py g400              # Watch a specific game
@@ -216,6 +218,7 @@ def watch_loop(game_id, interval=10):
 
 
 def main():
+    print("DEPRECATED: the LLM vs LLM game feature is deprecated and will be removed. Use the heuristic simulators instead (auto_pilot.py, game_simulator.py, multiplayer_game.py --ai auto, game_orchestrator.py --auto).", file=sys.stderr)
     parser = argparse.ArgumentParser(description='Watch a live Commander game')
     parser.add_argument('game_id', nargs='?', help='Game ID to watch')
     parser.add_argument('--list', action='store_true', help='List all games')

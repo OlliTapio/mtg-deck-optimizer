@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""HTTP Game Server for Commander multiplayer.
+"""DEPRECATED: part of the LLM vs LLM game feature, which is deprecated and will be removed.
+
+HTTP Game Server for Commander multiplayer.
 
 Single persistent process. Agents call via HTTP (WebFetch).
 No file locking needed — requests are serialized by the server.
@@ -437,6 +439,7 @@ class GameHandler(BaseHTTPRequestHandler):
 
 
 def main():
+    print("DEPRECATED: the LLM vs LLM game feature is deprecated and will be removed. Use the heuristic simulators instead (auto_pilot.py, game_simulator.py, multiplayer_game.py --ai auto, game_orchestrator.py --auto).", file=sys.stderr)
     port = 8080
     if '--port' in sys.argv:
         idx = sys.argv.index('--port')

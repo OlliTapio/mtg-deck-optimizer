@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Launch a Commander game where Codex agents pilot each deck.
+"""DEPRECATED: part of the LLM vs LLM game feature, which is deprecated and will be removed.
+
+Launch a Commander game where Codex agents pilot each deck.
 
 Each player runs as a separate `codex exec` process with full-auto mode.
 Agents communicate with the HTTP game server via curl.
@@ -552,6 +554,7 @@ def resume_game(game_id):
 
 
 def main():
+    print("DEPRECATED: the LLM vs LLM game feature is deprecated and will be removed. Use the heuristic simulators instead (auto_pilot.py, game_simulator.py, multiplayer_game.py --ai auto, game_orchestrator.py --auto).", file=sys.stderr)
     parser = argparse.ArgumentParser(description='Launch a Commander game with Codex agents')
     parser.add_argument('decklists', nargs='*', help='Paths to decklist files (2-4)')
     parser.add_argument('--seed', type=int, default=None, help='Random seed')

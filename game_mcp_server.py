@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""MCP Server for the Commander Game Engine.
+"""DEPRECATED: part of the LLM vs LLM game feature, which is deprecated and will be removed.
+
+MCP Server for the Commander Game Engine.
 
 Exposes game engine tools that Claude subagents can call directly:
 - new_game: create a game with N decks
@@ -361,6 +363,7 @@ def _find_player(engine, name):
 # ==================== CLI Interface ====================
 
 def main():
+    print("DEPRECATED: the LLM vs LLM game feature is deprecated and will be removed. Use the heuristic simulators instead (auto_pilot.py, game_simulator.py, multiplayer_game.py --ai auto, game_orchestrator.py --auto).", file=sys.stderr)
     """Simple CLI: reads JSON commands from stdin, writes JSON results to stdout."""
     if len(sys.argv) > 1 and sys.argv[1] == '--serve':
         # Continuous server mode

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Persistent Commander Game Server.
+"""DEPRECATED: part of the LLM vs LLM game feature, which is deprecated and will be removed.
+
+Persistent Commander Game Server.
 
 Game state is saved to a JSON file after every action. Any agent can call
 the server at any time — state persists across process invocations.
@@ -1649,6 +1651,7 @@ def _find_card(hand, name):
 # ==================== CLI ====================
 
 def main():
+    print("DEPRECATED: the LLM vs LLM game feature is deprecated and will be removed. Use the heuristic simulators instead (auto_pilot.py, game_simulator.py, multiplayer_game.py --ai auto, game_orchestrator.py --auto).", file=sys.stderr)
     if len(sys.argv) < 2:
         print("Usage: python3 game_server.py <command> [args...]")
         print("Commands: create, hand, mulligan, keep, begin, action, valid, state, end, respond, priority")
