@@ -12556,6 +12556,13 @@
     "evidence": "when ureni enters or attacks, look at the top eight cards of your library."
    },
    {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ureni enters or attacks, look at the top eight cards of your library."
+   },
+   {
     "tag": "kw:Trample",
     "side": "P",
     "scope": "self",
@@ -12608,6 +12615,13 @@
   "Atarka, World Render": [
    {
     "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a dragon you control attacks, it gains double strike until end of turn."
+   },
+   {
+    "tag": "triggers_attack",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
@@ -12960,7 +12974,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.25,
+    "strength": 0.333,
     "evidence": "when a dragon you control enters, put a gold counter on ~."
    },
    {
@@ -13022,23 +13036,30 @@
     "evidence": "power 8"
    },
    {
-    "tag": "type:Dragon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dragon"
-   },
-   {
     "tag": "type:Elder",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elder"
+   },
+   {
+    "tag": "type:Dragon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dragon"
    }
   ],
   "Drakuseth, Maw of Flames": [
    {
     "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ attacks, ~ deals 4 damage to any target and 3 damage to each of up to tw…"
+   },
+   {
+    "tag": "triggers_attack",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
@@ -13857,7 +13878,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.25,
+    "strength": 1.0,
     "evidence": "when ~ enters, return up to two other target nonland permanents to their owners…"
    },
    {
@@ -14122,23 +14143,30 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Sapphire Dragon // Psionic Pulse": [
    {
     "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ attacks or blocks, scry 2."
+   },
+   {
+    "tag": "triggers_attack",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
@@ -14178,7 +14206,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.5,
     "evidence": "when a dragon you control enters, you may have ~ become a copy of it until end …"
    },
    {
@@ -14206,6 +14234,13 @@
   "Scourge of the Throne": [
    {
     "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ attacks for the first time each turn, if it's attacking the player with …"
+   },
+   {
+    "tag": "triggers_attack",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
@@ -14338,18 +14373,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Serpent",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Serpent"
-   },
-   {
     "tag": "type:Dragon",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Dragon"
+   },
+   {
+    "tag": "type:Serpent",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Serpent"
    }
   ],
   "Teferi's Time Twist": [
@@ -14380,7 +14415,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.333,
     "evidence": "when ~ enters, scry 1."
    }
   ],
@@ -14389,7 +14424,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.333,
     "evidence": "when ~ enters, scry 1."
    }
   ],
@@ -14493,6 +14528,13 @@
   "Thrakkus the Butcher": [
    {
     "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when thrakkus attacks, double the power of each dragon you control until end of…"
+   },
+   {
+    "tag": "triggers_attack",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
@@ -14683,6 +14725,13 @@
    },
    {
     "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when a dragon you control attacks, create a 6/6 red dragon creature token with …"
+   },
+   {
+    "tag": "triggers_attack",
     "side": "P",
     "scope": "self",
     "strength": 1.0,

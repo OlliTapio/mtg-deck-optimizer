@@ -532,6 +532,88 @@ class TestTriggers:
         omnath = _pair(r, 'Annie Joins Up', 'Omnath, Locus of Rage')['score']
         assert yuma > omnath > 0
 
+    ISSHIN = _card('Isshin, Two Heavens as One', 'Legendary Creature — Human Samurai',
+                   'If a creature attacking causes a triggered ability of a permanent you control to trigger, that '
+                   'ability triggers an additional time.', power=3)
+    WULFGAR = _card('Wulfgar of Icewind Dale', 'Legendary Creature — Human Barbarian',
+                    'Melee\nIf a creature you control attacking causes a triggered ability of a permanent you '
+                    'control to trigger, that ability triggers an additional time.', keywords=['Melee'], power=4, cmc=5)
+    NELLY = _card('Nelly Borca, Impulsive Accuser', 'Legendary Creature — Human Detective',
+                  'Vigilance\nWhenever Nelly Borca attacks, suspect target creature. Then goad all suspected '
+                  'creatures. (A suspected creature has menace and can\'t block.)\nWhenever one or more creatures an '
+                  'opponent controls deal combat damage to one or more of your opponents, you and the controller of '
+                  'those creatures each draw a card.', keywords=['Vigilance'], power=3, cmc=4)
+    TEYSA = _card('Teysa Karlov', 'Legendary Creature — Human Advisor',
+                  'If a creature dying causes a triggered ability of a permanent you control to trigger, that '
+                  'ability triggers an additional time.\nCreature tokens you control have vigilance and lifelink.',
+                  power=2, cmc=4)
+
+    def test_attack_doubler_is_not_a_death_doubler(self):
+        feats = _feats(self.ISSHIN)
+        assert ('trigger_double:attack', 'C', 'yours') in feats
+        assert ('trigger_dies', 'C', 'yours') not in feats
+        assert ('trigger_dies', 'C', 'yours') in _feats(self.TEYSA)
+
+    def test_attack_doubler_pairs_with_attack_triggers(self):
+        r = compute_synergy([self.ISSHIN, self.WULFGAR, self.NELLY, MOTHMAN, self.OMNATH])
+        for doubler in ('Isshin, Two Heavens as One', 'Wulfgar of Icewind Dale'):
+            # Borca's goad does nothing the regexes read, but doubling it still counts
+            assert any(x['tag'] == 'trigger_double' for x in _pair(r, doubler, 'Nelly Borca, Impulsive Accuser')['reasons'])
+            # "enters or attacks" is an attack trigger
+            assert any(x['tag'] == 'trigger_double' for x in _pair(r, doubler, 'The Wise Mothman')['reasons'])
+            # landfall is not
+            p = _pair(r, doubler, 'Omnath, Locus of Rage')
+            assert p is None or all(x['tag'] != 'trigger_double' for x in p['reasons'])
+        # Melee is an attack trigger: each doubler doubles the other's melee
+        assert any(x['tag'] == 'trigger_double'
+                   for x in _pair(r, 'Isshin, Two Heavens as One', 'Wulfgar of Icewind Dale')['reasons'])
+
+    def test_master_of_lake_town_mill_feeds_mothman(self):
+        master = _card('The Master of Lake-town', 'Legendary Creature — Human Advisor',
+                       'Deathtouch\nWhenever a player loses life, that player mills that many cards. (Damage causes '
+                       'loss of life.)\nWhen The Master of Lake-town dies, draw a card for each graveyard with seven '
+                       'or more cards in it.', keywords=['Deathtouch'], power=1)
+        feats = _feats(master)
+        assert ('mill', 'P', 'any') in feats          # any player who loses life mills
+        assert ('graveyard', 'C', 'any') in feats     # draws per graveyard with 7+ cards
+        r = compute_synergy([master, MOTHMAN])
+        tags = {x['tag'] for x in _pair(r, 'The Master of Lake-town', 'The Wise Mothman')['reasons']}
+        assert 'mill' in tags
+
+
+class TestLandfall:
+    OMNATH = TestTriggers.OMNATH
+    HARROW = _card('Harrow', 'Instant', 'As an additional cost to cast this spell, sacrifice a land.\nSearch your '
+                   'library for up to two basic land cards, put them onto the battlefield, then shuffle.')
+    RAMPANT = _card('Rampant Growth', 'Sorcery', 'Search your library for a basic land card, put that card onto the '
+                    'battlefield tapped, then shuffle.', cmc=2)
+    CRUCIBLE = _card('Crucible of Worlds', 'Artifact', 'You may play lands from your graveyard.')
+    TITANIA = _card('Titania, Protector of Argoth', 'Legendary Creature — Elemental',
+                    'When Titania enters, return target land card from your graveyard to the battlefield.\n'
+                    'Whenever a land you control is put into a graveyard from the battlefield, create a 5/3 green '
+                    'Elemental creature token.', power=5, cmc=5)
+    ANALYST = _card('Aftermath Analyst', 'Creature — Elf Detective',
+                    'When this creature enters, mill three cards.\n{3}{G}, Sacrifice this creature: Return all land '
+                    'cards from your graveyard to the battlefield tapped.', keywords=['Mill'], power=1, cmc=2)
+
+    def _landfall(self, r, card):
+        p = _pair(r, card, 'Omnath, Locus of Rage')
+        return p is not None and any(x['tag'] == 'landfall' for x in p['reasons'])
+
+    def test_ramp_that_puts_lands_onto_battlefield_is_landfall(self):
+        r = compute_synergy([self.OMNATH, self.HARROW, self.RAMPANT])
+        assert self._landfall(r, 'Harrow') and self._landfall(r, 'Rampant Growth')
+
+    def test_lands_from_graveyard_are_landfall(self):
+        r = compute_synergy([self.OMNATH, self.CRUCIBLE, self.TITANIA, self.ANALYST])
+        for card in ('Crucible of Worlds', 'Titania, Protector of Argoth', 'Aftermath Analyst'):
+            assert self._landfall(r, card), card
+
+    def test_sacrificed_lands_feed_graveyard_landfall(self):
+        r = compute_synergy([self.HARROW, self.CRUCIBLE, self.TITANIA])
+        for card in ('Crucible of Worlds', 'Titania, Protector of Argoth'):
+            assert any(x['tag'] == 'land_gy' for x in _pair(r, 'Harrow', card)['reasons'])
+
 
 class TestCuts:
     def test_low_synergy_high_cmc_first_and_roles_apart(self):

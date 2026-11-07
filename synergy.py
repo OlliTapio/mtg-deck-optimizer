@@ -101,12 +101,19 @@ SELECTION_PATTERN = re.compile(
     r"|draw [^.]*, then discard|discard [^.]*, then draw")
 # Trigger doublers ("if a triggered ability of a legendary creature you control triggers, that
 # ability triggers an additional time"): each matching card is worth a base plus a share of its own
-# synergy, scaled by how much of that synergy comes from triggered abilities. Capped like any pair.
-DOUBLER_BASE = 0.5
+# synergy, scaled by how much of the card comes from triggered abilities: the larger of its hooks from
+# triggers and its abilities that are triggers (effects the regexes can't read, like goad, still count).
+DOUBLER_BASE = 1.0
 DOUBLER_SHARE = 0.1
 DOUBLER_PATTERN = re.compile(
     r"triggered ability of (?:a |an |another )?(legendary )?(creature|permanent|artifact|enchantment)s? you control"
     r" triggers, (?:that ability|it) triggers an additional time")
+# Isshin, Wulfgar: "if a creature [you control] attacking causes a triggered ability of a permanent you control
+# to trigger, that ability triggers an additional time" doubles attack triggers of any permanent.
+ATTACK_DOUBLER_PATTERN = re.compile(
+    r"attacking causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time")
+ATTACK_TRIGGER = re.compile(r"\battacks?\b|\battacking\b")
+ATTACK_KEYWORDS = {'Melee', 'Myriad', 'Annihilator', 'Battle cry', 'Exalted', 'Mentor', 'Training', 'Dethrone'}
 DEFAULT_BRACKET = 3           # when the deck's CLAUDE.md names no bracket
 WINCON_PATTERN = re.compile(
     r"win the game|loses? the game|\binfinite (?:combat )?damage(?! to creatures)|near-infinite damage(?! to creatures)"
@@ -134,7 +141,7 @@ TAG_LABELS = {
     'cast_noncreature': 'noncreature spells', 'cast_exile': 'casting from exile',
     'etb': 'creatures entering', 'big_power': 'power 4+',
     'trigger_dies': 'death-trigger doubling', 'trigger_etb': 'ETB-trigger doubling',
-    'trigger_double': 'trigger doubling', 'triggers': 'triggered abilities',
+    'trigger_double': 'trigger doubling', 'triggers': 'triggered abilities', 'triggers_attack': 'attack triggers',
     'ramp': 'ramp', 'protection': 'protects the commander', 'combo': 'known combo', 'combo_win': 'known combo (wins the game)',
 }
 
@@ -330,13 +337,13 @@ EFFECT_RULES = [
     (r'sacrifice (?:a|an|another|one|two|x) (?:\w+ )?(?:creature|artifact|permanent|token)', 'sacrifice', 'P', 1.0),
     (r'sacrifice (?:a|an|another|one|two|x) (?:\w+ )?(?:creature|permanent|token)', 'dies', 'P', 1.0),
     (r'sacrifice (?:a|an|another|one|two|x) (?:\w+ )?(?:creature|permanent|token)', 'fodder', 'C', 1.0),
-    (r'causes? a triggered ability of a permanent you control to trigger', 'trigger_dies', 'C', 1.0),
+    (r'(?:dying|dies)[^.]*causes? a triggered ability of a permanent you control to trigger', 'trigger_dies', 'C', 1.0),
     # graveyard / mill
     (r'\bmills? ' + NUM + r' cards?|\bmill ' + NUM + r'\b', 'mill', 'P', 1.0),
     (r'\bmills? ' + NUM + r' cards?|\bmill ' + NUM + r'\b|\bsurveil\b', 'graveyard', 'P', 1.0),
     (r'\bdiscards? ' + NUM + r' cards?|then discard', 'discard', 'P', 1.0),
     (r'\bdiscards? ' + NUM + r' cards?|then discard', 'graveyard', 'P', 1.0),
-    (r'(?:card|cards) (?:in|from) your graveyard|from your graveyard|cards in graveyards|graveyard to the battlefield|from a graveyard', 'graveyard', 'C', 1.0),
+    (r'(?:card|cards) (?:in|from) your graveyard|from your graveyard|cards in graveyards|graveyard to the battlefield|from a graveyard|graveyards? with [^.]*or more cards', 'graveyard', 'C', 1.0),
     (r'land cards? (?:in|from) your graveyard|lands? from your graveyard', 'land_gy', 'C', 1.0),
     (r'sacrifice ~: search|sacrifice (?:a|an) land\b', 'land_gy', 'P', 1.0),
     # Self-mill puts some of your lands into your graveyard
@@ -352,7 +359,8 @@ EFFECT_RULES = [
     (r'you gain ' + NUM + r' life|you gain life equal|gain that much life', 'lifegain', 'P', 1.0),
     (r'if you would gain life', 'lifegain', 'C', 1.0),
     # lands
-    (r'put [^.]*\blands? cards?[^.]*onto the battlefield|search your library for [^.]*lands?[^.]*onto the battlefield|play an additional land|play lands from your graveyard', 'landfall', 'P', 1.0),
+    (r'put [^.]*\blands? cards?[^.]*onto the battlefield|search your library for [^.]*lands?[^.]*onto the battlefield|play an additional land|play lands from your graveyard'
+     r'|return [^.]*\blands? cards?[^.]*to the battlefield|play (?:\w+ )?lands from your graveyard', 'landfall', 'P', 1.0),
     # spells from exile
     (r'you may (?:cast|play) (?:it|that card|them|those cards)[^.]*(?:this turn|until)', 'cast_exile', 'P', 1.0),
     (r'cast [^.]*from exile', 'cast_exile', 'C', 1.0),
@@ -483,8 +491,13 @@ def extract_features(view, deck_subtypes=frozenset()):
     is_permanent = bool(types) and not (types & {'Instant', 'Sorcery'})
     card_repeat = REPEAT_ONE_SHOT
     trigger_feats, first_trigger = 0, None
+    attack_feats, first_attack = 0, None
+    abilities = []   # distinct abilities (kind, condition), keyword-only lines left out
     for kind, cond, body in split_abilities(text):
         start = len(feats)
+        if not (kind == 'static' and re.fullmatch(r"[a-z ,]+", body.strip(' .'))) and \
+                (kind != 'trigger' or (kind, cond) not in abilities):
+            abilities.append((kind, cond) if kind == 'trigger' else (kind, body))
         if kind == 'trigger' and first_trigger is None:
             first_trigger = f'{cond}, {body}'
         factor = ability_repeat(kind, cond, is_permanent, body)
@@ -531,7 +544,7 @@ def extract_features(view, deck_subtypes=frozenset()):
                     strength *= MASS_COUNTERS
                 if 'P' in side:
                     scope = 'self' if re.search(r'on ~|~ enters with|~ gets', seg) and not re.search(r'target|each|another|other', seg) else 'yours'
-                    if tag in ('mill', 'rad') and re.search(r'each player|each opponent|target player|target opponent', seg):
+                    if tag in ('mill', 'rad') and re.search(r'each player|each opponent|target player|target opponent|that player|a player', seg):
                         scope = 'any'
                     add(tag, 'P', scope, seg, strength)
                 if 'C' in side:
@@ -545,11 +558,25 @@ def extract_features(view, deck_subtypes=frozenset()):
         _repeat_since(feats, *_apply_after)
         if kind == 'trigger':
             trigger_feats += len(feats) - start
+            if ATTACK_TRIGGER.search(cond):
+                attack_feats += len(feats) - start
+                if first_attack is None:
+                    first_attack = f'{cond}, {body}'
 
     # Share of this card's own hooks that come from triggered abilities (what a doubler copies)
     if is_permanent and first_trigger is not None:
-        share = trigger_feats / max(1, len(feats)) if feats else 1.0
+        n_trig = sum(1 for k, _ in abilities if k == 'trigger')
+        share = max(trigger_feats / max(1, len(feats)), n_trig / max(1, len(abilities)))
         add('triggers', 'P', 'self', 'when ' + first_trigger, round(max(share, 0.25), 3))
+    attack_kw = sorted(set(view['keywords']) & ATTACK_KEYWORDS)
+    if is_permanent and (first_attack is not None or attack_kw):
+        n_att = sum(1 for k, c in abilities if k == 'trigger' and ATTACK_TRIGGER.search(c))
+        share = max(attack_feats / max(1, len(feats)), n_att / max(1, len(abilities))) if first_attack else 0.0
+        evidence = 'when ' + first_attack if first_attack else f'keyword: {attack_kw[0]}'
+        add('triggers_attack', 'P', 'self', evidence, round(max(share, 0.25), 3))
+    am = ATTACK_DOUBLER_PATTERN.search(text)
+    if am:
+        add('trigger_double:attack', 'C', 'yours', am.group(0))
     dm = DOUBLER_PATTERN.search(text)
     if dm:
         add(f"trigger_double:{'legendary ' if dm.group(1) else ''}{dm.group(2)}", 'C', 'yours', dm.group(0))
@@ -831,10 +858,11 @@ def _doubler_matches(views, features, pairs):
                 continue
             want = df.tag.split(':', 1)[1]
             legendary = want.startswith('legendary ')
-            kind = want.split()[-1].capitalize()
+            kind = 'Permanent' if want == 'attack' else want.split()[-1].capitalize()
+            trig_tag = 'triggers_attack' if want == 'attack' else 'triggers'
             for tn, tfs in features.items():
                 tv = by_name[tn]
-                trig = next((f for f in tfs if f.tag == 'triggers'), None)
+                trig = next((f for f in tfs if f.tag == trig_tag), None)
                 if tn == dn or trig is None or (legendary and not tv['legendary']):
                     continue
                 if kind != 'Permanent' and kind not in tv['front_types']:
@@ -1061,7 +1089,7 @@ def compute_synergy(views, commander_name=None, combos=None, bracket=None, plans
             if not any(m['payoff'] == cn and m['tag'] == tag for m in matches.values()):
                 unmatched.append({'card': cn, 'side': 'cares', 'tag': tag, 'evidence': cf.evidence})
     for tag, ps in producers.items():
-        if tag in payoffs or tag.startswith(('type:', 'kw:')) or tag in ('etb', 'cast_noncreature', 'big_power', 'triggers'):
+        if tag in payoffs or tag.startswith(('type:', 'kw:')) or tag in ('etb', 'cast_noncreature', 'big_power', 'triggers', 'triggers_attack'):
             continue
         for pn, pf in ps:
             if pf.strength >= 1.0:

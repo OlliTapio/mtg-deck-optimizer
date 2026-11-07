@@ -27,8 +27,8 @@
   {
    "tag": "landfall",
    "label": "landfall",
-   "score": 130.0,
-   "producers": 17,
+   "score": 152.75,
+   "producers": 20,
    "payoffs": 7
   },
   {
@@ -95,13 +95,6 @@
    "payoffs": 4
   },
   {
-   "tag": "trigger_dies",
-   "label": "death-trigger doubling",
-   "score": 4.0,
-   "producers": 3,
-   "payoffs": 1
-  },
-  {
    "tag": "kw:Reach",
    "label": "Reach matters",
    "score": 3.75,
@@ -161,9 +154,9 @@
    }
   },
   "Aftermath Analyst": {
-   "total": 54.54,
+   "total": 61.54,
    "cmdr_fit": 8.0,
-   "partners": 29,
+   "partners": 35,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
@@ -172,15 +165,16 @@
     "graveyard": 31.65,
     "land_gy": 14.0,
     "ramp": 7.42,
+    "landfall": 7.0,
     "etb": 0.15
    },
    "ramp_kind": "land"
   },
   "Ancient Greenwarden": {
-   "total": 47.65,
+   "total": 43.65,
    "cmdr_fit": 2.5,
-   "partners": 34,
-   "best_partner": "Omnath, Locus of Rage",
+   "partners": 33,
+   "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
@@ -189,7 +183,6 @@
     "land_gy": 10.0,
     "landfall": 8.75,
     "big_power": 5.25,
-    "trigger_dies": 4.0,
     "type:Elemental": 2.0,
     "trigger_etb": 1.25,
     "kw:Reach": 0.94,
@@ -197,7 +190,7 @@
    }
   },
   "Annie Joins Up": {
-   "total": 31.43,
+   "total": 32.0,
    "cmdr_fit": 8.0,
    "partners": 7,
    "best_partner": "Yuma, Proud Protector",
@@ -205,7 +198,7 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "trigger_double": 27.43
+    "trigger_double": 28.0
    }
   },
   "Arid Archway": {
@@ -222,15 +215,15 @@
    }
   },
   "Avenger of Zendikar": {
-   "total": 43.5,
+   "total": 46.75,
    "cmdr_fit": 2.0,
-   "partners": 35,
+   "partners": 37,
    "best_partner": "Entish Restoration",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "landfall": 18.75,
+    "landfall": 22.0,
     "fodder": 11.0,
     "big_power": 5.25,
     "go_wide": 3.0,
@@ -240,7 +233,7 @@
    }
   },
   "Bitter Reunion": {
-   "total": 23.76,
+   "total": 24.3,
    "cmdr_fit": 1.876,
    "partners": 17,
    "best_partner": "Yuma, Proud Protector",
@@ -249,9 +242,9 @@
    "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 15.95,
-    "card draw": 6.88
+    "card draw": 7.41
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Bovine Intervention": {
@@ -265,7 +258,7 @@
    "themes": {}
   },
   "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift": {
-   "total": 14.54,
+   "total": 15.08,
    "cmdr_fit": 5.0,
    "partners": 1,
    "best_partner": "Yuma, Proud Protector",
@@ -273,10 +266,10 @@
    "ramp_bonus": 2.669,
    "reactive_penalty": 0.0,
    "themes": {
-    "card draw": 6.88,
+    "card draw": 7.41,
     "ramp": 5.17
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw",
    "ramp_kind": "artifact"
   },
@@ -396,7 +389,7 @@
    }
   },
   "Decaying Time Loop": {
-   "total": 6.88,
+   "total": 7.41,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
@@ -404,9 +397,9 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "card draw": 6.88
+    "card draw": 7.41
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Decimate": {
@@ -487,9 +480,9 @@
    }
   },
   "Dunes of the Dead": {
-   "total": 36.0,
+   "total": 35.0,
    "cmdr_fit": 5.0,
-   "partners": 23,
+   "partners": 22,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
@@ -498,7 +491,6 @@
     "type:Desert": 18.0,
     "fodder": 11.0,
     "go_wide": 3.0,
-    "trigger_dies": 1.0,
     "etb": 0.5
    }
   },
@@ -518,7 +510,7 @@
    "ramp_kind": "creature"
   },
   "Embrace the Unknown": {
-   "total": 6.88,
+   "total": 7.41,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
@@ -526,9 +518,9 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "card draw": 6.88
+    "card draw": 7.41
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Entish Restoration": {
@@ -563,15 +555,15 @@
    }
   },
   "Felidar Retreat": {
-   "total": 38.13,
+   "total": 41.38,
    "cmdr_fit": 2.5,
-   "partners": 29,
+   "partners": 32,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "landfall": 18.75,
+    "landfall": 22.0,
     "fodder": 13.75,
     "go_wide": 3.75,
     "etb": 0.62
@@ -598,7 +590,7 @@
    "themes": {}
   },
   "Garruk's Uprising": {
-   "total": 28.5,
+   "total": 29.04,
    "cmdr_fit": 3.0,
    "partners": 30,
    "best_partner": "Yuma, Proud Protector",
@@ -608,10 +600,10 @@
    "themes": {
     "etb": 11.38,
     "big_power": 7.5,
-    "card draw": 6.88,
+    "card draw": 7.41,
     "trigger_etb": 1.25
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Harrow": {
@@ -648,9 +640,9 @@
    }
   },
   "Hazezon, Shaper of Sand": {
-   "total": 77.69,
+   "total": 86.44,
    "cmdr_fit": 7.0,
-   "partners": 41,
+   "partners": 47,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
@@ -660,6 +652,7 @@
     "graveyard": 14.07,
     "fodder": 13.75,
     "land_gy": 10.0,
+    "landfall": 8.75,
     "type:Warrior": 4.0,
     "trigger_double": 4.0,
     "go_wide": 3.75,
@@ -719,7 +712,7 @@
    "themes": {}
   },
   "Life from the Loam": {
-   "total": 47.2,
+   "total": 47.74,
    "cmdr_fit": 4.376,
    "partners": 28,
    "best_partner": "Yuma, Proud Protector",
@@ -729,28 +722,28 @@
    "themes": {
     "graveyard": 28.14,
     "land_gy": 10.0,
-    "card draw": 6.88
+    "card draw": 7.41
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Lotus Cobra": {
-   "total": 29.07,
+   "total": 32.32,
    "cmdr_fit": 7.5,
-   "partners": 19,
+   "partners": 22,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 2.669,
    "reactive_penalty": 0.0,
    "themes": {
-    "landfall": 18.75,
+    "landfall": 22.0,
     "ramp": 6.42,
     "etb": 0.15
    },
    "ramp_kind": "creature"
   },
   "Magmatic Insight": {
-   "total": 6.88,
+   "total": 7.41,
    "cmdr_fit": 0.0,
    "partners": 0,
    "best_partner": null,
@@ -758,9 +751,9 @@
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "card draw": 6.88
+    "card draw": 7.41
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Map the Frontier": {
@@ -779,7 +772,7 @@
    "ramp_kind": "land"
   },
   "Midnight Tilling": {
-   "total": 29.26,
+   "total": 29.8,
    "cmdr_fit": 2.876,
    "partners": 17,
    "best_partner": "Yuma, Proud Protector",
@@ -788,10 +781,10 @@
    "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 15.95,
-    "card draw": 6.88,
+    "card draw": 7.41,
     "land_gy": 5.0
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Mirage Mesa": {
@@ -829,7 +822,7 @@
    "themes": {}
   },
   "Nahiri's Lithoforming": {
-   "total": 37.04,
+   "total": 37.58,
    "cmdr_fit": 8.0,
    "partners": 15,
    "best_partner": "Yuma, Proud Protector",
@@ -838,12 +831,12 @@
    "reactive_penalty": 0.0,
    "themes": {
     "fodder": 17.0,
-    "card draw": 6.88,
+    "card draw": 7.41,
     "ramp": 5.17,
     "dies": 2.0,
     "sacrifice": 2.0
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw",
    "ramp_kind": "other"
   },
@@ -862,27 +855,26 @@
    "ramp_kind": "land"
   },
   "Omnath, Locus of Rage": {
-   "total": 67.88,
+   "total": 69.63,
    "cmdr_fit": 4.5,
-   "partners": 37,
+   "partners": 39,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "landfall": 18.75,
+    "landfall": 22.0,
     "fodder": 13.75,
     "dies": 11.0,
     "type:Elemental": 7.0,
     "big_power": 5.25,
     "trigger_double": 4.0,
     "go_wide": 3.75,
-    "trigger_dies": 1.5,
     "etb": 0.62
    }
   },
   "Oracle of Mul Daya": {
-   "total": 26.94,
+   "total": 27.48,
    "cmdr_fit": 7.5,
    "partners": 9,
    "best_partner": "Yuma, Proud Protector",
@@ -892,10 +884,10 @@
    "themes": {
     "landfall": 8.75,
     "ramp": 7.42,
-    "card draw": 6.88,
+    "card draw": 7.41,
     "etb": 0.15
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw",
    "ramp_kind": "land"
   },
@@ -937,15 +929,15 @@
    "ramp_kind": "other"
   },
   "Phylath, World Sculptor": {
-   "total": 47.5,
+   "total": 50.75,
    "cmdr_fit": 2.0,
-   "partners": 36,
+   "partners": 38,
    "best_partner": "Annie Joins Up",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "landfall": 18.75,
+    "landfall": 22.0,
     "fodder": 11.0,
     "big_power": 5.25,
     "trigger_double": 4.0,
@@ -1030,7 +1022,7 @@
    "themes": {}
   },
   "Return of the Wildspeaker": {
-   "total": 29.0,
+   "total": 29.54,
    "cmdr_fit": 3.75,
    "partners": 19,
    "best_partner": "Yuma, Proud Protector",
@@ -1040,9 +1032,9 @@
    "themes": {
     "go_wide": 12.75,
     "big_power": 7.5,
-    "card draw": 6.88
+    "card draw": 7.41
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Sand Scout": {
@@ -1065,7 +1057,7 @@
    "ramp_kind": "creature"
   },
   "Satyr Wayfinder": {
-   "total": 29.41,
+   "total": 29.95,
    "cmdr_fit": 2.876,
    "partners": 18,
    "best_partner": "Yuma, Proud Protector",
@@ -1074,11 +1066,11 @@
    "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 15.95,
-    "card draw": 6.88,
+    "card draw": 7.41,
     "land_gy": 5.0,
     "etb": 0.15
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Scattered Groves": {
@@ -1107,15 +1099,15 @@
    }
   },
   "Scute Swarm": {
-   "total": 40.13,
+   "total": 43.38,
    "cmdr_fit": 2.5,
-   "partners": 30,
+   "partners": 33,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
-    "landfall": 18.75,
+    "landfall": 22.0,
     "fodder": 13.75,
     "go_wide": 3.75,
     "type:Insect": 2.0,
@@ -1140,7 +1132,7 @@
    "ramp_kind": "creature"
   },
   "Shamanic Revelation": {
-   "total": 29.0,
+   "total": 29.54,
    "cmdr_fit": 3.75,
    "partners": 19,
    "best_partner": "Yuma, Proud Protector",
@@ -1150,9 +1142,9 @@
    "themes": {
     "go_wide": 12.75,
     "big_power": 7.5,
-    "card draw": 6.88
+    "card draw": 7.41
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Shefet Dunes": {
@@ -1192,26 +1184,26 @@
    "themes": {}
   },
   "Six": {
-   "total": 51.09,
+   "total": 52.19,
    "cmdr_fit": 3.594,
    "partners": 26,
-   "best_partner": "Yuma, Proud Protector",
+   "best_partner": "Annie Joins Up",
    "combo_piece": false,
    "ramp_bonus": 0.0,
    "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 31.65,
-    "card draw": 6.88,
+    "card draw": 7.41,
     "land_gy": 6.25,
-    "trigger_double": 3.43,
+    "trigger_double": 4.0,
     "kw:Reach": 0.94,
     "etb": 0.15
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Spelunking": {
-   "total": 22.54,
+   "total": 23.08,
    "cmdr_fit": 5.0,
    "partners": 8,
    "best_partner": "Yuma, Proud Protector",
@@ -1219,11 +1211,11 @@
    "ramp_bonus": 3.669,
    "reactive_penalty": 0.0,
    "themes": {
+    "card draw": 7.41,
     "landfall": 7.0,
-    "card draw": 6.88,
     "ramp": 6.17
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw",
    "ramp_kind": "land"
   },
@@ -1293,7 +1285,7 @@
    "themes": {}
   },
   "Mole Man, Moloid Master": {
-   "total": 92.45,
+   "total": 95.69,
    "cmdr_fit": 7.344,
    "partners": 52,
    "best_partner": "Yuma, Proud Protector",
@@ -1302,7 +1294,7 @@
    "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 31.65,
-    "landfall": 25.0,
+    "landfall": 28.25,
     "fodder": 13.75,
     "land_gy": 10.0,
     "trigger_double": 4.0,
@@ -1311,9 +1303,9 @@
    }
   },
   "Titania, Protector of Argoth": {
-   "total": 82.23,
+   "total": 87.73,
    "cmdr_fit": 8.0,
-   "partners": 37,
+   "partners": 40,
    "best_partner": "Yuma, Proud Protector",
    "combo_piece": false,
    "ramp_bonus": 3.669,
@@ -1324,11 +1316,11 @@
     "dies": 11.0,
     "land_gy": 10.0,
     "ramp": 7.42,
+    "landfall": 7.0,
     "type:Elemental": 7.0,
     "big_power": 5.25,
     "go_wide": 4.5,
     "trigger_double": 4.0,
-    "trigger_dies": 1.5,
     "etb": 0.75
    },
    "ramp_kind": "land"
@@ -1370,7 +1362,7 @@
    "ramp_kind": "creature"
   },
   "Winding Way": {
-   "total": 29.26,
+   "total": 29.8,
    "cmdr_fit": 2.876,
    "partners": 17,
    "best_partner": "Yuma, Proud Protector",
@@ -1379,10 +1371,10 @@
    "reactive_penalty": 0.0,
    "themes": {
     "graveyard": 15.95,
-    "card draw": 6.88,
+    "card draw": 7.41,
     "land_gy": 5.0
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw"
   },
   "Worldsoul's Rage": {
@@ -1432,7 +1424,7 @@
    }
   },
   "Evendo Brushrazer": {
-   "total": 60.44,
+   "total": 60.98,
    "cmdr_fit": 8.0,
    "partners": 30,
    "best_partner": "Yuma, Proud Protector",
@@ -1443,14 +1435,14 @@
     "fodder": 17.0,
     "land_gy": 12.5,
     "sacrifice": 11.0,
-    "card draw": 6.88,
+    "card draw": 7.41,
     "ramp": 6.42,
     "type:Warrior": 4.0,
     "dies": 2.0,
     "type:Insect": 1.0,
     "etb": 0.15
    },
-   "draw_bonus": 6.875,
+   "draw_bonus": 7.412,
    "draw_kind": "draw",
    "ramp_kind": "creature"
   }
@@ -1537,16 +1529,16 @@
  "plans": [],
  "commander_dependence": {
   "score": 1.0,
-  "synergy_vs_average_card": 7.56,
+  "synergy_vs_average_card": 7.43,
   "protection_weight": 1.0,
-  "protection_bonus": 13.75,
+  "protection_bonus": 14.825,
   "protection_cards": []
  },
  "draw": {
-  "median_card_synergy": 27.5,
+  "median_card_synergy": 29.65,
   "bonus": {
-   "draw": 6.875,
-   "selection": 3.438
+   "draw": 7.412,
+   "selection": 3.706
   },
   "cards": {
    "draw": [
@@ -1928,6 +1920,24 @@
    "side": "produces",
    "tag": "lifegain",
    "evidence": "you gain 2 life."
+  },
+  {
+   "card": "Dunes of the Dead",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "~ is put into a graveyard from the battlefield, create a 2/2 black zombie creat…"
+  },
+  {
+   "card": "Omnath, Locus of Rage",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "~ or another elemental you control dies, ~ deals 3 damage to any target."
+  },
+  {
+   "card": "Titania, Protector of Argoth",
+   "side": "produces",
+   "tag": "trigger_dies",
+   "evidence": "a land you control is put into a graveyard from the battlefield, create a 5/3 g…"
   },
   {
    "card": "Pyrrhic Strike",
@@ -2888,6 +2898,19 @@
   },
   {
    "a": "Annie Joins Up",
+   "b": "Six",
+   "score": 4.0,
+   "reasons": [
+    {
+     "tag": "trigger_double",
+     "producer": "Six",
+     "payoff": "Annie Joins Up",
+     "weight": 4.0
+    }
+   ]
+  },
+  {
+   "a": "Annie Joins Up",
    "b": "Mole Man, Moloid Master",
    "score": 4.0,
    "reasons": [
@@ -2909,6 +2932,37 @@
      "producer": "Titania, Protector of Argoth",
      "payoff": "Annie Joins Up",
      "weight": 4.0
+    }
+   ]
+  },
+  {
+   "a": "Aftermath Analyst",
+   "b": "Mole Man, Moloid Master",
+   "score": 3.844,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Mole Man, Moloid Master",
+     "payoff": "Aftermath Analyst",
+     "weight": 1.172
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Aftermath Analyst",
+     "payoff": "Mole Man, Moloid Master",
+     "weight": 1.172
+    },
+    {
+     "tag": "landfall",
+     "producer": "Aftermath Analyst",
+     "payoff": "Mole Man, Moloid Master",
+     "weight": 1.0
+    },
+    {
+     "tag": "land_gy",
+     "producer": "Aftermath Analyst",
+     "payoff": "Mole Man, Moloid Master",
+     "weight": 0.5
     }
    ]
   },
@@ -3033,31 +3087,6 @@
      "tag": "sacrifice",
      "producer": "Scavenger Grounds",
      "payoff": "Desert Warfare",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Ancient Greenwarden",
-   "b": "Omnath, Locus of Rage",
-   "score": 3.75,
-   "reasons": [
-    {
-     "tag": "trigger_dies",
-     "producer": "Omnath, Locus of Rage",
-     "payoff": "Ancient Greenwarden",
-     "weight": 1.5
-    },
-    {
-     "tag": "landfall",
-     "producer": "Ancient Greenwarden",
-     "payoff": "Omnath, Locus of Rage",
-     "weight": 1.25
-    },
-    {
-     "tag": "type:Elemental",
-     "producer": "Ancient Greenwarden",
-     "payoff": "Omnath, Locus of Rage",
      "weight": 1.0
     }
    ]
@@ -3264,19 +3293,6 @@
    ]
   },
   {
-   "a": "Annie Joins Up",
-   "b": "Six",
-   "score": 3.434,
-   "reasons": [
-    {
-     "tag": "trigger_double",
-     "producer": "Six",
-     "payoff": "Annie Joins Up",
-     "weight": 3.434
-    }
-   ]
-  },
-  {
    "a": "Entish Restoration",
    "b": "Mole Man, Moloid Master",
    "score": 3.25,
@@ -3352,31 +3368,6 @@
    ]
   },
   {
-   "a": "Desert Warfare",
-   "b": "Evendo Brushrazer",
-   "score": 3.25,
-   "reasons": [
-    {
-     "tag": "fodder",
-     "producer": "Desert Warfare",
-     "payoff": "Evendo Brushrazer",
-     "weight": 1.25
-    },
-    {
-     "tag": "type:Warrior",
-     "producer": "Evendo Brushrazer",
-     "payoff": "Desert Warfare",
-     "weight": 1.0
-    },
-    {
-     "tag": "sacrifice",
-     "producer": "Evendo Brushrazer",
-     "payoff": "Desert Warfare",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Hour of Promise",
    "b": "Shefet Dunes",
    "score": 3.25,
@@ -3423,6 +3414,31 @@
      "producer": "Dunes of the Dead",
      "payoff": "Shefet Dunes",
      "weight": 0.75
+    }
+   ]
+  },
+  {
+   "a": "Desert Warfare",
+   "b": "Evendo Brushrazer",
+   "score": 3.25,
+   "reasons": [
+    {
+     "tag": "fodder",
+     "producer": "Desert Warfare",
+     "payoff": "Evendo Brushrazer",
+     "weight": 1.25
+    },
+    {
+     "tag": "type:Warrior",
+     "producer": "Evendo Brushrazer",
+     "payoff": "Desert Warfare",
+     "weight": 1.0
+    },
+    {
+     "tag": "sacrifice",
+     "producer": "Evendo Brushrazer",
+     "payoff": "Desert Warfare",
+     "weight": 1.0
     }
    ]
   },
@@ -3891,6 +3907,31 @@
    ]
   },
   {
+   "a": "Omnath, Locus of Rage",
+   "b": "Titania, Protector of Argoth",
+   "score": 3.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Titania, Protector of Argoth",
+     "payoff": "Omnath, Locus of Rage",
+     "weight": 1.0
+    },
+    {
+     "tag": "type:Elemental",
+     "producer": "Titania, Protector of Argoth",
+     "payoff": "Omnath, Locus of Rage",
+     "weight": 1.0
+    },
+    {
+     "tag": "type:Elemental",
+     "producer": "Omnath, Locus of Rage",
+     "payoff": "Titania, Protector of Argoth",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
    "a": "Garruk's Uprising",
    "b": "Yuma, Proud Protector",
    "score": 3.0,
@@ -4012,31 +4053,6 @@
      "tag": "land_gy",
      "producer": "Winding Way",
      "payoff": "Yuma, Proud Protector",
-     "weight": 0.5
-    }
-   ]
-  },
-  {
-   "a": "Aftermath Analyst",
-   "b": "Mole Man, Moloid Master",
-   "score": 2.844,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Mole Man, Moloid Master",
-     "payoff": "Aftermath Analyst",
-     "weight": 1.172
-    },
-    {
-     "tag": "graveyard",
-     "producer": "Aftermath Analyst",
-     "payoff": "Mole Man, Moloid Master",
-     "weight": 1.172
-    },
-    {
-     "tag": "land_gy",
-     "producer": "Aftermath Analyst",
-     "payoff": "Mole Man, Moloid Master",
      "weight": 0.5
     }
    ]
@@ -4554,25 +4570,6 @@
    ]
   },
   {
-   "a": "Evendo Brushrazer",
-   "b": "Sand Scout",
-   "score": 2.5,
-   "reasons": [
-    {
-     "tag": "fodder",
-     "producer": "Sand Scout",
-     "payoff": "Evendo Brushrazer",
-     "weight": 1.5
-    },
-    {
-     "tag": "type:Warrior",
-     "producer": "Evendo Brushrazer",
-     "payoff": "Sand Scout",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Dunes of the Dead",
    "b": "Hashep Oasis",
    "score": 2.5,
@@ -4687,6 +4684,25 @@
    ]
   },
   {
+   "a": "Evendo Brushrazer",
+   "b": "Sand Scout",
+   "score": 2.5,
+   "reasons": [
+    {
+     "tag": "fodder",
+     "producer": "Sand Scout",
+     "payoff": "Evendo Brushrazer",
+     "weight": 1.5
+    },
+    {
+     "tag": "type:Warrior",
+     "producer": "Evendo Brushrazer",
+     "payoff": "Sand Scout",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
    "a": "Felidar Retreat",
    "b": "Yuma, Proud Protector",
    "score": 2.5,
@@ -4790,25 +4806,6 @@
   },
   {
    "a": "Ancient Greenwarden",
-   "b": "Titania, Protector of Argoth",
-   "score": 2.5,
-   "reasons": [
-    {
-     "tag": "trigger_dies",
-     "producer": "Titania, Protector of Argoth",
-     "payoff": "Ancient Greenwarden",
-     "weight": 1.5
-    },
-    {
-     "tag": "type:Elemental",
-     "producer": "Ancient Greenwarden",
-     "payoff": "Titania, Protector of Argoth",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Ancient Greenwarden",
    "b": "Mole Man, Moloid Master",
    "score": 2.422,
    "reasons": [
@@ -4841,6 +4838,25 @@
      "tag": "graveyard",
      "producer": "Mole Man, Moloid Master",
      "payoff": "Conduit of Worlds",
+     "weight": 1.172
+    }
+   ]
+  },
+  {
+   "a": "Hazezon, Shaper of Sand",
+   "b": "Mole Man, Moloid Master",
+   "score": 2.422,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Hazezon, Shaper of Sand",
+     "payoff": "Mole Man, Moloid Master",
+     "weight": 1.25
+    },
+    {
+     "tag": "graveyard",
+     "producer": "Mole Man, Moloid Master",
+     "payoff": "Hazezon, Shaper of Sand",
      "weight": 1.172
     }
    ]
@@ -5302,6 +5318,25 @@
    ]
   },
   {
+   "a": "Ancient Greenwarden",
+   "b": "Omnath, Locus of Rage",
+   "score": 2.25,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Ancient Greenwarden",
+     "payoff": "Omnath, Locus of Rage",
+     "weight": 1.25
+    },
+    {
+     "tag": "type:Elemental",
+     "producer": "Ancient Greenwarden",
+     "payoff": "Omnath, Locus of Rage",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
    "a": "Felidar Retreat",
    "b": "Shefet Dunes",
    "score": 2.188,
@@ -5355,6 +5390,25 @@
      "producer": "Mole Man, Moloid Master",
      "payoff": "Shefet Dunes",
      "weight": 0.938
+    }
+   ]
+  },
+  {
+   "a": "Mole Man, Moloid Master",
+   "b": "Titania, Protector of Argoth",
+   "score": 2.172,
+   "reasons": [
+    {
+     "tag": "graveyard",
+     "producer": "Mole Man, Moloid Master",
+     "payoff": "Titania, Protector of Argoth",
+     "weight": 1.172
+    },
+    {
+     "tag": "landfall",
+     "producer": "Titania, Protector of Argoth",
+     "payoff": "Mole Man, Moloid Master",
+     "weight": 1.0
     }
    ]
   },
@@ -5543,19 +5597,38 @@
    ]
   },
   {
-   "a": "Omnath, Locus of Rage",
+   "a": "Avenger of Zendikar",
    "b": "Titania, Protector of Argoth",
    "score": 2.0,
    "reasons": [
     {
-     "tag": "type:Elemental",
+     "tag": "landfall",
      "producer": "Titania, Protector of Argoth",
-     "payoff": "Omnath, Locus of Rage",
+     "payoff": "Avenger of Zendikar",
      "weight": 1.0
     },
     {
      "tag": "type:Elemental",
-     "producer": "Omnath, Locus of Rage",
+     "producer": "Avenger of Zendikar",
+     "payoff": "Titania, Protector of Argoth",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Phylath, World Sculptor",
+   "b": "Titania, Protector of Argoth",
+   "score": 2.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Titania, Protector of Argoth",
+     "payoff": "Phylath, World Sculptor",
+     "weight": 1.0
+    },
+    {
+     "tag": "type:Elemental",
+     "producer": "Phylath, World Sculptor",
      "payoff": "Titania, Protector of Argoth",
      "weight": 1.0
     }
@@ -9072,6 +9145,19 @@
   },
   {
    "a": "Avenger of Zendikar",
+   "b": "Hazezon, Shaper of Sand",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Hazezon, Shaper of Sand",
+     "payoff": "Avenger of Zendikar",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Avenger of Zendikar",
    "b": "Prismatic Undercurrents",
    "score": 1.25,
    "reasons": [
@@ -9163,6 +9249,19 @@
   },
   {
    "a": "Felidar Retreat",
+   "b": "Hazezon, Shaper of Sand",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Hazezon, Shaper of Sand",
+     "payoff": "Felidar Retreat",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Felidar Retreat",
    "b": "Prismatic Undercurrents",
    "score": 1.25,
    "reasons": [
@@ -9247,6 +9346,19 @@
     {
      "tag": "landfall",
      "producer": "Dryad of the Ilysian Grove",
+     "payoff": "Lotus Cobra",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Hazezon, Shaper of Sand",
+   "b": "Lotus Cobra",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Hazezon, Shaper of Sand",
      "payoff": "Lotus Cobra",
      "weight": 1.25
     }
@@ -9325,6 +9437,19 @@
     {
      "tag": "landfall",
      "producer": "Dryad of the Ilysian Grove",
+     "payoff": "Omnath, Locus of Rage",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Hazezon, Shaper of Sand",
+   "b": "Omnath, Locus of Rage",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Hazezon, Shaper of Sand",
      "payoff": "Omnath, Locus of Rage",
      "weight": 1.25
     }
@@ -9416,6 +9541,19 @@
     {
      "tag": "landfall",
      "producer": "Dryad of the Ilysian Grove",
+     "payoff": "Phylath, World Sculptor",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Hazezon, Shaper of Sand",
+   "b": "Phylath, World Sculptor",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Hazezon, Shaper of Sand",
      "payoff": "Phylath, World Sculptor",
      "weight": 1.25
     }
@@ -9507,6 +9645,19 @@
     {
      "tag": "landfall",
      "producer": "Dryad of the Ilysian Grove",
+     "payoff": "Scute Swarm",
+     "weight": 1.25
+    }
+   ]
+  },
+  {
+   "a": "Hazezon, Shaper of Sand",
+   "b": "Scute Swarm",
+   "score": 1.25,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Hazezon, Shaper of Sand",
      "payoff": "Scute Swarm",
      "weight": 1.25
     }
@@ -9715,19 +9866,6 @@
      "tag": "graveyard",
      "producer": "Conduit Pylons",
      "payoff": "Conduit of Worlds",
-     "weight": 1.172
-    }
-   ]
-  },
-  {
-   "a": "Hazezon, Shaper of Sand",
-   "b": "Mole Man, Moloid Master",
-   "score": 1.172,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Mole Man, Moloid Master",
-     "payoff": "Hazezon, Shaper of Sand",
      "weight": 1.172
     }
    ]
@@ -10091,19 +10229,6 @@
     {
      "tag": "graveyard",
      "producer": "Conduit Pylons",
-     "payoff": "Titania, Protector of Argoth",
-     "weight": 1.172
-    }
-   ]
-  },
-  {
-   "a": "Mole Man, Moloid Master",
-   "b": "Titania, Protector of Argoth",
-   "score": 1.172,
-   "reasons": [
-    {
-     "tag": "graveyard",
-     "producer": "Mole Man, Moloid Master",
      "payoff": "Titania, Protector of Argoth",
      "weight": 1.172
     }
@@ -10994,14 +11119,14 @@
    ]
   },
   {
-   "a": "Ancient Greenwarden",
-   "b": "Dunes of the Dead",
+   "a": "Aftermath Analyst",
+   "b": "Avenger of Zendikar",
    "score": 1.0,
    "reasons": [
     {
-     "tag": "trigger_dies",
-     "producer": "Dunes of the Dead",
-     "payoff": "Ancient Greenwarden",
+     "tag": "landfall",
+     "producer": "Aftermath Analyst",
+     "payoff": "Avenger of Zendikar",
      "weight": 1.0
     }
    ]
@@ -11098,6 +11223,19 @@
    ]
   },
   {
+   "a": "Aftermath Analyst",
+   "b": "Felidar Retreat",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Aftermath Analyst",
+     "payoff": "Felidar Retreat",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
    "a": "Evolving Wilds",
    "b": "Felidar Retreat",
    "score": 1.0,
@@ -11164,6 +11302,19 @@
   },
   {
    "a": "Felidar Retreat",
+   "b": "Titania, Protector of Argoth",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Titania, Protector of Argoth",
+     "payoff": "Felidar Retreat",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Felidar Retreat",
    "b": "Worldsoul's Rage",
    "score": 1.0,
    "reasons": [
@@ -11184,6 +11335,19 @@
      "tag": "landfall",
      "producer": "Wreck and Rebuild",
      "payoff": "Felidar Retreat",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Aftermath Analyst",
+   "b": "Lotus Cobra",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Aftermath Analyst",
+     "payoff": "Lotus Cobra",
      "weight": 1.0
     }
    ]
@@ -11294,6 +11458,19 @@
   },
   {
    "a": "Lotus Cobra",
+   "b": "Titania, Protector of Argoth",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Titania, Protector of Argoth",
+     "payoff": "Lotus Cobra",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Lotus Cobra",
    "b": "Worldsoul's Rage",
    "score": 1.0,
    "reasons": [
@@ -11319,6 +11496,19 @@
    ]
   },
   {
+   "a": "Aftermath Analyst",
+   "b": "Omnath, Locus of Rage",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Aftermath Analyst",
+     "payoff": "Omnath, Locus of Rage",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
    "a": "Evolving Wilds",
    "b": "Omnath, Locus of Rage",
    "score": 1.0,
@@ -11410,6 +11600,19 @@
    ]
   },
   {
+   "a": "Aftermath Analyst",
+   "b": "Phylath, World Sculptor",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Aftermath Analyst",
+     "payoff": "Phylath, World Sculptor",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
    "a": "Evolving Wilds",
    "b": "Phylath, World Sculptor",
    "score": 1.0,
@@ -11496,6 +11699,19 @@
      "tag": "landfall",
      "producer": "Wreck and Rebuild",
      "payoff": "Phylath, World Sculptor",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Aftermath Analyst",
+   "b": "Scute Swarm",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Aftermath Analyst",
+     "payoff": "Scute Swarm",
      "weight": 1.0
     }
    ]
@@ -11560,6 +11776,19 @@
     {
      "tag": "landfall",
      "producer": "Spelunking",
+     "payoff": "Scute Swarm",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Scute Swarm",
+   "b": "Titania, Protector of Argoth",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "landfall",
+     "producer": "Titania, Protector of Argoth",
      "payoff": "Scute Swarm",
      "weight": 1.0
     }
@@ -11696,26 +11925,13 @@
    ]
   },
   {
-   "a": "Avenger of Zendikar",
+   "a": "Ancient Greenwarden",
    "b": "Titania, Protector of Argoth",
    "score": 1.0,
    "reasons": [
     {
      "tag": "type:Elemental",
-     "producer": "Avenger of Zendikar",
-     "payoff": "Titania, Protector of Argoth",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Phylath, World Sculptor",
-   "b": "Titania, Protector of Argoth",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Elemental",
-     "producer": "Phylath, World Sculptor",
+     "producer": "Ancient Greenwarden",
      "payoff": "Titania, Protector of Argoth",
      "weight": 1.0
     }
@@ -13834,6 +14050,13 @@
     "evidence": "when ~ enters or attacks, you may sacrifice a land."
    },
    {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.333,
+    "evidence": "when ~ enters or attacks, you may sacrifice a land."
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -13855,6 +14078,13 @@
     "evidence": "is a Ranger"
    },
    {
+    "tag": "type:Desert",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
+   },
+   {
     "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
@@ -13863,13 +14093,6 @@
    },
    {
     "tag": "type:Plant",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
-   },
-   {
-    "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -13902,7 +14125,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.333,
     "evidence": "when ~ enters, it deals 1 damage to target opponent."
    },
    {
@@ -13950,10 +14173,17 @@
     "evidence": "return all land cards from your graveyard to the battlefield tapped."
    },
    {
+    "tag": "landfall",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "return all land cards from your graveyard to the battlefield tapped."
+   },
+   {
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.6,
+    "strength": 0.5,
     "evidence": "when ~ enters, mill three cards."
    },
    {
@@ -13978,18 +14208,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Detective",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Detective"
-   },
-   {
     "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Elf"
+   },
+   {
+    "tag": "type:Detective",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Detective"
    }
   ],
   "Ancient Greenwarden": [
@@ -14013,13 +14243,6 @@
     "scope": "yours",
     "strength": 1.25,
     "evidence": "you may play lands from your graveyard."
-   },
-   {
-    "tag": "trigger_dies",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "if a land entering causes a triggered ability of a permanent you control to tri…"
    },
    {
     "tag": "trigger_etb",
@@ -14298,7 +14521,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.333,
     "evidence": "when ~ enters, it deals 1 damage to target opponent."
    },
    {
@@ -14376,18 +14599,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Mercenary",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Mercenary"
-   },
-   {
     "tag": "type:Plant",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Plant"
+   },
+   {
+    "tag": "type:Mercenary",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Mercenary"
    }
   ],
   "Catharsis": [
@@ -14441,18 +14664,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Cinder Glade": [],
@@ -14529,7 +14752,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.333,
     "evidence": "when ~ enters, it deals 1 damage to target opponent."
    },
    {
@@ -14615,18 +14838,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Dryad",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dryad"
-   },
-   {
     "tag": "type:Nymph",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Nymph"
+   },
+   {
+    "tag": "type:Dryad",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dryad"
    }
   ],
   "Dune Chanter": [
@@ -14762,6 +14985,13 @@
   "Horizon Explorer": [
    {
     "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when you attack a player, create a lander token."
+   },
+   {
+    "tag": "triggers_attack",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
@@ -14905,7 +15135,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.25,
+    "strength": 0.333,
     "evidence": "when a land you control enters, choose one —"
    },
    {
@@ -14936,7 +15166,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.333,
     "evidence": "when ~ enters, return a land you control to its owner's hand."
    }
   ],
@@ -15088,6 +15318,13 @@
     "evidence": "you may play desert lands from your graveyard."
    },
    {
+    "tag": "landfall",
+    "side": "P",
+    "scope": "yours",
+    "strength": 1.25,
+    "evidence": "you may play desert lands from your graveyard."
+   },
+   {
     "tag": "token_creature",
     "side": "P",
     "scope": "yours",
@@ -15119,7 +15356,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.667,
+    "strength": 1.0,
     "evidence": "when a desert you control enters, create two 1/1 red, green, and white sand war…"
    },
    {
@@ -15137,18 +15374,18 @@
     "evidence": "is a Warrior"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever a desert you control enters, create two 1/1 red, green, and white sand…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "desertwalk"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever a desert you control enters, create two 1/1 red, green, and white sand…"
    }
   ],
   "Hour of Promise": [
@@ -15215,7 +15452,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.25,
+    "strength": 1.0,
     "evidence": "when ~ enters, search your library for up to x basic land cards, where x is the…"
    },
    {
@@ -15558,18 +15795,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Overwhelming Stampede": [
@@ -15723,6 +15960,13 @@
     "evidence": "when ~ attacks, you may mill two cards."
    },
    {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.5,
+    "evidence": "when ~ attacks, you may mill two cards."
+   },
+   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -15804,18 +16048,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Cleric",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Cleric"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Cleric",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Cleric"
    }
   ],
   "Ramunap Ruins": [
@@ -15966,18 +16210,18 @@
     "evidence": "is a Scout"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "whenever one or more land cards are put into your graveyard from anywhere, crea…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "when ~ enters, if an opponent controls more lands than you, search your library…"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "whenever one or more land cards are put into your graveyard from anywhere, crea…"
    }
   ],
   "Satyr Wayfinder": [
@@ -16287,7 +16531,14 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.75,
+    "strength": 1.0,
+    "evidence": "when ~ attacks, mill three cards."
+   },
+   {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
     "evidence": "when ~ attacks, mill three cards."
    },
    {
@@ -16400,18 +16651,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    },
    {
     "tag": "sacrifice",
@@ -16462,6 +16713,13 @@
    },
    {
     "tag": "triggers",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "when ~ enters or attacks, you may return target permanent card with mana value …"
+   },
+   {
+    "tag": "triggers_attack",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
@@ -16558,7 +16816,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.625,
+    "strength": 1.0,
     "evidence": "when a land you control enters, create a 1/1 green minion creature token named …"
    },
    {
@@ -16601,6 +16859,13 @@
    {
     "tag": "land_gy",
     "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "return target land card from your graveyard to the battlefield."
+   },
+   {
+    "tag": "landfall",
+    "side": "P",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "return target land card from your graveyard to the battlefield."
@@ -16741,18 +17006,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Warrior",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "at the beginning of combat on your turn, if you control five or more deserts, c…"
-   },
-   {
     "tag": "type:Desert",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever you sacrifice a desert and whenever a desert card is put into your gra…"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "at the beginning of combat on your turn, if you control five or more deserts, c…"
    },
    {
     "tag": "graveyard",
@@ -16792,18 +17057,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    }
   ],
   "Winding Way": [
@@ -17005,18 +17270,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Warrior",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Warrior"
-   },
-   {
     "tag": "type:Insect",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Insect"
+   },
+   {
+    "tag": "type:Warrior",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Warrior"
    },
    {
     "tag": "sacrifice",
@@ -17068,16 +17333,25 @@
     "cmdr_fit": 4.25,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.026
+    "cut_score": -0.009
    },
    {
     "name": "Avenger of Zendikar",
     "cmc": 7.0,
-    "synergy": 43.5,
+    "synergy": 46.75,
     "cmdr_fit": 2.0,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.181
+    "cut_score": 0.216
+   },
+   {
+    "name": "Ancient Greenwarden",
+    "cmc": 6.0,
+    "synergy": 43.65,
+    "cmdr_fit": 2.5,
+    "combo_piece": false,
+    "roles": [],
+    "cut_score": 0.216
    },
    {
     "name": "Conduit of Worlds",
@@ -17091,17 +17365,8 @@
    {
     "name": "Phylath, World Sculptor",
     "cmc": 6.0,
-    "synergy": 47.5,
+    "synergy": 50.75,
     "cmdr_fit": 2.0,
-    "combo_piece": false,
-    "roles": [],
-    "cut_score": 0.302
-   },
-   {
-    "name": "Ancient Greenwarden",
-    "cmc": 6.0,
-    "synergy": 47.65,
-    "cmdr_fit": 2.5,
     "combo_piece": false,
     "roles": [],
     "cut_score": 0.319
@@ -17109,11 +17374,11 @@
    {
     "name": "Felidar Retreat",
     "cmc": 4.0,
-    "synergy": 38.13,
+    "synergy": 41.38,
     "cmdr_fit": 2.5,
     "combo_piece": false,
     "roles": [],
-    "cut_score": 0.319
+    "cut_score": 0.336
    },
    {
     "name": "Dune Chanter",
@@ -17136,7 +17401,7 @@
    {
     "name": "Scute Swarm",
     "cmc": 3.0,
-    "synergy": 40.13,
+    "synergy": 43.38,
     "cmdr_fit": 2.5,
     "combo_piece": false,
     "roles": [],
@@ -17154,7 +17419,7 @@
    {
     "name": "Hazezon, Shaper of Sand",
     "cmc": 3.0,
-    "synergy": 77.69,
+    "synergy": 86.44,
     "cmdr_fit": 7.0,
     "combo_piece": false,
     "roles": [],
@@ -17163,7 +17428,7 @@
    {
     "name": "Mole Man, Moloid Master",
     "cmc": 3.0,
-    "synergy": 92.45,
+    "synergy": 95.69,
     "cmdr_fit": 7.344,
     "combo_piece": false,
     "roles": [],
@@ -17185,7 +17450,7 @@
    {
     "name": "Decaying Time Loop",
     "cmc": 4.0,
-    "synergy": 6.88,
+    "synergy": 7.41,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
@@ -17243,7 +17508,7 @@
    {
     "name": "Embrace the Unknown",
     "cmc": 3.0,
-    "synergy": 6.88,
+    "synergy": 7.41,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
@@ -17254,7 +17519,7 @@
    {
     "name": "Return of the Wildspeaker",
     "cmc": 5.0,
-    "synergy": 29.0,
+    "synergy": 29.54,
     "cmdr_fit": 3.75,
     "combo_piece": false,
     "roles": [
@@ -17266,7 +17531,7 @@
    {
     "name": "Shamanic Revelation",
     "cmc": 5.0,
-    "synergy": 29.0,
+    "synergy": 29.54,
     "cmdr_fit": 3.75,
     "combo_piece": false,
     "roles": [
@@ -17298,9 +17563,20 @@
     "cut_score": -0.009
    },
    {
+    "name": "Sun Titan",
+    "cmc": 6.0,
+    "synergy": 30.11,
+    "cmdr_fit": 7.5,
+    "combo_piece": false,
+    "roles": [
+     "ramp"
+    ],
+    "cut_score": 0.026
+   },
+   {
     "name": "Oracle of Mul Daya",
     "cmc": 4.0,
-    "synergy": 26.94,
+    "synergy": 27.48,
     "cmdr_fit": 7.5,
     "combo_piece": false,
     "roles": [
@@ -17322,20 +17598,9 @@
     "cut_score": 0.034
    },
    {
-    "name": "Sun Titan",
-    "cmc": 6.0,
-    "synergy": 30.11,
-    "cmdr_fit": 7.5,
-    "combo_piece": false,
-    "roles": [
-     "ramp"
-    ],
-    "cut_score": 0.043
-   },
-   {
     "name": "Brass's Tunnel-Grinder // Tecutlan, the Searing Rift",
     "cmc": 3.0,
-    "synergy": 14.54,
+    "synergy": 15.08,
     "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
@@ -17348,7 +17613,7 @@
    {
     "name": "Magmatic Insight",
     "cmc": 1.0,
-    "synergy": 6.88,
+    "synergy": 7.41,
     "cmdr_fit": 0.0,
     "combo_piece": false,
     "roles": [
@@ -17384,7 +17649,7 @@
    {
     "name": "Spelunking",
     "cmc": 3.0,
-    "synergy": 22.54,
+    "synergy": 23.08,
     "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
@@ -17407,9 +17672,20 @@
     "cut_score": 0.172
    },
    {
+    "name": "Annie Joins Up",
+    "cmc": 4.0,
+    "synergy": 32.0,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [
+     "removal"
+    ],
+    "cut_score": 0.198
+   },
+   {
     "name": "Garruk's Uprising",
     "cmc": 3.0,
-    "synergy": 28.5,
+    "synergy": 29.04,
     "cmdr_fit": 3.0,
     "combo_piece": false,
     "roles": [
@@ -17419,20 +17695,9 @@
     "cut_score": 0.207
    },
    {
-    "name": "Annie Joins Up",
-    "cmc": 4.0,
-    "synergy": 31.43,
-    "cmdr_fit": 8.0,
-    "combo_piece": false,
-    "roles": [
-     "removal"
-    ],
-    "cut_score": 0.216
-   },
-   {
     "name": "Bitter Reunion",
     "cmc": 2.0,
-    "synergy": 23.76,
+    "synergy": 24.3,
     "cmdr_fit": 1.876,
     "combo_piece": false,
     "roles": [
@@ -17451,24 +17716,24 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.336
+    "cut_score": 0.319
    },
    {
-    "name": "Lotus Cobra",
+    "name": "Worldsoul's Rage",
     "cmc": 2.0,
-    "synergy": 29.07,
-    "cmdr_fit": 7.5,
+    "synergy": 29.74,
+    "cmdr_fit": 5.0,
     "combo_piece": false,
     "roles": [
-     "mana-dork",
-     "ramp"
+     "ramp",
+     "removal"
     ],
     "cut_score": 0.362
    },
    {
     "name": "Midnight Tilling",
     "cmc": 2.0,
-    "synergy": 29.26,
+    "synergy": 29.8,
     "cmdr_fit": 2.876,
     "combo_piece": false,
     "roles": [
@@ -17479,7 +17744,7 @@
    {
     "name": "Winding Way",
     "cmc": 2.0,
-    "synergy": 29.26,
+    "synergy": 29.8,
     "cmdr_fit": 2.876,
     "combo_piece": false,
     "roles": [
@@ -17499,20 +17764,9 @@
     "cut_score": 0.388
    },
    {
-    "name": "Satyr Wayfinder",
-    "cmc": 2.0,
-    "synergy": 29.41,
-    "cmdr_fit": 2.876,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.414
-   },
-   {
     "name": "Omnath, Locus of Rage",
     "cmc": 7.0,
-    "synergy": 67.88,
+    "synergy": 69.63,
     "cmdr_fit": 4.5,
     "combo_piece": false,
     "roles": [
@@ -17521,14 +17775,13 @@
     "cut_score": 0.422
    },
    {
-    "name": "Worldsoul's Rage",
+    "name": "Satyr Wayfinder",
     "cmc": 2.0,
-    "synergy": 29.74,
-    "cmdr_fit": 5.0,
+    "synergy": 29.95,
+    "cmdr_fit": 2.876,
     "combo_piece": false,
     "roles": [
-     "ramp",
-     "removal"
+     "card-advantage"
     ],
     "cut_score": 0.431
    },
@@ -17542,7 +17795,19 @@
      "ramp",
      "tutor"
     ],
-    "cut_score": 0.474
+    "cut_score": 0.457
+   },
+   {
+    "name": "Lotus Cobra",
+    "cmc": 2.0,
+    "synergy": 32.32,
+    "cmdr_fit": 7.5,
+    "combo_piece": false,
+    "roles": [
+     "mana-dork",
+     "ramp"
+    ],
+    "cut_score": 0.483
    },
    {
     "name": "Colossal Rattlewurm",
@@ -17557,21 +17822,9 @@
     "cut_score": 0.509
    },
    {
-    "name": "Harrow",
-    "cmc": 3.0,
-    "synergy": 47.17,
-    "cmdr_fit": 8.0,
-    "combo_piece": false,
-    "roles": [
-     "ramp",
-     "tutor"
-    ],
-    "cut_score": 0.569
-   },
-   {
     "name": "Nahiri's Lithoforming",
     "cmc": 2.0,
-    "synergy": 37.04,
+    "synergy": 37.58,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -17584,13 +17837,25 @@
    {
     "name": "Titania, Protector of Argoth",
     "cmc": 5.0,
-    "synergy": 82.23,
+    "synergy": 87.73,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
      "ramp"
     ],
     "cut_score": 0.578
+   },
+   {
+    "name": "Harrow",
+    "cmc": 3.0,
+    "synergy": 47.17,
+    "cmdr_fit": 8.0,
+    "combo_piece": false,
+    "roles": [
+     "ramp",
+     "tutor"
+    ],
+    "cut_score": 0.586
    },
    {
     "name": "Springbloom Druid",
@@ -17618,7 +17883,7 @@
    {
     "name": "Six",
     "cmc": 3.0,
-    "synergy": 51.09,
+    "synergy": 52.19,
     "cmdr_fit": 3.594,
     "combo_piece": false,
     "roles": [
@@ -17639,17 +17904,6 @@
     "cut_score": 0.69
    },
    {
-    "name": "Life from the Loam",
-    "cmc": 2.0,
-    "synergy": 47.2,
-    "cmdr_fit": 4.376,
-    "combo_piece": false,
-    "roles": [
-     "card-advantage"
-    ],
-    "cut_score": 0.69
-   },
-   {
     "name": "Wreck and Rebuild",
     "cmc": 3.0,
     "synergy": 54.62,
@@ -17659,12 +17913,23 @@
      "ramp",
      "removal"
     ],
+    "cut_score": 0.707
+   },
+   {
+    "name": "Life from the Loam",
+    "cmc": 2.0,
+    "synergy": 47.74,
+    "cmdr_fit": 4.376,
+    "combo_piece": false,
+    "roles": [
+     "card-advantage"
+    ],
     "cut_score": 0.724
    },
    {
     "name": "Evendo Brushrazer",
     "cmc": 3.0,
-    "synergy": 60.44,
+    "synergy": 60.98,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
@@ -17672,18 +17937,18 @@
      "mana-dork",
      "ramp"
     ],
-    "cut_score": 0.759
+    "cut_score": 0.741
    },
    {
     "name": "Aftermath Analyst",
     "cmc": 2.0,
-    "synergy": 54.54,
+    "synergy": 61.54,
     "cmdr_fit": 8.0,
     "combo_piece": false,
     "roles": [
      "ramp"
     ],
-    "cut_score": 0.81
+    "cut_score": 0.862
    },
    {
     "name": "Sand Scout",

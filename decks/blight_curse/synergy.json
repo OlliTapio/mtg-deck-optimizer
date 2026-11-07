@@ -9822,18 +9822,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Goblin",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Goblin"
-   },
-   {
     "tag": "type:Warlock",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warlock"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
    },
    {
     "tag": "counters_present",
@@ -10135,18 +10135,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Demon",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Demon"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Demon",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Demon"
    },
    {
     "tag": "counters_present",
@@ -10279,7 +10279,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.5,
     "evidence": "when your end step, discover 5."
    },
    {
@@ -10531,6 +10531,13 @@
     "side": "P",
     "scope": "self",
     "strength": 1.0,
+    "evidence": "when ~ attacks or blocks, put a -1/-1 counter on it."
+   },
+   {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.5,
     "evidence": "when ~ attacks or blocks, put a -1/-1 counter on it."
    },
    {
@@ -10795,11 +10802,11 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
+    "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Elf"
+    "evidence": "is a Phyrexian"
    },
    {
     "tag": "type:Zombie",
@@ -10809,11 +10816,11 @@
     "evidence": "is a Zombie"
    },
    {
-    "tag": "type:Phyrexian",
+    "tag": "type:Elf",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Phyrexian"
+    "evidence": "is a Elf"
    }
   ],
   "Twilight Mire": [],
@@ -10963,18 +10970,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Goblin",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Goblin"
-   },
-   {
     "tag": "type:Scout",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Scout"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
    },
    {
     "tag": "counters_present",
@@ -11161,6 +11168,13 @@
   ],
   "Ignoble Hierarch": [
    {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.25,
+    "evidence": "keyword: Exalted"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -11168,18 +11182,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Goblin",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Goblin"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Goblin",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Goblin"
    }
   ],
   "Blight Rot": [
@@ -11207,18 +11221,18 @@
   ],
   "Kulrath Knight": [
    {
-    "tag": "kw:Flying",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flying"
-   },
-   {
     "tag": "counters_m1m1",
     "side": "P",
     "scope": "any",
     "strength": 1.25,
     "evidence": "keyword: Wither"
+   },
+   {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -11818,18 +11832,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Snake",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Snake"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Snake",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Snake"
    }
   ],
   "Savage Lands": [],
@@ -11853,6 +11867,13 @@
     "side": "P",
     "scope": "self",
     "strength": 1.0,
+    "evidence": "when ~ attacks, blight 1."
+   },
+   {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.5,
     "evidence": "when ~ attacks, blight 1."
    },
    {
@@ -11915,18 +11936,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
     "tag": "type:Warlock",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warlock"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    },
    {
     "tag": "counters_present",
@@ -11959,18 +11980,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Zombie",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Zombie"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Zombie",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Zombie"
    },
    {
     "tag": "counters_present",
@@ -12113,7 +12134,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.25,
     "evidence": "when ~ enters, exile target player's graveyard."
    },
    {
@@ -12554,11 +12575,11 @@
     "evidence": "power 5"
    },
    {
-    "tag": "type:Crocodile",
+    "tag": "type:Zombie",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Crocodile"
+    "evidence": "is a Zombie"
    },
    {
     "tag": "type:Demon",
@@ -12568,11 +12589,11 @@
     "evidence": "is a Demon"
    },
    {
-    "tag": "type:Zombie",
+    "tag": "type:Crocodile",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
-    "evidence": "is a Zombie"
+    "evidence": "is a Crocodile"
    },
    {
     "tag": "counters_present",
@@ -12703,7 +12724,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.25,
+    "strength": 0.333,
     "evidence": "when one or more -1/-1 counters are put on a creature, put a charge counter on …"
    },
    {

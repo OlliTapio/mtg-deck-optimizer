@@ -14883,6 +14883,13 @@
     "evidence": "when ~ enters or attacks, each player gets a rad counter."
    },
    {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.5,
+    "evidence": "when ~ enters or attacks, each player gets a rad counter."
+   },
+   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
@@ -14937,7 +14944,14 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.5,
+    "evidence": "when ~ enters or attacks, proliferate twice."
+   },
+   {
+    "tag": "triggers_attack",
+    "side": "P",
+    "scope": "self",
+    "strength": 0.5,
     "evidence": "when ~ enters or attacks, proliferate twice."
    },
    {
@@ -15037,8 +15051,15 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.5,
     "evidence": "when ~ enters or becomes monstrous, destroy target permanent."
+   },
+   {
+    "tag": "kw:Trample",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Trample"
    },
    {
     "tag": "kw:Menace",
@@ -15053,13 +15074,6 @@
     "scope": "self",
     "strength": 1.25,
     "evidence": "keyword: Monstrosity"
-   },
-   {
-    "tag": "kw:Trample",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Trample"
    },
    {
     "tag": "etb",
@@ -15470,15 +15484,8 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.25,
+    "strength": 0.5,
     "evidence": "when ~ enters, destroy any number of target artifacts and/or enchantments with …"
-   },
-   {
-    "tag": "kw:Vigilance",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.25,
-    "evidence": "keyword: Vigilance"
    },
    {
     "tag": "kw:Trample",
@@ -15488,6 +15495,13 @@
     "evidence": "keyword: Trample"
    },
    {
+    "tag": "kw:Vigilance",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.25,
+    "evidence": "keyword: Vigilance"
+   },
+   {
     "tag": "etb",
     "side": "P",
     "scope": "self",
@@ -15495,18 +15509,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Mutant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Mutant"
-   },
-   {
     "tag": "type:Bear",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Bear"
+   },
+   {
+    "tag": "type:Mutant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Mutant"
    },
    {
     "tag": "counters_present",
@@ -15741,7 +15755,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.333,
     "evidence": "when ~ enters, exile target player's graveyard."
    }
   ],
@@ -16209,18 +16223,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Wurm",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Wurm"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Wurm",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Wurm"
    },
    {
     "tag": "counters_present",
@@ -16425,18 +16439,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Wizard",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Wizard"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    },
    {
     "tag": "type:Mutant",
@@ -17021,7 +17035,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.625,
+    "strength": 1.0,
     "evidence": "when a land you control enters, create a 1/1 green minion creature token named …"
    },
    {
@@ -17076,6 +17090,13 @@
     "evidence": "when a creature you control with a counter on it deals combat damage to a playe…"
    },
    {
+    "tag": "kw:Flying",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Flying"
+   },
+   {
     "tag": "counters_p1p1",
     "side": "P",
     "scope": "self",
@@ -17088,13 +17109,6 @@
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Evolve"
-   },
-   {
-    "tag": "kw:Flying",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Flying"
    },
    {
     "tag": "etb",
@@ -17538,18 +17552,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Bird",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Bird"
-   },
-   {
     "tag": "type:Phyrexian",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Phyrexian"
+   },
+   {
+    "tag": "type:Bird",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Bird"
    },
    {
     "tag": "type:Horror",
@@ -17749,18 +17763,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Advisor",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Advisor"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    },
    {
     "tag": "mill",
@@ -17796,7 +17810,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.5,
     "evidence": "when a player casts their second spell each turn, proliferate."
    },
    {
@@ -17875,14 +17889,14 @@
    {
     "tag": "rad",
     "side": "P",
-    "scope": "yours",
+    "scope": "any",
     "strength": 1.5,
     "evidence": "that player gets two rad counters if they don't have any rad counters."
    },
    {
     "tag": "mill",
     "side": "P",
-    "scope": "yours",
+    "scope": "any",
     "strength": 1.5,
     "evidence": "that player gets two rad counters if they don't have any rad counters."
    },
@@ -17922,13 +17936,6 @@
     "evidence": "proliferate"
    },
    {
-    "tag": "rad",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.5,
-    "evidence": "proliferate"
-   },
-   {
     "tag": "counters_any",
     "side": "P",
     "scope": "any",
@@ -17957,13 +17964,6 @@
     "evidence": "is a Bird"
    },
    {
-    "tag": "mill",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.5,
-    "evidence": "proliferate on rad counters (rad mills)"
-   },
-   {
     "tag": "counters_present",
     "side": "C",
     "scope": "any",
@@ -17973,7 +17973,7 @@
    {
     "tag": "counters_present",
     "side": "P",
-    "scope": "yours",
+    "scope": "any",
     "strength": 1.5,
     "evidence": "that player gets two rad counters if they don't have any rad counters."
    }
@@ -17990,7 +17990,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 0.25,
+    "strength": 0.5,
     "evidence": "when ~ is put into a graveyard from anywhere, shuffle it into its owner's libra…"
    },
    {
@@ -18015,18 +18015,18 @@
     "evidence": "power 6"
    },
    {
-    "tag": "type:Elemental",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elemental"
-   },
-   {
     "tag": "type:Incarnation",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Incarnation"
+   },
+   {
+    "tag": "type:Elemental",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elemental"
    },
    {
     "tag": "graveyard",
@@ -18138,7 +18138,7 @@
     "tag": "triggers",
     "side": "P",
     "scope": "self",
-    "strength": 1.0,
+    "strength": 0.25,
     "evidence": "when ~ enters, exile target player's graveyard."
    },
    {
