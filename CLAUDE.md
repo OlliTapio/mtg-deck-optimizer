@@ -152,7 +152,7 @@ Reads keywords, types and triggers, tags each card with what it **produces** and
 - Main theme x1.5, subtheme x1.25, pairs with the commander x2.
 - Counter axes are separate: +1/+1, -1/-1, rad. Rad counters also count as mill. Proliferate feeds all of them.
 - Regex reading of rules text misses unusual wording. Check surprising scores with `--card` / `--features` and the oracle text before trusting them.
-- Known combos from Commander Spellbook add a pair bonus between every two pieces. Combo pieces are never cut candidates.
+- Known combos from Commander Spellbook add a pair bonus between every two pieces (2.0). Combos that win the game (damage, life loss, opponent mill, extra turns, "win the game") get an extra bonus that drops fast with the deck's target bracket: +6.0 in bracket 4, +2.1 in 3, +0.74 in 2, +0.26 in 1. Combo pieces are never cut candidates.
 - Never claim two cards synergise without running `synergy.py --card`, or reading both cards' oracle text.
 
 ## Combos (`combos.py`)

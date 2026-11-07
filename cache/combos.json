@@ -1988,6 +1988,1673 @@
    }
   ]
  },
+ "3c6ad12881b070d1": {
+  "almost": [
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Incubation Druid",
+     "Freed from the Real"
+    ],
+    "id": "3990-4222",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Freed from the Real"
+    ],
+    "notes": "",
+    "popularity": 14012,
+    "prerequisites": "Freed from the Real attached to Incubation Druid. Incubation Druid does not have summoning sickness. Incubation Druid has at least one +1/+1 counter on it. You control a land that can produce {U}.",
+    "produces": [
+     "Infinite mana lands you control can produce"
+    ],
+    "requires": [],
+    "steps": "Activate Incubation Druid's first ability by tapping it, adding {U}{U}{U}.\nActivate Freed from the Real's second ability by paying {U}, untapping Incubation Druid.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/3990-4222/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Fathom Mage",
+     "Wizard Class"
+    ],
+    "id": "589-1017",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Wizard Class"
+    ],
+    "notes": "",
+    "popularity": 10157,
+    "prerequisites": "You have a way to draw a card.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Draw a card.\nWizard Class triggers, putting a +1/+1 counter on Fathom Mage.\nFathom Mage triggers, causing you to draw a card.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/589-1017/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Kami of Whispered Hopes",
+     "Freed from the Real"
+    ],
+    "id": "81-4222",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Freed from the Real"
+    ],
+    "notes": "",
+    "popularity": 10002,
+    "prerequisites": "Freed from the Real attached to Kami of Whispered Hopes. Kami of Whispered Hopes does not have summoning sickness and has a power of at least two.",
+    "produces": [
+     "Infinite colored mana"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding at least {U}{U}.\nActivate Freed from the Real's second ability by paying {U}, untapping Kami of Whispered Hopes.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-4222/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Incubation Druid",
+     "Pemmin's Aura"
+    ],
+    "id": "3525-3990",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Pemmin's Aura"
+    ],
+    "notes": "",
+    "popularity": 9303,
+    "prerequisites": "Pemmin's Aura attached to Incubation Druid. Incubation Druid does not have summoning sickness. Incubation Druid has at least one +1/+1 counter on it. You control a land that can produce {U}.",
+    "produces": [
+     "Infinite mana lands you control can produce"
+    ],
+    "requires": [],
+    "steps": "Activate Incubation Druid's first ability by tapping it, adding {U}{U}{U}.\nActivate Pemmin's Aura's first ability by paying {U}, untapping Incubation Druid.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/3525-3990/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Mikaeus, the Unhallowed",
+     "Triskelion"
+    ],
+    "id": "628-1495",
+    "identity": "B",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Mikaeus, the Unhallowed"
+    ],
+    "notes": "",
+    "popularity": 8534,
+    "prerequisites": "Triskelion has at least two +1/+1 counters on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB"
+    ],
+    "requires": [],
+    "steps": "If Triskelion has at least three +1/+1 counters on it, activate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat step 1 until there are two +1/+1 counters remaining on Triskelion.\nActivate Triskelion by removing a +1/+1 counter from Triskelion, dealing 1 damage to itself.\nRepeat step 3 an additional time.\nTriskelion dies.\nTriskelion's undying ability triggers, returning it to the battlefield with an additional +1/+1 counter on it.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/628-1495/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Hardened Scales",
+     "Walking Ballista"
+    ],
+    "id": "2265-3693-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Walking Ballista"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 7710,
+    "prerequisites": "Walking Ballista has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Walking Ballista by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Walking Ballista by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/2265-3693-4120/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Staff of Domination",
+     "Kami of Whispered Hopes"
+    ],
+    "id": "81-2645",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Staff of Domination"
+    ],
+    "notes": "Once you have infinite mana, you may use it to activate Staff of Domination's other abilities.",
+    "popularity": 7445,
+    "prerequisites": "Kami of Whispered Hopes does not have summoning sickness, and has power 5 or greater.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite colored mana",
+     "Infinite draw triggers",
+     "Infinite lifegain",
+     "Infinite lifegain triggers",
+     "Infinite mana creatures you control can produce",
+     "Infinite untap of creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding at least five mana of any color.\nActivate Staff of Domination's third ability by paying {3} and tapping it, untapping Kami of Whispered Hopes.\nActivate Staff of Domination's first ability by paying {1}, untapping it.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-2645/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Umbral Mantle",
+     "Incubation Druid"
+    ],
+    "id": "2816-3990",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Umbral Mantle"
+    ],
+    "notes": "",
+    "popularity": 6789,
+    "prerequisites": "You control a mana-producing land. Incubation Druid does not have summoning sickness. Umbral Mantle attached to Incubation Druid.",
+    "produces": [
+     "Infinitely large creature until end of turn"
+    ],
+    "requires": [],
+    "steps": "Activate Incubation Druid by tapping it, adding {3}.\nActivate Incubation Druid by paying {3} and untapping it, giving it +2/+2 until end of turn.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/2816-3990/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Kami of Whispered Hopes",
+     "Walking Ballista"
+    ],
+    "id": "81-3693-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Walking Ballista"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 6258,
+    "prerequisites": "Walking Ballista has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite colored mana",
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Walking Ballista by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Walking Ballista by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-3693-4120/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Kami of Whispered Hopes",
+     "Pemmin's Aura"
+    ],
+    "id": "81-3525",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Pemmin's Aura"
+    ],
+    "notes": "",
+    "popularity": 6243,
+    "prerequisites": "Pemmin's Aura attached to Kami of Whispered Hopes. Kami of Whispered Hopes does not have summoning sickness and has a power of at least two.",
+    "produces": [
+     "Infinite colored mana"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding at least {U}{U}.\nActivate Pemmin's Aura's first ability by paying {U}, untapping Kami of Whispered Hopes.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-3525/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Branching Evolution",
+     "Walking Ballista"
+    ],
+    "id": "2445-3693-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Walking Ballista"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 5966,
+    "prerequisites": "Walking Ballista has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Walking Ballista by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Walking Ballista by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/2445-3693-4120/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Pensive Professor",
+     "Wizard Class"
+    ],
+    "id": "1017-7414",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Wizard Class"
+    ],
+    "notes": "",
+    "popularity": 5868,
+    "prerequisites": "You have a way to draw a card.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Draw a card.\nWizard Class triggers, putting a +1/+1 counter on Pensive Professor.\nPensive Professor triggers, causing you to draw a card.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/1017-7414/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Umbral Mantle",
+     "Kami of Whispered Hopes"
+    ],
+    "id": "81-2816",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "{2} at most",
+    "missing": [
+     "Umbral Mantle"
+    ],
+    "notes": "",
+    "popularity": 5561,
+    "prerequisites": "Umbral Mantle attached to Kami of Whispered Hopes. Kami of Whispered Hopes does not have summoning sickness.",
+    "produces": [
+     "Infinite colored mana",
+     "Infinitely large creature until end of turn",
+     "Infinite untap of creatures you control",
+     "Infinite mana creatures you control can produce"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding an amount of mana of any color equal to its power.\nActivate Kami of Whispered Hopes by paying {3} and untapping it, giving it +2/+2 until end of turn.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-2816/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Pensive Professor",
+     "Lyla, Holographic Assistant"
+    ],
+    "id": "6822-7414",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Lyla, Holographic Assistant"
+    ],
+    "notes": "",
+    "popularity": 4093,
+    "prerequisites": "You have a way to draw a card.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Draw a card.\nLyla triggers, putting a +1/+1 counter on Pensive Professor.\nPensive Professor triggers, causing you to draw a card.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/6822-7414/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Vigean Graftmage",
+     "Incubation Druid"
+    ],
+    "id": "3990-4019",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Vigean Graftmage"
+    ],
+    "notes": "",
+    "popularity": 3438,
+    "prerequisites": "Incubation Druid does not have summoning sickness. Incubation Druid has at least one +1/+1 counter on it. You control a land that can produce {U}.",
+    "produces": [
+     "Infinite mana lands you control can produce"
+    ],
+    "requires": [],
+    "steps": "Activate Incubation Druid's first ability by tapping it, adding {U}{U}{U}.\nActivate Vigean Graftmage by paying {1}{U}, untapping Incubation Druid.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/3990-4019/"
+   },
+   {
+    "bracket_tag": "O",
+    "cards": [
+     "Peer into the Abyss",
+     "Psychic Corrosion"
+    ],
+    "id": "1561-4032",
+    "identity": "UB",
+    "infinite": true,
+    "mana_needed": "{4}{B}{B}{B}",
+    "missing": [
+     "Peer into the Abyss"
+    ],
+    "notes": "",
+    "popularity": 3238,
+    "prerequisites": "Number of cards in library greater than or equal to the number of cards in each opponent's library.",
+    "produces": [
+     "Infinite mill"
+    ],
+    "requires": [],
+    "steps": "Cast Peer into the Abyss, targeting yourself.\nPsychich Corrosion triggers for each card you've drawn, milling each opponent's libary completely.\nPass the turn to your opponent; They will lose when they attempt to draw a card on their turns.\n",
+    "url": "https://commanderspellbook.com/combo/1561-4032/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Enter the Infinite",
+     "Psychic Corrosion"
+    ],
+    "id": "953-4032",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "{8}{U}{U}{U}{U}",
+    "missing": [
+     "Enter the Infinite"
+    ],
+    "notes": "",
+    "popularity": 3144,
+    "prerequisites": "Number of cards in library is at least half of the highest number of cards among opponents' libraries.",
+    "produces": [
+     "Infinite mill"
+    ],
+    "requires": [],
+    "steps": "Cast Enter the Infinite.\nPsychic Corrosion triggers for each card you've drawn, milling each opponent's library completely.\nPass the turn to your opponent; They will lose when they attempt to draw a card on their turn.",
+    "url": "https://commanderspellbook.com/combo/953-4032/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Fathom Mage",
+     "Lyla, Holographic Assistant"
+    ],
+    "id": "589-6822",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Lyla, Holographic Assistant"
+    ],
+    "notes": "",
+    "popularity": 2878,
+    "prerequisites": "You have a way to draw a card.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Draw a card.\nLyla triggers, putting a +1/+1 counter on Fathom Mage.\nFathom Mage triggers, causing you to draw a card.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/589-6822/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Kami of Whispered Hopes",
+     "Vigean Graftmage"
+    ],
+    "id": "81-4019",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Vigean Graftmage"
+    ],
+    "notes": "Once you have infinite blue mana, you may add any color of mana using Kami of Whispered Hopes.",
+    "popularity": 2792,
+    "prerequisites": "Kami of Whispered Hopes has at least one +1/+1 counter on it, has power 3 or greater, and does not have summoning sickness.",
+    "produces": [
+     "Infinite colored mana",
+     "Infinite untap of creatures you control that have a +1/+1 counter on them"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding at least {U}{U}{U}.\nActivate Vigean Graftmage by paying {1}{U}, untapping Kami of Whispered Hopes.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-4019/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Pensive Professor",
+     "Iron Man, Armored Avenger"
+    ],
+    "id": "7414-7811",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Iron Man, Armored Avenger"
+    ],
+    "notes": "",
+    "popularity": 1937,
+    "prerequisites": "You have a way to draw a card.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Draw a card.\nIron Man triggers, putting a +1/+1 counter on Pensive Professor.\nPensive Professor triggers, causing you to draw a card.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/7414-7811/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Corpsejack Menace",
+     "Walking Ballista"
+    ],
+    "id": "855-3693-4120",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Walking Ballista"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 1526,
+    "prerequisites": "Walking Ballista has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Walking Ballista by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Walking Ballista by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/855-3693-4120/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Vigor",
+     "Pariah's Shield"
+    ],
+    "id": "1640-4120",
+    "identity": "G",
+    "infinite": false,
+    "mana_needed": "",
+    "missing": [
+     "Pariah's Shield"
+    ],
+    "notes": "",
+    "popularity": 1418,
+    "prerequisites": "",
+    "produces": [
+     "Prevent all damage that would be dealt to you",
+     "Lock"
+    ],
+    "requires": [],
+    "steps": "Whenever damage would be dealt to you, Pariah's Shield causes that damage to be redirected to the creature it's attached to.\nVigor will then prevent the damage and put that many +1/+1 counters on that creature instead.",
+    "url": "https://commanderspellbook.com/combo/1640-4120/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Sword of the Paruns",
+     "Kami of Whispered Hopes"
+    ],
+    "id": "81-5200",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Sword of the Paruns"
+    ],
+    "notes": "Once you have infinite mana, you may equip Sword of the Paruns to any creature you control and untap them infinite times.\r\nOnce you have infinite mana, you may attach Sword of the Paruns to any other creature(s) to untap them.",
+    "popularity": 1405,
+    "prerequisites": "Kami of Whispered Hopes does not have summoning sickness, and has power 4 or greater. Sword of the Paruns attached to Kami of Whispered Hopes",
+    "produces": [
+     "Infinite colored mana",
+     "Infinite mana creatures you control can produce",
+     "Infinite untap of creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding at least four mana of any color.\nActivate Sword of the Paruns by paying {3}, untapping Kami of Whispered Hopes\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-5200/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Walking Ballista",
+     "Winding Constrictor"
+    ],
+    "id": "3693-3921-4120",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Walking Ballista"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 987,
+    "prerequisites": "Walking Ballista has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Walking Ballista by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Walking Ballista by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/3693-3921-4120/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Fathom Mage",
+     "Iron Man, Armored Avenger"
+    ],
+    "id": "589-7811",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Iron Man, Armored Avenger"
+    ],
+    "notes": "",
+    "popularity": 812,
+    "prerequisites": "You have a way to draw a card.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Draw a card.\nIron Man triggers, putting a +1/+1 counter on Fathom Mage.\nFathom Mage triggers, causing you to draw a card.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/589-7811/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Ozolith, the Shattered Spire"
+    ],
+    "id": "1495-4120-4565",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Ozolith, the Shattered Spire"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 654,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-4565/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Doubling Season"
+    ],
+    "id": "1495-4120-4772",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Doubling Season"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 640,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-4772/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Innkeeper's Talent"
+    ],
+    "id": "1495-4120-5902",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Innkeeper's Talent"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 455,
+    "prerequisites": "Triskelion has a +1/+1 counter on it. Innkeeper's Talent is level 3.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-5902/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Vorinclex, Monstrous Raider"
+    ],
+    "id": "1495-1887-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Vorinclex, Monstrous Raider"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 409,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-1887-4120/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Rite of Passage",
+     "Triskelion",
+     "Hardened Scales"
+    ],
+    "id": "292-1495-2265",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Rite of Passage"
+    ],
+    "notes": "You can remove counters to deal damage to creatures you control, putting infinite +1/+1 counters on them due to Rite of Passage.",
+    "popularity": 406,
+    "prerequisites": "",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to itself.\nRite of Passage triggers, putting two +1/+1 counters on Triskelion.\nRepeat an arbitrarily large number of times.\nMove to the next turn, removing all damage marked on Triskelion.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat step 5 as desired.",
+    "url": "https://commanderspellbook.com/combo/292-1495-2265/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "The Earth Crystal"
+    ],
+    "id": "1495-4120-6627",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "The Earth Crystal"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 392,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-6627/"
+   },
+   {
+    "bracket_tag": "O",
+    "cards": [
+     "Urban Daggertooth",
+     "Triskelion"
+    ],
+    "id": "1495-5017",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Urban Daggertooth"
+    ],
+    "notes": "",
+    "popularity": 384,
+    "prerequisites": "Urban Daggertooth has at least one +1/+1 counter. Triskelion has at least two +1/+1 counters.",
+    "produces": [
+     "Infinite +1/+1 counters on a creature",
+     "Infinite proliferate"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to Urban Daggertooth.\nUrban Daggertooth triggers, putting a +1/+1 counter on itself and Triskelion.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-5017/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Pensive Professor",
+     "Stark's Ingenuity"
+    ],
+    "id": "7414-7737",
+    "identity": "U",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Stark's Ingenuity"
+    ],
+    "notes": "",
+    "popularity": 335,
+    "prerequisites": "You have a way to draw a card.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Draw a card.\nStark's Ingenuity triggers, putting a +1/+1 counter on Pensive Professor.\nPensive Professor triggers, causing you to draw a card.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/7414-7737/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Rite of Passage",
+     "Kami of Whispered Hopes",
+     "Triskelion"
+    ],
+    "id": "81-292-1495",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Rite of Passage"
+    ],
+    "notes": "You can remove counters to deal damage to creatures you control, putting infinite +1/+1 counters on them due to Rite of Passage.",
+    "popularity": 314,
+    "prerequisites": "",
+    "produces": [
+     "Infinite colored mana",
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to itself.\nRite of Passage triggers, putting two +1/+1 counters on Triskelion.\nRepeat an arbitrarily large number of times.\nMove to the next turn, removing all damage marked on Triskelion.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat step 5 as desired.",
+    "url": "https://commanderspellbook.com/combo/81-292-1495/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Kami of Whispered Hopes",
+     "Crab Umbra"
+    ],
+    "id": "81-1268",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Crab Umbra"
+    ],
+    "notes": "",
+    "popularity": 314,
+    "prerequisites": "Crab Umbra attached to Kami of Whispered Hopes. Kami of Whispered Hopes does not have summoning sickness and has a power of at least four.",
+    "produces": [
+     "Infinite colored mana"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding at least {U}{U}{U}{U}.\nActivate Crab Umbra by paying {2}{U}, untapping Kami of Whispered Hopes.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-1268/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Strength of Will",
+     "Triskelion",
+     "Hardened Scales"
+    ],
+    "id": "1495-2265-6919",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "{1}{G}",
+    "missing": [
+     "Strength of Will"
+    ],
+    "notes": "You can skip step 4 if desired.",
+    "popularity": 300,
+    "prerequisites": "",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Cast Strength of Will by paying {1}{G}, targeting Triskelion.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to it.\nTriskelion triggers, putting two +1/+1 counters on it due to Hardened Scales.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/1495-2265-6919/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Rite of Passage",
+     "Triskelion",
+     "Branching Evolution"
+    ],
+    "id": "292-1495-2445",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Rite of Passage"
+    ],
+    "notes": "You can remove counters to deal damage to creatures you control, putting infinite +1/+1 counters on them due to Rite of Passage.",
+    "popularity": 299,
+    "prerequisites": "",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to itself.\nRite of Passage triggers, putting two +1/+1 counters on Triskelion.\nRepeat an arbitrarily large number of times.\nMove to the next turn, removing all damage marked on Triskelion.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat step 5 as desired.",
+    "url": "https://commanderspellbook.com/combo/292-1495-2445/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Michelangelo, Weirdness to 11"
+    ],
+    "id": "1495-4120-7267",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Michelangelo, Weirdness to 11"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 252,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite +1/+1 counters on creatures you control",
+     "Infinite damage"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-7267/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "High Score"
+    ],
+    "id": "1495-4120-7315",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "High Score"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 250,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite +1/+1 counters on creatures you control",
+     "Infinite damage"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-7315/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Benevolent Hydra"
+    ],
+    "id": "1495-4029-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Benevolent Hydra"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 237,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4029-4120/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Strength of Will",
+     "Kami of Whispered Hopes",
+     "Triskelion"
+    ],
+    "id": "81-1495-6919",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "{1}{G}",
+    "missing": [
+     "Strength of Will"
+    ],
+    "notes": "You can skip step 4 if desired.",
+    "popularity": 225,
+    "prerequisites": "",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Cast Strength of Will by paying {1}{G}, targeting Triskelion.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to it.\nTriskelion triggers, putting two +1/+1 counters on it due to Kami of Whispered Hopes.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/81-1495-6919/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Mephidross Vampire",
+     "Triskelion"
+    ],
+    "id": "1495-3005",
+    "identity": "B",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Mephidross Vampire"
+    ],
+    "notes": "",
+    "popularity": 208,
+    "prerequisites": "Triskelion has at least one +1/+1 counter on it.",
+    "produces": [
+     "Destroy each creature that enters the battlefield under an opponent's control",
+     "Destroy any number of creatures opponents control",
+     "Infinite damage to creatures",
+     "Lock"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any creature an opponent controls.\nTriskelion triggers, putting a +1/+1 counter on itself.\nRepeat as desired.\nYou may also repeat this loop whenever a creature enters the battlefield under an opponent's control.",
+    "url": "https://commanderspellbook.com/combo/1495-3005/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Loading Zone"
+    ],
+    "id": "1495-4120-6774",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Loading Zone"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 205,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-6774/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Primal Vigor"
+    ],
+    "id": "1495-3129-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Primal Vigor"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 166,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-3129-4120/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Triskelion",
+     "Scythe of the Wretched"
+    ],
+    "id": "1331-1495",
+    "identity": "C",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Scythe of the Wretched"
+    ],
+    "notes": "",
+    "popularity": 125,
+    "prerequisites": "Scythe of the Wretched attached to Triskelion. Triskelion has at least three +1/+1 counters on it.",
+    "produces": [
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion's ability by removing a +1/+1 counter from it to deal 1 damage to itself.\nRepeat step 1 an additional 2 times, killing Triskelion.\nScythe of the Wretched triggers, returning Triskelion to the battlefield with Scythe of the Wretched attached to it.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1331-1495/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Pir, Imaginative Rascal"
+    ],
+    "id": "1495-3062-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Pir, Imaginative Rascal"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 120,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-3062-4120/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Kami of Whispered Hopes",
+     "Ringing Strike Mastery"
+    ],
+    "id": "81-7500",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Ringing Strike Mastery"
+    ],
+    "notes": "",
+    "popularity": 119,
+    "prerequisites": "",
+    "produces": [
+     "Infinite colored mana",
+     "Infinite mana creatures you control can produce",
+     "Infinite untap of creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding at least six mana of any color\nActivate Ringing Strike Mastery by paying {5}, untapping Kami of Whispered Hopes.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-7500/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Fathom Mage",
+     "Stark's Ingenuity"
+    ],
+    "id": "589-7737",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Stark's Ingenuity"
+    ],
+    "notes": "",
+    "popularity": 97,
+    "prerequisites": "You have a way to draw a card.",
+    "produces": [
+     "Infinite card draw",
+     "Infinite draw triggers",
+     "Near-infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Draw a card.\nStark's Ingenuity triggers, putting a +1/+1 counter on Fathom Mage.\nFathom Mage triggers, causing you to draw a card.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/589-7737/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Rite of Passage",
+     "Corpsejack Menace",
+     "Triskelion"
+    ],
+    "id": "292-855-1495",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Rite of Passage"
+    ],
+    "notes": "You can remove counters to deal damage to creatures you control, putting infinite +1/+1 counters on them due to Rite of Passage.",
+    "popularity": 89,
+    "prerequisites": "",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to itself.\nRite of Passage triggers, putting two +1/+1 counters on Triskelion.\nRepeat an arbitrarily large number of times.\nMove to the next turn, removing all damage marked on Triskelion.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat step 5 as desired.",
+    "url": "https://commanderspellbook.com/combo/292-855-1495/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Rite of Passage",
+     "Triskelion",
+     "Winding Constrictor"
+    ],
+    "id": "292-1495-3921",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Rite of Passage"
+    ],
+    "notes": "You can remove counters to deal damage to creatures you control, putting infinite +1/+1 counters on them due to Rite of Passage.",
+    "popularity": 79,
+    "prerequisites": "",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to itself.\nRite of Passage triggers, putting two +1/+1 counters on Triskelion.\nRepeat an arbitrarily large number of times.\nMove to the next turn, removing all damage marked on Triskelion.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat step 5 as desired.",
+    "url": "https://commanderspellbook.com/combo/292-1495-3921/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Triskelion",
+     "Heroic Feast"
+    ],
+    "id": "1495-7743",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Heroic Feast"
+    ],
+    "notes": "",
+    "popularity": 69,
+    "prerequisites": "You have a way to give Triskelion lifelink.",
+    "produces": [
+     "Infinite damage",
+     "Infinite lifegain",
+     "Infinite lifegain triggers"
+    ],
+    "requires": [],
+    "steps": "Give Triskelion lifelink.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target and causing you to gain 1 life.\nHeroic Feast triggers, putting a +1/+1 counter on Triskelion.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-7743/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Vraska, Swarm's Eminence",
+     "Triskelion"
+    ],
+    "id": "1495-2190",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Vraska, Swarm's Eminence"
+    ],
+    "notes": "",
+    "popularity": 62,
+    "prerequisites": "Triskelion has at least two +1/+1 counters. You have a way to give Triskelion deathtouch.",
+    "produces": [
+     "Infinite damage"
+    ],
+    "requires": [],
+    "steps": "Give Triskelion deathtouch.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to an opponent.\nVraska triggers, putting a +1/+1 counter on Triskelion.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/1495-2190/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Kami of Whispered Hopes",
+     "Singing Bell Strike"
+    ],
+    "id": "81-5090",
+    "identity": "GU",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Singing Bell Strike"
+    ],
+    "notes": "",
+    "popularity": 40,
+    "prerequisites": "",
+    "produces": [
+     "Infinite colored mana"
+    ],
+    "requires": [],
+    "steps": "Activate Kami of Whispered Hopes by tapping it, adding at least seven mana of any color\nActivate Singing Bell Strike by paying {6}, untapping Kami of Whispered Hopes.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-5090/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Solid Ground"
+    ],
+    "id": "1495-4120-7061",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Solid Ground"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 31,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-7061/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Strength of Will",
+     "Triskelion",
+     "Winding Constrictor"
+    ],
+    "id": "1495-3921-6919",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "{1}{G}",
+    "missing": [
+     "Strength of Will"
+    ],
+    "notes": "You can skip step 4 if desired.",
+    "popularity": 30,
+    "prerequisites": "",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on a creature"
+    ],
+    "requires": [],
+    "steps": "Cast Strength of Will by paying {1}{G}, targeting Triskelion.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to it.\nTriskelion triggers, putting two +1/+1 counters on it due to Winding Constrictor.\nActivate Triskelion by removing a +1/+1 counter from it, dealing 1 damage to any target.\nRepeat from step 2.",
+    "url": "https://commanderspellbook.com/combo/1495-3921-6919/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Doc Samson, Super Psychiatrist"
+    ],
+    "id": "1495-4120-7704",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Doc Samson, Super Psychiatrist"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 27,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite +1/+1 counters on creatures you control",
+     "Infinite damage"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-7704/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Shang-Chi, Martial Mentor"
+    ],
+    "id": "1495-4120-7741",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Shang-Chi, Martial Mentor"
+    ],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 13,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite +1/+1 counters on creatures you control",
+     "Infinite damage"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-7741/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Dawnsire, Sunstar Dreadnought",
+     "Vigor",
+     "Triskelion"
+    ],
+    "id": "1495-4120-6758",
+    "identity": "G",
+    "infinite": false,
+    "mana_needed": "",
+    "missing": [
+     "Dawnsire, Sunstar Dreadnought"
+    ],
+    "notes": "You can forego step 2 if you just want the counters. Alternatively, you can target creatures you control in step 2 to put +1/+1 counters on them.",
+    "popularity": 11,
+    "prerequisites": "You control a creature that can attack this turn. Dawnsire has ten or more charge counters on it.",
+    "produces": [
+     "Near-infinite +1/+1 counters on creatures you control",
+     "Near-infinite damage"
+    ],
+    "requires": [],
+    "steps": "Declare any creature as an attacker. Dawnsire triggers, attempting to deal 100 damage to Triskelion, but instead putting 100 +1/+1 counters on it due to Vigor.\nActivate Triskelion 100 times by removing 100 +1/+1 counters from it, dealing 100 damage divided among any number of targets.",
+    "url": "https://commanderspellbook.com/combo/1495-4120-6758/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Triskelion",
+     "Scythe of the Wretched",
+     "Hardened Scales"
+    ],
+    "id": "1331-1495-2265",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Scythe of the Wretched"
+    ],
+    "notes": "",
+    "popularity": 10,
+    "prerequisites": "Scythe of the Wretched attached to Triskelion. Triskelion has at least three +1/+1 counters on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB"
+    ],
+    "requires": [],
+    "steps": "If Triskelion has more than 3 +1/+1 counters on it, activate Trislekion by removing all additional counters to deal damage to your choice of targets.\nActivate Triskelion's ability by removing a +1/+1 counter from it to deal 1 damage to itself.\nRepeat step 1 an additional 2 times, killing Triskelion.\nScythe of the Wretched triggers, returning Triskelion to the battlefield with Scythe of the Wretched attached to it.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1331-1495-2265/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Triskelion",
+     "Scythe of the Wretched",
+     "Branching Evolution"
+    ],
+    "id": "1331-1495-2445",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Scythe of the Wretched"
+    ],
+    "notes": "",
+    "popularity": 8,
+    "prerequisites": "Scythe of the Wretched attached to Triskelion. Triskelion has at least three +1/+1 counters on it.",
+    "produces": [
+     "Infinite creature ETB",
+     "Infinite damage",
+     "Infinite death triggers",
+     "Infinite creature LTB"
+    ],
+    "requires": [],
+    "steps": "If Triskelion has more than 3 +1/+1 counters on it, activate Trislekion by removing all additional counters to deal damage to your choice of targets.\nActivate Triskelion's ability by removing a +1/+1 counter from it to deal 1 damage to itself.\nRepeat step 1 an additional 2 times, killing Triskelion.\nScythe of the Wretched triggers, returning Triskelion to the battlefield with Scythe of the Wretched attached to it.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1331-1495-2445/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Triskelion",
+     "Scythe of the Wretched",
+     "Corpsejack Menace"
+    ],
+    "id": "855-1331-1495",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Scythe of the Wretched"
+    ],
+    "notes": "",
+    "popularity": 2,
+    "prerequisites": "Scythe of the Wretched attached to Triskelion. Triskelion has at least three +1/+1 counters on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB"
+    ],
+    "requires": [],
+    "steps": "If Triskelion has more than 3 +1/+1 counters on it, activate Trislekion by removing all additional counters to deal damage to your choice of targets.\nActivate Triskelion's ability by removing a +1/+1 counter from it to deal 1 damage to itself.\nRepeat step 1 an additional 2 times, killing Triskelion.\nScythe of the Wretched triggers, returning Triskelion to the battlefield with Scythe of the Wretched attached to it.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/855-1331-1495/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Triskelion",
+     "Scythe of the Wretched",
+     "Winding Constrictor"
+    ],
+    "id": "1331-1495-3921",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Scythe of the Wretched"
+    ],
+    "notes": "",
+    "popularity": 2,
+    "prerequisites": "Scythe of the Wretched attached to Triskelion. Triskelion has at least three +1/+1 counters on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite death triggers",
+     "Infinite creature ETB",
+     "Infinite creature LTB"
+    ],
+    "requires": [],
+    "steps": "If Triskelion has more than 3 +1/+1 counters on it, activate Trislekion by removing all additional counters to deal damage to your choice of targets.\nActivate Triskelion's ability by removing a +1/+1 counter from it to deal 1 damage to itself.\nRepeat step 1 an additional 2 times, killing Triskelion.\nScythe of the Wretched triggers, returning Triskelion to the battlefield with Scythe of the Wretched attached to it.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1331-1495-3921/"
+   }
+  ],
+  "commanders": [
+   "The Wise Mothman"
+  ],
+  "included": [
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Hardened Scales"
+    ],
+    "id": "1495-2265-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 1143,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-2265-4120/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Kami of Whispered Hopes",
+     "Triskelion"
+    ],
+    "id": "81-1495-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 888,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite colored mana",
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/81-1495-4120/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Branching Evolution"
+    ],
+    "id": "1495-2445-4120",
+    "identity": "G",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 840,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-2445-4120/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Corpsejack Menace",
+     "Triskelion"
+    ],
+    "id": "855-1495-4120",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 294,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/855-1495-4120/"
+   },
+   {
+    "bracket_tag": "E",
+    "cards": [
+     "Vigor",
+     "Triskelion",
+     "Winding Constrictor"
+    ],
+    "id": "1495-3921-4120",
+    "identity": "BG",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [],
+    "notes": "You may also target your other creatures in step 2 to put +1/+1 counters on them due to Vigor.",
+    "popularity": 178,
+    "prerequisites": "Triskelion has a +1/+1 counter on it.",
+    "produces": [
+     "Infinite damage",
+     "Infinite +1/+1 counters on creatures you control"
+    ],
+    "requires": [],
+    "steps": "Activate Triskelion by removing a +1/+1 counter on it, targeting itself, but putting two +1/+1 counters on it due to Vigor.\nActivate Triskelion by removing a +1/+1 counter on it, dealing 1 damage to any target.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/1495-3921-4120/"
+   }
+  ]
+ },
  "4c6ba9aed270d7b0": {
   "almost": [
    {

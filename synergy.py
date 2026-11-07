@@ -42,6 +42,15 @@ WEAK = 0.3                    # type-derived producers ("every creature enters")
 PAIR_CAP = 4.0                # max score for one pair of cards
 CUT_CMC_WEIGHT = 0.5          # how much mana value pushes a card up the cut list
 COMBO_WEIGHT = 2.0            # per pair of pieces in a known combo (Commander Spellbook)
+# Combos that win the game get an extra bonus that shrinks fast as the deck's target
+# bracket drops: bonus = WINCON_BONUS * WINCON_DECAY ** (4 - bracket).
+# Bracket 4: +6.0, 3: +2.1, 2: +0.74, 1: +0.26 (on top of COMBO_WEIGHT).
+WINCON_BONUS = 6.0
+WINCON_DECAY = 0.35
+DEFAULT_BRACKET = 3           # when the deck's CLAUDE.md names no bracket
+WINCON_PATTERN = re.compile(
+    r"win the game|loses? the game|\binfinite (?:combat )?damage(?! to creatures)|near-infinite damage(?! to creatures)"
+    r"|lifeloss|life loss|infinite combat phases|infinite turns|infinite mill(?! of your)|opponents? mills?", re.I)
 
 TAG_WEIGHTS = {
     'counters_p1p1': 1.0, 'counters_m1m1': 1.0, 'rad': 1.0, 'counters_any': 0.75, 'proliferate': 1.0,
@@ -64,7 +73,7 @@ TAG_LABELS = {
     'cast_noncreature': 'noncreature spells', 'cast_exile': 'casting from exile',
     'etb': 'creatures entering', 'big_power': 'power 4+',
     'trigger_dies': 'death-trigger doubling', 'trigger_etb': 'ETB-trigger doubling',
-    'combo': 'known combo',
+    'combo': 'known combo', 'combo_win': 'known combo (wins the game)',
 }
 
 
@@ -477,7 +486,20 @@ def _compatible(p, c):
     return True
 
 
-def _combo_matches(views, combos):
+def is_wincon(combo):
+    """Does the combo win the game by itself (damage, life loss, mill, extra turns...)?"""
+    return any(WINCON_PATTERN.search(p) and 'self-mill' not in p.lower() for p in combo.get('produces', []))
+
+
+def combo_weight(combo, bracket=None):
+    """Pair weight for a known combo: wincons get a bonus that decays fast with lower brackets."""
+    if not is_wincon(combo):
+        return COMBO_WEIGHT
+    b = min(4, max(1, bracket if bracket is not None else DEFAULT_BRACKET))
+    return round(COMBO_WEIGHT + WINCON_BONUS * WINCON_DECAY ** (4 - b), 3)
+
+
+def _combo_matches(views, combos, bracket=None):
     """Pair reasons for every two pieces of each known combo the deck contains."""
     by_lower = {}
     for v in views:
@@ -489,20 +511,23 @@ def _combo_matches(views, combos):
         if None in pieces:
             continue
         what = ', '.join(combo.get('produces', [])[:2])
+        weight = combo_weight(combo, bracket)
+        tag = 'combo_win' if is_wincon(combo) else 'combo'
         for i, a in enumerate(pieces):
             for b in pieces[i + 1:]:
-                key = (a, b, 'combo')
-                if key in out:
+                key = (a, b) if a < b else (b, a)
+                if key in out and out[key]['weight'] >= weight:
                     continue
-                out[key] = {'tag': 'combo', 'producer': a, 'payoff': b, 'weight': COMBO_WEIGHT,
+                out[key] = {'tag': tag, 'producer': a, 'payoff': b, 'weight': weight,
                             'producer_evidence': ' + '.join(combo['cards']),
                             'payoff_evidence': f"{what} ({combo.get('url', '')})"}
     return out
 
 
-def compute_synergy(views, commander_name=None, combos=None):
+def compute_synergy(views, commander_name=None, combos=None, bracket=None):
     """Score every card pair. `views` is a list of card_view dicts. `combos` is the
-    'included' list from combos.fetch_combos: each pair of pieces gets a bonus reason."""
+    'included' list from combos.fetch_combos: each pair of pieces gets a bonus reason,
+    bigger for game-winning combos and scaled by the deck's target `bracket`."""
     deck_subtypes = set()
     for v in views:
         deck_subtypes |= v['subtypes']
@@ -539,7 +564,7 @@ def compute_synergy(views, commander_name=None, combos=None):
         subtheme = ranked[1][0]
     bonus = {main_theme: MAIN_THEME_BONUS, subtheme: SUBTHEME_BONUS}
 
-    combo_matches = _combo_matches(views, combos)
+    combo_matches = _combo_matches(views, combos, bracket)
     combo_pieces = {n for m in combo_matches.values() for n in (m['producer'], m['payoff'])}
 
     # Pair scores
@@ -550,8 +575,10 @@ def compute_synergy(views, commander_name=None, combos=None):
         m = dict(m, weight=round(w, 3))
         pairs[(a, b)]['reasons'].append(m)
     for key, p in pairs.items():
-        raw = sum(r['weight'] for r in p['reasons'])
-        p['score'] = round(min(PAIR_CAP, raw), 3)
+        # The cap limits text synergy only; known combos add on top of it.
+        text = sum(r['weight'] for r in p['reasons'] if not r['tag'].startswith('combo'))
+        combo = sum(r['weight'] for r in p['reasons'] if r['tag'].startswith('combo'))
+        p['score'] = round(min(PAIR_CAP, text) + combo, 3)
         if commander_name in key:
             p['score'] = round(p['score'] * COMMANDER_BONUS, 3)
         p['reasons'].sort(key=lambda r: -r['weight'])
@@ -699,7 +726,9 @@ def _reason_line(r):
 
 def print_report(result, views, top=20):
     cm = result['commander']
-    print(f"=== Synergy: {cm or 'no commander'} ===\n")
+    print(f"=== Synergy: {cm or 'no commander'} ===")
+    b = result.get('bracket')
+    print(f"Target bracket: {b if b is not None else f'unknown (scored as {DEFAULT_BRACKET})'}\n")
     print("--- THEMES (producer -> payoff synergy) ---")
     for t in result['themes'][:10]:
         mark = ' [MAIN x%.2g]' % MAIN_THEME_BONUS if t['tag'] == result['main_theme'] else (
@@ -828,7 +857,10 @@ def main():
     else:
         views, cmdr = load_views(args.decklist, use_otags=not args.no_otags)
     combos = None if args.no_combos else load_combos(views, cmdr)
-    result = compute_synergy(views, cmdr, combos)
+    from combos import deck_bracket
+    bracket = deck_bracket(args.decklist)
+    result = compute_synergy(views, cmdr, combos, bracket)
+    result['bracket'] = bracket
     candidates, role_cards = rank_cuts(result, views, cmdr)
 
     if args.save is not None:

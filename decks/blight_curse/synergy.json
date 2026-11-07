@@ -952,73 +952,73 @@
  },
  "combos": [
   {
-   "id": "2760-4994",
-   "url": "https://commanderspellbook.com/combo/2760-4994/",
+   "bracket_tag": "E",
    "cards": [
     "Blowfly Infestation",
     "Nest of Scarabs"
    ],
+   "id": "2760-4994",
+   "identity": "B",
+   "infinite": true,
+   "mana_needed": "",
    "missing": [],
-   "requires": [],
+   "notes": "",
+   "popularity": 36116,
+   "prerequisites": "You control at least two other creatures with toughness equal to 1. You have a way to put a -1/-1 counter on a creature.",
    "produces": [
     "Infinite death triggers",
     "Infinite creature ETB",
     "Infinite creature LTB"
    ],
-   "infinite": true,
-   "bracket_tag": "E",
-   "identity": "B",
-   "popularity": 36116,
-   "mana_needed": "",
-   "prerequisites": "You control at least two other creatures with toughness equal to 1. You have a way to put a -1/-1 counter on a creature.",
+   "requires": [],
    "steps": "Put a -1/-1 counter on any creature you control with toughness equal to one.\nThe creatue dies as a state-based action due to having zero toughness.\nNest of Scarabs and Blowfly Infestation trigger.\nResolve the Nest of Scarabs trigger, creating a creature token.\nResolve the Blowfly Infestation trigger, putting a -1/-1 counter on any creature you control with toughness equal to 1.\nRepeat from step 2.",
-   "notes": ""
+   "url": "https://commanderspellbook.com/combo/2760-4994/"
   },
   {
-   "id": "1084-4994",
-   "url": "https://commanderspellbook.com/combo/1084-4994/",
+   "bracket_tag": "E",
    "cards": [
     "Blowfly Infestation",
     "Flourishing Defenses"
    ],
+   "id": "1084-4994",
+   "identity": "BG",
+   "infinite": true,
+   "mana_needed": "",
    "missing": [],
-   "requires": [],
+   "notes": "",
+   "popularity": 34057,
+   "prerequisites": "You control at least two other creatures with toughness equal to 1. You have a way to put a -1/-1 counter on a creature.",
    "produces": [
     "Infinite creature ETB",
     "Infinite creature LTB",
     "Infinite death triggers"
    ],
-   "infinite": true,
-   "bracket_tag": "E",
-   "identity": "BG",
-   "popularity": 34057,
-   "mana_needed": "",
-   "prerequisites": "You control at least two other creatures with toughness equal to 1. You have a way to put a -1/-1 counter on a creature.",
+   "requires": [],
    "steps": "Put a -1/-1 counter on any creature you control with toughness equal to one.\nThe creatue dies as a state-based action due to having zero toughness.\nFlourishing Defenses and Blowfly Infestation trigger.\nResolve the Flourishing Defenses trigger, creating a creature token.\nResolve the Blowfly Infestation trigger, putting a -1/-1 counter on any creature you control with toughness equal to 1.\nRepeat from step 2.",
-   "notes": ""
+   "url": "https://commanderspellbook.com/combo/1084-4994/"
   },
   {
-   "id": "2228-4994",
-   "url": "https://commanderspellbook.com/combo/2228-4994/",
+   "bracket_tag": "E",
    "cards": [
     "Blowfly Infestation",
     "Hapatra, Vizier of Poisons"
    ],
+   "id": "2228-4994",
+   "identity": "BG",
+   "infinite": true,
+   "mana_needed": "",
    "missing": [],
-   "requires": [],
+   "notes": "",
+   "popularity": 33993,
+   "prerequisites": "You control at least two other creatures with toughness equal to one. You have a way to put a -1/-1 counter on a creature.",
    "produces": [
     "Infinite death triggers",
     "Infinite creature ETB",
     "Infinite creature LTB"
    ],
-   "infinite": true,
-   "bracket_tag": "E",
-   "identity": "BG",
-   "popularity": 33993,
-   "mana_needed": "",
-   "prerequisites": "You control at least two other creatures with toughness equal to one. You have a way to put a -1/-1 counter on a creature.",
+   "requires": [],
    "steps": "Put a -1/-1 counter on any creature you control with toughness equal to one.\nThe creatue dies as a state-based action due to having zero toughness.\nHapatra and Blowfly Infestation trigger.\nResolve the Hapatra trigger, creating a 1/1 Snake creature token.\nResolve the Blowfly Infestation trigger, putting a -1/-1 counter on any creature you control with toughness equal to one.\nRepeat from step 2.",
-   "notes": ""
+   "url": "https://commanderspellbook.com/combo/2228-4994/"
   }
  ],
  "unmatched": [
@@ -1317,6 +1317,7 @@
    "evidence": "you create a tapped treasure token."
   }
  ],
+ "bracket": 3,
  "pairs": [
   {
    "a": "Auntie Ool, Cursewretch",
@@ -6748,18 +6749,18 @@
     "evidence": "draw a card if you control that creature."
    },
    {
-    "tag": "kw:Ward",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Ward"
-   },
-   {
     "tag": "counters_m1m1",
     "side": "P",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "keyword: Blight"
+   },
+   {
+    "tag": "kw:Ward",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Ward"
    },
    {
     "tag": "etb",
@@ -7194,18 +7195,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Warlock",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warlock"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    },
    {
     "tag": "mill",
@@ -7389,18 +7390,18 @@
   ],
   "Evolution Sage": [
    {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
-   },
-   {
     "tag": "proliferate",
     "side": "P",
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Proliferate"
+   },
+   {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Landfall"
    },
    {
     "tag": "counters_p1p1",
@@ -7546,18 +7547,18 @@
     "evidence": "• you draw a card and lose 1 life."
    },
    {
-    "tag": "kw:Deathtouch",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Deathtouch"
-   },
-   {
     "tag": "kw:First strike",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: First strike"
+   },
+   {
+    "tag": "kw:Deathtouch",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Deathtouch"
    },
    {
     "tag": "etb",
@@ -7891,18 +7892,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Shaman",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Shaman"
-   },
-   {
     "tag": "type:Goblin",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Goblin"
+   },
+   {
+    "tag": "type:Shaman",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Shaman"
    }
   ],
   "Blight Rot": [
@@ -7923,18 +7924,18 @@
   ],
   "Kulrath Knight": [
    {
-    "tag": "counters_m1m1",
-    "side": "P",
-    "scope": "any",
-    "strength": 1.0,
-    "evidence": "keyword: Wither"
-   },
-   {
     "tag": "kw:Flying",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "keyword: Flying"
+   },
+   {
+    "tag": "counters_m1m1",
+    "side": "P",
+    "scope": "any",
+    "strength": 1.0,
+    "evidence": "keyword: Wither"
    },
    {
     "tag": "etb",
@@ -7981,18 +7982,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Advisor",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Advisor"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    }
   ],
   "Massacre Girl, Known Killer": [
@@ -8505,18 +8506,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
     "tag": "type:Warlock",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Warlock"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Skinrender": [
@@ -9078,18 +9079,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Treefolk",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Treefolk"
-   },
-   {
     "tag": "type:Shaman",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Shaman"
+   },
+   {
+    "tag": "type:Treefolk",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Treefolk"
    }
   ],
   "Wickersmith's Tools": [

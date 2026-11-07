@@ -1468,6 +1468,7 @@
    "evidence": "keyword: Blight"
   }
  ],
+ "bracket": 2,
  "pairs": [
   {
    "a": "Evendo Brushrazer",
@@ -7798,32 +7799,6 @@
    ]
   },
   {
-   "a": "Hazezon, Shaper of Sand",
-   "b": "Sand Scout",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Warrior",
-     "producer": "Hazezon, Shaper of Sand",
-     "payoff": "Sand Scout",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
-   "a": "Desert Warfare",
-   "b": "Hazezon, Shaper of Sand",
-   "score": 1.0,
-   "reasons": [
-    {
-     "tag": "type:Warrior",
-     "producer": "Hazezon, Shaper of Sand",
-     "payoff": "Desert Warfare",
-     "weight": 1.0
-    }
-   ]
-  },
-  {
    "a": "Avenger of Zendikar",
    "b": "Dune Chanter",
    "score": 1.0,
@@ -7845,6 +7820,32 @@
      "tag": "type:Plant",
      "producer": "Dune Chanter",
      "payoff": "Phylath, World Sculptor",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Hazezon, Shaper of Sand",
+   "b": "Sand Scout",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Warrior",
+     "producer": "Hazezon, Shaper of Sand",
+     "payoff": "Sand Scout",
+     "weight": 1.0
+    }
+   ]
+  },
+  {
+   "a": "Desert Warfare",
+   "b": "Hazezon, Shaper of Sand",
+   "score": 1.0,
+   "reasons": [
+    {
+     "tag": "type:Warrior",
+     "producer": "Hazezon, Shaper of Sand",
+     "payoff": "Desert Warfare",
      "weight": 1.0
     }
    ]
@@ -12238,14 +12239,14 @@
     "evidence": "is a Ranger"
    },
    {
-    "tag": "type:Warrior",
+    "tag": "type:Plant",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
     "evidence": "whenever a desert card is put into your graveyard from anywhere, create a 4/2 g…"
    },
    {
-    "tag": "type:Plant",
+    "tag": "type:Warrior",
     "side": "C",
     "scope": "yours",
     "strength": 1.0,
@@ -12675,18 +12676,18 @@
     "evidence": "power 4"
    },
    {
-    "tag": "type:Plant",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Plant"
-   },
-   {
     "tag": "type:Mercenary",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Mercenary"
+   },
+   {
+    "tag": "type:Plant",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Plant"
    }
   ],
   "Catharsis": [
@@ -12893,18 +12894,18 @@
     "evidence": "is an enchantment"
    },
    {
-    "tag": "type:Dryad",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Dryad"
-   },
-   {
     "tag": "type:Nymph",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Nymph"
+   },
+   {
+    "tag": "type:Dryad",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Dryad"
    }
   ],
   "Dune Chanter": [
@@ -12930,13 +12931,6 @@
     "evidence": "mill two cards. you gain 1 life for each land card milled this way."
    },
    {
-    "tag": "kw:Reach",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Reach"
-   },
-   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -12949,6 +12943,13 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
+   },
+   {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Reach"
    },
    {
     "tag": "etb",
@@ -13032,18 +13033,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Scout",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Scout"
-   },
-   {
     "tag": "type:Insect",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Insect"
+   },
+   {
+    "tag": "type:Scout",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Scout"
    }
   ],
   "Embrace the Unknown": [
@@ -13969,18 +13970,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Cleric",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Cleric"
-   },
-   {
     "tag": "type:Snake",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Snake"
+   },
+   {
+    "tag": "type:Cleric",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Cleric"
    }
   ],
   "Ramunap Ruins": [
@@ -14400,13 +14401,6 @@
     "evidence": "during your turn, nonland permanent cards in your graveyard have retrace."
    },
    {
-    "tag": "kw:Reach",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "keyword: Reach"
-   },
-   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -14419,6 +14413,13 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
+   },
+   {
+    "tag": "kw:Reach",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "keyword: Reach"
    },
    {
     "tag": "etb",
@@ -14495,18 +14496,18 @@
     "evidence": "is a creature"
    },
    {
-    "tag": "type:Elf",
-    "side": "P",
-    "scope": "self",
-    "strength": 1.0,
-    "evidence": "is a Elf"
-   },
-   {
     "tag": "type:Druid",
     "side": "P",
     "scope": "self",
     "strength": 1.0,
     "evidence": "is a Druid"
+   },
+   {
+    "tag": "type:Elf",
+    "side": "P",
+    "scope": "self",
+    "strength": 1.0,
+    "evidence": "is a Elf"
    },
    {
     "tag": "sacrifice",
@@ -14636,13 +14637,6 @@
     "evidence": "landfall — whenever a land you control enters, create a 1/1 green minion creatu…"
    },
    {
-    "tag": "landfall",
-    "side": "C",
-    "scope": "yours",
-    "strength": 1.0,
-    "evidence": "keyword: Landfall"
-   },
-   {
     "tag": "mill",
     "side": "P",
     "scope": "any",
@@ -14655,6 +14649,13 @@
     "scope": "any",
     "strength": 1.0,
     "evidence": "keyword: Mill"
+   },
+   {
+    "tag": "landfall",
+    "side": "C",
+    "scope": "yours",
+    "strength": 1.0,
+    "evidence": "keyword: Landfall"
    },
    {
     "tag": "etb",

@@ -385,7 +385,7 @@ def mode_speed(all_cards, cmdr_name):
     print(f"  Count: {len(sorcery_protection)}")
 
 
-def mode_cuts(all_cards, cmdr_name):
+def mode_cuts(all_cards, cmdr_name, decklist=None):
     """List cut candidates: low synergy and high mana value first (see synergy.py)."""
     print(f"=== Cut Candidates: {cmdr_name} ===\n")
 
@@ -402,7 +402,9 @@ def mode_cuts(all_cards, cmdr_name):
         sf = dict(c['scryfall'], name=c['name'])
         views.append(card_view(sf, otags_by_card.get(c['name'], [])))
     cmdr = cmdr_name if cmdr_name != "Unknown" else None
-    result = compute_synergy(views, cmdr, load_combos(views, cmdr))
+    from combos import deck_bracket
+    bracket = deck_bracket(decklist) if decklist else None
+    result = compute_synergy(views, cmdr, load_combos(views, cmdr), bracket)
     candidates, role_cards = rank_cuts(result, views, cmdr)
     by_name = {c['name']: c for c in all_cards}
 
@@ -485,7 +487,7 @@ if __name__ == '__main__':
     elif args.speed:
         mode_speed(all_cards, cmdr_name)
     elif args.cuts:
-        mode_cuts(all_cards, cmdr_name)
+        mode_cuts(all_cards, cmdr_name, args.decklist)
     elif args.search:
         mode_search(all_cards, args.search)
     else:

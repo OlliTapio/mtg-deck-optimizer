@@ -3,8 +3,8 @@ import os
 
 import pytest
 
-from synergy import (card_view, compute_synergy, extract_features, rank_cuts,
-                     views_from_deck_json, COMMANDER_BONUS, MAIN_THEME_BONUS)
+from synergy import (card_view, compute_synergy, extract_features, rank_cuts, combo_weight, is_wincon,
+                     views_from_deck_json, COMBO_WEIGHT, COMMANDER_BONUS, MAIN_THEME_BONUS)
 
 
 def _card(name, type_line, oracle, keywords=(), power=None, otags=(), cmc=3):
@@ -219,12 +219,34 @@ class TestCombos:
         plain = compute_synergy(views)
         with_combo = compute_synergy(views, combos=[self.COMBO])
         assert _pair(with_combo, 'Vigor', 'Hardened Scales')['score'] > _pair(plain, 'Vigor', 'Hardened Scales')['score']
-        assert any(r['tag'] == 'combo' for r in _pair(with_combo, 'Vigor', 'Triskelion')['reasons'])
+        assert any(r['tag'] == 'combo_win' for r in _pair(with_combo, 'Vigor', 'Triskelion')['reasons'])
         assert with_combo['cards']['Vigor']['combo_piece']
-        assert all(t['tag'] != 'combo' for t in with_combo['themes'])
+        assert all(not t['tag'].startswith('combo') for t in with_combo['themes'])
         candidates, protected = rank_cuts(with_combo, views)
         assert 'Vigor' not in [x['name'] for x in candidates]
         assert 'combo piece' in next(x for x in protected if x['name'] == 'Vigor')['roles']
+
+    def test_wincon_detection(self):
+        assert is_wincon({'produces': ['Infinite damage']})
+        assert is_wincon({'produces': ['Each opponent loses the game']})
+        assert is_wincon({'produces': ['Near-infinite lifeloss']})
+        assert not is_wincon({'produces': ['Infinite colored mana', 'Infinite creature ETB']})
+        assert not is_wincon({'produces': ['Near-infinite damage to creatures']})
+        assert not is_wincon({'produces': ['Infinite self-mill']})
+
+    def test_wincon_weight_decays_fast_with_bracket(self):
+        w = {b: combo_weight(self.COMBO, b) for b in (1, 2, 3, 4)}
+        assert w[4] > w[3] > w[2] > w[1] > COMBO_WEIGHT
+        bonus = {b: w[b] - COMBO_WEIGHT for b in w}
+        assert bonus[3] < bonus[4] / 2 and bonus[2] < bonus[3] / 2 and bonus[1] < bonus[2] / 2
+        mana = {'cards': ['A', 'B'], 'produces': ['Infinite colored mana']}
+        assert combo_weight(mana, 4) == combo_weight(mana, 1) == COMBO_WEIGHT
+
+    def test_bracket_changes_pair_score(self):
+        views = [self.VIGOR, TRISKELION, HARDENED_SCALES]
+        b4 = _pair(compute_synergy(views, combos=[self.COMBO], bracket=4), 'Vigor', 'Triskelion')['score']
+        b2 = _pair(compute_synergy(views, combos=[self.COMBO], bracket=2), 'Vigor', 'Triskelion')['score']
+        assert b4 > b2
 
     def test_combo_needs_every_piece_in_deck(self):
         r = compute_synergy([self.VIGOR, TRISKELION], combos=[self.COMBO])
