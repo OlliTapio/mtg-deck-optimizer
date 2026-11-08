@@ -4,3 +4,4 @@
 # archidekt-version: 2026-10-30T09:25:54.093597Z
 
 Fetid Pools -> Turbulent Wetlands [buy]  # same UB Island Swamp types (Farseek-fetchable), enters untapped once opponents control 8+ lands; loses cycling (#17)
+Swamp -> The Unicomplex [buy]  # same {B}; enters untapped with 2+ other lands, then puts a creature card from the graveyard on top of the library (Mortuary Mire's old job) or surveils 1; not a basic, so Sakura-Tribe Elder/Farseek can't fetch it. Star Trek (trk 304), releases 2026-11-13. Chosen over Witch's Cottage (needs 3 other Swamps)
