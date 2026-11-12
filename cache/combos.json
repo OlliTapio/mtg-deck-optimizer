@@ -17296,6 +17296,141 @@
    }
   ]
  },
+ "d4a798ebe7286b7c": {
+  "almost": [
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Mycosynth Lattice",
+     "Vandalblast"
+    ],
+    "id": "2552-3263",
+    "identity": "R",
+    "infinite": false,
+    "mana_needed": "{5}",
+    "missing": [
+     "Mycosynth Lattice"
+    ],
+    "notes": "",
+    "popularity": 22188,
+    "prerequisites": "",
+    "produces": [
+     "Destroy all permanents opponents control",
+     "Mass Land Denial"
+    ],
+    "requires": [],
+    "steps": "Cast Vandalblast for its overload cost, paying {5} to destroy all permanents opponents control.",
+    "url": "https://commanderspellbook.com/combo/2552-3263/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "Boros Reckoner",
+     "Boros Charm"
+    ],
+    "id": "3422-3587",
+    "identity": "RW",
+    "infinite": true,
+    "mana_needed": "{R}{W}",
+    "missing": [
+     "Boros Reckoner"
+    ],
+    "notes": "",
+    "popularity": 14350,
+    "prerequisites": "You have a way to give Boros Reckoner lifelink. You have a way to deal damage to Boros Reckoner.",
+    "produces": [
+     "Infinite lifegain",
+     "Infinite lifegain triggers"
+    ],
+    "requires": [],
+    "steps": "Give Boros Reckoner lifelink.\nCast Boros Charm by paying {R}{W}, giving permanents you control indestructible until end of turn.\nDeal damage to Boros Reckoner.\nBoros Reckoner triggers, dealing that much damage to itself and causing you to gain that much life.\nRepeat step 4 any number of times.",
+    "url": "https://commanderspellbook.com/combo/3422-3587/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Gisela, Blade of Goldnight",
+     "Heartless Hidetsugu"
+    ],
+    "id": "1694-3011",
+    "identity": "RW",
+    "infinite": false,
+    "mana_needed": "",
+    "missing": [
+     "Heartless Hidetsugu"
+    ],
+    "notes": "",
+    "popularity": 4573,
+    "prerequisites": "Heartless Hidetsugu does not have summoning sickness.",
+    "produces": [
+     "Each opponent with an even life total loses the game",
+     "Near-infinite damage"
+    ],
+    "requires": [],
+    "steps": "Activate Heartless Hidetsugu by tapping it, causing it to deal lethal damage to each opponent with an even life total, nearly lethal damage to each opponent with an odd life total, and damage to you equal to a quarter of your life total.",
+    "url": "https://commanderspellbook.com/combo/1694-3011/"
+   },
+   {
+    "bracket_tag": "S",
+    "cards": [
+     "J. Jonah Jameson",
+     "Aggravated Assault"
+    ],
+    "id": "3750-6894",
+    "identity": "R",
+    "infinite": true,
+    "mana_needed": "",
+    "missing": [
+     "Aggravated Assault"
+    ],
+    "notes": "",
+    "popularity": 1323,
+    "prerequisites": "You control at least five creatures that have menace and that do not have summoning sickness.",
+    "produces": [
+     "Infinite artifact ETB",
+     "Infinite artifact LTB",
+     "Infinite artifact sacrifice triggers",
+     "Infinite artifact tokens",
+     "Infinite colored mana",
+     "Infinite combat phases",
+     "Infinite untap of creatures you control",
+     "Infinite mana creatures you control can produce",
+     "Infinite Treasure tokens"
+    ],
+    "requires": [],
+    "steps": "Declare at least five creatures with menace as attackers. J. Jonah Jameson's second ability triggers for each creature, creating that many Treasure tokens.\nMove to your postcombat main phase, and activate five Treasures by tapping and sacrificing them, adding {3}{R}{R}.\nActivate Aggravated Assault by paying {3}{R}{R}, untapping all creatures you control and causing you to get an additional combat and main phase after this one.\nRepeat.",
+    "url": "https://commanderspellbook.com/combo/3750-6894/"
+   },
+   {
+    "bracket_tag": "R",
+    "cards": [
+     "Balancing Act",
+     "Perch Protection"
+    ],
+    "id": "70-6532",
+    "identity": "W",
+    "infinite": false,
+    "mana_needed": "{6}{W}{W}{W}",
+    "missing": [
+     "Balancing Act"
+    ],
+    "notes": "",
+    "popularity": 177,
+    "prerequisites": "",
+    "produces": [
+     "Each opponent sacrifices all permanents they control",
+     "Mass Land Denial"
+    ],
+    "requires": [],
+    "steps": "Cast Balancing Act by paying {2}{W}{W}.\nHolding priority, cast Perch Protection by paying {4}{W}{W} and choosing to promise an opponent a gift, causing all permanents you control to phase out and an opponent to take an extra turn after this one.\nResolve Balancing Act, causing each opponent to sacrifice all their permanents as you control no permanents that aren't phased out.",
+    "url": "https://commanderspellbook.com/combo/70-6532/"
+   }
+  ],
+  "commanders": [
+   "Nelly Borca, Impulsive Accuser"
+  ],
+  "included": []
+ },
  "d5b1f3cd8a2fcc12": {
   "almost": [
    {

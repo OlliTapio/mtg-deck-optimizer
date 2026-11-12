@@ -48,6 +48,11 @@
     "card-advantage"
   ],
   "Aggravated Assault": [],
+  "Agitator Ant": [],
+  "Agrus Kos, Spirit of Justice": [
+    "removal",
+    "evasion"
+  ],
   "Ajani, Sleeper Agent": [
     "card-advantage"
   ],
@@ -217,6 +222,12 @@
     "draw",
     "card-advantage"
   ],
+  "Aurelia, the Law Above": [
+    "draw",
+    "card-advantage",
+    "evasion",
+    "lifegain"
+  ],
   "Aurora Awakener": [
     "ramp",
     "card-advantage"
@@ -320,6 +331,7 @@
     "lifegain"
   ],
   "Belonging": [],
+  "Besmirch": [],
   "Bident of Thassa": [
     "draw",
     "card-advantage"
@@ -341,6 +353,11 @@
   "Black Sun's Zenith": [
     "removal",
     "board-wipe"
+  ],
+  "Black Widow, Agile Avenger": [
+    "draw",
+    "card-advantage",
+    "evasion"
   ],
   "Blackblade Reforged": [],
   "Blackcleave Cliffs": [],
@@ -387,6 +404,7 @@
   "Bloodthirster": [
     "evasion"
   ],
+  "Bloodthirsty Blade": [],
   "Blooming Marsh": [],
   "Bloomvine Regent // Claim Territory": [
     "ramp",
@@ -517,6 +535,7 @@
   "Cait Sith, Fortune Teller": [
     "card-advantage"
   ],
+  "Call for Aid": [],
   "Cancel": [
     "counterspell"
   ],
@@ -544,6 +563,7 @@
     "sacrifice-outlet"
   ],
   "Cascade Bluffs": [],
+  "Castle Ardenvale": [],
   "Casualties of War": [
     "removal"
   ],
@@ -692,6 +712,9 @@
     "mill",
     "card-advantage"
   ],
+  "Comeuppance": [
+    "removal"
+  ],
   "Command Tower": [],
   "Commander's Sphere": [
     "ramp",
@@ -800,6 +823,9 @@
     "draw",
     "card-advantage"
   ],
+  "Curse of Opulence": [
+    "ramp"
+  ],
   "Cut a Deal": [
     "draw",
     "card-advantage"
@@ -873,6 +899,7 @@
   ],
   "Deepglow Skate": [],
   "Defiler of Vigor": [],
+  "Deflecting Palm": [],
   "Deflecting Swat": [],
   "Demolition Field": [
     "removal",
@@ -1149,6 +1176,9 @@
   "Escape Artist": [
     "evasion"
   ],
+  "Escape Tunnel": [
+    "tutor"
+  ],
   "Eshki Dragonclaw": [
     "draw",
     "card-advantage"
@@ -1294,6 +1324,7 @@
     "ramp",
     "tutor"
   ],
+  "Fast Forward": [],
   "Fatal Push": [
     "removal"
   ],
@@ -1338,6 +1369,10 @@
   "Final Parting": [
     "tutor"
   ],
+  "Final Showdown": [
+    "removal",
+    "board-wipe"
+  ],
   "Find // Finality": [
     "removal",
     "board-wipe",
@@ -1348,7 +1383,15 @@
     "ramp"
   ],
   "Fire-Lit Thicket": [],
+  "Firebender Ascension": [
+    "ramp"
+  ],
   "Firebrand Archer": [],
+  "Firemane Commando": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
   "Firemind's Research": [
     "removal",
     "draw",
@@ -1446,6 +1489,9 @@
     "ramp",
     "removal"
   ],
+  "Frontier Warmonger": [
+    "evasion"
+  ],
   "Frostboil Snarl": [],
   "Frostcliff Siege": [
     "draw",
@@ -1501,6 +1547,7 @@
     "removal",
     "tutor"
   ],
+  "Ghostly Prison": [],
   "Ghoulcaller's Bell": [
     "mill"
   ],
@@ -1511,6 +1558,9 @@
   "Gingerbrute": [
     "evasion",
     "lifegain"
+  ],
+  "Gisela, Blade of Goldnight": [
+    "evasion"
   ],
   "Giver of Runes": [],
   "Glacial Dragonhunt": [
@@ -1692,6 +1742,9 @@
     "draw",
     "card-advantage"
   ],
+  "Guild Artisan": [
+    "ramp"
+  ],
   "Guttersnipe": [],
   "Halana and Alena, Partners": [],
   "Halimar Depths": [],
@@ -1816,6 +1869,7 @@
   "Hornet Queen": [
     "evasion"
   ],
+  "Hot Pursuit": [],
   "Hour of Promise": [
     "ramp",
     "tutor"
@@ -1853,6 +1907,9 @@
     "recursion"
   ],
   "Illusionist's Gambit": [],
+  "Immortal Obligation": [
+    "recursion"
+  ],
   "Impact Tremors": [],
   "Imperious Oligarch": [
     "evasion"
@@ -1963,6 +2020,10 @@
   ],
   "Izzet Signet": [
     "ramp"
+  ],
+  "J. Jonah Jameson": [
+    "ramp",
+    "evasion"
   ],
   "Jade Orb of Dragonkind": [
     "ramp"
@@ -2078,6 +2139,9 @@
     "evasion",
     "lifegain"
   ],
+  "Komainu Battle Armor": [
+    "evasion"
+  ],
   "Kraum, Violent Cacophony": [
     "draw",
     "card-advantage",
@@ -2111,6 +2175,7 @@
   "Kyren Negotiations": [
     "removal"
   ],
+  "Labyrinth of Skophos": [],
   "Lamentation": [
     "removal",
     "lifegain"
@@ -2160,11 +2225,19 @@
     "mana-dork"
   ],
   "Llanowar Wastes": [],
+  "Loki's Scepter": [
+    "ramp"
+  ],
   "Looming Spires": [],
   "Looter il-Kor": [
     "draw",
     "card-advantage",
     "evasion"
+  ],
+  "Loran of the Third Path": [
+    "removal",
+    "draw",
+    "card-advantage"
   ],
   "Lotus Cobra": [
     "ramp",
@@ -2243,6 +2316,7 @@
   "Marsh Flats": [
     "tutor"
   ],
+  "Martial Impetus": [],
   "Martyr's Cause": [
     "sacrifice-outlet"
   ],
@@ -2350,6 +2424,12 @@
   "Mizzium Mortars": [
     "removal",
     "board-wipe"
+  ],
+  "Mob Verdict": [
+    "removal",
+    "draw",
+    "board-wipe",
+    "card-advantage"
   ],
   "Mocking Sprite": [
     "evasion"
@@ -2466,6 +2546,11 @@
   "Negate": [
     "counterspell"
   ],
+  "Nelly Borca, Impulsive Accuser": [
+    "draw",
+    "card-advantage",
+    "evasion"
+  ],
   "Nest of Scarabs": [],
   "Nesting Grounds": [],
   "Neurok Invisimancer": [
@@ -2497,6 +2582,7 @@
     "card-advantage",
     "evasion"
   ],
+  "Noble Heritage": [],
   "Nomad Outpost": [],
   "Norika Yamazaki, the Poet": [
     "recursion"
@@ -2570,6 +2656,7 @@
   "Ornithopter": [
     "evasion"
   ],
+  "Orzhov Advokist": [],
   "Orzhov Basilica": [],
   "Orzhov Enforcer": [
     "evasion"
@@ -2635,6 +2722,9 @@
     "card-advantage"
   ],
   "Penumbra Wurm": [],
+  "Perch Protection": [
+    "evasion"
+  ],
   "Perpetual Timepiece": [
     "mill",
     "recursion"
@@ -2684,6 +2774,7 @@
     "draw",
     "card-advantage"
   ],
+  "Popular Entertainer": [],
   "Port Town": [],
   "Prairie Stream": [],
   "Preordain": [
@@ -2713,6 +2804,7 @@
     "ramp",
     "tutor"
   ],
+  "Prisoner's Dilemma": [],
   "Professional Face-Breaker": [
     "ramp",
     "card-advantage",
@@ -2727,6 +2819,10 @@
     "draw",
     "card-advantage"
   ],
+  "Promise of Loyalty": [
+    "removal",
+    "board-wipe"
+  ],
   "Propaganda": [],
   "Psychic Corrosion": [
     "mill"
@@ -2735,6 +2831,9 @@
   "Puca's Covenant": [
     "recursion",
     "card-advantage"
+  ],
+  "Puppet Master, String Puller": [
+    "ramp"
   ],
   "Puppeteer Clique": [
     "recursion",
@@ -2867,6 +2966,9 @@
     "recursion",
     "card-advantage"
   ],
+  "Redemption Arc": [
+    "removal"
+  ],
   "Reflections of Littjara": [],
   "Refute": [
     "draw",
@@ -2961,6 +3063,7 @@
     "card-advantage"
   ],
   "Rite of Replication": [],
+  "Rite of the Raging Storm": [],
   "Riverchurn Monument": [
     "mill"
   ],
@@ -3294,6 +3397,11 @@
   "Smothering Tithe": [
     "ramp"
   ],
+  "Smuggler's Share": [
+    "ramp",
+    "draw",
+    "card-advantage"
+  ],
   "Smuggler's Surprise": [
     "mill",
     "card-advantage"
@@ -3339,6 +3447,7 @@
     "draw",
     "card-advantage"
   ],
+  "Spectacular Showdown": [],
   "Spectator Seating": [],
   "Spectral Denial": [
     "counterspell"
@@ -3554,6 +3663,7 @@
   ],
   "Tainted Peak": [],
   "Tainted Wood": [],
+  "Take the Bait": [],
   "Talent of the Telepath": [
     "mill"
   ],
@@ -3603,6 +3713,8 @@
     "mill",
     "recursion"
   ],
+  "Taunt from the Rampart": [],
+  "Taunting Kobold": [],
   "Tectonic Edge": [
     "removal"
   ],
@@ -3634,10 +3746,15 @@
   "Temple of the False God": [
     "ramp"
   ],
+  "Tempt with Bunnies": [
+    "draw",
+    "card-advantage"
+  ],
   "Tempt with Discovery": [
     "ramp",
     "tutor"
   ],
+  "Tempt with Mayhem": [],
   "Tempt with Reflections": [],
   "Temur Ascendancy": [
     "draw",
@@ -3700,6 +3817,10 @@
   "Thalia, Guardian of Thraben": [],
   "Thalia, Heretic Cathar": [],
   "Thancred Waters": [],
+  "The Akroan War": [
+    "removal",
+    "board-wipe"
+  ],
   "The Endstone": [
     "draw",
     "card-advantage"
@@ -3709,6 +3830,12 @@
     "draw",
     "card-advantage",
     "lifegain"
+  ],
+  "The Legend of Yangchen // Avatar Yangchen": [
+    "removal",
+    "draw",
+    "card-advantage",
+    "evasion"
   ],
   "The Lord of Pain": [
     "evasion"
@@ -3735,6 +3862,9 @@
     "draw",
     "recursion",
     "card-advantage"
+  ],
+  "The Sentry, Golden Guardian": [
+    "evasion"
   ],
   "The Water Crystal": [
     "mill"
@@ -3856,6 +3986,10 @@
   "Tromokratis": [
     "evasion"
   ],
+  "Trouble in Pairs": [
+    "draw",
+    "card-advantage"
+  ],
   "Tuktuk Scrapper": [
     "removal"
   ],
@@ -3960,6 +4094,9 @@
     "card-advantage"
   ],
   "Venerated Rotpriest": [],
+  "Vengeful Ancestor": [
+    "evasion"
+  ],
   "Venomous Changeling": [],
   "Verdant Catacombs": [
     "tutor"
@@ -4083,6 +4220,11 @@
     "removal",
     "board-wipe"
   ],
+  "Wedding Ring": [
+    "draw",
+    "card-advantage",
+    "lifegain"
+  ],
   "Where Ancients Tread": [
     "removal"
   ],
@@ -4119,6 +4261,12 @@
     "ramp"
   ],
   "Wind-Scarred Crag": [
+    "lifegain"
+  ],
+  "Windborn Muse": [
+    "evasion"
+  ],
+  "Windcrag Siege": [
     "lifegain"
   ],
   "Winding Constrictor": [],

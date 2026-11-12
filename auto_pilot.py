@@ -9,7 +9,7 @@ import os
 from card_cache import get_deck_cards
 from game_simulator import (
     GameState, Player, Opponent, Permanent,
-    card_from_scryfall, init_game_from_cards,
+    card_from_scryfall, cards_from_entries, init_game_from_cards,
     get_available_mana, can_cast, tap_mana_for,
     play_land, cast_spell, create_token, resolve_combat,
     opponent_turn, check_game_over, format_state,
@@ -220,7 +220,7 @@ def run_auto_game(decklist_path, seed=None, max_turns=15, opponent_archetypes=No
     """Run a full auto-piloted game."""
     print(f"Loading deck from {decklist_path}...", file=sys.stderr)
     all_cards, parsed = get_deck_cards(decklist_path)
-    cards = [card_from_scryfall(c) for c in all_cards]
+    cards = cards_from_entries(all_cards)
 
     if opponent_archetypes is None:
         opponent_archetypes = ['aggro', 'midrange', 'control']

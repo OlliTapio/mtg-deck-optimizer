@@ -101,6 +101,12 @@ def card_from_scryfall(card_entry):
     )
 
 
+def cards_from_entries(card_entries):
+    """One simplified card per copy: '9x Mountain' becomes nine Mountains."""
+    return [card_from_scryfall(c) for c in card_entries
+            for _ in range(max(1, int(c.get('count') or 1)))]
+
+
 @dataclass
 class Permanent:
     card: dict
@@ -1334,7 +1340,7 @@ def main():
     all_cards, parsed = get_deck_cards(args.decklist)
 
     # Convert to simplified card format
-    cards = [card_from_scryfall(c) for c in all_cards]
+    cards = cards_from_entries(all_cards)
 
     archetypes = [a.strip() for a in args.opponents.split(',')]
     gs = init_game_from_cards(cards, seed=args.seed, opponent_archetypes=archetypes)

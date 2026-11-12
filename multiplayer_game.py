@@ -25,7 +25,7 @@ from dataclasses import dataclass, field
 from card_cache import get_deck_cards
 from game_simulator import (
     Player, Permanent, GameState, MulliganGuide,
-    make_card, card_from_scryfall,
+    make_card, card_from_scryfall, cards_from_entries,
     get_available_mana, can_cast, tap_mana_for,
     play_land, cast_spell, create_token, resolve_combat,
     check_game_over, format_state, evaluate_hand_for_mulligan,
@@ -667,7 +667,7 @@ def make_ai(ai_type, model="haiku"):
 def load_player(decklist_path, name=None, seed=None):
     """Load a deck and create a Player."""
     all_cards, parsed = get_deck_cards(decklist_path)
-    cards = [card_from_scryfall(c) for c in all_cards]
+    cards = cards_from_entries(all_cards)
 
     # Get commander name for player name
     commander = None

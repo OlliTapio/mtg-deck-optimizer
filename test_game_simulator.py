@@ -8,7 +8,7 @@ from game_simulator import (
     play_land, cast_spell, create_token,
     resolve_combat, opponent_turn, check_game_over,
     init_game_from_cards, format_state,
-    evaluate_hand_for_mulligan, MulliganGuide,
+    evaluate_hand_for_mulligan, MulliganGuide, cards_from_entries,
 )
 
 
@@ -554,3 +554,16 @@ class TestOpponentInteraction:
         for turn in range(1, 20):
             opponent_turn(opp, turn_number=turn, player=_make_player(), rng=random.Random(turn))
         assert opp.board_power <= opp.max_board_power
+
+
+class TestCardsFromEntries:
+    def test_expands_counts(self):
+        entries = [
+            {'name': 'Mountain', 'count': 9, 'tags': [], 'scryfall': {'type_line': 'Basic Land — Mountain'}},
+            {'name': 'Sol Ring', 'count': 1, 'tags': [], 'scryfall': {'type_line': 'Artifact', 'cmc': 1}},
+        ]
+        cards = cards_from_entries(entries)
+        assert len(cards) == 10
+        assert sum(c['name'] == 'Mountain' for c in cards) == 9
+        # each copy is its own object, so zone moves don't alias
+        assert len({id(c) for c in cards}) == 10

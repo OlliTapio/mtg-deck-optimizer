@@ -26,7 +26,7 @@ from collections import Counter, defaultdict
 from card_cache import get_deck_cards
 from game_simulator import (
     Player, Permanent,
-    card_from_scryfall, make_card,
+    card_from_scryfall, cards_from_entries, make_card,
     get_available_mana, can_cast, tap_mana_for,
     play_land, cast_spell, create_token,
     evaluate_hand_for_mulligan, parse_mulligan_guide,
@@ -295,7 +295,7 @@ class GameEngine:
 
     def _load_deck(self, path, seed=None):
         cards_raw, _ = get_deck_cards(path)
-        cards = [card_from_scryfall(c) for c in cards_raw]
+        cards = cards_from_entries(cards_raw)
 
         rng = random.Random(seed)
         commander = None
