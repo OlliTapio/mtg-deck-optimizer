@@ -1,0 +1,6 @@
+# Proposed swaps, not yet made on Archidekt. Archidekt (decklist.txt) is the source of truth.
+# Format: Out -> In  # reason   |   - Out  (cut only)   |   + In  (add only)
+# Mark [buy] after a swap whose incoming card still has to be acquired: Out -> In [buy]
+# archidekt-version: 2026-11-12T14:45:22.037163Z
+
+Taunting Kobold -> Swiftfoot Boots [buy]  # Nelly protection: hexproof + haste, she attacks the turn she lands, even on recasts
