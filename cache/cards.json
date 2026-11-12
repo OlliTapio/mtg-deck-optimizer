@@ -217062,5 +217062,164 @@
       "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=763554&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
       "cardhoarder": "https://www.cardhoarder.com/cards/123933?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
     }
+  },
+  "koloth, tribble hunter": {
+    "object": "card",
+    "id": "33bfbd68-fc0f-41ce-b033-975fe9ba960a",
+    "oracle_id": "01b7ced9-5dcb-45ce-bcda-ffdc1afefb2a",
+    "multiverse_ids": [],
+    "resource_id": "3C8D5E26089FFD675CEF1C45FDD890CCEDBC8806FEFB1951FB12465C785F3E66",
+    "mtgo_id": 156928,
+    "tcgplayer_id": 725222,
+    "cardmarket_id": 919473,
+    "name": "Koloth, Tribble Hunter",
+    "lang": "en",
+    "released_at": "2026-11-13",
+    "uri": "https://api.scryfall.com/cards/33bfbd68-fc0f-41ce-b033-975fe9ba960a",
+    "scryfall_uri": "https://scryfall.com/card/trc/72/koloth-tribble-hunter?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_status": "highres_scan",
+    "image_updated_at": "2026-10-20T14:52:54Z",
+    "image_uris": {
+      "small": "https://cards.scryfall.io/small/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.jpg?1792507974",
+      "normal": "https://cards.scryfall.io/normal/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.jpg?1792507974",
+      "large": "https://cards.scryfall.io/large/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.jpg?1792507974",
+      "png": "https://cards.scryfall.io/png/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.png?1792507974",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.jpg?1792507974",
+      "border_crop": "https://cards.scryfall.io/border_crop/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.jpg?1792507974",
+      "thumb": "https://cards.scryfall.io/thumb/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.webp?1792507974",
+      "grid": "https://cards.scryfall.io/grid/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.webp?1792507974",
+      "display": "https://cards.scryfall.io/display/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.webp?1792507974",
+      "art": "https://cards.scryfall.io/art/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.webp?1792507974",
+      "crop": "https://cards.scryfall.io/crop/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.webp?1792507974",
+      "jpeg": "https://cards.scryfall.io/normal/front/3/3/33bfbd68-fc0f-41ce-b033-975fe9ba960a.jpg?1792507974"
+    },
+    "mana_cost": "{3}{R}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Klingon Warrior Officer",
+    "oracle_text": "At the beginning of your end step, each player creates two 1/1 white Tribble creature tokens with \"This token can't block.\"\nAll Tribbles get +1/+0 and are goaded. (They attack each combat if able and attack a player other than you if able.)",
+    "power": "3",
+    "toughness": "3",
+    "colors": [
+      "R"
+    ],
+    "color_identity": [
+      "R"
+    ],
+    "keywords": [
+      "Goad"
+    ],
+    "all_parts": [
+      {
+        "object": "related_card",
+        "id": "55a3692b-da3e-4e03-8bb3-06013232438d",
+        "component": "combo_piece",
+        "name": "Koloth, Tribble Hunter",
+        "type_line": "Legendary Creature — Klingon Warrior Officer",
+        "uri": "https://api.scryfall.com/cards/55a3692b-da3e-4e03-8bb3-06013232438d"
+      },
+      {
+        "object": "related_card",
+        "id": "81d2498f-ee5e-4d8d-80f8-eb71c3755faa",
+        "component": "token",
+        "name": "Tribble",
+        "type_line": "Token Creature — Tribble",
+        "uri": "https://api.scryfall.com/cards/81d2498f-ee5e-4d8d-80f8-eb71c3755faa"
+      }
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "timeless": "not_legal",
+      "gladiator": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "not_legal",
+      "commander": "legal",
+      "oathbreaker": "legal",
+      "standardbrawl": "not_legal",
+      "brawl": "not_legal",
+      "competitivebrawl": "not_legal",
+      "alchemy": "not_legal",
+      "paupercommander": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal",
+      "premodern": "not_legal",
+      "predh": "not_legal",
+      "tlr": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "game_changer": false,
+    "foil": true,
+    "nonfoil": true,
+    "finishes": [
+      "nonfoil",
+      "foil"
+    ],
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set_id": "a38c10be-90b1-4bb9-bd74-46784a751ac3",
+    "set": "trc",
+    "set_name": "Star Trek Commander",
+    "set_type": "commander",
+    "set_uri": "https://api.scryfall.com/sets/a38c10be-90b1-4bb9-bd74-46784a751ac3",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atrc&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/trc?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/33bfbd68-fc0f-41ce-b033-975fe9ba960a/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A01b7ced9-5dcb-45ce-bcda-ffdc1afefb2a&unique=prints",
+    "collector_number": "72",
+    "digital": false,
+    "rarity": "rare",
+    "flavor_text": "\"A sharp knife is nothing without a sharp eye.\"",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Eric Wilkerson",
+    "artist_ids": [
+      "525ec49d-a7c8-4ddc-96aa-58cf5ad5e937"
+    ],
+    "illustration_id": "d7ac7642-217c-487d-ab42-5413b70fd936",
+    "border_color": "black",
+    "frame": "2015",
+    "frame_effects": [
+      "legendary"
+    ],
+    "security_stamp": "oval",
+    "full_art": false,
+    "textless": false,
+    "booster": false,
+    "story_spotlight": false,
+    "promo_types": [
+      "surgefoil",
+      "universesbeyond"
+    ],
+    "edhrec_rank": 26123,
+    "prices": {
+      "usd": "1.43",
+      "usd_foil": null,
+      "usd_etched": null,
+      "eur": "1.76",
+      "eur_foil": null,
+      "tix": "1.44"
+    },
+    "related_uris": {
+      "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DKoloth%252C%2BTribble%2BHunter",
+      "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DKoloth%252C%2BTribble%2BHunter",
+      "edhrec": "https://edhrec.com/route/?cc=Koloth%2C+Tribble+Hunter"
+    },
+    "purchase_uris": {
+      "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F725222%3Fpage%3D1",
+      "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=919473&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+      "cardhoarder": "https://www.cardhoarder.com/cards/156928?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+    }
   }
 }
