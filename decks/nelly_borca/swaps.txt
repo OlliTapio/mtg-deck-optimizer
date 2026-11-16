@@ -3,3 +3,4 @@
 # Mark [buy] after a swap whose incoming card still has to be acquired: Out -> In [buy]
 # archidekt-version: 2026-11-12T15:59:41.818659Z
 
+The Sentry, Golden Guardian -> Austere Command [buy]  # flexible wipe: hits artifacts and enchantments too; 'enchantments + MV<=3 creatures' spares Nelly. Wipes 5 -> 6
